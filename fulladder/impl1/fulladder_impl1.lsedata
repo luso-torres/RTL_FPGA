@@ -1,0 +1,342 @@
+<top name = "fourbit"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "fourbit">
+
+    <!--
+        Top Level Pins: 14
+    -->
+
+    <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "sum[3]"  direction = "out"  />
+        <pitem  name = "sum[2]"  direction = "out"  />
+        <pitem  name = "sum[1]"  direction = "out"  />
+        <pitem  name = "sum[0]"  direction = "out"  />
+        <pitem  name = "carry"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 24
+    -->
+
+    <instance  name = "U0/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U0/n_sum"  />
+        <nitem  name = "cin"  />
+        <nitem  name = "sum[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U0/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "cout0"  />
+        <nitem  name = "U0/n_carry1"  />
+        <nitem  name = "U0/n_carry2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U0/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a[0]"  />
+        <nitem  name = "b[0]"  />
+        <nitem  name = "U0/n_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U1/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a[1]"  />
+        <nitem  name = "b[1]"  />
+        <nitem  name = "U1/n_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U2/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a[0]"  />
+        <nitem  name = "b[0]"  />
+        <nitem  name = "U2/n_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U3/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a[0]"  />
+        <nitem  name = "b[0]"  />
+        <nitem  name = "U3/n_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U2/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U2/n_sum"  />
+        <nitem  name = "cout1"  />
+        <nitem  name = "sum[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "cout1"  />
+        <nitem  name = "U1/n_carry1"  />
+        <nitem  name = "U1/n_carry2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U3/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U3/n_sum"  />
+        <nitem  name = "cout2"  />
+        <nitem  name = "sum[3]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U2/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "cout2"  />
+        <nitem  name = "U2/n_carry1"  />
+        <nitem  name = "U2/n_carry2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U1/n_sum"  />
+        <nitem  name = "cout0"  />
+        <nitem  name = "sum[1]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U3/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "carry"  />
+        <nitem  name = "U3/n_carry1"  />
+        <nitem  name = "U3/n_carry2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U2/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U2/n_sum"  />
+        <nitem  name = "cout1"  />
+        <nitem  name = "U2/n_carry2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U3/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U3/n_sum"  />
+        <nitem  name = "cout2"  />
+        <nitem  name = "U3/n_carry2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U1/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U1/n_sum"  />
+        <nitem  name = "cout0"  />
+        <nitem  name = "U1/n_carry2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U0/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "U0/n_sum"  />
+        <nitem  name = "cin"  />
+        <nitem  name = "U0/n_carry2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U0/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a[0]"  />
+        <nitem  name = "b[0]"  />
+        <nitem  name = "U0/n_carry1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U1/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a[1]"  />
+        <nitem  name = "b[1]"  />
+        <nitem  name = "U1/n_carry1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U2/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a[0]"  />
+        <nitem  name = "b[0]"  />
+        <nitem  name = "U2/n_carry1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U3/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a[0]"  />
+        <nitem  name = "b[0]"  />
+        <nitem  name = "U3/n_carry1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "U0"  />
+    <instance  name = "U1"  />
+    <instance  name = "U2"  />
+    <instance  name = "U3"  />
+    <!--
+        Views in design "fourbit": 2
+    -->
+
+    <views>
+        <view  name = "fulladd"  />
+        <view  name = "halfadder"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

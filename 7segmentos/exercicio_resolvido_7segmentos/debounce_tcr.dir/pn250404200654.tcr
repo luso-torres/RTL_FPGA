@@ -1,0 +1,5 @@
+#Start recording tcl command: 4/4/2025 20:06:53
+#Project Location: C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos; Project name: debounce
+prj_project new -name "debounce" -impl "impl1" -dev LFE5U-45F-6BG381C -synthesis "lse"
+prj_project save
+#Stop recording: 4/4/2025 20:06:54

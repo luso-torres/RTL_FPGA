@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 344352 work.mux_nb_tf -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt1 -id 1-d09466e84a28-67edcbdb-a3-55c +__design_bin_path+C:/FPGAprojects/segmentos7

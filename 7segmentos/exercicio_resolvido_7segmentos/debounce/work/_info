@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s12c _opt2
+Z0 !s99 nomlopt
+!s12c _opt1
+R0
+!s12c _opt
+R0
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce
+T_opt
+!s110 1743808205
+VoPQSOhU3g7QCSF>=gdDIW1
+04 8 4 work debounce fast 0
+=1-d09466e84a28-67f066cc-3e7-1c7c
+R0
+!s12f OEM25U1 
+Z2 !s12b OEM100
+Z3 !s124 OEM100
+Z4 !s135 nogc
+Z5 o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2024.2;79
+R1
+T_opt1
+!s110 1743808751
+V_IQ7C]0]F=1o6zcm4DN:G2
+Z8 04 11 4 work debounce_tf fast 0
+=1-d09466e84a28-67f068ee-30a-3064
+R0
+Z9 !s12f OEM25U2 
+R2
+R3
+R4
+R5
+R6
+n@_opt1
+R7
+R1
+T_opt2
+!s110 1743808801
+V5LhJI>n8ba81mB2B1m0fH0
+R8
+=2-d09466e84a28-67f06921-21c-3064
+R0
+R9
+R2
+R3
+R4
+o-quiet -auto_acc_if_foreign -work work +acc
+R6
+n@_opt2
+R7
+vdebounce
+2C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v
+Z10 !s110 1743808789
+!i10b 1
+!s100 :>A2kT4b5U[Ycil4d>4;W1
+IKnV2k>WU_]iVeVEmGHRSY3
+R1
+w1743808397
+8C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v
+FC:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v
+!i122 2
+L0 1 59
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z13 !s108 1743808789.000000
+!s107 C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v|
+!i113 0
+Z14 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vdebounce_tf
+2C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce_tf.v
+R10
+!i10b 1
+!s100 R=LkY9RJC<IVYjOAac4lW2
+IiEFccYWG2A@G6T^7PTnY>3
+R1
+w1743808652
+8C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce_tf.v
+FC:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce_tf.v
+!i122 3
+L0 18 36
+R11
+R12
+r1
+!s85 0
+31
+R13
+!s107 C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce_tf.v|
+!i113 0
+R14
+R6

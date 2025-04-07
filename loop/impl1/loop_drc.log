@@ -1,0 +1,19 @@
+Results of NGD DRC are available in loop_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'f[0]' has no load.
+WARNING - synthesis: input pad net 'f[0]' has no legal load.
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: DRC complete with 3 warnings.
+
+Design Results:
+     16 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file loops_impl1.ngd.

@@ -1,0 +1,12 @@
+#Start recording tcl command: 4/3/2025 18:53:55
+#Project Location: C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos; Project name: segmentos_7
+prj_project new -name "segmentos_7" -impl "impl1" -dev LFE5U-45F-6BG381C -synthesis "lse"
+prj_project save
+prj_src add "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/decodificador_7_seg.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 4/4/2025 18:39:06

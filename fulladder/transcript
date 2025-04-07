@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project sim_4bitsadder
+# Compile of fourbit_tf.v was successful.
+# Compile of fulladd_tf.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of fulladder4bits.v was successful.
+# Compile of fulladder4bits_tf.v was successful.
+# Compile of halfadder.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.fourbit_tf
+# vsim -voptargs="+acc" work.fourbit_tf 
+# Start time: 18:48:32 on Apr 01,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.fourbit_tf(fast)
+# Loading work.fourbit(fast)
+# Loading work.fulladd(fast)
+# Loading work.halfadder(fast)
+add wave -position end  sim:/fourbit_tf/a
+add wave -position end  sim:/fourbit_tf/b
+add wave -position end  sim:/fourbit_tf/cin
+add wave -position end  sim:/fourbit_tf/sum
+add wave -position end  sim:/fourbit_tf/carry
+add wave -position insertpoint sim:/fourbit_tf/*
+add wave -position end sim:/fourbit_tf/UUT/U0/*
+add wave -position end  sim:/fourbit_tf/UUT/U0/U1/sum
+add wave -position end  sim:/fourbit_tf/UUT/U0/U1/carry
+add wave -position end sim:/fourbit_tf/UUT/U0/#OR#8/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/fourbit_tf/UUT/U0/#OR#8/*'.
+add wave -position end sim:/fourbit_tf/UUT/U0/#OR#8/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/fourbit_tf/UUT/U0/#OR#8/*'.
+add wave -position end  sim:/fourbit_tf/UUT/U0/carry
+add wave -position end  sim:/fourbit_tf/UUT/U0/sum
+run -all
+# Causality operation skipped due to absence of debug database file
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.fourbit_tf(fast)
+# Loading work.fourbit(fast)
+# Loading work.fulladd(fast)
+# Loading work.halfadder(fast)
+run
+# End time: 21:45:56 on Apr 01,2025, Elapsed time: 2:57:24
+# Errors: 0, Warnings: 2

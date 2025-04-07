@@ -1,0 +1,17 @@
+if {![file exists "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce/debounce.mpf"]} { 
+	project new "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce" debounce
+	project addfile "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v"
+	project addfile "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos  -work work  "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v"
+	vlog  +incdir+C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos  -work work  "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce_tf.v"
+} else {
+	project open "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce/debounce"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  debounce_tf
+view wave
+add wave /*
+run 1000ns

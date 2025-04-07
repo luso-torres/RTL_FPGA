@@ -1,0 +1,56 @@
+<top name = "inv"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "inv">
+
+    <!--
+        Top Level Pins: 2
+    -->
+
+    <pins>
+        <pitem  name = "b"  direction = "out"  />
+        <pitem  name = "a"  direction = "in"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 1
+    -->
+
+    <instance  name = "a_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a"  />
+        <nitem  name = "a_N_1"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "inv": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

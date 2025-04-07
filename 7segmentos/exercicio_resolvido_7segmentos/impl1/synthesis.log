@@ -1,0 +1,159 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Apr 04 20:13:44 2025
+
+
+Command Line:  synthesis -f debounce_impl1_lattice.synproj -gui -msgset C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/promote.xml 
+
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA381.
+The -d option is LFE5U-45F.
+Using package CABGA381.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA381
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = debounce.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/impl1 (searchpath added)
+-p C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos (searchpath added)
+Verilog design file = C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v
+NGD file = debounce_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/fpgaprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): debounce
+INFO - synthesis: c:/fpgaprojects/7segmentos/exercicio_resolvido_7segmentos/debounce.v(1): compiling module debounce. VERI-1018
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = debounce.
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in debounce_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: DRC complete with 1 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file debounce_impl1.ngd.
+
+################### Begin Area Report (debounce)######################
+Number of register bits => 7 of 44457 (0 % )
+FD1P3IX => 4
+FD1S3IX => 3
+GSR => 1
+IB => 3
+LUT4 => 7
+OB => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 7
+Clock Enable Nets
+Number of Clock Enables: 2
+Top 2 highest fanout Clock Enables:
+  Net : clk_c_enable_4, loads : 3
+  Net : clk_c_enable_1, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : rst_c, loads : 6
+  Net : n116, loads : 5
+  Net : counter_3, loads : 4
+  Net : counter_0, loads : 4
+  Net : iDFF1, loads : 3
+  Net : iDFF2, loads : 3
+  Net : counter_1, loads : 3
+  Net : clk_c_enable_4, loads : 3
+  Net : counter_2, loads : 2
+  Net : noisy_in_c, loads : 1
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  236.855 MHz|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 87.207  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.375  secs
+--------------------------------------------------------------

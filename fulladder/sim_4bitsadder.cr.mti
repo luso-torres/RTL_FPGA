@@ -1,0 +1,39 @@
+C:/FPGAprojects/fulladder/halfadder.v {1 {vlog -work work -vopt -stats=none C:/FPGAprojects/fulladder/halfadder.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module halfadder
+
+Top level modules:
+	halfadder
+
+} {} {}} C:/FPGAprojects/fulladder/fulladder.v {1 {vlog -work work -vopt -stats=none C:/FPGAprojects/fulladder/fulladder.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module fulladd
+
+Top level modules:
+	fulladd
+
+} {} {}} C:/FPGAprojects/fulladder/fourbit_tf.v {1 {vlog -work work -vopt -stats=none C:/FPGAprojects/fulladder/fourbit_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module fourbit_tf
+
+Top level modules:
+	fourbit_tf
+
+} {} {}} C:/FPGAprojects/fulladder/fulladder4bits.v {1 {vlog -work work -vopt -stats=none C:/FPGAprojects/fulladder/fulladder4bits.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module fourbit
+
+Top level modules:
+	fourbit
+
+} {} {}} C:/FPGAprojects/fulladder/fulladd_tf.v {1 {vlog -work work -vopt -stats=none C:/FPGAprojects/fulladder/fulladd_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module fulladd_tf
+
+Top level modules:
+	fulladd_tf
+
+} {} {}} C:/FPGAprojects/fulladder/fulladder4bits_tf.v {1 {vlog -work work -vopt -stats=none C:/FPGAprojects/fulladder/fulladder4bits_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+
+} {} {}}

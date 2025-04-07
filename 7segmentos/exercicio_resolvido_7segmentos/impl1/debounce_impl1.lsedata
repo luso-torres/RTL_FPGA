@@ -1,0 +1,361 @@
+<top name = "debounce"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "clk"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "debounce">
+
+    <!--
+        Top Level Pins: 4
+    -->
+
+    <pins>
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "rst"  direction = "in"  />
+        <pitem  name = "noisy_in"  direction = "in"  />
+        <pitem  name = "clean_out"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 14
+    -->
+
+    <instance  name = "noisy_in_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "noisy_in"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "iDFF1_N_11"  />
+        </nets>
+    </instance>
+
+    <instance  name = "iDFF1_I_0_28"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "iDFF1"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "iDFF2_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "iDFF2_24"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "iDFF2_N_12"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "iDFF2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "counter"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "counter_3__N_1[3]"  />
+        <nitem  name = "counter_3__N_1[2]"  />
+        <nitem  name = "counter_3__N_1[1]"  />
+        <nitem  name = "counter_3__N_1[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "counter[3]"  />
+        <nitem  name = "counter[2]"  />
+        <nitem  name = "counter[1]"  />
+        <nitem  name = "counter[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "iDFF1_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "iDFF1"  />
+        <nitem  name = "iDFF2"  />
+        <nitem  name = "sclear"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "counter[3]"  />
+        <nitem  name = "n10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "add_12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "counter[3]"  />
+        <nitem  name = "counter[2]"  />
+        <nitem  name = "counter[1]"  />
+        <nitem  name = "counter[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n13"  />
+        <nitem  name = "n14"  />
+        <nitem  name = "n15"  />
+        <nitem  name = "n16"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mux_13"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "counter[3]"  />
+        <nitem  name = "counter[2]"  />
+        <nitem  name = "counter[1]"  />
+        <nitem  name = "counter[0]"  />
+        <nitem  name = "n13"  />
+        <nitem  name = "n14"  />
+        <nitem  name = "n15"  />
+        <nitem  name = "n16"  />
+        <nitem  name = "n10"  />
+        <nitem  name = "n18"  />
+        <nitem  name = "n19"  />
+        <nitem  name = "n20"  />
+        <nitem  name = "n21"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mux_14"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n18"  />
+        <nitem  name = "n19"  />
+        <nitem  name = "n20"  />
+        <nitem  name = "n21"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "sclear"  />
+        <nitem  name = "counter_3__N_5[3]"  />
+        <nitem  name = "counter_3__N_5[2]"  />
+        <nitem  name = "counter_3__N_5[1]"  />
+        <nitem  name = "counter_3__N_5[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "counter_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "counter_3__N_5[3]"  />
+        <nitem  name = "counter_3__N_5[2]"  />
+        <nitem  name = "counter_3__N_5[1]"  />
+        <nitem  name = "counter_3__N_5[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "counter_3__N_1[3]"  />
+        <nitem  name = "counter_3__N_1[2]"  />
+        <nitem  name = "counter_3__N_1[1]"  />
+        <nitem  name = "counter_3__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "oDFF3_26"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clean_out_N_9"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "clean_out"  />
+        </nets>
+    </instance>
+
+    <instance  name = "clean_out_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clean_out"  />
+        <nitem  name = "iDFF2"  />
+        <nitem  name = "counter[3]"  />
+        <nitem  name = "clean_out_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "clean_out_I_0_27"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clean_out_N_10"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "rst"  />
+        <nitem  name = "clean_out_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "iDFF1_23"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "iDFF1_N_11"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "iDFF1"  />
+        </nets>
+    </instance>
+
+    <!--
+        REG instances in netlist: 4
+    -->
+
+    <regs>
+        <reg  name = "iDFF2_24"  />
+        <reg  name = "counter"  />
+        <reg  name = "oDFF3_26"  />
+        <reg  name = "iDFF1_23"  />
+    </regs>
+
+    <!--
+        Views in design "debounce": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

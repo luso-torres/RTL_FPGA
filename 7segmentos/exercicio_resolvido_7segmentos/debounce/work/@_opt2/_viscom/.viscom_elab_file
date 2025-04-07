@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 344352 work.debounce_tf -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt2 -id 2-d09466e84a28-67f06921-21c-3064 +__design_bin_path+C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/debounce +__betafsm

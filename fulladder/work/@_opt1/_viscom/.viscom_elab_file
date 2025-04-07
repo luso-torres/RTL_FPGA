@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 32768 work.fulladd_tf(fast) -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt1 -id 6-d09466e84a28-67e73133-201-5ee4 +__design_bin_path+C:/FPGAprojects/fulladder +__betafsm

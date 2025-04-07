@@ -1,0 +1,49 @@
+#Start recording tcl command: 4/2/2025 18:45:50
+#Project Location: C:/FPGAprojects/segmentos7; Project name: segmentos7
+prj_project open "C:/FPGAprojects/segmentos7/segmentos7.ldf"
+clear
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "C:/FPGAprojects/segmentos7/mux_nb.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis -forceOne
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "C:/FPGAprojects/segmentos7/hdle_generate_tbdeclaration.tcl"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add -exclude "C:/FPGAprojects/segmentos7/BCDto7SEGMENT.ldc"
+prj_src enable "C:/FPGAprojects/segmentos7/BCDto7SEGMENT.ldc"
+prj_src remove "C:/FPGAprojects/segmentos7/BCDto7SEGMENT.ldc"
+prj_src add "C:/FPGAprojects/segmentos7/BCDto7SEGMENT.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src remove "C:/FPGAprojects/segmentos7/BCDto7SEGMENT.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "C:/FPGAprojects/segmentos7/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mux_nb_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "C:/FPGAprojects/segmentos7/hdle_generate_tbtemplate.tcl"
+prj_src remove "C:/FPGAprojects/segmentos7/mux_nb_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "C:/FPGAprojects/segmentos7/hdle_generate_tbdeclaration.tcl"
+source "C:/FPGAprojects/segmentos7/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mux_nb_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src remove "C:/FPGAprojects/segmentos7/mux_nb_tf.v"
+source "C:/FPGAprojects/segmentos7/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mux_nb_tf.v"
+prj_project save
+#Stop recording: 4/2/2025 21:47:35

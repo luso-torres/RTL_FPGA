@@ -1,0 +1,180 @@
+m255
+K4
+z2
+!s12c _opt2
+Z0 !s99 nomlopt
+Z1 !s12c _opt1
+R0
+R1
+R0
+R1
+R0
+!s12c _opt
+R0
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/FPGAprojects/fulladder
+T_opt
+!s110 1743202951
+VbgLL`o1DEME5`39TU7c==3
+Z3 04 10 4 work fulladd_tf fast 0
+=1-d09466e84a28-67e72a86-2c4-4d94
+R0
+Z4 !s12f OEM25U1 
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2024.2;79
+R2
+T_opt1
+!s110 1743204659
+VUOA_bWbl=?gcIDCQjAE=M0
+R3
+=6-d09466e84a28-67e73133-201-5ee4
+R0
+R4
+R5
+R6
+R7
+Z10 o-quiet -auto_acc_if_foreign -work work +acc
+R8
+n@_opt1
+R9
+R2
+T_opt2
+!s110 1743544113
+V;YHd?^`Zhh1Q=lbeZ?Q_31
+04 10 4 work fourbit_tf fast 0
+=1-d09466e84a28-67ec5f30-341-362c
+R0
+R4
+R5
+R6
+R7
+R10
+R8
+n@_opt2
+R9
+vfourbit
+2C:/FPGAprojects/fulladder/fulladder4bits.v
+Z11 !s110 1743543754
+!i10b 1
+!s100 d0j:YF;aIW5I:Ba;D2H@Y1
+I7VUYP8PNB3_K:DmJU^<PJ3
+R2
+w1743458163
+8C:/FPGAprojects/fulladder/fulladder4bits.v
+FC:/FPGAprojects/fulladder/fulladder4bits.v
+!i122 16
+Z12 L0 1 9
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z15 !s108 1743543754.000000
+!s107 C:/FPGAprojects/fulladder/fulladder4bits.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/fulladder/fulladder4bits.v|
+!i113 0
+Z16 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vfourbit_tf
+2C:/FPGAprojects/fulladder/fourbit_tf.v
+R11
+!i10b 1
+!s100 7TZl57GC7>nOGCI1=TdH90
+IFCg6ZAXG>ich3j8AjZe^l1
+R2
+w1743543417
+8C:/FPGAprojects/fulladder/fourbit_tf.v
+FC:/FPGAprojects/fulladder/fourbit_tf.v
+!i122 13
+L0 18 52
+R13
+R14
+r1
+!s85 0
+31
+R15
+!s107 C:/FPGAprojects/fulladder/fourbit_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/fulladder/fourbit_tf.v|
+!i113 0
+R16
+R8
+vfulladd
+2C:/FPGAprojects/fulladder/fulladder.v
+R11
+!i10b 1
+!s100 >XzRnCdi9KRN6FW2m`DaH1
+IS>2Ob1J1>CJC7Wc_kCi^<3
+R2
+w1743457080
+8C:/FPGAprojects/fulladder/fulladder.v
+FC:/FPGAprojects/fulladder/fulladder.v
+!i122 15
+R12
+R13
+R14
+r1
+!s85 0
+31
+R15
+!s107 C:/FPGAprojects/fulladder/fulladder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/fulladder/fulladder.v|
+!i113 0
+R16
+R8
+vfulladd_tf
+2C:/FPGAprojects/fulladder/fulladd_tf.v
+R11
+!i10b 1
+!s100 PRo^>Vk6cJa5RP@E;>B;93
+IDCBGgDG20h7^U>8SgBWMI2
+R2
+w1743204631
+8C:/FPGAprojects/fulladder/fulladd_tf.v
+FC:/FPGAprojects/fulladder/fulladd_tf.v
+!i122 14
+L0 18 44
+R13
+R14
+r1
+!s85 0
+31
+R15
+!s107 C:/FPGAprojects/fulladder/fulladd_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/fulladder/fulladd_tf.v|
+!i113 0
+R16
+R8
+vhalfadder
+2C:/FPGAprojects/fulladder/halfadder.v
+R11
+!i10b 1
+!s100 haXB]:]CK1T@AjFb<]>;T2
+IdPX@LKnG;h5OI=RY@`gLn2
+R2
+w1743200693
+8C:/FPGAprojects/fulladder/halfadder.v
+FC:/FPGAprojects/fulladder/halfadder.v
+!i122 17
+L0 1 7
+R13
+R14
+r1
+!s85 0
+31
+R15
+!s107 C:/FPGAprojects/fulladder/halfadder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/fulladder/halfadder.v|
+!i113 0
+R16
+R8

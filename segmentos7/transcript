@@ -1,0 +1,29 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vsim -voptargs=+acc work.mux_nb_tf
+# vsim -voptargs="+acc" work.mux_nb_tf 
+# Start time: 21:33:54 on Apr 02,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.mux_nb_tf(fast)
+# Loading work.mux_nb(fast)
+# Loading work.mux_1(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (1) for port 'mux_op'. The port definition is at: C:/FPGAprojects/segmentos7/segmentos7.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /mux_nb_tf/UUT/U1 File: C:/FPGAprojects/segmentos7/mux_nb.v Line: 5
+add wave -position insertpoint sim:/mux_nb_tf/*
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 21:37:14 on Apr 02,2025, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 1

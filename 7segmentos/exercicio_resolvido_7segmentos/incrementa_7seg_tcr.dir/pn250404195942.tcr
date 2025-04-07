@@ -1,0 +1,16 @@
+#Start recording tcl command: 4/4/2025 18:39:07
+#Project Location: C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos; Project name: incrementa_7seg
+C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos
+debounce
+#Start recording tcl command: 4/4/2025 19:59:42
+#Project Location: C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos; Project name: debounce
+prj_project new -name "incrementa_7seg" -impl "impl1" -dev LFE5U-45F-6BG381C -synthesis "lse"
+prj_project save
+prj_src add "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/incrementa_7seg.v"
+prj_src add "C:/FPGAprojects/7segmentos/exercicio_resolvido_7segmentos/decodificador_7_seg.v"
+prj_run Synthesis -impl impl1
+prj_project save
+prj_project close
+prj_project new -name "debounce" -impl "impl1" -dev LFE5U-45F-6BG381C -synthesis "lse"
+prj_project save
+#Stop recording: 4/4/2025 19:59:42

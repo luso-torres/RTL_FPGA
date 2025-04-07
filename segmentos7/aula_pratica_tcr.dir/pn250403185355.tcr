@@ -1,0 +1,6 @@
+#Start recording tcl command: 4/3/2025 18:46:09
+#Project Location: C:/FPGAprojects/segmentos7; Project name: aula_pratica
+prj_project new -name "aula_pratica" -impl "impl1" -dev LFE5U-45F-6BG381C -synthesis "lse"
+prj_project save
+prj_project close
+#Stop recording: 4/3/2025 18:53:55

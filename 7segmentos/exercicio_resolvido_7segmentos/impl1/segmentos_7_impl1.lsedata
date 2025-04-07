@@ -1,0 +1,307 @@
+<top name = "decodificador_7_seg"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "decodificador_7_seg">
+
+    <!--
+        Top Level Pins: 13
+    -->
+
+    <pins>
+        <pitem  name = "entrada[3]"  direction = "in"  />
+        <pitem  name = "entrada[2]"  direction = "in"  />
+        <pitem  name = "entrada[1]"  direction = "in"  />
+        <pitem  name = "entrada[0]"  direction = "in"  />
+        <pitem  name = "dp"  direction = "in"  />
+        <pitem  name = "saida[7]"  direction = "out"  />
+        <pitem  name = "saida[6]"  direction = "out"  />
+        <pitem  name = "saida[5]"  direction = "out"  />
+        <pitem  name = "saida[4]"  direction = "out"  />
+        <pitem  name = "saida[3]"  direction = "out"  />
+        <pitem  name = "saida[2]"  direction = "out"  />
+        <pitem  name = "saida[1]"  direction = "out"  />
+        <pitem  name = "saida[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 7
+    -->
+
+    <instance  name = "entrada_3__I_0_11"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "entrada[3]"  />
+        <nitem  name = "entrada[2]"  />
+        <nitem  name = "entrada[1]"  />
+        <nitem  name = "entrada[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "saida[6]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "entrada_3__I_0_12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "entrada[3]"  />
+        <nitem  name = "entrada[2]"  />
+        <nitem  name = "entrada[1]"  />
+        <nitem  name = "entrada[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "saida[5]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "entrada_3__I_0_13"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "entrada[3]"  />
+        <nitem  name = "entrada[2]"  />
+        <nitem  name = "entrada[1]"  />
+        <nitem  name = "entrada[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "saida[4]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "entrada_3__I_0_14"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "entrada[3]"  />
+        <nitem  name = "entrada[2]"  />
+        <nitem  name = "entrada[1]"  />
+        <nitem  name = "entrada[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "saida[3]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "entrada_3__I_0_15"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "entrada[3]"  />
+        <nitem  name = "entrada[2]"  />
+        <nitem  name = "entrada[1]"  />
+        <nitem  name = "entrada[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "saida[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "entrada_3__I_0_16"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "entrada[3]"  />
+        <nitem  name = "entrada[2]"  />
+        <nitem  name = "entrada[1]"  />
+        <nitem  name = "entrada[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "saida[1]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "entrada_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "entrada[3]"  />
+        <nitem  name = "entrada[2]"  />
+        <nitem  name = "entrada[1]"  />
+        <nitem  name = "entrada[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "saida[0]"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "decodificador_7_seg": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

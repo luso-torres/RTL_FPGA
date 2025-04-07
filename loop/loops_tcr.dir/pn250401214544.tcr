@@ -1,0 +1,11 @@
+#Start recording tcl command: 4/1/2025 20:07:37
+#Project Location: C:/FPGAprojects/loop; Project name: loops
+prj_project new -name "loops" -impl "impl1" -dev LFE5U-45F-6BG381C -synthesis "lse"
+prj_project save
+prj_src add "C:/FPGAprojects/loop/loop.v"
+clear
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+clear
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 4/1/2025 21:45:44

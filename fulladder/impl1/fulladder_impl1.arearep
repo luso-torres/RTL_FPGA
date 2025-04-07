@@ -1,0 +1,52 @@
+----------------------------------------------------------------------
+Report for cell fourbit.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         5          100.0
+                               LUT4         9          100.0
+                                 OB         5          100.0
+                              PFUMX         1          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                            fulladd         1
+                         fulladd_U1         1
+                          halfadder         1
+                       halfadder_U0         1
+                              TOTAL        26
+----------------------------------------------------------------------
+Report for cell fulladd_U1.v1
+Instance Path : U0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         5           55.6
+SUB MODULES
+                       halfadder_U0         1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell halfadder_U0.v1
+Instance Path : U0.U1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4           44.4
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell fulladd.v1
+Instance Path : U1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4           44.4
+                              PFUMX         1          100.0
+SUB MODULES
+                          halfadder         1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell halfadder.v1
+Instance Path : U1.U1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4           44.4
+                              PFUMX         1          100.0
+                              TOTAL         5

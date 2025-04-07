@@ -1,0 +1,429 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Apr 02 21:12:04 2025
+
+
+Command Line:  synthesis -f segmentos7_impl1_lattice.synproj -gui -msgset C:/FPGAprojects/segmentos7/promote.xml 
+
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = mux_nb.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/FPGAprojects/segmentos7 (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p C:/FPGAprojects/segmentos7/impl1 (searchpath added)
+-p C:/FPGAprojects/segmentos7 (searchpath added)
+Verilog design file = C:/FPGAprojects/segmentos7/segmentos7.v
+Verilog design file = C:/FPGAprojects/segmentos7/mux_nb.v
+NGD file = segmentos7_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/fpgaprojects/segmentos7/segmentos7.v. VERI-1482
+Analyzing Verilog file c:/fpgaprojects/segmentos7/mux_nb.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): mux_nb
+INFO - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(1): compiling module mux_nb. VERI-1018
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(2): expression size 24 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/fpgaprojects/segmentos7/segmentos7.v(1): compiling module mux_1. VERI-1018
+WARNING - synthesis: c:/fpgaprojects/segmentos7/segmentos7.v(13): case condition never applies. VERI-1166
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(5): actual bit length 1 differs from formal bit length 24 for port mux_op. VERI-1330
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(9): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(10): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(11): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(12): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(13): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(14): expression size 4 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(25): case condition never applies. VERI-1166
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(26): case condition never applies. VERI-1166
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(27): case condition never applies. VERI-1166
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(28): case condition never applies. VERI-1166
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(29): case condition never applies. VERI-1166
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(30): case condition never applies. VERI-1166
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(31): case condition never applies. VERI-1166
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(32): case condition never applies. VERI-1166
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = mux_nb.
+WARNING - synthesis: c:/fpgaprojects/segmentos7/mux_nb.v(5): Removing unused instance U1. VDB-5034
+WARNING - synthesis: I/O Port sel_op 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[23] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[22] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[21] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[19] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[18] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[17] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[23] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[22] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[21] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[20] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[19] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[18] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[17] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[16] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[12] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[8] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[23] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[22] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[21] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[20] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[19] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[18] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[17] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[16] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[12] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[8] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[0] 's net has no driver and is unused.
+
+
+
+WARNING - synthesis: I/O Port sel_op 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[23] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[22] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[21] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[19] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[18] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[17] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port m_in[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[23] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[22] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[21] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[20] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[19] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[18] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[17] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[16] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[12] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[8] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port a[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[23] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[22] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[21] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[20] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[19] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[18] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[17] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[16] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[15] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[14] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[13] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[12] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[11] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[10] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[9] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[8] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[6] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port b[0] 's net has no driver and is unused.
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: Mapping latch mux_nbout_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in mux_nb_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'sel_op' has no load.
+WARNING - synthesis: input pad net 'sel_op' has no legal load.
+WARNING - synthesis: logical net 'm_in[23]' has no load.
+WARNING - synthesis: input pad net 'm_in[23]' has no legal load.
+WARNING - synthesis: logical net 'm_in[22]' has no load.
+WARNING - synthesis: input pad net 'm_in[22]' has no legal load.
+WARNING - synthesis: logical net 'm_in[21]' has no load.
+WARNING - synthesis: input pad net 'm_in[21]' has no legal load.
+WARNING - synthesis: logical net 'm_in[19]' has no load.
+WARNING - synthesis: input pad net 'm_in[19]' has no legal load.
+WARNING - synthesis: logical net 'm_in[18]' has no load.
+WARNING - synthesis: input pad net 'm_in[18]' has no legal load.
+WARNING - synthesis: logical net 'm_in[17]' has no load.
+WARNING - synthesis: input pad net 'm_in[17]' has no legal load.
+WARNING - synthesis: logical net 'm_in[15]' has no load.
+WARNING - synthesis: input pad net 'm_in[15]' has no legal load.
+WARNING - synthesis: logical net 'm_in[14]' has no load.
+WARNING - synthesis: input pad net 'm_in[14]' has no legal load.
+WARNING - synthesis: logical net 'm_in[13]' has no load.
+WARNING - synthesis: input pad net 'm_in[13]' has no legal load.
+WARNING - synthesis: logical net 'm_in[11]' has no load.
+WARNING - synthesis: input pad net 'm_in[11]' has no legal load.
+WARNING - synthesis: logical net 'm_in[10]' has no load.
+WARNING - synthesis: input pad net 'm_in[10]' has no legal load.
+WARNING - synthesis: logical net 'm_in[9]' has no load.
+WARNING - synthesis: input pad net 'm_in[9]' has no legal load.
+WARNING - synthesis: logical net 'm_in[7]' has no load.
+WARNING - synthesis: input pad net 'm_in[7]' has no legal load.
+WARNING - synthesis: logical net 'm_in[6]' has no load.
+WARNING - synthesis: input pad net 'm_in[6]' has no legal load.
+WARNING - synthesis: logical net 'm_in[5]' has no load.
+WARNING - synthesis: input pad net 'm_in[5]' has no legal load.
+WARNING - synthesis: logical net 'm_in[3]' has no load.
+WARNING - synthesis: input pad net 'm_in[3]' has no legal load.
+WARNING - synthesis: logical net 'm_in[2]' has no load.
+WARNING - synthesis: input pad net 'm_in[2]' has no legal load.
+WARNING - synthesis: logical net 'm_in[1]' has no load.
+WARNING - synthesis: input pad net 'm_in[1]' has no legal load.
+WARNING - synthesis: logical net 'a[23]' has no load.
+WARNING - synthesis: input pad net 'a[23]' has no legal load.
+WARNING - synthesis: logical net 'a[22]' has no load.
+WARNING - synthesis: input pad net 'a[22]' has no legal load.
+WARNING - synthesis: logical net 'a[21]' has no load.
+WARNING - synthesis: input pad net 'a[21]' has no legal load.
+WARNING - synthesis: logical net 'a[20]' has no load.
+WARNING - synthesis: input pad net 'a[20]' has no legal load.
+WARNING - synthesis: logical net 'a[19]' has no load.
+WARNING - synthesis: input pad net 'a[19]' has no legal load.
+WARNING - synthesis: logical net 'a[18]' has no load.
+WARNING - synthesis: input pad net 'a[18]' has no legal load.
+WARNING - synthesis: logical net 'a[17]' has no load.
+WARNING - synthesis: input pad net 'a[17]' has no legal load.
+WARNING - synthesis: logical net 'a[16]' has no load.
+WARNING - synthesis: input pad net 'a[16]' has no legal load.
+WARNING - synthesis: logical net 'a[15]' has no load.
+WARNING - synthesis: input pad net 'a[15]' has no legal load.
+WARNING - synthesis: logical net 'a[14]' has no load.
+WARNING - synthesis: input pad net 'a[14]' has no legal load.
+WARNING - synthesis: logical net 'a[13]' has no load.
+WARNING - synthesis: input pad net 'a[13]' has no legal load.
+WARNING - synthesis: logical net 'a[12]' has no load.
+WARNING - synthesis: input pad net 'a[12]' has no legal load.
+WARNING - synthesis: logical net 'a[11]' has no load.
+WARNING - synthesis: input pad net 'a[11]' has no legal load.
+WARNING - synthesis: logical net 'a[10]' has no load.
+WARNING - synthesis: input pad net 'a[10]' has no legal load.
+WARNING - synthesis: logical net 'a[9]' has no load.
+WARNING - synthesis: input pad net 'a[9]' has no legal load.
+WARNING - synthesis: logical net 'a[8]' has no load.
+WARNING - synthesis: input pad net 'a[8]' has no legal load.
+WARNING - synthesis: logical net 'a[7]' has no load.
+WARNING - synthesis: input pad net 'a[7]' has no legal load.
+WARNING - synthesis: logical net 'a[6]' has no load.
+WARNING - synthesis: input pad net 'a[6]' has no legal load.
+WARNING - synthesis: logical net 'a[5]' has no load.
+WARNING - synthesis: input pad net 'a[5]' has no legal load.
+WARNING - synthesis: logical net 'a[4]' has no load.
+WARNING - synthesis: input pad net 'a[4]' has no legal load.
+WARNING - synthesis: logical net 'a[3]' has no load.
+WARNING - synthesis: input pad net 'a[3]' has no legal load.
+WARNING - synthesis: logical net 'a[2]' has no load.
+WARNING - synthesis: input pad net 'a[2]' has no legal load.
+WARNING - synthesis: logical net 'a[1]' has no load.
+WARNING - synthesis: input pad net 'a[1]' has no legal load.
+WARNING - synthesis: logical net 'a[0]' has no load.
+WARNING - synthesis: input pad net 'a[0]' has no legal load.
+WARNING - synthesis: logical net 'b[23]' has no load.
+WARNING - synthesis: input pad net 'b[23]' has no legal load.
+WARNING - synthesis: logical net 'b[22]' has no load.
+WARNING - synthesis: input pad net 'b[22]' has no legal load.
+WARNING - synthesis: logical net 'b[21]' has no load.
+WARNING - synthesis: input pad net 'b[21]' has no legal load.
+WARNING - synthesis: logical net 'b[20]' has no load.
+WARNING - synthesis: input pad net 'b[20]' has no legal load.
+WARNING - synthesis: logical net 'b[19]' has no load.
+WARNING - synthesis: input pad net 'b[19]' has no legal load.
+WARNING - synthesis: logical net 'b[18]' has no load.
+WARNING - synthesis: input pad net 'b[18]' has no legal load.
+WARNING - synthesis: logical net 'b[17]' has no load.
+WARNING - synthesis: input pad net 'b[17]' has no legal load.
+WARNING - synthesis: logical net 'b[16]' has no load.
+WARNING - synthesis: input pad net 'b[16]' has no legal load.
+WARNING - synthesis: logical net 'b[15]' has no load.
+WARNING - synthesis: input pad net 'b[15]' has no legal load.
+WARNING - synthesis: logical net 'b[14]' has no load.
+WARNING - synthesis: input pad net 'b[14]' has no legal load.
+WARNING - synthesis: logical net 'b[13]' has no load.
+WARNING - synthesis: input pad net 'b[13]' has no legal load.
+WARNING - synthesis: logical net 'b[12]' has no load.
+WARNING - synthesis: input pad net 'b[12]' has no legal load.
+WARNING - synthesis: logical net 'b[11]' has no load.
+WARNING - synthesis: input pad net 'b[11]' has no legal load.
+WARNING - synthesis: logical net 'b[10]' has no load.
+WARNING - synthesis: input pad net 'b[10]' has no legal load.
+WARNING - synthesis: logical net 'b[9]' has no load.
+WARNING - synthesis: input pad net 'b[9]' has no legal load.
+WARNING - synthesis: logical net 'b[8]' has no load.
+WARNING - synthesis: input pad net 'b[8]' has no legal load.
+WARNING - synthesis: logical net 'b[7]' has no load.
+WARNING - synthesis: input pad net 'b[7]' has no legal load.
+WARNING - synthesis: logical net 'b[6]' has no load.
+WARNING - synthesis: input pad net 'b[6]' has no legal load.
+WARNING - synthesis: logical net 'b[5]' has no load.
+WARNING - synthesis: input pad net 'b[5]' has no legal load.
+WARNING - synthesis: logical net 'b[4]' has no load.
+WARNING - synthesis: input pad net 'b[4]' has no legal load.
+WARNING - synthesis: logical net 'b[3]' has no load.
+WARNING - synthesis: input pad net 'b[3]' has no legal load.
+WARNING - synthesis: logical net 'b[2]' has no load.
+WARNING - synthesis: input pad net 'b[2]' has no legal load.
+WARNING - synthesis: logical net 'b[1]' has no load.
+WARNING - synthesis: input pad net 'b[1]' has no legal load.
+WARNING - synthesis: logical net 'b[0]' has no load.
+WARNING - synthesis: input pad net 'b[0]' has no legal load.
+WARNING - synthesis: DRC complete with 134 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file segmentos7_impl1.ngd.
+
+################### Begin Area Report (mux_nb)######################
+Number of register bits => 0 of 44439 (0 % )
+GSR => 1
+IB => 9
+LUT4 => 6
+OB => 7
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : f_seg_c, loads : 4
+  Net : sel_nibble_c_0, loads : 3
+  Net : sel_nibble_c_2, loads : 2
+  Net : mux_nbout, loads : 2
+  Net : m_in_c_20, loads : 1
+  Net : m_in_c_16, loads : 1
+  Net : m_in_c_12, loads : 1
+  Net : m_in_c_8, loads : 1
+  Net : m_in_c_4, loads : 1
+  Net : m_in_c_0, loads : 1
+################### End Clock Report ##################
+
+Peak Memory Usage: 87.523  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.453  secs
+--------------------------------------------------------------

@@ -1,0 +1,200 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Apr 04 20:09:32 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     debounce
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            33 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.778ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             iDFF1_23  (from clk_c +)
+   Destination:    FD1S3IX    D              counter__i0  (to clk_c +)
+
+   Delay:                   4.397ns  (15.9% logic, 84.1% route), 3 logic levels.
+
+ Constraint Details:
+
+      4.397ns data_path iDFF1_23 to counter__i0 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.778ns
+
+ Path Details: iDFF1_23 to counter__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              iDFF1_23 (from clk_c)
+Route         3   e 1.339                                  iDFF1
+LUT4        ---     0.166              A to Z              i1_3_lut_rep_2
+Route         5   e 1.341                                  n150
+LUT4        ---     0.166              A to Z              i89_2_lut_3_lut
+Route         1   e 1.020                                  n11
+                  --------
+                    4.397  (15.9% logic, 84.1% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 0.778ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             iDFF2_24  (from clk_c +)
+   Destination:    FD1S3IX    D              counter__i0  (to clk_c +)
+
+   Delay:                   4.397ns  (15.9% logic, 84.1% route), 3 logic levels.
+
+ Constraint Details:
+
+      4.397ns data_path iDFF2_24 to counter__i0 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.778ns
+
+ Path Details: iDFF2_24 to counter__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              iDFF2_24 (from clk_c)
+Route         3   e 1.339                                  iDFF2
+LUT4        ---     0.166              C to Z              i1_3_lut_rep_2
+Route         5   e 1.341                                  n150
+LUT4        ---     0.166              A to Z              i89_2_lut_3_lut
+Route         1   e 1.020                                  n11
+                  --------
+                    4.397  (15.9% logic, 84.1% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 1.912ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             counter__i3  (from clk_c +)
+   Destination:    FD1P3IX    SP             counter__i3  (to clk_c +)
+
+   Delay:                   3.167ns  (16.8% logic, 83.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.167ns data_path counter__i3 to counter__i3 meets
+      5.000ns delay constraint less
+     -0.079ns LCE_S requirement (totaling 5.079ns) by 1.912ns
+
+ Path Details: counter__i3 to counter__i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              counter__i3 (from clk_c)
+Route         4   e 1.397                                  counter[3]
+LUT4        ---     0.166              D to Z              i1_2_lut_rep_1_4_lut
+Route         3   e 1.239                                  clk_c_enable_4
+                  --------
+                    3.167  (16.8% logic, 83.2% route), 2 logic levels.
+
+Report: 4.222 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     4.222 ns|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  33 paths, 14 nets, and 39 connections (83.0% coverage)
+
+
+Peak memory: 91758592 bytes, TRCE: 114688 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

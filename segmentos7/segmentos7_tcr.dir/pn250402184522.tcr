@@ -1,0 +1,13 @@
+#Start recording tcl command: 4/2/2025 18:30:22
+#Project Location: C:/FPGAprojects/segmentos7; Project name: segmentos7
+C:/FPGAprojects/loop
+loops
+#Start recording tcl command: 4/2/2025 18:45:22
+#Project Location: C:/FPGAprojects/loop; Project name: loops
+prj_project new -name "segmentos7" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "C:/FPGAprojects/segmentos7/segmentos7.v"
+prj_project save
+prj_project close
+prj_project open "C:/FPGAprojects/loop/loops.ldf"
+#Stop recording: 4/2/2025 18:45:22

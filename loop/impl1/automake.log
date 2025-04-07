@@ -1,0 +1,157 @@
+
+synthesis -f "loops_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Apr 01 20:27:48 2025
+
+
+Command Line:  synthesis -f loops_impl1_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA381.
+The -d option is LFE5U-45F.
+Using package CABGA381.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA381
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = loop.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/FPGAprojects/loop (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p C:/FPGAprojects/loop/impl1 (searchpath added)
+-p C:/FPGAprojects/loop (searchpath added)
+Verilog design file = C:/FPGAprojects/loop/loop.v
+NGD file = loops_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/fpgaprojects/loop/loop.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): loop
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/fpgaprojects/loop/loop.v(1): " arg1="loop" arg2="c:/fpgaprojects/loop/loop.v" arg3="1"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/fpgaprojects/loop/loop.v(19): " arg1="f" arg2="c:/fpgaprojects/loop/loop.v" arg3="19"  />
+    <postMsg mid="35901221" type="Warning" dynamic="2" navigation="2" arg0="c:/fpgaprojects/loop/loop.v(20): " arg1="ab" arg2="c:/fpgaprojects/loop/loop.v" arg3="20"  />
+Last elaborated design is loop()
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = loop.
+
+
+
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="f[0]"  />
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in loop_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="f[0]" arg2="f[0]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="f[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="GND_net" arg2="GND_net"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="3"  />
+
+Design Results:
+     16 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file loops_impl1.ngd.
+
+################### Begin Area Report (loop)######################
+Number of register bits => 0 of 44457 (0 % )
+GSR => 1
+IB => 7
+LUT4 => 3
+OB => 1
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : a_c, loads : 1
+  Net : b_c, loads : 1
+  Net : c_c, loads : 1
+  Net : ctrl_c, loads : 1
+  Net : f_c_3, loads : 1
+  Net : f_c_2, loads : 1
+  Net : f_c_1, loads : 1
+  Net : d_c, loads : 1
+  Net : ab, loads : 1
+  Net : cmux, loads : 1
+################### End Clock Report ##################
+
+Peak Memory Usage: 86.605  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.422  secs
+--------------------------------------------------------------
