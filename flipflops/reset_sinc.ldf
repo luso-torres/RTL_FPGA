@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="reset_sinc" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="reset_sinc"/>
+        <Source name="reset_sinc.v" type="Verilog" type_short="Verilog">
+            <Options top_module="reset_sinc"/>
+        </Source>
+        <Source name="reset_sinc_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="reset_sinc.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="reset_sinc/reset_sinc.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="reset_sinc1.sty"/>
+</BaliProject>

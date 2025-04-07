@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGAprojects/flipflops
+vreset_sinc
+2C:/FPGAprojects/flipflops/reset_sinc.v
+Z1 !s110 1744066298
+!i10b 1
+!s100 59WQLL8VSPiTOeiJa0cbj0
+Ija@oQYoh1=KOKM4OEh3HA1
+R0
+w1744064692
+8C:/FPGAprojects/flipflops/reset_sinc.v
+FC:/FPGAprojects/flipflops/reset_sinc.v
+!i122 2
+L0 1 36
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z4 !s108 1744066298.000000
+!s107 C:/FPGAprojects/flipflops/reset_sinc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/flipflops/reset_sinc.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vreset_sinc_tf
+2C:/FPGAprojects/flipflops/reset_sinc_tf.v
+R1
+!i10b 1
+!s100 1a<8iM?eSEMjQKn4eHUnH3
+IQGfMUfJVG?X^S1R322]ak2
+R0
+w1744066193
+8C:/FPGAprojects/flipflops/reset_sinc_tf.v
+FC:/FPGAprojects/flipflops/reset_sinc_tf.v
+!i122 3
+L0 18 40
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/FPGAprojects/flipflops/reset_sinc_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/FPGAprojects/flipflops/reset_sinc_tf.v|
+!i113 0
+R5
+R6

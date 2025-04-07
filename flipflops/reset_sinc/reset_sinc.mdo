@@ -1,0 +1,17 @@
+if {![file exists "C:/FPGAprojects/flipflops/reset_sinc/reset_sinc.mpf"]} { 
+	project new "C:/FPGAprojects/flipflops/reset_sinc" reset_sinc
+	project addfile "C:/FPGAprojects/flipflops/reset_sinc.v"
+	project addfile "C:/FPGAprojects/flipflops/reset_sinc_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/FPGAprojects/flipflops  -work work  "C:/FPGAprojects/flipflops/reset_sinc.v"
+	vlog  +incdir+C:/FPGAprojects/flipflops  -work work  "C:/FPGAprojects/flipflops/reset_sinc_tf.v"
+} else {
+	project open "C:/FPGAprojects/flipflops/reset_sinc/reset_sinc"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  reset_sinc_tf
+view wave
+add wave /*
+run 1000ns

@@ -1,0 +1,129 @@
+<top name = "reset_sinc"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "clk_A"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "reset_sinc">
+
+    <!--
+        Top Level Pins: 3
+    -->
+
+    <pins>
+        <pitem  name = "clk_A"  direction = "in"  />
+        <pitem  name = "nrst_in"  direction = "in"  />
+        <pitem  name = "Q_nrst"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 4
+    -->
+
+    <instance  name = "Q_FF2_9"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Q_FF1"  />
+        <nitem  name = "clk_A"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "nrst_in"  />
+        <nitem  name = "Q_FF2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Q_FF3_10"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Q_FF2"  />
+        <nitem  name = "clk_A"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "nrst_in"  />
+        <nitem  name = "Q_FF3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Q_aux_11"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "clk_A"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "Q_FF3"  />
+        <nitem  name = "Q_nrst"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Q_FF1_8"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "clk_A"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "nrst_in"  />
+        <nitem  name = "Q_FF1"  />
+        </nets>
+    </instance>
+
+    <!--
+        REG instances in netlist: 4
+    -->
+
+    <regs>
+        <reg  name = "Q_FF2_9"  />
+        <reg  name = "Q_FF3_10"  />
+        <reg  name = "Q_aux_11"  />
+        <reg  name = "Q_FF1_8"  />
+    </regs>
+
+    <!--
+        Views in design "reset_sinc": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 32768 work.reset_sinc_tf -quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc -allow_unnamed -o _opt -id 1-d09466e84a28-67f45756-31f-5dc0 +__design_bin_path+C:/FPGAprojects/flipflops/reset_sinc +__betafsm

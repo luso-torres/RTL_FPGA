@@ -1,0 +1,21 @@
+#Start recording tcl command: 4/7/2025 18:38:47
+#Project Location: C:/FPGAprojects/flipflops; Project name: reset_sinc
+prj_project new -name "reset_sinc" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "C:/FPGAprojects/flipflops/reset_sinc.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "C:/FPGAprojects/flipflops/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "reset_sinc_tf.v"
+prj_src add "C:/FPGAprojects/flipflops/reset_sinc/reset_sinc.spf"
+prj_src add "C:/FPGAprojects/flipflops/reset_sinc/reset_sinc.spf"
+#Stop recording: 4/7/2025 19:58:57
