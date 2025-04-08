@@ -1,0 +1,125 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/loop_generators/sim_for_generator_fulladder
+T_opt
+!s110 1744152369
+VMi<k^^<K=O^Ve_1GXBCzz3
+04 12 4 work my_design_tf fast 0
+=6-ac675dfda9e9-67f5a731-b4-5190
+R1
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vfull_adder
+2D:/RTL_FPGA/loop_generators/full_adder.v
+Z4 !s110 1744152362
+!i10b 1
+!s100 zVeQTj?WaF8ZE6<EzkQ>02
+IkF9_S:h]DZ`;^lnbZZLWa1
+R2
+w1744149981
+8D:/RTL_FPGA/loop_generators/full_adder.v
+FD:/RTL_FPGA/loop_generators/full_adder.v
+!i122 14
+L0 1 9
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z7 !s108 1744152362.000000
+!s107 D:/RTL_FPGA/loop_generators/full_adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/loop_generators/full_adder.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vhalfadder
+2D:/RTL_FPGA/loop_generators/halfadder.v
+R4
+!i10b 1
+!s100 haXB]:]CK1T@AjFb<]>;T2
+Ilbnnh6Bm6^?AK5:6<`LL31
+R2
+w1744149885
+8D:/RTL_FPGA/loop_generators/halfadder.v
+FD:/RTL_FPGA/loop_generators/halfadder.v
+!i122 13
+L0 1 7
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/loop_generators/halfadder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/loop_generators/halfadder.v|
+!i113 0
+R8
+R3
+vmy_design
+2D:/RTL_FPGA/loop_generators/for_generator.v
+R4
+!i10b 1
+!s100 D1Vn7Y5dZj_7LWfdDSH1U2
+IRhOWC>`nQRiiGe];`;W7K2
+R2
+w1744152240
+8D:/RTL_FPGA/loop_generators/for_generator.v
+FD:/RTL_FPGA/loop_generators/for_generator.v
+!i122 15
+L0 7 19
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/loop_generators/for_generator.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/loop_generators/for_generator.v|
+!i113 0
+R8
+R3
+vmy_design_tf
+2D:/RTL_FPGA/loop_generators/my_design_tf.v
+!s110 1744152363
+!i10b 1
+!s100 H>@2LVL_T@R`=:=iAB1BJ1
+IiHQHS<XX:6[7_:fGbHS^j2
+R2
+w1744152355
+8D:/RTL_FPGA/loop_generators/my_design_tf.v
+FD:/RTL_FPGA/loop_generators/my_design_tf.v
+!i122 16
+L0 18 36
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/loop_generators/my_design_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/loop_generators/my_design_tf.v|
+!i113 0
+R8
+R3

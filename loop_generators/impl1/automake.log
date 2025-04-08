@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Apr 08 19:19:39 2025
+Tue Apr 08 19:44:05 2025
 
 
 Command Line:  synthesis -f for_generate_impl1_lattice.synproj -gui 
@@ -97,151 +97,8 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
 Top-level module name = my_design.
-Rejecting instance in MergeCSE due to signature collison : genblk1[4].u1
-Rejecting instance in MergeCSE due to signature collison : genblk1[2].u1
-Rejecting instance in MergeCSE due to signature collison : genblk1[1].u1
 
 
-
-Combinational loop found : 1
-
-	Net carry_c_1 
-
-	Instance \genblk1[1].u1/n_carry1_I_0 
-
-	Net \genblk1[1].u1/n_carry2 
-
-	Instance i137 
-
-Combinational loop found : 2
-
-	Net carry_c_2 
-
-	Instance \genblk1[2].u1/n_carry1_I_0 
-
-	Net \genblk1[2].u1/n_carry2 
-
-	Instance i144 
-
-Combinational loop found : 3
-
-	Net carry_c_3 
-
-	Instance \genblk1[3].u1/n_carry1_I_0 
-
-	Net \genblk1[3].u1/n_carry2 
-
-	Instance i151 
-
-Combinational loop found : 4
-
-	Net carry_c_4 
-
-	Instance \genblk1[4].u1/n_carry1_I_0 
-
-	Net \genblk1[4].u1/n_carry2 
-
-	Instance i158 
-
-Combinational loop found : 5
-
-	Net carry_c_5 
-
-	Instance \genblk1[5].u1/n_carry1_I_0 
-
-	Net \genblk1[5].u1/n_carry2 
-
-	Instance i165 
-
-Combinational loop found : 6
-
-	Net carry_c_6 
-
-	Instance \genblk1[6].u1/n_carry1_I_0 
-
-	Net \genblk1[6].u1/n_carry2 
-
-	Instance i172 
-
-Combinational loop found : 7
-
-	Net carry_c_7 
-
-	Instance \genblk1[7].u1/n_carry1_I_0 
-
-	Net \genblk1[7].u1/n_carry2 
-
-	Instance i179 
-
-Combinational loop found : 8
-
-	Net carry_c_8 
-
-	Instance \genblk1[8].u1/n_carry1_I_0 
-
-	Net \genblk1[8].u1/n_carry2 
-
-	Instance i186 
-
-Combinational loop found : 9
-
-	Net carry_c_9 
-
-	Instance \genblk1[9].u1/n_carry1_I_0 
-
-	Net \genblk1[9].u1/n_carry2 
-
-	Instance i193 
-
-Combinational loop found : 10
-
-	Net carry_c_10 
-
-	Instance \genblk1[10].u1/n_carry1_I_0 
-
-	Net \genblk1[10].u1/n_carry2 
-
-	Instance i200 
-
-Combinational loop found : 11
-
-	Net carry_c_11 
-
-	Instance \genblk1[11].u1/n_carry1_I_0 
-
-	Net \genblk1[11].u1/n_carry2 
-
-	Instance i207 
-
-Combinational loop found : 12
-
-	Net carry_c_12 
-
-	Instance \genblk1[12].u1/n_carry1_I_0 
-
-	Net \genblk1[12].u1/n_carry2 
-
-	Instance i214 
-
-Combinational loop found : 13
-
-	Net carry_c_13 
-
-	Instance \genblk1[13].u1/n_carry1_I_0 
-
-	Net \genblk1[13].u1/n_carry2 
-
-	Instance i221 
-
-Combinational loop found : 14
-
-	Net carry_c_14 
-
-	Instance \genblk1[14].u1/n_carry1_I_0 
-
-	Net \genblk1[14].u1/n_carry2 
-
-	Instance i228 
 
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
@@ -260,7 +117,7 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
 
 Design Results:
-     95 blocks expanded
+     48 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file for_generate_impl1.ngd.
@@ -268,9 +125,9 @@ Writing NGD file for_generate_impl1.ngd.
 ################### Begin Area Report (my_design)######################
 Number of register bits => 0 of 44439 (0 % )
 GSR => 1
-IB => 31
-LUT4 => 30
-OB => 30
+IB => 17
+LUT4 => 18
+OB => 9
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -281,20 +138,20 @@ Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : a_c_14, loads : 2
-  Net : a_c_13, loads : 2
-  Net : a_c_12, loads : 2
-  Net : a_c_11, loads : 2
-  Net : a_c_10, loads : 2
-  Net : a_c_9, loads : 2
-  Net : a_c_8, loads : 2
+  Net : a_c_3, loads : 3
+  Net : a_c_2, loads : 3
+  Net : b_c_3, loads : 3
+  Net : b_c_2, loads : 3
   Net : a_c_7, loads : 2
   Net : a_c_6, loads : 2
   Net : a_c_5, loads : 2
+  Net : a_c_4, loads : 2
+  Net : a_c_1, loads : 2
+  Net : a_c_0, loads : 2
 ################### End Clock Report ##################
 
-Peak Memory Usage: 88.871  MB
+Peak Memory Usage: 88.145  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.016  secs
+Elapsed CPU time for LSE flow : 0.813  secs
 --------------------------------------------------------------

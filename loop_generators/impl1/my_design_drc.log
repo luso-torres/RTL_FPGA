@@ -11,7 +11,7 @@ WARNING - synthesis: logical net 'GND_net' has no load.
 WARNING - synthesis: DRC complete with 1 warnings.
 
 Design Results:
-     95 blocks expanded
+     48 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file for_generate_impl1.ngd.

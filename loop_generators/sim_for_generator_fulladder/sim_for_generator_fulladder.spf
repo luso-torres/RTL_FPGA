@@ -1,0 +1,10 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="sim_for_generator_fulladder" simType="QuestaSim">
+    <Source worklib="work" path="halfadder.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="full_adder.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="for_generator.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="my_design_tf.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5u"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="my_design_tf"/>
+</BaliSimProject>

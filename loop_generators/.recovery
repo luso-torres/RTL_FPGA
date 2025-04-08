@@ -18,6 +18,9 @@
         <Source name="for_generate.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
+        <Source name="sim_for_generator_fulladder/sim_for_generator_fulladder.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
     </Implementation>
     <Strategy name="Strategy1" file="for_generate1.sty"/>
 </BaliProject>

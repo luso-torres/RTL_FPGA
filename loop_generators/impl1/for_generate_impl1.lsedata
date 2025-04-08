@@ -18,17 +18,10 @@
 <unit name = "my_design">
 
     <!--
-        Top Level Pins: 61
+        Top Level Pins: 26
     -->
 
     <pins>
-        <pitem  name = "a[14]"  direction = "in"  />
-        <pitem  name = "a[13]"  direction = "in"  />
-        <pitem  name = "a[12]"  direction = "in"  />
-        <pitem  name = "a[11]"  direction = "in"  />
-        <pitem  name = "a[10]"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
         <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
@@ -37,13 +30,6 @@
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[14]"  direction = "in"  />
-        <pitem  name = "b[13]"  direction = "in"  />
-        <pitem  name = "b[12]"  direction = "in"  />
-        <pitem  name = "b[11]"  direction = "in"  />
-        <pitem  name = "b[10]"  direction = "in"  />
-        <pitem  name = "b[9]"  direction = "in"  />
-        <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
         <pitem  name = "b[6]"  direction = "in"  />
         <pitem  name = "b[5]"  direction = "in"  />
@@ -53,13 +39,6 @@
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
         <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "sum[14]"  direction = "out"  />
-        <pitem  name = "sum[13]"  direction = "out"  />
-        <pitem  name = "sum[12]"  direction = "out"  />
-        <pitem  name = "sum[11]"  direction = "out"  />
-        <pitem  name = "sum[10]"  direction = "out"  />
-        <pitem  name = "sum[9]"  direction = "out"  />
-        <pitem  name = "sum[8]"  direction = "out"  />
         <pitem  name = "sum[7]"  direction = "out"  />
         <pitem  name = "sum[6]"  direction = "out"  />
         <pitem  name = "sum[5]"  direction = "out"  />
@@ -68,25 +47,11 @@
         <pitem  name = "sum[2]"  direction = "out"  />
         <pitem  name = "sum[1]"  direction = "out"  />
         <pitem  name = "sum[0]"  direction = "out"  />
-        <pitem  name = "carry[14]"  direction = "out"  />
-        <pitem  name = "carry[13]"  direction = "out"  />
-        <pitem  name = "carry[12]"  direction = "out"  />
-        <pitem  name = "carry[11]"  direction = "out"  />
-        <pitem  name = "carry[10]"  direction = "out"  />
-        <pitem  name = "carry[9]"  direction = "out"  />
-        <pitem  name = "carry[8]"  direction = "out"  />
-        <pitem  name = "carry[7]"  direction = "out"  />
-        <pitem  name = "carry[6]"  direction = "out"  />
-        <pitem  name = "carry[5]"  direction = "out"  />
-        <pitem  name = "carry[4]"  direction = "out"  />
-        <pitem  name = "carry[3]"  direction = "out"  />
-        <pitem  name = "carry[2]"  direction = "out"  />
-        <pitem  name = "carry[1]"  direction = "out"  />
-        <pitem  name = "carry[0]"  direction = "out"  />
+        <pitem  name = "carry"  direction = "out"  />
     </pins>
 
     <!--
-        Instances in netlist: 92
+        Instances in netlist: 50
     -->
 
     <instance  name = "u0/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
@@ -111,7 +76,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "carry[0]"  />
+        <nitem  name = "w_carry[0]"  />
         <nitem  name = "u0/n_carry1"  />
         <nitem  name = "u0/n_carry2"  />
         </nets>
@@ -229,104 +194,6 @@
         </nets>
     </instance>
 
-    <instance  name = "genblk1[8].u1/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[8]"  />
-        <nitem  name = "b[8]"  />
-        <nitem  name = "genblk1[8].u1/n_sum"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[9].u1/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[9]"  />
-        <nitem  name = "b[9]"  />
-        <nitem  name = "genblk1[9].u1/n_sum"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[10].u1/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[10]"  />
-        <nitem  name = "b[10]"  />
-        <nitem  name = "genblk1[10].u1/n_sum"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[11].u1/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[11]"  />
-        <nitem  name = "b[11]"  />
-        <nitem  name = "genblk1[11].u1/n_sum"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[12].u1/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[12]"  />
-        <nitem  name = "b[12]"  />
-        <nitem  name = "genblk1[12].u1/n_sum"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[13].u1/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[13]"  />
-        <nitem  name = "b[13]"  />
-        <nitem  name = "genblk1[13].u1/n_sum"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[14].u1/U1/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[14]"  />
-        <nitem  name = "b[14]"  />
-        <nitem  name = "genblk1[14].u1/n_sum"  />
-        </nets>
-    </instance>
-
     <instance  name = "genblk1[2].u1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
@@ -336,7 +203,7 @@
 
         <nets>
         <nitem  name = "genblk1[2].u1/n_sum"  />
-        <nitem  name = "carry[2]"  />
+        <nitem  name = "w_carry[1]"  />
         <nitem  name = "sum[2]"  />
         </nets>
     </instance>
@@ -349,7 +216,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "carry[1]"  />
+        <nitem  name = "w_carry[1]"  />
         <nitem  name = "genblk1[1].u1/n_carry1"  />
         <nitem  name = "genblk1[1].u1/n_carry2"  />
         </nets>
@@ -364,7 +231,7 @@
 
         <nets>
         <nitem  name = "genblk1[3].u1/n_sum"  />
-        <nitem  name = "carry[3]"  />
+        <nitem  name = "w_carry[2]"  />
         <nitem  name = "sum[3]"  />
         </nets>
     </instance>
@@ -377,7 +244,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "carry[2]"  />
+        <nitem  name = "w_carry[2]"  />
         <nitem  name = "genblk1[2].u1/n_carry1"  />
         <nitem  name = "genblk1[2].u1/n_carry2"  />
         </nets>
@@ -392,7 +259,7 @@
 
         <nets>
         <nitem  name = "genblk1[4].u1/n_sum"  />
-        <nitem  name = "carry[4]"  />
+        <nitem  name = "w_carry[3]"  />
         <nitem  name = "sum[4]"  />
         </nets>
     </instance>
@@ -405,7 +272,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "carry[3]"  />
+        <nitem  name = "w_carry[3]"  />
         <nitem  name = "genblk1[3].u1/n_carry1"  />
         <nitem  name = "genblk1[3].u1/n_carry2"  />
         </nets>
@@ -420,7 +287,7 @@
 
         <nets>
         <nitem  name = "genblk1[5].u1/n_sum"  />
-        <nitem  name = "carry[5]"  />
+        <nitem  name = "w_carry[4]"  />
         <nitem  name = "sum[5]"  />
         </nets>
     </instance>
@@ -433,7 +300,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "carry[4]"  />
+        <nitem  name = "w_carry[4]"  />
         <nitem  name = "genblk1[4].u1/n_carry1"  />
         <nitem  name = "genblk1[4].u1/n_carry2"  />
         </nets>
@@ -448,7 +315,7 @@
 
         <nets>
         <nitem  name = "genblk1[6].u1/n_sum"  />
-        <nitem  name = "carry[6]"  />
+        <nitem  name = "w_carry[5]"  />
         <nitem  name = "sum[6]"  />
         </nets>
     </instance>
@@ -461,7 +328,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "carry[5]"  />
+        <nitem  name = "w_carry[5]"  />
         <nitem  name = "genblk1[5].u1/n_carry1"  />
         <nitem  name = "genblk1[5].u1/n_carry2"  />
         </nets>
@@ -476,7 +343,7 @@
 
         <nets>
         <nitem  name = "genblk1[7].u1/n_sum"  />
-        <nitem  name = "carry[7]"  />
+        <nitem  name = "w_carry[6]"  />
         <nitem  name = "sum[7]"  />
         </nets>
     </instance>
@@ -489,205 +356,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "carry[6]"  />
+        <nitem  name = "w_carry[6]"  />
         <nitem  name = "genblk1[6].u1/n_carry1"  />
         <nitem  name = "genblk1[6].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[8].u1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[8].u1/n_sum"  />
-        <nitem  name = "carry[8]"  />
-        <nitem  name = "sum[8]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[7].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "carry[7]"  />
-        <nitem  name = "genblk1[7].u1/n_carry1"  />
-        <nitem  name = "genblk1[7].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[9].u1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[9].u1/n_sum"  />
-        <nitem  name = "carry[9]"  />
-        <nitem  name = "sum[9]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[8].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "carry[8]"  />
-        <nitem  name = "genblk1[8].u1/n_carry1"  />
-        <nitem  name = "genblk1[8].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[10].u1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[10].u1/n_sum"  />
-        <nitem  name = "carry[10]"  />
-        <nitem  name = "sum[10]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[9].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "carry[9]"  />
-        <nitem  name = "genblk1[9].u1/n_carry1"  />
-        <nitem  name = "genblk1[9].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[11].u1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[11].u1/n_sum"  />
-        <nitem  name = "carry[11]"  />
-        <nitem  name = "sum[11]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[10].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "carry[10]"  />
-        <nitem  name = "genblk1[10].u1/n_carry1"  />
-        <nitem  name = "genblk1[10].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[12].u1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[12].u1/n_sum"  />
-        <nitem  name = "carry[12]"  />
-        <nitem  name = "sum[12]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[11].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "carry[11]"  />
-        <nitem  name = "genblk1[11].u1/n_carry1"  />
-        <nitem  name = "genblk1[11].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[13].u1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[13].u1/n_sum"  />
-        <nitem  name = "carry[13]"  />
-        <nitem  name = "sum[13]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[12].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "carry[12]"  />
-        <nitem  name = "genblk1[12].u1/n_carry1"  />
-        <nitem  name = "genblk1[12].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[14].u1/U2/a_I_0_8"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[14].u1/n_sum"  />
-        <nitem  name = "carry[14]"  />
-        <nitem  name = "sum[14]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[13].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "carry[13]"  />
-        <nitem  name = "genblk1[13].u1/n_carry1"  />
-        <nitem  name = "genblk1[13].u1/n_carry2"  />
         </nets>
     </instance>
 
@@ -700,12 +371,12 @@
 
         <nets>
         <nitem  name = "genblk1[1].u1/n_sum"  />
-        <nitem  name = "carry[1]"  />
+        <nitem  name = "w_carry[0]"  />
         <nitem  name = "sum[1]"  />
         </nets>
     </instance>
 
-    <instance  name = "genblk1[14].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "genblk1[7].u1/n_carry1_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "o"  direction = "out"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -713,9 +384,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "carry[14]"  />
-        <nitem  name = "genblk1[14].u1/n_carry1"  />
-        <nitem  name = "genblk1[14].u1/n_carry2"  />
+        <nitem  name = "carry"  />
+        <nitem  name = "genblk1[7].u1/n_carry1"  />
+        <nitem  name = "genblk1[7].u1/n_carry2"  />
         </nets>
     </instance>
 
@@ -728,7 +399,7 @@
 
         <nets>
         <nitem  name = "genblk1[2].u1/n_sum"  />
-        <nitem  name = "carry[2]"  />
+        <nitem  name = "w_carry[1]"  />
         <nitem  name = "genblk1[2].u1/n_carry2"  />
         </nets>
     </instance>
@@ -742,7 +413,7 @@
 
         <nets>
         <nitem  name = "genblk1[3].u1/n_sum"  />
-        <nitem  name = "carry[3]"  />
+        <nitem  name = "w_carry[2]"  />
         <nitem  name = "genblk1[3].u1/n_carry2"  />
         </nets>
     </instance>
@@ -756,7 +427,7 @@
 
         <nets>
         <nitem  name = "genblk1[4].u1/n_sum"  />
-        <nitem  name = "carry[4]"  />
+        <nitem  name = "w_carry[3]"  />
         <nitem  name = "genblk1[4].u1/n_carry2"  />
         </nets>
     </instance>
@@ -770,7 +441,7 @@
 
         <nets>
         <nitem  name = "genblk1[5].u1/n_sum"  />
-        <nitem  name = "carry[5]"  />
+        <nitem  name = "w_carry[4]"  />
         <nitem  name = "genblk1[5].u1/n_carry2"  />
         </nets>
     </instance>
@@ -784,7 +455,7 @@
 
         <nets>
         <nitem  name = "genblk1[6].u1/n_sum"  />
-        <nitem  name = "carry[6]"  />
+        <nitem  name = "w_carry[5]"  />
         <nitem  name = "genblk1[6].u1/n_carry2"  />
         </nets>
     </instance>
@@ -798,106 +469,8 @@
 
         <nets>
         <nitem  name = "genblk1[7].u1/n_sum"  />
-        <nitem  name = "carry[7]"  />
+        <nitem  name = "w_carry[6]"  />
         <nitem  name = "genblk1[7].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[8].u1/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[8].u1/n_sum"  />
-        <nitem  name = "carry[8]"  />
-        <nitem  name = "genblk1[8].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[9].u1/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[9].u1/n_sum"  />
-        <nitem  name = "carry[9]"  />
-        <nitem  name = "genblk1[9].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[10].u1/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[10].u1/n_sum"  />
-        <nitem  name = "carry[10]"  />
-        <nitem  name = "genblk1[10].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[11].u1/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[11].u1/n_sum"  />
-        <nitem  name = "carry[11]"  />
-        <nitem  name = "genblk1[11].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[12].u1/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[12].u1/n_sum"  />
-        <nitem  name = "carry[12]"  />
-        <nitem  name = "genblk1[12].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[13].u1/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[13].u1/n_sum"  />
-        <nitem  name = "carry[13]"  />
-        <nitem  name = "genblk1[13].u1/n_carry2"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[14].u1/U2/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "genblk1[14].u1/n_sum"  />
-        <nitem  name = "carry[14]"  />
-        <nitem  name = "genblk1[14].u1/n_carry2"  />
         </nets>
     </instance>
 
@@ -910,7 +483,7 @@
 
         <nets>
         <nitem  name = "genblk1[1].u1/n_sum"  />
-        <nitem  name = "carry[1]"  />
+        <nitem  name = "w_carry[0]"  />
         <nitem  name = "genblk1[1].u1/n_carry2"  />
         </nets>
     </instance>
@@ -1041,111 +614,8 @@
         </nets>
     </instance>
 
-    <instance  name = "genblk1[8].u1/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[8]"  />
-        <nitem  name = "b[8]"  />
-        <nitem  name = "genblk1[8].u1/n_carry1"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[9].u1/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[9]"  />
-        <nitem  name = "b[9]"  />
-        <nitem  name = "genblk1[9].u1/n_carry1"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[10].u1/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[10]"  />
-        <nitem  name = "b[10]"  />
-        <nitem  name = "genblk1[10].u1/n_carry1"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[11].u1/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[11]"  />
-        <nitem  name = "b[11]"  />
-        <nitem  name = "genblk1[11].u1/n_carry1"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[12].u1/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[12]"  />
-        <nitem  name = "b[12]"  />
-        <nitem  name = "genblk1[12].u1/n_carry1"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[13].u1/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[13]"  />
-        <nitem  name = "b[13]"  />
-        <nitem  name = "genblk1[13].u1/n_carry1"  />
-        </nets>
-    </instance>
-
-    <instance  name = "genblk1[14].u1/U1/a_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "a[14]"  />
-        <nitem  name = "b[14]"  />
-        <nitem  name = "genblk1[14].u1/n_carry1"  />
-        </nets>
-    </instance>
-
     <instance  name = "U1"  />
     <instance  name = "U2"  />
-    <instance  name = "genblk1[10].u1"  />
-    <instance  name = "genblk1[11].u1"  />
-    <instance  name = "genblk1[12].u1"  />
-    <instance  name = "genblk1[13].u1"  />
-    <instance  name = "genblk1[14].u1"  />
     <instance  name = "genblk1[1].u1"  />
     <instance  name = "genblk1[2].u1"  />
     <instance  name = "genblk1[3].u1"  />
@@ -1153,8 +623,6 @@
     <instance  name = "genblk1[5].u1"  />
     <instance  name = "genblk1[6].u1"  />
     <instance  name = "genblk1[7].u1"  />
-    <instance  name = "genblk1[8].u1"  />
-    <instance  name = "genblk1[9].u1"  />
     <instance  name = "u0"  />
     <!--
         Views in design "my_design": 2

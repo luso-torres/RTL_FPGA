@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/loop_generators/sim_for_generator_fulladder/sim_for_generator_fulladder.mpf"]} { 
+	project new "D:/RTL_FPGA/loop_generators/sim_for_generator_fulladder" sim_for_generator_fulladder
+	project addfile "D:/RTL_FPGA/loop_generators/halfadder.v"
+	project addfile "D:/RTL_FPGA/loop_generators/full_adder.v"
+	project addfile "D:/RTL_FPGA/loop_generators/for_generator.v"
+	project addfile "D:/RTL_FPGA/loop_generators/my_design_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/loop_generators  -work work  "D:/RTL_FPGA/loop_generators/halfadder.v"
+	vlog  +incdir+D:/RTL_FPGA/loop_generators  -work work  "D:/RTL_FPGA/loop_generators/full_adder.v"
+	vlog  +incdir+D:/RTL_FPGA/loop_generators  -work work  "D:/RTL_FPGA/loop_generators/for_generator.v"
+	vlog  +incdir+D:/RTL_FPGA/loop_generators  -work work  "D:/RTL_FPGA/loop_generators/my_design_tf.v"
+} else {
+	project open "D:/RTL_FPGA/loop_generators/sim_for_generator_fulladder/sim_for_generator_fulladder"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  my_design_tf
+view wave
+add wave /*
+run 1000ns

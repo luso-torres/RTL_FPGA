@@ -1,7 +1,7 @@
 
 
 // TOOL:     vlog2tf
-// DATE:     Tue Apr 08 19:07:22 2025
+// DATE:     Tue Apr 08 19:42:00 2025
  
 // TITLE:    Lattice Semiconductor Corporation
 // MODULE:   my_design
@@ -18,13 +18,14 @@
 module my_design_tf();
 
 // Inputs
-    reg [3:0] a;
-    reg [3:0] b;
+    reg [7:0] a;
+    reg [7:0] b;
+    reg cin;
 
 
 // Outputs
-    wire [3:0] sum;
-    wire [3:0] carry;
+    wire [7:0] sum;
+    wire carry;
 
 
 // Bidirs
@@ -35,6 +36,7 @@ module my_design_tf();
     my_design UUT (
         .a(a), 
         .b(b), 
+        .cin(cin), 
         .sum(sum), 
         .carry(carry)
         );
@@ -43,8 +45,9 @@ module my_design_tf();
 // Initialize Inputs
 // You can add your stimulus here
     initial begin
-            a = 0;
-            b = 0;
+            a = 30;
+            b = 230;
+            cin = 0;
     end
 
 endmodule // my_design_tf

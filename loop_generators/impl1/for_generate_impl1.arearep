@@ -1,45 +1,27 @@
 ----------------------------------------------------------------------
 Report for cell my_design.TECH
 Register bits:  0 of 44439 (0.000%)
-I/O cells:      61
+I/O cells:      26
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 GSR         1          100.0
-                                 IB        31          100.0
-                               LUT4        30          100.0
-                                 OB        30          100.0
+                                 IB        17          100.0
+                               LUT4        18          100.0
+                                 OB         9          100.0
+                        VERIFIC_PWR         1          100.0
 SUB MODULES
                          full_adder         1
-                     full_adder_U22         1
-                     full_adder_U23         1
-                     full_adder_U24         1
-                     full_adder_U25         1
-                     full_adder_U26         1
-                     full_adder_U27         1
-                     full_adder_U28         1
-                     full_adder_U29         1
-                     full_adder_U30         1
-                     full_adder_U31         1
-                     full_adder_U32         1
-                     full_adder_U33         1
-                     full_adder_U34         1
-                     full_adder_U35         1
+                     full_adder_U10         1
+                     full_adder_U11         1
+                     full_adder_U12         1
+                     full_adder_U13         1
+                     full_adder_U14         1
+                     full_adder_U15         1
+                     full_adder_U16         1
                           halfadder         1
                        halfadder_U0         1
                        halfadder_U1         1
-                      halfadder_U10         1
-                      halfadder_U11         1
-                      halfadder_U12         1
-                      halfadder_U13         1
-                      halfadder_U14         1
-                      halfadder_U15         1
-                      halfadder_U16         1
-                      halfadder_U17         1
-                      halfadder_U18         1
-                      halfadder_U19         1
                        halfadder_U2         1
-                      halfadder_U20         1
-                      halfadder_U21         1
                        halfadder_U3         1
                        halfadder_U4         1
                        halfadder_U5         1
@@ -47,308 +29,156 @@ SUB MODULES
                        halfadder_U7         1
                        halfadder_U8         1
                        halfadder_U9         1
-                              TOTAL       130
+                              TOTAL        65
 ----------------------------------------------------------------------
-Report for cell full_adder_U35.v1
-Instance Path : genblk1[10].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                      halfadder_U20         1
-                      halfadder_U21         1
-                              TOTAL         4
-----------------------------------------------------------------------
-Report for cell halfadder_U20.v1
-Instance Path : genblk1[10].u1.U2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell halfadder_U21.v1
-Instance Path : genblk1[10].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell full_adder_U29.v1
-Instance Path : genblk1[2].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                      halfadder_U10         1
-                              TOTAL         3
-----------------------------------------------------------------------
-Report for cell halfadder_U10.v1
-Instance Path : genblk1[2].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-                              TOTAL         2
-----------------------------------------------------------------------
-Report for cell full_adder_U30.v1
-Instance Path : genblk1[1].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                      halfadder_U11         1
-                              TOTAL         3
-----------------------------------------------------------------------
-Report for cell halfadder_U11.v1
-Instance Path : genblk1[1].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-                              TOTAL         2
-----------------------------------------------------------------------
-Report for cell full_adder_U26.v1
+Report for cell full_adder_U12.v1
 Instance Path : genblk1[5].u1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                       halfadder_U7         1
-                              TOTAL         3
-----------------------------------------------------------------------
-Report for cell halfadder_U7.v1
-Instance Path : genblk1[5].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-                              TOTAL         2
-----------------------------------------------------------------------
-Report for cell full_adder_U31.v1
-Instance Path : genblk1[14].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                      halfadder_U12         1
-                      halfadder_U13         1
-                              TOTAL         4
-----------------------------------------------------------------------
-Report for cell halfadder_U12.v1
-Instance Path : genblk1[14].u1.U2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell halfadder_U13.v1
-Instance Path : genblk1[14].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell full_adder_U34.v1
-Instance Path : genblk1[11].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                      halfadder_U18         1
-                      halfadder_U19         1
-                              TOTAL         4
-----------------------------------------------------------------------
-Report for cell halfadder_U18.v1
-Instance Path : genblk1[11].u1.U2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell halfadder_U19.v1
-Instance Path : genblk1[11].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell full_adder_U22.v1
-Instance Path : genblk1[9].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                       halfadder_U1         1
-                       halfadder_U2         1
-                              TOTAL         4
-----------------------------------------------------------------------
-Report for cell halfadder_U1.v1
-Instance Path : genblk1[9].u1.U2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell halfadder_U2.v1
-Instance Path : genblk1[9].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell full_adder_U24.v1
-Instance Path : genblk1[7].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                       halfadder_U5         1
-                              TOTAL         3
-----------------------------------------------------------------------
-Report for cell halfadder_U5.v1
-Instance Path : genblk1[7].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-                              TOTAL         2
-----------------------------------------------------------------------
-Report for cell full_adder_U23.v1
-Instance Path : genblk1[8].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         2           11.1
 SUB MODULES
                        halfadder_U3         1
                        halfadder_U4         1
                               TOTAL         4
 ----------------------------------------------------------------------
 Report for cell halfadder_U3.v1
-Instance Path : genblk1[8].u1.U2
+Instance Path : genblk1[5].u1.U2
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         1            3.3
+                               LUT4         1            5.6
                               TOTAL         1
 ----------------------------------------------------------------------
 Report for cell halfadder_U4.v1
-Instance Path : genblk1[8].u1.U1
+Instance Path : genblk1[5].u1.U1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         1            3.3
+                               LUT4         1            5.6
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell full_adder_U33.v1
-Instance Path : genblk1[12].u1
+Report for cell full_adder_U16.v1
+Instance Path : genblk1[1].u1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         2           11.1
 SUB MODULES
-                      halfadder_U16         1
-                      halfadder_U17         1
-                              TOTAL         4
-----------------------------------------------------------------------
-Report for cell halfadder_U16.v1
-Instance Path : genblk1[12].u1.U2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell halfadder_U17.v1
-Instance Path : genblk1[12].u1.U1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell full_adder_U25.v1
-Instance Path : genblk1[6].u1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            6.7
-SUB MODULES
-                       halfadder_U6         1
+                       halfadder_U9         1
                               TOTAL         3
 ----------------------------------------------------------------------
-Report for cell halfadder_U6.v1
-Instance Path : genblk1[6].u1.U1
+Report for cell halfadder_U9.v1
+Instance Path : genblk1[1].u1.U1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         2           11.1
                               TOTAL         2
 ----------------------------------------------------------------------
-Report for cell full_adder_U27.v1
+Report for cell full_adder_U13.v1
 Instance Path : genblk1[4].u1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         2           11.1
 SUB MODULES
-                       halfadder_U8         1
+                       halfadder_U5         1
                               TOTAL         3
 ----------------------------------------------------------------------
-Report for cell halfadder_U8.v1
+Report for cell halfadder_U5.v1
 Instance Path : genblk1[4].u1.U1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         2           11.1
                               TOTAL         2
 ----------------------------------------------------------------------
 Report for cell full_adder.v1
 Instance Path : u0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         2           11.1
 SUB MODULES
                           halfadder         1
-                       halfadder_U0         1
-                              TOTAL         4
+                              TOTAL         3
 ----------------------------------------------------------------------
 Report for cell halfadder.v1
-Instance Path : u0.U2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
-----------------------------------------------------------------------
-Report for cell halfadder_U0.v1
 Instance Path : u0.U1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         1            3.3
-                              TOTAL         1
+                               LUT4         2           11.1
+                              TOTAL         2
 ----------------------------------------------------------------------
-Report for cell full_adder_U32.v1
-Instance Path : genblk1[13].u1
+Report for cell full_adder_U15.v1
+Instance Path : genblk1[2].u1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         3           16.7
 SUB MODULES
-                      halfadder_U14         1
-                      halfadder_U15         1
+                       halfadder_U7         1
+                       halfadder_U8         1
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell halfadder_U7.v1
+Instance Path : genblk1[2].u1.U2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            5.6
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell halfadder_U8.v1
+Instance Path : genblk1[2].u1.U1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           11.1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell full_adder_U11.v1
+Instance Path : genblk1[6].u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           11.1
+SUB MODULES
+                       halfadder_U1         1
+                       halfadder_U2         1
                               TOTAL         4
 ----------------------------------------------------------------------
-Report for cell halfadder_U14.v1
-Instance Path : genblk1[13].u1.U2
+Report for cell halfadder_U1.v1
+Instance Path : genblk1[6].u1.U2
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         1            3.3
+                               LUT4         1            5.6
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell halfadder_U15.v1
-Instance Path : genblk1[13].u1.U1
+Report for cell halfadder_U2.v1
+Instance Path : genblk1[6].u1.U1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         1            3.3
+                               LUT4         1            5.6
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell full_adder_U28.v1
+Report for cell full_adder_U14.v1
 Instance Path : genblk1[3].u1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         3           16.7
 SUB MODULES
-                       halfadder_U9         1
-                              TOTAL         3
+                       halfadder_U6         1
+                              TOTAL         4
 ----------------------------------------------------------------------
-Report for cell halfadder_U9.v1
+Report for cell halfadder_U6.v1
 Instance Path : genblk1[3].u1.U1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2            6.7
+                               LUT4         3           16.7
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell full_adder_U10.v1
+Instance Path : genblk1[7].u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           11.1
+SUB MODULES
+                       halfadder_U0         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell halfadder_U0.v1
+Instance Path : genblk1[7].u1.U1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           11.1
                               TOTAL         2

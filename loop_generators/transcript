@@ -1,0 +1,131 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/loop_generators/sim_for_generator_fulladder/sim_for_generator_fulladder.mdo}
+# Loading project sim_for_generator_fulladder
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:33:26 on Apr 08,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/loop_generators" -work work D:/RTL_FPGA/loop_generators/halfadder.v 
+# -- Compiling module halfadder
+# 
+# Top level modules:
+# 	halfadder
+# End time: 19:33:26 on Apr 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:33:26 on Apr 08,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/loop_generators" -work work D:/RTL_FPGA/loop_generators/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 19:33:26 on Apr 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:33:26 on Apr 08,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/loop_generators" -work work D:/RTL_FPGA/loop_generators/for_generator.v 
+# -- Compiling module my_design
+# 
+# Top level modules:
+# 	my_design
+# End time: 19:33:26 on Apr 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:33:26 on Apr 08,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/loop_generators" -work work D:/RTL_FPGA/loop_generators/my_design_tf.v 
+# -- Compiling module my_design_tf
+# 
+# Top level modules:
+# 	my_design_tf
+# End time: 19:33:26 on Apr 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u my_design_tf 
+# Start time: 19:33:27 on Apr 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.my_design_tf(fast)
+# Loading work.my_design(fast)
+# Loading work.full_adder(fast)
+# Loading work.halfadder(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.my_design_tf(fast)
+# Loading work.my_design(fast)
+# Loading work.full_adder(fast)
+# Loading work.halfadder(fast)
+run
+# Break key hit
+# Compile of my_design_tf.v was successful.
+# Compile of halfadder.v was successful.
+# Compile of full_adder.v was successful.
+# Compile of for_generator.v was successful.
+# Compile of my_design_tf.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.my_design_tf(fast)
+# Loading work.my_design(fast)
+# Loading work.full_adder(fast)
+# Loading work.halfadder(fast)
+run
+# Causality operation skipped due to absence of debug database file
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.my_design_tf(fast)
+# Loading work.my_design(fast)
+# Loading work.full_adder(fast)
+# Loading work.halfadder(fast)
+run
+# Compile of halfadder.v was successful.
+# Compile of full_adder.v was successful.
+# Compile of for_generator.v was successful.
+# Compile of my_design_tf.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.my_design_tf(fast)
+# Loading work.my_design(fast)
+# Loading work.full_adder(fast)
+# Loading work.halfadder(fast)
+run
+# Compile of halfadder.v was successful.
+# Compile of full_adder.v was successful.
+# Compile of for_generator.v was successful.
+# Compile of my_design_tf.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.my_design_tf(fast)
+# Loading work.my_design(fast)
+# Loading work.full_adder(fast)
+# Loading work.halfadder(fast)
+run

@@ -1,0 +1,22 @@
+D:/RTL_FPGA/loop_generators/halfadder.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/loop_generators/halfadder.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module halfadder
+
+Top level modules:
+	halfadder
+
+} {} {}} D:/RTL_FPGA/loop_generators/for_generator.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/loop_generators/for_generator.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module my_design
+
+Top level modules:
+	my_design
+
+} {} {}} D:/RTL_FPGA/loop_generators/full_adder.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/loop_generators/full_adder.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module full_adder
+
+Top level modules:
+	full_adder
+
+} {} {}}
