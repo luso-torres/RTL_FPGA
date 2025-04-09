@@ -5,6 +5,13 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	halfadder
 
+} {} {}} D:/RTL_FPGA/loop_generators/my_design_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/loop_generators/my_design_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module my_design_tf
+
+Top level modules:
+	my_design_tf
+
 } {} {}} D:/RTL_FPGA/loop_generators/for_generator.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/loop_generators/for_generator.v
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module my_design

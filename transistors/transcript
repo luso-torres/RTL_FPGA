@@ -1,0 +1,50 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/transistors/sim_transistor_not/sim_transistor_not.mdo}
+# Loading project sim_transistor_not
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:24:25 on Apr 09,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/transistors" -work work D:/RTL_FPGA/transistors/primitives_ex.v 
+# -- Compiling module not_switch
+# 
+# Top level modules:
+# 	not_switch
+# End time: 19:24:25 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:24:25 on Apr 09,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/transistors" -work work D:/RTL_FPGA/transistors/not_switch_tf.v 
+# -- Compiling module not_switch_tf
+# 
+# Top level modules:
+# 	not_switch_tf
+# End time: 19:24:25 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u not_switch_tf 
+# Start time: 19:24:25 on Apr 09,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.not_switch_tf(fast)
+# Loading work.not_switch(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+run
+run
+# Causality operation skipped due to absence of debug database file
+# Compile of primitives_ex.v was successful.
+# Compile of not_switch_tf.v was successful.
+# 2 compiles, 0 failed with no errors.
+run

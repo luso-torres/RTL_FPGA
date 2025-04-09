@@ -1,0 +1,28 @@
+#Start recording tcl command: 4/8/2025 18:58:57
+#Project Location: D:/RTL_FPGA/loop_generators; Project name: for_generate
+prj_project new -name "for_generate" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/loop_generators/for_generator.v"
+prj_src add "D:/RTL_FPGA/loop_generators/full_adder.v"
+prj_src add "D:/RTL_FPGA/loop_generators/halfadder.v"
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/loop_generators/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "my_design_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_src add "D:/RTL_FPGA/loop_generators/sim_for_generator_fulladder/sim_for_generator_fulladder.spf"
+source "D:/RTL_FPGA/loop_generators/hdle_generate_tbtemplate.tcl"
+prj_src remove "D:/RTL_FPGA/loop_generators/my_design_tf.v"
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/loop_generators/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "my_design_tf.v"
+prj_src add "D:/RTL_FPGA/loop_generators/sim_for_generator_fulladder/sim_for_generator_fulladder.spf"
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/loop_generators/hdle_generate_tbtemplate.tcl"
+prj_run Synthesis -impl impl1
+#Stop recording: 4/9/2025 08:02:08

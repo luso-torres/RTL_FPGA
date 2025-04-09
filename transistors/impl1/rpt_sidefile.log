@@ -1,0 +1,22 @@
+
+################### Begin Area Report (not_switch)######################
+Number of register bits => 0 of 44439 (0 % )
+GSR => 1
+IB => 1
+OB => 1
+VERIFIC_NMOS => 1
+VERIFIC_PMOS => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : a_c, loads : 2
+  Net : s_c, loads : 1
+  Net : s, loads : 0
+################### End Clock Report ##################

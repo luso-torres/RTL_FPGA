@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/transistors/sim_transistor_not/sim_transistor_not.mpf"]} { 
+	project new "D:/RTL_FPGA/transistors/sim_transistor_not" sim_transistor_not
+	project addfile "D:/RTL_FPGA/transistors/primitives_ex.v"
+	project addfile "D:/RTL_FPGA/transistors/not_switch_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/transistors  -work work  "D:/RTL_FPGA/transistors/primitives_ex.v"
+	vlog  +incdir+D:/RTL_FPGA/transistors  -work work  "D:/RTL_FPGA/transistors/not_switch_tf.v"
+} else {
+	project open "D:/RTL_FPGA/transistors/sim_transistor_not/sim_transistor_not"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  not_switch_tf
+view wave
+add wave /*
+run 1000ns

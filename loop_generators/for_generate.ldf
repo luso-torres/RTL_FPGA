@@ -2,8 +2,23 @@
 <BaliProject version="3.2" title="for_generate" device="LFE5U-45F-6BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options/>
+        <Options def_top="my_design"/>
+        <Source name="for_generator.v" type="Verilog" type_short="Verilog">
+            <Options top_module="my_design"/>
+        </Source>
+        <Source name="full_adder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="halfadder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="my_design_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
         <Source name="for_generate.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_for_generator_fulladder/sim_for_generator_fulladder.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
     </Implementation>

@@ -129,3 +129,5 @@ restart
 # Loading work.full_adder(fast)
 # Loading work.halfadder(fast)
 run
+# End time: 08:01:48 on Apr 09,2025, Elapsed time: 12:28:21
+# Errors: 0, Warnings: 2
