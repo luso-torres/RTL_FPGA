@@ -13,38 +13,52 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# do {D:/RTL_FPGA/transistors/sim_transistor_not/sim_transistor_not.mdo}
-# Loading project sim_transistor_not
+# do {D:/RTL_FPGA/transistors/sim_and_gate_transistor/sim_and_gate_transistor.mdo}
+# Loading project sim_and_gate_transistor
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 19:24:25 on Apr 09,2025
+# Start time: 19:34:34 on Apr 09,2025
 # vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/transistors" -work work D:/RTL_FPGA/transistors/primitives_ex.v 
 # -- Compiling module not_switch
 # 
 # Top level modules:
 # 	not_switch
-# End time: 19:24:25 on Apr 09,2025, Elapsed time: 0:00:00
+# End time: 19:34:34 on Apr 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 19:24:25 on Apr 09,2025
+# Start time: 19:34:34 on Apr 09,2025
 # vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/transistors" -work work D:/RTL_FPGA/transistors/not_switch_tf.v 
 # -- Compiling module not_switch_tf
 # 
 # Top level modules:
 # 	not_switch_tf
-# End time: 19:24:25 on Apr 09,2025, Elapsed time: 0:00:00
+# End time: 19:34:34 on Apr 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u not_switch_tf 
-# Start time: 19:24:25 on Apr 09,2025
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:34:34 on Apr 09,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/transistors" -work work D:/RTL_FPGA/transistors/and_gate_transistor.v 
+# -- Compiling module and_gate_primitives
+# 
+# Top level modules:
+# 	and_gate_primitives
+# End time: 19:34:34 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:34:34 on Apr 09,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/transistors" -work work D:/RTL_FPGA/transistors/and_gate_primitives_tf.v 
+# -- Compiling module and_gate_primitives_tf
+# 
+# Top level modules:
+# 	and_gate_primitives_tf
+# End time: 19:34:34 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u and_gate_primitives_tf 
+# Start time: 19:34:34 on Apr 09,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.not_switch_tf(fast)
+# Loading work.and_gate_primitives_tf(fast)
+# Loading work.and_gate_primitives(fast)
 # Loading work.not_switch(fast)
 # .main_pane.wave.interior.cs.body.pw.wf
 run
-run
 # Causality operation skipped due to absence of debug database file
-# Compile of primitives_ex.v was successful.
-# Compile of not_switch_tf.v was successful.
-# 2 compiles, 0 failed with no errors.
-run

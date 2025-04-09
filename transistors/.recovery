@@ -2,11 +2,20 @@
 <BaliProject version="3.2" title="transistors" device="LFE5U-45F-6BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="not_switch"/>
+        <Options def_top="and_gate_primitives"/>
         <Source name="primitives_ex.v" type="Verilog" type_short="Verilog">
-            <Options top_module="not_switch"/>
+            <Options/>
         </Source>
         <Source name="not_switch_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="and_gate_transistor.v" type="Verilog" type_short="Verilog">
+            <Options top_module="and_gate_primitives"/>
+        </Source>
+        <Source name="and_gate_primitives_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="sim_and_gate_transistor/sim_and_gate_transistor.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
         <Source name="sim_primitives_transistors/sim_primitives_transistors.spf" type="Simulation Project File" type_short="SPF">

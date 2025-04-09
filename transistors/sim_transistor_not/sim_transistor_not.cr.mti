@@ -5,6 +5,13 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	not_switch_tf
 
+} {} {}} D:/RTL_FPGA/transistors/primitives_ex.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/transistors/primitives_ex.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module not_switch
+
+Top level modules:
+	not_switch
+
 } {} {}} D:/RTL_FPGA/transistors/transistors.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/transistors/transistors.v
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module transistors
