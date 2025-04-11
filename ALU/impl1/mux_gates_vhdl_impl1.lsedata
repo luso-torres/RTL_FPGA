@@ -1,0 +1,100 @@
+<top name = "mux_gates"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "mux_gates">
+
+    <!--
+        Top Level Pins: 4
+    -->
+
+    <pins>
+        <pitem  name = "in1"  direction = "in"  />
+        <pitem  name = "in2"  direction = "in"  />
+        <pitem  name = "sel"  direction = "in"  />
+        <pitem  name = "x"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 4
+    -->
+
+    <instance  name = "in2_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "in2"  />
+        <nitem  name = "sel"  />
+        <nitem  name = "out_and1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "sel_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "sel"  />
+        <nitem  name = "sel_N_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "in1_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "in1"  />
+        <nitem  name = "sel_N_2"  />
+        <nitem  name = "out_and2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "out_and1_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "out_and1"  />
+        <nitem  name = "out_and2"  />
+        <nitem  name = "x"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "mux_gates": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

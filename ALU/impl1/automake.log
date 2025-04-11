@@ -1,5 +1,5 @@
 
-synthesis -f "operations_impl1_lattice.synproj"
+synthesis -f "mux_gates_vhdl_impl1_lattice.synproj"
 synthesis:  version Diamond (64-bit) 3.14.0.75.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Apr 11 16:09:35 2025
+Fri Apr 11 20:26:33 2025
 
 
-Command Line:  synthesis -f operations_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f mux_gates_vhdl_impl1_lattice.synproj -gui 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -38,7 +38,7 @@ Using performance grade 6.
 
     <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
 Optimization goal = Timing
-Top-level module name = alu_controller.
+Top-level module name = mux_gates.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -64,13 +64,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/RTL_FPGA/ALU (searchpath added)
 -p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
 -p D:/RTL_FPGA/ALU/impl1 (searchpath added)
 -p D:/RTL_FPGA/ALU (searchpath added)
-Verilog design file = D:/RTL_FPGA/ALU/operations.v
-Verilog design file = D:/RTL_FPGA/ALU/controller_mod.v
-NGD file = operations_impl1.ngd
+VHDL library = work
+VHDL design file = D:/RTL_FPGA/ALU/mux_gates.vhd
+NGD file = mux_gates_vhdl_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
 Hardtimer checking is enabled (default). The -dt option is not used.
@@ -80,52 +79,32 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/rtl_fpga/alu/operations.v. VERI-1482
-Analyzing Verilog file d:/rtl_fpga/alu/controller_mod.v. VERI-1482
-Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
-Top module name (Verilog): alu_controller
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/alu/controller_mod.v(1): " arg1="alu_controller" arg2="d:/rtl_fpga/alu/controller_mod.v" arg3="1"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/alu/operations.v(1): " arg1="alu" arg2="d:/rtl_fpga/alu/operations.v" arg3="1"  />
-    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/alu/controller_mod.v(18): " arg1="next_state[1]" arg2="d:/rtl_fpga/alu/controller_mod.v" arg3="18"  />
-Last elaborated design is alu_controller()
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/RTL_FPGA/ALU/impl1"  />
+Analyzing VHDL file d:/rtl_fpga/alu/mux_gates.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/alu/mux_gates.vhd(4): " arg1="mux_gates" arg2="d:/rtl_fpga/alu/mux_gates.vhd" arg3="4"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/alu/mux_gates.vhd(9): " arg1="behavioral" arg2="d:/rtl_fpga/alu/mux_gates.vhd" arg3="9"  />
+unit mux_gates is not yet analyzed. VHDL-1485
+unit mux_gates is not yet analyzed. VHDL-1485
+d:/rtl_fpga/alu/mux_gates.vhd(4): executing mux_gates(behavioral)
+
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/alu/mux_gates.vhd(7): " arg1="mux_gates" arg2="behavioral" arg3="d:/rtl_fpga/alu/mux_gates.vhd" arg4="7"  />
+Top module name (VHDL): mux_gates
+Last elaborated design is mux_gates(behavioral)
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
-Top-level module name = alu_controller.
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="start"  />
-######## Missing driver on net next_state[1]. Patching with GND.
-######## Missing driver on net next_state[0]. Patching with GND.
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="state"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="state"  />
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/alu/controller_mod.v(68): " arg1="done_20" arg2="d:/rtl_fpga/alu/controller_mod.v" arg3="68"  />
+Top-level module name = mux_gates.
 
 
 
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="start"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="A[7]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="A[6]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="A[5]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="A[4]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="A[3]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="A[2]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="A[1]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="A[0]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="B[7]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="B[6]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="B[5]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="B[4]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="B[3]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="B[2]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="B[1]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="B[0]"  />
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
-Results of NGD DRC are available in alu_controller_drc.log.
+Results of NGD DRC are available in mux_gates_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -134,80 +113,40 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 
 Running DRC...
 
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="start" arg2="start"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="start"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="A[7]" arg2="A[7]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="A[7]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="A[6]" arg2="A[6]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="A[6]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="A[5]" arg2="A[5]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="A[5]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="A[4]" arg2="A[4]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="A[4]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="A[3]" arg2="A[3]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="A[3]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="A[2]" arg2="A[2]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="A[2]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="A[1]" arg2="A[1]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="A[1]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="A[0]" arg2="A[0]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="A[0]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="B[7]" arg2="B[7]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="B[7]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="B[6]" arg2="B[6]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="B[6]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="B[5]" arg2="B[5]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="B[5]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="B[4]" arg2="B[4]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="B[4]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="B[3]" arg2="B[3]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="B[3]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="B[2]" arg2="B[2]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="B[2]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="B[1]" arg2="B[1]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="B[1]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="B[0]" arg2="B[0]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="B[0]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="reset_c" arg2="reset_c"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="clk_c" arg2="clk_c"  />
-    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="36"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="GND_net" arg2="GND_net"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
 
 Design Results:
-     15 blocks expanded
+      9 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
-Writing NGD file operations_impl1.ngd.
+Writing NGD file mux_gates_vhdl_impl1.ngd.
 
-################### Begin Area Report (alu_controller)######################
+################### Begin Area Report (mux_gates)######################
 Number of register bits => 0 of 44439 (0 % )
 GSR => 1
-IB => 2
-OB => 9
+IB => 3
+LUT4 => 1
+OB => 1
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 1
-  Net : clk_c, loads : 0
+Number of Clocks: 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : reset_c, loads : 0
-  Net : done, loads : 0
-  Net : C[0], loads : 0
-  Net : C[1], loads : 0
-  Net : C[2], loads : 0
-  Net : C[3], loads : 0
-  Net : C[4], loads : 0
-  Net : C[5], loads : 0
-  Net : C[6], loads : 0
-  Net : C[7], loads : 0
+  Net : in1_c, loads : 1
+  Net : in2_c, loads : 1
+  Net : sel_c, loads : 1
+  Net : x_c, loads : 1
+  Net : x, loads : 0
 ################### End Clock Report ##################
 
-Peak Memory Usage: 87.004  MB
+Peak Memory Usage: 104.449  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.938  secs
+Elapsed CPU time for LSE flow : 1.938  secs
 --------------------------------------------------------------

@@ -1,0 +1,112 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/ALU/sim_mux_gates
+T_opt
+!s110 1744414662
+V7F4Y63V9XQ;8iEoGahZmn0
+04 9 8 work testbench behavior 1
+=1-ac675dfda9e9-67f9a7c3-2c9-7e84
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+R1
+Emux_gates
+Z2 w1744413984
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R1
+Z5 8D:/RTL_FPGA/ALU/mux_gates.vhd
+Z6 FD:/RTL_FPGA/ALU/mux_gates.vhd
+l0
+L4 1
+VMN=SCkCj615HK^?kWQ1iR3
+!s100 QahF4RD8IdFLKGdAd@?J`2
+Z7 OL;C;2024.2;79
+32
+Z8 !s110 1744414666
+!i10b 1
+Z9 !s108 1744414665.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/ALU/mux_gates.vhd|
+Z11 !s107 D:/RTL_FPGA/ALU/mux_gates.vhd|
+!i113 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+DEx4 work 9 mux_gates 0 22 MN=SCkCj615HK^?kWQ1iR3
+!i122 2
+l13
+L9 11
+VA]=e1J8[7IAODzFie>O?d3
+!s100 :UgU:NNFGh[WO`[0eoF0^1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etestbench
+Z14 w1744414476
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 3
+R1
+Z16 8D:/RTL_FPGA/ALU/mux_gates_tb.vhd
+Z17 FD:/RTL_FPGA/ALU/mux_gates_tb.vhd
+l0
+L25 1
+Vgm8YD_]RPCYaW82e9_J933
+!s100 DhX?P9?7<f<Q6;Ocez<e>3
+R7
+32
+R8
+!i10b 1
+Z18 !s108 1744414666.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/ALU/mux_gates_tb.vhd|
+Z20 !s107 D:/RTL_FPGA/ALU/mux_gates_tb.vhd|
+!i113 0
+R12
+R13
+Abehavior
+R15
+R3
+R4
+DEx4 work 9 testbench 0 22 gm8YD_]RPCYaW82e9_J933
+!i122 3
+l44
+Z21 L28 37
+VW@7OU=VZMBobaAiF;INZH1
+Z22 !s100 Q@?::nZ:Redz`?g7TFLPd1
+R7
+32
+R8
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R12
+R13

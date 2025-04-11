@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/ALU/sim_mux_gates/sim_mux_gates.mpf"]} { 
+	project new "D:/RTL_FPGA/ALU/sim_mux_gates" sim_mux_gates
+	project addfile "D:/RTL_FPGA/ALU/mux_gates.vhd"
+	project addfile "D:/RTL_FPGA/ALU/mux_gates_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/ALU/mux_gates.vhd"
+	vcom -work work "D:/RTL_FPGA/ALU/mux_gates_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/ALU/sim_mux_gates/sim_mux_gates"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

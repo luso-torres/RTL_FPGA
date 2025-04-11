@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Apr 11 16:09:35 2025
+Fri Apr 11 20:26:33 2025
 
 
-Command Line:  synthesis -f operations_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f mux_gates_vhdl_impl1_lattice.synproj -gui 
 
 Synthesis options:
 The -a option is ECP5U.
@@ -35,7 +35,7 @@ Using performance grade 6.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Timing
-Top-level module name = alu_controller.
+Top-level module name = mux_gates.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -61,13 +61,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/RTL_FPGA/ALU (searchpath added)
 -p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
 -p D:/RTL_FPGA/ALU/impl1 (searchpath added)
 -p D:/RTL_FPGA/ALU (searchpath added)
-Verilog design file = D:/RTL_FPGA/ALU/operations.v
-Verilog design file = D:/RTL_FPGA/ALU/controller_mod.v
-NGD file = operations_impl1.ngd
+VHDL library = work
+VHDL design file = D:/RTL_FPGA/ALU/mux_gates.vhd
+NGD file = mux_gates_vhdl_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
 Hardtimer checking is enabled (default). The -dt option is not used.
@@ -77,125 +76,65 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/rtl_fpga/alu/operations.v. VERI-1482
-Analyzing Verilog file d:/rtl_fpga/alu/controller_mod.v. VERI-1482
-Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
-Top module name (Verilog): alu_controller
-INFO - synthesis: d:/rtl_fpga/alu/controller_mod.v(1): compiling module alu_controller. VERI-1018
-INFO - synthesis: d:/rtl_fpga/alu/operations.v(1): compiling module alu. VERI-1018
-WARNING - synthesis: d:/rtl_fpga/alu/controller_mod.v(18): net next_state[1] does not have a driver. VDB-1002
+INFO - synthesis: The default VHDL library search path is now "D:/RTL_FPGA/ALU/impl1". VHDL-1504
+Analyzing VHDL file d:/rtl_fpga/alu/mux_gates.vhd. VHDL-1481
+INFO - synthesis: d:/rtl_fpga/alu/mux_gates.vhd(4): analyzing entity mux_gates. VHDL-1012
+INFO - synthesis: d:/rtl_fpga/alu/mux_gates.vhd(9): analyzing architecture behavioral. VHDL-1010
+unit mux_gates is not yet analyzed. VHDL-1485
+unit mux_gates is not yet analyzed. VHDL-1485
+d:/rtl_fpga/alu/mux_gates.vhd(4): executing mux_gates(behavioral)
+
+WARNING - synthesis: d:/rtl_fpga/alu/mux_gates.vhd(7): replacing existing netlist mux_gates(behavioral). VHDL-1205
+Top module name (VHDL): mux_gates
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
-Top-level module name = alu_controller.
-WARNING - synthesis: I/O Port start 's net has no driver and is unused.
-######## Missing driver on net next_state[1]. Patching with GND.
-######## Missing driver on net next_state[0]. Patching with GND.
-WARNING - synthesis: Bit 1 of Register state is stuck at Zero
-WARNING - synthesis: Bit 0 of Register state is stuck at Zero
-WARNING - synthesis: d:/rtl_fpga/alu/controller_mod.v(68): Register done_20 is stuck at Zero. VDB-5013
+Top-level module name = mux_gates.
 
 
 
-WARNING - synthesis: I/O Port start 's net has no driver and is unused.
-WARNING - synthesis: I/O Port A[7] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port A[6] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port A[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port A[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port A[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port A[2] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port A[1] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port A[0] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port B[7] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port B[6] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port B[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port B[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port B[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port B[2] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port B[1] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port B[0] 's net has no driver and is unused.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
-Results of NGD DRC are available in alu_controller_drc.log.
+Results of NGD DRC are available in mux_gates_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'start' has no load.
-WARNING - synthesis: input pad net 'start' has no legal load.
-WARNING - synthesis: logical net 'A[7]' has no load.
-WARNING - synthesis: input pad net 'A[7]' has no legal load.
-WARNING - synthesis: logical net 'A[6]' has no load.
-WARNING - synthesis: input pad net 'A[6]' has no legal load.
-WARNING - synthesis: logical net 'A[5]' has no load.
-WARNING - synthesis: input pad net 'A[5]' has no legal load.
-WARNING - synthesis: logical net 'A[4]' has no load.
-WARNING - synthesis: input pad net 'A[4]' has no legal load.
-WARNING - synthesis: logical net 'A[3]' has no load.
-WARNING - synthesis: input pad net 'A[3]' has no legal load.
-WARNING - synthesis: logical net 'A[2]' has no load.
-WARNING - synthesis: input pad net 'A[2]' has no legal load.
-WARNING - synthesis: logical net 'A[1]' has no load.
-WARNING - synthesis: input pad net 'A[1]' has no legal load.
-WARNING - synthesis: logical net 'A[0]' has no load.
-WARNING - synthesis: input pad net 'A[0]' has no legal load.
-WARNING - synthesis: logical net 'B[7]' has no load.
-WARNING - synthesis: input pad net 'B[7]' has no legal load.
-WARNING - synthesis: logical net 'B[6]' has no load.
-WARNING - synthesis: input pad net 'B[6]' has no legal load.
-WARNING - synthesis: logical net 'B[5]' has no load.
-WARNING - synthesis: input pad net 'B[5]' has no legal load.
-WARNING - synthesis: logical net 'B[4]' has no load.
-WARNING - synthesis: input pad net 'B[4]' has no legal load.
-WARNING - synthesis: logical net 'B[3]' has no load.
-WARNING - synthesis: input pad net 'B[3]' has no legal load.
-WARNING - synthesis: logical net 'B[2]' has no load.
-WARNING - synthesis: input pad net 'B[2]' has no legal load.
-WARNING - synthesis: logical net 'B[1]' has no load.
-WARNING - synthesis: input pad net 'B[1]' has no legal load.
-WARNING - synthesis: logical net 'B[0]' has no load.
-WARNING - synthesis: input pad net 'B[0]' has no legal load.
-WARNING - synthesis: logical net 'reset_c' has no load.
-WARNING - synthesis: logical net 'clk_c' has no load.
-WARNING - synthesis: DRC complete with 36 warnings.
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: DRC complete with 1 warnings.
 All blocks are expanded and NGD expansion is successful.
-Writing NGD file operations_impl1.ngd.
+Writing NGD file mux_gates_vhdl_impl1.ngd.
 
-################### Begin Area Report (alu_controller)######################
+################### Begin Area Report (mux_gates)######################
 Number of register bits => 0 of 44439 (0 % )
 GSR => 1
-IB => 2
-OB => 9
+IB => 3
+LUT4 => 1
+OB => 1
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 1
-  Net : clk_c, loads : 0
+Number of Clocks: 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : reset_c, loads : 0
-  Net : done, loads : 0
-  Net : C[0], loads : 0
-  Net : C[1], loads : 0
-  Net : C[2], loads : 0
-  Net : C[3], loads : 0
-  Net : C[4], loads : 0
-  Net : C[5], loads : 0
-  Net : C[6], loads : 0
-  Net : C[7], loads : 0
+  Net : in1_c, loads : 1
+  Net : in2_c, loads : 1
+  Net : sel_c, loads : 1
+  Net : x_c, loads : 1
+  Net : x, loads : 0
 ################### End Clock Report ##################
 
-Peak Memory Usage: 87.004  MB
+Peak Memory Usage: 104.449  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.938  secs
+Elapsed CPU time for LSE flow : 1.938  secs
 --------------------------------------------------------------
