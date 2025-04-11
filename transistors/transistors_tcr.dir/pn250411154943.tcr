@@ -1,0 +1,27 @@
+#Start recording tcl command: 4/9/2025 18:48:15
+#Project Location: D:/RTL_FPGA/transistors; Project name: transistors
+prj_project new -name "transistors" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/transistors/transistors.v"
+prj_src add "D:/RTL_FPGA/transistors/primitives_ex.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/transistors/sim_primitives_transistors/sim_primitives_transistors.spf"
+source "D:/RTL_FPGA/transistors/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "not_switch_tf.v"
+prj_src add "D:/RTL_FPGA/transistors/sim_transistor_not/sim_transistor_not.spf"
+prj_src exclude "D:/RTL_FPGA/transistors/transistors.v"
+prj_src remove "D:/RTL_FPGA/transistors/transistors.v"
+prj_src add "D:/RTL_FPGA/transistors/sim_transistor_not/sim_transistor_not.spf"
+prj_src add "D:/RTL_FPGA/transistors/and_gate_transistor.v"
+source "D:/RTL_FPGA/transistors/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "and_gate_primitives_tf.v"
+prj_src add "D:/RTL_FPGA/transistors/sim_and_gate_transistor/sim_and_gate_transistor.spf"
+prj_src add "D:/RTL_FPGA/transistors/sim_and_gate_transistor/sim_and_gate_transistor.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/11/2025 15:49:43
