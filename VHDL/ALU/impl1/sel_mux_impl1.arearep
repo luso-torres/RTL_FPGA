@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell mux_sel.TECH
+Register bits:  0 of 44457 (0.000%)
+I/O cells:      20
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         3          100.0
+                                GSR         1          100.0
+                                 IB        17          100.0
+                               LUT4        14          100.0
+                                 OB         3          100.0
+                              PFUMX         3          100.0
+                              TOTAL        41

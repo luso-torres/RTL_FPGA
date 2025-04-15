@@ -5,17 +5,17 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Apr 14 22:22:10 2025
+Tue Apr 15 19:12:09 2025
 
 
-Command Line:  synthesis -f ALU_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f sel_mux_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/VHDL/ALU/promote.xml 
 
 Synthesis options:
 The -a option is ECP5U.
 The -s option is 6.
-The -t option is CABGA256.
+The -t option is CABGA381.
 The -d option is LFE5U-45F.
-Using package CABGA256.
+Using package CABGA381.
 Using performance grade 6.
                                                           
 
@@ -25,7 +25,7 @@ Using performance grade 6.
 
 ### Device  : LFE5U-45F
 
-### Package : CABGA256
+### Package : CABGA381
 
 ### Speed   : 6
 
@@ -35,7 +35,7 @@ Using performance grade 6.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Timing
-Top-level module name = ALU.
+Top-level module name = mux_sel.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -65,10 +65,8 @@ The -syn option is FALSE.
 -p D:/RTL_FPGA/VHDL/ALU/impl1 (searchpath added)
 -p D:/RTL_FPGA/VHDL/ALU (searchpath added)
 VHDL library = work
-VHDL design file = D:/RTL_FPGA/VHDL/ALU/operation.vhd
-VHDL design file = D:/RTL_FPGA/VHDL/ALU/logic.vhd
-VHDL design file = D:/RTL_FPGA/VHDL/ALU/ALU.vhd
-NGD file = ALU_impl1.ngd
+VHDL design file = D:/RTL_FPGA/VHDL/MUX/mux_sel.vhd
+NGD file = sel_mux_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
 Hardtimer checking is enabled (default). The -dt option is not used.
@@ -79,33 +77,22 @@ Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADER
 Compile design.
 Compile Design Begin
 INFO - synthesis: The default VHDL library search path is now "D:/RTL_FPGA/VHDL/ALU/impl1". VHDL-1504
-Analyzing VHDL file d:/rtl_fpga/vhdl/alu/operation.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/vhdl/alu/operation.vhd(4): analyzing entity operation. VHDL-1012
-INFO - synthesis: d:/rtl_fpga/vhdl/alu/operation.vhd(13): analyzing architecture behaviour. VHDL-1010
-unit ALU is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/rtl_fpga/vhdl/alu/logic.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/vhdl/alu/logic.vhd(3): analyzing entity logic. VHDL-1012
-INFO - synthesis: d:/rtl_fpga/vhdl/alu/logic.vhd(12): analyzing architecture behaviour. VHDL-1010
-unit ALU is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/rtl_fpga/vhdl/alu/alu.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/vhdl/alu/alu.vhd(5): analyzing entity alu. VHDL-1012
-INFO - synthesis: d:/rtl_fpga/vhdl/alu/alu.vhd(15): analyzing architecture behaviour. VHDL-1010
-unit ALU is not yet analyzed. VHDL-1485
-unit ALU is not yet analyzed. VHDL-1485
-d:/rtl_fpga/vhdl/alu/alu.vhd(5): executing ALU(behaviour)
+Analyzing VHDL file d:/rtl_fpga/vhdl/mux/mux_sel.vhd. VHDL-1481
+INFO - synthesis: d:/rtl_fpga/vhdl/mux/mux_sel.vhd(5): analyzing entity mux_sel. VHDL-1012
+INFO - synthesis: d:/rtl_fpga/vhdl/mux/mux_sel.vhd(13): analyzing architecture behaviour. VHDL-1010
+unit mux_sel is not yet analyzed. VHDL-1485
+unit mux_sel is not yet analyzed. VHDL-1485
+d:/rtl_fpga/vhdl/mux/mux_sel.vhd(5): executing mux_sel(behaviour)
 
-WARNING - synthesis: d:/rtl_fpga/vhdl/alu/alu.vhd(56): lu should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: d:/rtl_fpga/vhdl/alu/alu.vhd(58): au should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: d:/rtl_fpga/vhdl/alu/alu.vhd(60): incomplete sensitivity list specified, assuming completeness. VHDL-1613
-WARNING - synthesis: d:/rtl_fpga/vhdl/alu/alu.vhd(12): replacing existing netlist ALU(behaviour). VHDL-1205
-Top module name (VHDL): ALU
+WARNING - synthesis: d:/rtl_fpga/vhdl/mux/mux_sel.vhd(11): replacing existing netlist mux_sel(behaviour). VHDL-1205
+Top module name (VHDL): mux_sel
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
-Top-level module name = ALU.
+Top-level module name = mux_sel.
 
 
 
@@ -113,22 +100,22 @@ GSR will not be inferred because no asynchronous signal was found in the netlist
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
-Results of NGD DRC are available in ALU_drc.log.
+Results of NGD DRC are available in mux_sel_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 All blocks are expanded and NGD expansion is successful.
-Writing NGD file ALU_impl1.ngd.
+Writing NGD file sel_mux_impl1.ngd.
 
-################### Begin Area Report (ALU)######################
-Number of register bits => 0 of 44439 (0 % )
-CCU2C => 10
+################### Begin Area Report (mux_sel)######################
+Number of register bits => 0 of 44457 (0 % )
+CCU2C => 3
 GSR => 1
-IB => 21
-LUT4 => 99
-OB => 8
-PFUMX => 24
+IB => 17
+LUT4 => 14
+OB => 3
+PFUMX => 3
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -139,20 +126,20 @@ Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : sel_c_1, loads : 55
-  Net : sel_c_2, loads : 47
-  Net : sel_c_3, loads : 39
-  Net : sel_c_0, loads : 26
-  Net : mux1/n18, loads : 16
-  Net : mux1/n1907, loads : 9
-  Net : n1905, loads : 8
-  Net : mux1/n1196, loads : 8
-  Net : n636, loads : 8
-  Net : n1632, loads : 8
+  Net : b_c_7, loads : 5
+  Net : x2_c, loads : 5
+  Net : a_c_7, loads : 4
+  Net : a_c_6, loads : 3
+  Net : a_c_5, loads : 3
+  Net : a_c_4, loads : 3
+  Net : a_c_3, loads : 3
+  Net : a_c_2, loads : 3
+  Net : b_c_6, loads : 3
+  Net : b_c_4, loads : 3
 ################### End Clock Report ##################
 
-Peak Memory Usage: 108.848  MB
+Peak Memory Usage: 105.883  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.906  secs
+Elapsed CPU time for LSE flow : 1.656  secs
 --------------------------------------------------------------

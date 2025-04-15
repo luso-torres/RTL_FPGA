@@ -1,0 +1,38 @@
+D:/RTL_FPGA/VHDL/ALU/ALU_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VHDL/ALU/ALU_tb.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity alu_tb
+-- Compiling architecture behaviour of alu_tb
+
+} {} {}} D:/RTL_FPGA/VHDL/ALU/operation.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VHDL/ALU/operation.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity operation
+-- Compiling architecture behaviour of operation
+
+} {} {}} D:/RTL_FPGA/VHDL/ALU/ALU.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VHDL/ALU/ALU.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture behaviour of ALU
+
+} {} {}} D:/RTL_FPGA/VHDL/ALU/logic.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VHDL/ALU/logic.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+** Warning: (vcom-6) -- Waiting for lock by "Junio@LUSO, pid = 36960
+". Lockfile is "D:/RTL_FPGA/VHDL/ALU/SIM_ALU/work/_lock".
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity logic
+-- Compiling architecture behaviour of logic
+
+} {} {}}

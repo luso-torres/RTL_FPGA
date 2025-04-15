@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VHDL/ALU/sim_mux_sel
+T_opt
+!s110 1744756163
+VKzJZE@6IAk_3FLaW9kS>c2
+04 10 9 work mux_sel_tb behaviour 1
+=1-ac675dfda9e9-67feddc2-6b-8b7c
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Emux_sel
+Z2 w1744755127
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z6 8D:/RTL_FPGA/VHDL/MUX/mux_sel.vhd
+Z7 FD:/RTL_FPGA/VHDL/MUX/mux_sel.vhd
+l0
+L5 1
+VI3a4XX0;h_0ncI???3b7T0
+!s100 2@56Az^J]M==V_DlAD;3J1
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1744756159
+!i10b 1
+Z10 !s108 1744756159.000000
+Z11 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/MUX/mux_sel.vhd|
+Z12 !s107 D:/RTL_FPGA/VHDL/MUX/mux_sel.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehaviour
+R3
+R4
+R5
+DEx4 work 7 mux_sel 0 22 I3a4XX0;h_0ncI???3b7T0
+!i122 0
+l14
+L13 41
+VCR>^;?idJ[HRNZ[iAn7Sf0
+!s100 Xj73eN>_JnJHzlh@6Sd6b3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Emux_sel_tb
+Z15 w1744755252
+R3
+R4
+R5
+!i122 1
+R1
+Z16 8D:/RTL_FPGA/VHDL/ALU/mux_sel_tb.vhd
+Z17 FD:/RTL_FPGA/VHDL/ALU/mux_sel_tb.vhd
+l0
+L5 1
+VQ2N@MIFM=X_323;UO<Pb:0
+!s100 G0:?7;zX1lBb>BoO=TaOl3
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/ALU/mux_sel_tb.vhd|
+Z19 !s107 D:/RTL_FPGA/VHDL/ALU/mux_sel_tb.vhd|
+!i113 0
+R13
+R14
+Abehaviour
+R3
+R4
+R5
+DEx4 work 10 mux_sel_tb 0 22 Q2N@MIFM=X_323;UO<Pb:0
+!i122 1
+l23
+L8 69
+VZ1hAY<>l;Cb3lSFDYEOFR1
+!s100 F<EJ?ZQL:bYC6=LPK4aHE1
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14

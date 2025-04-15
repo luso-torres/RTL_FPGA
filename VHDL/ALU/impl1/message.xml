@@ -18,82 +18,27 @@
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/operation.vhd(4): </Dynamic>
-            <Dynamic>operation</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/operation.vhd</Navigation>
-            <Navigation>4</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/operation.vhd(13): </Dynamic>
-            <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/operation.vhd</Navigation>
-            <Navigation>13</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/logic.vhd(3): </Dynamic>
-            <Dynamic>logic</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/logic.vhd</Navigation>
-            <Navigation>3</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/logic.vhd(12): </Dynamic>
-            <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/logic.vhd</Navigation>
-            <Navigation>12</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/alu.vhd(5): </Dynamic>
-            <Dynamic>alu</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/alu.vhd</Navigation>
+            <Dynamic>d:/rtl_fpga/vhdl/mux/mux_sel.vhd(5): </Dynamic>
+            <Dynamic>mux_sel</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/mux/mux_sel.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/alu.vhd(15): </Dynamic>
+            <Dynamic>d:/rtl_fpga/vhdl/mux/mux_sel.vhd(13): </Dynamic>
             <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/alu.vhd</Navigation>
-            <Navigation>15</Navigation>
-        </Message>
-        <Message>
-            <ID>35921251</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/alu.vhd(56): </Dynamic>
-            <Dynamic>lu</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/alu.vhd</Navigation>
-            <Navigation>56</Navigation>
-        </Message>
-        <Message>
-            <ID>35921251</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/alu.vhd(58): </Dynamic>
-            <Dynamic>au</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/alu.vhd</Navigation>
-            <Navigation>58</Navigation>
-        </Message>
-        <Message>
-            <ID>35921613</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/alu.vhd(60): </Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/alu.vhd</Navigation>
-            <Navigation>60</Navigation>
+            <Navigation>d:/rtl_fpga/vhdl/mux/mux_sel.vhd</Navigation>
+            <Navigation>13</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/alu/alu.vhd(12): </Dynamic>
-            <Dynamic>ALU</Dynamic>
+            <Dynamic>d:/rtl_fpga/vhdl/mux/mux_sel.vhd(11): </Dynamic>
+            <Dynamic>mux_sel</Dynamic>
             <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/alu/alu.vhd</Navigation>
-            <Navigation>12</Navigation>
+            <Navigation>d:/rtl_fpga/vhdl/mux/mux_sel.vhd</Navigation>
+            <Navigation>11</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>
