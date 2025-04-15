@@ -19,20 +19,18 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1744413996">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1744413996"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1744413996"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1744673850">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1744673850"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1744673850"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1744413984"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1744413984"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1744673845"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1744673844"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="mux_gates_vhdl_impl1.lsedata" last_build_time="1744413994" last_build_size="2569"/>
-        <Report name="mux_gates_vhdl_impl1.ngd" last_build_time="1744413996" last_build_size="3924"/>
-        <Report name="operations_impl1.lsedata" last_build_time="1744398575" last_build_size="36363"/>
-        <Report name="operations_impl1.ngd" last_build_time="1744398577" last_build_size="9697"/>
+        <Report name="half_adder_vhdl_impl1.lsedata" last_build_time="1744673849" last_build_size="20037"/>
+        <Report name="half_adder_vhdl_impl1.ngd" last_build_time="1744673850" last_build_size="19163"/>
     </Strategy>
 </BuildStatus>

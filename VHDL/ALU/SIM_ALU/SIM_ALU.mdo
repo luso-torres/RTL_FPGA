@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/VHDL/ALU/SIM_ALU/SIM_ALU.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/ALU/SIM_ALU" SIM_ALU
+	project addfile "D:/RTL_FPGA/VHDL/ALU/logic.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/ALU/operation.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/ALU/ALU.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/ALU/ALU_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/ALU/logic.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/ALU/operation.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/ALU/ALU.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/ALU/ALU_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/ALU/SIM_ALU/SIM_ALU"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  alu_tb
+view wave
+add wave /*
+run 1000ns

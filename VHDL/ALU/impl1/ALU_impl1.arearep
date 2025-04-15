@@ -1,0 +1,23 @@
+----------------------------------------------------------------------
+Report for cell ALU.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      29
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        10          100.0
+                                GSR         1          100.0
+                                 IB        21          100.0
+                               LUT4        99          100.0
+                                 OB         8          100.0
+                              PFUMX        24          100.0
+SUB MODULES
+                          operation         1
+                              TOTAL       164
+----------------------------------------------------------------------
+Report for cell operation.v1
+Instance Path : mux1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        70           70.7
+                              PFUMX        23           95.8
+                              TOTAL        93

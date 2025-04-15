@@ -1,0 +1,11 @@
+#Start recording tcl command: 4/11/2025 20:24:51
+#Project Location: D:/RTL_FPGA/ALU; Project name: mux_gates_vhdl
+prj_project new -name "mux_gates_vhdl" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/ALU/mux_gates.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/ALU/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mux_gates_tb.vhd"
+prj_src add "D:/RTL_FPGA/ALU/sim_mux_gates/sim_mux_gates.spf"
+prj_src add "D:/RTL_FPGA/ALU/sim_mux_gates/sim_mux_gates.spf"
+#Stop recording: 4/11/2025 20:39:55

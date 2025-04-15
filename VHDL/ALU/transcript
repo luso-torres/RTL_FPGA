@@ -1,0 +1,79 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VHDL/ALU/SIM_ALU/SIM_ALU.mdo}
+# Loading project SIM_ALU
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:24:46 on Apr 14,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/ALU/logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity logic
+# -- Compiling architecture behaviour of logic
+# End time: 22:24:46 on Apr 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:24:46 on Apr 14,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/ALU/operation.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity operation
+# -- Compiling architecture behaviour of operation
+# End time: 22:24:46 on Apr 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:24:46 on Apr 14,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/ALU/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture behaviour of ALU
+# End time: 22:24:46 on Apr 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:24:49 on Apr 14,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/ALU/ALU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu_tb
+# -- Compiling architecture behaviour of alu_tb
+# End time: 22:24:49 on Apr 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of logic.vhd was successful with warnings.
+# Compile of operation.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of ALU_tb.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u alu_tb 
+# Start time: 22:24:52 on Apr 14,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu_tb(behaviour)#1
+# Loading work.alu(behaviour)#1
+# Loading work.operation(behaviour)#1
+# Loading work.logic(behaviour)#1
+# .main_pane.wave.interior.cs.body.pw.wf
