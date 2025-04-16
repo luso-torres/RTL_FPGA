@@ -1,0 +1,24 @@
+#Start recording tcl command: 4/15/2025 21:38:32
+#Project Location: D:/RTL_FPGA/VHDL/multiplier; Project name: multiplier
+prj_project new -name "multiplier" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/multiplier/multiplier.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/VHDL/multiplier/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "multiplier_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/multiplier/sim_multiplier/sim_multiplier.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/16/2025 08:10:49

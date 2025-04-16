@@ -53,3 +53,5 @@
 #    Time: 0 ns  Iteration: 0  Instance: /testbench/uut
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /testbench/uut
+# End time: 22:06:06 on Apr 15,2025, Elapsed time: 0:05:20
+# Errors: 0, Warnings: 8
