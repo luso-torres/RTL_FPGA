@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VHDL/reverse_bits/sim_reverse_bits/sim_reverse_bits.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/reverse_bits/sim_reverse_bits" sim_reverse_bits
+	project addfile "D:/RTL_FPGA/VHDL/reverse_bits/reverse_bits_function.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/reverse_bits/reverse_bits_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/reverse_bits/reverse_bits_function.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/reverse_bits/reverse_bits_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/reverse_bits/sim_reverse_bits/sim_reverse_bits"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  reverse_bits_tb
+view wave
+add wave /*
+run 1000ns

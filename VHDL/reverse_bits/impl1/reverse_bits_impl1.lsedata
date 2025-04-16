@@ -1,0 +1,58 @@
+<top name = "reverse_bits"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "reverse_bits">
+
+    <!--
+        Top Level Pins: 16
+    -->
+
+    <pins>
+        <pitem  name = "word[7]"  direction = "in"  />
+        <pitem  name = "word[6]"  direction = "in"  />
+        <pitem  name = "word[5]"  direction = "in"  />
+        <pitem  name = "word[4]"  direction = "in"  />
+        <pitem  name = "word[3]"  direction = "in"  />
+        <pitem  name = "word[2]"  direction = "in"  />
+        <pitem  name = "word[1]"  direction = "in"  />
+        <pitem  name = "word[0]"  direction = "in"  />
+        <pitem  name = "reverse_word[7]"  direction = "out"  />
+        <pitem  name = "reverse_word[6]"  direction = "out"  />
+        <pitem  name = "reverse_word[5]"  direction = "out"  />
+        <pitem  name = "reverse_word[4]"  direction = "out"  />
+        <pitem  name = "reverse_word[3]"  direction = "out"  />
+        <pitem  name = "reverse_word[2]"  direction = "out"  />
+        <pitem  name = "reverse_word[1]"  direction = "out"  />
+        <pitem  name = "reverse_word[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 0
+    -->
+
+    <!--
+        Views in design "reverse_bits": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

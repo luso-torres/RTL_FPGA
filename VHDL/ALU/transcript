@@ -52,3 +52,5 @@
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
 #    Time: 0 ns  Iteration: 0  Instance: /mux_sel_tb/uut
 # Causality operation skipped due to absence of debug database file
+# End time: 20:23:16 on Apr 15,2025, Elapsed time: 0:53:56
+# Errors: 0, Warnings: 7

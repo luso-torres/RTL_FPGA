@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VHDL/multiplier/sim_multiplier
+T_opt
+!s110 1744765249
+VWDOA6AleWMee4caIUbaEP0
+04 9 8 work testbench behavior 1
+=1-ac675dfda9e9-67ff0140-29c-6188
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Emultiplier
+Z2 w1744765145
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z6 8D:/RTL_FPGA/VHDL/multiplier/multiplier.vhd
+Z7 FD:/RTL_FPGA/VHDL/multiplier/multiplier.vhd
+l0
+L5 1
+V?QeHD_NDWa4hPmob>`1=72
+!s100 0?4FXjUZ^LoP9ZeRjC03h2
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1744765246
+!i10b 1
+Z10 !s108 1744765246.000000
+Z11 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/multiplier/multiplier.vhd|
+Z12 !s107 D:/RTL_FPGA/VHDL/multiplier/multiplier.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehaviour
+R3
+R4
+R5
+DEx4 work 10 multiplier 0 22 ?QeHD_NDWa4hPmob>`1=72
+!i122 0
+l24
+L13 16
+Vzd[9@H<hhzYZN:LzJb=e]2
+!s100 @:Q8P[`VX_OhM_Vo3X`HJ0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Etestbench
+Z15 w1744765201
+R3
+R4
+R5
+!i122 1
+R1
+Z16 8D:/RTL_FPGA/VHDL/multiplier/multiplier_tb.vhd
+Z17 FD:/RTL_FPGA/VHDL/multiplier/multiplier_tb.vhd
+l0
+L5 1
+V[`Oj@=0J=`LNl[^TB]fLD2
+!s100 kO=eN8Z<;NKUR<z22KiHB3
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/multiplier/multiplier_tb.vhd|
+Z19 !s107 D:/RTL_FPGA/VHDL/multiplier/multiplier_tb.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R3
+R4
+R5
+DEx4 work 9 testbench 0 22 [`Oj@=0J=`LNl[^TB]fLD2
+!i122 1
+l22
+L8 46
+VcYNVSYJCd16@HlF3S2fG=0
+!s100 LAB6cN^=n0[ol0n`a8?d>0
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14

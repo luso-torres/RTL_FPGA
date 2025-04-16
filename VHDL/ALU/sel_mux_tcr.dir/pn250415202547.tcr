@@ -1,0 +1,17 @@
+#Start recording tcl command: 4/15/2025 14:50:07
+#Project Location: D:/RTL_FPGA/VHDL/ALU; Project name: sel_mux
+prj_project new -name "sel_mux" -impl "impl1" -dev LFE5U-45F-6BG381C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/MUX/mux_sel.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/ALU/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mux_sel_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/ALU/sim_mux_sel/sim_mux_sel.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/15/2025 20:25:47
