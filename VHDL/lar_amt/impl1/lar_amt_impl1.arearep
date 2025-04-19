@@ -1,0 +1,11 @@
+----------------------------------------------------------------------
+Report for cell lar_amt.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      19
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        11          100.0
+                               LUT4         9          100.0
+                                 OB         8          100.0
+                              TOTAL        29
