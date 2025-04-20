@@ -5,8 +5,8 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Apr 16 22:07:14 2025
+Sun Apr 20 15:47:39 2025
 
 
-Command Line:  synthesis -f lar_amt_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f lar_amt_impl1_lattice.synproj -gui -msgset E:/repositories/RTL_FPGA/VHDL/lar_amt/promote.xml 
 

@@ -31,10 +31,10 @@
 
 
 -lpf 1
--lib "work" -vhd "D:/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd"
+-lib "work" -vhd "E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd"
 
 
--p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "D:/RTL_FPGA/VHDL/lar_amt/impl1" "D:/RTL_FPGA/VHDL/lar_amt"
+-p "E:/ld/ispfpga/sa5p00/data" "E:/repositories/RTL_FPGA/VHDL/lar_amt/impl1" "E:/repositories/RTL_FPGA/VHDL/lar_amt"
 
 -ngd "lar_amt_impl1.ngd"
 

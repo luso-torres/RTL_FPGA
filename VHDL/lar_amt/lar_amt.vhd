@@ -15,14 +15,15 @@ ARCHITECTURE behaviour OF lar_amt IS
 
 signal lar_out: std_logic_vector (7 downto 0);
 
-	function lsr ( a : std_logic_vector (7 downto 0), amt_out : integer) return std_logic_vector is 
+	function lsr ( a : std_logic_vector (7 downto 0); amt : integer) return std_logic_vector is 
 	variable lar_out : std_logic_vector (7 downto 0);
+	variable l : integer:= a'length-1;
 	begin
-		for i in a'length-1 downto amt_out loop
-		lar_out(i-amt_out) := a(i);
+		for i in l downto amt loop
+		lar_out(i-amt) := a(i);
     end loop;
 	begin
-		for i in amt_out to a'length-1 loop
+		for i in amt to l loop
 		lar_out(i)	:= 0;
 	end loop;
 	return lar_out;
@@ -71,21 +72,16 @@ end function asl;
 
 	function rr ( a : std_logic_vector (7 downto 0)) return std_logic_vector is 
 	variable lar_out : std_logic_vector (7 downto 0);
-	begin
-		for i in a'length-2 downto 0 loop	
-		lar_out(i) := a(i-1);
-    end loop;
-	lar_out(7) := a(0);
+	lar_out(l-amt downto 0) := a(l downto amt); 
+	lar_out(l downto amt) := a(amt-1 downto 0);
 	return lar_out;
 end function rr;
 
-	function rl ( a : std_logic_vector (7 downto 0)) return std_logic_vector is 
+	function rl ( a : std_logic_vector (7 downto 0), amt : integer) return std_logic_vector is 
 	variable lar_out : std_logic_vector (7 downto 0);
-	begin
-		for i in a'length-1 downto 1 loop	
-		lar_out(i) := a(i-1);
-    end loop;
-	lar_out(0) := a(7);
+	variable l: integer := a'length-1;
+	lar_out(l downto amt) := a((l-amt)-1 downto 0); 
+	lar_out(amt-1 downto 0) := a(l downto l-amt);
 	return lar_out;
 end function rl;
 

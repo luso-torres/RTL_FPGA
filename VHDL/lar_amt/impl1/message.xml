@@ -12,10 +12,10 @@
         <Message>
             <ID>35921261</ID>
             <Severity>Error</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(18): </Dynamic>
-            <Dynamic>,</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/lar_amt/lar_amt.vhd</Navigation>
-            <Navigation>18</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(24): </Dynamic>
+            <Dynamic>begin</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd</Navigation>
+            <Navigation>24</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

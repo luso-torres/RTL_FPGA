@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Apr 16 22:07:14 2025
+Sun Apr 20 15:47:39 2025
 
 
-Command Line:  synthesis -f lar_amt_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f lar_amt_impl1_lattice.synproj -gui -msgset E:/repositories/RTL_FPGA/VHDL/lar_amt/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -64,11 +64,11 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
--p D:/RTL_FPGA/VHDL/lar_amt/impl1 (searchpath added)
--p D:/RTL_FPGA/VHDL/lar_amt (searchpath added)
+-p E:/ld/ispfpga/sa5p00/data (searchpath added)
+-p E:/repositories/RTL_FPGA/VHDL/lar_amt/impl1 (searchpath added)
+-p E:/repositories/RTL_FPGA/VHDL/lar_amt (searchpath added)
 VHDL library = work
-VHDL design file = D:/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd
 NGD file = lar_amt_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -76,7 +76,7 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Analyzing Verilog file E:/ld/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-    <postMsg mid="35921261" type="Error"   dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(18): " arg1="," arg2="d:/rtl_fpga/vhdl/lar_amt/lar_amt.vhd" arg3="18"  />
+    <postMsg mid="35921261" type="Error"   dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(24): " arg1="begin" arg2="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd" arg3="24"  />

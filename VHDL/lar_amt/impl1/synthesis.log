@@ -49,11 +49,11 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
--p D:/RTL_FPGA/VHDL/lar_amt/impl1 (searchpath added)
--p D:/RTL_FPGA/VHDL/lar_amt (searchpath added)
+-p E:/ld/ispfpga/sa5p00/data (searchpath added)
+-p E:/repositories/RTL_FPGA/VHDL/lar_amt/impl1 (searchpath added)
+-p E:/repositories/RTL_FPGA/VHDL/lar_amt (searchpath added)
 VHDL library = work
-VHDL design file = D:/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd
 NGD file = lar_amt_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -61,7 +61,7 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Analyzing Verilog file E:/ld/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-ERROR - synthesis: d:/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(18): syntax error near ,. VHDL-1261
+ERROR - synthesis: e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(24): syntax error near begin. VHDL-1261
