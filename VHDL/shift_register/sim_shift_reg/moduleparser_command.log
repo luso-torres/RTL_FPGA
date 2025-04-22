@@ -1,0 +1,1 @@
+E:/ld/bin/nt64/moduleparser.exe -PROJ sim_shift_reg -pf E:/ld/cae_library/synthesis/vhdl/ecp5u.vhd -lib ecp5u -pf E:/ld/cae_library/synthesis/verilog/ecp5u.v -pkg E:/ld/cae_library/vhdl_packages/vdbs -lst E:/repositories/RTL_FPGA/VHDL/shift_register/sim_shift_reg/source_files.lst

@@ -1,0 +1,187 @@
+<top name = "shift_reg"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "clk"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "shift_reg">
+
+    <!--
+        Top Level Pins: 12
+    -->
+
+    <pins>
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "reset"  direction = "in"  />
+        <pitem  name = "ctrl[1]"  direction = "in"  />
+        <pitem  name = "ctrl[0]"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 9
+    -->
+
+    <instance  name = "ff2/q_8"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ff2/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "r_next[2]"  />
+        <nitem  name = "q[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ff1/q_8"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ff1/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "r_next[1]"  />
+        <nitem  name = "q[1]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ff0/q_8"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ff0/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "r_next[0]"  />
+        <nitem  name = "q[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ctrl_1__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ctrl[1]"  />
+        <nitem  name = "ctrl[0]"  />
+        <nitem  name = "d[3]"  />
+        <nitem  name = "d[2]"  />
+        <nitem  name = "d[1]"  />
+        <nitem  name = "d[0]"  />
+        <nitem  name = "q[2]"  />
+        <nitem  name = "q[1]"  />
+        <nitem  name = "q[0]"  />
+        <nitem  name = "q[3]"  />
+        <nitem  name = "r_next[3]"  />
+        <nitem  name = "r_next[2]"  />
+        <nitem  name = "r_next[1]"  />
+        <nitem  name = "r_next[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ff3/q_8"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ff3/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "r_next[3]"  />
+        <nitem  name = "q[3]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ff0"  />
+    <instance  name = "ff1"  />
+    <instance  name = "ff2"  />
+    <instance  name = "ff3"  />
+    <!--
+        REG instances in netlist: 4
+    -->
+
+    <regs>
+        <reg  name = "ff2/q_8"  />
+        <reg  name = "ff1/q_8"  />
+        <reg  name = "ff0/q_8"  />
+        <reg  name = "ff3/q_8"  />
+    </regs>
+
+    <!--
+        Views in design "shift_reg": 1
+    -->
+
+    <views>
+        <view  name = "d_ff"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

@@ -1,0 +1,154 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dE:/repositories/RTL_FPGA/VHDL/shift_register/sim_shift_reg
+T_opt
+!s110 1745284059
+VP_9h=4?BAZ>3U@0GcMBlU3
+04 12 4 work shift_reg_tb test 1
+=1-4cedfbc5dde6-6806ebdb-1c1-57e4
+R0
+!s12f OEM25U6 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Ed_ff
+Z2 w1745283828
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z5 8E:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd
+Z6 FE:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd
+l0
+L4 1
+VTl9eh[_kKih_HhV::RgPe0
+!s100 ]Kk;Kc4ADjL9E90C2IcL^1
+Z7 OL;C;2024.2;79
+32
+Z8 !s110 1745284058
+!i10b 1
+Z9 !s108 1745284058.000000
+Z10 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd|
+Z11 !s107 E:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R3
+R4
+DEx4 work 4 d_ff 0 22 Tl9eh[_kKih_HhV::RgPe0
+!i122 0
+l14
+L13 11
+VNAkf_Y=QU1N?7:K@FbP<43
+!s100 56mhFmmg9KgS1?hI9^[3f1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eshift_reg
+Z14 w1745283970
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 1
+R1
+Z16 8E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd
+Z17 FE:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd
+l0
+L5 1
+VI<6^A1_k551@?_BC>EJUP3
+!s100 AT_I64P`DonBWkB=dL0P91
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd|
+Z19 !s107 E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd|
+!i113 0
+R12
+R13
+Abehaviour
+R15
+R3
+R4
+DEx4 work 9 shift_reg 0 22 I<6^A1_k551@?_BC>EJUP3
+!i122 1
+l31
+L17 48
+VdZ2jEoY5BJf_dKkzoRo3B2
+!s100 1FE0CN`nGV=8ikJdhl_W61
+R7
+32
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12
+R13
+Eshift_reg_tb
+Z20 w1745283650
+R15
+R3
+R4
+!i122 2
+R1
+Z21 8E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg_tb.vhd
+Z22 FE:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg_tb.vhd
+l0
+L5 1
+V[J0Rd_NT[z;UOQBcK;hQ?3
+!s100 9IQkTDf3IHMG<eI=nTjj51
+R7
+32
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg_tb.vhd|
+Z24 !s107 E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg_tb.vhd|
+!i113 0
+R12
+R13
+Atest
+R15
+R3
+R4
+DEx4 work 12 shift_reg_tb 0 22 [J0Rd_NT[z;UOQBcK;hQ?3
+!i122 2
+l40
+L8 96
+VXH?cXme4AWK=>WO6faWVI3
+!s100 n@O7jhdIV<KoLY930=GBW2
+R7
+32
+R8
+!i10b 1
+R9
+R23
+R24
+!i113 0
+R12
+R13

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921261</ID>
+            <Severity>Error</Severity>
+            <Dynamic>e:/repositories/rtl_fpga/vhdl/shift_register/frequency_divider.vhd(37): </Dynamic>
+            <Dynamic>BEGIN</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/vhdl/shift_register/frequency_divider.vhd</Navigation>
+            <Navigation>37</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

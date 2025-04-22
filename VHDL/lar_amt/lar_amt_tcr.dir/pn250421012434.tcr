@@ -1,0 +1,5 @@
+#Start recording tcl command: 4/20/2025 12:56:52
+#Project Location: E:/repositories/RTL_FPGA/VHDL/lar_amt; Project name: lar_amt
+prj_project open "E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 4/21/2025 01:24:34

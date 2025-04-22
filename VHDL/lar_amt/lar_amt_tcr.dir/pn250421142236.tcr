@@ -1,0 +1,5 @@
+#Start recording tcl command: 4/21/2025 14:21:13
+#Project Location: E:/repositories/RTL_FPGA/VHDL/lar_amt; Project name: lar_amt
+prj_project open "E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.ldf"
+prj_run Map -impl impl1
+#Stop recording: 4/21/2025 14:22:36

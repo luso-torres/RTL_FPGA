@@ -1,0 +1,28 @@
+Results of NGD DRC are available in freq_divider_drc.log.
+Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'clk' has no load.
+WARNING - synthesis: input pad net 'clk' has no legal load.
+WARNING - synthesis: logical net 'c[3]' has no load.
+WARNING - synthesis: input pad net 'c[3]' has no legal load.
+WARNING - synthesis: logical net 'c[2]' has no load.
+WARNING - synthesis: input pad net 'c[2]' has no legal load.
+WARNING - synthesis: logical net 'c[1]' has no load.
+WARNING - synthesis: input pad net 'c[1]' has no legal load.
+WARNING - synthesis: logical net 'c[0]' has no load.
+WARNING - synthesis: input pad net 'c[0]' has no legal load.
+WARNING - synthesis: logical net 'nRst' has no load.
+WARNING - synthesis: input pad net 'nRst' has no legal load.
+WARNING - synthesis: DRC complete with 12 warnings.
+
+Design Results:
+      5 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file frequency_divider_impl1.ngd.

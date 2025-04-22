@@ -32,6 +32,7 @@
 
 -lpf 1
 -lib "work" -vhd "E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd"
+-top lar_amt
 
 
 -p "E:/ld/ispfpga/sa5p00/data" "E:/repositories/RTL_FPGA/VHDL/lar_amt/impl1" "E:/repositories/RTL_FPGA/VHDL/lar_amt"

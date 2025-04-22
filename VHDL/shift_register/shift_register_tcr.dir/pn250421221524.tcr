@@ -1,0 +1,26 @@
+#Start recording tcl command: 4/21/2025 18:37:30
+#Project Location: E:/repositories/RTL_FPGA/VHDL/shift_register; Project name: shift_register
+prj_project new -name "shift_register" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "E:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_src add "E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "E:/repositories/RTL_FPGA/VHDL/shift_register/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "shift_reg_tb.vhd"
+prj_src add "E:/repositories/RTL_FPGA/VHDL/shift_register/sim_shift_reg/sim_shift_reg.spf"
+prj_src add "E:/repositories/RTL_FPGA/VHDL/shift_register/sim_shift_reg/sim_shift_reg.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_src add "E:/repositories/RTL_FPGA/VHDL/shift_register/sim_shift_reg/sim_shift_reg.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 4/21/2025 22:15:24

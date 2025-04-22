@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dE:/repositories/RTL_FPGA/VHDL/lar_amt/sim_lar_amt
+T_opt
+!s110 1745263820
+VmUi5EWz:mN3Fc:g6GK4K]0
+04 9 8 work testbench behavior 1
+=1-4cedfbc5dde6-68069ccc-1dc-41cc
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Elar_amt
+Z2 w1745260492
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z6 8E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd
+Z7 FE:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd
+l0
+L5 1
+VB?Y5`Ie3?lC67QGVf:IK;0
+!s100 86bT^GO:eMWa4<l`a?@9k0
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1745263819
+!i10b 1
+Z10 !s108 1745263819.000000
+Z11 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd|
+Z12 !s107 E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehaviour
+R3
+R4
+R5
+DEx4 work 7 lar_amt 0 22 B?Y5`Ie3?lC67QGVf:IK;0
+!i122 0
+l77
+L14 73
+Vzj8MSb;WfR3lXz507V[R:0
+!s100 >LX_V_ok>De9MG43P9e?P3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Etestbench
+Z15 w1745263792
+R3
+R4
+R5
+!i122 1
+R1
+Z16 8E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt_tb.vhd
+Z17 FE:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt_tb.vhd
+l0
+L25 1
+V]2JEKP=GFG9;S=<ROB?Wi0
+!s100 DhX?P9?7<f<Q6;Ocez<e>3
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt_tb.vhd|
+Z19 !s107 E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt_tb.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R3
+R4
+R5
+DEx4 work 9 testbench 0 22 ]2JEKP=GFG9;S=<ROB?Wi0
+!i122 1
+l44
+L28 57
+V:E>W0NIXzPYCFQj9AjDJ30
+!s100 EEU[PGH3gn`EGa:A6Xb;B0
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14

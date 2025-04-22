@@ -1,0 +1,46 @@
+----------------------------------------------------------------------
+Report for cell shift_reg.TECH
+Register bits:  4 of 44439 (0.009%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         4          100.0
+                                GSR         1          100.0
+                                 IB         8          100.0
+                               LUT4         2          100.0
+                                 OB         4          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                               d_ff         1
+                            d_ff_U0         1
+                            d_ff_U1         1
+                            d_ff_U2         1
+                              TOTAL        24
+----------------------------------------------------------------------
+Report for cell d_ff_U2.v1
+Instance Path : ff0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell d_ff_U1.v1
+Instance Path : ff1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell d_ff_U0.v1
+Instance Path : ff2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell d_ff.v1
+Instance Path : ff3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1           25.0
+                              TOTAL         1

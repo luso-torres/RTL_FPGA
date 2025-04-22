@@ -1,0 +1,19 @@
+if {![file exists "E:/repositories/RTL_FPGA/VHDL/shift_register/sim_shift_reg/sim_shift_reg.mpf"]} { 
+	project new "E:/repositories/RTL_FPGA/VHDL/shift_register/sim_shift_reg" sim_shift_reg
+	project addfile "E:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "E:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg_tb.vhd"
+} else {
+	project open "E:/repositories/RTL_FPGA/VHDL/shift_register/sim_shift_reg/sim_shift_reg"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  shift_reg_tb
+view wave
+add wave /*
+run 1000ns

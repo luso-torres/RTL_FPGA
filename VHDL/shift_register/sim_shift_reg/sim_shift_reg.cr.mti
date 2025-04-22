@@ -1,0 +1,27 @@
+E:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none E:/repositories/RTL_FPGA/VHDL/shift_register/d_ff.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity d_ff
+-- Compiling architecture behavior of d_ff
+
+} {} {}} E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_reg
+-- Compiling architecture behaviour of shift_reg
+
+} {} {}} E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none E:/repositories/RTL_FPGA/VHDL/shift_register/shift_reg_tb.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_reg_tb
+-- Compiling architecture test of shift_reg_tb
+
+} {} {}}

@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Apr 20 15:47:39 2025
+Mon Apr 21 15:34:54 2025
 
 
 Command Line:  synthesis -f lar_amt_impl1_lattice.synproj -gui -msgset E:/repositories/RTL_FPGA/VHDL/lar_amt/promote.xml 
@@ -38,7 +38,7 @@ Using performance grade 6.
 
     <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
 Optimization goal = Timing
-The -top option is not used.
+Top-level module name = lar_amt.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -79,4 +79,81 @@ Technology check ok...
 Analyzing Verilog file E:/ld/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-    <postMsg mid="35921261" type="Error"   dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(24): " arg1="begin" arg2="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd" arg3="24"  />
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="E:/repositories/RTL_FPGA/VHDL/lar_amt/impl1"  />
+Analyzing VHDL file e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(5): " arg1="lar_amt" arg2="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd" arg3="5"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(14): " arg1="behaviour" arg2="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd" arg3="14"  />
+unit lar_amt is not yet analyzed. VHDL-1485
+unit lar_amt is not yet analyzed. VHDL-1485
+e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(5): executing lar_amt(behaviour)
+
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd(12): " arg1="lar_amt" arg2="behaviour" arg3="e:/repositories/rtl_fpga/vhdl/lar_amt/lar_amt.vhd" arg4="12"  />
+Top module name (VHDL): lar_amt
+Last elaborated design is lar_amt(behaviour)
+Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: E:/ld/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = lar_amt.
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in lar_amt_drc.log.
+Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="GND_net" arg2="GND_net"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
+
+Design Results:
+    296 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file lar_amt_impl1.ngd.
+
+################### Begin Area Report (lar_amt)######################
+Number of register bits => 0 of 44439 (0 % )
+GSR => 1
+IB => 43
+L6MUX21 => 11
+LUT4 => 199
+OB => 8
+PFUMX => 31
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : amt_c_1, loads : 66
+  Net : amt_c_0, loads : 60
+  Net : amt_c_2, loads : 39
+  Net : lar_c_0, loads : 26
+  Net : a_in_c_7, loads : 25
+  Net : lar_c_2, loads : 22
+  Net : a_in_c_0, loads : 18
+  Net : a_in_c_4, loads : 15
+  Net : a_in_c_3, loads : 15
+  Net : a_in_c_2, loads : 15
+################### End Clock Report ##################
+
+Peak Memory Usage: 111.066  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.359  secs
+--------------------------------------------------------------

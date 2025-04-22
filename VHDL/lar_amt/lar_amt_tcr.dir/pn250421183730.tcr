@@ -1,0 +1,30 @@
+#Start recording tcl command: 4/21/2025 14:23:43
+#Project Location: E:/repositories/RTL_FPGA/VHDL/lar_amt; Project name: lar_amt
+prj_project open "E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.ldf"
+prj_src add "E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_mat.vhd"
+prj_src add "E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_amt.vhd"
+prj_src remove "E:/repositories/RTL_FPGA/VHDL/lar_amt/lar_mat.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "E:/repositories/RTL_FPGA/VHDL/lar_amt/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "lar_amt_tb.vhd"
+prj_src add "E:/repositories/RTL_FPGA/VHDL/lar_amt/sim_lar_amt/sim_lar_amt.spf"
+prj_src add "E:/repositories/RTL_FPGA/VHDL/lar_amt/sim_lar_amt/sim_lar_amt.spf"
+prj_src add "E:/repositories/RTL_FPGA/VHDL/lar_amt/sim_lar_amt/sim_lar_amt.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/21/2025 18:37:30

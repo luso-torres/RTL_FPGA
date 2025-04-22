@@ -1,0 +1,1 @@
+E:/ld/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 15679776 work.tb_freq_divider -quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc -allow_unnamed -o _opt -id 1-4cedfbc5dde6-68070298-cb-4e54 +__design_bin_path+E:/repositories/RTL_FPGA/VHDL/freq_divider/sim_freq_divider +__betafsm

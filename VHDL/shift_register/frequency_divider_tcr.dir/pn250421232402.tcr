@@ -1,0 +1,17 @@
+#Start recording tcl command: 4/21/2025 22:15:24
+#Project Location: E:/repositories/RTL_FPGA/VHDL/shift_register; Project name: frequency_divider
+E:/repositories/RTL_FPGA/VHDL/freq_divider
+frequency_divider
+#Start recording tcl command: 4/21/2025 23:24:02
+#Project Location: E:/repositories/RTL_FPGA/VHDL/freq_divider; Project name: frequency_divider
+prj_project new -name "frequency_divider" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "E:/repositories/RTL_FPGA/VHDL/shift_register/frequency_divider.vhd"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project saveas -name "frequency_divider" -dir "E:/repositories/RTL_FPGA/VHDL/freq_divider"
+#Stop recording: 4/21/2025 23:24:02

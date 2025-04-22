@@ -1,0 +1,9 @@
+----------------------------------------------------------------------
+Report for cell freq_divider.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 OB         1          100.0
+                              TOTAL         2
