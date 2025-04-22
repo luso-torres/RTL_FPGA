@@ -1,14 +1,14 @@
-if {![file exists "E:/repositories/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.mpf"]} { 
-	project new "E:/repositories/RTL_FPGA/VHDL/freq_divider/sim_freq_divider" sim_freq_divider
-	project addfile "E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd"
-	project addfile "E:/repositories/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd"
+if {![file exists "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider" sim_freq_divider
+	project addfile "D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd"
 	vlib  work
 	vdel -lib work -all 
 	vlib work
-	vcom -work work "E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd"
-	vcom -work work "E:/repositories/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd"
 } else {
-	project open "E:/repositories/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider"
+	project open "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider"
 	project compileoutofdate
 }
 vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_freq_divider

@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/VHDL/lsfr_reg/sim_lfsr/sim_lfsr.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/lsfr_reg/sim_lfsr" sim_lfsr
+	project addfile "D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/lsfr_reg/LFSR_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/lsfr_reg/LFSR_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/lsfr_reg/sim_lfsr/sim_lfsr"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  LFSR_tb
+view wave
+add wave /*
+run 1000ns

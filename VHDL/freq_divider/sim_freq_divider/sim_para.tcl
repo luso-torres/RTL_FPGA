@@ -1,9 +1,9 @@
-lappend auto_path "E:/ld/data/script"
+lappend auto_path "C:/lscc/diamond/3.14/data/script"
 package require simulation_generation
 set ::bali::simulation::Para(DEVICEFAMILYNAME) {ECP5U}
 set ::bali::simulation::Para(PROJECT) {sim_freq_divider}
-set ::bali::simulation::Para(PROJECTPATH) {E:/repositories/RTL_FPGA/VHDL/freq_divider}
-set ::bali::simulation::Para(FILELIST) {"E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd" "E:/repositories/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd" }
+set ::bali::simulation::Para(PROJECTPATH) {D:/RTL_FPGA/VHDL/freq_divider}
+set ::bali::simulation::Para(FILELIST) {"D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd" "D:/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd" }
 set ::bali::simulation::Para(GLBINCLIST) {}
 set ::bali::simulation::Para(INCLIST) {"none" "none"}
 set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" }
@@ -15,7 +15,7 @@ set ::bali::simulation::Para(SIMULATIONTOPMODULE) {tb_freq_divider}
 set ::bali::simulation::Para(SIMULATIONINSTANCE) {}
 set ::bali::simulation::Para(LANGUAGE) {VHDL}
 set ::bali::simulation::Para(SDFPATH)  {}
-set ::bali::simulation::Para(INSTALLATIONPATH) {E:/ld}
+set ::bali::simulation::Para(INSTALLATIONPATH) {C:/lscc/diamond/3.14}
 set ::bali::simulation::Para(ADDTOPLEVELSIGNALSTOWAVEFORM)  {1}
 set ::bali::simulation::Para(RUNSIMULATION)  {1}
 set ::bali::simulation::Para(SIMULATION_RESOLUTION)  {default}
