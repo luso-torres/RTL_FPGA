@@ -1,0 +1,16 @@
+#Start recording tcl command: 4/23/2025 11:11:25
+#Project Location: D:/RTL_FPGA/VHDL/FIR_1; Project name: FIR
+prj_project open "D:/RTL_FPGA/VHDL/FIR_1/FIR.ldf"
+prj_src add "D:/RTL_FPGA/VHDL/FIR_1/d_ff.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/FIR_1/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "FIR_tb.vhd"
+prj_src remove "D:/RTL_FPGA/VHDL/FIR_1/d_ff.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/FIR_1/sim_FIR_1/sim_FIR_1.spf"
+prj_src add "D:/RTL_FPGA/VHDL/FIR_1/sim_FIR_1/sim_FIR_1.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/23/2025 20:05:00

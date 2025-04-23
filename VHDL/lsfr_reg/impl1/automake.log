@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Apr 22 19:36:18 2025
+Tue Apr 22 20:48:39 2025
 
 
-Command Line:  synthesis -f lsfr_reg_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f lsfr_reg_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/VHDL/lsfr_reg/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -70,6 +70,7 @@ The -syn option is FALSE.
 VHDL library = work
 VHDL design file = D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd
 VHDL design file = D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd
+VHDL design file = D:/RTL_FPGA/VHDL/lsfr_reg/db_ff.vhd
 NGD file = lsfr_reg_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -89,6 +90,10 @@ Analyzing VHDL file d:/rtl_fpga/vhdl/lsfr_reg/d_ff.vhd. VHDL-1481
     <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/lsfr_reg/d_ff.vhd(4): " arg1="d_ff" arg2="d:/rtl_fpga/vhdl/lsfr_reg/d_ff.vhd" arg3="4"  />
     <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/lsfr_reg/d_ff.vhd(13): " arg1="behavior" arg2="d:/rtl_fpga/vhdl/lsfr_reg/d_ff.vhd" arg3="13"  />
 unit LFSR is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd(4): " arg1="db_ff" arg2="d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd" arg3="4"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd(13): " arg1="behavior" arg2="d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd" arg3="13"  />
+unit LFSR is not yet analyzed. VHDL-1485
 unit LFSR is not yet analyzed. VHDL-1485
 d:/rtl_fpga/vhdl/lsfr_reg/lsfr_reg.vhd(5): executing LFSR(behaviour)
 
@@ -102,13 +107,14 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
 Top-level module name = LFSR.
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="q_s[3]"  />
     <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="q_s[2]"  />
     <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="q_s[1]"  />
     <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="q_s[0]"  />
 
 
 
-GSR instance connected to net n22.
+GSR instance connected to net n19.
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
@@ -151,9 +157,9 @@ Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : q_c, loads : 2
   Net : up_c, loads : 1
-  Net : q_s_3, loads : 1
   Net : d1/q_s_1, loads : 1
-  Net : n22, loads : 1
+  Net : n19, loads : 1
+  Net : d3/q_s_3, loads : 0
   Net : d2/q_s_2, loads : 0
   Net : d0/q_s_0, loads : 0
   Net : q, loads : 0
@@ -174,8 +180,8 @@ clk0 [get_nets clk_c]                   |  200.000 MHz|  360.750 MHz|     2
 All constraints were met.
 
 
-Peak Memory Usage: 105.383  MB
+Peak Memory Usage: 104.852  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.109  secs
+Elapsed CPU time for LSE flow : 1.563  secs
 --------------------------------------------------------------

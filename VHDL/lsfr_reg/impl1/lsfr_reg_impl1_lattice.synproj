@@ -33,6 +33,7 @@
 -lpf 1
 -lib "work" -vhd "D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd"
 "D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd"
+"D:/RTL_FPGA/VHDL/lsfr_reg/db_ff.vhd"
 -top LFSR
 
 

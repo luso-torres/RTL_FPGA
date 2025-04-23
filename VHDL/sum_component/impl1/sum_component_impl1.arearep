@@ -1,0 +1,381 @@
+----------------------------------------------------------------------
+Report for cell n_sum_1bit.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      50
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        33          100.0
+                               LUT4        31          100.0
+                                 OB        17          100.0
+SUB MODULES
+                           half_add         1
+                        half_add_U0         1
+                        half_add_U1         1
+                       half_add_U10         1
+                       half_add_U11         1
+                       half_add_U12         1
+                       half_add_U13         1
+                       half_add_U14         1
+                       half_add_U15         1
+                       half_add_U16         1
+                       half_add_U17         1
+                       half_add_U18         1
+                       half_add_U19         1
+                        half_add_U2         1
+                       half_add_U20         1
+                       half_add_U21         1
+                       half_add_U22         1
+                       half_add_U23         1
+                        half_add_U3         1
+                        half_add_U4         1
+                        half_add_U5         1
+                        half_add_U6         1
+                        half_add_U7         1
+                        half_add_U8         1
+                        half_add_U9         1
+                           sum_1bit         1
+                       sum_1bit_U24         1
+                       sum_1bit_U25         1
+                       sum_1bit_U26         1
+                       sum_1bit_U27         1
+                       sum_1bit_U28         1
+                       sum_1bit_U29         1
+                       sum_1bit_U30         1
+                       sum_1bit_U31         1
+                       sum_1bit_U32         1
+                       sum_1bit_U33         1
+                       sum_1bit_U34         1
+                       sum_1bit_U35         1
+                       sum_1bit_U36         1
+                       sum_1bit_U37         1
+                       sum_1bit_U38         1
+                              TOTAL       123
+----------------------------------------------------------------------
+Report for cell sum_1bit_U38.v1
+Instance Path : g1[0].add0.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U22         1
+                       half_add_U23         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add_U22.v1
+Instance Path : g1[0].add0.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U23.v1
+Instance Path : g1[0].add0.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U34.v1
+Instance Path : g1[13].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U17         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell half_add_U17.v1
+Instance Path : g1[13].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell sum_1bit_U32.v1
+Instance Path : g1[15].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+SUB MODULES
+                       half_add_U15         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell half_add_U15.v1
+Instance Path : g1[15].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U31.v1
+Instance Path : g1[1].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U13         1
+                       half_add_U14         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add_U13.v1
+Instance Path : g1[1].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U14.v1
+Instance Path : g1[1].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U30.v1
+Instance Path : g1[2].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U11         1
+                       half_add_U12         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add_U11.v1
+Instance Path : g1[2].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U12.v1
+Instance Path : g1[2].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U29.v1
+Instance Path : g1[3].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U10         1
+                        half_add_U9         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add_U9.v1
+Instance Path : g1[3].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U10.v1
+Instance Path : g1[3].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U24.v1
+Instance Path : g1[8].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                        half_add_U1         1
+                        half_add_U2         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add_U1.v1
+Instance Path : g1[8].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U2.v1
+Instance Path : g1[8].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U28.v1
+Instance Path : g1[4].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                        half_add_U7         1
+                        half_add_U8         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add_U7.v1
+Instance Path : g1[4].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U8.v1
+Instance Path : g1[4].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U25.v1
+Instance Path : g1[7].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                        half_add_U3         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell half_add_U3.v1
+Instance Path : g1[7].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell sum_1bit_U35.v1
+Instance Path : g1[12].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U18         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell half_add_U18.v1
+Instance Path : g1[12].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell sum_1bit_U36.v1
+Instance Path : g1[11].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U19         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell half_add_U19.v1
+Instance Path : g1[11].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell sum_1bit_U37.v1
+Instance Path : g1[10].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U20         1
+                       half_add_U21         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add_U20.v1
+Instance Path : g1[10].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U21.v1
+Instance Path : g1[10].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U27.v1
+Instance Path : g1[5].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                        half_add_U5         1
+                        half_add_U6         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add_U5.v1
+Instance Path : g1[5].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U6.v1
+Instance Path : g1[5].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U26.v1
+Instance Path : g1[6].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                        half_add_U4         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell half_add_U4.v1
+Instance Path : g1[6].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell sum_1bit.v1
+Instance Path : g1[9].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                           half_add         1
+                        half_add_U0         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_add.v1
+Instance Path : g1[9].adds.uut.hadd1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_add_U0.v1
+Instance Path : g1[9].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            3.2
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_1bit_U33.v1
+Instance Path : g1[14].adds.uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+SUB MODULES
+                       half_add_U16         1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell half_add_U16.v1
+Instance Path : g1[14].adds.uut.hadd0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            6.5
+                              TOTAL         2

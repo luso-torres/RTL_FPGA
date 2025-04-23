@@ -29,26 +29,8 @@
     </pins>
 
     <!--
-        Instances in netlist: 8
+        Instances in netlist: 9
     -->
-
-    <instance  name = "d0/q_8"  library = "work"  arch = "RTL"  type = "reg">
-        <pins>
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "d0/gnd"  />
-        <nitem  name = "clk"  />
-        <nitem  name = "up"  />
-        <nitem  name = "q_s[1]"  />
-        <nitem  name = "q_s[0]"  />
-        </nets>
-    </instance>
 
     <instance  name = "d1/q_8"  library = "work"  arch = "RTL"  type = "reg">
         <pins>
@@ -86,6 +68,24 @@
         </nets>
     </instance>
 
+    <instance  name = "d3/q_9"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "r"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clk"  />
+        <nitem  name = "up"  />
+        <nitem  name = "q"  />
+        <nitem  name = "q_s[3]"  />
+        <nitem  name = "d3/gnd"  />
+        </nets>
+    </instance>
+
     <instance  name = "q_s_1__I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
@@ -100,44 +100,46 @@
         </nets>
     </instance>
 
-    <instance  name = "q_s[3]_10"  library = "work"  arch = "RTL"  type = "reg">
+    <instance  name = "d0/q_8"  library = "work"  arch = "RTL"  type = "reg">
         <pins>
-        <pitem  name = "d"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
         <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
         <pitem  name = "q"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "q"  />
+        <nitem  name = "d0/gnd"  />
         <nitem  name = "clk"  />
         <nitem  name = "up"  />
-        <nitem  name = "gnd"  />
-        <nitem  name = "q_s[3]"  />
+        <nitem  name = "q_s[1]"  />
+        <nitem  name = "q_s[0]"  />
         </nets>
     </instance>
 
     <instance  name = "d0"  />
     <instance  name = "d1"  />
     <instance  name = "d2"  />
+    <instance  name = "d3"  />
     <!--
         REG instances in netlist: 4
     -->
 
     <regs>
-        <reg  name = "d0/q_8"  />
         <reg  name = "d1/q_8"  />
         <reg  name = "d2/q_8"  />
-        <reg  name = "q_s[3]_10"  />
+        <reg  name = "d3/q_9"  />
+        <reg  name = "d0/q_8"  />
     </regs>
 
     <!--
-        Views in design "LFSR": 1
+        Views in design "LFSR": 2
     -->
 
     <views>
         <view  name = "d_ff"  />
+        <view  name = "db_ff"  />
     </views>
 
 </unit>

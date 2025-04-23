@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Tue Apr 22 19:36:19 2025
+Tue Apr 22 20:48:41 2025
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -28,17 +28,17 @@ Passed:  The following path meets requirements by 2.228ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S3AX    CK             \d1/q_8  (from clk_c +)
-   Destination:    FD1S3AY    D              q_s[3]_10  (to clk_c +)
+   Destination:    FD1S3AY    D              \d3/q_9  (to clk_c +)
 
    Delay:                   2.947ns  (18.0% logic, 82.0% route), 2 logic levels.
 
  Constraint Details:
 
-      2.947ns data_path \d1/q_8 to q_s[3]_10 meets
+      2.947ns data_path \d1/q_8 to \d3/q_9 meets
       5.000ns delay constraint less
      -0.175ns L_S requirement (totaling 5.175ns) by 2.228ns
 
- Path Details: \d1/q_8 to q_s[3]_10
+ Path Details: \d1/q_8 to \d3/q_9
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.365             CK to Q              \d1/q_8 (from clk_c)
@@ -54,17 +54,17 @@ Passed:  The following path meets requirements by 2.466ns
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S3AX    CK             \d0/q_8  (from clk_c +)
-   Destination:    FD1S3AY    D              q_s[3]_10  (to clk_c +)
+   Destination:    FD1S3AY    D              \d3/q_9  (to clk_c +)
 
    Delay:                   2.709ns  (19.6% logic, 80.4% route), 2 logic levels.
 
  Constraint Details:
 
-      2.709ns data_path \d0/q_8 to q_s[3]_10 meets
+      2.709ns data_path \d0/q_8 to \d3/q_9 meets
       5.000ns delay constraint less
      -0.175ns L_S requirement (totaling 5.175ns) by 2.466ns
 
- Path Details: \d0/q_8 to q_s[3]_10
+ Path Details: \d0/q_8 to \d3/q_9
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.365             CK to Q              \d0/q_8 (from clk_c)
@@ -125,5 +125,5 @@ Timing errors: 0  Score: 0
 Constraints cover  5 paths, 6 nets, and 10 connections (76.9% coverage)
 
 
-Peak memory: 110034944 bytes, TRCE: 65536 bytes, DLYMAN: 0 bytes
+Peak memory: 109506560 bytes, TRCE: 53248 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

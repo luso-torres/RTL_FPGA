@@ -97,7 +97,7 @@ begin
 
         -- End simulation
         wait for 50 ns;
-        assert false report "End of simulation" severity failure;
+        
     end process;
 
 end test;

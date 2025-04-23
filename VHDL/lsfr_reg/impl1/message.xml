@@ -48,6 +48,22 @@
             <Navigation>13</Navigation>
         </Message>
         <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd(4): </Dynamic>
+            <Dynamic>db_ff</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd(13): </Dynamic>
+            <Dynamic>behavior</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/lsfr_reg/db_ff.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
             <Dynamic>d:/rtl_fpga/vhdl/lsfr_reg/lsfr_reg.vhd(11): </Dynamic>
@@ -55,6 +71,11 @@
             <Dynamic>behaviour</Dynamic>
             <Navigation>d:/rtl_fpga/vhdl/lsfr_reg/lsfr_reg.vhd</Navigation>
             <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>q_s[3]</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>

@@ -1,49 +1,60 @@
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+use IEEE.std_logic_1164.all;
 
-entity tb_LFSR is
-end tb_LFSR;
+entity LFSR_tb is
+end entity;
 
-architecture behavior of tb_LFSR is
-    -- Component Declaration
+architecture test of LFSR_tb is
+
+    -- Clock signal for the testbench
+    signal clk : std_logic := '0';
+	signal up: std_logic:= '1';
+    signal q   : std_logic_vector (3 downto 0);
+
+    -- Clock period constant
+    constant clk_period : time := 10 ns;
+
+    -- Component declaration for LFSR
     component LFSR
         port(
             clk : in std_logic;
-            q   : out std_logic
+			up: in std_logic;
+            q   : out std_logic_vector (3 downto 0)
         );
     end component;
 
-    -- Signals for testbench
-    signal clk_tb : std_logic := '0';
-    signal q_tb   : std_logic;
-
-    -- Clock period definition
-    constant clk_period : time := 10 ns;
-
 begin
-    -- Instantiate the Unit Under Test (UUT)
+
+    -- Instantiate the LFSR
     uut: LFSR
-        port map(
-            clk => clk_tb,
-            q   => q_tb
+        port map (
+            clk => clk,
+			up => up,
+            q   => q
         );
 
-    -- Clock Process
+    -- Clock generation
     clk_process: process
     begin
-        while now < 1000 ns loop  -- Limit simulation duration
-            clk_tb <= not clk_tb;
-            wait for clk_period / 2;
+        while now < 1000 ns loop  -- Stop condition for simulation
+            clk <= not clk;
+            wait for clk_period;
         end loop;
-        wait; -- Ensure proper simulation termination
+        wait;  -- Ensures proper simulation end
     end process;
-
-    -- Monitoring Process
-    monitor_proc: process
+	
+	-- Stimulus Process
+    stim_process: process
     begin
-        wait for 100 ns;
-        --report "Current LFSR output: " & std_logic'image(q_tb);
+        wait for 20 ns;  -- Initial delay
+
+        -- Enable the frequency divider
+        up <= '0';
+        wait for 1000 ns;
+
+        -- End Simulation
         wait;
     end process;
-end behavior;
+	
+
+end architecture;

@@ -3,12 +3,12 @@ package require simulation_generation
 set ::bali::simulation::Para(DEVICEFAMILYNAME) {ECP5U}
 set ::bali::simulation::Para(PROJECT) {sim_lfsr}
 set ::bali::simulation::Para(PROJECTPATH) {D:/RTL_FPGA/VHDL/lsfr_reg}
-set ::bali::simulation::Para(FILELIST) {"D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd" "D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd" "D:/RTL_FPGA/VHDL/lsfr_reg/LFSR_tb.vhd" }
+set ::bali::simulation::Para(FILELIST) {"D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd" "D:/RTL_FPGA/VHDL/lsfr_reg/db_ff.vhd" "D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd" "D:/RTL_FPGA/VHDL/lsfr_reg/LFSR_tb.vhd" }
 set ::bali::simulation::Para(GLBINCLIST) {}
-set ::bali::simulation::Para(INCLIST) {"none" "none" "none"}
-set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" "work" }
-set ::bali::simulation::Para(COMPLIST) {"VHDL" "VHDL" "VHDL" }
-set ::bali::simulation::Para(LANGSTDLIST) {"" "" "" }
+set ::bali::simulation::Para(INCLIST) {"none" "none" "none" "none"}
+set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" "work" "work" }
+set ::bali::simulation::Para(COMPLIST) {"VHDL" "VHDL" "VHDL" "VHDL" }
+set ::bali::simulation::Para(LANGSTDLIST) {"" "" "" "" }
 set ::bali::simulation::Para(SIMLIBLIST) {pmi_work ovi_ecp5u}
 set ::bali::simulation::Para(MACROLIST) {}
 set ::bali::simulation::Para(SIMULATIONTOPMODULE) {LFSR_tb}
