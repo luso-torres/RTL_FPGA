@@ -18,38 +18,43 @@
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/erros_2/erro_2.vhd(4): </Dynamic>
-            <Dynamic>erro_2</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/erros_2/erro_2.vhd</Navigation>
-            <Navigation>4</Navigation>
+            <Dynamic>d:/rtl_fpga/vhdl/erros_2/erro_7.vhd(5): </Dynamic>
+            <Dynamic>erro_7</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/erros_2/erro_7.vhd</Navigation>
+            <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/erros_2/erro_2.vhd(12): </Dynamic>
+            <Dynamic>d:/rtl_fpga/vhdl/erros_2/erro_7.vhd(13): </Dynamic>
             <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/erros_2/erro_2.vhd</Navigation>
-            <Navigation>12</Navigation>
+            <Navigation>d:/rtl_fpga/vhdl/erros_2/erro_7.vhd</Navigation>
+            <Navigation>13</Navigation>
         </Message>
         <Message>
-            <ID>35001714</ID>
+            <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>saida</Dynamic>
+            <Dynamic>d:/rtl_fpga/vhdl/erros_2/erro_7.vhd(11): </Dynamic>
+            <Dynamic>erro_7</Dynamic>
+            <Dynamic>behaviour</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/erros_2/erro_7.vhd</Navigation>
+            <Navigation>11</Navigation>
         </Message>
         <Message>
-            <ID>35001714</ID>
+            <ID>35001611</ID>
             <Severity>Warning</Severity>
-            <Dynamic>saida</Dynamic>
         </Message>
         <Message>
-            <ID>35931000</ID>
-            <Severity>Error</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/erros_2/erro_2.vhd(18): </Dynamic>
-            <Dynamic>saida</Dynamic>
-            <Dynamic>i4</Dynamic>
-            <Dynamic>o</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/erros_2/erro_2.vhd</Navigation>
-            <Navigation>18</Navigation>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

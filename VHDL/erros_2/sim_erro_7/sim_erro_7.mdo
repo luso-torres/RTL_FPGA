@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VHDL/erros_2/sim_erro_7/sim_erro_7.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/erros_2/sim_erro_7" sim_erro_7
+	project addfile "D:/RTL_FPGA/VHDL/erros_2/erro_7.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/erros_2/erro_7_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/erros_2/erro_7.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/erros_2/erro_7_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/erros_2/sim_erro_7/sim_erro_7"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

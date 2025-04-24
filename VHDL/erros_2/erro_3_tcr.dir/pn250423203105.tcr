@@ -1,0 +1,18 @@
+#Start recording tcl command: 4/23/2025 20:12:49
+#Project Location: D:/RTL_FPGA/VHDL/erros_2; Project name: erro_3
+prj_project new -name "erro_3" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/erros_2/erro_3.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 4/23/2025 20:31:05

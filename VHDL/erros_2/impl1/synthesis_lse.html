@@ -7,6 +7,18 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Apr 23 20:57:09 2025
+
+
+Command Line:  synthesis -f erro_7_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/VHDL/erros_2/promote.xml 
+
 Synthesis options:
 The -a option is ECP5U.
 The -s option is 6.
@@ -32,7 +44,7 @@ Using performance grade 6.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Timing
-Top-level module name = erro_2.
+Top-level module name = erro_7.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -62,8 +74,8 @@ The -syn option is FALSE.
 -p D:/RTL_FPGA/VHDL/erros_2/impl1 (searchpath added)
 -p D:/RTL_FPGA/VHDL/erros_2 (searchpath added)
 VHDL library = work
-VHDL design file = D:/RTL_FPGA/VHDL/erros_2/erro_2.vhd
-NGD file = erros_2_impl1.ngd
+VHDL design file = D:/RTL_FPGA/VHDL/erros_2/erro_7.vhd
+NGD file = erro_7_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
 Hardtimer checking is enabled (default). The -dt option is not used.
@@ -74,20 +86,91 @@ Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADER
 Compile design.
 Compile Design Begin
 INFO - synthesis: The default VHDL library search path is now "D:/RTL_FPGA/VHDL/erros_2/impl1". VHDL-1504
-Analyzing VHDL file d:/rtl_fpga/vhdl/erros_2/erro_2.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/vhdl/erros_2/erro_2.vhd(4): analyzing entity erro_2. VHDL-1012
-INFO - synthesis: d:/rtl_fpga/vhdl/erros_2/erro_2.vhd(12): analyzing architecture behaviour. VHDL-1010
-unit erro_2 is not yet analyzed. VHDL-1485
-WARNING - synthesis: Net saida has following drivers :
-unit erro_2 is not yet analyzed. VHDL-1485
-d:/rtl_fpga/vhdl/erros_2/erro_2.vhd(4): executing erro_2(behaviour)
+Analyzing VHDL file d:/rtl_fpga/vhdl/erros_2/erro_7.vhd. VHDL-1481
+INFO - synthesis: d:/rtl_fpga/vhdl/erros_2/erro_7.vhd(5): analyzing entity erro_7. VHDL-1012
+INFO - synthesis: d:/rtl_fpga/vhdl/erros_2/erro_7.vhd(13): analyzing architecture behaviour. VHDL-1010
+unit erro_7 is not yet analyzed. VHDL-1485
+unit erro_7 is not yet analyzed. VHDL-1485
+d:/rtl_fpga/vhdl/erros_2/erro_7.vhd(5): executing erro_7(behaviour)
 
-WARNING - synthesis: Net saida has following drivers :
-	 instance i5
+WARNING - synthesis: d:/rtl_fpga/vhdl/erros_2/erro_7.vhd(11): replacing existing netlist erro_7(behaviour). VHDL-1205
+Top module name (VHDL): erro_7
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = erro_7.
 
-	 instance i4
 
-ERROR - synthesis: d:/rtl_fpga/vhdl/erros_2/erro_2.vhd(18): net saida is constantly driven from multiple places at instance i4, on port o. VDB-1000
+
+GSR instance connected to net n34.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in erro_7_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: DRC complete with 1 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file erro_7_impl1.ngd.
+
+################### Begin Area Report (erro_7)######################
+Number of register bits => 5 of 44439 (0 % )
+FD1P3AX => 4
+FD1S3AX => 1
+GSR => 1
+IB => 2
+LUT4 => 5
+OB => 4
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 5
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : a, loads : 4
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : y_c_0, loads : 5
+  Net : y_c_1, loads : 4
+  Net : a, loads : 4
+  Net : y_c_2, loads : 3
+  Net : y_c_3, loads : 2
+  Net : reset_c, loads : 1
+  Net : n34, loads : 1
+  Net : n22, loads : 1
+  Net : n23, loads : 1
+  Net : n24, loads : 1
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  354.988 MHz|     2  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 105.371  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.453  secs
+--------------------------------------------------------------
 
 
 

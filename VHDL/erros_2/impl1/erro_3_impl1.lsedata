@@ -1,0 +1,61 @@
+<top name = "erro_3"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "erro_3">
+
+    <!--
+        Top Level Pins: 3
+    -->
+
+    <pins>
+        <pitem  name = "a"  direction = "in"  />
+        <pitem  name = "sel"  direction = "in"  />
+        <pitem  name = "saida"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 1
+    -->
+
+    <instance  name = "a_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "a"  />
+        <nitem  name = "sel"  />
+        <nitem  name = "saida"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "erro_3": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>
