@@ -1,0 +1,4 @@
+#Start recording tcl command: 4/24/2025 21:56:30
+#Project Location: D:/RTL_FPGA/VHDL/comparator; Project name: comparator
+prj_project open "D:/RTL_FPGA/VHDL/comparator/comparator.ldf"
+#Stop recording: 4/24/2025 21:57:12

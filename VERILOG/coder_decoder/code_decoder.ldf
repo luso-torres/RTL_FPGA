@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="code_decoder" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="coder_decoder"/>
+        <Source name="coder_decoder.v" type="Verilog" type_short="Verilog">
+            <Options top_module="coder_decoder"/>
+        </Source>
+        <Source name="module_a.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="module_b.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="module_c.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="module_d.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="coder_decoder_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="code_decoder.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_coder_decoder/sim_coder_decoder.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="code_decoder1.sty"/>
+</BaliProject>

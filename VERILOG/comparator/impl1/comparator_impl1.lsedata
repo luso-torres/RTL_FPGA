@@ -1,0 +1,100 @@
+<top name = "mux"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "mux">
+
+    <!--
+        Top Level Pins: 4
+    -->
+
+    <pins>
+        <pitem  name = "a"  direction = "in"  />
+        <pitem  name = "b"  direction = "in"  />
+        <pitem  name = "sel"  direction = "in"  />
+        <pitem  name = "y"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 4
+    -->
+
+    <instance  name = "sel_I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "sel"  />
+        <nitem  name = "sel_N_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "y_I_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "sel_N_3"  />
+        <nitem  name = "a"  />
+        <nitem  name = "y_N_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "sel_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "sel"  />
+        <nitem  name = "b"  />
+        <nitem  name = "y_N_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "y_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "y_N_1"  />
+        <nitem  name = "y_N_4"  />
+        <nitem  name = "y"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "mux": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

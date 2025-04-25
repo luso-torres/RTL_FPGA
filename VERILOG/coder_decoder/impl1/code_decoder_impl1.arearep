@@ -1,0 +1,45 @@
+----------------------------------------------------------------------
+Report for cell coder_decoder.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         4          100.0
+                               LUT4         4          100.0
+                                 OB         4          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                        converter_A         1
+                        converter_B         1
+                        converter_C         1
+                        converter_D         1
+                              TOTAL        18
+----------------------------------------------------------------------
+Report for cell converter_B.v1
+Instance Path : mod_B
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell converter_C.v1
+Instance Path : mod_C
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell converter_D.v1
+Instance Path : mod_D
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell converter_A.v1
+Instance Path : mod_A
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1           25.0
+                              TOTAL         1

@@ -1,0 +1,502 @@
+<top name = "coder_decoder"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "coder_decoder">
+
+    <!--
+        Top Level Pins: 8
+    -->
+
+    <pins>
+        <pitem  name = "H"  direction = "in"  />
+        <pitem  name = "G"  direction = "in"  />
+        <pitem  name = "F"  direction = "in"  />
+        <pitem  name = "E"  direction = "in"  />
+        <pitem  name = "Y[3]"  direction = "out"  />
+        <pitem  name = "Y[2]"  direction = "out"  />
+        <pitem  name = "Y[1]"  direction = "out"  />
+        <pitem  name = "Y[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 37
+    -->
+
+    <instance  name = "mod_A/F_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "F"  />
+        <nitem  name = "mod_A/F_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "mod_A/H_N_8"  />
+        <nitem  name = "mod_A/G_N_10"  />
+        <nitem  name = "mod_A/A_N_6"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/G_I_0_22"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "G"  />
+        <nitem  name = "mod_A/G_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/H_I_0_23"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "H"  />
+        <nitem  name = "mod_A/H_N_8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/H_I_0_14"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "H"  />
+        <nitem  name = "mod_B/H_N_25"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_C/H_I_0_10"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "H"  />
+        <nitem  name = "mod_C/H_N_35"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_D/H_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "H"  />
+        <nitem  name = "G"  />
+        <nitem  name = "Y[3]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "mod_A/A_N_6"  />
+        <nitem  name = "mod_A/F_N_12"  />
+        <nitem  name = "mod_A/A_N_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "E"  />
+        <nitem  name = "mod_A/A_N_5"  />
+        <nitem  name = "mod_A/A_N_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/H_N_8_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "G"  />
+        <nitem  name = "mod_A/H_N_8"  />
+        <nitem  name = "mod_A/A_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/E_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "E"  />
+        <nitem  name = "mod_A/E_N_16"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "mod_A/A_N_14"  />
+        <nitem  name = "mod_A/E_N_16"  />
+        <nitem  name = "mod_A/A_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "mod_A/A_N_4"  />
+        <nitem  name = "mod_A/A_N_13"  />
+        <nitem  name = "mod_A/A_N_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/G_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "G"  />
+        <nitem  name = "F"  />
+        <nitem  name = "mod_A/A_N_17"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "mod_A/A_N_3"  />
+        <nitem  name = "mod_A/A_N_17"  />
+        <nitem  name = "mod_A/A_N_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/H_I_0_24"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "H"  />
+        <nitem  name = "G"  />
+        <nitem  name = "mod_A/A_N_19"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "E"  />
+        <nitem  name = "mod_A/A_N_19"  />
+        <nitem  name = "mod_A/A_N_18"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "mod_A/A_N_2"  />
+        <nitem  name = "mod_A/A_N_18"  />
+        <nitem  name = "mod_A/A_N_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/H_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "H"  />
+        <nitem  name = "F"  />
+        <nitem  name = "mod_A/A_N_20"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A/A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Y[0]"  />
+        <nitem  name = "mod_A/A_N_1"  />
+        <nitem  name = "mod_A/A_N_20"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/B_I_11"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "G"  />
+        <nitem  name = "mod_B/H_N_25"  />
+        <nitem  name = "mod_B/B_N_23"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/E_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "E"  />
+        <nitem  name = "mod_B/E_N_27"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/B_I_10"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "mod_B/B_N_23"  />
+        <nitem  name = "mod_B/E_N_27"  />
+        <nitem  name = "mod_B/B_N_22"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/G_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "G"  />
+        <nitem  name = "mod_B/G_N_30"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/B_I_12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "F"  />
+        <nitem  name = "mod_B/G_N_30"  />
+        <nitem  name = "mod_B/B_N_28"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/B_I_9"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "mod_B/B_N_22"  />
+        <nitem  name = "mod_B/B_N_28"  />
+        <nitem  name = "mod_B/B_N_21"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/H_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "H"  />
+        <nitem  name = "mod_B/G_N_30"  />
+        <nitem  name = "mod_B/B_N_31"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_B/B_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Y[1]"  />
+        <nitem  name = "mod_B/B_N_21"  />
+        <nitem  name = "mod_B/B_N_31"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_C/C_I_14"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "G"  />
+        <nitem  name = "mod_C/H_N_35"  />
+        <nitem  name = "mod_C/C_N_33"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_C/C_I_13"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "E"  />
+        <nitem  name = "mod_C/C_N_33"  />
+        <nitem  name = "mod_C/C_N_32"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_C/G_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "G"  />
+        <nitem  name = "mod_C/G_N_38"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_C/H_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "H"  />
+        <nitem  name = "mod_C/G_N_38"  />
+        <nitem  name = "mod_C/C_N_36"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_C/C_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Y[2]"  />
+        <nitem  name = "mod_C/C_N_32"  />
+        <nitem  name = "mod_C/C_N_36"  />
+        </nets>
+    </instance>
+
+    <instance  name = "mod_A"  />
+    <instance  name = "mod_B"  />
+    <instance  name = "mod_C"  />
+    <instance  name = "mod_D"  />
+    <!--
+        Views in design "coder_decoder": 4
+    -->
+
+    <views>
+        <view  name = "converter_A"  />
+        <view  name = "converter_B"  />
+        <view  name = "converter_C"  />
+        <view  name = "converter_D"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

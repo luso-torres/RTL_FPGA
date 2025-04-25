@@ -1,0 +1,43 @@
+D:/RTL_FPGA/VERILOG/coder_decoder/module_d.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/coder_decoder/module_d.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module converter_D
+
+Top level modules:
+	converter_D
+
+} {} {}} D:/RTL_FPGA/VERILOG/coder_decoder/module_a.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/coder_decoder/module_a.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module converter_A
+
+Top level modules:
+	converter_A
+
+} {} {}} D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module coder_decoder
+
+Top level modules:
+	coder_decoder
+
+} {} {}} D:/RTL_FPGA/VERILOG/coder_decoder/module_b.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/coder_decoder/module_b.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module converter_B
+
+Top level modules:
+	converter_B
+
+} {} {}} D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module coder_decoder_tf
+
+Top level modules:
+	coder_decoder_tf
+
+} {} {}} D:/RTL_FPGA/VERILOG/coder_decoder/module_c.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/coder_decoder/module_c.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module converter_C
+
+Top level modules:
+	converter_C
+
+} {} {}}

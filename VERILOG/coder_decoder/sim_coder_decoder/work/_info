@@ -1,0 +1,175 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/coder_decoder/sim_coder_decoder
+T_opt
+!s110 1745542239
+VTWD?V>[boognWUY@GP^Q]0
+04 16 4 work coder_decoder_tf fast 0
+=1-ac675dfda9e9-680adc5e-2f0-af14
+R0
+!s12f OEM25U5 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vcoder_decoder
+2D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v
+Z3 !s110 1745542236
+!i10b 1
+!s100 :7[3WVe?C><YT6CgUOmC?1
+IFnSkK@KckY_[[jd0AkPh[2
+R1
+w1745542068
+8D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v
+FD:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v
+!i122 4
+L0 1 13
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1745542236.000000
+!s107 D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/coder_decoder|-work|work|D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/VERILOG/coder_decoder -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vcoder_decoder_tf
+2D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v
+!s110 1745542237
+!i10b 1
+!s100 8:@I=MJ<bh0kS_]HAch:U2
+I[5@X@nLRA@l]d0oUm1zej3
+R1
+w1745542202
+8D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v
+FD:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v
+!i122 5
+L0 18 82
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/coder_decoder|-work|work|D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v|
+!i113 0
+R7
+R8
+R2
+vconverter_A
+2D:/RTL_FPGA/VERILOG/coder_decoder/module_a.v
+R3
+!i10b 1
+!s100 @B^M`9Jhm2:HQ]1dZ6Xo61
+Ii^ibVNe]dC7dZUmS_gQS?3
+R1
+w1745541189
+8D:/RTL_FPGA/VERILOG/coder_decoder/module_a.v
+FD:/RTL_FPGA/VERILOG/coder_decoder/module_a.v
+!i122 3
+Z9 L0 1 8
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/coder_decoder/module_a.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/coder_decoder|-work|work|D:/RTL_FPGA/VERILOG/coder_decoder/module_a.v|
+!i113 0
+R7
+R8
+R2
+nconverter_@a
+vconverter_B
+2D:/RTL_FPGA/VERILOG/coder_decoder/module_b.v
+R3
+!i10b 1
+!s100 ]@JWD_534:i9GTo1@bH<V3
+Iz0F>5Y]X2gB^9D7<1?dZz0
+R1
+w1745541186
+8D:/RTL_FPGA/VERILOG/coder_decoder/module_b.v
+FD:/RTL_FPGA/VERILOG/coder_decoder/module_b.v
+!i122 2
+R9
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/coder_decoder/module_b.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/coder_decoder|-work|work|D:/RTL_FPGA/VERILOG/coder_decoder/module_b.v|
+!i113 0
+R7
+R8
+R2
+nconverter_@b
+vconverter_C
+2D:/RTL_FPGA/VERILOG/coder_decoder/module_c.v
+R3
+!i10b 1
+!s100 gnhTUznzPcHJ5=Gm^KeLT3
+I::Y_DAj<Mz6I5HfSDnaVI2
+R1
+w1745541284
+8D:/RTL_FPGA/VERILOG/coder_decoder/module_c.v
+FD:/RTL_FPGA/VERILOG/coder_decoder/module_c.v
+!i122 1
+Z10 L0 1 9
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/coder_decoder/module_c.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/coder_decoder|-work|work|D:/RTL_FPGA/VERILOG/coder_decoder/module_c.v|
+!i113 0
+R7
+R8
+R2
+nconverter_@c
+vconverter_D
+2D:/RTL_FPGA/VERILOG/coder_decoder/module_d.v
+R3
+!i10b 1
+!s100 SW2N3k_D9j8Q`YldzD`bG3
+IXVh0CG>X;@R0M^VA_G<P:1
+R1
+w1745541331
+8D:/RTL_FPGA/VERILOG/coder_decoder/module_d.v
+FD:/RTL_FPGA/VERILOG/coder_decoder/module_d.v
+!i122 0
+R10
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/coder_decoder/module_d.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/coder_decoder|-work|work|D:/RTL_FPGA/VERILOG/coder_decoder/module_d.v|
+!i113 0
+R7
+R8
+R2
+nconverter_@d

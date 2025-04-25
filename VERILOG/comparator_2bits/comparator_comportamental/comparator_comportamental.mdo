@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_comportamental/comparator_comportamental.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_comportamental" comparator_comportamental
+	project addfile "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits.v"
+	project addfile "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits_tf.v"
+	project addfile "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits_comportamental.v"
+	project addfile "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_comportamental_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VHDL/comparator_2bits  -work work  "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits.v"
+	vlog  +incdir+D:/RTL_FPGA/VHDL/comparator_2bits  -work work  "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits_tf.v"
+	vlog  +incdir+D:/RTL_FPGA/VHDL/comparator_2bits  -work work  "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits_comportamental.v"
+	vlog  +incdir+D:/RTL_FPGA/VHDL/comparator_2bits  -work work  "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_comportamental_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_comportamental/comparator_comportamental"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  comparator_comportamental_tf
+view wave
+add wave /*
+run 1000ns

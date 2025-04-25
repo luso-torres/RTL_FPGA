@@ -1,0 +1,8 @@
+#Start recording tcl command: 4/24/2025 19:12:45
+#Project Location: D:/RTL_FPGA/VHDL/erros_2; Project name: MUX_21
+prj_project new -name "MUX_21" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/erros_2/mux.vhd"
+prj_project save
+prj_project close
+#Stop recording: 4/24/2025 19:40:46

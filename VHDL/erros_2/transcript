@@ -78,3 +78,5 @@ restart
 run
 run
 # Causality operation skipped due to absence of debug database file
+# End time: 21:12:13 on Apr 23,2025, Elapsed time: 0:09:35
+# Errors: 0, Warnings: 2

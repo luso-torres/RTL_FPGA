@@ -1,0 +1,24 @@
+#Start recording tcl command: 4/23/2025 20:44:02
+#Project Location: D:/RTL_FPGA/VHDL/erros_2; Project name: erro_7
+prj_project new -name "erro_7" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/erros_2/erro_7.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/erros_2/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "erro_7_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/erros_2/sim_erro_7/sim_erro_7.spf"
+#Stop recording: 4/23/2025 21:12:45

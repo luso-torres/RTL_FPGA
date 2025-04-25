@@ -1,0 +1,28 @@
+#Start recording tcl command: 4/24/2025 20:38:54
+#Project Location: D:/RTL_FPGA/VHDL/comparator_2bits; Project name: comparator_2bits
+prj_project new -name "comparator_2bits" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/comparator_2bits/comparator2bits.vhd"
+prj_src remove "D:/RTL_FPGA/VHDL/comparator_2bits/comparator2bits.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/comparator_2bits/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/VHDL/comparator_2bits/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/VHDL/comparator_2bits/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "comparator_2bits_tf.v"
+prj_src add "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits/comparator_2bits.spf"
+prj_src add "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits_comportamental.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis -forceOne
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/comparator_2bits/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "comparator_comportamental_tf.v"
+prj_src add "D:/RTL_FPGA/VHDL/comparator_2bits/comparator_comportamental/comparator_comportamental.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/24/2025 21:25:55
