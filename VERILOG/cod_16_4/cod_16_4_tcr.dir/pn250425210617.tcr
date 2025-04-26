@@ -1,0 +1,21 @@
+#Start recording tcl command: 4/25/2025 20:38:56
+#Project Location: D:/RTL_FPGA/VERILOG/cod_16_4; Project name: cod_16_4
+prj_project new -name "cod_16_4" -impl "impl1" -dev LFE5U-25F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/cod_16_4/cod_16_4.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/cod_16_4/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "cod_16_4bits_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/cod_16_4/sim_cod_16_4/sim_cod_16_4.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/25/2025 21:06:17

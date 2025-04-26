@@ -1,0 +1,22 @@
+D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83_topmodle.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83_topmodle.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module cod164
+
+Top level modules:
+	cod164
+
+} {} {}} D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module cod83
+
+Top level modules:
+	cod83
+
+} {} {}} D:/RTL_FPGA/VERILOG/cod_164_com_83/cod164_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/cod_164_com_83/cod164_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module cod164_tf
+
+Top level modules:
+	cod164_tf
+
+} {} {}}

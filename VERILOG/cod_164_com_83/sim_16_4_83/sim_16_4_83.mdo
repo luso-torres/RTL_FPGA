@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/cod_164_com_83/sim_16_4_83/sim_16_4_83.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/cod_164_com_83/sim_16_4_83" sim_16_4_83
+	project addfile "D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83.v"
+	project addfile "D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83_topmodle.v"
+	project addfile "D:/RTL_FPGA/VERILOG/cod_164_com_83/cod164_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/cod_164_com_83  -work work  "D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/cod_164_com_83  -work work  "D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83_topmodle.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/cod_164_com_83  -work work  "D:/RTL_FPGA/VERILOG/cod_164_com_83/cod164_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/cod_164_com_83/sim_16_4_83/sim_16_4_83"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  cod164_tf
+view wave
+add wave /*
+run 1000ns
