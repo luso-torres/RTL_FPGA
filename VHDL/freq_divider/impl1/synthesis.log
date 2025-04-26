@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Apr 21 23:24:34 2025
+Tue Apr 22 15:23:47 2025
 
 
 Command Line:  synthesis -f frequency_divider_impl1_lattice.synproj -gui 
@@ -61,11 +61,11 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p E:/ld/ispfpga/sa5p00/data (searchpath added)
--p E:/repositories/RTL_FPGA/VHDL/freq_divider/impl1 (searchpath added)
--p E:/repositories/RTL_FPGA/VHDL/freq_divider (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/VHDL/freq_divider/impl1 (searchpath added)
+-p D:/RTL_FPGA/VHDL/freq_divider (searchpath added)
 VHDL library = work
-VHDL design file = E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd
+VHDL design file = D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd
 NGD file = frequency_divider_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -73,81 +73,122 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file E:/ld/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-INFO - synthesis: The default VHDL library search path is now "E:/repositories/RTL_FPGA/VHDL/freq_divider/impl1". VHDL-1504
-Analyzing VHDL file e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd. VHDL-1481
-INFO - synthesis: e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(5): analyzing entity freq_divider. VHDL-1012
-INFO - synthesis: e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(15): analyzing architecture behaviour. VHDL-1010
+INFO - synthesis: The default VHDL library search path is now "D:/RTL_FPGA/VHDL/freq_divider/impl1". VHDL-1504
+Analyzing VHDL file d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd. VHDL-1481
+INFO - synthesis: d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(5): analyzing entity freq_divider. VHDL-1012
+INFO - synthesis: d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(15): analyzing architecture behaviour. VHDL-1010
 unit freq_divider is not yet analyzed. VHDL-1485
 unit freq_divider is not yet analyzed. VHDL-1485
-e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(5): executing freq_divider(behaviour)
+d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(5): executing freq_divider(behaviour)
 
-WARNING - synthesis: e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(41): using initial value 10 for clockfrequency since it is never assigned. VHDL-1303
-WARNING - synthesis: e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(13): replacing existing netlist freq_divider(behaviour). VHDL-1205
+WARNING - synthesis: d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(23): up should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(36): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(13): replacing existing netlist freq_divider(behaviour). VHDL-1205
 Top module name (VHDL): freq_divider
-Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'sa5p45.nph' in environment: E:/ld/ispfpga.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
 Top-level module name = freq_divider.
 
 
 
-WARNING - synthesis: e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(56): Register pulse_out_32 is stuck at Zero. VDB-5013
-WARNING - synthesis: I/O Port clk 's net has no driver and is unused.
-WARNING - synthesis: I/O Port c[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port c[2] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port c[1] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port c[0] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port nRst 's net has no driver and is unused.
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: Bit 31 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 30 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 29 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 28 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 27 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 26 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 25 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 24 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 23 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 22 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 21 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 20 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 19 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 18 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 17 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 16 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 15 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 14 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 13 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 12 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 11 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 10 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 9 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 8 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 7 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 6 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 5 of Register c_i is stuck at Zero
+WARNING - synthesis: Bit 4 of Register c_i is stuck at Zero
+GSR instance connected to net n255.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in freq_divider_drc.log.
-Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'clk' has no load.
-WARNING - synthesis: input pad net 'clk' has no legal load.
-WARNING - synthesis: logical net 'c[3]' has no load.
-WARNING - synthesis: input pad net 'c[3]' has no legal load.
-WARNING - synthesis: logical net 'c[2]' has no load.
-WARNING - synthesis: input pad net 'c[2]' has no legal load.
-WARNING - synthesis: logical net 'c[1]' has no load.
-WARNING - synthesis: input pad net 'c[1]' has no legal load.
-WARNING - synthesis: logical net 'c[0]' has no load.
-WARNING - synthesis: input pad net 'c[0]' has no legal load.
-WARNING - synthesis: logical net 'nRst' has no load.
-WARNING - synthesis: input pad net 'nRst' has no legal load.
-WARNING - synthesis: DRC complete with 12 warnings.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file frequency_divider_impl1.ngd.
 
 ################### Begin Area Report (freq_divider)######################
-Number of register bits => 0 of 44439 (0 % )
+Number of register bits => 37 of 44439 (0 % )
+CCU2C => 23
+FD1P3AX => 4
+FD1S3AX => 1
+FD1S3IX => 32
 GSR => 1
+IB => 6
+LUT4 => 2
 OB => 1
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 0
+Number of Clocks: 1
+  Net : clk_c, loads : 37
 Clock Enable Nets
-Number of Clock Enables: 0
-Top 0 highest fanout Clock Enables:
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clk_c_enable_4, loads : 5
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : pulse, loads : 0
+  Net : Counter_31__N_97, loads : 33
+  Net : clk_c_enable_4, loads : 5
+  Net : pulse_c, loads : 2
+  Net : Counter_31, loads : 2
+  Net : Counter_30, loads : 2
+  Net : Counter_29, loads : 2
+  Net : Counter_28, loads : 2
+  Net : Counter_27, loads : 2
+  Net : Counter_26, loads : 2
+  Net : Counter_25, loads : 2
 ################### End Clock Report ##################
 
-Peak Memory Usage: 104.168  MB
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  184.911 MHz|     8 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 108.402  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.891  secs
+Elapsed CPU time for LSE flow : 1.719  secs
 --------------------------------------------------------------

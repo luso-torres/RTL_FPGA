@@ -31,11 +31,11 @@
 
 
 -lpf 1
--lib "work" -vhd "E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd"
+-lib "work" -vhd "D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd"
 -top freq_divider
 
 
--p "E:/ld/ispfpga/sa5p00/data" "E:/repositories/RTL_FPGA/VHDL/freq_divider/impl1" "E:/repositories/RTL_FPGA/VHDL/freq_divider"
+-p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "D:/RTL_FPGA/VHDL/freq_divider/impl1" "D:/RTL_FPGA/VHDL/freq_divider"
 
 -ngd "frequency_divider_impl1.ngd"
 

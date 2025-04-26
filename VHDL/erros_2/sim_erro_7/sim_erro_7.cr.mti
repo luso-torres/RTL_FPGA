@@ -1,0 +1,19 @@
+D:/RTL_FPGA/VHDL/erros_2/erro_7.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VHDL/erros_2/erro_7.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity erro_7
+-- Compiling architecture behaviour of erro_7
+
+} {} {}} D:/RTL_FPGA/VHDL/erros_2/erro_7_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VHDL/erros_2/erro_7_tb.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbench
+-- Compiling architecture behavior of testbench
+
+} {} {}}

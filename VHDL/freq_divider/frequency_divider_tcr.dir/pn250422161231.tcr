@@ -1,0 +1,31 @@
+#Start recording tcl command: 4/22/2025 14:19:23
+#Project Location: D:/RTL_FPGA/VHDL/freq_divider; Project name: frequency_divider
+prj_project open "D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis -forceOne
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.spf"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/VHDL/freq_divider/hdle_generate_tbtemplate.tcl"
+prj_src remove "D:/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd"
+source "D:/RTL_FPGA/VHDL/freq_divider/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "freq_divider_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.spf"
+prj_src add "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.spf"
+prj_src add "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.spf"
+prj_src add "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.spf"
+prj_src add "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.spf"
+prj_src add "D:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider/sim_freq_divider.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/22/2025 16:12:31

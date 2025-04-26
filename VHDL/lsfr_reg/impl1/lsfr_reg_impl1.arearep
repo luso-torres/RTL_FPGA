@@ -1,0 +1,47 @@
+----------------------------------------------------------------------
+Report for cell LFSR.TECH
+Register bits:  4 of 44439 (0.009%)
+I/O cells:      3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3          100.0
+                            FD1S3AY         1          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                               LUT4         2          100.0
+                                 OB         1          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                               d_ff         1
+                            d_ff_U0         1
+                            d_ff_U1         1
+                              db_ff         1
+                              TOTAL        15
+----------------------------------------------------------------------
+Report for cell d_ff_U0.v1
+Instance Path : d1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1           33.3
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell db_ff.v1
+Instance Path : d3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AY         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell d_ff_U1.v1
+Instance Path : d0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1           33.3
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell d_ff.v1
+Instance Path : d2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1           33.3
+                              TOTAL         1

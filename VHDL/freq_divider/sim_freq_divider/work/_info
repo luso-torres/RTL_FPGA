@@ -1,8 +1,30 @@
 m255
 K4
 z2
-!s12c _opt
-Z0 !s99 nomlopt
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
 !s11e vcom 2024.2 2024.05, May 20 2024
 13
 !s112 1.1
@@ -10,13 +32,13 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 dE:/repositories/RTL_FPGA/VHDL/freq_divider/sim_freq_divider
+Z2 dD:/RTL_FPGA/VHDL/freq_divider/sim_freq_divider
 T_opt
-!s110 1745289880
-Vbh9Zif28dRgg=FQK3j<@;1
+!s110 1745348883
+Vb7[zLCfDAZS`=O7=]g9=m1
 04 15 8 work tb_freq_divider behavior 1
-=1-4cedfbc5dde6-68070298-cb-4e54
-R0
+=16-ac675dfda9e9-6807e912-1ac-a014
+R1
 !s12f OEM25U2 
 !s12b OEM100
 !s124 OEM100
@@ -26,88 +48,88 @@ tCvgOpt 0
 n@_opt
 OL;O;2024.2;79
 Efreq_divider
-Z2 w1745289850
-Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 0
-R1
-Z6 8E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd
-Z7 FE:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd
+Z3 w1745348796
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 23
+R2
+Z7 8D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd
+Z8 FD:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd
 l0
 L5 1
-VAK^;n2gzKHoe=Li^?gKDz2
-!s100 bzlm>M3ZocS?AY[PkemVf1
-Z8 OL;C;2024.2;79
+VhIB2bNCXa9UE=XanWfT@G3
+!s100 WjWL;G15=]k`=7^g2^dEW2
+Z9 OL;C;2024.2;79
 32
-Z9 !s110 1745289879
+Z10 !s110 1745348867
 !i10b 1
-Z10 !s108 1745289878.000000
-Z11 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd|
-Z12 !s107 E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd|
+Z11 !s108 1745348867.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd|
+Z13 !s107 D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd|
 !i113 0
-Z13 o-work work
-Z14 tExplicit 1 CvgOpt 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
 Abehaviour
-R3
 R4
 R5
-DEx4 work 12 freq_divider 0 22 AK^;n2gzKHoe=Li^?gKDz2
-!i122 0
-l38
-L15 45
-VgMIBOBOh>C@8R2FaGjL:73
-!s100 52f9?8JF?gQSkO1;RDS]32
-R8
-32
+R6
+DEx4 work 12 freq_divider 0 22 hIB2bNCXa9UE=XanWfT@G3
+!i122 23
+l19
+L15 24
+V3EAn;8QIcM[3WL0cfWU_n1
+!s100 6BDWQlEcL@Z`_0I_hSCmn2
 R9
-!i10b 1
+32
 R10
+!i10b 1
 R11
 R12
-!i113 0
 R13
+!i113 0
 R14
+R15
 Etb_freq_divider
-Z15 w1745289705
-R3
+Z16 w1745348861
 R4
 R5
-!i122 1
-R1
-Z16 8E:/repositories/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd
-Z17 FE:/repositories/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd
+R6
+!i122 24
+R2
+Z17 8D:/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd
+Z18 FD:/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd
 l0
 L5 1
-VVjmV`JMIVd=_fLOfPkEN]2
-!s100 25eYcUA?:4:@<E@OgBU1]3
-R8
-32
+VmUba06biz[K5=kFkT`mU51
+!s100 =i]47;=_K:Pd`>7?>G3>o3
 R9
+32
+R10
 !i10b 1
-Z18 !s108 1745289879.000000
-Z19 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd|
-Z20 !s107 E:/repositories/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd|
+R11
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd|
+Z20 !s107 D:/RTL_FPGA/VHDL/freq_divider/freq_divider_tb.vhd|
 !i113 0
-R13
 R14
+R15
 Abehavior
-R3
 R4
 R5
-DEx4 work 15 tb_freq_divider 0 22 VjmV`JMIVd=_fLOfPkEN]2
-!i122 1
-l25
-L8 55
-VdQom1`czmMkLRL:H1jKR63
-!s100 H_E_k^F@L_mH_3=GWZ4cW1
-R8
-32
+R6
+DEx4 work 15 tb_freq_divider 0 22 mUba06biz[K5=kFkT`mU51
+!i122 24
+l28
+L8 63
+VcU@dn9VG^C8>59SYh`^ff0
+!s100 hJRkJgO4[_6;63RQQd4mE3
 R9
+32
+R10
 !i10b 1
-R18
+R11
 R19
 R20
 !i113 0
-R13
 R14
+R15

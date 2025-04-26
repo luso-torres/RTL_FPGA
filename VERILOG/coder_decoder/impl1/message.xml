@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/coder_decoder/coder_decoder.v(1): </Dynamic>
+            <Dynamic>coder_decoder</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/coder_decoder/coder_decoder.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/coder_decoder/module_a.v(1): </Dynamic>
+            <Dynamic>converter_A</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/coder_decoder/module_a.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/coder_decoder/module_b.v(1): </Dynamic>
+            <Dynamic>converter_B</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/coder_decoder/module_b.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/coder_decoder/module_c.v(1): </Dynamic>
+            <Dynamic>converter_C</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/coder_decoder/module_c.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/coder_decoder/module_d.v(1): </Dynamic>
+            <Dynamic>converter_D</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/coder_decoder/module_d.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

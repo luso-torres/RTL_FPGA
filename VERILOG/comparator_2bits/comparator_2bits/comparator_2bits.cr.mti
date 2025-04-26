@@ -1,0 +1,15 @@
+D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module comparator_2bits
+
+Top level modules:
+	comparator_2bits
+
+} {} {}} D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VHDL/comparator_2bits/comparator_2bits_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module comparator_2bits_tf
+
+Top level modules:
+	comparator_2bits_tf
+
+} {} {}}

@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Apr 21 23:24:34 2025
+Tue Apr 22 15:23:47 2025
 
 
 Command Line:  synthesis -f frequency_divider_impl1_lattice.synproj -gui 
@@ -64,11 +64,11 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p E:/ld/ispfpga/sa5p00/data (searchpath added)
--p E:/repositories/RTL_FPGA/VHDL/freq_divider/impl1 (searchpath added)
--p E:/repositories/RTL_FPGA/VHDL/freq_divider (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/VHDL/freq_divider/impl1 (searchpath added)
+-p D:/RTL_FPGA/VHDL/freq_divider (searchpath added)
 VHDL library = work
-VHDL design file = E:/repositories/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd
+VHDL design file = D:/RTL_FPGA/VHDL/freq_divider/frequency_divider.vhd
 NGD file = frequency_divider_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -76,90 +76,132 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file E:/ld/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="E:/repositories/RTL_FPGA/VHDL/freq_divider/impl1"  />
-Analyzing VHDL file e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd. VHDL-1481
-    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(5): " arg1="freq_divider" arg2="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg3="5"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(15): " arg1="behaviour" arg2="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg3="15"  />
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/RTL_FPGA/VHDL/freq_divider/impl1"  />
+Analyzing VHDL file d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(5): " arg1="freq_divider" arg2="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg3="5"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(15): " arg1="behaviour" arg2="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg3="15"  />
 unit freq_divider is not yet analyzed. VHDL-1485
 unit freq_divider is not yet analyzed. VHDL-1485
-e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(5): executing freq_divider(behaviour)
+d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(5): executing freq_divider(behaviour)
 
-    <postMsg mid="35921303" type="Warning" dynamic="3" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(41): " arg1="10" arg2="clockfrequency" arg3="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg4="41"  />
-    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(13): " arg1="freq_divider" arg2="behaviour" arg3="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg4="13"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(23): " arg1="up" arg2="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg3="23"  />
+    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(36): " arg1="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg2="36"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(13): " arg1="freq_divider" arg2="behaviour" arg3="d:/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg4="13"  />
 Top module name (VHDL): freq_divider
 Last elaborated design is freq_divider(behaviour)
-Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'sa5p45.nph' in environment: E:/ld/ispfpga.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
 Top-level module name = freq_divider.
 
 
 
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd(56): " arg1="pulse_out_32" arg2="e:/repositories/rtl_fpga/vhdl/freq_divider/frequency_divider.vhd" arg3="56"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="clk"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[3]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[2]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[1]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[0]"  />
-    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="nRst"  />
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="c_i"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="c_i"  />
+GSR instance connected to net n255.
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
 Results of NGD DRC are available in freq_divider_drc.log.
-Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 
 
 Running DRC...
 
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="clk" arg2="clk"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="clk"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[3]" arg2="c[3]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[3]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[2]" arg2="c[2]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[2]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[1]" arg2="c[1]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[1]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[0]" arg2="c[0]"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[0]"  />
-    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="nRst" arg2="nRst"  />
-    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="nRst"  />
-    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="12"  />
+DRC complete with no errors or warnings
 
 Design Results:
-      5 blocks expanded
+     73 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file frequency_divider_impl1.ngd.
 
 ################### Begin Area Report (freq_divider)######################
-Number of register bits => 0 of 44439 (0 % )
+Number of register bits => 37 of 44439 (0 % )
+CCU2C => 23
+FD1P3AX => 4
+FD1S3AX => 1
+FD1S3IX => 32
 GSR => 1
+IB => 6
+LUT4 => 2
 OB => 1
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 0
+Number of Clocks: 1
+  Net : clk_c, loads : 37
 Clock Enable Nets
-Number of Clock Enables: 0
-Top 0 highest fanout Clock Enables:
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clk_c_enable_4, loads : 5
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : pulse, loads : 0
+  Net : Counter_31__N_97, loads : 33
+  Net : clk_c_enable_4, loads : 5
+  Net : pulse_c, loads : 2
+  Net : Counter_31, loads : 2
+  Net : Counter_30, loads : 2
+  Net : Counter_29, loads : 2
+  Net : Counter_28, loads : 2
+  Net : Counter_27, loads : 2
+  Net : Counter_26, loads : 2
+  Net : Counter_25, loads : 2
 ################### End Clock Report ##################
 
-Peak Memory Usage: 104.168  MB
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  184.911 MHz|     8 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 108.402  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.891  secs
+Elapsed CPU time for LSE flow : 1.719  secs
 --------------------------------------------------------------

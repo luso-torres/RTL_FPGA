@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/cod_16_4/sim_cod_16_4/sim_cod_16_4.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/cod_16_4/sim_cod_16_4" sim_cod_16_4
+	project addfile "D:/RTL_FPGA/VERILOG/cod_16_4/cod_16_4.v"
+	project addfile "D:/RTL_FPGA/VERILOG/cod_16_4/cod_16_4bits_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/cod_16_4  -work work  "D:/RTL_FPGA/VERILOG/cod_16_4/cod_16_4.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/cod_16_4  -work work  "D:/RTL_FPGA/VERILOG/cod_16_4/cod_16_4bits_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/cod_16_4/sim_cod_16_4/sim_cod_16_4"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  cod_16_4bits_tf
+view wave
+add wave /*
+run 1000ns

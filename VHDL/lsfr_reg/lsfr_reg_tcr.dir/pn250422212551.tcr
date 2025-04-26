@@ -1,0 +1,17 @@
+#Start recording tcl command: 4/22/2025 20:38:19
+#Project Location: D:/RTL_FPGA/VHDL/lsfr_reg; Project name: lsfr_reg
+prj_project open "D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.ldf"
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/sim_lsfr/sim_lsfr.spf"
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/sim_lsfr/sim_lsfr.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/db_ff.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/sim_lfsr/sim_lfsr.spf"
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/sim_flsr/sim_flsr.spf"
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/sim/sim_lsfr_reg/sim_lsfr_reg.spf"
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/sim_lsfr_reg/sim_lsfr_reg.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/22/2025 21:25:51

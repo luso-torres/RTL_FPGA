@@ -1,9 +1,15 @@
 ----------------------------------------------------------------------
 Report for cell freq_divider.TECH
-Register bits:  0 of 44439 (0.000%)
-I/O cells:      1
+Register bits:  37 of 44439 (0.083%)
+I/O cells:      7
                                   Cell usage:
                                cell     count   Res Usage(%)
+                              CCU2C        23          100.0
+                            FD1P3AX         4          100.0
+                            FD1S3AX         1          100.0
+                            FD1S3IX        32          100.0
                                 GSR         1          100.0
+                                 IB         6          100.0
+                               LUT4         2          100.0
                                  OB         1          100.0
-                              TOTAL         2
+                              TOTAL        70

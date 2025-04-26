@@ -1,0 +1,33 @@
+#Start recording tcl command: 4/22/2025 16:12:32
+#Project Location: D:/RTL_FPGA/VHDL/lsfr_reg; Project name: lsfr_reg
+prj_project new -name "lsfr_reg" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/lsfr_reg/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "LFSR_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/lsfr_reg/sim_lfsr/sim_lfsr.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 4/22/2025 19:37:16

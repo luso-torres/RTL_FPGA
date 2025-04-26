@@ -1,0 +1,44 @@
+#Start recording tcl command: 4/25/2025 20:03:30
+#Project Location: D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3; Project name: cod8421_EX3
+prj_project new -name "cod8421_EX3" -impl "impl1" -dev LFE5U-25F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbtemplate.tcl"
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbtemplate.tcl"
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbdeclaration.tcl"
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbdeclaration.tcl"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbtemplate.tcl"
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbtemplate.tcl"
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbtemplate.tcl"
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbtemplate.tcl"
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbdeclaration.tcl"
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbdeclaration.tcl"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbtemplate.tcl"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/hdle_generate_tbtemplate.tcl"
+prj_src add "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/sim_cod8421_ex3/sim_cod8421_ex3.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/sim_cod8421_EX3/sim_cod8421_EX3.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/25/2025 20:38:56

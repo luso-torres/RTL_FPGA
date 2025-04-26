@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/cod_164_com_83/cod_164_com_83_topmodle.v(1): </Dynamic>
+            <Dynamic>cod164</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/cod_164_com_83/cod_164_com_83_topmodle.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/cod_164_com_83/cod_164_com_83.v(1): </Dynamic>
+            <Dynamic>cod83</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/cod_164_com_83/cod_164_com_83.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,195 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/VHDL/lsfr_reg/sim_lsfr_reg
+T_opt
+!s110 1745367347
+VR40gT>I17QSMRR?E5YT8e0
+04 7 4 work lfsr_tb test 1
+=3-ac675dfda9e9-68083133-16b-95e4
+R1
+!s12f OEM25U6 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Ed_ff
+Z3 w1745361298
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 12
+R2
+Z6 8D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd
+Z7 FD:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd
+l0
+L4 1
+VjV<FS;MabS`Q`oOL>H:IF3
+!s100 ]Kk;Kc4ADjL9E90C2IcL^1
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1745367330
+!i10b 1
+Z10 !s108 1745367330.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd|
+Z12 !s107 D:/RTL_FPGA/VHDL/lsfr_reg/d_ff.vhd|
+!i113 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R4
+R5
+DEx4 work 4 d_ff 0 22 jV<FS;MabS`Q`oOL>H:IF3
+!i122 12
+l14
+Z15 L13 11
+V3MbToVoQkMobReQ:hD[1N0
+!s100 5nj[azSIA373b^2oD4^742
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Edb_ff
+Z16 w1745365683
+R4
+R5
+!i122 13
+R2
+Z17 8D:/RTL_FPGA/VHDL/lsfr_reg/db_ff.vhd
+Z18 FD:/RTL_FPGA/VHDL/lsfr_reg/db_ff.vhd
+l0
+L4 1
+VTGSiB[AK]18DUKTeDVgFT0
+!s100 2b<fMZZfz45jYLzMV]0`z0
+R8
+32
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VHDL/lsfr_reg/db_ff.vhd|
+Z20 !s107 D:/RTL_FPGA/VHDL/lsfr_reg/db_ff.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R4
+R5
+DEx4 work 5 db_ff 0 22 TGSiB[AK]18DUKTeDVgFT0
+!i122 13
+l14
+R15
+V8LYX@PYgdWJHfbj55Q[l?2
+!s100 j[K4o^SMSk>VdSn1F^T`m0
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 0
+R13
+R14
+Elfsr
+Z21 w1745367105
+Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R4
+R5
+!i122 14
+R2
+Z23 8D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd
+Z24 FD:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd
+l0
+L5 1
+V1VAlm<jQ7z<CQcFk_LNH^3
+!s100 B1oAKHb=NX]NKG<1QH8>V1
+R8
+32
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd|
+Z26 !s107 D:/RTL_FPGA/VHDL/lsfr_reg/lsfr_reg.vhd|
+!i113 0
+R13
+R14
+Abehaviour
+R22
+R4
+R5
+DEx4 work 4 lfsr 0 22 1VAlm<jQ7z<CQcFk_LNH^3
+!i122 14
+l36
+L13 60
+VOlXj4YK^zPeg<T_0?aYWm1
+!s100 OWi8ZdA[3lCoeC;K9QUQY2
+R8
+32
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 0
+R13
+R14
+Elfsr_tb
+Z27 w1745367321
+R4
+R5
+!i122 15
+R2
+Z28 8D:/RTL_FPGA/VHDL/lsfr_reg/LFSR_tb.vhd
+Z29 FD:/RTL_FPGA/VHDL/lsfr_reg/LFSR_tb.vhd
+l0
+L4 1
+VD]I@FYEUOH_MYTI62?G]i2
+!s100 nB2ih_KoIj[W6zjT_;TZS1
+R8
+32
+Z30 !s110 1745367331
+!i10b 1
+Z31 !s108 1745367331.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VHDL/lsfr_reg/LFSR_tb.vhd|
+Z33 !s107 D:/RTL_FPGA/VHDL/lsfr_reg/LFSR_tb.vhd|
+!i113 0
+R13
+R14
+Atest
+R4
+R5
+DEx4 work 7 lfsr_tb 0 22 D]I@FYEUOH_MYTI62?G]i2
+!i122 15
+l26
+L7 54
+V48@^MIoH915cSmVVS^a2T2
+!s100 BmkG8GK8<TMPC]EdMnekZ3
+R8
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 0
+R13
+R14

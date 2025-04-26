@@ -1,0 +1,74 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/sim_cod8421_EX3/sim_cod8421_EX3.mdo}
+# Loading project sim_cod8421_EX3
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:33:33 on Apr 25,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3" -work work D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3.v 
+# -- Compiling module cod8421_EX3
+# 
+# Top level modules:
+# 	cod8421_EX3
+# End time: 20:33:33 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:33:33 on Apr 25,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3" -work work D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3_tf.v 
+# -- Compiling module tb_cod8421_EX3
+# 
+# Top level modules:
+# 	tb_cod8421_EX3
+# End time: 20:33:33 on Apr 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# No design specified
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: No Design Loaded!
+# Error in macro D:\RTL_FPGA\VERILOG\comparator_2bits\cod=BCD821_EX3\sim_cod8421_EX3\sim_cod8421_EX3.mdo line 17
+# No Design Loaded!
+#     while executing
+# "run 1000ns"
+# Compile of cod8421_EX3.v was successful.
+# Compile of cod8421_EX3_tf.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_cod8421_EX3
+# vsim -voptargs="+acc" work.tb_cod8421_EX3 
+# Start time: 20:33:53 on Apr 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_cod8421_EX3(fast)
+# Loading work.cod8421_EX3(fast)
+add wave -position end  sim:/tb_cod8421_EX3/EX_3
+add wave -position end  sim:/tb_cod8421_EX3/cod8421
+run
+# Time | cod8421 | EX_3
+#                    0  |  0000  |  0011
+#                10000  |  0001  |  0100
+#                20000  |  0010  |  0101
+#                30000  |  0011  |  0110
+#                40000  |  0100  |  0111
+#                50000  |  0101  |  1000
+#                60000  |  0110  |  1001
+#                70000  |  0111  |  1010
+#                80000  |  1000  |  1011
+#                90000  |  1001  |  1100
+# ** Note: $finish    : D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3_tf.v(33)
+#    Time: 100 ns  Iteration: 0  Instance: /tb_cod8421_EX3
+# 1
+# Break in Module tb_cod8421_EX3 at D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3_tf.v line 33
+# Causality operation skipped due to absence of debug database file
+# End time: 20:36:16 on Apr 25,2025, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 7

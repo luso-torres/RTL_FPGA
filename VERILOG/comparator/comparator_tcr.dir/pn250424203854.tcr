@@ -1,0 +1,22 @@
+#Start recording tcl command: 4/24/2025 19:40:47
+#Project Location: D:/RTL_FPGA/VHDL/comparator; Project name: comparator
+prj_project new -name "comparator" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/comparator/comparator.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/comparator/comparator.v"
+prj_src remove "D:/RTL_FPGA/VHDL/comparator/comparator.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/comparator/comparator_comportamental.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/comparator/mux_estrutural.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src add "D:/RTL_FPGA/VHDL/comparator/comparador_fluxo.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 4/24/2025 20:38:54

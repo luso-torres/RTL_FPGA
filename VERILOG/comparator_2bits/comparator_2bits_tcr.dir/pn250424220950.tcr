@@ -1,0 +1,5 @@
+#Start recording tcl command: 4/24/2025 22:02:23
+#Project Location: D:/RTL_FPGA/VERILOG/comparator_2bits; Project name: comparator_2bits
+prj_project open "D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits.ldf"
+prj_src add "D:/RTL_FPGA/VERILOG/comparator_2bits/sim_comportamental/sim_comportamental.spf"
+#Stop recording: 4/24/2025 22:09:50

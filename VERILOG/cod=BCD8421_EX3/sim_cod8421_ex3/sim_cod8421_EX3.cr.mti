@@ -1,0 +1,15 @@
+D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module cod8421_EX3
+
+Top level modules:
+	cod8421_EX3
+
+} {} {}} D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/comparator_2bits/cod=BCD821_EX3/cod8421_EX3_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_cod8421_EX3
+
+Top level modules:
+	tb_cod8421_EX3
+
+} {} {}}

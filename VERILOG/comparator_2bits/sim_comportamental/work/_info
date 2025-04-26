@@ -1,0 +1,123 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/comparator_2bits/sim_comportamental
+T_opt
+!s110 1745542987
+V@>c?IjoWScYDYRlG^34HE3
+04 28 4 work comparator_comportamental_tf fast 0
+=1-ac675dfda9e9-680adf4b-d3-aedc
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vcomparator_2bits
+2D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits.v
+Z3 !s110 1745542985
+!i10b 1
+!s100 NZSW:kjEM_FPCg>7zi_BZ3
+I1QPKVj>Zz<0=6jOJB1C?V3
+R1
+w1745539219
+8D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits.v
+FD:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits.v
+!i122 0
+L0 1 7
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1745542985.000000
+!s107 D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/comparator_2bits|-work|work|D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/VERILOG/comparator_2bits -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vcomparator_2bits_tf
+2D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_tf.v
+R3
+!i10b 1
+!s100 QiEPB^6zBV98HDlN9F48S2
+I<BIK7e^E?MO@7T>C16NE22
+R1
+w1745539653
+8D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_tf.v
+FD:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_tf.v
+!i122 1
+L0 18 47
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/comparator_2bits|-work|work|D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_tf.v|
+!i113 0
+R7
+R8
+R2
+vcomparator_comportamental
+2D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_comportamental.v
+R3
+!i10b 1
+!s100 >2U7d^ln_zK4P=9KQLRfL2
+IKFD9QkE42XIYjN906I]8H0
+R1
+w1745540005
+8D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_comportamental.v
+FD:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_comportamental.v
+!i122 2
+L0 1 11
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_comportamental.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/comparator_2bits|-work|work|D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_2bits_comportamental.v|
+!i113 0
+R7
+R8
+R2
+vcomparator_comportamental_tf
+2D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_comportamental_tf.v
+R3
+!i10b 1
+!s100 hh7Sf9UQ<[Ri?8PAoclUM3
+Igk[cI6>W?g9XjnGC8MC?j0
+R1
+w1745542949
+8D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_comportamental_tf.v
+FD:/RTL_FPGA/VERILOG/comparator_2bits/comparator_comportamental_tf.v
+!i122 3
+L0 18 46
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_comportamental_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/comparator_2bits|-work|work|D:/RTL_FPGA/VERILOG/comparator_2bits/comparator_comportamental_tf.v|
+!i113 0
+R7
+R8
+R2

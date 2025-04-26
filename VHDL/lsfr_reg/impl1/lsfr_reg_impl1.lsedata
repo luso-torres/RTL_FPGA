@@ -1,0 +1,149 @@
+<top name = "LFSR"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "clk"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "LFSR">
+
+    <!--
+        Top Level Pins: 3
+    -->
+
+    <pins>
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "up"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 9
+    -->
+
+    <instance  name = "d1/q_8"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "d1/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "up"  />
+        <nitem  name = "q_s[2]"  />
+        <nitem  name = "q_s[1]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "d2/q_8"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "d2/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "up"  />
+        <nitem  name = "q_s[3]"  />
+        <nitem  name = "q_s[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "d3/q_9"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "r"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clk"  />
+        <nitem  name = "up"  />
+        <nitem  name = "q"  />
+        <nitem  name = "q_s[3]"  />
+        <nitem  name = "d3/gnd"  />
+        </nets>
+    </instance>
+
+    <instance  name = "q_s_1__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "q_s[1]"  />
+        <nitem  name = "q_s[0]"  />
+        <nitem  name = "q"  />
+        </nets>
+    </instance>
+
+    <instance  name = "d0/q_8"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "d0/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "up"  />
+        <nitem  name = "q_s[1]"  />
+        <nitem  name = "q_s[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "d0"  />
+    <instance  name = "d1"  />
+    <instance  name = "d2"  />
+    <instance  name = "d3"  />
+    <!--
+        REG instances in netlist: 4
+    -->
+
+    <regs>
+        <reg  name = "d1/q_8"  />
+        <reg  name = "d2/q_8"  />
+        <reg  name = "d3/q_9"  />
+        <reg  name = "d0/q_8"  />
+    </regs>
+
+    <!--
+        Views in design "LFSR": 2
+    -->
+
+    <views>
+        <view  name = "d_ff"  />
+        <view  name = "db_ff"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

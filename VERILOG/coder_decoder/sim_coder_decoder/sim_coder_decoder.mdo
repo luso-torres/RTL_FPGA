@@ -1,0 +1,25 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/coder_decoder/sim_coder_decoder/sim_coder_decoder.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/coder_decoder/sim_coder_decoder" sim_coder_decoder
+	project addfile "D:/RTL_FPGA/VERILOG/coder_decoder/module_d.v"
+	project addfile "D:/RTL_FPGA/VERILOG/coder_decoder/module_c.v"
+	project addfile "D:/RTL_FPGA/VERILOG/coder_decoder/module_b.v"
+	project addfile "D:/RTL_FPGA/VERILOG/coder_decoder/module_a.v"
+	project addfile "D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v"
+	project addfile "D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/coder_decoder  -work work  "D:/RTL_FPGA/VERILOG/coder_decoder/module_d.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/coder_decoder  -work work  "D:/RTL_FPGA/VERILOG/coder_decoder/module_c.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/coder_decoder  -work work  "D:/RTL_FPGA/VERILOG/coder_decoder/module_b.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/coder_decoder  -work work  "D:/RTL_FPGA/VERILOG/coder_decoder/module_a.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/coder_decoder  -work work  "D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/coder_decoder  -work work  "D:/RTL_FPGA/VERILOG/coder_decoder/coder_decoder_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/coder_decoder/sim_coder_decoder/sim_coder_decoder"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  coder_decoder_tf
+view wave
+add wave /*
+run 1000ns

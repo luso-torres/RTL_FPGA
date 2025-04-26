@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/VHDL/sum_component/sim_n_sum_1bit/sim_n_sum_1bit.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/sum_component/sim_n_sum_1bit" sim_n_sum_1bit
+	project addfile "D:/RTL_FPGA/VHDL/sum_component/half_add.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/sum_component/sum_1bit.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/sum_component/nsumbits.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/sum_component/n_sum_1bit_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/sum_component/half_add.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/sum_component/sum_1bit.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/sum_component/nsumbits.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/sum_component/n_sum_1bit_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/sum_component/sim_n_sum_1bit/sim_n_sum_1bit"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  n_sum_1bit
+view wave
+add wave /*
+run 1000ns

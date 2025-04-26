@@ -1,0 +1,177 @@
+<top name = "erro_7"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "clk"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "erro_7">
+
+    <!--
+        Top Level Pins: 6
+    -->
+
+    <pins>
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "reset"  direction = "in"  />
+        <pitem  name = "y[3]"  direction = "out"  />
+        <pitem  name = "y[2]"  direction = "out"  />
+        <pitem  name = "y[1]"  direction = "out"  />
+        <pitem  name = "y[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 4
+    -->
+
+    <instance  name = "add_6"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "y[3]"  />
+        <nitem  name = "y[2]"  />
+        <nitem  name = "y[1]"  />
+        <nitem  name = "y[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "y_3__N_5[3]"  />
+        <nitem  name = "y_3__N_5[2]"  />
+        <nitem  name = "y_3__N_5[1]"  />
+        <nitem  name = "y_3__N_5[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "y_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "y[3]"  />
+        <nitem  name = "y[2]"  />
+        <nitem  name = "y[1]"  />
+        <nitem  name = "y[0]"  />
+        <nitem  name = "y_3__N_5[3]"  />
+        <nitem  name = "y_3__N_5[2]"  />
+        <nitem  name = "y_3__N_5[1]"  />
+        <nitem  name = "y_3__N_5[0]"  />
+        <nitem  name = "a"  />
+        <nitem  name = "y_3__N_1[3]"  />
+        <nitem  name = "y_3__N_1[2]"  />
+        <nitem  name = "y_3__N_1[1]"  />
+        <nitem  name = "y_3__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "contador"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "y_3__N_1[3]"  />
+        <nitem  name = "y_3__N_1[2]"  />
+        <nitem  name = "y_3__N_1[1]"  />
+        <nitem  name = "y_3__N_1[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "y[3]"  />
+        <nitem  name = "y[2]"  />
+        <nitem  name = "y[1]"  />
+        <nitem  name = "y[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "a_11"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "a"  />
+        </nets>
+    </instance>
+
+    <!--
+        REG instances in netlist: 2
+    -->
+
+    <regs>
+        <reg  name = "contador"  />
+        <reg  name = "a_11"  />
+    </regs>
+
+    <!--
+        Views in design "erro_7": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

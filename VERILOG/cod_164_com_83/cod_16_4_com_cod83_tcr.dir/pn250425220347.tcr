@@ -1,0 +1,32 @@
+#Start recording tcl command: 4/25/2025 21:06:17
+#Project Location: D:/RTL_FPGA/VERILOG/cod_164_com_83; Project name: cod_16_4_com_cod83
+prj_project new -name "cod_16_4_com_cod83" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/cod_164_com_83/cod_164_com_83_topmodle.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/cod_164_com_83/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "cod164_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/cod_164_com_83/sim_16_4_83/sim_16_4_83.spf"
+#Stop recording: 4/25/2025 22:03:47
