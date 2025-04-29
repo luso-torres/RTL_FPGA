@@ -1,0 +1,113 @@
+<top name = "mux_161"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "mux_161">
+
+    <!--
+        Top Level Pins: 21
+    -->
+
+    <pins>
+        <pitem  name = "D[15]"  direction = "in"  />
+        <pitem  name = "D[14]"  direction = "in"  />
+        <pitem  name = "D[13]"  direction = "in"  />
+        <pitem  name = "D[12]"  direction = "in"  />
+        <pitem  name = "D[11]"  direction = "in"  />
+        <pitem  name = "D[10]"  direction = "in"  />
+        <pitem  name = "D[9]"  direction = "in"  />
+        <pitem  name = "D[8]"  direction = "in"  />
+        <pitem  name = "D[7]"  direction = "in"  />
+        <pitem  name = "D[6]"  direction = "in"  />
+        <pitem  name = "D[5]"  direction = "in"  />
+        <pitem  name = "D[4]"  direction = "in"  />
+        <pitem  name = "D[3]"  direction = "in"  />
+        <pitem  name = "D[2]"  direction = "in"  />
+        <pitem  name = "D[1]"  direction = "in"  />
+        <pitem  name = "D[0]"  direction = "in"  />
+        <pitem  name = "S[3]"  direction = "in"  />
+        <pitem  name = "S[2]"  direction = "in"  />
+        <pitem  name = "S[1]"  direction = "in"  />
+        <pitem  name = "S[0]"  direction = "in"  />
+        <pitem  name = "Y"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 1
+    -->
+
+    <instance  name = "S_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "S[3]"  />
+        <nitem  name = "S[2]"  />
+        <nitem  name = "S[1]"  />
+        <nitem  name = "S[0]"  />
+        <nitem  name = "D[15]"  />
+        <nitem  name = "D[14]"  />
+        <nitem  name = "D[13]"  />
+        <nitem  name = "D[12]"  />
+        <nitem  name = "D[11]"  />
+        <nitem  name = "D[10]"  />
+        <nitem  name = "D[9]"  />
+        <nitem  name = "D[8]"  />
+        <nitem  name = "D[7]"  />
+        <nitem  name = "D[6]"  />
+        <nitem  name = "D[5]"  />
+        <nitem  name = "D[4]"  />
+        <nitem  name = "D[3]"  />
+        <nitem  name = "D[2]"  />
+        <nitem  name = "D[1]"  />
+        <nitem  name = "D[0]"  />
+        <nitem  name = "Y"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "mux_161": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

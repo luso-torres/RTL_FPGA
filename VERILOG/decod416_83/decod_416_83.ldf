@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="decod_416_83" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="decod_416"/>
+        <Source name="decod_416_2mod.v" type="Verilog" type_short="Verilog">
+            <Options top_module="decod_416"/>
+        </Source>
+        <Source name="decod_83.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="decod_416_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="decod_416_83.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_decod_416_238/sim_decod_416_238.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="decod_416_831.sty"/>
+</BaliProject>

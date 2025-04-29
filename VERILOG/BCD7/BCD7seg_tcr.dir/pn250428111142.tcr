@@ -1,0 +1,11 @@
+#Start recording tcl command: 4/28/2025 08:48:14
+#Project Location: D:/RTL_FPGA/VERILOG/BCD7; Project name: BCD7seg
+prj_project new -name "BCD7seg" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/BCD7/bcd7seg.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/BCD7/hdle_generate_tbdeclaration.tcl"
+#Stop recording: 4/28/2025 11:11:42

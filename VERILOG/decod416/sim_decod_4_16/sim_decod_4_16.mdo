@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/decod416/sim_decod_4_16/sim_decod_4_16.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/decod416/sim_decod_4_16" sim_decod_4_16
+	project addfile "D:/RTL_FPGA/VERILOG/decod416/decod416.v"
+	project addfile "D:/RTL_FPGA/VERILOG/decod416/decoder_4_16_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/decod416  -work work  "D:/RTL_FPGA/VERILOG/decod416/decod416.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/decod416  -work work  "D:/RTL_FPGA/VERILOG/decod416/decoder_4_16_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/decod416/sim_decod_4_16/sim_decod_4_16"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  decoder_4_16_tf
+view wave
+add wave /*
+run 1000ns

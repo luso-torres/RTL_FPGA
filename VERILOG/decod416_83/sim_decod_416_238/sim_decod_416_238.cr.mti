@@ -1,0 +1,24 @@
+D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module decod_83
+
+Top level modules:
+	decod_83
+
+} {} {}} D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v {2 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module decod_416
+** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v(11): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v(11): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+
+Top level modules:
+	decod_416
+
+} {} {}} D:/RTL_FPGA/VERILOG/decod416_83/decod_416_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/decod416_83/decod_416_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module decod_416_tf
+
+Top level modules:
+	decod_416_tf
+
+} {} {}}

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/mux_n-1/sim_mux_n1
+T_opt
+!s110 1745885528
+VSNj=aFKCHA99W=E@?G`NG3
+04 9 4 work mux_n1_tf fast 0
+=1-ac675dfda9e9-68101957-37a-5504
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vmux_n1
+2D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1.v
+Z3 !s110 1745885525
+!i10b 1
+!s100 ]:1;o6<fJ=Dn9STQ8KCV23
+IOR50EYgl3O2dUH;m>>PGM0
+R1
+w1745885275
+8D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1.v
+FD:/RTL_FPGA/VERILOG/mux_n-1/mux_n1.v
+!i122 0
+L0 1 9
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1745885525.000000
+!s107 D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/mux_n-1|-work|work|D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/VERILOG/mux_n-1 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vmux_n1_tf
+2D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1_tf.v
+R3
+!i10b 1
+!s100 nn=N8T:m:?<b[h@W<_Di:0
+I6U]9VQJ;4NV[T1Q<cYL[_0
+R1
+w1745885437
+8D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1_tf.v
+FD:/RTL_FPGA/VERILOG/mux_n-1/mux_n1_tf.v
+!i122 1
+L0 18 38
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/mux_n-1|-work|work|D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1_tf.v|
+!i113 0
+R7
+R8
+R2

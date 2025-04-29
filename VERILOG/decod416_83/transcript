@@ -1,0 +1,173 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/decod416_83/sim_decod_416_238/sim_decod_416_238.mdo}
+# Loading project sim_decod_416_238
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:21:36 on Apr 28,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/decod416_83" -work work D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v 
+# -- Compiling module decod_83
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(8): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(9): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(10): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(11): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(12): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(15): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(16): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	decod_83
+# End time: 20:21:36 on Apr 28,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 9
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:21:36 on Apr 28,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/decod416_83" -work work D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v 
+# -- Compiling module decod_416
+# 
+# Top level modules:
+# 	decod_416
+# End time: 20:21:36 on Apr 28,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:21:36 on Apr 28,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/decod416_83" -work work D:/RTL_FPGA/VERILOG/decod416_83/decod_416_tf.v 
+# -- Compiling module decod_416_tf
+# 
+# Top level modules:
+# 	decod_416_tf
+# End time: 20:21:36 on Apr 28,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u decod_416_tf 
+# Start time: 20:21:37 on Apr 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.decod_416_tf(fast)
+# Loading work.decod_416(fast)
+# Loading work.decod_83(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec1 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec2 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 9
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+# Compile of decod_83.v was successful with warnings.
+# Compile of decod_416_2mod.v was successful.
+# Compile of decod_416_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.decod_416_tf(fast)
+# Loading work.decod_416(fast)
+# Loading work.decod_83(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec1 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec2 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 9
+run
+# Compile of decod_83.v was successful with warnings.
+# Compile of decod_416_2mod.v was successful with warnings.
+# Compile of decod_416_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v(11): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v(11): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.decod_416_tf(fast)
+# Loading work.decod_416(fast)
+# Loading work.decod_83(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec1 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec2 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 9
+run
+# Compile of decod_83.v was successful with warnings.
+# Compile of decod_416_2mod.v was successful with warnings.
+# Compile of decod_416_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.decod_416_tf(fast)
+# Loading work.decod_416(fast)
+# Loading work.decod_83(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec1 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec2 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 9
+run
+# Compile of decod_83.v was successful with warnings.
+# Compile of decod_416_2mod.v was successful with warnings.
+# Compile of decod_416_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v(11): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v(11): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.decod_416_tf(fast)
+# Loading work.decod_416(fast)
+# Loading work.decod_83(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec1 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec2 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 9
+run
+# Compile of decod_83.v was successful.
+# Compile of decod_416_2mod.v was successful with warnings.
+# Compile of decod_416_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.decod_416_tf(fast)
+# Loading work.decod_416(fast)
+# Loading work.decod_83(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec1 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (2) for port 'cod3'. The port definition is at: D:/RTL_FPGA/VERILOG/decod416_83/decod_83.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /decod_416_tf/UUT/dec2 File: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v Line: 9
+run
+# Compile of decod_83.v was successful.
+# Compile of decod_416_2mod.v was successful with warnings.
+# Compile of decod_416_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v(11): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: D:/RTL_FPGA/VERILOG/decod416_83/decod_416_2mod.v(11): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.decod_416_tf(fast)
+# Loading work.decod_416(fast)
+# Loading work.decod_83(fast)
+run
+# End time: 20:46:21 on Apr 28,2025, Elapsed time: 0:24:44
+# Errors: 0, Warnings: 4

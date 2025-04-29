@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/mux_16-1/sim_mux_161/sim_mux_161.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/mux_16-1/sim_mux_161" sim_mux_161
+	project addfile "D:/RTL_FPGA/VERILOG/mux_16-1/mux_161.v"
+	project addfile "D:/RTL_FPGA/VERILOG/mux_16-1/mux_161_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/mux_16-1  -work work  "D:/RTL_FPGA/VERILOG/mux_16-1/mux_161.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/mux_16-1  -work work  "D:/RTL_FPGA/VERILOG/mux_16-1/mux_161_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/mux_16-1/sim_mux_161/sim_mux_161"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  mux_161_tf
+view wave
+add wave /*
+run 1000ns

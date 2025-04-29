@@ -1,0 +1,15 @@
+D:/RTL_FPGA/VERILOG/decod416/decod416.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/decod416/decod416.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module decoder_4_16
+
+Top level modules:
+	decoder_4_16
+
+} {} {}} D:/RTL_FPGA/VERILOG/decod416/decoder_4_16_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/decod416/decoder_4_16_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module decoder_4_16_tf
+
+Top level modules:
+	decoder_4_16_tf
+
+} {} {}}

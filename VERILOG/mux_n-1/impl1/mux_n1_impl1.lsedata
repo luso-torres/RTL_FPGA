@@ -1,0 +1,71 @@
+<top name = "mux_n1"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "mux_n1">
+
+    <!--
+        Top Level Pins: 7
+    -->
+
+    <pins>
+        <pitem  name = "D[3]"  direction = "in"  />
+        <pitem  name = "D[2]"  direction = "in"  />
+        <pitem  name = "D[1]"  direction = "in"  />
+        <pitem  name = "D[0]"  direction = "in"  />
+        <pitem  name = "S[1]"  direction = "in"  />
+        <pitem  name = "S[0]"  direction = "in"  />
+        <pitem  name = "Y"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 1
+    -->
+
+    <instance  name = "S_1__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "S[1]"  />
+        <nitem  name = "S[0]"  />
+        <nitem  name = "D[3]"  />
+        <nitem  name = "D[2]"  />
+        <nitem  name = "D[1]"  />
+        <nitem  name = "D[0]"  />
+        <nitem  name = "Y"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "mux_n1": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

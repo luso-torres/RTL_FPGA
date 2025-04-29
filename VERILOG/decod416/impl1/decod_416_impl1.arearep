@@ -1,0 +1,11 @@
+----------------------------------------------------------------------
+Report for cell decoder_4_16.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      20
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         4          100.0
+                               LUT4        16          100.0
+                                 OB        16          100.0
+                              TOTAL        37

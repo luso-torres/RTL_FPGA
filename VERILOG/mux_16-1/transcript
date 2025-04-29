@@ -1,0 +1,80 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/mux_16-1/sim_mux_161/sim_mux_161.mdo}
+# Loading project sim_mux_161
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:47:00 on Apr 28,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/mux_16-1" -work work D:/RTL_FPGA/VERILOG/mux_16-1/mux_161.v 
+# -- Compiling module mux_161
+# 
+# Top level modules:
+# 	mux_161
+# End time: 20:47:00 on Apr 28,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:47:00 on Apr 28,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/mux_16-1" -work work D:/RTL_FPGA/VERILOG/mux_16-1/mux_161_tf.v 
+# -- Compiling module mux_161_tf
+# 
+# Top level modules:
+# 	mux_161_tf
+# End time: 20:47:00 on Apr 28,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u mux_161_tf 
+# Start time: 20:47:00 on Apr 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mux_161_tf(fast)
+# Loading work.mux_161(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+# Compile of mux_161.v was successful.
+# Compile of mux_161_tf.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mux_161_tf(fast)
+# Loading work.mux_161(fast)
+run
+run
+# Compile of mux_161.v was successful.
+# Compile of mux_161_tf.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mux_161_tf(fast)
+# Loading work.mux_161(fast)
+run
+# Compile of mux_161.v was successful.
+# Compile of mux_161_tf.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mux_161_tf(fast)
+# Loading work.mux_161(fast)
+run
+# End time: 21:11:20 on Apr 28,2025, Elapsed time: 0:24:20
+# Errors: 0, Warnings: 2
