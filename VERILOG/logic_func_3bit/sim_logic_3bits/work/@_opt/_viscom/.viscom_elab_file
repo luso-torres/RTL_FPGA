@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 32768 work.logic_func_3bit_tf -quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc -allow_unnamed -o _opt -id 1-ac675dfda9e9-6811767e-342-5f50 +__design_bin_path+D:/RTL_FPGA/VERILOG/logic_func_3bit/sim_logic_3bits +__betafsm

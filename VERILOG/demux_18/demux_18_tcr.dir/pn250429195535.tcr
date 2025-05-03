@@ -1,0 +1,18 @@
+#Start recording tcl command: 4/29/2025 19:34:42
+#Project Location: D:/RTL_FPGA/VERILOG/demux_18; Project name: demux_18
+prj_project new -name "demux_18" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/demux_18/demux_18.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/VERILOG/demux_18/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/VERILOG/demux_18/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "demux_18_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/demux_18/sim_demux_18/sim_demux_18.spf"
+prj_project save
+prj_project close
+#Stop recording: 4/29/2025 19:55:35

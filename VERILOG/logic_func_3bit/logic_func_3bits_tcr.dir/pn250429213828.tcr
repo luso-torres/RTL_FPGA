@@ -1,0 +1,14 @@
+#Start recording tcl command: 4/29/2025 21:34:07
+#Project Location: D:/RTL_FPGA/VERILOG/logic_func_3bit; Project name: logic_func_3bits
+D:/RTL_FPGA/VERILOG/anbnABn
+anbnpABn
+#Start recording tcl command: 4/29/2025 21:38:28
+#Project Location: D:/RTL_FPGA/VERILOG/anbnABn; Project name: anbnpABn
+prj_project new -name "logic_func_3bits" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/logic_func_3bit/logic_func_3bits.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+prj_project open "D:/RTL_FPGA/VERILOG/anbnABn/anbnpABn.ldf"
+#Stop recording: 4/29/2025 21:38:28

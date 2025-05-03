@@ -1,0 +1,157 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/VERILOG/aula15_mux/sim_mux_2bits
+T_opt
+!s110 1746056258
+V:o9]RAXOQd8`<IQdOomXL3
+04 13 9 work func_2bits_tb testbench 1
+=4-ac675dfda9e9-6812b441-22a-44f8
+R1
+!s12f OEM25U3 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+R2
+Efunc_2bits
+Z3 w1746056535
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 25
+R2
+Z6 8D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd
+Z7 FD:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd
+l0
+L4 1
+VEHA;l<L[jAcgPW2B>jjAf1
+!s100 k1IB[BI`X=e?3ckLR1a`>2
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1746056538
+!i10b 1
+Z10 !s108 1746056538.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd|
+Z12 !s107 D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd|
+!i113 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R4
+R5
+DEx4 work 10 func_2bits 0 22 EHA;l<L[jAcgPW2B>jjAf1
+!i122 13
+l26
+L13 28
+V0_@>4oiYUfMF>HM1JK9=^2
+!s100 Gko=CC7PB]f8=Z<eWk>n<3
+R8
+32
+!s110 1746056250
+!i10b 1
+!s108 1746056250.000000
+R11
+R12
+!i113 0
+R13
+R14
+Efunc_2bits_tb
+Z15 w1746056247
+R4
+R5
+!i122 26
+R2
+Z16 8D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd
+Z17 FD:/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd
+l0
+L4 1
+VK6QRFMZX=C[`W9O;WgF682
+!s100 l@Zak7c3RU[GT22agn5oj3
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd|
+Z19 !s107 D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd|
+!i113 0
+R13
+R14
+Atestbench
+R4
+R5
+Z20 DEx4 work 13 func_2bits_tb 0 22 K6QRFMZX=C[`W9O;WgF682
+!i122 26
+l22
+Z21 L7 50
+Z22 VX3La<3jCn]k?6`i;zVK?c1
+Z23 !s100 W0m_VHiZ5D7nk`;J8;;Za2
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14
+Emux_14
+Z24 w1746056319
+R4
+R5
+!i122 24
+R2
+Z25 8D:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd
+Z26 FD:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd
+l0
+L4 1
+V]cznN1^UjCk^6BWNF8d1m0
+!s100 :^OKmMh]S1@P<HSAD[CgS0
+R8
+32
+R9
+!i10b 1
+R10
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd|
+Z28 !s107 D:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd|
+!i113 0
+R13
+R14
+Abehavioural
+R4
+R5
+DEx4 work 6 mux_14 0 22 ]cznN1^UjCk^6BWNF8d1m0
+!i122 24
+l16
+L13 23
+V09TVzBQ69VgzigIkdgIK=0
+!s100 VJUB?PTh1H@]_7[hIgSPl0
+R8
+32
+R9
+!i10b 1
+R10
+R27
+R28
+!i113 0
+R13
+R14

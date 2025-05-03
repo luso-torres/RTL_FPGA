@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula15_mux/sim_mux_2bits/sim_mux_2bits.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula15_mux/sim_mux_2bits" sim_mux_2bits
+	project addfile "D:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd"
+	project addfile "D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd"
+	project addfile "D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd"
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd"
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula15_mux/sim_mux_2bits/sim_mux_2bits"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  func_2bits_tb
+view wave
+add wave /*
+run 1000ns

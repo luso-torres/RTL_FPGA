@@ -1,0 +1,128 @@
+<top name = "decod24"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "decod24">
+
+    <!--
+        Top Level Pins: 6
+    -->
+
+    <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "Y0"  direction = "out"  />
+        <pitem  name = "Y1"  direction = "out"  />
+        <pitem  name = "Y2"  direction = "out"  />
+        <pitem  name = "Y3"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 6
+    -->
+
+    <instance  name = "A_I_0_16"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A"  />
+        <nitem  name = "A_N_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B"  />
+        <nitem  name = "B_N_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Y0_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A_N_2"  />
+        <nitem  name = "B_N_4"  />
+        <nitem  name = "Y0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "A_N_2_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A_N_2"  />
+        <nitem  name = "B"  />
+        <nitem  name = "Y1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "A_I_0_17"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A"  />
+        <nitem  name = "B_N_4"  />
+        <nitem  name = "Y2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A"  />
+        <nitem  name = "B"  />
+        <nitem  name = "Y3"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "decod24": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

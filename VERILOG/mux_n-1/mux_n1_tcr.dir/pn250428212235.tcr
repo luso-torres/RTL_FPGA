@@ -1,0 +1,21 @@
+#Start recording tcl command: 4/28/2025 20:54:16
+#Project Location: D:/RTL_FPGA/VERILOG/mux_n-1; Project name: mux_n1
+prj_project new -name "mux_n1" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/mux_n-1/mux_n1.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/mux_n-1/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mux_n1_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/mux_n-1/sim_mux_n1/sim_mux_n1.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/mux_n-1/sim_mux_n1/sim_mux_n1.spf"
+#Stop recording: 4/28/2025 21:22:35

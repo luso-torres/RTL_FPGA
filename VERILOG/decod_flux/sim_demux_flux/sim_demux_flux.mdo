@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/decod_flux/sim_demux_flux/sim_demux_flux.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/decod_flux/sim_demux_flux" sim_demux_flux
+	project addfile "D:/RTL_FPGA/VERILOG/decod_flux/decod24_flux.v"
+	project addfile "D:/RTL_FPGA/VERILOG/decod_flux/decod24_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/decod_flux  -work work  "D:/RTL_FPGA/VERILOG/decod_flux/decod24_flux.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/decod_flux  -work work  "D:/RTL_FPGA/VERILOG/decod_flux/decod24_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/decod_flux/sim_demux_flux/sim_demux_flux"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  decod24_tf
+view wave
+add wave /*
+run 1000ns

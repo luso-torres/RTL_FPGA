@@ -1,0 +1,88 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/demux_18_214/sim_demux_18_214/sim_demux_18_214.mdo}
+# Loading project sim_demux_18_214
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:58:32 on Apr 29,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/demux_18_214" -work work D:/RTL_FPGA/VERILOG/demux_18_214/demux_14.v 
+# -- Compiling module demux_14
+# 
+# Top level modules:
+# 	demux_14
+# End time: 20:58:33 on Apr 29,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:58:33 on Apr 29,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/demux_18_214" -work work D:/RTL_FPGA/VERILOG/demux_18_214/demux_14_tf.v 
+# -- Compiling module demux_14_tf
+# 
+# Top level modules:
+# 	demux_14_tf
+# End time: 20:58:33 on Apr 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:58:33 on Apr 29,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/demux_18_214" -work work D:/RTL_FPGA/VERILOG/demux_18_214/demux_18.v 
+# -- Compiling module demux_18
+# 
+# Top level modules:
+# 	demux_18
+# End time: 20:58:33 on Apr 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:58:33 on Apr 29,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/demux_18_214" -work work D:/RTL_FPGA/VERILOG/demux_18_214/demux_18_tf.v 
+# -- Compiling module demux_18_tf
+# 
+# Top level modules:
+# 	demux_18_tf
+# End time: 20:58:33 on Apr 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u demux_18_tf 
+# Start time: 20:58:33 on Apr 29,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.demux_18_tf(fast)
+# Loading work.demux_18(fast)
+# Loading work.demux_14(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: D:/RTL_FPGA/VERILOG/demux_18_214/demux_14.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /demux_18_tf/UUT/dm1 File: D:/RTL_FPGA/VERILOG/demux_18_214/demux_18.v Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: D:/RTL_FPGA/VERILOG/demux_18_214/demux_14.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /demux_18_tf/UUT/dm2 File: D:/RTL_FPGA/VERILOG/demux_18_214/demux_18.v Line: 17
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+# Compile of demux_14.v was successful.
+# Compile of demux_14_tf.v was successful.
+# Compile of demux_18.v was successful.
+# Compile of demux_18_tf.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.demux_18_tf(fast)
+# Loading work.demux_18(fast)
+# Loading work.demux_14(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: D:/RTL_FPGA/VERILOG/demux_18_214/demux_14.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /demux_18_tf/UUT/dm1 File: D:/RTL_FPGA/VERILOG/demux_18_214/demux_18.v Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (3) for port 'sel'. The port definition is at: D:/RTL_FPGA/VERILOG/demux_18_214/demux_14.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /demux_18_tf/UUT/dm2 File: D:/RTL_FPGA/VERILOG/demux_18_214/demux_18.v Line: 17
+run
+run
+# End time: 21:00:58 on Apr 29,2025, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 4

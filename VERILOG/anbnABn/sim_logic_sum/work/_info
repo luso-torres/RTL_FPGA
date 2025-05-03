@@ -1,0 +1,75 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/anbnABn/sim_logic_sum
+T_opt
+!s110 1745973102
+V[N<5JGPGmHa:=FHJiEe3B3
+04 12 4 work logic_sum_tf fast 0
+=1-ac675dfda9e9-68116f6e-47-35a4
+R0
+!s12f OEM25U1 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vlogic_sum
+2D:/RTL_FPGA/VERILOG/anbnABn/logic_sum.v
+Z3 !s110 1745973101
+!i10b 1
+!s100 @Pi<d40^aQRl1L]_YE9Vc2
+Izm]3>12Q;N?Ua^3@]B[QD3
+R1
+w1745972919
+8D:/RTL_FPGA/VERILOG/anbnABn/logic_sum.v
+FD:/RTL_FPGA/VERILOG/anbnABn/logic_sum.v
+!i122 0
+L0 1 12
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1745973101.000000
+!s107 D:/RTL_FPGA/VERILOG/anbnABn/logic_sum.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/anbnABn|-work|work|D:/RTL_FPGA/VERILOG/anbnABn/logic_sum.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/VERILOG/anbnABn -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vlogic_sum_tf
+2D:/RTL_FPGA/VERILOG/anbnABn/logic_sum_tf.v
+R3
+!i10b 1
+!s100 ae^HL_CY[YiHi@AiKcl722
+Ib7ik9c1Kk;NG8j_eDiI@z2
+R1
+w1745973082
+8D:/RTL_FPGA/VERILOG/anbnABn/logic_sum_tf.v
+FD:/RTL_FPGA/VERILOG/anbnABn/logic_sum_tf.v
+!i122 1
+L0 18 39
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/anbnABn/logic_sum_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/anbnABn|-work|work|D:/RTL_FPGA/VERILOG/anbnABn/logic_sum_tf.v|
+!i113 0
+R7
+R8
+R2

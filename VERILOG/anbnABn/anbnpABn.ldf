@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="anbnpABn" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="logic_sum" top="logic_sum"/>
+        <Source name="logic_sum.v" type="Verilog" type_short="Verilog">
+            <Options top_module="logic_sum"/>
+        </Source>
+        <Source name="logic_sum_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="decod_24.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="anbnpABn.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_logic_sum/sim_logic_sum.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="anbnpABn1.sty"/>
+</BaliProject>

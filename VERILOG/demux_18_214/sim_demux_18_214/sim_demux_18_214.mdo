@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/demux_18_214/sim_demux_18_214/sim_demux_18_214.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/demux_18_214/sim_demux_18_214" sim_demux_18_214
+	project addfile "D:/RTL_FPGA/VERILOG/demux_18_214/demux_14.v"
+	project addfile "D:/RTL_FPGA/VERILOG/demux_18_214/demux_14_tf.v"
+	project addfile "D:/RTL_FPGA/VERILOG/demux_18_214/demux_18.v"
+	project addfile "D:/RTL_FPGA/VERILOG/demux_18_214/demux_18_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/demux_18_214  -work work  "D:/RTL_FPGA/VERILOG/demux_18_214/demux_14.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/demux_18_214  -work work  "D:/RTL_FPGA/VERILOG/demux_18_214/demux_14_tf.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/demux_18_214  -work work  "D:/RTL_FPGA/VERILOG/demux_18_214/demux_18.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/demux_18_214  -work work  "D:/RTL_FPGA/VERILOG/demux_18_214/demux_18_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/demux_18_214/sim_demux_18_214/sim_demux_18_214"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  demux_18_tf
+view wave
+add wave /*
+run 1000ns

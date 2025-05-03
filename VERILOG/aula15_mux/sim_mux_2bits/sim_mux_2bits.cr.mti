@@ -1,0 +1,27 @@
+D:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_14
+-- Compiling architecture behavioural of mux_14
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity func_2bits
+-- Compiling architecture behavioral of func_2bits
+** Error: D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd(35): (vcom-1436) Actual expression (infix expression) of formal "S" is not globally static.
+** Note: D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits.vhd(40): VHDL Compiler exiting
+
+} {8.0 9.0} {}} D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity func_2bits_tb
+-- Compiling architecture testbench of func_2bits_tb
+
+} {} {}}

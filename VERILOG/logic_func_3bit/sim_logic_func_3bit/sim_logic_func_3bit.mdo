@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/logic_func_3bit/sim_logic_func_3bit/sim_logic_func_3bit.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/logic_func_3bit/sim_logic_func_3bit" sim_logic_func_3bit
+	project addfile "D:/RTL_FPGA/VERILOG/logic_func_3bit/decod24.v"
+	project addfile "D:/RTL_FPGA/VERILOG/logic_func_3bit/logic_func_3bits.v"
+	project addfile "D:/RTL_FPGA/VERILOG/logic_func_3bit/logic_func_3bit_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/logic_func_3bit  -work work  "D:/RTL_FPGA/VERILOG/logic_func_3bit/decod24.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/logic_func_3bit  -work work  "D:/RTL_FPGA/VERILOG/logic_func_3bit/logic_func_3bits.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/logic_func_3bit  -work work  "D:/RTL_FPGA/VERILOG/logic_func_3bit/logic_func_3bit_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/logic_func_3bit/sim_logic_func_3bit/sim_logic_func_3bit"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  logic_func_3bit_tf
+view wave
+add wave /*
+run 1000ns

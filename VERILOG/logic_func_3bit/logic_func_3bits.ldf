@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="logic_func_3bits" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="logic_func_3bit"/>
+        <Source name="logic_func_3bits.v" type="Verilog" type_short="Verilog">
+            <Options top_module="logic_func_3bit"/>
+        </Source>
+        <Source name="decod24.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="logic_func_3bit_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="logic_func_3bits.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_logic_3bits/sim_logic_3bits.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_logic_func_3bit/sim_logic_func_3bit.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="logic_func_3bits1.sty"/>
+</BaliProject>

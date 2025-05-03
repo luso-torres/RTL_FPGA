@@ -1,0 +1,40 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity func_2bits is
+	port(
+	A, B: in std_logic;
+	D: in std_logic_vector (3 downto 0);
+	Y : out std_logic
+	);
+end func_2bits;
+
+
+ARCHITECTURE behavioral OF func_2bits IS
+	-- insert local declarations here
+
+-- Component declarations go in either the architecture declaration section
+-- or in a package.
+component mux_14 is
+	port(
+	-- enter port declarations here
+		 D0,D1,D2,D3 : in std_logic;
+		 S: in std_logic_vector;
+		 Y : out std_logic
+	);
+end component;
+
+BEGIN
+-- Component instances go in the architecture body
+mux_1 : mux_14
+	port map(
+		D0 => D(0),
+		D1 => D(1),
+		D2 => D(2),
+		D3 => D(3),
+		S => A & B,
+		Y => Y
+	);
+
+
+END behavioral;

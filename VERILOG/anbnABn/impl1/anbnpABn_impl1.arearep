@@ -1,0 +1,21 @@
+----------------------------------------------------------------------
+Report for cell logic_sum.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         1          100.0
+                               LUT4         1          100.0
+                                 OB         1          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                            decod24         1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell decod24.v1
+Instance Path : dc
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1          100.0
+                              TOTAL         1

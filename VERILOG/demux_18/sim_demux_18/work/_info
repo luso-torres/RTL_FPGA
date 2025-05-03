@@ -1,0 +1,75 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/demux_18/sim_demux_18
+T_opt
+!s110 1745967148
+V`2k]6W?PjI25A6164W6G62
+04 11 4 work demux_18_tf fast 0
+=1-ac675dfda9e9-6811582b-1c8-4628
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vdemux_18
+2D:/RTL_FPGA/VERILOG/demux_18/demux_18.v
+Z3 !s110 1745967146
+!i10b 1
+!s100 N`gUc^a8?_Mz5ZIzQ>=e=0
+IBm4Z`YVk9HDE6RkAe0ekZ3
+R1
+w1745966950
+8D:/RTL_FPGA/VERILOG/demux_18/demux_18.v
+FD:/RTL_FPGA/VERILOG/demux_18/demux_18.v
+!i122 0
+L0 1 23
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+!s108 1745967145.000000
+!s107 D:/RTL_FPGA/VERILOG/demux_18/demux_18.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/demux_18|-work|work|D:/RTL_FPGA/VERILOG/demux_18/demux_18.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 +incdir+D:/RTL_FPGA/VERILOG/demux_18 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vdemux_18_tf
+2D:/RTL_FPGA/VERILOG/demux_18/demux_18_tf.v
+R3
+!i10b 1
+!s100 oZKAm7in0FFR6en@SUj6K1
+ID2e;<[FBdCZ<4;CEI@LAV0
+R1
+w1745967120
+8D:/RTL_FPGA/VERILOG/demux_18/demux_18_tf.v
+FD:/RTL_FPGA/VERILOG/demux_18/demux_18_tf.v
+!i122 1
+L0 18 39
+R4
+R5
+r1
+!s85 0
+31
+!s108 1745967146.000000
+!s107 D:/RTL_FPGA/VERILOG/demux_18/demux_18_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/demux_18|-work|work|D:/RTL_FPGA/VERILOG/demux_18/demux_18_tf.v|
+!i113 0
+R6
+R7
+R2
