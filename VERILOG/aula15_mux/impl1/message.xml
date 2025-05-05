@@ -13,55 +13,63 @@
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>D:/RTL_FPGA/VERILOG/aula15_mux/impl1</Dynamic>
+            <Dynamic>E:/repositories/RTL_FPGA/VERILOG/aula15_mux/impl1</Dynamic>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(4): </Dynamic>
-            <Dynamic>half_adder</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(4): </Dynamic>
+            <Dynamic>half_adderf</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd</Navigation>
             <Navigation>4</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(12): </Dynamic>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(12): </Dynamic>
             <Dynamic>behavioral</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd</Navigation>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd</Navigation>
             <Navigation>12</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): </Dynamic>
-            <Dynamic>half_adder</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd</Navigation>
-            <Navigation>5</Navigation>
-        </Message>
-        <Message>
-            <ID>35921177</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): </Dynamic>
-            <Dynamic>half_adder</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): </Dynamic>
+            <Dynamic>half_adderb</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(13): </Dynamic>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(13): </Dynamic>
             <Dynamic>behavioral</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd</Navigation>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(5): </Dynamic>
+            <Dynamic>half_adder</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(13): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd</Navigation>
             <Navigation>13</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(11): </Dynamic>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(11): </Dynamic>
             <Dynamic>half_adder</Dynamic>
             <Dynamic>behavioral</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd</Navigation>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd</Navigation>
             <Navigation>11</Navigation>
         </Message>
         <Message>

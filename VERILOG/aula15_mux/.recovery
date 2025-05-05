@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="aula15_mux" device="LFE5U-45F-6BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="half_adderb"/>
+        <Options def_top="half_adder"/>
         <Source name="mux.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
             <Options/>
         </Source>
@@ -19,12 +19,15 @@
             <Options/>
         </Source>
         <Source name="half_adder_flux.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="half_adderf"/>
+            <Options/>
         </Source>
         <Source name="half_adder_behavioral.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="half_adderb"/>
+            <Options/>
         </Source>
         <Source name="half_adder_topmodle.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="half_adder"/>
+        </Source>
+        <Source name="half_adder_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
             <Options/>
         </Source>
         <Source name="aula15_mux.lpf" type="Logic Preference" type_short="LPF">
@@ -34,6 +37,9 @@
             <Options/>
         </Source>
         <Source name="sim_func_3bits/sim_func_3bits.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_half_adder/sim_half_adder.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
         <Source name="sim_mux_2bits/sim_mux_2bits.spf" type="Simulation Project File" type_short="SPF">

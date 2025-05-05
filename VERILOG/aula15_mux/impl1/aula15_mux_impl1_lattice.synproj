@@ -31,12 +31,13 @@
 
 
 -lpf 1
--lib "work" -vhd "D:/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd"
-"D:/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd"
+-lib "work" -vhd "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd"
+"E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd"
+"E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_topmodle.vhd"
 -top half_adder
 
 
--p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "D:/RTL_FPGA/VERILOG/aula15_mux/impl1" "D:/RTL_FPGA/VERILOG/aula15_mux"
+-p "E:/ld/ispfpga/sa5p00/data" "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/impl1" "E:/repositories/RTL_FPGA/VERILOG/aula15_mux"
 
 -ngd "aula15_mux_impl1.ngd"
 

@@ -1,2 +1,3 @@
-D:/RTL_FPGA/VERILOG/aula15_mux/mux.vhd
-D:/RTL_FPGA/VERILOG/aula15_mux/func_3bits.vhd
+E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd
+E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd
+E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_topmodle.vhd
