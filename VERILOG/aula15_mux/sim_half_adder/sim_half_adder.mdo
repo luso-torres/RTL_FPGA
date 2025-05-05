@@ -1,0 +1,23 @@
+if {![file exists "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_half_adder/sim_half_adder.mpf"]} { 
+	project new "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_half_adder" sim_half_adder
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_topmodle.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_topmodle.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_tb.vhd"
+} else {
+	project open "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_half_adder/sim_half_adder"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  half_adder_tb
+view wave
+add wave /*
+run 1000ns

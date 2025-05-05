@@ -1,12 +1,29 @@
 ----------------------------------------------------------------------
 Report for cell half_adder.TECH
 Register bits:  0 of 44439 (0.000%)
-I/O cells:      4
+I/O cells:      8
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 GSR         1          100.0
-                                 IB         2          100.0
-                               LUT4         2          100.0
-                                 OB         2          100.0
+                                 IB         4          100.0
+                               LUT4         4          100.0
+                                 OB         4          100.0
                         VERIFIC_PWR         1          100.0
-                              TOTAL         8
+SUB MODULES
+                        half_adderb         1
+                        half_adderf         1
+                              TOTAL        16
+----------------------------------------------------------------------
+Report for cell half_adderb.v1
+Instance Path : ha1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           50.0
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell half_adderf.v1
+Instance Path : ha2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           50.0
+                              TOTAL         2

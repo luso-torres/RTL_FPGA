@@ -1,0 +1,1 @@
+E:/ld/bin/nt64/moduleparser.exe -PROJ sim_half_adder -pf E:/ld/cae_library/synthesis/vhdl/ecp5u.vhd -lib ecp5u -pf E:/ld/cae_library/synthesis/verilog/ecp5u.v -pkg E:/ld/cae_library/vhdl_packages/vdbs -lst E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_half_adder/source_files.lst

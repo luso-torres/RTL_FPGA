@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Apr 30 21:56:01 2025
+Sun May 04 22:59:03 2025
 
 
 Command Line:  synthesis -f aula15_mux_impl1_lattice.synproj -gui 
@@ -61,12 +61,13 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
--p D:/RTL_FPGA/VERILOG/aula15_mux/impl1 (searchpath added)
--p D:/RTL_FPGA/VERILOG/aula15_mux (searchpath added)
+-p E:/ld/ispfpga/sa5p00/data (searchpath added)
+-p E:/repositories/RTL_FPGA/VERILOG/aula15_mux/impl1 (searchpath added)
+-p E:/repositories/RTL_FPGA/VERILOG/aula15_mux (searchpath added)
 VHDL library = work
-VHDL design file = D:/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd
-VHDL design file = D:/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_topmodle.vhd
 NGD file = aula15_mux_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -74,29 +75,32 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Analyzing Verilog file E:/ld/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-INFO - synthesis: The default VHDL library search path is now "D:/RTL_FPGA/VERILOG/aula15_mux/impl1". VHDL-1504
-Analyzing VHDL file d:/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(4): analyzing entity half_adder. VHDL-1012
-INFO - synthesis: d:/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(12): analyzing architecture behavioral. VHDL-1010
+INFO - synthesis: The default VHDL library search path is now "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/impl1". VHDL-1504
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd. VHDL-1481
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(4): analyzing entity half_adderf. VHDL-1012
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(12): analyzing architecture behavioral. VHDL-1010
 unit half_adder is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): analyzing entity half_adder. VHDL-1012
-WARNING - synthesis: d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): duplicate entity name half_adder. VHDL-1177
-INFO - synthesis: d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(13): analyzing architecture behavioral. VHDL-1010
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd. VHDL-1481
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): analyzing entity half_adderb. VHDL-1012
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(13): analyzing architecture behavioral. VHDL-1010
+unit half_adder is not yet analyzed. VHDL-1485
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd. VHDL-1481
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(5): analyzing entity half_adder. VHDL-1012
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(13): analyzing architecture behavioral. VHDL-1010
 unit half_adder is not yet analyzed. VHDL-1485
 unit half_adder is not yet analyzed. VHDL-1485
-d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): executing half_adder(behavioral)
+e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(5): executing half_adder(behavioral)
 
-WARNING - synthesis: d:/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(11): replacing existing netlist half_adder(behavioral). VHDL-1205
+WARNING - synthesis: e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(11): replacing existing netlist half_adder(behavioral). VHDL-1205
 Top module name (VHDL): half_adder
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: E:/ld/ispfpga.
 Package Status:                     Final          Version 1.50.
 Top-level module name = half_adder.
 
@@ -107,10 +111,10 @@ Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in half_adder_drc.log.
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
 WARNING - synthesis: logical net 'GND_net' has no load.
 WARNING - synthesis: DRC complete with 1 warnings.
 All blocks are expanded and NGD expansion is successful.
@@ -119,9 +123,9 @@ Writing NGD file aula15_mux_impl1.ngd.
 ################### Begin Area Report (half_adder)######################
 Number of register bits => 0 of 44439 (0 % )
 GSR => 1
-IB => 2
-LUT4 => 2
-OB => 2
+IB => 4
+LUT4 => 4
+OB => 4
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -132,16 +136,20 @@ Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : A_c, loads : 2
-  Net : B_c, loads : 2
-  Net : sum_c, loads : 1
-  Net : carry_c, loads : 1
-  Net : sum, loads : 0
-  Net : carry, loads : 0
+  Net : A_c_1, loads : 2
+  Net : A_c_0, loads : 2
+  Net : B_c_1, loads : 2
+  Net : B_c_0, loads : 2
+  Net : ha2/sum_c_1, loads : 0
+  Net : ha1/sum_c_0, loads : 0
+  Net : ha2/carry_c_1, loads : 0
+  Net : ha1/carry_c_0, loads : 0
+  Net : sum[0], loads : 0
+  Net : carry[1], loads : 0
 ################### End Clock Report ##################
 
-Peak Memory Usage: 104.988  MB
+Peak Memory Usage: 102.859  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.672  secs
+Elapsed CPU time for LSE flow : 0.891  secs
 --------------------------------------------------------------

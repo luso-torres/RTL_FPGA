@@ -18,45 +18,81 @@
 <unit name = "half_adder">
 
     <!--
-        Top Level Pins: 4
+        Top Level Pins: 8
     -->
 
     <pins>
-        <pitem  name = "A"  direction = "in"  />
-        <pitem  name = "B"  direction = "in"  />
-        <pitem  name = "sum"  direction = "out"  />
-        <pitem  name = "carry"  direction = "out"  />
+        <pitem  name = "A[1]"  direction = "in"  />
+        <pitem  name = "A[0]"  direction = "in"  />
+        <pitem  name = "B[1]"  direction = "in"  />
+        <pitem  name = "B[0]"  direction = "in"  />
+        <pitem  name = "sum[1]"  direction = "out"  />
+        <pitem  name = "sum[0]"  direction = "out"  />
+        <pitem  name = "carry[1]"  direction = "out"  />
+        <pitem  name = "carry[0]"  direction = "out"  />
     </pins>
 
     <!--
-        Instances in netlist: 1
+        Instances in netlist: 5
     -->
 
-    <instance  name = "A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "ha2/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
-        <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "gnd"  />
-        <nitem  name = "A"  />
-        <nitem  name = "B"  />
-        <nitem  name = "carry"  />
-        <nitem  name = "sum"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "carry[1]"  />
         </nets>
     </instance>
 
+    <instance  name = "ha1/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ha1/gnd"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "sum[0]"  />
+        <nitem  name = "carry[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ha2/A_I_0_6"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[1]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "sum[1]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ha1"  />
+    <instance  name = "ha2"  />
     <!--
-        Views in design "half_adder": 0
+        Views in design "half_adder": 2
     -->
 
     <views>
+        <view  name = "half_adderb"  />
+        <view  name = "half_adderf"  />
     </views>
 
 </unit>
