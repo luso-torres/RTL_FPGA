@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_param
+T_opt
+!s110 1746576114
+VbJzEgXJX5]:7G2`F]SZE?3
+04 9 8 work testbench behavior 1
+=1-ac675dfda9e9-681aa2f1-3e4-1488
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Eparam_clah
+Z2 w1746575849
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z5 8D:/RTL_FPGA/VERILOG/aula19_clah/param_clah.vhd
+Z6 FD:/RTL_FPGA/VERILOG/aula19_clah/param_clah.vhd
+l0
+L3 1
+VboLinNYJ?KM=iFn;RmF[H2
+!s100 RPQ_fSNG^GeYRie@d5F1G2
+Z7 OL;C;2024.2;79
+32
+Z8 !s110 1746576112
+!i10b 1
+Z9 !s108 1746576112.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VERILOG/aula19_clah/param_clah.vhd|
+Z11 !s107 D:/RTL_FPGA/VERILOG/aula19_clah/param_clah.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehaviour
+R3
+R4
+DEx4 work 10 param_clah 0 22 boLinNYJ?KM=iFn;RmF[H2
+!i122 0
+l17
+L13 15
+V0VgAge0j=O?]YzZDI0EPC2
+!s100 AVj]QbeJm>i`Iz8PlaQmf2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Etestbench
+Z14 w1746576086
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 1
+R1
+Z16 8D:/RTL_FPGA/VERILOG/aula19_clah/param_clah_tb.vhd
+Z17 FD:/RTL_FPGA/VERILOG/aula19_clah/param_clah_tb.vhd
+l0
+L25 1
+V]2JEKP=GFG9;S=<ROB?Wi0
+!s100 DhX?P9?7<f<Q6;Ocez<e>3
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VERILOG/aula19_clah/param_clah_tb.vhd|
+Z19 !s107 D:/RTL_FPGA/VERILOG/aula19_clah/param_clah_tb.vhd|
+!i113 0
+R12
+R13
+Abehavior
+R15
+R3
+R4
+DEx4 work 9 testbench 0 22 ]2JEKP=GFG9;S=<ROB?Wi0
+!i122 1
+l46
+L28 54
+VVe6A6@8i_`ANg=Sm6ce`o0
+!s100 HU_iM[@A9`5PkbnT7RY]z0
+R7
+32
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12
+R13

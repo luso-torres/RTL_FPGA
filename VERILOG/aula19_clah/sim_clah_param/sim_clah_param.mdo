@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_param/sim_clah_param.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_param" sim_clah_param
+	project addfile "D:/RTL_FPGA/VERILOG/aula19_clah/param_clah.vhd"
+	project addfile "D:/RTL_FPGA/VERILOG/aula19_clah/param_clah_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula19_clah/param_clah.vhd"
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula19_clah/param_clah_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_param/sim_clah_param"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

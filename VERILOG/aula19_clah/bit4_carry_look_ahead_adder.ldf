@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="bit4_carry_look_ahead_adder" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="param_clah"/>
+        <Source name="carry_lah_4bits.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="carry_lah_4bits_behav.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="carry_lah_4bits_behav_tb.vhd" type="VHDL" type_short="VHDL" excluded="TRUE" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="param_clah.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="param_clah"/>
+        </Source>
+        <Source name="param_clah_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="bit4_carry_look_ahead_adder.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_clah_behav_struct/sim_clah_behav_struct.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_clah_param/sim_clah_param.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="bit4_carry_look_ahead_adder1.sty"/>
+</BaliProject>

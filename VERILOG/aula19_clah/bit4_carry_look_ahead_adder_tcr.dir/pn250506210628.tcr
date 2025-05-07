@@ -1,0 +1,39 @@
+#Start recording tcl command: 5/6/2025 19:38:35
+#Project Location: D:/RTL_FPGA/VERILOG/aula19_clah; Project name: bit4_carry_look_ahead_adder
+prj_project new -name "bit4_carry_look_ahead_adder" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula19_clah/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "carry_lah_4bits_behav_tb.vhd"
+prj_src add "D:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_behav_struct/sim_clah_behav_struct.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav.vhd" "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits.vhd" "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav_tb.vhd"
+prj_src add "D:/RTL_FPGA/VERILOG/aula19_clah/param_clah.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula19_clah/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "param_clah_tb.vhd"
+prj_src add "D:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_param/sim_clah_param.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/6/2025 21:06:28

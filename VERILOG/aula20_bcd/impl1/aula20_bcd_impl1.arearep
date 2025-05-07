@@ -1,0 +1,38 @@
+----------------------------------------------------------------------
+Report for cell somador_bcd.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         9          100.0
+                               LUT4        26          100.0
+                                 OB         5          100.0
+                              PFUMX         1          100.0
+SUB MODULES
+                           bcd_1bit         1
+                        bcd_1bit_U0         1
+                           corretor         1
+                              TOTAL        45
+----------------------------------------------------------------------
+Report for cell bcd_1bit_U0.v1
+Instance Path : s1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        20           76.9
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell corretor.v1
+Instance Path : c1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            7.7
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell bcd_1bit.v1
+Instance Path : s2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4           15.4
+                              PFUMX         1          100.0
+                              TOTAL         5

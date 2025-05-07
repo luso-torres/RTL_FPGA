@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_behav_struct/sim_clah_behav_struct.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_behav_struct" sim_clah_behav_struct
+	project addfile "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits.vhd"
+	project addfile "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav.vhd"
+	project addfile "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits.vhd"
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav.vhd"
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula19_clah/sim_clah_behav_struct/sim_clah_behav_struct"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

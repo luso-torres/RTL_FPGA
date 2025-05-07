@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction/sim_sum_correction.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction" sim_sum_correction
+	project addfile "D:/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd"
+	project addfile "D:/RTL_FPGA/VERILOG/aula20_bcd/detector.vhd"
+	project addfile "D:/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd.vhd"
+	project addfile "D:/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd"
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula20_bcd/detector.vhd"
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd.vhd"
+	vcom -work work "D:/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction/sim_sum_correction"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

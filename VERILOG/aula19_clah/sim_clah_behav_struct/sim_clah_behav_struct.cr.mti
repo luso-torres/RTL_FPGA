@@ -1,0 +1,26 @@
+D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity carry_lah_4bits_behav
+-- Compiling architecture behavioral of carry_lah_4bits_behav
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits_behav_tb.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbench
+-- Compiling architecture behavior of testbench
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none D:/RTL_FPGA/VERILOG/aula19_clah/carry_lah_4bits.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity carry_lah_4bits
+-- Compiling architecture behaviour of carry_lah_4bits
+
+} {} {}}

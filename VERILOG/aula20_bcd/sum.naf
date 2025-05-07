@@ -1,0 +1,14 @@
+Cin  i
+A[3]  i
+A[2]  i
+A[1]  i
+A[0]  i
+B[3]  i
+B[2]  i
+B[1]  i
+B[0]  i
+Cout_out  o
+Sum_out[3]  o
+Sum_out[2]  o
+Sum_out[1]  o
+Sum_out[0]  o

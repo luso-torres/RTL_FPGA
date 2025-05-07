@@ -19,18 +19,18 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1746485776">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1746485776"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1746485776"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1746580401">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1746580401"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1746580401"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1746485772"/>
-            <Task name="BKM" build_result="0" update_result="3" update_time="0"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1746580396"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1746580396"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="carry_lah_impl1.lsedata" last_build_time="1746485774" last_build_size="16416"/>
-        <Report name="carry_lah_impl1.ngd" last_build_time="1746485775" last_build_size="22415"/>
+        <Report name="aula20_bcd_impl1.lsedata" last_build_time="1746580398" last_build_size="34025"/>
+        <Report name="aula20_bcd_impl1.ngd" last_build_time="1746580401" last_build_size="25842"/>
     </Strategy>
 </BuildStatus>
