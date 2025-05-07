@@ -1,0 +1,45 @@
+E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity detector
+-- Compiling architecture behaviour of detector
+
+} {} {}} E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbench
+-- Compiling architecture behavior of testbench
+
+} {} {}} E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+** Warning: E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd(25): (vcom-1615) Existing entity 'testbench' at E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd(25) will be overwritten.
+-- Compiling entity testbench
+** Warning: E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd(28): (vcom-1615) Existing architecture 'testbench(behavior)' at E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd(28) will be overwritten.
+-- Compiling architecture behavior of testbench
+
+} {} {}} E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity bcd_1bit
+-- Compiling architecture behaviour of bcd_1bit
+
+} {} {}} E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity somador_bcd_always
+-- Compiling architecture behaviour of somador_bcd_always
+
+} {} {}}

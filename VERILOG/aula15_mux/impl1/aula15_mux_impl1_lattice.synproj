@@ -31,10 +31,9 @@
 
 
 -lpf 1
--lib "work" -vhd "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd"
-"E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd"
-"E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_topmodle.vhd"
--top half_adder
+-lib "work" -vhd "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_completo.vhd"
+"E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_1bit.vhd"
+-top somador_completo_Nbits
 
 
 -p "E:/ld/ispfpga/sa5p00/data" "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/impl1" "E:/repositories/RTL_FPGA/VERILOG/aula15_mux"

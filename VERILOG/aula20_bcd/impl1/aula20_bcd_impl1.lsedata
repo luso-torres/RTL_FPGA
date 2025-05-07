@@ -1,4 +1,4 @@
-<top name = "somador_bcd"  library = "work"  arch = "RTL"  entry = "VHDL">
+<top name = "somador_bcd_always"  library = "work"  arch = "RTL"  entry = "VHDL">
 
 <clocks>
 </clocks>
@@ -15,7 +15,7 @@
 
 <library name = "work">
 
-<unit name = "somador_bcd">
+<unit name = "somador_bcd_always">
 
     <!--
         Top Level Pins: 14
@@ -158,6 +158,7 @@
         <nitem  name = "Correction[3]"  />
         <nitem  name = "Correction[2]"  />
         <nitem  name = "Correction[1]"  />
+        <nitem  name = "Correction[0]"  />
         <nitem  name = "s2/P[3]"  />
         <nitem  name = "s2/P[2]"  />
         <nitem  name = "s2/P[1]"  />
@@ -499,78 +500,126 @@
         </nets>
     </instance>
 
-    <instance  name = "c1/and_11"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "c1/mux_3"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "Sum[3]"  />
+        <nitem  name = "c1/gnd"  />
+        <nitem  name = "c1/pwr"  />
         <nitem  name = "Sum[1]"  />
-        <nitem  name = "c1/correctionbit_2__N_25[0]"  />
-        <nitem  name = "c1/correctionbit_2__N_25[1]"  />
+        <nitem  name = "c1/n3"  />
+        <nitem  name = "c1/n4"  />
+        <nitem  name = "c1/n5"  />
+        <nitem  name = "c1/n6"  />
         </nets>
     </instance>
 
-    <instance  name = "c1/and_12"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "c1/mux_4"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "Sum[3]"  />
+        <nitem  name = "c1/gnd"  />
+        <nitem  name = "c1/pwr"  />
         <nitem  name = "Sum[2]"  />
-        <nitem  name = "c1/correctionbit_2__N_27[0]"  />
-        <nitem  name = "c1/correctionbit_2__N_27[1]"  />
+        <nitem  name = "c1/n3"  />
+        <nitem  name = "c1/n4"  />
+        <nitem  name = "c1/n5"  />
+        <nitem  name = "c1/n6"  />
+        <nitem  name = "c1/correctionbit_3__N_27[3]"  />
+        <nitem  name = "c1/correctionbit_3__N_27[2]"  />
+        <nitem  name = "c1/correctionbit_3__N_27[1]"  />
+        <nitem  name = "c1/correctionbit_3__N_27[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "c1/correctionbit_2__I_0"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "c1/correctionbit_3__I_9"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "c1/correctionbit_2__N_25[0]"  />
-        <nitem  name = "c1/correctionbit_2__N_27[0]"  />
-        <nitem  name = "c1/correctionbit_2__N_23[0]"  />
-        <nitem  name = "c1/correctionbit_2__N_25[1]"  />
-        <nitem  name = "c1/correctionbit_2__N_27[1]"  />
-        <nitem  name = "c1/correctionbit_2__N_23[1]"  />
+        <nitem  name = "c1/gnd"  />
+        <nitem  name = "Sum[3]"  />
+        <nitem  name = "c1/correctionbit_3__N_27[3]"  />
+        <nitem  name = "c1/correctionbit_3__N_27[2]"  />
+        <nitem  name = "c1/correctionbit_3__N_27[1]"  />
+        <nitem  name = "c1/correctionbit_3__N_27[0]"  />
+        <nitem  name = "c1/correctionbit_3__N_23[3]"  />
+        <nitem  name = "c1/correctionbit_3__N_23[2]"  />
+        <nitem  name = "c1/correctionbit_3__N_23[1]"  />
+        <nitem  name = "c1/correctionbit_3__N_23[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "c1/Cout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+    <instance  name = "c1/correctionbit_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
         <pins>
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
         </pins>
 
         <nets>
+        <nitem  name = "c1/gnd"  />
+        <nitem  name = "c1/pwr"  />
         <nitem  name = "Cout"  />
+        <nitem  name = "Correction[3]"  />
         <nitem  name = "Correction[2]"  />
         <nitem  name = "Correction[1]"  />
-        <nitem  name = "c1/correctionbit_2__N_23[0]"  />
-        <nitem  name = "c1/correctionbit_2__N_23[1]"  />
+        <nitem  name = "Correction[0]"  />
+        <nitem  name = "c1/correctionbit_3__N_23[3]"  />
+        <nitem  name = "c1/correctionbit_3__N_23[2]"  />
+        <nitem  name = "c1/correctionbit_3__N_23[1]"  />
+        <nitem  name = "c1/correctionbit_3__N_23[0]"  />
         </nets>
     </instance>
 
@@ -598,6 +647,7 @@
         <nitem  name = "Correction[3]"  />
         <nitem  name = "Correction[2]"  />
         <nitem  name = "Correction[1]"  />
+        <nitem  name = "Correction[0]"  />
         <nitem  name = "s2/G[3]"  />
         <nitem  name = "s2/G[2]"  />
         <nitem  name = "s2/G[1]"  />
@@ -971,12 +1021,12 @@
     <instance  name = "s1"  />
     <instance  name = "s2"  />
     <!--
-        Views in design "somador_bcd": 2
+        Views in design "somador_bcd_always": 2
     -->
 
     <views>
         <view  name = "bcd_1bit"  />
-        <view  name = "corretor"  />
+        <view  name = "detector"  />
     </views>
 
 </unit>

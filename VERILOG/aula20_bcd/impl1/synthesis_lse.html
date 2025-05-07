@@ -14,10 +14,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue May 06 22:13:18 2025
+Wed May 07 00:14:38 2025
 
 
-Command Line:  synthesis -f aula20_bcd_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f aula20_bcd_impl1_lattice.synproj -gui -msgset E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/promote.xml 
 
 Synthesis options:
 The -a option is ECP5U.
@@ -44,7 +44,7 @@ Using performance grade 6.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Timing
-Top-level module name = somador_bcd.
+Top-level module name = somador_bcd_always.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -70,13 +70,14 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
--p D:/RTL_FPGA/VERILOG/aula20_bcd/impl1 (searchpath added)
--p D:/RTL_FPGA/VERILOG/aula20_bcd (searchpath added)
+-p E:/ld/ispfpga/sa5p00/data (searchpath added)
+-p E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/impl1 (searchpath added)
+-p E:/repositories/RTL_FPGA/VERILOG/aula20_bcd (searchpath added)
 VHDL library = work
-VHDL design file = D:/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd
-VHDL design file = D:/RTL_FPGA/VERILOG/aula20_bcd/detector.vhd
-VHDL design file = D:/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd
 NGD file = aula20_bcd_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -84,34 +85,38 @@ Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Technology check ok...
 
-Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Analyzing Verilog file E:/ld/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-INFO - synthesis: The default VHDL library search path is now "D:/RTL_FPGA/VERILOG/aula20_bcd/impl1". VHDL-1504
-Analyzing VHDL file d:/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd(3): analyzing entity bcd_1bit. VHDL-1012
-INFO - synthesis: d:/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd(12): analyzing architecture behaviour. VHDL-1010
-unit somador_bcd is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/rtl_fpga/verilog/aula20_bcd/detector.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/verilog/aula20_bcd/detector.vhd(3): analyzing entity corretor. VHDL-1012
-INFO - synthesis: d:/rtl_fpga/verilog/aula20_bcd/detector.vhd(11): analyzing architecture behaviour. VHDL-1010
-unit somador_bcd is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd. VHDL-1481
-INFO - synthesis: d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(3): analyzing entity somador_bcd. VHDL-1012
-INFO - synthesis: d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(12): analyzing architecture behaviour. VHDL-1010
-unit somador_bcd is not yet analyzed. VHDL-1485
-unit somador_bcd is not yet analyzed. VHDL-1485
-d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(3): executing somador_bcd(behaviour)
+INFO - synthesis: The default VHDL library search path is now "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/impl1". VHDL-1504
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd. VHDL-1481
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd(3): analyzing entity bcd_1bit. VHDL-1012
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd(12): analyzing architecture behaviour. VHDL-1010
+unit somador_bcd_always is not yet analyzed. VHDL-1485
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd. VHDL-1481
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(3): analyzing entity somador_bcd. VHDL-1012
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(12): analyzing architecture behaviour. VHDL-1010
+unit somador_bcd_always is not yet analyzed. VHDL-1485
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula20_bcd/detector_always.vhd. VHDL-1481
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/detector_always.vhd(3): analyzing entity detector. VHDL-1012
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/detector_always.vhd(11): analyzing architecture behaviour. VHDL-1010
+unit somador_bcd_always is not yet analyzed. VHDL-1485
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd. VHDL-1481
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd(3): analyzing entity somador_bcd_always. VHDL-1012
+INFO - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd(12): analyzing architecture behaviour. VHDL-1010
+unit somador_bcd_always is not yet analyzed. VHDL-1485
+unit somador_bcd_always is not yet analyzed. VHDL-1485
+e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd(3): executing somador_bcd_always(behaviour)
 
-WARNING - synthesis: d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(10): replacing existing netlist somador_bcd(behaviour). VHDL-1205
-Top module name (VHDL): somador_bcd
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
-Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+WARNING - synthesis: e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd(10): replacing existing netlist somador_bcd_always(behaviour). VHDL-1205
+Top module name (VHDL): somador_bcd_always
+Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: E:/ld/ispfpga.
 Package Status:                     Final          Version 1.50.
-Top-level module name = somador_bcd.
+Top-level module name = somador_bcd_always.
 
 
 
@@ -119,17 +124,17 @@ GSR will not be inferred because no asynchronous signal was found in the netlist
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
-Results of NGD DRC are available in somador_bcd_drc.log.
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Results of NGD DRC are available in somador_bcd_always_drc.log.
+Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
 WARNING - synthesis: logical net 'GND_net' has no load.
 WARNING - synthesis: DRC complete with 1 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file aula20_bcd_impl1.ngd.
 
-################### Begin Area Report (somador_bcd)######################
+################### Begin Area Report (somador_bcd_always)######################
 Number of register bits => 0 of 44439 (0 % )
 GSR => 1
 IB => 9
@@ -146,22 +151,22 @@ Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
+  Net : A_c_0, loads : 7
+  Net : B_c_0, loads : 7
   Net : Cin_c, loads : 6
-  Net : A_c_0, loads : 6
-  Net : B_c_0, loads : 6
+  Net : B_c_1, loads : 5
+  Net : s1/Sum_1, loads : 5
+  Net : s1/Cout, loads : 5
   Net : A_c_1, loads : 4
-  Net : B_c_1, loads : 4
-  Net : s1/Sum_1, loads : 4
-  Net : s1/Cout, loads : 4
-  Net : s1/P_2, loads : 4
   Net : s1/P_3, loads : 4
-  Net : s1/n170, loads : 4
+  Net : A_c_2, loads : 3
+  Net : B_c_2, loads : 3
 ################### End Clock Report ##################
 
-Peak Memory Usage: 106.113  MB
+Peak Memory Usage: 104.039  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.734  secs
+Elapsed CPU time for LSE flow : 0.922  secs
 --------------------------------------------------------------
 
 

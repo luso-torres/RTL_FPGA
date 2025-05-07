@@ -1,0 +1,9 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="sim_fulladder" simType="QuestaSim">
+    <Source worklib="work" path="somador_1bit.vhd" type="VHDL" langstandard="" include="none"/>
+    <Source worklib="work" path="somador_completo.vhd" type="VHDL" langstandard="" include="none"/>
+    <Source worklib="work" path="somador_completo_Nbits_tb.vhd" type="VHDL" langstandard="" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5u"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VHDL" name="TB_somador_completo_Nbits"/>
+</BaliSimProject>

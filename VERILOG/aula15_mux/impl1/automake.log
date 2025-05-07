@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun May 04 22:59:03 2025
+Mon May 05 15:56:44 2025
 
 
-Command Line:  synthesis -f aula15_mux_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f aula15_mux_impl1_lattice.synproj -gui -msgset E:/repositories/RTL_FPGA/VERILOG/aula15_mux/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -38,7 +38,7 @@ Using performance grade 6.
 
     <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
 Optimization goal = Timing
-Top-level module name = half_adder.
+Top-level module name = somador_completo_Nbits.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -68,9 +68,8 @@ The -syn option is FALSE.
 -p E:/repositories/RTL_FPGA/VERILOG/aula15_mux/impl1 (searchpath added)
 -p E:/repositories/RTL_FPGA/VERILOG/aula15_mux (searchpath added)
 VHDL library = work
-VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd
-VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd
-VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_topmodle.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_completo.vhd
+VHDL design file = E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_1bit.vhd
 NGD file = aula15_mux_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -82,31 +81,28 @@ Analyzing Verilog file E:/ld/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI
 Compile design.
 Compile Design Begin
     <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="E:/repositories/RTL_FPGA/VERILOG/aula15_mux/impl1"  />
-Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd. VHDL-1481
-    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(4): " arg1="half_adderf" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd" arg3="4"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(12): " arg1="behavioral" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd" arg3="12"  />
-unit half_adder is not yet analyzed. VHDL-1485
-Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd. VHDL-1481
-    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): " arg1="half_adderb" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd" arg3="5"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(13): " arg1="behavioral" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd" arg3="13"  />
-unit half_adder is not yet analyzed. VHDL-1485
-Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd. VHDL-1481
-    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(5): " arg1="half_adder" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd" arg3="5"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(13): " arg1="behavioral" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd" arg3="13"  />
-unit half_adder is not yet analyzed. VHDL-1485
-unit half_adder is not yet analyzed. VHDL-1485
-e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(5): executing half_adder(behavioral)
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd(4): " arg1="somador_completo_nbits" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd" arg3="4"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd(14): " arg1="behavioural" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd" arg3="14"  />
+unit somador_completo_Nbits is not yet analyzed. VHDL-1485
+Analyzing VHDL file e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd(3): " arg1="somador_1bit" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd" arg3="3"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd(11): " arg1="behavioural" arg2="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd" arg3="11"  />
+unit somador_completo_Nbits is not yet analyzed. VHDL-1485
+unit somador_completo_Nbits is not yet analyzed. VHDL-1485
+e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd(4): executing somador_completo_Nbits(behavioural)
 
-    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(11): " arg1="half_adder" arg2="behavioral" arg3="e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd" arg4="11"  />
-Top module name (VHDL): half_adder
-Last elaborated design is half_adder(behavioral)
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd(12): " arg1="somador_completo_Nbits" arg2="behavioural" arg3="e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd" arg4="12"  />
+Top module name (VHDL): somador_completo_Nbits
+Last elaborated design is somador_completo_Nbits(behavioural)
 Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p45.nph' in environment: E:/ld/ispfpga.
 Package Status:                     Final          Version 1.50.
-Top-level module name = half_adder.
+Top-level module name = somador_completo_Nbits.
+Rejecting instance in MergeCSE due to signature collison : sum_gen[4].sum0
 
 
 
@@ -114,7 +110,7 @@ GSR will not be inferred because no asynchronous signal was found in the netlist
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
-Results of NGD DRC are available in half_adder_drc.log.
+Results of NGD DRC are available in somador_completo_Nbits_drc.log.
 Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -127,17 +123,17 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
 
 Design Results:
-     16 blocks expanded
+     46 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file aula15_mux_impl1.ngd.
 
-################### Begin Area Report (half_adder)######################
+################### Begin Area Report (somador_completo_Nbits)######################
 Number of register bits => 0 of 44439 (0 % )
 GSR => 1
-IB => 4
-LUT4 => 4
-OB => 4
+IB => 17
+LUT4 => 16
+OB => 9
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
@@ -148,20 +144,20 @@ Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
+  Net : Cin_c, loads : 2
+  Net : A_c_7, loads : 2
+  Net : A_c_6, loads : 2
+  Net : A_c_5, loads : 2
+  Net : A_c_4, loads : 2
+  Net : A_c_3, loads : 2
+  Net : A_c_2, loads : 2
   Net : A_c_1, loads : 2
   Net : A_c_0, loads : 2
-  Net : B_c_1, loads : 2
-  Net : B_c_0, loads : 2
-  Net : ha2/sum_c_1, loads : 0
-  Net : ha1/sum_c_0, loads : 0
-  Net : ha2/carry_c_1, loads : 0
-  Net : ha1/carry_c_0, loads : 0
-  Net : sum[0], loads : 0
-  Net : carry[1], loads : 0
+  Net : B_c_7, loads : 2
 ################### End Clock Report ##################
 
-Peak Memory Usage: 102.859  MB
+Peak Memory Usage: 105.852  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.891  secs
+Elapsed CPU time for LSE flow : 0.969  secs
 --------------------------------------------------------------

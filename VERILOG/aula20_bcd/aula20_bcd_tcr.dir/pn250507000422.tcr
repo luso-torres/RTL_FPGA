@@ -1,0 +1,25 @@
+#Start recording tcl command: 5/6/2025 23:36:57
+#Project Location: E:/repositories/RTL_FPGA/VERILOG/aula20_bcd; Project name: aula20_bcd
+prj_project open "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/aula20_bcd.ldf"
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_src exclude "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector.vhd"
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd"
+prj_src exclude "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_always_tb.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "somador_bcd_always_tb.vhd"
+prj_src remove "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_always_tb.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction_always/sim_sum_correction_always.spf"
+prj_run Synthesis -impl impl1
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction_always/sim_sum_correction_always.spf"
+source "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/hdle_generate_tbtemplate.tcl"
+source "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/hdle_generate_tbtemplate.tcl"
+#Stop recording: 5/7/2025 00:04:22

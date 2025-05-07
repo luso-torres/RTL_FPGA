@@ -18,59 +18,43 @@
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(4): </Dynamic>
-            <Dynamic>half_adderf</Dynamic>
-            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd(4): </Dynamic>
+            <Dynamic>somador_completo_nbits</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd</Navigation>
             <Navigation>4</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd(12): </Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_flux.vhd</Navigation>
-            <Navigation>12</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd(14): </Dynamic>
+            <Dynamic>behavioural</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd</Navigation>
+            <Navigation>14</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(5): </Dynamic>
-            <Dynamic>half_adderb</Dynamic>
-            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd</Navigation>
-            <Navigation>5</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd(3): </Dynamic>
+            <Dynamic>somador_1bit</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd</Navigation>
+            <Navigation>3</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd(13): </Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_behavioral.vhd</Navigation>
-            <Navigation>13</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
-            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(5): </Dynamic>
-            <Dynamic>half_adder</Dynamic>
-            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd</Navigation>
-            <Navigation>5</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(13): </Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd</Navigation>
-            <Navigation>13</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd(11): </Dynamic>
+            <Dynamic>behavioural</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_1bit.vhd</Navigation>
+            <Navigation>11</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd(11): </Dynamic>
-            <Dynamic>half_adder</Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/half_adder_topmodle.vhd</Navigation>
-            <Navigation>11</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd(12): </Dynamic>
+            <Dynamic>somador_completo_Nbits</Dynamic>
+            <Dynamic>behavioural</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula15_mux/somador_completo.vhd</Navigation>
+            <Navigation>12</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>

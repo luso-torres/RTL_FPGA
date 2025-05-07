@@ -1,0 +1,19 @@
+if {![file exists "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_fulladder/sim_fulladder.mpf"]} { 
+	project new "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_fulladder" sim_fulladder
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_1bit.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_completo.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_completo_Nbits_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_1bit.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_completo.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_completo_Nbits_tb.vhd"
+} else {
+	project open "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_fulladder/sim_fulladder"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  TB_somador_completo_Nbits
+view wave
+add wave /*
+run 1000ns

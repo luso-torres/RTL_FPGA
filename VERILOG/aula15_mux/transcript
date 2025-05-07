@@ -13,79 +13,81 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# do {E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_half_adder/sim_half_adder.mdo}
-# Loading project sim_half_adder
+# do {E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_fulladder/sim_fulladder.mdo}
+# Loading project sim_fulladder
 # Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 23:08:39 on May 04,2025
-# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula15_mux/func_2bits_tb.vhd 
+# Start time: 15:52:19 on May 05,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_1bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity func_2bits_tb
-# -- Compiling architecture testbench of func_2bits_tb
-# End time: 23:08:39 on May 04,2025, Elapsed time: 0:00:00
+# -- Compiling entity somador_1bit
+# -- Compiling architecture behavioural of somador_1bit
+# End time: 15:52:20 on May 05,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 23:08:39 on May 04,2025
-# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_flux.vhd 
+# Start time: 15:52:20 on May 05,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_completo.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity half_adderf
-# -- Compiling architecture behavioral of half_adderf
-# End time: 23:08:39 on May 04,2025, Elapsed time: 0:00:00
+# -- Compiling entity somador_completo_Nbits
+# -- Compiling architecture behavioural of somador_completo_Nbits
+# End time: 15:52:20 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 23:08:39 on May 04,2025
-# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_behavioral.vhd 
+# Start time: 15:52:20 on May 05,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula15_mux/somador_completo_Nbits_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity half_adderb
-# -- Compiling architecture behavioral of half_adderb
-# End time: 23:08:39 on May 04,2025, Elapsed time: 0:00:00
+# -- Compiling entity TB_somador_completo_Nbits
+# -- Compiling architecture Test of TB_somador_completo_Nbits
+# End time: 15:52:20 on May 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 23:08:39 on May 04,2025
-# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_topmodle.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity half_adder
-# -- Compiling architecture behavioral of half_adder
-# End time: 23:08:39 on May 04,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 23:08:40 on May 04,2025
-# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula15_mux/half_adder_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity half_adder_tb
-# -- Compiling architecture testbench of half_adder_tb
-# End time: 23:08:40 on May 04,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u half_adder_tb 
-# Start time: 23:08:40 on May 04,2025
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u TB_somador_completo_Nbits 
+# Start time: 15:52:20 on May 05,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.half_adder_tb(testbench)#1
-# Loading work.half_adder(behavioral)#1
-# Loading work.half_adderb(behavioral)#1
-# Loading work.half_adderf(behavioral)#1
+# Loading work.tb_somador_completo_nbits(test)#1
+# Loading work.somador_completo_nbits(behavioural)#1
+# Loading work.somador_1bit(behavioural)#1
 # .main_pane.wave.interior.cs.body.pw.wf
-# ** Warning: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
-#    Time: 0 ns  Iteration: 0  Instance: /half_adder_tb/DUT/ha1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /half_adder_tb/DUT/ha1
-# Causality operation skipped due to absence of debug database file
-# End time: 23:11:21 on May 04,2025, Elapsed time: 0:02:41
-# Errors: 0, Warnings: 11
+# Compile of somador_1bit.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of somador_completo_Nbits_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_somador_completo_nbits(test)#1
+# Loading work.somador_completo_nbits(behavioural)#1
+# Loading work.somador_1bit(behavioural)#1
+run
+# Compile of somador_1bit.vhd was successful.
+# Compile of somador_completo.vhd was successful.
+# Compile of somador_completo_Nbits_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_somador_completo_nbits(test)#1
+# Loading work.somador_completo_nbits(behavioural)#1
+# Loading work.somador_1bit(behavioural)#1
+run
+# End time: 16:02:21 on May 05,2025, Elapsed time: 0:10:01
+# Errors: 0, Warnings: 2

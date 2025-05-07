@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="D:/RTL_FPGA/VERILOG/aula20_bcd/promote.xml" version="Diamond (64-bit) 3.14.0.75.2" date="Tue May 06 22:17:04 2025" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/promote.xml" version="Diamond (64-bit) 3.14.0.75.2" date="Wed May 07 00:26:44 2025" vendor="Lattice Semiconductor Corporation" >
   <msg mid="35921504" type="Info" />
   <msg mid="35921177" type="Warning" />
   <msg mid="35931002" type="Warning" />
+  <msg mid="35921296" type="Error" />
   <msg mid="35921205" type="Warning" />
   <msg mid="35921135" type="Error" />
 </userSetting>

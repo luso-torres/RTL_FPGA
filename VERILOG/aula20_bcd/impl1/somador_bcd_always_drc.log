@@ -1,0 +1,17 @@
+Results of NGD DRC are available in somador_bcd_always_drc.log.
+Loading NGL library 'E:/ld/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/ld/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: DRC complete with 1 warnings.
+
+Design Results:
+     45 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file aula20_bcd_impl1.ngd.

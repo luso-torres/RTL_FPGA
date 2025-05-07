@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
-Report for cell somador_bcd.TECH
+Report for cell somador_bcd_always.TECH
 Register bits:  0 of 44439 (0.000%)
 I/O cells:      14
                                   Cell usage:
@@ -9,30 +9,31 @@ I/O cells:      14
                                LUT4        26          100.0
                                  OB         5          100.0
                               PFUMX         1          100.0
+                        VERIFIC_PWR         1          100.0
 SUB MODULES
                            bcd_1bit         1
                         bcd_1bit_U0         1
-                           corretor         1
-                              TOTAL        45
+                           detector         1
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell detector.v1
+Instance Path : c1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3           11.5
+                              TOTAL         3
 ----------------------------------------------------------------------
 Report for cell bcd_1bit_U0.v1
 Instance Path : s1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        20           76.9
-                              TOTAL        20
-----------------------------------------------------------------------
-Report for cell corretor.v1
-Instance Path : c1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         2            7.7
-                              TOTAL         2
+                               LUT4        17           65.4
+                              PFUMX         1          100.0
+                              TOTAL        18
 ----------------------------------------------------------------------
 Report for cell bcd_1bit.v1
 Instance Path : s2
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         4           15.4
-                              PFUMX         1          100.0
-                              TOTAL         5
+                               LUT4         6           23.1
+                              TOTAL         6

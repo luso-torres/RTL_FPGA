@@ -1,29 +1,77 @@
 ----------------------------------------------------------------------
-Report for cell half_adder.TECH
+Report for cell somador_completo_Nbits.TECH
 Register bits:  0 of 44439 (0.000%)
-I/O cells:      8
+I/O cells:      26
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 GSR         1          100.0
-                                 IB         4          100.0
-                               LUT4         4          100.0
-                                 OB         4          100.0
+                                 IB        17          100.0
+                               LUT4        16          100.0
+                                 OB         9          100.0
                         VERIFIC_PWR         1          100.0
 SUB MODULES
-                        half_adderb         1
-                        half_adderf         1
-                              TOTAL        16
+                       somador_1bit         1
+                    somador_1bit_U0         1
+                    somador_1bit_U1         1
+                    somador_1bit_U2         1
+                    somador_1bit_U3         1
+                    somador_1bit_U4         1
+                    somador_1bit_U5         1
+                    somador_1bit_U6         1
+                              TOTAL        52
 ----------------------------------------------------------------------
-Report for cell half_adderb.v1
-Instance Path : ha1
+Report for cell somador_1bit_U4.v1
+Instance Path : sum_gen[2].sum0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2           50.0
+                               LUT4         2           12.5
                               TOTAL         2
 ----------------------------------------------------------------------
-Report for cell half_adderf.v1
-Instance Path : ha2
+Report for cell somador_1bit_U0.v1
+Instance Path : sum_gen[6].sum0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         2           50.0
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell somador_1bit_U5.v1
+Instance Path : sum_gen[1].sum0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell somador_1bit_U1.v1
+Instance Path : sum_gen[5].sum0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell somador_1bit_U6.v1
+Instance Path : sum_gen[0].sum0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell somador_1bit_U2.v1
+Instance Path : sum_gen[4].sum0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell somador_1bit_U3.v1
+Instance Path : sum_gen[3].sum0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell somador_1bit.v1
+Instance Path : sum_gen[7].sum0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
                               TOTAL         2

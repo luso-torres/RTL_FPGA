@@ -13,63 +13,79 @@
             <ID>35921504</ID>
             <Severity>Info</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>D:/RTL_FPGA/VERILOG/aula20_bcd/impl1</Dynamic>
+            <Dynamic>E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/impl1</Dynamic>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd(3): </Dynamic>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd(3): </Dynamic>
             <Dynamic>bcd_1bit</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd</Navigation>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd</Navigation>
             <Navigation>3</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd(12): </Dynamic>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd(12): </Dynamic>
             <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd</Navigation>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/bcd_1bit.vhd</Navigation>
             <Navigation>12</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula20_bcd/detector.vhd(3): </Dynamic>
-            <Dynamic>corretor</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula20_bcd/detector.vhd</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(3): </Dynamic>
+            <Dynamic>somador_bcd</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd</Navigation>
             <Navigation>3</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula20_bcd/detector.vhd(11): </Dynamic>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(12): </Dynamic>
             <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula20_bcd/detector.vhd</Navigation>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/detector_always.vhd(3): </Dynamic>
+            <Dynamic>detector</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/detector_always.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/detector_always.vhd(11): </Dynamic>
+            <Dynamic>behaviour</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/detector_always.vhd</Navigation>
             <Navigation>11</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(3): </Dynamic>
-            <Dynamic>somador_bcd</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd</Navigation>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd(3): </Dynamic>
+            <Dynamic>somador_bcd_always</Dynamic>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd</Navigation>
             <Navigation>3</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(12): </Dynamic>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd(12): </Dynamic>
             <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd</Navigation>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd</Navigation>
             <Navigation>12</Navigation>
         </Message>
         <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd(10): </Dynamic>
-            <Dynamic>somador_bcd</Dynamic>
+            <Dynamic>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd(10): </Dynamic>
+            <Dynamic>somador_bcd_always</Dynamic>
             <Dynamic>behaviour</Dynamic>
-            <Navigation>d:/rtl_fpga/verilog/aula20_bcd/somador_bcd.vhd</Navigation>
+            <Navigation>e:/repositories/rtl_fpga/verilog/aula20_bcd/somador_bcd_always.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>

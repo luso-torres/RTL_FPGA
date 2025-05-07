@@ -1,0 +1,15 @@
+#Start recording tcl command: 5/7/2025 00:04:35
+#Project Location: E:/repositories/RTL_FPGA/VERILOG/aula20_bcd; Project name: aula20_bcd
+prj_project open "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/aula20_bcd.ldf"
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction_always/sim_sum_correction_always.spf"
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction_alwayts/sim_sum_correction_alwayts.spf"
+prj_src enable "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_completo/sim_sum_completo.spf"
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_completo/sim_sum_completo.spf"
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_completo/sim_sum_completo.spf"
+prj_src enable "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector.vhd"
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_completo/sim_sum_completo.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/7/2025 00:26:44

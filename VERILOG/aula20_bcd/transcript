@@ -13,51 +13,84 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# do {D:/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction/sim_sum_correction.mdo}
-# Loading project sim_sum_correction
+# do {E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_completo/sim_sum_completo.mdo}
+# Loading project sim_sum_completo
 # Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 21:56:53 on May 06,2025
-# vcom -reportprogress 300 -work work D:/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sum_4bits
-# -- Compiling architecture behaviour of sum_4bits
-# End time: 21:56:53 on May 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 21:56:53 on May 06,2025
-# vcom -reportprogress 300 -work work D:/RTL_FPGA/VERILOG/aula20_bcd/detector.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity somador_bcd
-# -- Compiling architecture behaviour of somador_bcd
-# End time: 21:56:53 on May 06,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 21:56:53 on May 06,2025
-# vcom -reportprogress 300 -work work D:/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity sum
-# -- Compiling architecture behaviour of sum
-# End time: 21:56:54 on May 06,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 21:56:54 on May 06,2025
-# vcom -reportprogress 300 -work work D:/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd 
+# Start time: 00:20:52 on May 07,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity testbench
 # -- Compiling architecture behavior of testbench
-# End time: 21:56:54 on May 06,2025, Elapsed time: 0:00:00
+# End time: 00:20:52 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:20:52 on May 07,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bcd_1bit
+# -- Compiling architecture behaviour of bcd_1bit
+# End time: 00:20:53 on May 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:20:53 on May 07,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity corretor
+# -- Compiling architecture behaviour of corretor
+# End time: 00:20:53 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:20:53 on May 07,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity somador_bcd
+# -- Compiling architecture behaviour of somador_bcd
+# End time: 00:20:53 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:20:53 on May 07,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity detector
+# -- Compiling architecture behaviour of detector
+# End time: 00:20:53 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:20:53 on May 07,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity somador_bcd_always
+# -- Compiling architecture behaviour of somador_bcd_always
+# End time: 00:20:53 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:20:53 on May 07,2025
+# vcom -reportprogress 300 -work work E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd(25): (vcom-1615) Existing entity 'testbench' at E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd(25) will be overwritten.
+# -- Compiling entity testbench
+# ** Warning: E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd(28): (vcom-1615) Existing architecture 'testbench(behavior)' at E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd(28) will be overwritten.
+# -- Compiling architecture behavior of testbench
+# End time: 00:20:53 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
 # vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u testbench 
-# Start time: 21:56:54 on May 06,2025
+# Start time: 00:20:53 on May 07,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -66,103 +99,11 @@
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.testbench(behavior)#1
-# Loading work.sum(behaviour)#1
-# Loading work.sum_4bits(behaviour)#1
+# Loading work.somador_bcd_always(behaviour)#1
+# Loading work.bcd_1bit(behaviour)#1
+# Loading work.detector(behaviour)#1
 # Loading work.somador_bcd(behaviour)#1
-# ** Warning: (vsim-8684) No drivers exist on out port /testbench/uut/c1/correctionbit(2), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /testbench/uut/Correction(2).
+# Loading work.corretor(behaviour)#1
 # .main_pane.wave.interior.cs.body.pw.wf
-# Causality operation skipped due to absence of debug database file
-# Compile of bcd_1bit.vhd was successful.
-# Compile of detector.vhd was successful.
-# Compile of somador_bcd.vhd was successful.
-# Compile of sum_tb.vhd was successful.
-# 4 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.testbench(behavior)#1
-# Loading work.somador_bcd(behaviour)#1
-# Loading work.bcd_1bit(behaviour)#1
-# Loading work.corretor(behaviour)#1
-# ** Warning: (vsim-8684) No drivers exist on out port /testbench/uut/c1/correctionbit(2), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /testbench/uut/Correction(2).
-run
-add wave -position end sim:/testbench/uut/s1/*
-add wave -position end sim:/testbench/uut/c1/*
-add wave -position end sim:/testbench/uut/s1/*
-# Compile of bcd_1bit.vhd was successful.
-# Compile of detector.vhd was successful.
-# Compile of somador_bcd.vhd was successful.
-# Compile of sum_tb.vhd was successful.
-# 4 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.testbench(behavior)#1
-# Loading work.somador_bcd(behaviour)#1
-# Loading work.bcd_1bit(behaviour)#1
-# Loading work.corretor(behaviour)#1
-# ** Warning: (vsim-8684) No drivers exist on out port /testbench/uut/c1/correctionbit(2), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /testbench/uut/Correction(2).
-run
-# Compile of bcd_1bit.vhd was successful.
-# Compile of detector.vhd was successful.
-# Compile of somador_bcd.vhd was successful.
-# Compile of sum_tb.vhd was successful.
-# 4 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.testbench(behavior)#1
-# Loading work.somador_bcd(behaviour)#1
-# Loading work.bcd_1bit(behaviour)#1
-# Loading work.corretor(behaviour)#1
-# ** Warning: (vsim-8684) No drivers exist on out port /testbench/uut/c1/correctionbit(2), and its initial value is not used.
-# Therefore, simulation behavior may occur that is not in compliance with
-# the VHDL standard as the initial values come from the base signal /testbench/uut/Correction(2).
-run
-add wave -position end sim:/testbench/uut/c1/*
-# Compile of bcd_1bit.vhd was successful.
-# Compile of detector.vhd was successful.
-# Compile of somador_bcd.vhd was successful.
-# Compile of sum_tb.vhd was successful.
-# 4 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.testbench(behavior)#1
-# Loading work.somador_bcd(behaviour)#1
-# Loading work.bcd_1bit(behaviour)#1
-# Loading work.corretor(behaviour)#1
-run
-add wave -position end sim:/testbench/uut/c1/*
-# End time: 22:15:49 on May 06,2025, Elapsed time: 0:18:55
-# Errors: 0, Warnings: 2
+# End time: 00:23:57 on May 07,2025, Elapsed time: 0:03:04
+# Errors: 0, Warnings: 11

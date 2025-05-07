@@ -1,0 +1,11 @@
+#Start recording tcl command: 5/4/2025 20:31:52
+#Project Location: E:/repositories/RTL_FPGA/VERILOG/aula15_mux; Project name: aula15_mux
+prj_project open "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/aula15_mux.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "half_adder_tb.vhd"
+prj_src add "E:/repositories/RTL_FPGA/VERILOG/aula15_mux/sim_half_adder/sim_half_adder.spf"
+#Stop recording: 5/4/2025 23:12:16

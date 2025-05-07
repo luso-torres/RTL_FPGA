@@ -1,0 +1,23 @@
+if {![file exists "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction_alwayts/sim_sum_correction_alwayts.mpf"]} { 
+	project new "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction_alwayts" sim_sum_correction_alwayts
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd"
+	project addfile "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sum_tb.vhd"
+	vcom -work work "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd"
+} else {
+	project open "E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction_alwayts/sim_sum_correction_alwayts"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

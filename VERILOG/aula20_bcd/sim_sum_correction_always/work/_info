@@ -1,0 +1,193 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dE:/repositories/RTL_FPGA/VERILOG/aula20_bcd/sim_sum_correction_always
+T_opt
+!s110 1746587390
+V80B=Q4LJ5?3H8WAm0OcE40
+04 9 8 work testbench behavior 1
+=1-4cedfbc5dde6-681acefe-d5-4108
+R0
+!s12f OEM25U5 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Ebcd_1bit
+Z2 w1746585357
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R1
+Z5 8E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd
+Z6 FE:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd
+l0
+L3 1
+VLdC21[[Af=ZGbif9df<[P1
+!s100 4XD4gJ^9GRMI9>LALS;D<0
+Z7 OL;C;2024.2;79
+32
+Z8 !s110 1746587388
+!i10b 1
+Z9 !s108 1746587388.000000
+Z10 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd|
+Z11 !s107 E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/bcd_1bit.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehaviour
+R3
+R4
+DEx4 work 8 bcd_1bit 0 22 LdC21[[Af=ZGbif9df<[P1
+!i122 1
+l17
+L12 18
+V5T;7nAl7B[=Je_fg_f^VA2
+!s100 6Cj3og67eZ<Uh0TY3X1481
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Edetector
+Z14 w1746586460
+R3
+R4
+!i122 2
+R1
+Z15 8E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd
+Z16 FE:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd
+l0
+L3 1
+VUk9_g3R48Kf1zWfJWbOMY0
+!s100 A6[am10V`mDeE@TN^H;jb3
+R7
+32
+Z17 !s110 1746587389
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd|
+Z19 !s107 E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/detector_always.vhd|
+!i113 0
+R12
+R13
+Abehaviour
+R3
+R4
+DEx4 work 8 detector 0 22 Uk9_g3R48Kf1zWfJWbOMY0
+!i122 2
+l14
+L11 21
+VB_Ci5cKok@:OU9mDWiC>31
+!s100 W8KBTf`Y?A::P_S8EJ5]O1
+R7
+32
+R17
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12
+R13
+Esomador_bcd_always
+Z20 w1746586092
+R3
+R4
+!i122 3
+R1
+Z21 8E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd
+Z22 FE:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd
+l0
+L3 1
+VG:gT0PhBQMhk582<WSAi:3
+!s100 ?cSi=eo^LFAeAK6=HhlBS1
+R7
+32
+R17
+!i10b 1
+Z23 !s108 1746587389.000000
+Z24 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd|
+Z25 !s107 E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always.vhd|
+!i113 0
+R12
+R13
+Abehaviour
+R3
+R4
+DEx4 work 18 somador_bcd_always 0 22 G:gT0PhBQMhk582<WSAi:3
+!i122 3
+l34
+L12 51
+VHh1EV=Y8]I>_WI@4DDNiX1
+!s100 <g>0:8=D57YZN=ZCUbAG=0
+R7
+32
+R17
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R12
+R13
+Etestbench
+Z26 w1746587360
+Z27 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 4
+R1
+Z28 8E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd
+Z29 FE:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd
+l0
+L25 1
+V]2JEKP=GFG9;S=<ROB?Wi0
+!s100 DhX?P9?7<f<Q6;Ocez<e>3
+R7
+32
+R17
+!i10b 1
+R23
+Z30 !s90 -reportprogress|300|-work|work|E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd|
+Z31 !s107 E:/repositories/RTL_FPGA/VERILOG/aula20_bcd/somador_bcd_always_tb.vhd|
+!i113 0
+R12
+R13
+Abehavior
+R27
+R3
+R4
+DEx4 work 9 testbench 0 22 ]2JEKP=GFG9;S=<ROB?Wi0
+!i122 4
+l46
+L28 54
+VRI?@b<EmGLg>lO08ZY`[G2
+!s100 Vl9iIo27RZJR7S?HoGe5f2
+R7
+32
+R17
+!i10b 1
+R23
+R30
+R31
+!i113 0
+R12
+R13

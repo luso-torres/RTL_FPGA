@@ -1,1 +1,1 @@
-somador_bcd_rtl.vdb
+somador_bcd_always_rtl.vdb
