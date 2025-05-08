@@ -1,0 +1,112 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_bcd_3bits/sim_bcd_3bits.mdo}
+# Loading project sim_bcd_3bits
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:40:37 on May 07,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits" -work work D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v 
+# -- Compiling module bcd_1bit
+# 
+# Top level modules:
+# 	bcd_1bit
+# End time: 20:40:37 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:40:37 on May 07,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits" -work work D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v 
+# -- Compiling module detector
+# 
+# Top level modules:
+# 	detector
+# End time: 20:40:38 on May 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:40:38 on May 07,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits" -work work D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v 
+# -- Compiling module sum_correction
+# 
+# Top level modules:
+# 	sum_correction
+# End time: 20:40:38 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:40:38 on May 07,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits" -work work D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v 
+# -- Compiling module bcd_3bits
+# 
+# Top level modules:
+# 	bcd_3bits
+# End time: 20:40:38 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:40:38 on May 07,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits" -work work D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v 
+# -- Compiling module bcd_3bits_tf
+# 
+# Top level modules:
+# 	bcd_3bits_tf
+# End time: 20:40:38 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u bcd_3bits_tf 
+# Start time: 20:40:38 on May 07,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.bcd_3bits_tf(fast)
+# Loading work.bcd_3bits(fast)
+# Loading work.sum_correction(fast)
+# Loading work.bcd_1bit(fast)
+# Loading work.detector(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+add wave -position end sim:/bcd_3bits_tf/UUT/OP3/*
+add wave -position end  sim:/bcd_3bits_tf/UUT/Cout1
+add wave -position end  sim:/bcd_3bits_tf/UUT/Cout2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.bcd_3bits_tf(fast)
+# Loading work.bcd_3bits(fast)
+# Loading work.sum_correction(fast)
+# Loading work.bcd_1bit(fast)
+# Loading work.detector(fast)
+run
+# Compile of bcd_1bit.v was successful.
+# Compile of detector.v was successful.
+# Compile of sum_correction.v was successful.
+# Compile of bcd_3bits.v was successful.
+# Compile of bcd_3bits_tf.v failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of bcd_1bit.v was successful.
+# Compile of detector.v was successful.
+# Compile of sum_correction.v was successful.
+# Compile of bcd_3bits.v was successful.
+# Compile of bcd_3bits_tf.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.bcd_3bits_tf(fast)
+# Loading work.bcd_3bits(fast)
+# Loading work.sum_correction(fast)
+# Loading work.bcd_1bit(fast)
+# Loading work.detector(fast)
+run
+# End time: 20:55:15 on May 07,2025, Elapsed time: 0:14:37
+# Errors: 0, Warnings: 2

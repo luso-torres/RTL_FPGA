@@ -1,0 +1,58 @@
+#Start recording tcl command: 5/7/2025 21:01:28
+#Project Location: D:/RTL_FPGA/VERILOG/aula22_subtrator; Project name: aula22_subrator
+prj_project new -name "aula22_subrator" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrator.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrator.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_flux.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula22_subtrator/hdle_generate_tbdeclaration.tcl"
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_alt.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula22_subtrator/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "meio_subtrador_behav_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_flux.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_flux.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/sim_meio_subtrador/sim_meio_subtrador.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/sim_meio_subtrador/sim_meio_subtrador.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/sim_meio_subtrador/sim_meio_subtrador.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav_tf.v" "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_alt.v" "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v" "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_flux.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_flux.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_behav.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_behav_alt.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula22_subtrator/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "subtrador_completo_behav_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula22_subtrator/sim_full_sub/sim_full_sub.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_behav_alt.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_behav.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_flux.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_flux.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_flux.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_alt.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 5/7/2025 21:52:24

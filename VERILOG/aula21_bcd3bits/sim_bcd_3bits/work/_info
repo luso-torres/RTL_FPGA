@@ -1,0 +1,144 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_bcd_3bits
+T_opt
+!s110 1746661936
+V3;UE_5O]mnfn:YHO=9b6D3
+04 12 4 work bcd_3bits_tf fast 0
+=3-ac675dfda9e9-681bf22f-38a-24d4
+R1
+!s12f OEM25U10 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vbcd_1bit
+2D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v
+Z4 !s110 1746661929
+!i10b 1
+!s100 4FdeNMUm?ANP;f7EoQJkh3
+IBFWL2jkDVKGHEm?_T;80^2
+R2
+w1746658068
+8D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v
+FD:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v
+!i122 9
+L0 1 23
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z7 !s108 1746661929.000000
+!s107 D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vbcd_3bits
+2D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v
+Z9 !s110 1746661930
+!i10b 1
+!s100 SaDcbTMPX;XXcGX]?bURR1
+IAJDUS83aO4j?<EjlWnDkB2
+R2
+w1746660018
+8D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v
+FD:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v
+!i122 12
+L0 1 18
+R5
+R6
+r1
+!s85 0
+31
+Z10 !s108 1746661930.000000
+!s107 D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v|
+!i113 0
+R8
+R3
+vbcd_3bits_tf
+2D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v
+R9
+!i10b 1
+!s100 43G:gz_9OBn7c]7U0Q3eE1
+IGi@[KOT3=g[]n?zdeQNeB3
+R2
+w1746661926
+8D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v
+FD:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v
+!i122 13
+L0 18 44
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v|
+!i113 0
+R8
+R3
+vdetector
+2D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v
+R4
+!i10b 1
+!s100 i0JUaMPl>=n[__Sd1?iTD2
+I94A3z49zL[Z7_K5>ZI:@d0
+R2
+w1746658428
+8D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v
+FD:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v
+!i122 10
+L0 1 12
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v|
+!i113 0
+R8
+R3
+vsum_correction
+2D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v
+R4
+!i10b 1
+!s100 `1<Calio?Ae43ZYD8jaoe3
+I>FeU=LShff2<`8;84jY120
+R2
+w1746659310
+8D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v
+FD:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v
+!i122 11
+L0 1 16
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v|
+!i113 0
+R8
+R3

@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula22_subtrator/sim_meio_subtrador/sim_meio_subtrador.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula22_subtrator/sim_meio_subtrador" sim_meio_subtrador
+	project addfile "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_flux.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_alt.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula22_subtrator  -work work  "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_flux.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula22_subtrator  -work work  "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula22_subtrator  -work work  "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_alt.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula22_subtrator  -work work  "D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula22_subtrator/sim_meio_subtrador/sim_meio_subtrador"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  meio_subtrador_behav_tf
+view wave
+add wave /*
+run 1000ns

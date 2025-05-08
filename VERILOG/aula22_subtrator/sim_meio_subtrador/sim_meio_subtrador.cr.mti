@@ -1,0 +1,29 @@
+D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_alt.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_alt.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module meio_subtrador_behavalt
+
+Top level modules:
+	meio_subtrador_behavalt
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module meio_subtrador_behav
+
+Top level modules:
+	meio_subtrador_behav
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_flux.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_flux.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module meio_subtrador_flux
+
+Top level modules:
+	meio_subtrador_flux
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula22_subtrator/meio_subtrador_behav_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module meio_subtrador_behav_tf
+
+Top level modules:
+	meio_subtrador_behav_tf
+
+} {} {}}

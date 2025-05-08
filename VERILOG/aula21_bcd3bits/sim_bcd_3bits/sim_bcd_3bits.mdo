@@ -1,0 +1,23 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_bcd_3bits/sim_bcd_3bits.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_bcd_3bits" sim_bcd_3bits
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_bcd_3bits/sim_bcd_3bits"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  bcd_3bits_tf
+view wave
+add wave /*
+run 1000ns

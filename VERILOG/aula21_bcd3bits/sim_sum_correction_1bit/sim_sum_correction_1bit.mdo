@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_sum_correction_1bit/sim_sum_correction_1bit.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_sum_correction_1bit" sim_sum_correction_1bit
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula21_bcd3bits  -work work  "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_sum_correction_1bit/sim_sum_correction_1bit"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  sum_correction_tf
+view wave
+add wave /*
+run 1000ns

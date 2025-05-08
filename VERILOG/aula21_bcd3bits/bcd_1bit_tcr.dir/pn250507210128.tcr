@@ -1,0 +1,42 @@
+#Start recording tcl command: 5/7/2025 19:36:24
+#Project Location: D:/RTL_FPGA/VERILOG/aula21_bcd3bits; Project name: bcd_1bit
+prj_project new -name "bcd_1bit" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "sum_correction_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_sum_correction_1bit/sim_sum_correction_1bit.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_sum_correction_1bit/sim_sum_correction_1bit.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction_tf.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "bcd_3bits_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_bcd_3bits/sim_bcd_3bits.spf"
+source "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/hdle_generate_tbtemplate.tcl"
+prj_src add "D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sim_bcd_3bits/sim_bcd_3bits.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/7/2025 21:01:28

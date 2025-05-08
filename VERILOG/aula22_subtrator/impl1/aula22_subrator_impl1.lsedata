@@ -1,0 +1,90 @@
+<top name = "meio_subtrador_behavalt"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "meio_subtrador_behavalt">
+
+    <!--
+        Top Level Pins: 4
+    -->
+
+    <pins>
+        <pitem  name = "A"  direction = "in"  />
+        <pitem  name = "B"  direction = "in"  />
+        <pitem  name = "D"  direction = "out"  />
+        <pitem  name = "Br"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 3
+    -->
+
+    <instance  name = "B_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B"  />
+        <nitem  name = "B_N_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "A_I_0_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "A"  />
+        <nitem  name = "B_N_2"  />
+        <nitem  name = "D"  />
+        </nets>
+    </instance>
+
+    <instance  name = "A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "A"  />
+        <nitem  name = "B"  />
+        <nitem  name = "Br"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "meio_subtrador_behavalt": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

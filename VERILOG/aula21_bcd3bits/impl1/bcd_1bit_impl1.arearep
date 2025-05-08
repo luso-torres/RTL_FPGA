@@ -1,0 +1,121 @@
+----------------------------------------------------------------------
+Report for cell bcd_3bits.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      38
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        25          100.0
+                               LUT4        54          100.0
+                                 OB        13          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                           bcd_1bit         1
+                        bcd_1bit_U0         1
+                        bcd_1bit_U1         1
+                        bcd_1bit_U2         1
+                        bcd_1bit_U4         1
+                        bcd_1bit_U5         1
+                           detector         1
+                        detector_U3         1
+                        detector_U6         1
+                     sum_correction         1
+                  sum_correction_U7         1
+                  sum_correction_U8         1
+                              TOTAL       106
+----------------------------------------------------------------------
+Report for cell sum_correction.v1
+Instance Path : OP3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        15           27.8
+SUB MODULES
+                           bcd_1bit         1
+                        bcd_1bit_U0         1
+                           detector         1
+                              TOTAL        18
+----------------------------------------------------------------------
+Report for cell bcd_1bit.v1
+Instance Path : OP3.S2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         5            9.3
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell bcd_1bit_U0.v1
+Instance Path : OP3.S1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         9           16.7
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell detector.v1
+Instance Path : OP3.D1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            1.9
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_correction_U8.v1
+Instance Path : OP1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        22           40.7
+SUB MODULES
+                        bcd_1bit_U4         1
+                        bcd_1bit_U5         1
+                        detector_U6         1
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell bcd_1bit_U4.v1
+Instance Path : OP1.S2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           13.0
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell bcd_1bit_U5.v1
+Instance Path : OP1.S1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        14           25.9
+                              TOTAL        14
+----------------------------------------------------------------------
+Report for cell detector_U6.v1
+Instance Path : OP1.D1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            1.9
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell sum_correction_U7.v1
+Instance Path : OP2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        17           31.5
+SUB MODULES
+                        bcd_1bit_U1         1
+                        bcd_1bit_U2         1
+                        detector_U3         1
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell bcd_1bit_U1.v1
+Instance Path : OP2.S2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8           14.8
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell bcd_1bit_U2.v1
+Instance Path : OP2.S1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8           14.8
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell detector_U3.v1
+Instance Path : OP2.D1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            1.9
+                              TOTAL         1

@@ -1,0 +1,36 @@
+D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula21_bcd3bits/sum_correction.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module sum_correction
+
+Top level modules:
+	sum_correction
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_1bit.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module bcd_1bit
+
+Top level modules:
+	bcd_1bit
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module bcd_3bits
+
+Top level modules:
+	bcd_3bits
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula21_bcd3bits/bcd_3bits_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module bcd_3bits_tf
+
+Top level modules:
+	bcd_3bits_tf
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula21_bcd3bits/detector.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module detector
+
+Top level modules:
+	detector
+
+} {} {}}
