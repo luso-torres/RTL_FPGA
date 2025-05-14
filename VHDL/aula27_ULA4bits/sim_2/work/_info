@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VHDL/aula27_ULA4bits/sim_2
+T_opt
+!s110 1747185694
+VC6ED=Tgh0:ILD5>G2cIC60
+04 12 8 work ula_4bits_tb behavior 1
+=1-ac675dfda9e9-6823f01e-1db-5984
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Eula_4bits
+Z2 w1747184448
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z6 8D:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd
+Z7 FD:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd
+l0
+L5 1
+Vce2h^lJ6X3mS8Sl74dSm<1
+!s100 ci4]_dhRCBnLB_ghXA32V1
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1747185693
+!i10b 1
+Z10 !s108 1747185693.000000
+Z11 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd|
+Z12 !s107 D:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+DEx4 work 9 ula_4bits 0 22 ce2h^lJ6X3mS8Sl74dSm<1
+!i122 0
+l18
+L15 74
+VTR37A>`UD3m3MV7OlVL8a1
+!s100 h29EVP7S=BfUhfS8o]>CI2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eula_4bits_tb
+Z15 w1747185570
+R3
+R4
+R5
+!i122 1
+R1
+Z16 8D:/RTL_FPGA/VHDL/aula27_ULA4bits/ULA_4bits_tb.vhd
+Z17 FD:/RTL_FPGA/VHDL/aula27_ULA4bits/ULA_4bits_tb.vhd
+l0
+L5 1
+VNHdVeDB]f>Dfc_c=mk]7M0
+!s100 B7>Z2:zPWA]ek@E=`2Z7f2
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/aula27_ULA4bits/ULA_4bits_tb.vhd|
+Z19 !s107 D:/RTL_FPGA/VHDL/aula27_ULA4bits/ULA_4bits_tb.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R3
+R4
+R5
+DEx4 work 12 ula_4bits_tb 0 22 NHdVeDB]f>Dfc_c=mk]7M0
+!i122 1
+l25
+L8 75
+VX9W`F>E1EEGn>MJ7EMO[Q2
+!s100 PjK[PT;Fd4YFA69l2Y5zC1
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/RTL_FPGA/VHDL/aula27_ULA4bits/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd(5): </Dynamic>
+            <Dynamic>ula_4bits</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd(15): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd(41): </Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd</Navigation>
+            <Navigation>41</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd(62): </Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd</Navigation>
+            <Navigation>62</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd(82): </Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd(13): </Dynamic>
+            <Dynamic>ULA_4bits</Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula27_ula4bits/ula_4bits.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/aula25_ex_ula/impl1/source/carry_lah_4bits_behav.vhd(3): </Dynamic>
+            <Dynamic>carry_lah_4bits_behav</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/aula25_ex_ula/impl1/source/carry_lah_4bits_behav.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/aula25_ex_ula/impl1/source/carry_lah_4bits_behav.vhd(15): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/aula25_ex_ula/impl1/source/carry_lah_4bits_behav.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/RTL_FPGA/VERILOG/aula25_ex_ula/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/aula25_ex_ula/exula_8bits.v(1): </Dynamic>
+            <Dynamic>exula_8bits</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/aula25_ex_ula/exula_8bits.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/aula25_ex_ula/exula1.v(1): </Dynamic>
+            <Dynamic>exula_ula</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/aula25_ex_ula/exula1.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901231</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/aula25_ex_ula/exula1.v(29): </Dynamic>
+            <Dynamic>carry_lah_4bits_behav</Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/aula25_ex_ula/exula1.v</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35901232</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/verilog/aula25_ex_ula/exula1.v(29): </Dynamic>
+            <Navigation>d:/rtl_fpga/verilog/aula25_ex_ula/exula1.v</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

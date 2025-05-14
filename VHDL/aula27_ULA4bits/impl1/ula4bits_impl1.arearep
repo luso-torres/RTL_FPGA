@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell ULA_4bits.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      19
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        14          100.0
+                            L6MUX21        21          100.0
+                               LUT4       278          100.0
+                                 OB         5          100.0
+                              PFUMX        46          100.0
+                              TOTAL       365

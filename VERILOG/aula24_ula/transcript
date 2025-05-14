@@ -1,0 +1,50 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/sim_ula2.mdo}
+# Loading project sim_ula2
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:35:31 on May 13,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2" -work work D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v 
+# -- Compiling module ula_ula2
+# ** Warning: D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v(14): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v(15): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# 
+# Top level modules:
+# 	ula_ula2
+# End time: 14:35:31 on May 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:35:31 on May 13,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2" -work work D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula_ula2_tf.v 
+# -- Compiling module ula_ula2_tf
+# 
+# Top level modules:
+# 	ula_ula2_tf
+# End time: 14:35:31 on May 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u ula_ula2_tf 
+# Start time: 14:35:31 on May 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v(14): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v(15): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.ula_ula2_tf(fast)
+# Loading work.ula_ula2(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+# End time: 14:36:43 on May 13,2025, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 8

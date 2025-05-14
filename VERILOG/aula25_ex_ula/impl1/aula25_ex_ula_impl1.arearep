@@ -1,0 +1,54 @@
+----------------------------------------------------------------------
+Report for cell exula_8bits.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      33
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        20          100.0
+                               LUT4        63          100.0
+                                 OB        13          100.0
+                              PFUMX        12          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+              carry_lah_4bits_behav         1
+           carry_lah_4bits_behav_U0         1
+                          exula_ula         1
+                       exula_ula_U1         1
+                              TOTAL       114
+----------------------------------------------------------------------
+Report for cell exula_ula.v1
+Instance Path : dri_upper
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        33           52.4
+                              PFUMX         7           58.3
+SUB MODULES
+              carry_lah_4bits_behav         1
+                              TOTAL        41
+----------------------------------------------------------------------
+Report for cell carry_lah_4bits_behav.v1
+Instance Path : dri_upper.clah
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        10           15.9
+                              PFUMX         1            8.3
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell exula_ula_U1.v1
+Instance Path : dri_lower
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        24           38.1
+                              PFUMX         5           41.7
+SUB MODULES
+           carry_lah_4bits_behav_U0         1
+                              TOTAL        30
+----------------------------------------------------------------------
+Report for cell carry_lah_4bits_behav_U0.v1
+Instance Path : dri_lower.clah
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         9           14.3
+                              PFUMX         1            8.3
+                              TOTAL        10

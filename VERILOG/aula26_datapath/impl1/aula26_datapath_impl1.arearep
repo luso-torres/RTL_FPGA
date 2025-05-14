@@ -1,0 +1,69 @@
+----------------------------------------------------------------------
+Report for cell datapath.TECH
+Register bits:  9 of 44439 (0.020%)
+I/O cells:      20
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         4          100.0
+                            FD1S3IX         5          100.0
+                                GSR         1          100.0
+                                 IB        15          100.0
+                               LUT4        50          100.0
+                                 OB         5          100.0
+                              PFUMX        11          100.0
+                           SPR16X4C         1          100.0
+                        VERIFIC_PWR         2          100.0
+SUB MODULES
+                            demux12         1
+                         flipflop_D         1
+                      flipflop_D_U0         1
+                              mux21         1
+                          reg_4bits         1
+                           ula_ula2         1
+                              TOTAL       100
+----------------------------------------------------------------------
+Report for cell flipflop_D.v1
+Instance Path : regB
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3IX         1           20.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell demux12.v1
+Instance Path : demux
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            4.0
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell flipflop_D_U0.v1
+Instance Path : regA
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3IX         4           80.0
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell mux21.v1
+Instance Path : MUX_in
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        16           32.0
+                              PFUMX         5           45.5
+                              TOTAL        21
+----------------------------------------------------------------------
+Report for cell reg_4bits.v1
+Instance Path : rf
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         4          100.0
+                           SPR16X4C         1          100.0
+                        VERIFIC_PWR         1           50.0
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell ula_ula2.v1
+Instance Path : ula
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        28           56.0
+                              PFUMX         6           54.5
+                              TOTAL        34

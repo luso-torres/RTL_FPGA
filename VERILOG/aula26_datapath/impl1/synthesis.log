@@ -1,0 +1,189 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Wed May 14 11:20:17 2025
+
+
+Command Line:  synthesis -f aula26_datapath_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/VERILOG/aula26_datapath/promote.xml 
+
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = datapath.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/RTL_FPGA/VERILOG/aula26_datapath (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/VERILOG/aula26_datapath/impl1 (searchpath added)
+-p D:/RTL_FPGA/VERILOG/aula26_datapath (searchpath added)
+Verilog design file = D:/RTL_FPGA/VERILOG/aula26_datapath/demux12.v
+Verilog design file = D:/RTL_FPGA/VERILOG/aula26_datapath/mux21.v
+Verilog design file = D:/RTL_FPGA/VERILOG/aula26_datapath/flipflop_D.v
+Verilog design file = D:/RTL_FPGA/VERILOG/aula26_datapath/reg_4bits.v
+Verilog design file = D:/RTL_FPGA/VERILOG/aula26_datapath/top_model.v
+Verilog design file = D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v
+NGD file = aula26_datapath_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/demux12.v. VERI-1482
+Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/mux21.v. VERI-1482
+Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/flipflop_d.v. VERI-1482
+Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/reg_4bits.v. VERI-1482
+Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/top_model.v. VERI-1482
+Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v. VERI-1482
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(18): concatenation with unsized literal will interpret as 32 bits. VERI-1320
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(19): concatenation with unsized literal will interpret as 32 bits. VERI-1320
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): datapath
+INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/top_model.v(1): compiling module datapath. VERI-1018
+INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/mux21.v(1): compiling module mux21. VERI-1018
+INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/reg_4bits.v(1): compiling module reg_4bits. VERI-1018
+INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/demux12.v(1): compiling module demux12. VERI-1018
+INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/flipflop_d.v(1): compiling module flipflop_D. VERI-1018
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(18): concatenation with unsized literal will interpret as 32 bits. VERI-1320
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(19): concatenation with unsized literal will interpret as 32 bits. VERI-1320
+INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(1): compiling module ula_ula2. VERI-1018
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(18): expression size 35 truncated to fit in target size 4. VERI-1209
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = datapath.
+@Inferred RAM (mux_7) from primitives
+
+
+
+
+WARNING - synthesis: Bit 3 of Register \regB/Q is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \regB/Q is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \regB/Q is stuck at Zero
+######## Found 1 RTL RAMs in the design.
+######## Mapping RTL RAM \rf/mux_7 to 1 Distributed blocks in SINGLE_PORT Mode
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: Mapping latch \ula/Cout_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in datapath_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: DRC complete with 1 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file aula26_datapath_impl1.ngd.
+
+################### Begin Area Report (datapath)######################
+Number of register bits => 9 of 44439 (0 % )
+FD1P3AX => 4
+FD1S3IX => 5
+GSR => 1
+IB => 15
+LUT4 => 50
+OB => 5
+PFUMX => 11
+SPR16X4C => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 10
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clk_c_enable_4, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : operacao_c_0, loads : 25
+  Net : operacao_c_1, loads : 18
+  Net : operacao_c_2, loads : 15
+  Net : regA/Q_ula_A_0, loads : 15
+  Net : regA/Q_ula_A_1, loads : 14
+  Net : regB/Q_ula_B_0, loads : 14
+  Net : regA/Q_ula_A_2, loads : 11
+  Net : sel21_c, loads : 9
+  Net : Cin_c, loads : 7
+  Net : regA/Q_ula_A_3, loads : 6
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  379.651 MHz|     2  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 90.055  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.969  secs
+--------------------------------------------------------------

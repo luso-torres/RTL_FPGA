@@ -1,0 +1,33 @@
+#Start recording tcl command: 5/13/2025 13:54:36
+#Project Location: D:/RTL_FPGA/VERILOG/aula24_ula; Project name: aula24_ula
+prj_project new -name "aula24_ula" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/aula24_ula/ula.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula24_ula/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "ula_ula_tf.v"
+prj_run Synthesis -impl impl1
+prj_src add "D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula/sim_ula.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula24_ula/ula2.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula24_ula/ula.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula24_ula/ula_ula_tf.v"
+source "D:/RTL_FPGA/VERILOG/aula24_ula/hdle_generate_tbtemplate.tcl"
+source "D:/RTL_FPGA/VERILOG/aula24_ula/hdle_generate_tbdeclaration.tcl"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula24_ula/hdle_generate_tbtemplate.tcl"
+source "D:/RTL_FPGA/VERILOG/aula24_ula/hdle_generate_tbtemplate.tcl"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/VERILOG/aula24_ula/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "ula_ula2_tf.v"
+prj_run Synthesis -impl impl1
+prj_src add "D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/sim_ula2.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/sim_ula2.spf"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/sim_ula2.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 5/13/2025 14:39:36

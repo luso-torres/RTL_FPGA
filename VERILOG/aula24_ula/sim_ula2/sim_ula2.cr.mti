@@ -1,0 +1,10 @@
+D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v {2 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module ula_ula2
+** Warning: D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v(14): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+** Warning: D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula2/ula2.v(15): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+
+Top level modules:
+	ula_ula2
+
+} {} {}}

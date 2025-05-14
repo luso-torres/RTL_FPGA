@@ -1,0 +1,67 @@
+#Start recording tcl command: 5/13/2025 19:05:11
+#Project Location: D:/RTL_FPGA/VHDL/aula27_ULA4bits; Project name: ula4bits
+prj_project new -name "ula4bits" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula27_ULA4bits/func_aritimetica.vhd"
+file copy -force -- "D:/RTL_FPGA/VERILOG/aula22_subtrator/RTL+SIM/full_sub/subtrador_completo_behav.v" "D:/RTL_FPGA/VHDL/aula27_ULA4bits/impl1/source"
+prj_src add "D:/RTL_FPGA/VHDL/aula27_ULA4bits/impl1/source/subtrador_completo_behav.v"
+prj_run Synthesis -impl impl1
+prj_src exclude "D:/RTL_FPGA/VHDL/aula27_ULA4bits/impl1/source/subtrador_completo_behav.v"
+prj_src enable "D:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula27_ULA4bits/func_aritimetica.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/aula27_ULA4bits/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "ULA_4bits_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula27_ULA4bits/sim_ula_4bits/sim_ula_4bits.spf"
+prj_src add "D:/RTL_FPGA/VHDL/aula27_ULA4bits/sim_2/sim_2.spf"
+prj_src add "D:/RTL_FPGA/VHDL/aula27_ULA4bits/sim_2/sim_2.spf"
+prj_src add "D:/RTL_FPGA/VHDL/aula27_ULA4bits/sim_3/sim_3.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula27_ULA4bits/sim3/sim3.spf"
+#Stop recording: 5/13/2025 22:31:27

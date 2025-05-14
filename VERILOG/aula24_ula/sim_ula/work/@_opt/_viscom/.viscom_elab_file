@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 32768 work.ula_ula_tf -quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc -allow_unnamed -o _opt -id 1-ac675dfda9e9-68237d9c-305-19f4 +__design_bin_path+D:/RTL_FPGA/VERILOG/aula24_ula/sim_ula +__betafsm

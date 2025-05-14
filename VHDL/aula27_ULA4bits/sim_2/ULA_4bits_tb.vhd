@@ -1,0 +1,82 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity ULA_4bits_tb is
+end ULA_4bits_tb;
+
+architecture behavior of ULA_4bits_tb is
+    -- Component declaration
+    component ULA_4bits
+        port(
+            A, B, Sel : in std_logic_vector(3 downto 0);
+            M, Cn : in std_logic;
+            F : out std_logic_vector(3 downto 0);
+            Cn4 : out std_logic
+        );
+    end component;
+    
+    -- Signals for testing
+    signal A, B, Sel : std_logic_vector(3 downto 0);
+    signal M, Cn : std_logic;
+    signal F : std_logic_vector(3 downto 0);
+    signal Cn4 : std_logic;
+    
+begin
+    -- Instantiate the Unit Under Test (UUT)
+    UUT: ULA_4bits port map (
+        A => A,
+        B => B,
+        Sel => Sel,
+        M => M,
+        Cn => Cn,
+        F => F,
+        Cn4 => Cn4
+    );
+
+    -- Stimulus process
+    stim_process: process
+    begin
+        -- Test case 1
+        A <= "0011"; B <= "0101"; Cn <= '0'; M <= '0'; Sel <= "0000"; wait for 10 ns;
+        Sel <= "0001"; wait for 10 ns;
+        Sel <= "0011"; wait for 10 ns;
+
+        -- Test case 2
+        A <= "0011"; B <= "0101"; Cn <= '1'; M <= '0'; Sel <= "0000"; wait for 10 ns;
+        Sel <= "0001"; wait for 10 ns;
+        Sel <= "0011"; wait for 10 ns;
+
+        -- Test case 3
+        A <= "1001"; B <= "0110"; Cn <= '0'; M <= '0'; Sel <= "0000"; wait for 10 ns;
+        Sel <= "0001"; wait for 10 ns;
+        Sel <= "1000"; wait for 10 ns;
+
+        -- Test case 4
+        A <= "1001"; B <= "0110"; Cn <= '1'; M <= '0'; Sel <= "0000"; wait for 10 ns;
+        Sel <= "0001"; wait for 10 ns;
+        Sel <= "1000"; wait for 10 ns;
+
+        -- Test case 5
+        A <= "1100"; B <= "1100"; Cn <= '0'; M <= '0'; Sel <= "0101"; wait for 10 ns;
+        Sel <= "0110"; wait for 10 ns;
+        Sel <= "1110"; wait for 10 ns;
+
+        -- Test case 6
+        A <= "1100"; B <= "1100"; Cn <= '1'; M <= '0'; Sel <= "0101"; wait for 10 ns;
+        Sel <= "0110"; wait for 10 ns;
+        Sel <= "1110"; wait for 10 ns;
+
+        -- Test case 7 (Extended sequence)
+        A <= "0110"; B <= "0011"; Cn <= '0'; M <= '1'; Sel <= "1010"; wait for 10 ns;
+        Sel <= "0000"; wait for 10 ns;
+        Sel <= "1101"; wait for 10 ns;
+        Sel <= "1011"; wait for 10 ns;
+        Sel <= "1001"; wait for 10 ns;
+        Sel <= "1100"; wait for 10 ns;
+        Sel <= "1111"; wait for 10 ns;
+
+        -- End simulation
+        wait;
+    end process;
+end behavior;

@@ -1,0 +1,1280 @@
+<top name = "datapath"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "clk"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "datapath">
+
+    <!--
+        Top Level Pins: 20
+    -->
+
+    <pins>
+        <pitem  name = "dados[3]"  direction = "in"  />
+        <pitem  name = "dados[2]"  direction = "in"  />
+        <pitem  name = "dados[1]"  direction = "in"  />
+        <pitem  name = "dados[0]"  direction = "in"  />
+        <pitem  name = "addr[1]"  direction = "in"  />
+        <pitem  name = "addr[0]"  direction = "in"  />
+        <pitem  name = "sel21"  direction = "in"  />
+        <pitem  name = "sel12"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "escrita"  direction = "in"  />
+        <pitem  name = "reset"  direction = "in"  />
+        <pitem  name = "Cin"  direction = "in"  />
+        <pitem  name = "operacao[2]"  direction = "in"  />
+        <pitem  name = "operacao[1]"  direction = "in"  />
+        <pitem  name = "operacao[0]"  direction = "in"  />
+        <pitem  name = "resultado[3]"  direction = "out"  />
+        <pitem  name = "resultado[2]"  direction = "out"  />
+        <pitem  name = "resultado[1]"  direction = "out"  />
+        <pitem  name = "resultado[0]"  direction = "out"  />
+        <pitem  name = "Cout"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 40
+    -->
+
+    <instance  name = "rf/mux_5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "addr[1]"  />
+        <nitem  name = "addr[0]"  />
+        <nitem  name = "out_mux[3]"  />
+        <nitem  name = "out_mux[2]"  />
+        <nitem  name = "out_mux[1]"  />
+        <nitem  name = "out_mux[0]"  />
+        <nitem  name = "rf/R1[3]"  />
+        <nitem  name = "rf/R1[2]"  />
+        <nitem  name = "rf/R1[1]"  />
+        <nitem  name = "rf/R1[0]"  />
+        <nitem  name = "rf/R1_3__N_29[3]"  />
+        <nitem  name = "rf/R1_3__N_29[2]"  />
+        <nitem  name = "rf/R1_3__N_29[1]"  />
+        <nitem  name = "rf/R1_3__N_29[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/mux_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "addr[1]"  />
+        <nitem  name = "addr[0]"  />
+        <nitem  name = "out_mux[3]"  />
+        <nitem  name = "out_mux[2]"  />
+        <nitem  name = "out_mux[1]"  />
+        <nitem  name = "out_mux[0]"  />
+        <nitem  name = "rf/R2[3]"  />
+        <nitem  name = "rf/R2[2]"  />
+        <nitem  name = "rf/R2[1]"  />
+        <nitem  name = "rf/R2[0]"  />
+        <nitem  name = "rf/R2_3__N_25[3]"  />
+        <nitem  name = "rf/R2_3__N_25[2]"  />
+        <nitem  name = "rf/R2_3__N_25[1]"  />
+        <nitem  name = "rf/R2_3__N_25[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/mux_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "addr[1]"  />
+        <nitem  name = "addr[0]"  />
+        <nitem  name = "out_mux[3]"  />
+        <nitem  name = "out_mux[2]"  />
+        <nitem  name = "out_mux[1]"  />
+        <nitem  name = "out_mux[0]"  />
+        <nitem  name = "rf/R3[3]"  />
+        <nitem  name = "rf/R3[2]"  />
+        <nitem  name = "rf/R3[1]"  />
+        <nitem  name = "rf/R3[0]"  />
+        <nitem  name = "rf/R3_3__N_21[3]"  />
+        <nitem  name = "rf/R3_3__N_21[2]"  />
+        <nitem  name = "rf/R3_3__N_21[1]"  />
+        <nitem  name = "rf/R3_3__N_21[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "MUX_in/in1_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "dados[3]"  />
+        <nitem  name = "dados[2]"  />
+        <nitem  name = "dados[1]"  />
+        <nitem  name = "dados[0]"  />
+        <nitem  name = "resultado[3]"  />
+        <nitem  name = "resultado[2]"  />
+        <nitem  name = "resultado[1]"  />
+        <nitem  name = "resultado[0]"  />
+        <nitem  name = "sel21"  />
+        <nitem  name = "out_mux[3]"  />
+        <nitem  name = "out_mux[2]"  />
+        <nitem  name = "out_mux[1]"  />
+        <nitem  name = "out_mux[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/mux_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "addr[1]"  />
+        <nitem  name = "addr[0]"  />
+        <nitem  name = "out_mux[3]"  />
+        <nitem  name = "out_mux[2]"  />
+        <nitem  name = "out_mux[1]"  />
+        <nitem  name = "out_mux[0]"  />
+        <nitem  name = "rf/R0[3]"  />
+        <nitem  name = "rf/R0[2]"  />
+        <nitem  name = "rf/R0[1]"  />
+        <nitem  name = "rf/R0[0]"  />
+        <nitem  name = "rf/R0_3__N_33[3]"  />
+        <nitem  name = "rf/R0_3__N_33[2]"  />
+        <nitem  name = "rf/R0_3__N_33[1]"  />
+        <nitem  name = "rf/R0_3__N_33[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/mux_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "addr[1]"  />
+        <nitem  name = "addr[0]"  />
+        <nitem  name = "rf/R0[3]"  />
+        <nitem  name = "rf/R0[2]"  />
+        <nitem  name = "rf/R0[1]"  />
+        <nitem  name = "rf/R0[0]"  />
+        <nitem  name = "rf/R1[3]"  />
+        <nitem  name = "rf/R1[2]"  />
+        <nitem  name = "rf/R1[1]"  />
+        <nitem  name = "rf/R1[0]"  />
+        <nitem  name = "rf/R2[3]"  />
+        <nitem  name = "rf/R2[2]"  />
+        <nitem  name = "rf/R2[1]"  />
+        <nitem  name = "rf/R2[0]"  />
+        <nitem  name = "rf/R3[3]"  />
+        <nitem  name = "rf/R3[2]"  />
+        <nitem  name = "rf/R3[1]"  />
+        <nitem  name = "rf/R3[0]"  />
+        <nitem  name = "rf/data_out_3__N_37[3]"  />
+        <nitem  name = "rf/data_out_3__N_37[2]"  />
+        <nitem  name = "rf/data_out_3__N_37[1]"  />
+        <nitem  name = "rf/data_out_3__N_37[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/R3_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "escrita"  />
+        <nitem  name = "rf/R3[3]"  />
+        <nitem  name = "rf/R3[2]"  />
+        <nitem  name = "rf/R3[1]"  />
+        <nitem  name = "rf/R3[0]"  />
+        <nitem  name = "rf/R3_3__N_21[3]"  />
+        <nitem  name = "rf/R3_3__N_21[2]"  />
+        <nitem  name = "rf/R3_3__N_21[1]"  />
+        <nitem  name = "rf/R3_3__N_21[0]"  />
+        <nitem  name = "rf/R3_3__N_17[3]"  />
+        <nitem  name = "rf/R3_3__N_17[2]"  />
+        <nitem  name = "rf/R3_3__N_17[1]"  />
+        <nitem  name = "rf/R3_3__N_17[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/R2_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "escrita"  />
+        <nitem  name = "rf/R2[3]"  />
+        <nitem  name = "rf/R2[2]"  />
+        <nitem  name = "rf/R2[1]"  />
+        <nitem  name = "rf/R2[0]"  />
+        <nitem  name = "rf/R2_3__N_25[3]"  />
+        <nitem  name = "rf/R2_3__N_25[2]"  />
+        <nitem  name = "rf/R2_3__N_25[1]"  />
+        <nitem  name = "rf/R2_3__N_25[0]"  />
+        <nitem  name = "rf/R2_3__N_13[3]"  />
+        <nitem  name = "rf/R2_3__N_13[2]"  />
+        <nitem  name = "rf/R2_3__N_13[1]"  />
+        <nitem  name = "rf/R2_3__N_13[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/R1_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "escrita"  />
+        <nitem  name = "rf/R1[3]"  />
+        <nitem  name = "rf/R1[2]"  />
+        <nitem  name = "rf/R1[1]"  />
+        <nitem  name = "rf/R1[0]"  />
+        <nitem  name = "rf/R1_3__N_29[3]"  />
+        <nitem  name = "rf/R1_3__N_29[2]"  />
+        <nitem  name = "rf/R1_3__N_29[1]"  />
+        <nitem  name = "rf/R1_3__N_29[0]"  />
+        <nitem  name = "rf/R1_3__N_9[3]"  />
+        <nitem  name = "rf/R1_3__N_9[2]"  />
+        <nitem  name = "rf/R1_3__N_9[1]"  />
+        <nitem  name = "rf/R1_3__N_9[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/R0_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "escrita"  />
+        <nitem  name = "rf/R0[3]"  />
+        <nitem  name = "rf/R0[2]"  />
+        <nitem  name = "rf/R0[1]"  />
+        <nitem  name = "rf/R0[0]"  />
+        <nitem  name = "rf/R0_3__N_33[3]"  />
+        <nitem  name = "rf/R0_3__N_33[2]"  />
+        <nitem  name = "rf/R0_3__N_33[1]"  />
+        <nitem  name = "rf/R0_3__N_33[0]"  />
+        <nitem  name = "rf/R0_3__N_5[3]"  />
+        <nitem  name = "rf/R0_3__N_5[2]"  />
+        <nitem  name = "rf/R0_3__N_5[1]"  />
+        <nitem  name = "rf/R0_3__N_5[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/data_out_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "escrita"  />
+        <nitem  name = "reg_data_out[3]"  />
+        <nitem  name = "reg_data_out[2]"  />
+        <nitem  name = "reg_data_out[1]"  />
+        <nitem  name = "reg_data_out[0]"  />
+        <nitem  name = "rf/data_out_3__N_37[3]"  />
+        <nitem  name = "rf/data_out_3__N_37[2]"  />
+        <nitem  name = "rf/data_out_3__N_37[1]"  />
+        <nitem  name = "rf/data_out_3__N_37[0]"  />
+        <nitem  name = "rf/data_out_3__N_1[3]"  />
+        <nitem  name = "rf/data_out_3__N_1[2]"  />
+        <nitem  name = "rf/data_out_3__N_1[1]"  />
+        <nitem  name = "rf/data_out_3__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/R2"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rf/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "rf/R2[3]"  />
+        <nitem  name = "rf/R2[2]"  />
+        <nitem  name = "rf/R2[1]"  />
+        <nitem  name = "rf/R2[0]"  />
+        <nitem  name = "rf/R2_3__N_13[3]"  />
+        <nitem  name = "rf/R2_3__N_13[2]"  />
+        <nitem  name = "rf/R2_3__N_13[1]"  />
+        <nitem  name = "rf/R2_3__N_13[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/R1"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rf/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "rf/R1[3]"  />
+        <nitem  name = "rf/R1[2]"  />
+        <nitem  name = "rf/R1[1]"  />
+        <nitem  name = "rf/R1[0]"  />
+        <nitem  name = "rf/R1_3__N_9[3]"  />
+        <nitem  name = "rf/R1_3__N_9[2]"  />
+        <nitem  name = "rf/R1_3__N_9[1]"  />
+        <nitem  name = "rf/R1_3__N_9[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/R0"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rf/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "rf/R0[3]"  />
+        <nitem  name = "rf/R0[2]"  />
+        <nitem  name = "rf/R0[1]"  />
+        <nitem  name = "rf/R0[0]"  />
+        <nitem  name = "rf/R0_3__N_5[3]"  />
+        <nitem  name = "rf/R0_3__N_5[2]"  />
+        <nitem  name = "rf/R0_3__N_5[1]"  />
+        <nitem  name = "rf/R0_3__N_5[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/data_out"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rf/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "reg_data_out[3]"  />
+        <nitem  name = "reg_data_out[2]"  />
+        <nitem  name = "reg_data_out[1]"  />
+        <nitem  name = "reg_data_out[0]"  />
+        <nitem  name = "rf/data_out_3__N_1[3]"  />
+        <nitem  name = "rf/data_out_3__N_1[2]"  />
+        <nitem  name = "rf/data_out_3__N_1[1]"  />
+        <nitem  name = "rf/data_out_3__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rf/R3"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rf/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "rf/R3[3]"  />
+        <nitem  name = "rf/R3[2]"  />
+        <nitem  name = "rf/R3[1]"  />
+        <nitem  name = "rf/R3[0]"  />
+        <nitem  name = "rf/R3_3__N_17[3]"  />
+        <nitem  name = "rf/R3_3__N_17[2]"  />
+        <nitem  name = "rf/R3_3__N_17[1]"  />
+        <nitem  name = "rf/R3_3__N_17[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "demux/sel_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i[3]"  direction = "in"  />
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "demux/gnd"  />
+        <nitem  name = "sel12"  />
+        <nitem  name = "demux/Out0_3__N_41[3]"  />
+        <nitem  name = "demux/Out0_3__N_41[2]"  />
+        <nitem  name = "demux/Out0_3__N_41[1]"  />
+        <nitem  name = "demux/Out0_3__N_41[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "demux/in_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reg_data_out[3]"  />
+        <nitem  name = "reg_data_out[2]"  />
+        <nitem  name = "reg_data_out[1]"  />
+        <nitem  name = "reg_data_out[0]"  />
+        <nitem  name = "demux_reg_A[3]"  />
+        <nitem  name = "demux_reg_A[2]"  />
+        <nitem  name = "demux_reg_A[1]"  />
+        <nitem  name = "demux_reg_A[0]"  />
+        <nitem  name = "demux/Out0_3__N_41[3]"  />
+        <nitem  name = "demux/Out0_3__N_41[2]"  />
+        <nitem  name = "demux/Out0_3__N_41[1]"  />
+        <nitem  name = "demux/Out0_3__N_41[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "demux/in_3__I_0_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "demux/gnd"  />
+        <nitem  name = "reg_data_out[3]"  />
+        <nitem  name = "reg_data_out[2]"  />
+        <nitem  name = "reg_data_out[1]"  />
+        <nitem  name = "reg_data_out[0]"  />
+        <nitem  name = "sel12"  />
+        <nitem  name = "demux_reg_B[3]"  />
+        <nitem  name = "demux_reg_B[2]"  />
+        <nitem  name = "demux_reg_B[1]"  />
+        <nitem  name = "demux_reg_B[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "regA/D_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "regA/gnd"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "demux_reg_A[3]"  />
+        <nitem  name = "demux_reg_A[2]"  />
+        <nitem  name = "demux_reg_A[1]"  />
+        <nitem  name = "demux_reg_A[0]"  />
+        <nitem  name = "regA/Q_3__N_45[3]"  />
+        <nitem  name = "regA/Q_3__N_45[2]"  />
+        <nitem  name = "regA/Q_3__N_45[1]"  />
+        <nitem  name = "regA/Q_3__N_45[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "regA/Q"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "regA/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "Q_ula_A[3]"  />
+        <nitem  name = "Q_ula_A[2]"  />
+        <nitem  name = "Q_ula_A[1]"  />
+        <nitem  name = "Q_ula_A[0]"  />
+        <nitem  name = "regA/Q_3__N_45[3]"  />
+        <nitem  name = "regA/Q_3__N_45[2]"  />
+        <nitem  name = "regA/Q_3__N_45[1]"  />
+        <nitem  name = "regA/Q_3__N_45[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "regB/D_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "regB/gnd"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "demux_reg_B[3]"  />
+        <nitem  name = "demux_reg_B[2]"  />
+        <nitem  name = "demux_reg_B[1]"  />
+        <nitem  name = "demux_reg_B[0]"  />
+        <nitem  name = "regB/Q_3__N_45[3]"  />
+        <nitem  name = "regB/Q_3__N_45[2]"  />
+        <nitem  name = "regB/Q_3__N_45[1]"  />
+        <nitem  name = "regB/Q_3__N_45[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "regB/Q"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "regB/gnd"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "Q_ula_B[3]"  />
+        <nitem  name = "Q_ula_B[2]"  />
+        <nitem  name = "Q_ula_B[1]"  />
+        <nitem  name = "Q_ula_B[0]"  />
+        <nitem  name = "regB/Q_3__N_45[3]"  />
+        <nitem  name = "regB/Q_3__N_45[2]"  />
+        <nitem  name = "regB/Q_3__N_45[1]"  />
+        <nitem  name = "regB/Q_3__N_45[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/A_3__I_0_21"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Q_ula_A[3]"  />
+        <nitem  name = "Q_ula_A[2]"  />
+        <nitem  name = "Q_ula_A[1]"  />
+        <nitem  name = "Q_ula_A[0]"  />
+        <nitem  name = "Q_ula_B[3]"  />
+        <nitem  name = "Q_ula_B[2]"  />
+        <nitem  name = "Q_ula_B[1]"  />
+        <nitem  name = "Q_ula_B[0]"  />
+        <nitem  name = "ula/resultado_3__N_65[3]"  />
+        <nitem  name = "ula/resultado_3__N_65[2]"  />
+        <nitem  name = "ula/resultado_3__N_65[1]"  />
+        <nitem  name = "ula/resultado_3__N_65[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/A_3__I_0_22"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i[3]"  direction = "in"  />
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Q_ula_A[3]"  />
+        <nitem  name = "Q_ula_A[2]"  />
+        <nitem  name = "Q_ula_A[1]"  />
+        <nitem  name = "Q_ula_A[0]"  />
+        <nitem  name = "ula/resultado_3__N_61[3]"  />
+        <nitem  name = "ula/resultado_3__N_61[2]"  />
+        <nitem  name = "ula/resultado_3__N_61[1]"  />
+        <nitem  name = "ula/resultado_3__N_61[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/A_3__I_0_23"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Q_ula_A[3]"  />
+        <nitem  name = "Q_ula_A[2]"  />
+        <nitem  name = "Q_ula_A[1]"  />
+        <nitem  name = "Q_ula_A[0]"  />
+        <nitem  name = "Q_ula_B[3]"  />
+        <nitem  name = "Q_ula_B[2]"  />
+        <nitem  name = "Q_ula_B[1]"  />
+        <nitem  name = "Q_ula_B[0]"  />
+        <nitem  name = "ula/resultado_3__N_69[3]"  />
+        <nitem  name = "ula/resultado_3__N_69[2]"  />
+        <nitem  name = "ula/resultado_3__N_69[1]"  />
+        <nitem  name = "ula/resultado_3__N_69[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/resultado_3__N_69_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i[3]"  direction = "in"  />
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ula/resultado_3__N_69[3]"  />
+        <nitem  name = "ula/resultado_3__N_69[2]"  />
+        <nitem  name = "ula/resultado_3__N_69[1]"  />
+        <nitem  name = "ula/resultado_3__N_69[0]"  />
+        <nitem  name = "ula/resultado_3__N_57[3]"  />
+        <nitem  name = "ula/resultado_3__N_57[2]"  />
+        <nitem  name = "ula/resultado_3__N_57[1]"  />
+        <nitem  name = "ula/resultado_3__N_57[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/add_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ula/n52"  />
+        <nitem  name = "Q_ula_A[3]"  />
+        <nitem  name = "Q_ula_A[2]"  />
+        <nitem  name = "Q_ula_A[1]"  />
+        <nitem  name = "Q_ula_A[0]"  />
+        <nitem  name = "Q_ula_B[3]"  />
+        <nitem  name = "Q_ula_B[2]"  />
+        <nitem  name = "Q_ula_B[1]"  />
+        <nitem  name = "Q_ula_B[0]"  />
+        <nitem  name = "ula/resultado_3__N_73[4]"  />
+        <nitem  name = "ula/resultado_3__N_73[3]"  />
+        <nitem  name = "ula/resultado_3__N_73[2]"  />
+        <nitem  name = "ula/resultado_3__N_73[1]"  />
+        <nitem  name = "ula/resultado_3__N_73[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/resultado_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ula/n52"  />
+        <nitem  name = "Cin"  />
+        <nitem  name = "ula/resultado_3__N_73[4]"  />
+        <nitem  name = "ula/resultado_3__N_73[3]"  />
+        <nitem  name = "ula/resultado_3__N_73[2]"  />
+        <nitem  name = "ula/resultado_3__N_73[1]"  />
+        <nitem  name = "ula/resultado_3__N_73[0]"  />
+        <nitem  name = "ula/resultado_3__N_53[4]"  />
+        <nitem  name = "ula/resultado_3__N_53[3]"  />
+        <nitem  name = "ula/resultado_3__N_53[2]"  />
+        <nitem  name = "ula/resultado_3__N_53[1]"  />
+        <nitem  name = "ula/resultado_3__N_53[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/A_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Q_ula_A[3]"  />
+        <nitem  name = "Q_ula_A[2]"  />
+        <nitem  name = "Q_ula_A[1]"  />
+        <nitem  name = "Q_ula_A[0]"  />
+        <nitem  name = "Q_ula_B[3]"  />
+        <nitem  name = "Q_ula_B[2]"  />
+        <nitem  name = "Q_ula_B[1]"  />
+        <nitem  name = "Q_ula_B[0]"  />
+        <nitem  name = "ula/resultado_3__N_49[3]"  />
+        <nitem  name = "ula/resultado_3__N_49[2]"  />
+        <nitem  name = "ula/resultado_3__N_49[1]"  />
+        <nitem  name = "ula/resultado_3__N_49[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/seletor_2__I_0_24"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[31]"  direction = "in"  />
+        <pitem  name = "data[27]"  direction = "in"  />
+        <pitem  name = "data[26]"  direction = "in"  />
+        <pitem  name = "data[25]"  direction = "in"  />
+        <pitem  name = "data[24]"  direction = "in"  />
+        <pitem  name = "data[30]"  direction = "in"  />
+        <pitem  name = "data[29]"  direction = "in"  />
+        <pitem  name = "data[28]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[19]"  direction = "in"  />
+        <pitem  name = "data[18]"  direction = "in"  />
+        <pitem  name = "data[17]"  direction = "in"  />
+        <pitem  name = "data[16]"  direction = "in"  />
+        <pitem  name = "data[23]"  direction = "in"  />
+        <pitem  name = "data[22]"  direction = "in"  />
+        <pitem  name = "data[21]"  direction = "in"  />
+        <pitem  name = "data[20]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ula/n52"  />
+        <nitem  name = "Q_ula_A[3]"  />
+        <nitem  name = "Q_ula_A[2]"  />
+        <nitem  name = "Q_ula_A[1]"  />
+        <nitem  name = "operacao[2]"  />
+        <nitem  name = "operacao[1]"  />
+        <nitem  name = "operacao[0]"  />
+        <nitem  name = "resultado[3]"  />
+        <nitem  name = "resultado[2]"  />
+        <nitem  name = "resultado[1]"  />
+        <nitem  name = "resultado[0]"  />
+        <nitem  name = "ula/resultado_3__N_65[3]"  />
+        <nitem  name = "ula/resultado_3__N_65[2]"  />
+        <nitem  name = "ula/resultado_3__N_65[1]"  />
+        <nitem  name = "ula/resultado_3__N_65[0]"  />
+        <nitem  name = "ula/resultado_3__N_61[3]"  />
+        <nitem  name = "ula/resultado_3__N_61[2]"  />
+        <nitem  name = "ula/resultado_3__N_61[1]"  />
+        <nitem  name = "ula/resultado_3__N_61[0]"  />
+        <nitem  name = "ula/resultado_3__N_69[3]"  />
+        <nitem  name = "ula/resultado_3__N_69[2]"  />
+        <nitem  name = "ula/resultado_3__N_69[1]"  />
+        <nitem  name = "ula/resultado_3__N_69[0]"  />
+        <nitem  name = "ula/resultado_3__N_57[3]"  />
+        <nitem  name = "ula/resultado_3__N_57[2]"  />
+        <nitem  name = "ula/resultado_3__N_57[1]"  />
+        <nitem  name = "ula/resultado_3__N_57[0]"  />
+        <nitem  name = "ula/resultado_3__N_53[3]"  />
+        <nitem  name = "ula/resultado_3__N_53[2]"  />
+        <nitem  name = "ula/resultado_3__N_53[1]"  />
+        <nitem  name = "ula/resultado_3__N_53[0]"  />
+        <nitem  name = "ula/resultado_3__N_49[3]"  />
+        <nitem  name = "ula/resultado_3__N_49[2]"  />
+        <nitem  name = "ula/resultado_3__N_49[1]"  />
+        <nitem  name = "ula/resultado_3__N_49[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/seletor_2__I_0_25"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "operacao[2]"  />
+        <nitem  name = "operacao[1]"  />
+        <nitem  name = "operacao[0]"  />
+        <nitem  name = "ula/resultado_3__N_53[4]"  />
+        <nitem  name = "ula/n53"  />
+        <nitem  name = "ula/Cout_N_78"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/seletor_2__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ula/n52"  />
+        <nitem  name = "operacao[2]"  />
+        <nitem  name = "operacao[1]"  />
+        <nitem  name = "operacao[0]"  />
+        <nitem  name = "ula/pwr"  />
+        <nitem  name = "ula/Cout_N_80"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ula/Cout_I_0"  library = "work"  arch = ""  type = "seq">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "gate"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ula/n52"  />
+        <nitem  name = "Cout"  />
+        <nitem  name = "ula/Cout_N_78"  />
+        <nitem  name = "ula/Cout_N_80"  />
+        </nets>
+    </instance>
+
+    <instance  name = "MUX_in"  />
+    <instance  name = "demux"  />
+    <instance  name = "regA"  />
+    <instance  name = "regB"  />
+    <instance  name = "rf"  />
+    <instance  name = "ula"  />
+    <!--
+        REG instances in netlist: 7
+    -->
+
+    <regs>
+        <reg  name = "rf/R2"  />
+        <reg  name = "rf/R1"  />
+        <reg  name = "rf/R0"  />
+        <reg  name = "rf/data_out"  />
+        <reg  name = "rf/R3"  />
+        <reg  name = "regA/Q"  />
+        <reg  name = "regB/Q"  />
+    </regs>
+
+    <!--
+        Views in design "datapath": 5
+    -->
+
+    <views>
+        <view  name = "demux12"  />
+        <view  name = "flipflop_D"  />
+        <view  name = "mux21"  />
+        <view  name = "reg_4bits"  />
+        <view  name = "ula_ula2"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

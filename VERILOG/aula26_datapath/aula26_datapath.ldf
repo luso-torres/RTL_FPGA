@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="aula26_datapath" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="datapath"/>
+        <Source name="datapath.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="demux12.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="mux21.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="flipflop_D.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="reg_4bits.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="top_model.v" type="Verilog" type_short="Verilog">
+            <Options top_module="datapath"/>
+        </Source>
+        <Source name="impl1/source/ula2.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="datapath_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="aula26_datapath.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="aula26_datapath1.sty"/>
+</BaliProject>

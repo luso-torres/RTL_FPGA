@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula27_ULA4bits/sim3/sim3.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula27_ULA4bits/sim3" sim3
+	project addfile "D:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula27_ULA4bits/ULA_4bits_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/aula27_ULA4bits/ula_4bits.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula27_ULA4bits/ULA_4bits_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula27_ULA4bits/sim3/sim3"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  ULA_4bits_tb
+view wave
+add wave /*
+run 1000ns

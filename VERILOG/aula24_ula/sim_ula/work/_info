@@ -1,0 +1,75 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/aula24_ula/sim_ula
+T_opt
+!s110 1747156382
+V5WG=0mca4XYBoA]FQBL[I0
+04 10 4 work ula_ula_tf fast 0
+=1-ac675dfda9e9-68237d9c-305-19f4
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vula_ula
+2D:/RTL_FPGA/VERILOG/aula24_ula/ula.v
+Z3 !s110 1747156378
+!i10b 1
+!s100 4o2?Am_`S[AKAVihXHbc:0
+IQ;=9>D`1]4Uh8>@B5a4P;3
+R1
+w1747155818
+8D:/RTL_FPGA/VERILOG/aula24_ula/ula.v
+FD:/RTL_FPGA/VERILOG/aula24_ula/ula.v
+!i122 0
+L0 1 17
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1747156378.000000
+!s107 D:/RTL_FPGA/VERILOG/aula24_ula/ula.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/aula24_ula|-work|work|D:/RTL_FPGA/VERILOG/aula24_ula/ula.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/VERILOG/aula24_ula -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vula_ula_tf
+2D:/RTL_FPGA/VERILOG/aula24_ula/ula_ula_tf.v
+R3
+!i10b 1
+!s100 5KU20^zLdkg3aiMCb?40U1
+IDML_W9^dM@VXi758KHYlO2
+R1
+w1747156331
+8D:/RTL_FPGA/VERILOG/aula24_ula/ula_ula_tf.v
+FD:/RTL_FPGA/VERILOG/aula24_ula/ula_ula_tf.v
+!i122 1
+L0 18 42
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/aula24_ula/ula_ula_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/aula24_ula|-work|work|D:/RTL_FPGA/VERILOG/aula24_ula/ula_ula_tf.v|
+!i113 0
+R7
+R8
+R2
