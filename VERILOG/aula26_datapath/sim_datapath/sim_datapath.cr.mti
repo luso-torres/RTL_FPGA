@@ -1,0 +1,52 @@
+D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v {2 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module ula_ula2
+** Warning: D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+** Warning: D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v(20): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+
+Top level modules:
+	ula_ula2
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula26_datapath/demux12.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula26_datapath/demux12.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module demux12
+
+Top level modules:
+	demux12
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula26_datapath/reg_4bits.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula26_datapath/reg_4bits.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module reg_4bits
+
+Top level modules:
+	reg_4bits
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula26_datapath/top_model.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula26_datapath/top_model.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula26_datapath/flipflop_D.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula26_datapath/flipflop_D.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module flipflop_D
+
+Top level modules:
+	flipflop_D
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula26_datapath/datapath_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula26_datapath/datapath_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module datapath_tf
+
+Top level modules:
+	datapath_tf
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula26_datapath/mux21.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula26_datapath/mux21.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mux21
+
+Top level modules:
+	mux21
+
+} {} {}}

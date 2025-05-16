@@ -30,6 +30,9 @@
         <Source name="aula26_datapath.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
+        <Source name="sim_datapath/sim_datapath.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
     </Implementation>
     <Strategy name="Strategy1" file="aula26_datapath1.sty"/>
 </BaliProject>

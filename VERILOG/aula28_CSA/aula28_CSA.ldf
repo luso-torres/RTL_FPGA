@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="aula28_CSA" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="parameterized_csa"/>
+        <Source name="CSA.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="csa_tf.v" type="Verilog" type_short="Verilog" excluded="TRUE" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="CSA_param.v" type="Verilog" type_short="Verilog">
+            <Options top_module="parameterized_csa"/>
+        </Source>
+        <Source name="parameterized_csa_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="multiplier_CSA.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="multiplier_csa_tf.v" type="Verilog" type_short="Verilog" excluded="TRUE" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="aula28_CSA.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_csa/sim_csa.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_csa_param/sim_csa_param.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_mulitplier_CSA_completo/sim_mulitplier_CSA_completo.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="aula28_CSA1.sty"/>
+</BaliProject>

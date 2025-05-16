@@ -8,6 +8,7 @@ output reg Cout);
 
 always @(*)
 	begin
+		Cout=1'b0;
 			case (seletor)
 				3'b000: resultado = A&B;
 				3'b001: resultado = A|B;

@@ -1,0 +1,66 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/aula28_CSA/sim_mulitplier_CSA_completo/sim_mulitplier_CSA_completo.mdo}
+# Loading project sim_mulitplier_CSA_completo
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:48:10 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula28_CSA" -work work D:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v 
+# -- Compiling module parameterized_csa
+# 
+# Top level modules:
+# 	parameterized_csa
+# End time: 20:48:10 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:48:10 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula28_CSA" -work work D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_CSA.v 
+# -- Compiling module multiplier_csa
+# 
+# Top level modules:
+# 	multiplier_csa
+# End time: 20:48:10 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:48:10 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula28_CSA" -work work D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v 
+# -- Compiling module multiplier_testAll_tb
+# 
+# Top level modules:
+# 	multiplier_testAll_tb
+# End time: 20:48:10 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u multiplier_testAll_tb 
+# Start time: 20:48:10 on May 14,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.multiplier_testAll_tb(fast)
+# Loading work.multiplier_csa(fast)
+# Loading work.parameterized_csa(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+run
+run
+run
+run
+run
+run
+# Teste bem-sucedido!
+# ** Note: $stop    : D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v(41)
+#    Time: 2560 ns  Iteration: 0  Instance: /multiplier_testAll_tb
+# Break in Module multiplier_testAll_tb at D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v line 41
+# End time: 20:57:18 on May 14,2025, Elapsed time: 0:09:08
+# Errors: 0, Warnings: 7

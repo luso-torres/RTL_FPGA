@@ -1,0 +1,27 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula26_datapath/sim_datapath/sim_datapath.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula26_datapath/sim_datapath" sim_datapath
+	project addfile "D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula26_datapath/flipflop_D.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula26_datapath/demux12.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula26_datapath/reg_4bits.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula26_datapath/top_model.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula26_datapath/datapath_tf.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula26_datapath/mux21.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source  -work work  "D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula26_datapath  -work work  "D:/RTL_FPGA/VERILOG/aula26_datapath/flipflop_D.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula26_datapath  -work work  "D:/RTL_FPGA/VERILOG/aula26_datapath/demux12.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula26_datapath  -work work  "D:/RTL_FPGA/VERILOG/aula26_datapath/reg_4bits.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula26_datapath  -work work  "D:/RTL_FPGA/VERILOG/aula26_datapath/top_model.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula26_datapath  -work work  "D:/RTL_FPGA/VERILOG/aula26_datapath/datapath_tf.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula26_datapath  -work work  "D:/RTL_FPGA/VERILOG/aula26_datapath/mux21.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula26_datapath/sim_datapath/sim_datapath"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  datapath_tf
+view wave
+add wave /*
+run 1000ns

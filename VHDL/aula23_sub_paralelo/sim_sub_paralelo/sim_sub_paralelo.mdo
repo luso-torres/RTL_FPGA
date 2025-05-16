@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_paralelo/sim_sub_paralelo.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_paralelo" sim_sub_paralelo
+	project addfile "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_complement_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_complement_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_paralelo/sim_sub_paralelo"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_subtractor_complement
+view wave
+add wave /*
+run 1000ns

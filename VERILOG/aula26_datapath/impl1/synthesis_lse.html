@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed May 14 11:20:17 2025
+Wed May 14 21:39:40 2025
 
 
 Command Line:  synthesis -f aula26_datapath_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/VERILOG/aula26_datapath/promote.xml 
@@ -96,8 +96,8 @@ Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/flipflop_d.v. VERI-14
 Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/reg_4bits.v. VERI-1482
 Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/top_model.v. VERI-1482
 Analyzing Verilog file d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v. VERI-1482
-WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(18): concatenation with unsized literal will interpret as 32 bits. VERI-1320
 WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(19): concatenation with unsized literal will interpret as 32 bits. VERI-1320
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(20): concatenation with unsized literal will interpret as 32 bits. VERI-1320
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Top module name (Verilog): datapath
 INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/top_model.v(1): compiling module datapath. VERI-1018
@@ -105,10 +105,10 @@ INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/mux21.v(1): compiling modu
 INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/reg_4bits.v(1): compiling module reg_4bits. VERI-1018
 INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/demux12.v(1): compiling module demux12. VERI-1018
 INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/flipflop_d.v(1): compiling module flipflop_D. VERI-1018
-WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(18): concatenation with unsized literal will interpret as 32 bits. VERI-1320
 WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(19): concatenation with unsized literal will interpret as 32 bits. VERI-1320
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(20): concatenation with unsized literal will interpret as 32 bits. VERI-1320
 INFO - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(1): compiling module ula_ula2. VERI-1018
-WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(18): expression size 35 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/impl1/source/ula2.v(19): expression size 35 truncated to fit in target size 4. VERI-1209
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -116,85 +116,83 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
 Top-level module name = datapath.
-@Inferred RAM (mux_7) from primitives
-
 
 
 
 WARNING - synthesis: Bit 3 of Register \regB/Q is stuck at Zero
 WARNING - synthesis: Bit 2 of Register \regB/Q is stuck at Zero
 WARNING - synthesis: Bit 1 of Register \regB/Q is stuck at Zero
-######## Found 1 RTL RAMs in the design.
-######## Mapping RTL RAM \rf/mux_7 to 1 Distributed blocks in SINGLE_PORT Mode
-
+WARNING - synthesis: I/O Port dados[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port dados[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port dados[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port dados[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port sel21 's net has no driver and is unused.
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/reg_4bits.v(30): Register \rf/data_out__i1 is stuck at Zero. VDB-5013
+WARNING - synthesis: d:/rtl_fpga/verilog/aula26_datapath/flipflop_d.v(13): Register \regA/Q__i1 is stuck at Zero. VDB-5013
 GSR will not be inferred because no asynchronous signal was found in the netlist.
 Applying 200.000000 MHz constraint to all clocks
 
-WARNING - synthesis: Mapping latch \ula/Cout_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in datapath_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
-WARNING - synthesis: logical net 'GND_net' has no load.
-WARNING - synthesis: DRC complete with 1 warnings.
+WARNING - synthesis: logical net 'dados[3]' has no load.
+WARNING - synthesis: input pad net 'dados[3]' has no legal load.
+WARNING - synthesis: logical net 'dados[2]' has no load.
+WARNING - synthesis: input pad net 'dados[2]' has no legal load.
+WARNING - synthesis: logical net 'dados[1]' has no load.
+WARNING - synthesis: input pad net 'dados[1]' has no legal load.
+WARNING - synthesis: logical net 'dados[0]' has no load.
+WARNING - synthesis: input pad net 'dados[0]' has no legal load.
+WARNING - synthesis: logical net 'sel21' has no load.
+WARNING - synthesis: input pad net 'sel21' has no legal load.
+WARNING - synthesis: logical net 'escrita_c' has no load.
+WARNING - synthesis: logical net 'clk_c' has no load.
+WARNING - synthesis: logical net 'sel12_c' has no load.
+WARNING - synthesis: logical net 'Cin_c' has no load.
+WARNING - synthesis: logical net 'reset_c' has no load.
+WARNING - synthesis: logical net 'addr_c_0' has no load.
+WARNING - synthesis: logical net 'addr_c_1' has no load.
+WARNING - synthesis: logical net 'operacao_c_0' has no load.
+WARNING - synthesis: DRC complete with 18 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file aula26_datapath_impl1.ngd.
 
 ################### Begin Area Report (datapath)######################
-Number of register bits => 9 of 44439 (0 % )
-FD1P3AX => 4
-FD1S3IX => 5
+Number of register bits => 0 of 44439 (0 % )
 GSR => 1
-IB => 15
-LUT4 => 50
+IB => 10
+LUT4 => 1
 OB => 5
-PFUMX => 11
-SPR16X4C => 1
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk_c, loads : 10
+  Net : clk_c, loads : 0
 Clock Enable Nets
-Number of Clock Enables: 1
-Top 1 highest fanout Clock Enables:
-  Net : clk_c_enable_4, loads : 1
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : operacao_c_0, loads : 25
-  Net : operacao_c_1, loads : 18
-  Net : operacao_c_2, loads : 15
-  Net : regA/Q_ula_A_0, loads : 15
-  Net : regA/Q_ula_A_1, loads : 14
-  Net : regB/Q_ula_B_0, loads : 14
-  Net : regA/Q_ula_A_2, loads : 11
-  Net : sel21_c, loads : 9
-  Net : Cin_c, loads : 7
-  Net : regA/Q_ula_A_3, loads : 6
+  Net : ula/resultado_c_1, loads : 3
+  Net : operacao_c_2, loads : 1
+  Net : operacao_c_1, loads : 1
+  Net : addr_c_1, loads : 0
+  Net : addr_c_0, loads : 0
+  Net : sel12_c, loads : 0
+  Net : escrita_c, loads : 0
+  Net : reset_c, loads : 0
+  Net : Cin_c, loads : 0
+  Net : operacao_c_0, loads : 0
 ################### End Clock Report ##################
 
-<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
---------------
---------------------------------------------------------------------------------
-Constraint                              |   Constraint|       Actual|Levels
---------------------------------------------------------------------------------
-                                        |             |             |
-create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk_c]                   |  200.000 MHz|  379.651 MHz|     2  
-                                        |             |             |
---------------------------------------------------------------------------------
-
-
-All constraints were met.
-
-
-Peak Memory Usage: 90.055  MB
+Peak Memory Usage: 87.816  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.969  secs
+Elapsed CPU time for LSE flow : 1.281  secs
 --------------------------------------------------------------
 
 

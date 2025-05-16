@@ -1,0 +1,100 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/aula28_CSA/sim_mulitplier_CSA_completo
+T_opt
+!s110 1747266492
+VRdLhd7z7Mb;72n?317[P30
+04 21 4 work multiplier_testAll_tb fast 0
+=1-ac675dfda9e9-68252bbc-107-21e0
+R0
+!s12f OEM25U4 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vmultiplier_csa
+2D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_CSA.v
+Z3 !s110 1747266490
+!i10b 1
+!s100 ZaKOkGc67?YJa=7h5I9a<0
+IFio7CNYigUTdL@`TAinH>1
+R1
+w1747265276
+8D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_CSA.v
+FD:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_CSA.v
+!i122 1
+L0 1 40
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1747266490.000000
+!s107 D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_CSA.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/aula28_CSA|-work|work|D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_CSA.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/VERILOG/aula28_CSA -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vmultiplier_testAll_tb
+2D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v
+R3
+!i10b 1
+!s100 S8E5O_l7KM>`=LNknh?4e1
+I=HOLcYQL?B6cad_j=I?J82
+R1
+w1747266375
+8D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v
+FD:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v
+!i122 2
+L0 2 42
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/aula28_CSA|-work|work|D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v|
+!i113 0
+R7
+R8
+R2
+nmultiplier_test@all_tb
+vparameterized_csa
+2D:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v
+R3
+!i10b 1
+!s100 8:=nOkT61P<Re]NNjSKQK1
+ImaT6Zn5n[L:SKRLa4`Bge2
+R1
+w1747264979
+8D:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v
+FD:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v
+!i122 0
+L0 2 15
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/aula28_CSA|-work|work|D:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v|
+!i113 0
+R7
+R8
+R2

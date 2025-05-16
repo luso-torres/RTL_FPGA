@@ -1,0 +1,15 @@
+D:/RTL_FPGA/VERILOG/aula29_kogge_stone/kogge_stone.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula29_kogge_stone/kogge_stone.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module KoggeStone_par
+
+Top level modules:
+	KoggeStone_par
+
+} {} {}} D:/RTL_FPGA/VERILOG/aula29_kogge_stone/KoggeStone_par_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/VERILOG/aula29_kogge_stone/KoggeStone_par_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module KoggeStone_par_tb
+
+Top level modules:
+	KoggeStone_par_tb
+
+} {} {}}

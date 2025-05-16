@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_bent_kung/sim_bent_kung.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_bent_kung" sim_bent_kung
+	project addfile "D:/RTL_FPGA/VERILOG/aula28_BrentKung/tree_bent_kurg.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKungAdder8_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula28_BrentKung  -work work  "D:/RTL_FPGA/VERILOG/aula28_BrentKung/tree_bent_kurg.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula28_BrentKung  -work work  "D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKungAdder8_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_bent_kung/sim_bent_kung"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  BrentKungAdder8_tb
+view wave
+add wave /*
+run 1000ns

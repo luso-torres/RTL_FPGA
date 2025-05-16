@@ -87,6 +87,24 @@ prj_project close
 
 
 
+<A name="pn250514114748"></A><B><U><big>pn250514114748</big></U></B>
+#Start recording tcl command: 5/14/2025 09:21:41
+#Project Location: D:/RTL_FPGA/VERILOG/aula26_datapath; Project name: aula26_datapath
+prj_project open "D:/RTL_FPGA/VERILOG/aula26_datapath/aula26_datapath.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula26_datapath/datapath.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula26_datapath/reg_4bits.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula26_datapath/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/VERILOG/aula26_datapath/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "datapath_tf.v"
+prj_project save
+prj_project close
+#Stop recording: 5/14/2025 11:47:48
+
+
+
 <BR>
 <BR>
 <BR>

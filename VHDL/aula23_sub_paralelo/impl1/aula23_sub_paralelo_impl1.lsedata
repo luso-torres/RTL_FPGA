@@ -1,0 +1,443 @@
+<top name = "subtractor_complement"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "subtractor_complement">
+
+    <!--
+        Top Level Pins: 14
+    -->
+
+    <pins>
+        <pitem  name = "A[3]"  direction = "in"  />
+        <pitem  name = "A[2]"  direction = "in"  />
+        <pitem  name = "A[1]"  direction = "in"  />
+        <pitem  name = "A[0]"  direction = "in"  />
+        <pitem  name = "B[3]"  direction = "in"  />
+        <pitem  name = "B[2]"  direction = "in"  />
+        <pitem  name = "B[1]"  direction = "in"  />
+        <pitem  name = "B[0]"  direction = "in"  />
+        <pitem  name = "Brin"  direction = "in"  />
+        <pitem  name = "Brout"  direction = "out"  />
+        <pitem  name = "Sub[3]"  direction = "out"  />
+        <pitem  name = "Sub[2]"  direction = "out"  />
+        <pitem  name = "Sub[1]"  direction = "out"  />
+        <pitem  name = "Sub[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 18
+    -->
+
+    <instance  name = "B_C2/A_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "C1[3]"  />
+        <nitem  name = "C1[2]"  />
+        <nitem  name = "C1[1]"  />
+        <nitem  name = "C1[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "B_C2/G[3]"  />
+        <nitem  name = "B_C2/G[2]"  />
+        <nitem  name = "B_C2/G[1]"  />
+        <nitem  name = "B_C2/G[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_C2/A_3__I_0_17"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "C1[3]"  />
+        <nitem  name = "C1[2]"  />
+        <nitem  name = "C1[1]"  />
+        <nitem  name = "C1[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "B_C2/P[3]"  />
+        <nitem  name = "B_C2/P[2]"  />
+        <nitem  name = "B_C2/P[1]"  />
+        <nitem  name = "B_C2/P[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i[3]"  direction = "in"  />
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "C1[3]"  />
+        <nitem  name = "C1[2]"  />
+        <nitem  name = "C1[1]"  />
+        <nitem  name = "C1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Sum/A_3__I_0_17"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[3]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "C2[3]"  />
+        <nitem  name = "C2[2]"  />
+        <nitem  name = "C2[1]"  />
+        <nitem  name = "C2[0]"  />
+        <nitem  name = "Sum/P[3]"  />
+        <nitem  name = "Sum/P[2]"  />
+        <nitem  name = "Sum/P[1]"  />
+        <nitem  name = "Sum/P[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Cout_int_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Cout_int"  />
+        <nitem  name = "Cout_int_N_1"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_C2/P_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B_C2/C[3]"  />
+        <nitem  name = "B_C2/P[3]"  />
+        <nitem  name = "B_C2/Cout_N_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_C2/G_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B_C2/Cout"  />
+        <nitem  name = "B_C2/G[3]"  />
+        <nitem  name = "B_C2/Cout_N_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_C2/P_3__I_0_18"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "C2[3]"  />
+        <nitem  name = "C2[2]"  />
+        <nitem  name = "C2[1]"  />
+        <nitem  name = "C2[0]"  />
+        <nitem  name = "B_C2/C[3]"  />
+        <nitem  name = "B_C2/C[2]"  />
+        <nitem  name = "B_C2/C[1]"  />
+        <nitem  name = "B_C2/P[3]"  />
+        <nitem  name = "B_C2/P[2]"  />
+        <nitem  name = "B_C2/P[1]"  />
+        <nitem  name = "B_C2/P[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_C2/P_2__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "B_C2/C[2]"  />
+        <nitem  name = "B_C2/C[1]"  />
+        <nitem  name = "B_C2/P[2]"  />
+        <nitem  name = "B_C2/P[1]"  />
+        <nitem  name = "B_C2/P[0]"  />
+        <nitem  name = "B_C2/C_3__N_2[0]"  />
+        <nitem  name = "B_C2/C_3__N_2[1]"  />
+        <nitem  name = "B_C2/C_3__N_2[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_C2/G_2__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B_C2/C[3]"  />
+        <nitem  name = "B_C2/C[2]"  />
+        <nitem  name = "B_C2/C[1]"  />
+        <nitem  name = "B_C2/G[2]"  />
+        <nitem  name = "B_C2/G[1]"  />
+        <nitem  name = "B_C2/G[0]"  />
+        <nitem  name = "B_C2/C_3__N_2[0]"  />
+        <nitem  name = "B_C2/C_3__N_2[1]"  />
+        <nitem  name = "B_C2/C_3__N_2[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Sum/A_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[3]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "C2[3]"  />
+        <nitem  name = "C2[2]"  />
+        <nitem  name = "C2[1]"  />
+        <nitem  name = "C2[0]"  />
+        <nitem  name = "Sum/G[3]"  />
+        <nitem  name = "Sum/G[2]"  />
+        <nitem  name = "Sum/G[1]"  />
+        <nitem  name = "Sum/G[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Sum/P_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Sum/C[3]"  />
+        <nitem  name = "Sum/P[3]"  />
+        <nitem  name = "Sum/Cout_N_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Sum/G_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Cout_int"  />
+        <nitem  name = "Sum/G[3]"  />
+        <nitem  name = "Sum/Cout_N_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Sum/P_3__I_0_18"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Brin"  />
+        <nitem  name = "Sub[3]"  />
+        <nitem  name = "Sub[2]"  />
+        <nitem  name = "Sub[1]"  />
+        <nitem  name = "Sub[0]"  />
+        <nitem  name = "Sum/C[3]"  />
+        <nitem  name = "Sum/C[2]"  />
+        <nitem  name = "Sum/C[1]"  />
+        <nitem  name = "Sum/P[3]"  />
+        <nitem  name = "Sum/P[2]"  />
+        <nitem  name = "Sum/P[1]"  />
+        <nitem  name = "Sum/P[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Sum/P_2__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Brin"  />
+        <nitem  name = "Sum/C[2]"  />
+        <nitem  name = "Sum/C[1]"  />
+        <nitem  name = "Sum/P[2]"  />
+        <nitem  name = "Sum/P[1]"  />
+        <nitem  name = "Sum/P[0]"  />
+        <nitem  name = "Sum/C_3__N_2[0]"  />
+        <nitem  name = "Sum/C_3__N_2[1]"  />
+        <nitem  name = "Sum/C_3__N_2[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Sum/G_2__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Sum/C[3]"  />
+        <nitem  name = "Sum/C[2]"  />
+        <nitem  name = "Sum/C[1]"  />
+        <nitem  name = "Sum/G[2]"  />
+        <nitem  name = "Sum/G[1]"  />
+        <nitem  name = "Sum/G[0]"  />
+        <nitem  name = "Sum/C_3__N_2[0]"  />
+        <nitem  name = "Sum/C_3__N_2[1]"  />
+        <nitem  name = "Sum/C_3__N_2[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_C2"  />
+    <instance  name = "Sum"  />
+    <!--
+        Views in design "subtractor_complement": 1
+    -->
+
+    <views>
+        <view  name = "param_clah(4)"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

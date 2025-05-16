@@ -1,0 +1,77 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_brent_kung_param
+T_opt
+!s110 1747351385
+VYg8CnM@:mQ@F4]8jY>elP3
+04 16 4 work BrentKung_par_tb fast 0
+=1-ac675dfda9e9-68267759-1d1-6b00
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vBrentKung_par
+2D:/RTL_FPGA/VERILOG/aula28_BrentKung/brent_param.v
+!s110 1747351383
+!i10b 1
+!s100 >=OmF7a8cFO0HOS?]RVlJ2
+IUe^0D[CdAP@i3F`om3<=80
+R1
+w1747351337
+8D:/RTL_FPGA/VERILOG/aula28_BrentKung/brent_param.v
+FD:/RTL_FPGA/VERILOG/aula28_BrentKung/brent_param.v
+!i122 0
+L0 1 46
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2024.2;79
+r1
+!s85 0
+31
+!s108 1747351383.000000
+!s107 D:/RTL_FPGA/VERILOG/aula28_BrentKung/brent_param.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/aula28_BrentKung|-work|work|D:/RTL_FPGA/VERILOG/aula28_BrentKung/brent_param.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 +incdir+D:/RTL_FPGA/VERILOG/aula28_BrentKung -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@brent@kung_par
+vBrentKung_par_tb
+2D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKung_par_tf.v
+!s110 1747351384
+!i10b 1
+!s100 1G^7Y^2KJk2>>UDG?TDjD0
+I?U@MB2jGTD78m]QhI?QV82
+R1
+w1747350967
+8D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKung_par_tf.v
+FD:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKung_par_tf.v
+!i122 1
+L0 2 32
+R3
+R4
+r1
+!s85 0
+31
+!s108 1747351384.000000
+!s107 D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKung_par_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/VERILOG/aula28_BrentKung|-work|work|D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKung_par_tf.v|
+!i113 0
+R5
+R6
+R2
+n@brent@kung_par_tb

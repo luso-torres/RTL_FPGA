@@ -1,0 +1,9 @@
+#Start recording tcl command: 5/14/2025 20:54:54
+#Project Location: D:/RTL_FPGA/VHDL/aula23_sub_paralelo; Project name: aula23_sub_paralelo
+prj_project open "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/aula23_sub_paralelo.ldf"
+prj_src add "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_paralelo/sim_sub_paralelo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 5/14/2025 21:08:29

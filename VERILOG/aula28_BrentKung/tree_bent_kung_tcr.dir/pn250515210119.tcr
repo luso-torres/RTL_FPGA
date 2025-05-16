@@ -1,0 +1,44 @@
+#Start recording tcl command: 5/15/2025 20:03:43
+#Project Location: D:/RTL_FPGA/VERILOG/aula28_BrentKung; Project name: tree_bent_kung
+prj_project new -name "tree_bent_kung" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/tree_bent_kurg.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula28_BrentKung/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "BrentKungAdder8_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_bent_kung/sim_bent_kung.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_brent_kung/sim_brent_kung.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/brent_param.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_BrentKung/tree_bent_kurg.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKungAdder8_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula28_BrentKung/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "BrentKung_par_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_brent_kung_param/sim_brent_kung_param.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_brent_kung_param/sim_brent_kung_param.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_brent_kung/sim_brent_kung.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_brent_kung/sim_brent_kung.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_BrentKung/sim_brent_kung/sim_brent_kung.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_BrentKung/brent_param.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKung_par_tf.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula28_BrentKung/BrentKungAdder8_tf.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula28_BrentKung/tree_bent_kurg.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 5/15/2025 21:01:19

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(3): </Dynamic>
+            <Dynamic>subtractor_complement</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(13): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd(3): </Dynamic>
+            <Dynamic>param_clah</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd(13): </Dynamic>
+            <Dynamic>behaviour</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(11): </Dynamic>
+            <Dynamic>subtractor_complement</Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

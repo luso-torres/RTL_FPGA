@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_paralelo/sim_sub_paralelo.mdo}
+# Loading project sim_sub_paralelo
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:04:24 on May 14,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity param_clah
+# -- Compiling architecture behaviour of param_clah
+# End time: 21:04:24 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:04:24 on May 14,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity subtractor_complement
+# -- Compiling architecture behavioral of subtractor_complement
+# End time: 21:04:24 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:04:25 on May 14,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_complement_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_subtractor_complement
+# -- Compiling architecture behavior of tb_subtractor_complement
+# End time: 21:04:25 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u tb_subtractor_complement 
+# Start time: 21:04:25 on May 14,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_subtractor_complement(behavior)#1
+# Loading work.subtractor_complement(behavioral)#1
+# Loading work.param_clah(behaviour)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# End time: 21:08:12 on May 14,2025, Elapsed time: 0:03:47
+# Errors: 0, Warnings: 7

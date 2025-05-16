@@ -1,0 +1,286 @@
+<top name = "parameterized_csa"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "parameterized_csa">
+
+    <!--
+        Top Level Pins: 20
+    -->
+
+    <pins>
+        <pitem  name = "A[3]"  direction = "in"  />
+        <pitem  name = "A[2]"  direction = "in"  />
+        <pitem  name = "A[1]"  direction = "in"  />
+        <pitem  name = "A[0]"  direction = "in"  />
+        <pitem  name = "B[3]"  direction = "in"  />
+        <pitem  name = "B[2]"  direction = "in"  />
+        <pitem  name = "B[1]"  direction = "in"  />
+        <pitem  name = "B[0]"  direction = "in"  />
+        <pitem  name = "Cin[3]"  direction = "in"  />
+        <pitem  name = "Cin[2]"  direction = "in"  />
+        <pitem  name = "Cin[1]"  direction = "in"  />
+        <pitem  name = "Cin[0]"  direction = "in"  />
+        <pitem  name = "Sum[3]"  direction = "out"  />
+        <pitem  name = "Sum[2]"  direction = "out"  />
+        <pitem  name = "Sum[1]"  direction = "out"  />
+        <pitem  name = "Sum[0]"  direction = "out"  />
+        <pitem  name = "Cout[3]"  direction = "out"  />
+        <pitem  name = "Cout[2]"  direction = "out"  />
+        <pitem  name = "Cout[1]"  direction = "out"  />
+        <pitem  name = "Cout[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 7
+    -->
+
+    <instance  name = "A_3__I_0_39"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[3]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "Sum_3__N_1[3]"  />
+        <nitem  name = "Sum_3__N_1[2]"  />
+        <nitem  name = "Sum_3__N_1[1]"  />
+        <nitem  name = "Sum_3__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Sum_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Sum_3__N_1[3]"  />
+        <nitem  name = "Sum_3__N_1[2]"  />
+        <nitem  name = "Sum_3__N_1[1]"  />
+        <nitem  name = "Sum_3__N_1[0]"  />
+        <nitem  name = "Cin[3]"  />
+        <nitem  name = "Cin[2]"  />
+        <nitem  name = "Cin[1]"  />
+        <nitem  name = "Cin[0]"  />
+        <nitem  name = "Sum[3]"  />
+        <nitem  name = "Sum[2]"  />
+        <nitem  name = "Sum[1]"  />
+        <nitem  name = "Sum[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "and_33"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[3]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "Cout_3__N_13[3]"  />
+        <nitem  name = "Cout_3__N_13[2]"  />
+        <nitem  name = "Cout_3__N_13[1]"  />
+        <nitem  name = "Cout_3__N_13[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "and_34"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "Cin[3]"  />
+        <nitem  name = "Cin[2]"  />
+        <nitem  name = "Cin[1]"  />
+        <nitem  name = "Cin[0]"  />
+        <nitem  name = "Cout_3__N_17[3]"  />
+        <nitem  name = "Cout_3__N_17[2]"  />
+        <nitem  name = "Cout_3__N_17[1]"  />
+        <nitem  name = "Cout_3__N_17[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Cout_3__I_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Cout_3__N_13[3]"  />
+        <nitem  name = "Cout_3__N_13[2]"  />
+        <nitem  name = "Cout_3__N_13[1]"  />
+        <nitem  name = "Cout_3__N_13[0]"  />
+        <nitem  name = "Cout_3__N_17[3]"  />
+        <nitem  name = "Cout_3__N_17[2]"  />
+        <nitem  name = "Cout_3__N_17[1]"  />
+        <nitem  name = "Cout_3__N_17[0]"  />
+        <nitem  name = "Cout_3__N_5[3]"  />
+        <nitem  name = "Cout_3__N_5[2]"  />
+        <nitem  name = "Cout_3__N_5[1]"  />
+        <nitem  name = "Cout_3__N_5[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "A_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[3]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "Cin[3]"  />
+        <nitem  name = "Cin[2]"  />
+        <nitem  name = "Cin[1]"  />
+        <nitem  name = "Cin[0]"  />
+        <nitem  name = "Cout_3__N_9[3]"  />
+        <nitem  name = "Cout_3__N_9[2]"  />
+        <nitem  name = "Cout_3__N_9[1]"  />
+        <nitem  name = "Cout_3__N_9[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Cout_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Cout_3__N_5[3]"  />
+        <nitem  name = "Cout_3__N_5[2]"  />
+        <nitem  name = "Cout_3__N_5[1]"  />
+        <nitem  name = "Cout_3__N_5[0]"  />
+        <nitem  name = "Cout_3__N_9[3]"  />
+        <nitem  name = "Cout_3__N_9[2]"  />
+        <nitem  name = "Cout_3__N_9[1]"  />
+        <nitem  name = "Cout_3__N_9[0]"  />
+        <nitem  name = "Cout[3]"  />
+        <nitem  name = "Cout[2]"  />
+        <nitem  name = "Cout[1]"  />
+        <nitem  name = "Cout[0]"  />
+        </nets>
+    </instance>
+
+    <!--
+        Views in design "parameterized_csa": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

@@ -1,0 +1,152 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/aula26_datapath/sim_datapath/sim_datapath.mdo}
+# Loading project sim_datapath
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:30:29 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source" -work work D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v 
+# -- Compiling module ula_ula2
+# ** Warning: D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v(18): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v(19): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# 
+# Top level modules:
+# 	ula_ula2
+# End time: 21:30:30 on May 14,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:30:30 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula26_datapath" -work work D:/RTL_FPGA/VERILOG/aula26_datapath/flipflop_D.v 
+# -- Compiling module flipflop_D
+# 
+# Top level modules:
+# 	flipflop_D
+# End time: 21:30:30 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:30:30 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula26_datapath" -work work D:/RTL_FPGA/VERILOG/aula26_datapath/demux12.v 
+# -- Compiling module demux12
+# 
+# Top level modules:
+# 	demux12
+# End time: 21:30:31 on May 14,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:30:31 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula26_datapath" -work work D:/RTL_FPGA/VERILOG/aula26_datapath/reg_4bits.v 
+# -- Compiling module reg_4bits
+# 
+# Top level modules:
+# 	reg_4bits
+# End time: 21:30:31 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:30:31 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula26_datapath" -work work D:/RTL_FPGA/VERILOG/aula26_datapath/top_model.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 21:30:32 on May 14,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:30:32 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula26_datapath" -work work D:/RTL_FPGA/VERILOG/aula26_datapath/datapath_tf.v 
+# -- Compiling module datapath_tf
+# 
+# Top level modules:
+# 	datapath_tf
+# End time: 21:30:32 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:30:32 on May 14,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula26_datapath" -work work D:/RTL_FPGA/VERILOG/aula26_datapath/mux21.v 
+# -- Compiling module mux21
+# 
+# Top level modules:
+# 	mux21
+# End time: 21:30:32 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u datapath_tf 
+# Start time: 21:30:33 on May 14,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v(18): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v(19): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.datapath_tf(fast)
+# Loading work.datapath(fast)
+# Loading work.mux21(fast)
+# Loading work.reg_4bits(fast)
+# Loading work.demux12(fast)
+# Loading work.flipflop_D(fast)
+# Loading work.ula_ula2(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+# Compile of ula2.v was successful with warnings.
+# Compile of flipflop_D.v was successful.
+# Compile of demux12.v was successful.
+# Compile of reg_4bits.v was successful.
+# Compile of top_model.v was successful.
+# Compile of datapath_tf.v failed with 4 errors.
+# Compile of mux21.v was successful.
+# 7 compiles, 1 failed with 4 errors.
+# Compile of ula2.v was successful with warnings.
+# Compile of flipflop_D.v was successful.
+# Compile of demux12.v was successful.
+# Compile of reg_4bits.v was successful.
+# Compile of top_model.v was successful.
+# Compile of datapath_tf.v was successful.
+# Compile of mux21.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v(19): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Warning: D:/RTL_FPGA/VERILOG/aula26_datapath/impl1/source/ula2.v(20): (vopt-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.datapath_tf(fast)
+# Loading work.datapath(fast)
+# Loading work.mux21(fast)
+# Loading work.reg_4bits(fast)
+# Loading work.demux12(fast)
+# Loading work.flipflop_D(fast)
+# Loading work.ula_ula2(fast)
+run
+# Compile of ula2.v was successful with warnings.
+# Compile of flipflop_D.v was successful.
+# Compile of demux12.v was successful.
+# Compile of reg_4bits.v was successful.
+# Compile of top_model.v was successful.
+# Compile of datapath_tf.v was successful.
+# Compile of mux21.v was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.datapath_tf(fast)
+# Loading work.datapath(fast)
+# Loading work.mux21(fast)
+# Loading work.reg_4bits(fast)
+# Loading work.demux12(fast)
+# Loading work.flipflop_D(fast)
+# Loading work.ula_ula2(fast)
+run
+# End time: 20:06:46 on May 15,2025, Elapsed time: 22:36:13
+# Errors: 0, Warnings: 2

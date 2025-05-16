@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="tree_bent_kung" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="BrentKungAdder8"/>
+        <Source name="tree_bent_kurg.v" type="Verilog" type_short="Verilog">
+            <Options top_module="BrentKungAdder8"/>
+        </Source>
+        <Source name="BrentKungAdder8_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="brent_param.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="BrentKung_par_tf.v" type="Verilog" type_short="Verilog" excluded="TRUE" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="sim_bent_kung/sim_bent_kung.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_brent_kung/sim_brent_kung.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_brent_kung_param/sim_brent_kung_param.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="tree_bent_kung.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="tree_bent_kung1.sty"/>
+</BaliProject>

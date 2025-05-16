@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula28_CSA/sim_csa/sim_csa.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula28_CSA/sim_csa" sim_csa
+	project addfile "D:/RTL_FPGA/VERILOG/aula28_CSA/CSA.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula28_CSA/csa_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula28_CSA  -work work  "D:/RTL_FPGA/VERILOG/aula28_CSA/CSA.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula28_CSA  -work work  "D:/RTL_FPGA/VERILOG/aula28_CSA/csa_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula28_CSA/sim_csa/sim_csa"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  csa_tb
+view wave
+add wave /*
+run 1000ns

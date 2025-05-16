@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_paralelo
+T_opt
+!s110 1747267467
+Vfo[cm91aZ28[401aU92aV2
+04 24 8 work tb_subtractor_complement behavior 1
+=1-ac675dfda9e9-68252f8b-1d-48e4
+R0
+!s12f OEM25U4 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Eparam_clah
+Z2 w1747259761
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z5 8D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd
+Z6 FD:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd
+l0
+L3 1
+VDF6o<D9NGa6TElNm`5W`h0
+!s100 :PRP8N<kmSg7AUQFS5^`z3
+Z7 OL;C;2024.2;79
+32
+Z8 !s110 1747267464
+!i10b 1
+Z9 !s108 1747267464.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd|
+Z11 !s107 D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehaviour
+R3
+R4
+DEx4 work 10 param_clah 0 22 DF6o<D9NGa6TElNm`5W`h0
+!i122 0
+l17
+L13 15
+V0VgAge0j=O?]YzZDI0EPC2
+!s100 AVj]QbeJm>i`Iz8PlaQmf2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Esubtractor_complement
+Z14 w1747260244
+R3
+R4
+!i122 1
+R1
+Z15 8D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd
+Z16 FD:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd
+l0
+L3 1
+V@1R^]_9]mak3DYRazVHFW2
+!s100 Ibn6bjhO75c_9eRl<in743
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd|
+Z18 !s107 D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 21 subtractor_complement 0 22 @1R^]_9]mak3DYRazVHFW2
+!i122 1
+l34
+L13 46
+VH8o@5lJiKZIeZ:UoL0I452
+!s100 d82@Ue;fk>W]gz6i1;e[A2
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13
+Etb_subtractor_complement
+Z19 w1747267426
+R3
+R4
+!i122 2
+R1
+Z20 8D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_complement_tb.vhd
+Z21 FD:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_complement_tb.vhd
+l0
+L5 1
+V?1=MCc2d7CzE0[E8i5PA03
+!s100 o=]dFBQ`;_hTkna4dJ2hF0
+R7
+32
+Z22 !s110 1747267465
+!i10b 1
+Z23 !s108 1747267465.000000
+Z24 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_complement_tb.vhd|
+Z25 !s107 D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_complement_tb.vhd|
+!i113 0
+R12
+R13
+Abehavior
+R3
+R4
+DEx4 work 24 tb_subtractor_complement 0 22 ?1=MCc2d7CzE0[E8i5PA03
+!i122 2
+l25
+L8 60
+Vn_2QXJKa7X:Nbe`H2n8H:1
+!s100 ?2C7TFV]CbL4D7fK`OJR13
+R7
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R12
+R13

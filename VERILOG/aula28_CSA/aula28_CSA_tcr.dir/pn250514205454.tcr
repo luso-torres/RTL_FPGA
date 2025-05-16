@@ -1,0 +1,43 @@
+#Start recording tcl command: 5/14/2025 20:13:59
+#Project Location: D:/RTL_FPGA/VERILOG/aula28_CSA; Project name: aula28_CSA
+prj_project new -name "aula28_CSA" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_CSA/CSA.v"
+source "D:/RTL_FPGA/VERILOG/aula28_CSA/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "csa_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_CSA/sim_csa/sim_csa.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_CSA/CSA.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_CSA/csa_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula28_CSA/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "parameterized_csa_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_CSA/sim_csa_param/sim_csa_param.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_CSA/parameterized_csa_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_CSA.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/RTL_FPGA/VERILOG/aula28_CSA/parameterized_csa_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/RTL_FPGA/VERILOG/aula28_CSA/CSA_param.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_CSA/parameterized_csa_tf.v"
+source "D:/RTL_FPGA/VERILOG/aula28_CSA/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "multiplier_csa_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula28_CSA/sim_mulitplier_CSA_completo/sim_mulitplier_CSA_completo.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_csa_tf.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula28_CSA/multiplier_CSA.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula28_CSA/parameterized_csa_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 5/14/2025 20:54:54

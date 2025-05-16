@@ -7,11 +7,28 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 
 Running DRC...
 
-WARNING - synthesis: logical net 'GND_net' has no load.
-WARNING - synthesis: DRC complete with 1 warnings.
+WARNING - synthesis: logical net 'dados[3]' has no load.
+WARNING - synthesis: input pad net 'dados[3]' has no legal load.
+WARNING - synthesis: logical net 'dados[2]' has no load.
+WARNING - synthesis: input pad net 'dados[2]' has no legal load.
+WARNING - synthesis: logical net 'dados[1]' has no load.
+WARNING - synthesis: input pad net 'dados[1]' has no legal load.
+WARNING - synthesis: logical net 'dados[0]' has no load.
+WARNING - synthesis: input pad net 'dados[0]' has no legal load.
+WARNING - synthesis: logical net 'sel21' has no load.
+WARNING - synthesis: input pad net 'sel21' has no legal load.
+WARNING - synthesis: logical net 'escrita_c' has no load.
+WARNING - synthesis: logical net 'clk_c' has no load.
+WARNING - synthesis: logical net 'sel12_c' has no load.
+WARNING - synthesis: logical net 'Cin_c' has no load.
+WARNING - synthesis: logical net 'reset_c' has no load.
+WARNING - synthesis: logical net 'addr_c_0' has no load.
+WARNING - synthesis: logical net 'addr_c_1' has no load.
+WARNING - synthesis: logical net 'operacao_c_0' has no load.
+WARNING - synthesis: DRC complete with 18 warnings.
 
 Design Results:
-     96 blocks expanded
+     20 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file aula26_datapath_impl1.ngd.

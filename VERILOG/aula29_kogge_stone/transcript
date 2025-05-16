@@ -1,0 +1,54 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/VERILOG/aula29_kogge_stone/sim_kogge_stone/sim_kogge_stone.mdo}
+# Loading project sim_kogge_stone
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:12:54 on May 15,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula29_kogge_stone" -work work D:/RTL_FPGA/VERILOG/aula29_kogge_stone/kogge_stone_sum.v 
+# -- Compiling module KoggeStone
+# 
+# Top level modules:
+# 	KoggeStone
+# End time: 21:12:54 on May 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:12:54 on May 15,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/VERILOG/aula29_kogge_stone" -work work D:/RTL_FPGA/VERILOG/aula29_kogge_stone/KoggeStone_tf.v 
+# -- Compiling module KoggeStone_tb
+# 
+# Top level modules:
+# 	KoggeStone_tb
+# End time: 21:12:54 on May 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u KoggeStone_tb 
+# Start time: 21:12:54 on May 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.KoggeStone_tb(fast)
+# Loading work.KoggeStone(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# A      B      Cin | Cout  Sum
+# 1101 1011 0 | 1 1000
+# 1111 1111 1 | 1 1111
+# 0000 0000 0 | 0 0000
+# 0000 0000 1 | 0 0001
+# ** Note: $finish    : D:/RTL_FPGA/VERILOG/aula29_kogge_stone/KoggeStone_tf.v(27)
+#    Time: 40 ns  Iteration: 0  Instance: /KoggeStone_tb
+# 1
+# Break in Module KoggeStone_tb at D:/RTL_FPGA/VERILOG/aula29_kogge_stone/KoggeStone_tf.v line 27
+# End time: 21:13:51 on May 15,2025, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 6
