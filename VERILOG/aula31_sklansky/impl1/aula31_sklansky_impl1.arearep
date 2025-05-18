@@ -1,0 +1,11 @@
+----------------------------------------------------------------------
+Report for cell Sklansky_par.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         9          100.0
+                               LUT4        16          100.0
+                                 OB         5          100.0
+                              TOTAL        31

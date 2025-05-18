@@ -1,0 +1,7 @@
+#Start recording tcl command: 5/16/2025 19:04:53
+#Project Location: D:/RTL_FPGA/VHDL/aula23_sub_paralelo; Project name: aula23_sub_paralelo
+prj_project open "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/aula23_sub_paralelo.ldf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula31_sklansky/tree_adder_sklansky.v"
+prj_project save
+prj_project close
+#Stop recording: 5/16/2025 19:31:37

@@ -1,0 +1,8 @@
+#Start recording tcl command: 5/16/2025 19:58:13
+#Project Location: D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante; Project name: ponto_fixo_ponto_flutuante
+prj_project new -name "ponto_fixo_ponto_flutuante" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+prj_project save
+prj_project close
+#Stop recording: 5/16/2025 20:17:49

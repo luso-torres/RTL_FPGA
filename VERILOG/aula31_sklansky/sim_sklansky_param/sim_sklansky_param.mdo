@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula31_sklansky/sim_sklansky_param/sim_sklansky_param.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula31_sklansky/sim_sklansky_param" sim_sklansky_param
+	project addfile "D:/RTL_FPGA/VERILOG/aula31_sklansky/sklansky_param.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula31_sklansky/Sklansky_par_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula31_sklansky  -work work  "D:/RTL_FPGA/VERILOG/aula31_sklansky/sklansky_param.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula31_sklansky  -work work  "D:/RTL_FPGA/VERILOG/aula31_sklansky/Sklansky_par_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula31_sklansky/sim_sklansky_param/sim_sklansky_param"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  Sklansky_par_tb
+view wave
+add wave /*
+run 1000ns

@@ -1,0 +1,20 @@
+#Start recording tcl command: 5/16/2025 19:31:39
+#Project Location: D:/RTL_FPGA/VERILOG/aula31_sklansky; Project name: aula31_sklansky
+prj_project new -name "aula31_sklansky" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/aula31_sklansky/adder_sklansky.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula31_sklansky/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "Sklansky_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula31_sklansky/sim_sklansky/sim_sklansky.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula31_sklansky/adder_sklansky.v"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula31_sklansky/Sklansky_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula31_sklansky/sklansky_param.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula31_sklansky/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "Sklansky_par_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula31_sklansky/sim_sklansky_param/sim_sklansky_param.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/16/2025 19:58:12
