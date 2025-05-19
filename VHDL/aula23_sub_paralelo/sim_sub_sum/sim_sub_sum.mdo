@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_sum/sim_sub_sum.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_sum" sim_sub_sum
+	project addfile "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_sum/sim_sub_sum"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  sum_sub_tb
+view wave
+add wave /*
+run 1000ns

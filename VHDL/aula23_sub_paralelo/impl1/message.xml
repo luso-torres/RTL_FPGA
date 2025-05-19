@@ -18,22 +18,6 @@
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(3): </Dynamic>
-            <Dynamic>subtractor_complement</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd</Navigation>
-            <Navigation>3</Navigation>
-        </Message>
-        <Message>
-            <ID>35921010</ID>
-            <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(13): </Dynamic>
-            <Dynamic>behavioral</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd</Navigation>
-            <Navigation>13</Navigation>
-        </Message>
-        <Message>
-            <ID>35921012</ID>
-            <Severity>Info</Severity>
             <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd(3): </Dynamic>
             <Dynamic>param_clah</Dynamic>
             <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd</Navigation>
@@ -48,13 +32,29 @@
             <Navigation>13</Navigation>
         </Message>
         <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd(5): </Dynamic>
+            <Dynamic>sum_sub</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd(14): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
             <ID>35921205</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(11): </Dynamic>
-            <Dynamic>subtractor_complement</Dynamic>
+            <Dynamic>d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd(12): </Dynamic>
+            <Dynamic>sum_sub</Dynamic>
             <Dynamic>behavioral</Dynamic>
-            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd</Navigation>
-            <Navigation>11</Navigation>
+            <Navigation>d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd</Navigation>
+            <Navigation>12</Navigation>
         </Message>
         <Message>
             <ID>35001611</ID>

@@ -1,0 +1,16 @@
+#Start recording tcl command: 5/19/2025 07:50:56
+#Project Location: D:/RTL_FPGA/VHDL/aula23_sub_paralelo; Project name: aula23_sub_paralelo
+prj_project open "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/aula23_sub_paralelo.ldf"
+prj_src enable "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "sum_sub_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_sum/sim_sub_sum.spf"
+prj_src add "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_sum/sim_sub_sum.spf"
+#Stop recording: 5/19/2025 09:02:28

@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed May 14 21:06:56 2025
+Mon May 19 08:10:36 2025
 
 
 Command Line:  synthesis -f aula23_sub_paralelo_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/VHDL/aula23_sub_paralelo/promote.xml 
@@ -38,7 +38,7 @@ Using performance grade 6.
 
     <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
 Optimization goal = Timing
-Top-level module name = subtractor_complement.
+Top-level module name = sum_sub.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -68,8 +68,8 @@ The -syn option is FALSE.
 -p D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1 (searchpath added)
 -p D:/RTL_FPGA/VHDL/aula23_sub_paralelo (searchpath added)
 VHDL library = work
-VHDL design file = D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd
 VHDL design file = D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd
+VHDL design file = D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub.vhd
 NGD file = aula23_sub_paralelo_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -81,27 +81,27 @@ Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADER
 Compile design.
 Compile Design Begin
     <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1"  />
-Analyzing VHDL file d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd. VHDL-1481
-    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(3): " arg1="subtractor_complement" arg2="d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd" arg3="3"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(13): " arg1="behavioral" arg2="d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd" arg3="13"  />
-unit subtractor_complement is not yet analyzed. VHDL-1485
 Analyzing VHDL file d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd. VHDL-1481
     <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd(3): " arg1="param_clah" arg2="d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd" arg3="3"  />
     <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd(13): " arg1="behaviour" arg2="d:/rtl_fpga/vhdl/aula23_sub_paralelo/impl1/source/param_clah.vhd" arg3="13"  />
-unit subtractor_complement is not yet analyzed. VHDL-1485
-unit subtractor_complement is not yet analyzed. VHDL-1485
-d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(3): executing subtractor_complement(behavioral)
+unit sum_sub is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd(5): " arg1="sum_sub" arg2="d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd" arg3="5"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd(14): " arg1="behavioral" arg2="d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd" arg3="14"  />
+unit sum_sub is not yet analyzed. VHDL-1485
+unit sum_sub is not yet analyzed. VHDL-1485
+d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd(5): executing sum_sub(behavioral)
 
-    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd(11): " arg1="subtractor_complement" arg2="behavioral" arg3="d:/rtl_fpga/vhdl/aula23_sub_paralelo/subtractor_2complement.vhd" arg4="11"  />
-Top module name (VHDL): subtractor_complement
-Last elaborated design is subtractor_complement(behavioral)
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd(12): " arg1="sum_sub" arg2="behavioral" arg3="d:/rtl_fpga/vhdl/aula23_sub_paralelo/sum_sub.vhd" arg4="12"  />
+Top module name (VHDL): sum_sub
+Last elaborated design is sum_sub(behavioral)
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.50.
-Top-level module name = subtractor_complement.
+Top-level module name = sum_sub.
 
 
 
@@ -109,7 +109,7 @@ GSR will not be inferred because no asynchronous signal was found in the netlist
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
-Results of NGD DRC are available in subtractor_complement_drc.log.
+Results of NGD DRC are available in sum_sub_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -122,16 +122,16 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
 
 Design Results:
-     30 blocks expanded
+     42 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file aula23_sub_paralelo_impl1.ngd.
 
-################### Begin Area Report (subtractor_complement)######################
+################### Begin Area Report (sum_sub)######################
 Number of register bits => 0 of 44439 (0 % )
 GSR => 1
-IB => 9
-LUT4 => 12
+IB => 13
+LUT4 => 20
 OB => 5
 ################### End Area Report ##################
 
@@ -143,20 +143,20 @@ Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : B_c_0, loads : 7
-  Net : B_c_2, loads : 5
-  Net : B_c_1, loads : 5
-  Net : A_c_2, loads : 3
-  Net : B_C2/n102, loads : 3
-  Net : A_c_3, loads : 2
-  Net : A_c_1, loads : 2
-  Net : A_c_0, loads : 2
-  Net : B_c_3, loads : 2
-  Net : Brin_c, loads : 2
+  Net : Sub_c_0, loads : 6
+  Net : A_c_0, loads : 5
+  Net : B_c_0, loads : 5
+  Net : Cin_c, loads : 5
+  Net : n78, loads : 4
+  Net : A_c_1, loads : 3
+  Net : B_c_1, loads : 3
+  Net : Sub_c_1, loads : 3
+  Net : n82, loads : 3
+  Net : n80, loads : 3
 ################### End Clock Report ##################
 
-Peak Memory Usage: 105.746  MB
+Peak Memory Usage: 105.656  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 1.109  secs
+Elapsed CPU time for LSE flow : 0.688  secs
 --------------------------------------------------------------

@@ -31,9 +31,9 @@
 
 
 -lpf 1
--lib "work" -vhd "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd"
-"D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd"
--top subtractor_complement
+-lib "work" -vhd "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd"
+"D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub.vhd"
+-top sum_sub
 
 
 -p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1" "D:/RTL_FPGA/VHDL/aula23_sub_paralelo"

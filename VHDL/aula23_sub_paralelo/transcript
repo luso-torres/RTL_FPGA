@@ -13,49 +13,103 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# do {D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_paralelo/sim_sub_paralelo.mdo}
-# Loading project sim_sub_paralelo
+# do {D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sim_sub_sum/sim_sub_sum.mdo}
+# Loading project sim_sub_sum
 # Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 21:04:24 on May 14,2025
+# Start time: 08:26:34 on May 19,2025
 # vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/aula23_sub_paralelo/impl1/source/param_clah.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity param_clah
 # -- Compiling architecture behaviour of param_clah
-# End time: 21:04:24 on May 14,2025, Elapsed time: 0:00:00
+# End time: 08:26:34 on May 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 21:04:24 on May 14,2025
-# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_2complement.vhd 
+# Start time: 08:26:34 on May 19,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity subtractor_complement
-# -- Compiling architecture behavioral of subtractor_complement
-# End time: 21:04:24 on May 14,2025, Elapsed time: 0:00:00
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sum_sub
+# -- Compiling architecture behavioral of sum_sub
+# End time: 08:26:34 on May 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 21:04:25 on May 14,2025
-# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/aula23_sub_paralelo/subtractor_complement_tb.vhd 
+# Start time: 08:26:34 on May 19,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_subtractor_complement
-# -- Compiling architecture behavior of tb_subtractor_complement
-# End time: 21:04:25 on May 14,2025, Elapsed time: 0:00:00
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sum_sub_tb
+# -- Compiling architecture behavior of sum_sub_tb
+# End time: 08:26:34 on May 19,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u tb_subtractor_complement 
-# Start time: 21:04:25 on May 14,2025
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u sum_sub_tb 
+# Start time: 08:26:34 on May 19,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_subtractor_complement(behavior)#1
-# Loading work.subtractor_complement(behavioral)#1
+# Loading ieee.numeric_std(body)
+# Loading work.sum_sub_tb(behavior)#1
+# Loading work.sum_sub(behavioral)#1
 # Loading work.param_clah(behaviour)#1
+# Loading work.param_clah(behaviour)#2
 # .main_pane.wave.interior.cs.body.pw.wf
-# End time: 21:08:12 on May 14,2025, Elapsed time: 0:03:47
-# Errors: 0, Warnings: 7
+# Compile of param_clah.vhd was successful.
+# Compile of sum_sub.vhd was successful.
+# Compile of sum_sub_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sum_sub_tb(behavior)#1
+# Loading work.sum_sub(behavioral)#1
+# Loading work.param_clah(behaviour)#1
+# Loading work.param_clah(behaviour)#2
+run
+# Causality operation skipped due to absence of debug database file
+# Compile of param_clah.vhd was successful.
+# Compile of sum_sub.vhd was successful.
+# Compile of sum_sub_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run
+# Compile of param_clah.vhd was successful.
+# Compile of sum_sub.vhd was successful.
+# Compile of sum_sub_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of param_clah.vhd was successful.
+# Compile of sum_sub.vhd was successful.
+# Compile of sum_sub_tb.vhd was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sum_sub_tb(behavior)#1
+# Loading work.sum_sub(behavioral)#1
+# Loading work.param_clah(behaviour)#1
+# Loading work.param_clah(behaviour)#2
+run
+# End time: 08:58:20 on May 19,2025, Elapsed time: 0:31:46
+# Errors: 0, Warnings: 2

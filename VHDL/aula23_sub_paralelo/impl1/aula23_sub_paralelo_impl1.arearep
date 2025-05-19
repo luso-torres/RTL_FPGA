@@ -1,29 +1,29 @@
 ----------------------------------------------------------------------
-Report for cell subtractor_complement.TECH
+Report for cell sum_sub.TECH
 Register bits:  0 of 44439 (0.000%)
-I/O cells:      14
+I/O cells:      18
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 GSR         1          100.0
-                                 IB         9          100.0
-                               LUT4        12          100.0
+                                 IB        13          100.0
+                               LUT4        20          100.0
                                  OB         5          100.0
                         VERIFIC_PWR         1          100.0
 SUB MODULES
                       param_clah(4)         1
-                   param_clah(4)_U0         1
-                              TOTAL        30
-----------------------------------------------------------------------
-Report for cell param_clah(4)_U0.v1
-Instance Path : B_C2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         8           66.7
-                              TOTAL         8
+                      param_clah(5)         1
+                              TOTAL        42
 ----------------------------------------------------------------------
 Report for cell param_clah(4).v1
-Instance Path : Sum
+Instance Path : sum1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         4           33.3
+                               LUT4         4           20.0
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell param_clah(5).v1
+Instance Path : sum2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4           20.0
                               TOTAL         4
