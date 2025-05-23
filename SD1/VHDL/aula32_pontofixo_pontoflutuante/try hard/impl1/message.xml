@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(4): </Dynamic>
+            <Dynamic>ponto_fixo</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(13): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd(3): </Dynamic>
+            <Dynamic>param_sub</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd(13): </Dynamic>
+            <Dynamic>behaviour</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd(3): </Dynamic>
+            <Dynamic>param_clah</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd(13): </Dynamic>
+            <Dynamic>behaviour</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd(4): </Dynamic>
+            <Dynamic>full_subtrator</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd(11): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(77): </Dynamic>
+            <Dynamic>x</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(78): </Dynamic>
+            <Dynamic>cout</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd</Navigation>
+            <Navigation>78</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(80): </Dynamic>
+            <Dynamic>y</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(81): </Dynamic>
+            <Dynamic>brout</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd</Navigation>
+            <Navigation>81</Navigation>
+        </Message>
+        <Message>
+            <ID>35921613</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(83): </Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd</Navigation>
+            <Navigation>83</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(11): </Dynamic>
+            <Dynamic>ponto_fixo</Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

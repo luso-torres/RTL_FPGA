@@ -1,0 +1,47 @@
+#Start recording tcl command: 5/21/2025 12:35:33
+#Project Location: D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante; Project name: ponto_fixo_ponto_flutuante
+prj_project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/ponto_fixo_ponto_flutuante.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo.spf"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo.spf"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/sum_sub.vhd"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/subtrador_completo_behav.v"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/fix_ss_tb.vhd"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/param_sub.vhd"
+source "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "param_clah_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_clah/sim_clah.spf"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/param_clah_tb.vhd"
+prj_src enable "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+prj_src enable "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/fix_ss_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo.spf"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo.spf"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo.spf"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/mult_fixo.vhd"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/mult_fixo.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd"
+prj_src exclude "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/fix_ss_tb.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mult_fixo_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_mult_fixo/sim_mult_fixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_mult_fixo/sim_mult_fixo.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/21/2025 15:40:51

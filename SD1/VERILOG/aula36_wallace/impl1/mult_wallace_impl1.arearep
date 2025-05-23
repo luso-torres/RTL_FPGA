@@ -1,0 +1,84 @@
+----------------------------------------------------------------------
+Report for cell wallace_estrutural.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         8          100.0
+                               LUT4        35          100.0
+                                 OB         8          100.0
+                              PFUMX         2          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                 full_adder_wallace         1
+              full_adder_wallace_U5         1
+                 half_adder_wallace         1
+              half_adder_wallace_U0         1
+              half_adder_wallace_U1         1
+              half_adder_wallace_U2         1
+              half_adder_wallace_U3         1
+              half_adder_wallace_U4         1
+                              TOTAL        63
+----------------------------------------------------------------------
+Report for cell half_adder_wallace_U4.v1
+Instance Path : fa33
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            5.7
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell full_adder_wallace_U5.v1
+Instance Path : fa13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            2.9
+SUB MODULES
+              half_adder_wallace_U1         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell half_adder_wallace_U1.v1
+Instance Path : fa13.ha2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            2.9
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_adder_wallace_U2.v1
+Instance Path : ha22
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            2.9
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell full_adder_wallace.v1
+Instance Path : fa35
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            5.7
+SUB MODULES
+                 half_adder_wallace         1
+              half_adder_wallace_U0         1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell half_adder_wallace.v1
+Instance Path : fa35.ha2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            2.9
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_adder_wallace_U0.v1
+Instance Path : fa35.ha1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            2.9
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell half_adder_wallace_U3.v1
+Instance Path : ha14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4           11.4
+                              PFUMX         1           50.0
+                              TOTAL         5

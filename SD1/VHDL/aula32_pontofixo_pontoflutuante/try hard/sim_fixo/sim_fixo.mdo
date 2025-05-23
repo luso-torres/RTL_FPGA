@@ -1,0 +1,23 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/sim_fixo/sim_fixo.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/sim_fixo" sim_fixo
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/sim_fixo/sim_fixo"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  ponto_fixo_tb
+view wave
+add wave /*
+run 1000ns

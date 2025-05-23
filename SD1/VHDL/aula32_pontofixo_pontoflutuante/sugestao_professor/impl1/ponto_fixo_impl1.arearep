@@ -1,0 +1,12 @@
+----------------------------------------------------------------------
+Report for cell ponto_fixo.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      26
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         5          100.0
+                                GSR         1          100.0
+                                 IB        17          100.0
+                               LUT4         9          100.0
+                                 OB         9          100.0
+                              TOTAL        41

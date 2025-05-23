@@ -1,0 +1,1542 @@
+<top name = "ponto_fixo"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "ponto_fixo">
+
+    <!--
+        Top Level Pins: 26
+    -->
+
+    <pins>
+        <pitem  name = "A[7]"  direction = "in"  />
+        <pitem  name = "A[6]"  direction = "in"  />
+        <pitem  name = "A[5]"  direction = "in"  />
+        <pitem  name = "A[4]"  direction = "in"  />
+        <pitem  name = "A[3]"  direction = "in"  />
+        <pitem  name = "A[2]"  direction = "in"  />
+        <pitem  name = "A[1]"  direction = "in"  />
+        <pitem  name = "A[0]"  direction = "in"  />
+        <pitem  name = "B[7]"  direction = "in"  />
+        <pitem  name = "B[6]"  direction = "in"  />
+        <pitem  name = "B[5]"  direction = "in"  />
+        <pitem  name = "B[4]"  direction = "in"  />
+        <pitem  name = "B[3]"  direction = "in"  />
+        <pitem  name = "B[2]"  direction = "in"  />
+        <pitem  name = "B[1]"  direction = "in"  />
+        <pitem  name = "B[0]"  direction = "in"  />
+        <pitem  name = "Op"  direction = "in"  />
+        <pitem  name = "Result[7]"  direction = "out"  />
+        <pitem  name = "Result[6]"  direction = "out"  />
+        <pitem  name = "Result[5]"  direction = "out"  />
+        <pitem  name = "Result[4]"  direction = "out"  />
+        <pitem  name = "Result[3]"  direction = "out"  />
+        <pitem  name = "Result[2]"  direction = "out"  />
+        <pitem  name = "Result[1]"  direction = "out"  />
+        <pitem  name = "Result[0]"  direction = "out"  />
+        <pitem  name = "CB"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 84
+    -->
+
+    <instance  name = "BComplemento2/A_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Binv[7]"  />
+        <nitem  name = "Binv[6]"  />
+        <nitem  name = "Binv[5]"  />
+        <nitem  name = "Binv[4]"  />
+        <nitem  name = "Binv[3]"  />
+        <nitem  name = "Binv[2]"  />
+        <nitem  name = "Binv[1]"  />
+        <nitem  name = "Binv[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "BComplemento2/G[7]"  />
+        <nitem  name = "BComplemento2/G[6]"  />
+        <nitem  name = "BComplemento2/G[5]"  />
+        <nitem  name = "BComplemento2/G[4]"  />
+        <nitem  name = "BComplemento2/G[3]"  />
+        <nitem  name = "BComplemento2/G[2]"  />
+        <nitem  name = "BComplemento2/G[1]"  />
+        <nitem  name = "BComplemento2/G[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BComplemento2/A_7__I_0_25"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Binv[7]"  />
+        <nitem  name = "Binv[6]"  />
+        <nitem  name = "Binv[5]"  />
+        <nitem  name = "Binv[4]"  />
+        <nitem  name = "Binv[3]"  />
+        <nitem  name = "Binv[2]"  />
+        <nitem  name = "Binv[1]"  />
+        <nitem  name = "Binv[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "BComplemento2/P[7]"  />
+        <nitem  name = "BComplemento2/P[6]"  />
+        <nitem  name = "BComplemento2/P[5]"  />
+        <nitem  name = "BComplemento2/P[4]"  />
+        <nitem  name = "BComplemento2/P[3]"  />
+        <nitem  name = "BComplemento2/P[2]"  />
+        <nitem  name = "BComplemento2/P[1]"  />
+        <nitem  name = "BComplemento2/P[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i[7]"  direction = "in"  />
+        <pitem  name = "i[6]"  direction = "in"  />
+        <pitem  name = "i[5]"  direction = "in"  />
+        <pitem  name = "i[4]"  direction = "in"  />
+        <pitem  name = "i[3]"  direction = "in"  />
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B[7]"  />
+        <nitem  name = "B[6]"  />
+        <nitem  name = "B[5]"  />
+        <nitem  name = "B[4]"  />
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "Binv[7]"  />
+        <nitem  name = "Binv[6]"  />
+        <nitem  name = "Binv[5]"  />
+        <nitem  name = "Binv[4]"  />
+        <nitem  name = "Binv[3]"  />
+        <nitem  name = "Binv[2]"  />
+        <nitem  name = "Binv[1]"  />
+        <nitem  name = "Binv[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUM/A_7__I_0_25"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[7]"  />
+        <nitem  name = "A[6]"  />
+        <nitem  name = "A[5]"  />
+        <nitem  name = "A[4]"  />
+        <nitem  name = "A[3]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "B[7]"  />
+        <nitem  name = "B[6]"  />
+        <nitem  name = "B[5]"  />
+        <nitem  name = "B[4]"  />
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "SUM/P[7]"  />
+        <nitem  name = "SUM/P[6]"  />
+        <nitem  name = "SUM/P[5]"  />
+        <nitem  name = "SUM/P[4]"  />
+        <nitem  name = "SUM/P[3]"  />
+        <nitem  name = "SUM/P[2]"  />
+        <nitem  name = "SUM/P[1]"  />
+        <nitem  name = "SUM/P[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[1].sub_n/A_I_0_12"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[1]"  />
+        <nitem  name = "Bc2[1]"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Y_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Y[7]"  />
+        <nitem  name = "Y[6]"  />
+        <nitem  name = "Y[5]"  />
+        <nitem  name = "Y[4]"  />
+        <nitem  name = "Y[3]"  />
+        <nitem  name = "Y[2]"  />
+        <nitem  name = "Y[1]"  />
+        <nitem  name = "Y[0]"  />
+        <nitem  name = "X[7]"  />
+        <nitem  name = "X[6]"  />
+        <nitem  name = "X[5]"  />
+        <nitem  name = "X[4]"  />
+        <nitem  name = "X[3]"  />
+        <nitem  name = "X[2]"  />
+        <nitem  name = "X[1]"  />
+        <nitem  name = "X[0]"  />
+        <nitem  name = "Op"  />
+        <nitem  name = "Result[7]"  />
+        <nitem  name = "Result[6]"  />
+        <nitem  name = "Result[5]"  />
+        <nitem  name = "Result[4]"  />
+        <nitem  name = "Result[3]"  />
+        <nitem  name = "Result[2]"  />
+        <nitem  name = "Result[1]"  />
+        <nitem  name = "Result[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Brout"  />
+        <nitem  name = "Cout"  />
+        <nitem  name = "Op"  />
+        <nitem  name = "CB"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BComplemento2/P_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "BComplemento2/C[7]"  />
+        <nitem  name = "BComplemento2/P[7]"  />
+        <nitem  name = "BComplemento2/Cout_N_8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BComplemento2/G_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "BComplemento2/Cout"  />
+        <nitem  name = "BComplemento2/G[7]"  />
+        <nitem  name = "BComplemento2/Cout_N_8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BComplemento2/P_7__I_0_26"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "Bc2[7]"  />
+        <nitem  name = "Bc2[6]"  />
+        <nitem  name = "Bc2[5]"  />
+        <nitem  name = "Bc2[4]"  />
+        <nitem  name = "Bc2[3]"  />
+        <nitem  name = "Bc2[2]"  />
+        <nitem  name = "Bc2[1]"  />
+        <nitem  name = "Bc2[0]"  />
+        <nitem  name = "BComplemento2/C[7]"  />
+        <nitem  name = "BComplemento2/C[6]"  />
+        <nitem  name = "BComplemento2/C[5]"  />
+        <nitem  name = "BComplemento2/C[4]"  />
+        <nitem  name = "BComplemento2/C[3]"  />
+        <nitem  name = "BComplemento2/C[2]"  />
+        <nitem  name = "BComplemento2/C[1]"  />
+        <nitem  name = "BComplemento2/P[7]"  />
+        <nitem  name = "BComplemento2/P[6]"  />
+        <nitem  name = "BComplemento2/P[5]"  />
+        <nitem  name = "BComplemento2/P[4]"  />
+        <nitem  name = "BComplemento2/P[3]"  />
+        <nitem  name = "BComplemento2/P[2]"  />
+        <nitem  name = "BComplemento2/P[1]"  />
+        <nitem  name = "BComplemento2/P[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BComplemento2/P_6__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "BComplemento2/C[6]"  />
+        <nitem  name = "BComplemento2/C[5]"  />
+        <nitem  name = "BComplemento2/C[4]"  />
+        <nitem  name = "BComplemento2/C[3]"  />
+        <nitem  name = "BComplemento2/C[2]"  />
+        <nitem  name = "BComplemento2/C[1]"  />
+        <nitem  name = "BComplemento2/P[6]"  />
+        <nitem  name = "BComplemento2/P[5]"  />
+        <nitem  name = "BComplemento2/P[4]"  />
+        <nitem  name = "BComplemento2/P[3]"  />
+        <nitem  name = "BComplemento2/P[2]"  />
+        <nitem  name = "BComplemento2/P[1]"  />
+        <nitem  name = "BComplemento2/P[0]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[0]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[1]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[2]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[3]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[4]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[5]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[6]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BComplemento2/G_6__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "BComplemento2/C[7]"  />
+        <nitem  name = "BComplemento2/C[6]"  />
+        <nitem  name = "BComplemento2/C[5]"  />
+        <nitem  name = "BComplemento2/C[4]"  />
+        <nitem  name = "BComplemento2/C[3]"  />
+        <nitem  name = "BComplemento2/C[2]"  />
+        <nitem  name = "BComplemento2/C[1]"  />
+        <nitem  name = "BComplemento2/G[6]"  />
+        <nitem  name = "BComplemento2/G[5]"  />
+        <nitem  name = "BComplemento2/G[4]"  />
+        <nitem  name = "BComplemento2/G[3]"  />
+        <nitem  name = "BComplemento2/G[2]"  />
+        <nitem  name = "BComplemento2/G[1]"  />
+        <nitem  name = "BComplemento2/G[0]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[0]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[1]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[2]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[3]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[4]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[5]"  />
+        <nitem  name = "BComplemento2/C_7__N_1[6]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUM/A_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[7]"  />
+        <nitem  name = "A[6]"  />
+        <nitem  name = "A[5]"  />
+        <nitem  name = "A[4]"  />
+        <nitem  name = "A[3]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "B[7]"  />
+        <nitem  name = "B[6]"  />
+        <nitem  name = "B[5]"  />
+        <nitem  name = "B[4]"  />
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "SUM/G[7]"  />
+        <nitem  name = "SUM/G[6]"  />
+        <nitem  name = "SUM/G[5]"  />
+        <nitem  name = "SUM/G[4]"  />
+        <nitem  name = "SUM/G[3]"  />
+        <nitem  name = "SUM/G[2]"  />
+        <nitem  name = "SUM/G[1]"  />
+        <nitem  name = "SUM/G[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUM/P_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUM/C[7]"  />
+        <nitem  name = "SUM/P[7]"  />
+        <nitem  name = "SUM/Cout_N_8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUM/G_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Cout"  />
+        <nitem  name = "SUM/G[7]"  />
+        <nitem  name = "SUM/Cout_N_8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUM/P_7__I_0_26"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "X[7]"  />
+        <nitem  name = "X[6]"  />
+        <nitem  name = "X[5]"  />
+        <nitem  name = "X[4]"  />
+        <nitem  name = "X[3]"  />
+        <nitem  name = "X[2]"  />
+        <nitem  name = "X[1]"  />
+        <nitem  name = "X[0]"  />
+        <nitem  name = "SUM/C[7]"  />
+        <nitem  name = "SUM/C[6]"  />
+        <nitem  name = "SUM/C[5]"  />
+        <nitem  name = "SUM/C[4]"  />
+        <nitem  name = "SUM/C[3]"  />
+        <nitem  name = "SUM/C[2]"  />
+        <nitem  name = "SUM/C[1]"  />
+        <nitem  name = "SUM/P[7]"  />
+        <nitem  name = "SUM/P[6]"  />
+        <nitem  name = "SUM/P[5]"  />
+        <nitem  name = "SUM/P[4]"  />
+        <nitem  name = "SUM/P[3]"  />
+        <nitem  name = "SUM/P[2]"  />
+        <nitem  name = "SUM/P[1]"  />
+        <nitem  name = "SUM/P[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUM/P_6__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "SUM/C[6]"  />
+        <nitem  name = "SUM/C[5]"  />
+        <nitem  name = "SUM/C[4]"  />
+        <nitem  name = "SUM/C[3]"  />
+        <nitem  name = "SUM/C[2]"  />
+        <nitem  name = "SUM/C[1]"  />
+        <nitem  name = "SUM/P[6]"  />
+        <nitem  name = "SUM/P[5]"  />
+        <nitem  name = "SUM/P[4]"  />
+        <nitem  name = "SUM/P[3]"  />
+        <nitem  name = "SUM/P[2]"  />
+        <nitem  name = "SUM/P[1]"  />
+        <nitem  name = "SUM/P[0]"  />
+        <nitem  name = "SUM/C_7__N_1[0]"  />
+        <nitem  name = "SUM/C_7__N_1[1]"  />
+        <nitem  name = "SUM/C_7__N_1[2]"  />
+        <nitem  name = "SUM/C_7__N_1[3]"  />
+        <nitem  name = "SUM/C_7__N_1[4]"  />
+        <nitem  name = "SUM/C_7__N_1[5]"  />
+        <nitem  name = "SUM/C_7__N_1[6]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUM/G_6__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUM/C[7]"  />
+        <nitem  name = "SUM/C[6]"  />
+        <nitem  name = "SUM/C[5]"  />
+        <nitem  name = "SUM/C[4]"  />
+        <nitem  name = "SUM/C[3]"  />
+        <nitem  name = "SUM/C[2]"  />
+        <nitem  name = "SUM/C[1]"  />
+        <nitem  name = "SUM/G[6]"  />
+        <nitem  name = "SUM/G[5]"  />
+        <nitem  name = "SUM/G[4]"  />
+        <nitem  name = "SUM/G[3]"  />
+        <nitem  name = "SUM/G[2]"  />
+        <nitem  name = "SUM/G[1]"  />
+        <nitem  name = "SUM/G[0]"  />
+        <nitem  name = "SUM/C_7__N_1[0]"  />
+        <nitem  name = "SUM/C_7__N_1[1]"  />
+        <nitem  name = "SUM/C_7__N_1[2]"  />
+        <nitem  name = "SUM/C_7__N_1[3]"  />
+        <nitem  name = "SUM/C_7__N_1[4]"  />
+        <nitem  name = "SUM/C_7__N_1[5]"  />
+        <nitem  name = "SUM/C_7__N_1[6]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[2].sub_n/A_I_0_12"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[2]"  />
+        <nitem  name = "Bc2[2]"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[3].sub_n/A_I_0_12"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[3]"  />
+        <nitem  name = "Bc2[3]"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[4].sub_n/A_I_0_12"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[4]"  />
+        <nitem  name = "Bc2[4]"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[5].sub_n/A_I_0_12"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[5]"  />
+        <nitem  name = "Bc2[5]"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[6].sub_n/A_I_0_12"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[6]"  />
+        <nitem  name = "Bc2[6]"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[7].sub_n/A_I_0_12"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[7]"  />
+        <nitem  name = "Bc2[7]"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[0].sub_n/A_I_0_12"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[0]"  />
+        <nitem  name = "Bc2[0]"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[1].sub_n/D_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[1]"  />
+        <nitem  name = "Y[1]"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[1].sub_n/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[1]"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/A_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[1].sub_n/Brout_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[1]"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/Brout_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[1].sub_n/B_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[1]"  />
+        <nitem  name = "SUBTRACTION/Br[1]"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/Brout_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[1].sub_n/A_N_12_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/Brout_N_14"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[1].sub_n/Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[2]"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/Brout_N_10"  />
+        <nitem  name = "SUBTRACTION/gen_block[1].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[2].sub_n/D_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[2]"  />
+        <nitem  name = "Y[2]"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[2].sub_n/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[2]"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/A_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[2].sub_n/Brout_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[2]"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/Brout_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[2].sub_n/B_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[2]"  />
+        <nitem  name = "SUBTRACTION/Br[2]"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/Brout_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[2].sub_n/A_N_12_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/Brout_N_14"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[2].sub_n/Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[3]"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/Brout_N_10"  />
+        <nitem  name = "SUBTRACTION/gen_block[2].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[3].sub_n/D_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[3]"  />
+        <nitem  name = "Y[3]"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[3].sub_n/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[3]"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/A_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[3].sub_n/Brout_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[3]"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/Brout_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[3].sub_n/B_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[3]"  />
+        <nitem  name = "SUBTRACTION/Br[3]"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/Brout_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[3].sub_n/A_N_12_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/Brout_N_14"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[3].sub_n/Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[4]"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/Brout_N_10"  />
+        <nitem  name = "SUBTRACTION/gen_block[3].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[4].sub_n/D_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[4]"  />
+        <nitem  name = "Y[4]"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[4].sub_n/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[4]"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/A_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[4].sub_n/Brout_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[4]"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/Brout_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[4].sub_n/B_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[4]"  />
+        <nitem  name = "SUBTRACTION/Br[4]"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/Brout_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[4].sub_n/A_N_12_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/Brout_N_14"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[4].sub_n/Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[5]"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/Brout_N_10"  />
+        <nitem  name = "SUBTRACTION/gen_block[4].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[5].sub_n/D_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[5]"  />
+        <nitem  name = "Y[5]"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[5].sub_n/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[5]"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/A_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[5].sub_n/Brout_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[5]"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/Brout_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[5].sub_n/B_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[5]"  />
+        <nitem  name = "SUBTRACTION/Br[5]"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/Brout_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[5].sub_n/A_N_12_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/Brout_N_14"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[5].sub_n/Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[6]"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/Brout_N_10"  />
+        <nitem  name = "SUBTRACTION/gen_block[5].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[6].sub_n/D_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[6]"  />
+        <nitem  name = "Y[6]"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[6].sub_n/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[6]"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/A_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[6].sub_n/Brout_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[6]"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/Brout_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[6].sub_n/B_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[6]"  />
+        <nitem  name = "SUBTRACTION/Br[6]"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/Brout_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[6].sub_n/A_N_12_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/Brout_N_14"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[6].sub_n/Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[7]"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/Brout_N_10"  />
+        <nitem  name = "SUBTRACTION/gen_block[6].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[7].sub_n/D_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[7]"  />
+        <nitem  name = "Y[7]"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[7].sub_n/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[7]"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/A_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[7].sub_n/Brout_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[7]"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/Brout_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[7].sub_n/B_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[7]"  />
+        <nitem  name = "SUBTRACTION/Br[7]"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/Brout_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[7].sub_n/A_N_12_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/Brout_N_14"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[7].sub_n/Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Brout"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/Brout_N_10"  />
+        <nitem  name = "SUBTRACTION/gen_block[7].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[0].sub_n/D_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "gnd"  />
+        <nitem  name = "Y[0]"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/D_N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[0].sub_n/A_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[0]"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/A_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[0].sub_n/Brout_I_1"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[0]"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/Brout_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[0].sub_n/B_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Bc2[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/Brout_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[0].sub_n/A_N_12_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/A_N_12"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/Brout_N_14"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "SUBTRACTION/gen_block[0].sub_n/Brout_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "SUBTRACTION/Br[1]"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/Brout_N_10"  />
+        <nitem  name = "SUBTRACTION/gen_block[0].sub_n/Brout_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "BComplemento2"  />
+    <instance  name = "SUBTRACTION"  />
+    <instance  name = "SUM"  />
+    <instance  name = "gen_block[0].sub_n"  />
+    <instance  name = "gen_block[1].sub_n"  />
+    <instance  name = "gen_block[2].sub_n"  />
+    <instance  name = "gen_block[3].sub_n"  />
+    <instance  name = "gen_block[4].sub_n"  />
+    <instance  name = "gen_block[5].sub_n"  />
+    <instance  name = "gen_block[6].sub_n"  />
+    <instance  name = "gen_block[7].sub_n"  />
+    <!--
+        Views in design "ponto_fixo": 3
+    -->
+
+    <views>
+        <view  name = "full_subtrator"  />
+        <view  name = "param_clah(8)"  />
+        <view  name = "param_sub(8)"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

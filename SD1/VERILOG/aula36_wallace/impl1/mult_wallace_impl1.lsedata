@@ -1,0 +1,862 @@
+<top name = "wallace_estrutural"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "wallace_estrutural">
+
+    <!--
+        Top Level Pins: 16
+    -->
+
+    <pins>
+        <pitem  name = "A[3]"  direction = "in"  />
+        <pitem  name = "A[2]"  direction = "in"  />
+        <pitem  name = "A[1]"  direction = "in"  />
+        <pitem  name = "A[0]"  direction = "in"  />
+        <pitem  name = "B[3]"  direction = "in"  />
+        <pitem  name = "B[2]"  direction = "in"  />
+        <pitem  name = "B[1]"  direction = "in"  />
+        <pitem  name = "B[0]"  direction = "in"  />
+        <pitem  name = "Produto[7]"  direction = "out"  />
+        <pitem  name = "Produto[6]"  direction = "out"  />
+        <pitem  name = "Produto[5]"  direction = "out"  />
+        <pitem  name = "Produto[4]"  direction = "out"  />
+        <pitem  name = "Produto[3]"  direction = "out"  />
+        <pitem  name = "Produto[2]"  direction = "out"  />
+        <pitem  name = "Produto[1]"  direction = "out"  />
+        <pitem  name = "Produto[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 66
+    -->
+
+    <instance  name = "fa12/ha1_carry_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c12"  />
+        <nitem  name = "fa12/ha1_carry"  />
+        <nitem  name = "fa12/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa12/ha1/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a2b0"  />
+        <nitem  name = "a1b1"  />
+        <nitem  name = "fa12/ha1_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ha11/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a0b1"  />
+        <nitem  name = "a1b0"  />
+        <nitem  name = "c11"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ha11/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a0b1"  />
+        <nitem  name = "a1b0"  />
+        <nitem  name = "Produto[1]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_3__I_0_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "a0b3"  />
+        <nitem  name = "a0b2"  />
+        <nitem  name = "a0b1"  />
+        <nitem  name = "Produto[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_3__I_0_9"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "a1b3"  />
+        <nitem  name = "a1b2"  />
+        <nitem  name = "a1b1"  />
+        <nitem  name = "a1b0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_3__I_0_10"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "a2b3"  />
+        <nitem  name = "a2b2"  />
+        <nitem  name = "a2b1"  />
+        <nitem  name = "a2b0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "B_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "A[3]"  />
+        <nitem  name = "a3b3"  />
+        <nitem  name = "a3b2"  />
+        <nitem  name = "a3b1"  />
+        <nitem  name = "a3b0"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa13/ha1/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a3b0"  />
+        <nitem  name = "a2b1"  />
+        <nitem  name = "fa13/ha1_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa23/ha1/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a0b3"  />
+        <nitem  name = "s13"  />
+        <nitem  name = "fa23/ha1_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ha14/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a3b1"  />
+        <nitem  name = "a2b2"  />
+        <nitem  name = "s14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ha22/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "s12"  />
+        <nitem  name = "c11"  />
+        <nitem  name = "Produto[2]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa24/ha1/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a1b3"  />
+        <nitem  name = "s14"  />
+        <nitem  name = "fa24/ha1_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa25/ha1/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a3b2"  />
+        <nitem  name = "a2b3"  />
+        <nitem  name = "fa25/ha1_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa34/ha1/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "s24"  />
+        <nitem  name = "c23"  />
+        <nitem  name = "fa34/ha1_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa33/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "s23"  />
+        <nitem  name = "c22"  />
+        <nitem  name = "Produto[3]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa35/ha1/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "s25"  />
+        <nitem  name = "c24"  />
+        <nitem  name = "fa35/ha1_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa36/ha1/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a3b3"  />
+        <nitem  name = "c25"  />
+        <nitem  name = "fa36/ha1_sum"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa13/ha2/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a1b2"  />
+        <nitem  name = "fa13/ha1_sum"  />
+        <nitem  name = "s13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa23/ha2/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c12"  />
+        <nitem  name = "fa23/ha1_sum"  />
+        <nitem  name = "s23"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa13/ha1_carry_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c13"  />
+        <nitem  name = "fa13/ha1_carry"  />
+        <nitem  name = "fa13/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ha14/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a3b1"  />
+        <nitem  name = "a2b2"  />
+        <nitem  name = "c14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ha22/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "s12"  />
+        <nitem  name = "c11"  />
+        <nitem  name = "c22"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa24/ha2/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c13"  />
+        <nitem  name = "fa24/ha1_sum"  />
+        <nitem  name = "s24"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa23/ha1_carry_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c23"  />
+        <nitem  name = "fa23/ha1_carry"  />
+        <nitem  name = "fa23/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa25/ha2/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c14"  />
+        <nitem  name = "fa25/ha1_sum"  />
+        <nitem  name = "s25"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa24/ha1_carry_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c24"  />
+        <nitem  name = "fa24/ha1_carry"  />
+        <nitem  name = "fa24/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa34/ha2/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c33"  />
+        <nitem  name = "fa34/ha1_sum"  />
+        <nitem  name = "Produto[4]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa25/ha1_carry_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c25"  />
+        <nitem  name = "fa25/ha1_carry"  />
+        <nitem  name = "fa25/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa33/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "s23"  />
+        <nitem  name = "c22"  />
+        <nitem  name = "c33"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa35/ha2/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c34"  />
+        <nitem  name = "fa35/ha1_sum"  />
+        <nitem  name = "Produto[5]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa34/ha1_carry_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c34"  />
+        <nitem  name = "fa34/ha1_carry"  />
+        <nitem  name = "fa34/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa36/ha2/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c35"  />
+        <nitem  name = "fa36/ha1_sum"  />
+        <nitem  name = "Produto[6]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa35/ha1_carry_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c35"  />
+        <nitem  name = "fa35/ha1_carry"  />
+        <nitem  name = "fa35/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa12/ha2/Data_in_A_I_0_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a0b2"  />
+        <nitem  name = "fa12/ha1_sum"  />
+        <nitem  name = "s12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa36/ha1_carry_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "Produto[7]"  />
+        <nitem  name = "fa36/ha1_carry"  />
+        <nitem  name = "fa36/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa13/ha2/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a1b2"  />
+        <nitem  name = "fa13/ha1_sum"  />
+        <nitem  name = "fa13/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa23/ha2/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c12"  />
+        <nitem  name = "fa23/ha1_sum"  />
+        <nitem  name = "fa23/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa24/ha2/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c13"  />
+        <nitem  name = "fa24/ha1_sum"  />
+        <nitem  name = "fa24/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa25/ha2/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c14"  />
+        <nitem  name = "fa25/ha1_sum"  />
+        <nitem  name = "fa25/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa34/ha2/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c33"  />
+        <nitem  name = "fa34/ha1_sum"  />
+        <nitem  name = "fa34/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa35/ha2/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c34"  />
+        <nitem  name = "fa35/ha1_sum"  />
+        <nitem  name = "fa35/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa36/ha2/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "c35"  />
+        <nitem  name = "fa36/ha1_sum"  />
+        <nitem  name = "fa36/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa12/ha2/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a0b2"  />
+        <nitem  name = "fa12/ha1_sum"  />
+        <nitem  name = "fa12/ha2_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa12/ha1/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a2b0"  />
+        <nitem  name = "a1b1"  />
+        <nitem  name = "fa12/ha1_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa13/ha1/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a3b0"  />
+        <nitem  name = "a2b1"  />
+        <nitem  name = "fa13/ha1_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa23/ha1/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a0b3"  />
+        <nitem  name = "s13"  />
+        <nitem  name = "fa23/ha1_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa24/ha1/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a1b3"  />
+        <nitem  name = "s14"  />
+        <nitem  name = "fa24/ha1_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa25/ha1/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a3b2"  />
+        <nitem  name = "a2b3"  />
+        <nitem  name = "fa25/ha1_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa34/ha1/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "s24"  />
+        <nitem  name = "c23"  />
+        <nitem  name = "fa34/ha1_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa35/ha1/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "s25"  />
+        <nitem  name = "c24"  />
+        <nitem  name = "fa35/ha1_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa36/ha1/Data_in_A_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "a3b3"  />
+        <nitem  name = "c25"  />
+        <nitem  name = "fa36/ha1_carry"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fa12"  />
+    <instance  name = "fa13"  />
+    <instance  name = "fa23"  />
+    <instance  name = "fa24"  />
+    <instance  name = "fa25"  />
+    <instance  name = "fa33"  />
+    <instance  name = "fa34"  />
+    <instance  name = "fa35"  />
+    <instance  name = "fa36"  />
+    <instance  name = "ha1"  />
+    <instance  name = "ha11"  />
+    <instance  name = "ha14"  />
+    <instance  name = "ha2"  />
+    <instance  name = "ha22"  />
+    <!--
+        Views in design "wallace_estrutural": 2
+    -->
+
+    <views>
+        <view  name = "full_adder_wallace"  />
+        <view  name = "half_adder_wallace"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

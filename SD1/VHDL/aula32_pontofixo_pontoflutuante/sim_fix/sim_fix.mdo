@@ -1,0 +1,25 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fix/sim_fix.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fix" sim_fix
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/subtrador_completo_behav.v"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/param_sub.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/sum_sub.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/fix_ss_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source  -work work  "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/subtrador_completo_behav.v"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/param_sub.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/sum_sub.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/fix_ss_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fix/sim_fix"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  fix_ss_tb
+view wave
+add wave /*
+run 1000ns

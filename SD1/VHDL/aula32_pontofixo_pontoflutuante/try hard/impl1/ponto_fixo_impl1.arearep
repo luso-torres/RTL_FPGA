@@ -1,0 +1,56 @@
+----------------------------------------------------------------------
+Report for cell ponto_fixo.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      26
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        17          100.0
+                               LUT4        35          100.0
+                                 OB         9          100.0
+                              PFUMX         8          100.0
+SUB MODULES
+                     full_subtrator         1
+                  full_subtrator_U0         1
+                      param_clah(8)         1
+                   param_clah(8)_U1         1
+                       param_sub(8)         1
+                              TOTAL        75
+----------------------------------------------------------------------
+Report for cell param_clah(8)_U1.v1
+Instance Path : BComplemento2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        13           37.1
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell param_sub(8).v1
+Instance Path : SUBTRACTION
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3            8.6
+SUB MODULES
+                     full_subtrator         1
+                  full_subtrator_U0         1
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell full_subtrator.v1
+Instance Path : SUBTRACTION.gen_block[7].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            5.7
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell full_subtrator_U0.v1
+Instance Path : SUBTRACTION.gen_block[0].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            2.9
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell param_clah(8).v1
+Instance Path : SUM
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         9           25.7
+                              TOTAL         9

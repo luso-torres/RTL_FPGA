@@ -1,0 +1,21 @@
+#Start recording tcl command: 5/21/2025 11:49:58
+#Project Location: D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor; Project name: ponto_fixo
+prj_project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/ponto_fixo.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "ponto_fixo_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/sim_ponto_fixo/sim_ponto_fixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/sim_fixo/sim_fixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/sim_fixo/sim_fixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/sim_fixo/sim_fixo.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/21/2025 12:35:32

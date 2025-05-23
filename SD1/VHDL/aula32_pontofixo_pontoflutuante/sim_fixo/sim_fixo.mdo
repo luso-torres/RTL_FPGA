@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo" sim_fixo
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/fix_ss_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/fix_ss_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  fix_ss_tb
+view wave
+add wave /*
+run 1000ns

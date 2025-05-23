@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_flux/sim_wallace_flux.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_flux" sim_wallace_flux
+	project addfile "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_fluxo.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_fluxo_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula36_wallace  -work work  "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_fluxo.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula36_wallace  -work work  "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_fluxo_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_flux/sim_wallace_flux"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  wallace_fluxo_tf
+view wave
+add wave /*
+run 1000ns

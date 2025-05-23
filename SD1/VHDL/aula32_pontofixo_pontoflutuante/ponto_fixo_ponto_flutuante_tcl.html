@@ -1,0 +1,150 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn250516201749"></A><B><U><big>pn250516201749</big></U></B>
+#Start recording tcl command: 5/16/2025 19:58:13
+#Project Location: D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante; Project name: ponto_fixo_ponto_flutuante
+prj_project new -name "ponto_fixo_ponto_flutuante" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sum.vhd"
+prj_project save
+prj_project close
+#Stop recording: 5/16/2025 20:17:49
+
+
+
+<A name="pn250519221010"></A><B><U><big>pn250519221010</big></U></B>
+#Start recording tcl command: 5/19/2025 19:16:26
+#Project Location: D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante; Project name: ponto_fixo_ponto_flutuante
+prj_project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/ponto_fixo_ponto_flutuante.ldf"
+file copy -force -- "D:/RTL_FPGA/VHDL/aula23_sub_paralelo/sum_sub.vhd" "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/sum_sub.vhd"
+file copy -force -- "D:/RTL_FPGA/VERILOG/aula19_clah/param_clah.vhd" "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "fix_ss_tb.vhd"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_ponto_flutuante/sim_ponto_flutuante.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_pontofixo/sim_pontofixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_pontofixo/sim_pontofixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_pontofixo/sim_pontofixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fixo/sim_fixo.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 5/19/2025 22:10:10
+
+
+
+<A name="pn250520185730"></A><B><U><big>pn250520185730</big></U></B>
+#Start recording tcl command: 5/20/2025 16:21:56
+#Project Location: D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante; Project name: ponto_fixo_ponto_flutuante
+prj_project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/ponto_fixo_ponto_flutuante.ldf"
+file copy -force -- "D:/RTL_FPGA/VERILOG/aula22_subtrator/subtrador_completo_behav.v" "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/subtrador_completo_behav.v"
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/param_sub.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_fix/sim_fix.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 5/20/2025 18:57:30
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

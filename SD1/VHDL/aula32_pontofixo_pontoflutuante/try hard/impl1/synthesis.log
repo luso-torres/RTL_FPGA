@@ -1,0 +1,166 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue May 20 21:19:59 2025
+
+
+Command Line:  synthesis -f ponto_fixo_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = ponto_fixo.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1 (searchpath added)
+-p D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard (searchpath added)
+VHDL library = work
+VHDL design file = D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd
+VHDL design file = D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd
+VHDL design file = D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd
+VHDL design file = D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd
+NGD file = ponto_fixo_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/try hard/impl1". VHDL-1504
+Analyzing VHDL file d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd. VHDL-1481
+INFO - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(4): analyzing entity ponto_fixo. VHDL-1012
+INFO - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(13): analyzing architecture behavioral. VHDL-1010
+unit ponto_fixo is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd. VHDL-1481
+INFO - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd(3): analyzing entity param_sub. VHDL-1012
+INFO - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_sub.vhd(13): analyzing architecture behaviour. VHDL-1010
+unit ponto_fixo is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd. VHDL-1481
+INFO - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd(3): analyzing entity param_clah. VHDL-1012
+INFO - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/impl1/source/param_clah.vhd(13): analyzing architecture behaviour. VHDL-1010
+unit ponto_fixo is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd. VHDL-1481
+INFO - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd(4): analyzing entity full_subtrator. VHDL-1012
+INFO - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/full_subtrator.vhd(11): analyzing architecture behavioral. VHDL-1010
+unit ponto_fixo is not yet analyzed. VHDL-1485
+unit ponto_fixo is not yet analyzed. VHDL-1485
+d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(4): executing ponto_fixo(behavioral)
+
+WARNING - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(77): x should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(78): cout should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(80): y should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(81): brout should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(83): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+WARNING - synthesis: d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/try hard/ponto_fixo.vhd(11): replacing existing netlist ponto_fixo(behavioral). VHDL-1205
+Top module name (VHDL): ponto_fixo
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = ponto_fixo.
+
+
+
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in ponto_fixo_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: DRC complete with 1 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file ponto_fixo_impl1.ngd.
+
+################### Begin Area Report (ponto_fixo)######################
+Number of register bits => 0 of 44439 (0 % )
+GSR => 1
+IB => 17
+LUT4 => 35
+OB => 9
+PFUMX => 8
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : B_c_0, loads : 8
+  Net : Op_c, loads : 8
+  Net : B_c_3, loads : 7
+  Net : B_c_2, loads : 7
+  Net : B_c_1, loads : 7
+  Net : B_c_5, loads : 6
+  Net : B_c_4, loads : 6
+  Net : B_c_6, loads : 5
+  Net : A_c_7, loads : 4
+  Net : A_c_6, loads : 4
+################### End Clock Report ##################
+
+Peak Memory Usage: 106.277  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.766  secs
+--------------------------------------------------------------

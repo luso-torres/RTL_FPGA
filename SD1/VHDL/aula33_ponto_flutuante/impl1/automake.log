@@ -1,0 +1,167 @@
+
+synthesis -f "ponto_flutuante_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Thu May 22 10:20:05 2025
+
+
+Command Line:  synthesis -f ponto_flutuante_impl1_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = ieee754_adder.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/impl1 (searchpath added)
+-p D:/RTL_FPGA/VHDL/aula33_ponto_flutuante (searchpath added)
+VHDL library = work
+VHDL design file = D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/flutuante.vhd
+NGD file = ponto_flutuante_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/impl1"  />
+Analyzing VHDL file d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd(5): " arg1="ieee754_adder" arg2="d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd" arg3="5"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd(13): " arg1="behavioral" arg2="d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd" arg3="13"  />
+unit ieee754_adder is not yet analyzed. VHDL-1485
+unit ieee754_adder is not yet analyzed. VHDL-1485
+d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd(5): executing ieee754_adder(behavioral)
+
+    <postMsg mid="35921436" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd(50): " arg1="1950" arg2="d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd" arg3="50"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd(11): " arg1="ieee754_adder" arg2="behavioral" arg3="d:/rtl_fpga/vhdl/aula33_ponto_flutuante/flutuante.vhd" arg4="11"  />
+Top module name (VHDL): ieee754_adder
+Last elaborated design is ieee754_adder(behavioral)
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = ieee754_adder.
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[31]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[31]"  />
+
+
+
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[31]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[31]"  />
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in ieee754_adder_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[31]" arg2="a[31]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[31]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[31]" arg2="b[31]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[31]"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="4"  />
+
+Design Results:
+    539 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file ponto_flutuante_impl1.ngd.
+
+################### Begin Area Report (ieee754_adder)######################
+Number of register bits => 0 of 44439 (0 % )
+CCU2C => 23
+GSR => 1
+IB => 62
+LUT4 => 395
+OB => 32
+PFUMX => 23
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : mantissa_a_23_N_123_0, loads : 88
+  Net : mantissa_a_23_N_123_2, loads : 62
+  Net : mantissa_a_23_N_123_1, loads : 61
+  Net : n4043, loads : 53
+  Net : mantissa_a_23_N_123_3, loads : 39
+  Net : result_30_N_17_24, loads : 37
+  Net : mantissa_a_23_N_123_4, loads : 29
+  Net : n4036, loads : 26
+  Net : result_22_N_132_2, loads : 25
+  Net : result_22_N_132_1, loads : 25
+################### End Clock Report ##################
+
+Peak Memory Usage: 113.246  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.547  secs
+--------------------------------------------------------------

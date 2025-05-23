@@ -1,0 +1,77 @@
+----------------------------------------------------------------------
+Report for cell param_sub.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      26
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        17          100.0
+                               LUT4        16          100.0
+                                 OB         9          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+           subtrador_completo_behav         1
+        subtrador_completo_behav_U0         1
+        subtrador_completo_behav_U1         1
+        subtrador_completo_behav_U2         1
+        subtrador_completo_behav_U3         1
+        subtrador_completo_behav_U4         1
+        subtrador_completo_behav_U5         1
+        subtrador_completo_behav_U6         1
+                              TOTAL        52
+----------------------------------------------------------------------
+Report for cell subtrador_completo_behav_U4.v1
+Instance Path : gen_block[2].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell subtrador_completo_behav_U3.v1
+Instance Path : gen_block[3].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell subtrador_completo_behav_U2.v1
+Instance Path : gen_block[4].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell subtrador_completo_behav_U5.v1
+Instance Path : gen_block[1].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell subtrador_completo_behav_U1.v1
+Instance Path : gen_block[5].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell subtrador_completo_behav_U6.v1
+Instance Path : gen_block[0].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell subtrador_completo_behav.v1
+Instance Path : gen_block[7].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell subtrador_completo_behav_U0.v1
+Instance Path : gen_block[6].sub_n
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2           12.5
+                              TOTAL         2

@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_mult_fixo/sim_mult_fixo.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_mult_fixo" sim_mult_fixo
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/mult_fixo_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/mult_fixo_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_mult_fixo/sim_mult_fixo"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

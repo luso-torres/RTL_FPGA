@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>mult_fixo</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd(4): </Dynamic>
+            <Dynamic>mult_fixo</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd(13): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd(4): </Dynamic>
+            <Dynamic>mult_fixo</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd(13): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd(11): </Dynamic>
+            <Dynamic>mult_fixo</Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/vhdl/aula32_pontofixo_pontoflutuante/multiply_fixo.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

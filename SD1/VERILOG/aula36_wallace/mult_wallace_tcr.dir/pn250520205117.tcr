@@ -1,0 +1,37 @@
+#Start recording tcl command: 5/20/2025 18:57:30
+#Project Location: D:/RTL_FPGA/VERILOG/aula36_wallace; Project name: mult_wallace
+prj_project new -name "mult_wallace" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural.v"
+prj_run Synthesis -impl impl1
+source "D:/RTL_FPGA/VERILOG/aula36_wallace/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "wallace_estrutural_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_estrutural/sim_wallace_estrutural.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/full_adder_wallace.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/half_adder_wallace.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_estrutural/sim_wallace_estrutural.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_estrutural/sim_wallace_estrutural.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural.v" "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural_tf.v" "D:/RTL_FPGA/VERILOG/aula36_wallace/full_adder_wallace.v" "D:/RTL_FPGA/VERILOG/aula36_wallace/half_adder_wallace.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_fluxo.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/VERILOG/aula36_wallace/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "wallace_fluxo_tf.v"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_flux/sim_wallace_flux.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_flux/sim_wallace_flux.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_flux/sim_wallace_flux.spf"
+prj_src add "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_flux/sim_wallace_flux.spf"
+prj_src exclude "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_fluxo.v" "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_fluxo_tf.v"
+prj_src enable "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural.v" "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural_tf.v" "D:/RTL_FPGA/VERILOG/aula36_wallace/full_adder_wallace.v" "D:/RTL_FPGA/VERILOG/aula36_wallace/half_adder_wallace.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 5/20/2025 20:51:17

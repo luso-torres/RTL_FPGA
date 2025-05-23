@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/sim_flutuante/sim_flutuante.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/sim_flutuante" sim_flutuante
+	project addfile "D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/flutuante.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/ieee754_adder_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/flutuante.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/ieee754_adder_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula33_ponto_flutuante/sim_flutuante/sim_flutuante"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

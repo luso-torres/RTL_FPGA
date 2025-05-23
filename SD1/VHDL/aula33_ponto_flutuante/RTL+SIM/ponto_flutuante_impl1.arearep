@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell ieee754_adder.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      94
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        23          100.0
+                                GSR         1          100.0
+                                 IB        62          100.0
+                               LUT4       395          100.0
+                                 OB        32          100.0
+                              PFUMX        23          100.0
+                              TOTAL       536

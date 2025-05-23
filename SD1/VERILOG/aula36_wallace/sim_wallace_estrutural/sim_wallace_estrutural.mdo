@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_estrutural/sim_wallace_estrutural.mpf"]} { 
+	project new "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_estrutural" sim_wallace_estrutural
+	project addfile "D:/RTL_FPGA/VERILOG/aula36_wallace/half_adder_wallace.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula36_wallace/full_adder_wallace.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural.v"
+	project addfile "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula36_wallace  -work work  "D:/RTL_FPGA/VERILOG/aula36_wallace/half_adder_wallace.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula36_wallace  -work work  "D:/RTL_FPGA/VERILOG/aula36_wallace/full_adder_wallace.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula36_wallace  -work work  "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural.v"
+	vlog  +incdir+D:/RTL_FPGA/VERILOG/aula36_wallace  -work work  "D:/RTL_FPGA/VERILOG/aula36_wallace/wallace_estrutural_tf.v"
+} else {
+	project open "D:/RTL_FPGA/VERILOG/aula36_wallace/sim_wallace_estrutural/sim_wallace_estrutural"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  wallace_estrutural_tf
+view wave
+add wave /*
+run 1000ns

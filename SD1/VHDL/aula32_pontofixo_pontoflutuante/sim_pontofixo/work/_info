@@ -1,0 +1,75 @@
+m255
+K4
+z2
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sim_pontofixo
+Eparam_clah
+Z1 w1746575849
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd
+Z5 FD:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd
+l0
+L3 1
+VboLinNYJ?KM=iFn;RmF[H2
+!s100 RPQ_fSNG^GeYRie@d5F1G2
+Z6 OL;C;2024.2;79
+32
+Z7 !s110 1747701591
+!i10b 1
+Z8 !s108 1747701591.000000
+Z9 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd|
+Z10 !s107 D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/param_clah.vhd|
+!i113 0
+Z11 o-work work
+Z12 tExplicit 1 CvgOpt 0
+Abehaviour
+R2
+R3
+DEx4 work 10 param_clah 0 22 boLinNYJ?KM=iFn;RmF[H2
+!i122 0
+l17
+L13 15
+V0VgAge0j=O?]YzZDI0EPC2
+!s100 AVj]QbeJm>i`Iz8PlaQmf2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 0
+R11
+R12
+Esum_sub
+w1747701566
+DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 1
+R0
+8D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/sum_sub.vhd
+FD:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/sum_sub.vhd
+l0
+L5 1
+VJo@Gf;aXFfoJFLa[D2K3C1
+!s100 Od1CP1hiLT0l7R;ni6ZE>0
+R6
+32
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/sum_sub.vhd|
+!s107 D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/impl1/source/sum_sub.vhd|
+!i113 0
+R11
+R12

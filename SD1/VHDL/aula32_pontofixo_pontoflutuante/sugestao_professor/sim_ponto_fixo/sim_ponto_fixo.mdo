@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/sim_ponto_fixo/sim_ponto_fixo.mpf"]} { 
+	project new "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/sim_ponto_fixo" sim_ponto_fixo
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/ponto_fixo.vhd"
+	project addfile "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/ponto_fixo_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/ponto_fixo.vhd"
+	vcom -work work "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/ponto_fixo_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/VHDL/aula32_pontofixo_pontoflutuante/sugestao_professor/sim_ponto_fixo/sim_ponto_fixo"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  ponto_fixo_tb
+view wave
+add wave /*
+run 1000ns

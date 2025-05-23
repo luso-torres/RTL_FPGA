@@ -1,0 +1,133 @@
+<top name = "mult_fixo"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "mult_fixo">
+
+    <!--
+        Top Level Pins: 25
+    -->
+
+    <pins>
+        <pitem  name = "A[7]"  direction = "in"  />
+        <pitem  name = "A[6]"  direction = "in"  />
+        <pitem  name = "A[5]"  direction = "in"  />
+        <pitem  name = "A[4]"  direction = "in"  />
+        <pitem  name = "A[3]"  direction = "in"  />
+        <pitem  name = "A[2]"  direction = "in"  />
+        <pitem  name = "A[1]"  direction = "in"  />
+        <pitem  name = "A[0]"  direction = "in"  />
+        <pitem  name = "B[7]"  direction = "in"  />
+        <pitem  name = "B[6]"  direction = "in"  />
+        <pitem  name = "B[5]"  direction = "in"  />
+        <pitem  name = "B[4]"  direction = "in"  />
+        <pitem  name = "B[3]"  direction = "in"  />
+        <pitem  name = "B[2]"  direction = "in"  />
+        <pitem  name = "B[1]"  direction = "in"  />
+        <pitem  name = "B[0]"  direction = "in"  />
+        <pitem  name = "Prod[7]"  direction = "out"  />
+        <pitem  name = "Prod[6]"  direction = "out"  />
+        <pitem  name = "Prod[5]"  direction = "out"  />
+        <pitem  name = "Prod[4]"  direction = "out"  />
+        <pitem  name = "Prod[3]"  direction = "out"  />
+        <pitem  name = "Prod[2]"  direction = "out"  />
+        <pitem  name = "Prod[1]"  direction = "out"  />
+        <pitem  name = "Prod[0]"  direction = "out"  />
+        <pitem  name = "Cout"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 1
+    -->
+
+    <instance  name = "A_7__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[7]"  />
+        <nitem  name = "A[6]"  />
+        <nitem  name = "A[5]"  />
+        <nitem  name = "A[4]"  />
+        <nitem  name = "A[3]"  />
+        <nitem  name = "A[2]"  />
+        <nitem  name = "A[1]"  />
+        <nitem  name = "A[0]"  />
+        <nitem  name = "B[7]"  />
+        <nitem  name = "B[6]"  />
+        <nitem  name = "B[5]"  />
+        <nitem  name = "B[4]"  />
+        <nitem  name = "B[3]"  />
+        <nitem  name = "B[2]"  />
+        <nitem  name = "B[1]"  />
+        <nitem  name = "B[0]"  />
+        <nitem  name = "Cout"  />
+        <nitem  name = "Prod[7]"  />
+        <nitem  name = "Prod[6]"  />
+        <nitem  name = "Prod[5]"  />
+        <nitem  name = "Prod[4]"  />
+        <nitem  name = "Prod[3]"  />
+        <nitem  name = "Prod[2]"  />
+        <nitem  name = "Prod[1]"  />
+        <nitem  name = "Prod[0]"  />
+        </nets>
+    </instance>
+
+    <!--
+        MULT instances in netlist: 1
+    -->
+
+    <mults>
+        <mult  name = "A_7__I_0"  />
+    </mults>
+
+    <!--
+        Views in design "mult_fixo": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="ponto_fixo" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="ponto_fixo" top="ponto_fixo"/>
+        <Source name="ponto_fixo.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="ponto_fixo"/>
+        </Source>
+        <Source name="ponto_fixo_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="ponto_fixo.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_fixo/sim_fixo.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_ponto_fixo/sim_ponto_fixo.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="ponto_fixo1.sty"/>
+</BaliProject>
