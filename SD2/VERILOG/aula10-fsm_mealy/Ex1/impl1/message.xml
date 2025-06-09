@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v(1): </Dynamic>
+            <Dynamic>mealy_zero_detector</Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v(17): </Dynamic>
+            <Dynamic>3</Dynamic>
+            <Dynamic>2</Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35901166</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v(18): </Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901166</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v(20): </Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901166</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v(29): </Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35901166</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v(31): </Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/verilog/aula10-fsm_mealy/ex1/caracol_robotico.v</Navigation>
+            <Navigation>31</Navigation>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>next_state_1__I_0_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>y_out_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>next_state_1__I_0_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,15 @@
+D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/mux_4_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/mux_4_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mux_4_tf
+
+Top level modules:
+	mux_4_tf
+
+} {} {}} D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/mux.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/mux.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mux_4
+
+Top level modules:
+	mux_4
+
+} {} {}}

@@ -1,0 +1,9 @@
+---------------------------------------------------
+Report for cell ieee754_multiplier
+   Instance path: ieee754_multiplier
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     186.00        100.0
+                                  LUT4	     307.00        100.0
+                                 IOBUF	         94        100.0
+                                RIPPLE	         10        100.0

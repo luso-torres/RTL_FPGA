@@ -1,0 +1,15 @@
+D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module conversor_bcd
+
+Top level modules:
+	conversor_bcd
+
+} {} {}} D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module conversor_bcd_tf
+
+Top level modules:
+	conversor_bcd_tf
+
+} {} {}}

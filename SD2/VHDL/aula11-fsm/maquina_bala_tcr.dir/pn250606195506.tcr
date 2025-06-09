@@ -1,0 +1,11 @@
+#Start recording tcl command: 6/6/2025 15:32:11
+#Project Location: D:/RTL_FPGA/SD2/VHDL/aula11-fsm; Project name: maquina_bala
+D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor
+aula14_fsm_divisor
+#Start recording tcl command: 6/6/2025 19:55:06
+#Project Location: D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor; Project name: aula14_fsm_divisor
+prj_project open "D:/RTL_FPGA/SD2/VHDL/aula11-fsm/maquina_bala.ldf"
+prj_project close
+prj_project new -name "aula14_fsm_divisor" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+#Stop recording: 6/6/2025 19:55:06

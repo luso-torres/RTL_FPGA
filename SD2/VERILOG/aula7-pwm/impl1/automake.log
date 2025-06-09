@@ -1,0 +1,175 @@
+
+synthesis -f "aula7_pwm_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Thu May 29 21:53:20 2025
+
+
+Command Line:  synthesis -f aula7_pwm_impl1_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = main.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/RTL_FPGA/SD2/VERILOG/aula7-pwm (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/impl1 (searchpath added)
+-p D:/RTL_FPGA/SD2/VERILOG/aula7-pwm (searchpath added)
+Verilog design file = D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/pwm.v
+Verilog design file = D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v
+NGD file = aula7_pwm_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/rtl_fpga/sd2/verilog/aula7-pwm/pwm.v. VERI-1482
+Analyzing Verilog file d:/rtl_fpga/sd2/verilog/aula7-pwm/modulo_principal.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): main
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/verilog/aula7-pwm/modulo_principal.v(1): " arg1="main" arg2="d:/rtl_fpga/sd2/verilog/aula7-pwm/modulo_principal.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/verilog/aula7-pwm/pwm.v(1): " arg1="pwm" arg2="d:/rtl_fpga/sd2/verilog/aula7-pwm/pwm.v" arg3="1"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/sd2/verilog/aula7-pwm/pwm.v(24): " arg1="32" arg2="10" arg3="d:/rtl_fpga/sd2/verilog/aula7-pwm/pwm.v" arg4="24"  />
+Last elaborated design is main()
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = main.
+Rejecting instance in MergeCSE due to signature collison : m3
+
+
+
+GSR instance connected to net n190.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    110 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file aula7_pwm_impl1.ngd.
+
+################### Begin Area Report (main)######################
+Number of register bits => 45 of 44439 (0 % )
+CCU2C => 29
+FD1S3AX => 5
+FD1S3IX => 40
+GSR => 1
+IB => 4
+LUT4 => 26
+OB => 1
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 45
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : m4/n194, loads : 10
+  Net : m1/n193, loads : 10
+  Net : m3/n192, loads : 10
+  Net : m2/n191, loads : 10
+  Net : m4/cnt_9, loads : 3
+  Net : m4/cnt_8, loads : 3
+  Net : m3/cnt_9, loads : 3
+  Net : m2/cnt_9, loads : 3
+  Net : m2/cnt_8, loads : 3
+  Net : duty_sel_c_0, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  216.497 MHz|     7  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 89.797  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.781  secs
+--------------------------------------------------------------

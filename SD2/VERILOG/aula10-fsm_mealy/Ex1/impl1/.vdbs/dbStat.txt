@@ -1,0 +1,1 @@
+mealy_zero_detector_rtl.vdb

@@ -1,0 +1,119 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/SD2/VERILOG/aula6-sinc/sim_cont_decrescent
+T_opt
+!s110 1748474210
+VePel2AGfAlL074XWiBFHn0
+04 16 10 work cnt_asc_mod13_tb behavioral 1
+=4-ac675dfda9e9-68379962-138-5844
+R1
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Ecnt_asc_mod13
+Z3 w1748474184
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 6
+R2
+Z7 8D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/contador_vhdl.vhd
+Z8 FD:/RTL_FPGA/SD2/VERILOG/aula6-sinc/contador_vhdl.vhd
+l0
+L4 1
+Vm0oEL@IYP=Ho]dOHWH=A?0
+!s100 ^@<Tgk=3>IoEiTj8=cG<Y2
+Z9 OL;C;2024.2;79
+32
+Z10 !s110 1748474203
+!i10b 1
+Z11 !s108 1748474203.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/contador_vhdl.vhd|
+Z13 !s107 D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/contador_vhdl.vhd|
+!i113 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Abehavioral
+R4
+R5
+R6
+DEx4 work 13 cnt_asc_mod13 0 22 m0oEL@IYP=Ho]dOHWH=A?0
+!i122 6
+l18
+L12 23
+Vm^JGXP<2jihzGP0Y9O=a03
+!s100 kVofHdnU9E>NXLA9U5`CE1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ecnt_asc_mod13_tb
+Z16 w1748472680
+R4
+R5
+R6
+!i122 7
+R2
+Z17 8D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cnt_asc_mod13_tb.vhd
+Z18 FD:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cnt_asc_mod13_tb.vhd
+l0
+L5 1
+VZEJf1ANKQ;8YRYkPOm^n20
+!s100 5MCjN6ge:ihfd79G^9V042
+R9
+32
+R10
+!i10b 1
+R11
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cnt_asc_mod13_tb.vhd|
+Z20 !s107 D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cnt_asc_mod13_tb.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+R6
+DEx4 work 16 cnt_asc_mod13_tb 0 22 ZEJf1ANKQ;8YRYkPOm^n20
+!i122 7
+l24
+L8 45
+Vjm9S>VPbzIf8YX;_9W2`P1
+!s100 fcnhU@fTWX81egER@DHQ<2
+R9
+32
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 0
+R14
+R15

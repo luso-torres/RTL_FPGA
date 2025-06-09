@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/sim_mux_14/sim_mux_14.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/sim_mux_14" sim_mux_14
+	project addfile "D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/mux_case.v"
+	project addfile "D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/mux_4_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD2/VHDL/aula3_mux_14  -work work  "D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/mux_case.v"
+	vlog  +incdir+D:/RTL_FPGA/SD2/VHDL/aula3_mux_14  -work work  "D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/mux_4_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD2/VHDL/aula3_mux_14/sim_mux_14/sim_mux_14"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  mux_4_tf
+view wave
+add wave /*
+run 1000ns

@@ -1,0 +1,22 @@
+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module reg_siso_M
+
+Top level modules:
+	reg_siso_M
+
+} {} {}} D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_lr.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_lr.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module reg_siso_lr
+
+Top level modules:
+	reg_siso_lr
+
+} {} {}} D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module reg_siso_N
+
+Top level modules:
+	reg_siso_N
+
+} {} {}}

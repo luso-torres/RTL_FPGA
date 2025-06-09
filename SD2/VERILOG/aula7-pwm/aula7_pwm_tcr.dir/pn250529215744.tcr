@@ -1,0 +1,34 @@
+#Start recording tcl command: 5/29/2025 20:46:19
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm; Project name: aula7_pwm
+prj_project new -name "aula7_pwm" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/pwm.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pwm/sim_pwm.spf"
+source "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "main_tf.v"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pwm/sim_pwm.spf"
+prj_src exclude "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v"
+source "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "pwm_tf.v"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pa/sim_pa.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pwm/sim_pwm.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pwm/sim_pwm.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pwm/sim_pwm.spf"
+prj_src exclude "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/pwm_tf.v"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pwm/sim_pwm.spf"
+prj_src enable "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pwm/sim_pwm.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 5/29/2025 21:57:44

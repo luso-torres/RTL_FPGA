@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/sim_cont_mod16/sim_cont_mod16.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/sim_cont_mod16" sim_cont_mod16
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/contador_mod16.vhd"
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cont_mod16_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/contador_mod16.vhd"
+	vcom -work work "D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cont_mod16_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/sim_cont_mod16/sim_cont_mod16"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

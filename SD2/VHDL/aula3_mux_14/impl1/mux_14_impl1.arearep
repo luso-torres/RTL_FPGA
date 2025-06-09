@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell mux_4.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      22
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        18          100.0
+                               LUT4         8          100.0
+                                 OB         4          100.0
+                              PFUMX         4          100.0
+                        VERIFIC_PWR         1          100.0
+                              TOTAL        36

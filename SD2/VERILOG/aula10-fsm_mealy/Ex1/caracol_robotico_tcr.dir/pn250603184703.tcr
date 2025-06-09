@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/3/2025 18:44:24
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1; Project name: caracol_robotico
+prj_project open "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1/caracol_robotico.ldf"
+prj_project close
+#Stop recording: 6/3/2025 18:47:03

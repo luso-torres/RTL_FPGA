@@ -1,0 +1,6 @@
+#Start recording tcl command: 6/3/2025 18:44:02
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2; Project name: conversor_bcd_fsm
+prj_project open "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd_fsm.ldf"
+prj_project save
+prj_project close
+#Stop recording: 6/3/2025 18:44:24

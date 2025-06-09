@@ -1,0 +1,172 @@
+
+synthesis -f "aula5_reg_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue May 27 21:51:30 2025
+
+
+Command Line:  synthesis -f aula5_reg_impl1_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-25F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-25F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = reg_siso_M.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/impl1 (searchpath added)
+-p D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr (searchpath added)
+Verilog design file = D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v
+Verilog design file = D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v
+NGD file = aula5_reg_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/rtl_fpga/sd2/verilog/aula5-reg_lr/reg_siso_n.v. VERI-1482
+Analyzing Verilog file d:/rtl_fpga/sd2/verilog/aula5-reg_lr/reg_siso_m.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): reg_siso_M
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/verilog/aula5-reg_lr/reg_siso_m.v(1): " arg1="reg_siso_M" arg2="d:/rtl_fpga/sd2/verilog/aula5-reg_lr/reg_siso_m.v" arg3="1"  />
+Last elaborated design is reg_siso_M()
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = reg_siso_M.
+
+
+
+GSR instance connected to net n37.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in reg_siso_M_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="GND_net" arg2="GND_net"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
+
+Design Results:
+     23 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file aula5_reg_impl1.ngd.
+
+################### Begin Area Report (reg_siso_M)######################
+Number of register bits => 5 of 24879 (0 % )
+FD1P3AX => 3
+FD1S3AX => 2
+GSR => 1
+IB => 5
+LUT4 => 8
+OB => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 5
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clk_c_enable_3, loads : 3
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : enable_c, loads : 6
+  Net : D_reg_2, loads : 3
+  Net : clk_c_enable_3, loads : 3
+  Net : dir_c, loads : 2
+  Net : D_c, loads : 2
+  Net : D_reg_1, loads : 2
+  Net : D_reg_0, loads : 2
+  Net : D_reg_3_N_5_0, loads : 2
+  Net : rst_c, loads : 1
+  Net : Q_c, loads : 1
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  252.653 MHz|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 74.223  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.500  secs
+--------------------------------------------------------------

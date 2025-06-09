@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901128</ID>
+            <Severity>Error</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/media_aritmetica.v(11): </Dynamic>
+            <Dynamic>x_in</Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/media_aritmetica.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

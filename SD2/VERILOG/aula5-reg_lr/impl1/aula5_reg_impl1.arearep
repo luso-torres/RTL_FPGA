@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell reg_siso_M.TECH
+Register bits:  5 of 24879 (0.020%)
+I/O cells:      6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         3          100.0
+                            FD1S3AX         2          100.0
+                                GSR         1          100.0
+                                 IB         5          100.0
+                               LUT4         8          100.0
+                                 OB         1          100.0
+                              TOTAL        20

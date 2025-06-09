@@ -1,0 +1,16 @@
+#Start recording tcl command: 5/28/2025 22:03:02
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula7-divisor; Project name: div_clock
+prj_project new -name "div_clock" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clock.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/sim_div/sim_div.spf"
+source "D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "div_clk_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/sim_div/sim_div.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/sim_div/sim_div.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/28/2025 23:55:44

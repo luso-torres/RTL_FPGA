@@ -1,0 +1,26 @@
+#Start recording tcl command: 6/2/2025 20:52:26
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2; Project name: conversor_bcd_fsm
+D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1
+caracol_robotico
+#Start recording tcl command: 6/2/2025 21:44:19
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1; Project name: caracol_robotico
+prj_project new -name "conversor_bcd_fsm" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "conversor_bcd_tf.v"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/sim_bcd_ex3/sim_bcd_ex3.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/sim_ex3_bcd/sim_ex3_bcd.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/sim_bcd_ex3/sim_bcd_ex3.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/sim_bcd_ex3/sim_bcd_ex3.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+prj_project open "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1/caracol_robotico.ldf"
+#Stop recording: 6/2/2025 21:44:20

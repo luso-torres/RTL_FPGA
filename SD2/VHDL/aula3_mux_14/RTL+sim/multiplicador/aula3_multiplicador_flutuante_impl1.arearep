@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell ieee754_multiplier.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      94
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2          100.0
+                              CCU2C        10          100.0
+                                GSR         1          100.0
+                                 IB        62          100.0
+                               LUT4       307          100.0
+                         MULT18X18D         4          100.0
+                                 OB        32          100.0
+                              PFUMX        13          100.0
+                              TOTAL       431

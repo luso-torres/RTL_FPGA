@@ -1,0 +1,11 @@
+#Start recording tcl command: 5/30/2025 20:58:37
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula8-detector; Project name: detector_de_seq
+prj_project new -name "detector_de_seq" -impl "impl1" -dev LFE5U-45F-6BG381C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula8-detector/detector_seq.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD2/VERILOG/aula8-detector/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "detector_sequencia_110_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula8-detector/sim_detector/sim_detector.spf"
+#Stop recording: 6/2/2025 17:30:08

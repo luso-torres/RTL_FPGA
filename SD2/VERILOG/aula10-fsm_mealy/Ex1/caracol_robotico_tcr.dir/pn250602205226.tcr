@@ -1,0 +1,10 @@
+#Start recording tcl command: 6/2/2025 20:35:48
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1; Project name: caracol_robotico
+prj_project new -name "caracol_robotico" -impl "impl1" -dev LFE5U-25F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1/caracol_robotico.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 6/2/2025 20:52:26

@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_dir/sim_reg_dir.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_dir" sim_reg_dir
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v"
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v"
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_dir/sim_reg_dir"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  reg_siso_tb
+view wave
+add wave /*
+run 1000ns

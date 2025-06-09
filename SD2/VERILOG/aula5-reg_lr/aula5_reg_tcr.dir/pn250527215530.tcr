@@ -1,0 +1,46 @@
+#Start recording tcl command: 5/27/2025 20:07:10
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr; Project name: aula5_reg
+prj_project new -name "aula5_reg" -impl "impl1" -dev LFE5U-25F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "reg_siso_tf.v"
+source "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/hdle_generate_tbtemplate.tcl"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_dir/sim_reg_dir.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_tf.v"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_lr.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_siso_lr/sim_reg_siso_lr.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_siso_rl/sim_reg_siso_rl.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_lr.v"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_siso_lr/sim_siso_lr.spf"
+prj_src enable "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_tf.v"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_lr/sim_reg_lr.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_lr/sim_reg_lr.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_lr/sim_reg_lr.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg/sim_reg.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg/sim_reg.spf"
+#Stop recording: 5/27/2025 21:55:30

@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_siso_rl/sim_reg_siso_rl.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_siso_rl" sim_reg_siso_rl
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v"
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_lr.v"
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v"
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_lr.v"
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v"
+} else {
+	project open "D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_reg_siso_rl/sim_reg_siso_rl"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  reg_siso_N
+view wave
+add wave /*
+run 1000ns

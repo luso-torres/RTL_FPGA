@@ -1,0 +1,99 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_pwm/sim_pwm.mdo}
+# Loading project sim_pwm
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:34:59 on Jun 04,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2" -work work D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm.v 
+# -- Compiling module pwm
+# 
+# Top level modules:
+# 	pwm
+# End time: 20:34:59 on Jun 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:34:59 on Jun 04,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2" -work work D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm_tf.v 
+# -- Compiling module pwm_tf
+# 
+# Top level modules:
+# 	pwm_tf
+# End time: 20:34:59 on Jun 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u pwm_tf 
+# Start time: 20:34:59 on Jun 04,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.pwm_tf(fast)
+# Loading work.pwm(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+add wave -position end  sim:/pwm_tf/UUT/cnt
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.pwm_tf(fast)
+# Loading work.pwm(fast)
+run
+# Compile of pwm.v was successful.
+# Compile of pwm_tf.v was successful.
+# 2 compiles, 0 failed with no errors.
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.pwm_tf(fast)
+# Loading work.pwm(fast)
+run
+add wave -position end  sim:/pwm_tf/UUT/trigger
+# Compile of pwm.v was successful.
+# Compile of pwm_tf.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.pwm_tf(fast)
+# Loading work.pwm(fast)
+run
+add wave -position end  sim:/pwm_tf/UUT/state
+add wave -position end  sim:/pwm_tf/UUT/next_state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.pwm_tf(fast)
+# Loading work.pwm(fast)
+run
+# Compile of pwm.v was successful.
+# Compile of pwm_tf.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.pwm_tf(fast)
+# Loading work.pwm(fast)
+run
+# End time: 21:11:07 on Jun 04,2025, Elapsed time: 0:36:08
+# Errors: 0, Warnings: 2

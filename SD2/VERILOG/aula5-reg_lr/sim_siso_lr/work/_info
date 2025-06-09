@@ -1,0 +1,76 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/sim_siso_lr
+T_opt
+!s110 1748392211
+Vonh:=^W]41>51nOBn^76=1
+04 8 4 work reg_siso fast 0
+=1-ac675dfda9e9-68365913-3e-1ca4
+R0
+!s12f OEM25U1 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vreg_siso
+2D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v
+Z3 !s110 1748392210
+!i10b 1
+!s100 ARFZCQ]6I[P4_bGUf7n5;3
+Il^Kbz@ko]MchFmd^k6JHH1
+R1
+w1748392090
+8D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v
+FD:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v
+!i122 0
+Z4 L0 1 23
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z7 !s108 1748392210.000000
+!s107 D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr|-work|work|D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_N.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 +incdir+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vreg_siso_M
+2D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v
+R3
+!i10b 1
+!s100 g7=lN3MmoBWB[^5nWIjfV1
+IBkZGcLIei[ZXDHYfD[MZo1
+R1
+w1748391705
+8D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v
+FD:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v
+!i122 1
+R4
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr|-work|work|D:/RTL_FPGA/SD2/VERILOG/aula5-reg_lr/reg_siso_M.v|
+!i113 0
+R8
+R9
+R2
+nreg_siso_@m

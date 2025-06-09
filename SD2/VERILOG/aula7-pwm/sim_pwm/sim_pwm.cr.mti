@@ -1,0 +1,29 @@
+D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/pwm.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/pwm.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module pwm
+
+Top level modules:
+	pwm
+
+} {} {}} D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module main
+
+Top level modules:
+	main
+
+} {} {}} D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/pwm_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/pwm_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module pwm_tf
+
+Top level modules:
+	pwm_tf
+
+} {} {}} D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/main_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/main_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module main_tf
+
+Top level modules:
+	main_tf
+
+} {} {}}

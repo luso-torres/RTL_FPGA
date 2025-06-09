@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula9-fsm/sim_fsm/sim_fsm.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VERILOG/aula9-fsm/sim_fsm" sim_fsm
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula9-fsm/detector_seq.vhd"
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula9-fsm/detector_sequencia_110_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD2/VERILOG/aula9-fsm/detector_seq.vhd"
+	vcom -work work "D:/RTL_FPGA/SD2/VERILOG/aula9-fsm/detector_sequencia_110_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD2/VERILOG/aula9-fsm/sim_fsm/sim_fsm"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

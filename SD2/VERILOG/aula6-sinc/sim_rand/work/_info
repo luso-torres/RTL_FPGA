@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/SD2/VERILOG/aula6-sinc/sim_rand
+T_opt
+!s110 1748487829
+VhQbJ=KOCkSWzC>`7Z3a1=0
+04 15 10 work cnt_asc_rand_tb behavioral 1
+=1-ac675dfda9e9-6837ce94-331-7ab0
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Ecnt_asc_rand
+Z2 w1748487790
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z6 8D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cont_assincr.vhd
+Z7 FD:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cont_assincr.vhd
+l0
+L4 1
+V<BCjMX6ACFf3R@DN@d<Nm2
+!s100 CAjXoL[_;f7IChkJDdbGa3
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1748487826
+!i10b 1
+Z10 !s108 1748487826.000000
+Z11 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cont_assincr.vhd|
+Z12 !s107 D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cont_assincr.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+DEx4 work 12 cnt_asc_rand 0 22 <BCjMX6ACFf3R@DN@d<Nm2
+!i122 0
+l18
+L12 23
+VF_AglWhFoa_X`9fEZoKM:3
+!s100 ZcbU`JAZHecSaG6Y=0PUP0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ecnt_asc_rand_tb
+Z15 w1748477571
+R3
+R4
+R5
+!i122 1
+R1
+Z16 8D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cnt_asc_rand_tb.vhd
+Z17 FD:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cnt_asc_rand_tb.vhd
+l0
+L5 1
+VOIN=XOcD4d>@066`76JH;0
+!s100 OjalJ^hb2n1BWUMnJg4Z>2
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cnt_asc_rand_tb.vhd|
+Z19 !s107 D:/RTL_FPGA/SD2/VERILOG/aula6-sinc/cnt_asc_rand_tb.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R3
+R4
+R5
+DEx4 work 15 cnt_asc_rand_tb 0 22 OIN=XOcD4d>@066`76JH;0
+!i122 1
+l24
+L8 45
+VXfdbiRCjjPgVA7^C8<Ndf1
+!s100 N:]mUnicOm>g@5LTe1ER_1
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14

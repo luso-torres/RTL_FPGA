@@ -1,0 +1,8 @@
+#Start recording tcl command: 6/3/2025 18:47:03
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2; Project name: conversor_bcd_fsm
+prj_project open "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd_fsm.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/sim_ex2/sim_ex2.spf"
+prj_project save
+prj_project close
+#Stop recording: 6/3/2025 18:53:05

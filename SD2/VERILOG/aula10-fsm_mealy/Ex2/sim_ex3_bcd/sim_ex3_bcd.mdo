@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/sim_ex3_bcd/sim_ex3_bcd.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/sim_ex3_bcd" sim_ex3_bcd
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd.v"
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd.v"
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/conversor_bcd_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex2/sim_ex3_bcd/sim_ex3_bcd"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  conversor_bcd_tf
+view wave
+add wave /*
+run 1000ns

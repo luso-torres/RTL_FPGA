@@ -1,0 +1,112 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/sim_pwm/sim_pwm.mdo}
+# Loading project sim_pwm
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:48:50 on May 29,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD2/VERILOG/aula7-pwm" -work work D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/pwm.v 
+# -- Compiling module pwm
+# 
+# Top level modules:
+# 	pwm
+# End time: 21:48:50 on May 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:48:50 on May 29,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD2/VERILOG/aula7-pwm" -work work D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 21:48:51 on May 29,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:48:51 on May 29,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD2/VERILOG/aula7-pwm" -work work D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/main_tf.v 
+# -- Compiling module main_tf
+# 
+# Top level modules:
+# 	main_tf
+# End time: 21:48:51 on May 29,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u main_tf 
+# Start time: 21:48:51 on May 29,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.main_tf(fast)
+# Loading work.main(fast)
+# Loading work.pwm(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'duty_sel'. The port definition is at: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /main_tf/UUT File: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/main_tf.v Line: 35
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+# Compile of pwm.v was successful.
+# Compile of modulo_principal.v was successful.
+# Compile of main_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.main_tf(fast)
+# Loading work.main(fast)
+# Loading work.pwm(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'duty_sel'. The port definition is at: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /main_tf/UUT File: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/main_tf.v Line: 35
+run
+# Compile of pwm.v was successful.
+# Compile of modulo_principal.v was successful.
+# Compile of main_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.main_tf(fast)
+# Loading work.main(fast)
+# Loading work.pwm(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'duty_sel'. The port definition is at: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /main_tf/UUT File: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/main_tf.v Line: 35
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.main_tf(fast)
+# Loading work.main(fast)
+# Loading work.pwm(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'duty_sel'. The port definition is at: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/modulo_principal.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /main_tf/UUT File: D:/RTL_FPGA/SD2/VERILOG/aula7-pwm/main_tf.v Line: 35
+run
+# Compile of pwm.v was successful.
+# Compile of modulo_principal.v was successful.
+# Compile of main_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.main_tf(fast)
+# Loading work.main(fast)
+# Loading work.pwm(fast)
+run
+run
+# End time: 21:57:32 on May 29,2025, Elapsed time: 0:08:41
+# Errors: 0, Warnings: 2

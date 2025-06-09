@@ -1,0 +1,864 @@
+
+      Lattice Mapping Report File for Design Module 'ieee754_multiplier'
+
+
+Design Information
+------------------
+
+Command line:   map -a ECP5U -p LFE5U-45F -t CABGA256 -s 6 -oc Commercial
+     aula3_multiplicador_flutuante_impl1.ngd -o
+     aula3_multiplicador_flutuante_impl1_map.ncd -pr
+     aula3_multiplicador_flutuante_impl1.prf -mp
+     aula3_multiplicador_flutuante_impl1.mrp -lpf D:/RTL_FPGA/SD2/VHDL/aula3_mul
+     tiplicador_flutuante/impl1/aula3_multiplicador_flutuante_impl1.lpf -lpf D:/
+     RTL_FPGA/SD2/VHDL/aula3_multiplicador_flutuante/aula3_multiplicador_flutuan
+     te.lpf -gui -msgset
+     D:/RTL_FPGA/SD2/VHDL/aula3_multiplicador_flutuante/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-45FCABGA256
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  05/23/25  22:05:41
+
+Design Summary
+--------------
+
+   Number of registers:      0 out of 44439 (0%)
+      PFU registers:            0 out of 43848 (0%)
+      PIO registers:            0 out of   591 (0%)
+   Number of SLICEs:       186 out of 21924 (1%)
+      SLICEs as Logic/ROM:    186 out of 21924 (1%)
+      SLICEs as RAM:            0 out of 16443 (0%)
+      SLICEs as Carry:         10 out of 21924 (0%)
+   Number of LUT4s:        327 out of 43848 (1%)
+      Number used as logic LUTs:        307
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       20
+      Number used as shift registers:     0
+   Number of PIO sites used: 94 out of 197 (48%)
+   Number of block RAMs:  0 out of 108 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 4 (0%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+
+                                    Page 1
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+Design Summary (cont)
+---------------------
+   MULT18X18D          4
+   MULT9X9D            0
+   ALU54B              2
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  8 out of 144 (5 %)
+   Number of Used DSP ALU Sites:  4 out of 72 (5 %)
+   Number of Used DSP PRADD Sites:  0 out of 144 (0 %)
+   Number of clocks:  0
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net n4883: 76 loads
+     Net mantissa_a_23: 26 loads
+     Net mantissa_b_23: 26 loads
+     Net n179: 26 loads
+     Net n4881: 23 loads
+     Net n4885: 23 loads
+     Net n2493: 17 loads
+     Net n4872: 14 loads
+     Net result_31_N_63_4: 14 loads
+     Net n4904: 13 loads
+
+
+
+
+   Number of warnings:  23
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: input pad net 'a[31]' has no legal load.
+WARNING - map: input pad net 'b[31]' has no legal load.
+WARNING - map: lat_alu_3 : removed the input signal of SIGNEDCIN pin because
+     it's not legal.
+WARNING - map: lat_alu_3 : R53 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R52 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R51 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R50 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R49 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R48 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R47 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R46 pin may contain garbage data if ternary 36 bit
+     operation.
+
+                                    Page 2
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: lat_alu_3 : R45 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R44 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R43 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R42 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R41 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R40 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R39 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R38 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R37 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: lat_alu_3 : R36 pin may contain garbage data if ternary 36 bit
+     operation.
+WARNING - map: IO buffer missing for top level port a[31:0](31)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port b[31:0](31)...logic will be
+     discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| result[29]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[30]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[31]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[28]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[27]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[26]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[25]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[24]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[23]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[22]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[21]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[20]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 3
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+IO (PIO) Attributes (cont)
+--------------------------
+| result[19]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[18]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[17]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[16]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[15]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[14]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[13]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[12]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[11]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[10]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[9]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[8]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[7]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[6]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[5]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[4]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[3]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[2]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[1]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| result[0]           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[30]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[29]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[28]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[27]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[26]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[25]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[24]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[23]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+IO (PIO) Attributes (cont)
+--------------------------
+| a[22]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[21]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[20]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[19]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[18]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[17]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[16]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[15]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[14]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[13]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[12]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[11]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[10]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[9]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[8]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[7]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[6]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[5]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[4]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[3]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[2]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[1]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| a[0]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[30]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[29]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[28]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[27]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[26]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 5
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+IO (PIO) Attributes (cont)
+--------------------------
+| b[25]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[24]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[23]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[22]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[21]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[20]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[19]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[18]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[17]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[16]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[15]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[14]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[13]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[12]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[11]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[10]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[9]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[8]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[7]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[6]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[5]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[4]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[3]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[2]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[1]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| b[0]                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+                                    Page 6
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+Removed logic
+-------------
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal _add_1_add_4_2/S0 undriven or does not drive anything - clipped.
+Signal _add_1_add_4_2/CI undriven or does not drive anything - clipped.
+Signal add_2858_9/S1 undriven or does not drive anything - clipped.
+Signal add_2858_9/CO undriven or does not drive anything - clipped.
+Signal _add_1_add_4_10/S1 undriven or does not drive anything - clipped.
+Signal _add_1_add_4_10/CO undriven or does not drive anything - clipped.
+Signal add_2858_1/S0 undriven or does not drive anything - clipped.
+Signal add_2858_1/CI undriven or does not drive anything - clipped.
+Block i2 was optimized away.
+
+DSP Component Details
+---------------------
+
+
+     . ALU54B  lat_alu_3:
+
+     54-Bit ALU
+	Opcode  0		1
+	Opcode  1		0
+	Opcode  2		0
+	Opcode  3		0
+	Opcode  4		0
+	Opcode  5		0
+	Opcode  6		0
+	Opcode  7		0
+	Opcode  8		0
+	Opcode  9		1
+	Opcode 10		0
+
+     	OpcodeOP0 Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+
+     	OpcodeOP1 Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	--	--
+		Pipeline	    	--	--
+
+     	OpcodeIN Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+Data
+	Input Registers		CLK	CE	RST
+	--------------------------------------------
+		C0		    	   	    
+		C1		    	   	    
+		CFB		    	   	    
+
+     	Output Register		CLK	CE	RST
+	--------------------------------------------
+		Output0		    	   	    
+
+                                    Page 7
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+DSP Component Details (cont)
+----------------------------
+		Output1		    	   	    
+
+     	Flag Register		CLK	CE	RST
+	--------------------------------------------
+		Flag		    	   	    
+Other
+	MCPAT_SOURCE	STATIC
+	MASKPAT_SOURCE	STATIC
+	MASK01		0x00000000000000
+	MCPAT		0x00000000000000
+	MASKPAT		0x00000000000000
+	RNDPAT		0x00000000000000
+	PSE17		0b00000000000000000
+	PSE44		0b00000000000000000000000000
+	PSE53		0b00000000
+	GSR		DISABLED
+	RESETMODE	SYNC
+	MULT9_MODE	DISABLED
+     
+	LEGACY  	DISABLED
+     
+	CLK0_DIV	ENABLED
+	CLK1_DIV	ENABLED
+	CLK2_DIV	ENABLED
+	CLK3_DIV	ENABLED
+
+     . ALU54B  lat_alu_4:
+
+     54-Bit ALU
+	Opcode  0		1
+	Opcode  1		0
+	Opcode  2		0
+	Opcode  3		0
+	Opcode  4		1
+	Opcode  5		0
+	Opcode  6		0
+	Opcode  7		0
+	Opcode  8		0
+	Opcode  9		1
+	Opcode 10		0
+
+     	OpcodeOP0 Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+
+     	OpcodeOP1 Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	--	--
+		Pipeline	    	--	--
+
+     	OpcodeIN Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+Data
+
+                                    Page 8
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+DSP Component Details (cont)
+----------------------------
+	Input Registers		CLK	CE	RST
+	--------------------------------------------
+		C0		    	   	    
+		C1		    	   	    
+		CFB		    	   	    
+
+     	Output Register		CLK	CE	RST
+	--------------------------------------------
+		Output0		    	   	    
+		Output1		    	   	    
+
+     	Flag Register		CLK	CE	RST
+	--------------------------------------------
+		Flag		    	   	    
+Other
+	MCPAT_SOURCE	STATIC
+	MASKPAT_SOURCE	STATIC
+	MASK01		0x00000000000000
+	MCPAT		0x00000000000000
+	MASKPAT		0x00000000000000
+	RNDPAT		0x00000000000000
+	PSE17		0b00000000000000000
+	PSE44		0b00000000000000000000000000
+	PSE53		0b00000000
+	GSR		DISABLED
+	RESETMODE	SYNC
+	MULT9_MODE	DISABLED
+     
+	LEGACY  	DISABLED
+     
+	CLK0_DIV	ENABLED
+	CLK1_DIV	ENABLED
+	CLK2_DIV	ENABLED
+	CLK3_DIV	ENABLED
+
+     . MULT18X18D  lat_mult_2:
+
+     Multiplier
+	Operation A		Unsigned
+	Operation A Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+
+     	Operation B		Unsigned
+	Operation B Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+Data
+	Input Registers		CLK	CE	RST	Source
+	-------------------------------------------------------
+		A		    	   	    	A Data In
+		B		    	   	    	B Data In
+		C		    	   	    	N/A
+	Cascaded Match
+
+                                    Page 9
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+DSP Component Details (cont)
+----------------------------
+
+     	Pipeline Registers	CLK	CE	RST
+	--------------------------------------------
+		Pipe		    	   	    
+
+     	Output Register		CLK	CE	RST
+	--------------------------------------------
+		Output		    	   	    
+Other
+	SOURCEB_MODE	B_SHIFT
+	MULT_BYPASS	DISABLED
+	CAS_MATCH_REG	FALSE
+	GSR		DISABLED
+	RESETMODE	SYNC
+	CLK0_DIV	ENABLED
+	CLK1_DIV	ENABLED
+	CLK2_DIV	ENABLED
+	CLK3_DIV	ENABLED
+	HIGHSPEED_CLK	NONE
+	PSE17		0b00000000000000000
+	PSE35		0b00000000000000000
+     
+	C_PSE17		0b00000000000000000
+
+     . MULT18X18D  lat_mult_1:
+
+     Multiplier
+	Operation A		Unsigned
+	Operation A Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+
+     	Operation B		Unsigned
+	Operation B Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+Data
+	Input Registers		CLK	CE	RST	Source
+	-------------------------------------------------------
+		A		    	   	    	A Data In
+		B		    	   	    	B Data In
+		C		    	   	    	N/A
+	Cascaded Match
+
+     	Pipeline Registers	CLK	CE	RST
+	--------------------------------------------
+		Pipe		    	   	    
+
+     	Output Register		CLK	CE	RST
+	--------------------------------------------
+		Output		    	   	    
+Other
+	SOURCEB_MODE	B_SHIFT
+	MULT_BYPASS	DISABLED
+
+                                   Page 10
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+DSP Component Details (cont)
+----------------------------
+	CAS_MATCH_REG	FALSE
+	GSR		DISABLED
+	RESETMODE	SYNC
+	CLK0_DIV	ENABLED
+	CLK1_DIV	ENABLED
+	CLK2_DIV	ENABLED
+	CLK3_DIV	ENABLED
+	HIGHSPEED_CLK	NONE
+	PSE17		0b00000000000000000
+	PSE35		0b00000000000000000
+     
+	C_PSE17		0b00000000000000000
+
+     . MULT18X18D  lat_mult_0:
+
+     Multiplier
+	Operation A		Unsigned
+	Operation A Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+
+     	Operation B		Unsigned
+	Operation B Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+Data
+	Input Registers		CLK	CE	RST	Source
+	-------------------------------------------------------
+		A		    	   	    	A Data In
+		B		    	   	    	B Data In
+		C		    	   	    	N/A
+	Cascaded Match
+
+     	Pipeline Registers	CLK	CE	RST
+	--------------------------------------------
+		Pipe		    	   	    
+
+     	Output Register		CLK	CE	RST
+	--------------------------------------------
+		Output		    	   	    
+Other
+	SOURCEB_MODE	B_SHIFT
+	MULT_BYPASS	DISABLED
+	CAS_MATCH_REG	FALSE
+	GSR		DISABLED
+	RESETMODE	SYNC
+	CLK0_DIV	ENABLED
+	CLK1_DIV	ENABLED
+	CLK2_DIV	ENABLED
+	CLK3_DIV	ENABLED
+	HIGHSPEED_CLK	NONE
+	PSE17		0b00000000000000000
+	PSE35		0b00000000000000000
+     
+
+                                   Page 11
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+DSP Component Details (cont)
+----------------------------
+	C_PSE17		0b00000000000000000
+
+     . MULT18X18D  mult_14:
+
+     Multiplier
+	Operation A		Unsigned
+	Operation A Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+
+     	Operation B		Unsigned
+	Operation B Registers	CLK	CE	RST
+	--------------------------------------------
+		Input		    	   	    
+		Pipeline	    	   	    
+Data
+	Input Registers		CLK	CE	RST	Source
+	-------------------------------------------------------
+		A		    	   	    	A Data In
+		B		    	   	    	B Data In
+		C		    	   	    	N/A
+	Cascaded Match
+
+     	Pipeline Registers	CLK	CE	RST
+	--------------------------------------------
+		Pipe		    	   	    
+
+     	Output Register		CLK	CE	RST
+	--------------------------------------------
+		Output		    	   	    
+Other
+	SOURCEB_MODE	B_SHIFT
+	MULT_BYPASS	DISABLED
+	CAS_MATCH_REG	FALSE
+	GSR		DISABLED
+	RESETMODE	SYNC
+	CLK0_DIV	ENABLED
+	CLK1_DIV	ENABLED
+	CLK2_DIV	ENABLED
+	CLK3_DIV	ENABLED
+	HIGHSPEED_CLK	NONE
+	PSE17		0b00000000000000000
+	PSE35		0b00000000000000000
+     
+	C_PSE17		0b00000000000000000
+
+     
+
+ASIC Components
+---------------
+
+Instance Name: lat_alu_3
+         Type: ALU54B
+Instance Name: lat_alu_4
+         Type: ALU54B
+
+                                   Page 12
+
+
+
+
+Design:  ieee754_multiplier                            Date:  05/23/25  22:05:41
+
+ASIC Components (cont)
+----------------------
+Instance Name: lat_mult_2
+         Type: MULT18X18D
+Instance Name: lat_mult_1
+         Type: MULT18X18D
+Instance Name: lat_mult_0
+         Type: MULT18X18D
+Instance Name: mult_14
+         Type: MULT18X18D
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 69 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 13
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.

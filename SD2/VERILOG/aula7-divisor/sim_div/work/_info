@@ -1,0 +1,115 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/SD2/VERILOG/aula7-divisor/sim_div
+T_opt
+!s110 1748486816
+V1ORKGRh7e9Ze2oDjNLO?k0
+04 10 8 work div_clk_tb behavior 1
+=2-ac675dfda9e9-6837ca9f-322-151c
+R1
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Ediv_clk
+Z3 w1748486805
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R2
+Z7 8D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clock.vhd
+Z8 FD:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clock.vhd
+l0
+L5 1
+VXV4`a>QVAHnRA>9X2MbhA3
+!s100 75aUVcVc@Fim=md:3E[2>3
+Z9 OL;C;2024.2;79
+32
+Z10 !s110 1748486811
+!i10b 1
+Z11 !s108 1748486810.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clock.vhd|
+Z13 !s107 D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clock.vhd|
+!i113 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Abehavioral
+R4
+R5
+R6
+DEx4 work 7 div_clk 0 22 XV4`a>QVAHnRA>9X2MbhA3
+!i122 2
+l19
+L13 24
+VefeC03Fg?d8U[DINlMlQW0
+!s100 EimV>:?C3EgKQPh67hSbI3
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ediv_clk_tb
+Z16 w1748486568
+R4
+R5
+R6
+!i122 3
+R2
+Z17 8D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clk_tb.vhd
+Z18 FD:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clk_tb.vhd
+l0
+L5 1
+V=3oM<lf22;>:Lb3[^PV:P3
+!s100 XY]?P6DYf9D1JIk1S3oCW2
+R9
+32
+R10
+!i10b 1
+Z19 !s108 1748486811.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clk_tb.vhd|
+Z21 !s107 D:/RTL_FPGA/SD2/VERILOG/aula7-divisor/div_clk_tb.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R4
+R5
+R6
+DEx4 work 10 div_clk_tb 0 22 =3oM<lf22;>:Lb3[^PV:P3
+!i122 3
+l24
+L8 61
+Vh;S<Uf@FUlCUf5_zb@kko1
+!s100 Pl@>i;egff`d@KhUZH>iJ2
+R9
+32
+R10
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R14
+R15

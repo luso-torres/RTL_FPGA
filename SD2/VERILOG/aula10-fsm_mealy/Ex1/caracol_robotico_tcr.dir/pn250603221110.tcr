@@ -1,0 +1,10 @@
+#Start recording tcl command: 6/3/2025 18:53:05
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1; Project name: caracol_robotico
+prj_project open "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1/caracol_robotico.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mealy_zero_detector_tf.v"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1/sim_ex1/sim_ex1.spf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula10-fsm_mealy/Ex1/sim_ex1/sim_ex1.spf"
+#Stop recording: 6/3/2025 22:11:10

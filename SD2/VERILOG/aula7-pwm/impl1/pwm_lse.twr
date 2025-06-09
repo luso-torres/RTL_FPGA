@@ -1,0 +1,163 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Thu May 29 21:00:31 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     pwm
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            169 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.310ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             cnt_21__i0  (from clk_c +)
+   Destination:    FD1S3AX    D              pwm_out_12  (to clk_c +)
+
+   Delay:                   4.865ns  (28.5% logic, 71.5% route), 8 logic levels.
+
+ Constraint Details:
+
+      4.865ns data_path cnt_21__i0 to pwm_out_12 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.310ns
+
+ Path Details: cnt_21__i0 to pwm_out_12
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              cnt_21__i0 (from clk_c)
+Route         3   e 1.339                                  cnt[0]
+A1_TO_FCO   ---     0.329           C[2] to COUT           _add_1_add_4_2
+Route         1   e 0.020                                  n228
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_4
+Route         1   e 0.020                                  n229
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_6
+Route         1   e 0.020                                  n230
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_8
+Route         1   e 0.020                                  n231
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_10
+Route         1   e 0.020                                  n232
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_add_4_12
+Route         1   e 1.020                                  cout
+LUT4        ---     0.166              A to Z              i20_1_lut
+Route         1   e 1.020                                  pwm_out_N_22
+                  --------
+                    4.865  (28.5% logic, 71.5% route), 8 logic levels.
+
+
+Passed:  The following path meets requirements by 0.381ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             cnt_21__i1  (from clk_c +)
+   Destination:    FD1S3AX    D              pwm_out_12  (to clk_c +)
+
+   Delay:                   4.794ns  (27.8% logic, 72.2% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.794ns data_path cnt_21__i1 to pwm_out_12 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.381ns
+
+ Path Details: cnt_21__i1 to pwm_out_12
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              cnt_21__i1 (from clk_c)
+Route         3   e 1.339                                  cnt[1]
+A1_TO_FCO   ---     0.329           C[2] to COUT           _add_1_add_4_4
+Route         1   e 0.020                                  n229
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_6
+Route         1   e 0.020                                  n230
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_8
+Route         1   e 0.020                                  n231
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_10
+Route         1   e 0.020                                  n232
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_add_4_12
+Route         1   e 1.020                                  cout
+LUT4        ---     0.166              A to Z              i20_1_lut
+Route         1   e 1.020                                  pwm_out_N_22
+                  --------
+                    4.794  (27.8% logic, 72.2% route), 7 logic levels.
+
+
+Passed:  The following path meets requirements by 0.381ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             cnt_21__i2  (from clk_c +)
+   Destination:    FD1S3AX    D              pwm_out_12  (to clk_c +)
+
+   Delay:                   4.794ns  (27.8% logic, 72.2% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.794ns data_path cnt_21__i2 to pwm_out_12 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.381ns
+
+ Path Details: cnt_21__i2 to pwm_out_12
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              cnt_21__i2 (from clk_c)
+Route         3   e 1.339                                  cnt[2]
+A1_TO_FCO   ---     0.329           C[2] to COUT           _add_1_add_4_4
+Route         1   e 0.020                                  n229
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_6
+Route         1   e 0.020                                  n230
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_8
+Route         1   e 0.020                                  n231
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_10
+Route         1   e 0.020                                  n232
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_add_4_12
+Route         1   e 1.020                                  cout
+LUT4        ---     0.166              A to Z              i20_1_lut
+Route         1   e 1.020                                  pwm_out_N_22
+                  --------
+                    4.794  (27.8% logic, 72.2% route), 7 logic levels.
+
+Report: 4.690 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     4.690 ns|     8  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  169 paths, 38 nets, and 77 connections (77.0% coverage)
+
+
+Peak memory: 93265920 bytes, TRCE: 204800 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
