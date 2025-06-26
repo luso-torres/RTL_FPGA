@@ -2,9 +2,9 @@
 <BaliProject version="3.2" title="maquina_bala" device="LFE5U-45F-6BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="maquina_bala"/>
+        <Options/>
         <Source name="maquina_bala.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="maquina_bala"/>
+            <Options/>
         </Source>
         <Source name="maquina_bala.lpf" type="Logic Preference" type_short="LPF">
             <Options/>

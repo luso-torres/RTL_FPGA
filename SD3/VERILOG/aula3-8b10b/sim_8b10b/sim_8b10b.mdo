@@ -1,0 +1,29 @@
+if {![file exists "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b" sim_8b10b
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmiter_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmiter_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  test_8b10b
+view wave
+add wave /*
+run 1000ns

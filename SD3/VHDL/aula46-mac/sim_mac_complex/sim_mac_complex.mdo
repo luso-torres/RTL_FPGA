@@ -1,0 +1,21 @@
+if {![file exists "D:/RTL_FPGA/SD3/VHDL/aula46-mac/sim_mac_complex/sim_mac_complex.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VHDL/aula46-mac/sim_mac_complex" sim_mac_complex
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_tb.vhd"
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd"
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_complex.vhd"
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_tb.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_complex.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD3/VHDL/aula46-mac/sim_mac_complex/sim_mac_complex"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

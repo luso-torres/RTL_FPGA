@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/VHDL/aula46-mac/sim_mac/sim_mac.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VHDL/aula46-mac/sim_mac" sim_mac
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd"
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD3/VHDL/aula46-mac/sim_mac/sim_mac"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

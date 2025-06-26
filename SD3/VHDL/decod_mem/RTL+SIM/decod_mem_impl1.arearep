@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell mem_128B.TECH
+Register bits:  8 of 44439 (0.018%)
+I/O cells:      25
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         6          100.0
+                            FD1P3IX         2          100.0
+                                GSR         1          100.0
+                                 IB        17          100.0
+                               LUT4        57          100.0
+                                 OB         8          100.0
+                              PFUMX        16          100.0
+                           SPR16X4C        16          100.0
+                              TOTAL       123

@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_encoder_decoder/sim_encoder_decoder.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_encoder_decoder" sim_encoder_decoder
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v"
+	project addfile "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b  -work work  "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_encoder_decoder/sim_encoder_decoder"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  test_8b10b
+view wave
+add wave /*
+run 1000ns

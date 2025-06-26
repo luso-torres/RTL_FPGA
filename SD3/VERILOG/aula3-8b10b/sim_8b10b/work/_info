@@ -1,0 +1,215 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b
+T_opt
+!s110 1750727258
+VNzN@;Z3cj5`^DJhBFIJgG1
+04 10 4 work test_8b10b fast 0
+=3-ac675dfda9e9-6859fa5a-29b-8188
+R1
+!s12f OEM25U3 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vdecode
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+Z4 !s110 1750727245
+!i10b 1
+!s100 o]C7ghDVWg<Yb0WEbA`7M2
+I>54V6S;]1KA4f9j6gWgQ>1
+R2
+w1750291065
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+!i122 8
+L0 13 147
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z7 !s108 1750727245.000000
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vencode
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v
+R4
+!i10b 1
+!s100 lVG038_KJbEP2303QUi_T1
+IW9YU;Z@oBmigTD=:3cL0c0
+R2
+w1750291086
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v
+!i122 9
+L0 13 108
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v|
+!i113 0
+R8
+R3
+vPISO_reg
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v
+Z9 !s110 1750727246
+!i10b 1
+!s100 PH`ldgbhO?IKb;C?hLkmW1
+IncMZ6`k]AcENmadl]LZ:G2
+R2
+w1750291111
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v
+!i122 13
+L0 1 46
+R5
+R6
+r1
+!s85 0
+31
+Z10 !s108 1750727246.000000
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v|
+!i113 0
+R8
+R3
+n@p@i@s@o_reg
+vserdes_receiver
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v
+R9
+!i10b 1
+!s100 Hb:;QUMOD797IVO=]>P8z0
+IU:a0fWnX7?7PYE`N[k<<n0
+R2
+w1750293885
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v
+!i122 12
+L0 1 72
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v|
+!i113 0
+R8
+R3
+vserdes_transmiter
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v
+R9
+!i10b 1
+!s100 B2;;9f[BJJdjZG?B;i5ZO2
+I1MmiGbC_l]Iz06C[`Lj?O3
+R2
+w1750293315
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v
+!i122 14
+L0 1 27
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v|
+!i113 0
+R8
+R3
+vserdes_transmiter_tf
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmiter_tf.v
+R9
+!i10b 1
+!s100 lC6Pb<b8lT3VjCRJ0_]BY3
+I37eHm_Fa3f]RI`<6LgJbl0
+R2
+w1750727178
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmiter_tf.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmiter_tf.v
+!i122 15
+L0 3 56
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmiter_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmiter_tf.v|
+!i113 0
+R8
+R3
+vSIPO_reg
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v
+R9
+!i10b 1
+!s100 OWGRC3WQaAcRVGPLSTcVz0
+IEcUO4IIF`2N:]Lf8b6OKP2
+R2
+w1750293337
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v
+!i122 11
+L0 1 17
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v|
+!i113 0
+R8
+R3
+n@s@i@p@o_reg
+vtest_8b10b
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+R9
+!i10b 1
+!s100 3C9kJ69CZWa>>HNIGX>`c1
+Ia<XVVD;>T<R3TOl`AA:kn1
+R2
+w1750291484
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+!i122 10
+L0 2 155
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v|
+!i113 0
+R8
+R3

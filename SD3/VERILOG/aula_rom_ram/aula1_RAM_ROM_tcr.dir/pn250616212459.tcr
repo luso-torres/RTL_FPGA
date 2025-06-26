@@ -1,0 +1,30 @@
+#Start recording tcl command: 6/16/2025 20:27:40
+#Project Location: D:/RTL_FPGA/SD3; Project name: aula1_RAM_ROM
+prj_project new -name "aula1_RAM_ROM" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD3/datasrc.v"
+prj_run Synthesis -impl impl1
+prj_src add "D:/RTL_FPGA/SD3/datasrc1.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/SD3/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "datasrc1_tf.v"
+prj_src add "D:/RTL_FPGA/SD3/sim_RAM_ROM/sim_RAM_ROM.spf"
+prj_src exclude "D:/RTL_FPGA/SD3/datasrc.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3/hdle_generate_tbdeclaration.tcl"
+prj_src add "D:/RTL_FPGA/SD3/sim_RAM_ROM/sim_RAM_ROM.spf"
+prj_src add "D:/RTL_FPGA/SD3/sim_RAM_ROM/sim_RAM_ROM.spf"
+prj_src exclude "D:/RTL_FPGA/SD3/datasrc1.v" "D:/RTL_FPGA/SD3/datasrc1_tf.v"
+prj_src add "D:/RTL_FPGA/SD3/ram_168.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "rw_16x8_sync_tf.v"
+source "D:/RTL_FPGA/SD3/hdle_generate_tbtemplate.tcl"
+prj_src add "D:/RTL_FPGA/SD3/sim_rw_16x8/sim_rw_16x8.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 6/16/2025 21:24:59

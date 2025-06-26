@@ -1,0 +1,11 @@
+#Start recording tcl command: 6/23/2025 15:08:36
+#Project Location: D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor; Project name: aula14_fsm_divisor
+prj_project open "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/aula14_fsm_divisor.ldf"
+prj_src exclude "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM_tb.vhd"
+prj_src exclude "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd"
+source "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/hdle_generate_tbtemplate.tcl"
+prj_src enable "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM_tb.vhd"
+prj_run Synthesis -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 6/23/2025 18:47:50

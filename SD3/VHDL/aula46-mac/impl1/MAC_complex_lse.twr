@@ -1,0 +1,219 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jun 25 21:49:59 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     MAC_complex
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            543 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.786ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             accumulator_re_38__i1  (from clk_c +)
+   Destination:    FD1P3AX    D              accumulator_re_38__i32  (to clk_c +)
+
+   Delay:                   4.389ns  (39.4% logic, 60.6% route), 17 logic levels.
+
+ Constraint Details:
+
+      4.389ns data_path accumulator_re_38__i1 to accumulator_re_38__i32 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.786ns
+
+ Path Details: accumulator_re_38__i1 to accumulator_re_38__i32
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              accumulator_re_38__i1 (from clk_c)
+Route         3   e 1.339                                  result_re_c_0
+A1_TO_FCO   ---     0.329           B[2] to COUT           accumulator_re_38_add_4_2
+Route         1   e 0.020                                  n660
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_4
+Route         1   e 0.020                                  n661
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_6
+Route         1   e 0.020                                  n662
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_8
+Route         1   e 0.020                                  n663
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_10
+Route         1   e 0.020                                  n664
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_12
+Route         1   e 0.020                                  n665
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_14
+Route         1   e 0.020                                  n666
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_16
+Route         1   e 0.020                                  n667
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_18
+Route         1   e 0.020                                  n668
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_20
+Route         1   e 0.020                                  n669
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_22
+Route         1   e 0.020                                  n670
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_24
+Route         1   e 0.020                                  n671
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_26
+Route         1   e 0.020                                  n672
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_28
+Route         1   e 0.020                                  n673
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_30
+Route         1   e 0.020                                  n674
+FCI_TO_F    ---     0.322            CIN to S[2]           accumulator_re_38_add_4_32
+Route         1   e 1.020                                  n134
+                  --------
+                    4.389  (39.4% logic, 60.6% route), 17 logic levels.
+
+
+Passed:  The following path meets requirements by 0.786ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             accumulator_re_38__i1  (from clk_c +)
+   Destination:    FD1P3AX    D              accumulator_re_38__i31  (to clk_c +)
+
+   Delay:                   4.389ns  (39.4% logic, 60.6% route), 17 logic levels.
+
+ Constraint Details:
+
+      4.389ns data_path accumulator_re_38__i1 to accumulator_re_38__i31 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.786ns
+
+ Path Details: accumulator_re_38__i1 to accumulator_re_38__i31
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              accumulator_re_38__i1 (from clk_c)
+Route         3   e 1.339                                  result_re_c_0
+A1_TO_FCO   ---     0.329           B[2] to COUT           accumulator_re_38_add_4_2
+Route         1   e 0.020                                  n660
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_4
+Route         1   e 0.020                                  n661
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_6
+Route         1   e 0.020                                  n662
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_8
+Route         1   e 0.020                                  n663
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_10
+Route         1   e 0.020                                  n664
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_12
+Route         1   e 0.020                                  n665
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_14
+Route         1   e 0.020                                  n666
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_16
+Route         1   e 0.020                                  n667
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_18
+Route         1   e 0.020                                  n668
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_20
+Route         1   e 0.020                                  n669
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_22
+Route         1   e 0.020                                  n670
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_24
+Route         1   e 0.020                                  n671
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_26
+Route         1   e 0.020                                  n672
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_28
+Route         1   e 0.020                                  n673
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_30
+Route         1   e 0.020                                  n674
+FCI_TO_F    ---     0.322            CIN to S[2]           accumulator_re_38_add_4_32
+Route         1   e 1.020                                  n135
+                  --------
+                    4.389  (39.4% logic, 60.6% route), 17 logic levels.
+
+
+Passed:  The following path meets requirements by 0.857ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             accumulator_re_38__i1  (from clk_c +)
+   Destination:    FD1P3AX    D              accumulator_re_38__i29  (to clk_c +)
+
+   Delay:                   4.318ns  (38.9% logic, 61.1% route), 16 logic levels.
+
+ Constraint Details:
+
+      4.318ns data_path accumulator_re_38__i1 to accumulator_re_38__i29 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.857ns
+
+ Path Details: accumulator_re_38__i1 to accumulator_re_38__i29
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              accumulator_re_38__i1 (from clk_c)
+Route         3   e 1.339                                  result_re_c_0
+A1_TO_FCO   ---     0.329           B[2] to COUT           accumulator_re_38_add_4_2
+Route         1   e 0.020                                  n660
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_4
+Route         1   e 0.020                                  n661
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_6
+Route         1   e 0.020                                  n662
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_8
+Route         1   e 0.020                                  n663
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_10
+Route         1   e 0.020                                  n664
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_12
+Route         1   e 0.020                                  n665
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_14
+Route         1   e 0.020                                  n666
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_16
+Route         1   e 0.020                                  n667
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_18
+Route         1   e 0.020                                  n668
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_20
+Route         1   e 0.020                                  n669
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_22
+Route         1   e 0.020                                  n670
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_24
+Route         1   e 0.020                                  n671
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_26
+Route         1   e 0.020                                  n672
+FCI_TO_FCO  ---     0.051            CIN to COUT           accumulator_re_38_add_4_28
+Route         1   e 0.020                                  n673
+FCI_TO_F    ---     0.322            CIN to S[2]           accumulator_re_38_add_4_30
+Route         1   e 1.020                                  n137
+                  --------
+                    4.318  (38.9% logic, 61.1% route), 16 logic levels.
+
+Report: 4.214 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     4.214 ns|    17  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  543 paths, 80 nets, and 112 connections (21.6% coverage)
+
+
+Peak memory: 114806784 bytes, TRCE: 565248 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

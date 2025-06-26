@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/sim_rw_16x8/sim_rw_16x8.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/sim_rw_16x8" sim_rw_16x8
+	project addfile "D:/RTL_FPGA/SD3/ram_168.v"
+	project addfile "D:/RTL_FPGA/SD3/rw_16x8_sync_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3  -work work  "D:/RTL_FPGA/SD3/ram_168.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3  -work work  "D:/RTL_FPGA/SD3/rw_16x8_sync_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3/sim_rw_16x8/sim_rw_16x8"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  rw_16x8_sync_tf
+view wave
+add wave /*
+run 1000ns

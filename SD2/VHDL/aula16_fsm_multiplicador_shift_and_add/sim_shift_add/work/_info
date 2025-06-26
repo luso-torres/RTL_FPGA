@@ -1,0 +1,113 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/sim_shift_add
+T_opt
+!s110 1749683747
+VlFz48^zE:7GnkYVQjeSoj2
+04 9 8 work testbench behavior 1
+=1-ac675dfda9e9-684a0e22-4b-3990
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Emult4x4
+Z2 w1749683686
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+!i122 0
+R1
+Z6 8D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/m_shift_add.vhd
+Z7 FD:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/m_shift_add.vhd
+l0
+L5 1
+VgIG@E`Q;;n7EABmKd_[;E0
+!s100 3[AU>PnJMOVnES@IC5hA>0
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1749683742
+!i10b 1
+Z10 !s108 1749683742.000000
+Z11 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/m_shift_add.vhd|
+Z12 !s107 D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/m_shift_add.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehave1
+R3
+R4
+R5
+DEx4 work 7 mult4x4 0 22 gIG@E`Q;;n7EABmKd_[;E0
+!i122 0
+l18
+L13 38
+V6zzN^Y[N2B@9Dj>_0TZ]D1
+!s100 ;KaMeGLY0I>W?<hg[V@S:0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Etestbench
+Z15 w1749683568
+R5
+R4
+R3
+!i122 1
+R1
+Z16 8D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/mult4X4_tb.vhd
+Z17 FD:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/mult4X4_tb.vhd
+l0
+L25 1
+V]2JEKP=GFG9;S=<ROB?Wi0
+!s100 DhX?P9?7<f<Q6;Ocez<e>3
+R8
+32
+Z18 !s110 1749683743
+!i10b 1
+Z19 !s108 1749683743.000000
+Z20 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/mult4X4_tb.vhd|
+Z21 !s107 D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/mult4X4_tb.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R5
+R4
+R3
+DEx4 work 9 testbench 0 22 ]2JEKP=GFG9;S=<ROB?Wi0
+!i122 1
+l47
+L28 50
+VH@PP6`fmZ:WIV^;hVEo0k0
+!s100 UB5@OUCD?h8LHQ;@>b1V42
+R8
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R13
+R14

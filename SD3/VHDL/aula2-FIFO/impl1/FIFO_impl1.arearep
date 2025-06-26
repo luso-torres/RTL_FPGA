@@ -1,0 +1,17 @@
+----------------------------------------------------------------------
+Report for cell fifo_NxN_buffer_circular.TECH
+Register bits:  26 of 44439 (0.059%)
+I/O cells:      38
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                           DPR16X4C         4          100.0
+                            FD1P3AX        24          100.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX         1          100.0
+                                GSR         1          100.0
+                                 IB        20          100.0
+                            L6MUX21         2          100.0
+                               LUT4        80          100.0
+                                 OB        18          100.0
+                              PFUMX         4          100.0
+                              TOTAL       155

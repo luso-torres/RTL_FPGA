@@ -1,0 +1,211 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jun 18 21:44:54 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     serdes_receiver
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            557 items scored, 511 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 5.007ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \sipo/data_out_i1  (from clk_c +)
+   Destination:    FD1P3AX    SP             sof_16  (to clk_c +)
+
+   Delay:                  10.086ns  (14.6% logic, 85.4% route), 8 logic levels.
+
+ Constraint Details:
+
+     10.086ns data_path \sipo/data_out_i1 to sof_16 violates
+      5.000ns delay constraint less
+     -0.079ns LCE_S requirement (totaling 5.079ns) by 5.007ns
+
+ Path Details: \sipo/data_out_i1 to sof_16
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \sipo/data_out_i1 (from clk_c)
+Route        18   e 1.698                                  sipo_out[1]
+LUT4        ---     0.166              A to Z              \dec/i1791_2_lut_rep_68
+Route         2   e 1.158                                  \dec/n2085
+LUT4        ---     0.166              A to Z              \dec/i1_4_lut_then_4_lut
+Route         1   e 0.020                                  \dec/n2092
+MUXL5       ---     0.116           ALUT to Z              \dec/i1896
+Route         2   e 1.158                                  \dec/n1719
+LUT4        ---     0.166              C to Z              \dec/i1_2_lut_3_lut_adj_165
+Route         3   e 1.239                                  \dec/n231
+LUT4        ---     0.166              C to Z              \dec/datain_4__I_0_623_i5_4_lut
+Route         2   e 1.158                                  data_out_c_4
+LUT4        ---     0.166              B to Z              i1_4_lut
+Route         2   e 1.158                                  n1566
+LUT4        ---     0.166              B to Z              i1832_4_lut
+Route         1   e 1.020                                  clk_c_enable_1
+                  --------
+                   10.086  (14.6% logic, 85.4% route), 8 logic levels.
+
+
+Error:  The following path violates requirements by 5.007ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \sipo/data_out_i1  (from clk_c +)
+   Destination:    FD1P3AX    SP             sof_16  (to clk_c +)
+
+   Delay:                  10.086ns  (14.6% logic, 85.4% route), 8 logic levels.
+
+ Constraint Details:
+
+     10.086ns data_path \sipo/data_out_i1 to sof_16 violates
+      5.000ns delay constraint less
+     -0.079ns LCE_S requirement (totaling 5.079ns) by 5.007ns
+
+ Path Details: \sipo/data_out_i1 to sof_16
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \sipo/data_out_i1 (from clk_c)
+Route        18   e 1.698                                  sipo_out[1]
+LUT4        ---     0.166              A to Z              \dec/i1791_2_lut_rep_68
+Route         2   e 1.158                                  \dec/n2085
+LUT4        ---     0.166              A to Z              \dec/i1_4_lut_then_4_lut
+Route         1   e 0.020                                  \dec/n2092
+MUXL5       ---     0.116           ALUT to Z              \dec/i1896
+Route         2   e 1.158                                  \dec/n1719
+LUT4        ---     0.166              C to Z              \dec/i1_2_lut_3_lut_adj_165
+Route         3   e 1.239                                  \dec/n231
+LUT4        ---     0.166              C to Z              \dec/datain_4__I_0_623_i1_4_lut
+Route         2   e 1.158                                  data_out_c_0
+LUT4        ---     0.166              A to Z              i1_2_lut
+Route         2   e 1.158                                  n5
+LUT4        ---     0.166              A to Z              i1832_4_lut
+Route         1   e 1.020                                  clk_c_enable_1
+                  --------
+                   10.086  (14.6% logic, 85.4% route), 8 logic levels.
+
+
+Error:  The following path violates requirements by 4.995ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \sipo/data_out_i0  (from clk_c +)
+   Destination:    FD1P3AX    SP             sof_16  (to clk_c +)
+
+   Delay:                  10.074ns  (14.7% logic, 85.3% route), 8 logic levels.
+
+ Constraint Details:
+
+     10.074ns data_path \sipo/data_out_i0 to sof_16 violates
+      5.000ns delay constraint less
+     -0.079ns LCE_S requirement (totaling 5.079ns) by 4.995ns
+
+ Path Details: \sipo/data_out_i0 to sof_16
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \sipo/data_out_i0 (from clk_c)
+Route        17   e 1.686                                  sipo_out[0]
+LUT4        ---     0.166              B to Z              \dec/i1791_2_lut_rep_68
+Route         2   e 1.158                                  \dec/n2085
+LUT4        ---     0.166              A to Z              \dec/i1_4_lut_then_4_lut
+Route         1   e 0.020                                  \dec/n2092
+MUXL5       ---     0.116           ALUT to Z              \dec/i1896
+Route         2   e 1.158                                  \dec/n1719
+LUT4        ---     0.166              C to Z              \dec/i1_2_lut_3_lut_adj_165
+Route         3   e 1.239                                  \dec/n231
+LUT4        ---     0.166              C to Z              \dec/datain_4__I_0_623_i1_4_lut
+Route         2   e 1.158                                  data_out_c_0
+LUT4        ---     0.166              A to Z              i1_2_lut
+Route         2   e 1.158                                  n5
+LUT4        ---     0.166              A to Z              i1832_4_lut
+Route         1   e 1.020                                  clk_c_enable_1
+                  --------
+                   10.074  (14.7% logic, 85.3% route), 8 logic levels.
+
+Warning: 10.007 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|    10.007 ns|     8 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+start_of_frame_N_9                      |       1|     264|     51.66%
+                                        |        |        |
+clk_c_enable_1                          |       1|     247|     48.34%
+                                        |        |        |
+n1566                                   |       2|     200|     39.14%
+                                        |        |        |
+n5                                      |       2|     150|     29.35%
+                                        |        |        |
+sipo_out[2]                             |      25|      92|     18.00%
+                                        |        |        |
+\dec/n1719                              |       2|      90|     17.61%
+                                        |        |        |
+\dec/n231                               |       3|      84|     16.44%
+                                        |        |        |
+sipo_out[4]                             |      27|      82|     16.05%
+                                        |        |        |
+data_out_c_1                            |       2|      80|     15.66%
+                                        |        |        |
+data_out_c_2                            |       2|      80|     15.66%
+                                        |        |        |
+sipo_out[3]                             |      21|      78|     15.26%
+                                        |        |        |
+\dec/n1625                              |       2|      76|     14.87%
+                                        |        |        |
+data_out_c_0                            |       2|      70|     13.70%
+                                        |        |        |
+data_out_c_3                            |       3|      70|     13.70%
+                                        |        |        |
+sipo_out[1]                             |      18|      70|     13.70%
+                                        |        |        |
+data_out_c_4                            |       2|      68|     13.31%
+                                        |        |        |
+sipo_out[5]                             |      22|      68|     13.31%
+                                        |        |        |
+sipo_out[0]                             |      17|      66|     12.92%
+                                        |        |        |
+\dec/p13                                |       7|      56|     10.96%
+                                        |        |        |
+n1713                                   |       1|      54|     10.57%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 511  Score: 1533027
+
+Constraints cover  557 paths, 84 nets, and 262 connections (61.6% coverage)
+
+
+Peak memory: 100417536 bytes, TRCE: 155648 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

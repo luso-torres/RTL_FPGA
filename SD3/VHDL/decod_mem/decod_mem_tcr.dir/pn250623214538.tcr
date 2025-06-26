@@ -1,0 +1,33 @@
+#Start recording tcl command: 6/23/2025 20:07:01
+#Project Location: D:/RTL_FPGA/SD3_files/VHDL/decod_mem; Project name: decod_mem
+prj_project new -name "decod_mem" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/decod_mem.vhd"
+prj_src add "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/rom.vhd"
+prj_src add "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/sram.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/rom.vhd"
+prj_src exclude "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/sram.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "mem_128B_tb.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/sim_mem_sys/sim_mem_sys.spf"
+prj_project save
+prj_project close
+#Stop recording: 6/23/2025 21:45:38

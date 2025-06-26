@@ -1,0 +1,66 @@
+#Start recording tcl command: 6/17/2025 20:20:27
+#Project Location: D:/RTL_FPGA/SD3_files/aula2-FIFO; Project name: FIFO
+prj_project new -name "FIFO" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3_files/aula2-FIFO/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "fifo_8x8_buffer_circular_tb.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO/sim_FIFO.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO/sim_FIFO.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO/sim_FIFO.spf"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO_barrel.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd"
+source "D:/RTL_FPGA/SD3_files/aula2-FIFO/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "fifo_NxN_buffer_barrel_tb.vhd"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO_BARREL/sim_FIFO_BARREL.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO_VS/sim_FIFO_VS.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO_VS/sim_FIFO_VS.spf"
+prj_src enable "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO_VS/sim_FIFO_VS.spf"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd"
+prj_src enable "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_fifo_vs/sim_fifo_vs.spf"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO_barrel.vhd"
+prj_src enable "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_NxN_buffer_barrel_tb.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 6/18/2025 15:24:35

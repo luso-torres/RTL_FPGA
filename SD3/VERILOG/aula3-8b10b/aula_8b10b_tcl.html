@@ -1,0 +1,121 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn250619144855"></A><B><U><big>pn250619144855</big></U></B>
+#Start recording tcl command: 6/18/2025 20:55:40
+#Project Location: D:/RTL_FPGA/SD3_files/aula3-8b10b; Project name: aula_8b10b
+prj_project new -name "aula_8b10b" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+source "D:/RTL_FPGA/SD3_files/aula3-8b10b/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/SD3_files/aula3-8b10b/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "encode_tf.v"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b_encode_decode/sim_8b10b_encode_decode.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src enable "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+prj_src enable "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3_files/aula3-8b10b/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "serdes_transmiter_tf.v"
+source "D:/RTL_FPGA/SD3_files/aula3-8b10b/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "serdes_receiver_tf.v"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver_tf.v"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_serdes/sim_serdes.spf"
+prj_project save
+prj_project close
+#Stop recording: 6/19/2025 14:48:55
+
+
+
+<A name="pn250623200701"></A><B><U><big>pn250623200701</big></U></B>
+#Start recording tcl command: 6/23/2025 18:47:50
+#Project Location: D:/RTL_FPGA/SD3_files/aula3-8b10b; Project name: aula_8b10b
+prj_project open "D:/RTL_FPGA/SD3_files/aula3-8b10b/aula_8b10b.ldf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_project close
+#Stop recording: 6/23/2025 20:07:01
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,213 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Jun 21 19:56:00 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     media
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            111 items scored, 37 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 0.663ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             media_temp_i0_i2  (from clk_c +)
+   Destination:    FD1P3AX    D              media_temp_i0_i6  (to clk_c +)
+
+   Delay:                   5.838ns  (24.0% logic, 76.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      5.838ns data_path media_temp_i0_i2 to media_temp_i0_i6 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.663ns
+
+ Path Details: media_temp_i0_i2 to media_temp_i0_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              media_temp_i0_i2 (from clk_c)
+Route         3   e 1.339                                  media_temp[2]
+A1_TO_FCO   ---     0.329           B[2] to COUT           _add_1_add_4_4
+Route         1   e 0.020                                  n533
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_6
+Route         1   e 0.020                                  n534
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_add_4_8
+Route         1   e 1.020                                  media_temp_7__N_35[6]
+LUT4        ---     0.166              B to Z              i1_2_lut_2_lut
+Route         1   e 1.020                                  n567
+LUT4        ---     0.166              A to Z              i151_4_lut
+Route         1   e 1.020                                  n354
+                  --------
+                    5.838  (24.0% logic, 76.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 0.663ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             media_temp_i0_i2  (from clk_c +)
+   Destination:    FD1P3AX    D              media_temp_i0_i7  (to clk_c +)
+
+   Delay:                   5.838ns  (24.0% logic, 76.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      5.838ns data_path media_temp_i0_i2 to media_temp_i0_i7 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.663ns
+
+ Path Details: media_temp_i0_i2 to media_temp_i0_i7
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              media_temp_i0_i2 (from clk_c)
+Route         3   e 1.339                                  media_temp[2]
+A1_TO_FCO   ---     0.329           B[2] to COUT           _add_1_add_4_4
+Route         1   e 0.020                                  n533
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_6
+Route         1   e 0.020                                  n534
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_add_4_8
+Route         1   e 1.020                                  media_temp_7__N_35[7]
+LUT4        ---     0.166              B to Z              i1_2_lut_2_lut_adj_1
+Route         1   e 1.020                                  n571
+LUT4        ---     0.166              A to Z              i153_4_lut
+Route         1   e 1.020                                  n356
+                  --------
+                    5.838  (24.0% logic, 76.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 0.663ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             media_temp_i0_i3  (from clk_c +)
+   Destination:    FD1P3AX    D              media_temp_i0_i6  (to clk_c +)
+
+   Delay:                   5.838ns  (24.0% logic, 76.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      5.838ns data_path media_temp_i0_i3 to media_temp_i0_i6 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.663ns
+
+ Path Details: media_temp_i0_i3 to media_temp_i0_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              media_temp_i0_i3 (from clk_c)
+Route         3   e 1.339                                  media_temp[3]
+A1_TO_FCO   ---     0.329           B[2] to COUT           _add_1_add_4_4
+Route         1   e 0.020                                  n533
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_add_4_6
+Route         1   e 0.020                                  n534
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_add_4_8
+Route         1   e 1.020                                  media_temp_7__N_35[6]
+LUT4        ---     0.166              B to Z              i1_2_lut_2_lut
+Route         1   e 1.020                                  n567
+LUT4        ---     0.166              A to Z              i151_4_lut
+Route         1   e 1.020                                  n354
+                  --------
+                    5.838  (24.0% logic, 76.0% route), 6 logic levels.
+
+Warning: 5.663 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     5.663 ns|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n533                                    |       1|      16|     43.24%
+                                        |        |        |
+n532                                    |       1|      12|     32.43%
+                                        |        |        |
+n534                                    |       1|      12|     32.43%
+                                        |        |        |
+media_temp_7__N_35[6]                   |       1|       8|     21.62%
+                                        |        |        |
+media_temp_7__N_35[7]                   |       1|       8|     21.62%
+                                        |        |        |
+n354                                    |       1|       8|     21.62%
+                                        |        |        |
+n356                                    |       1|       8|     21.62%
+                                        |        |        |
+n567                                    |       1|       8|     21.62%
+                                        |        |        |
+n571                                    |       1|       8|     21.62%
+                                        |        |        |
+media_temp[0]                           |       2|       7|     18.92%
+                                        |        |        |
+media_temp[1]                           |       1|       6|     16.22%
+                                        |        |        |
+media_temp[2]                           |       3|       6|     16.22%
+                                        |        |        |
+media_temp[3]                           |       3|       6|     16.22%
+                                        |        |        |
+media_temp_7__N_35[4]                   |       1|       6|     16.22%
+                                        |        |        |
+media_temp_7__N_35[5]                   |       1|       6|     16.22%
+                                        |        |        |
+n294                                    |       1|       6|     16.22%
+                                        |        |        |
+n295                                    |       1|       6|     16.22%
+                                        |        |        |
+n350                                    |       1|       6|     16.22%
+                                        |        |        |
+n352                                    |       1|       6|     16.22%
+                                        |        |        |
+media_temp[4]                           |       3|       4|     10.81%
+                                        |        |        |
+media_temp[5]                           |       3|       4|     10.81%
+                                        |        |        |
+media_temp_7__N_35[2]                   |       1|       4|     10.81%
+                                        |        |        |
+media_temp_7__N_35[3]                   |       1|       4|     10.81%
+                                        |        |        |
+n296                                    |       1|       4|     10.81%
+                                        |        |        |
+n297                                    |       1|       4|     10.81%
+                                        |        |        |
+n334                                    |       1|       4|     10.81%
+                                        |        |        |
+n340                                    |       1|       4|     10.81%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 37  Score: 13994
+
+Constraints cover  111 paths, 50 nets, and 130 connections (78.3% coverage)
+
+
+Peak memory: 92729344 bytes, TRCE: 126976 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

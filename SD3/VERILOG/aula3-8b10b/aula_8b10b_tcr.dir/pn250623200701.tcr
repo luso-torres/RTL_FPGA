@@ -1,0 +1,6 @@
+#Start recording tcl command: 6/23/2025 18:47:50
+#Project Location: D:/RTL_FPGA/SD3_files/aula3-8b10b; Project name: aula_8b10b
+prj_project open "D:/RTL_FPGA/SD3_files/aula3-8b10b/aula_8b10b.ldf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_project close
+#Stop recording: 6/23/2025 20:07:01

@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/sim_mem_sys/sim_mem_sys.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/sim_mem_sys" sim_mem_sys
+	project addfile "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/decod_mem.vhd"
+	project addfile "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/mem_128B_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/decod_mem.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/mem_128B_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD3_files/VHDL/decod_mem/sim_mem_sys/sim_mem_sys"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_mem_128B
+view wave
+add wave /*
+run 1000ns

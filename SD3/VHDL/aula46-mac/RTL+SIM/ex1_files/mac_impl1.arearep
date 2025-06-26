@@ -1,0 +1,12 @@
+----------------------------------------------------------------------
+Report for cell MAC.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      51
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         1          100.0
+                                GSR         1          100.0
+                                 IB        19          100.0
+                         MULT18X18D         2          100.0
+                                 OB        32          100.0
+                              TOTAL        55

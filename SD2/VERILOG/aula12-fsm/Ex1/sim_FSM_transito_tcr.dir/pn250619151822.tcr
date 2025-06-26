@@ -1,0 +1,6 @@
+#Start recording tcl command: 6/19/2025 14:48:57
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1; Project name: sim_FSM_transito
+prj_project open "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/sim_FSM_transito.ldf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/sim_FSM/sim_FSM.spf"
+prj_project close
+#Stop recording: 6/19/2025 15:18:22

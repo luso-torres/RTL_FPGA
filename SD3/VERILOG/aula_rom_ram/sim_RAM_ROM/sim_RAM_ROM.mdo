@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/sim_RAM_ROM/sim_RAM_ROM.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/sim_RAM_ROM" sim_RAM_ROM
+	project addfile "D:/RTL_FPGA/SD3/datasrc1.v"
+	project addfile "D:/RTL_FPGA/SD3/datasrc1_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3  -work work  "D:/RTL_FPGA/SD3/datasrc1.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3  -work work  "D:/RTL_FPGA/SD3/datasrc1_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3/sim_RAM_ROM/sim_RAM_ROM"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_datasrc
+view wave
+add wave /*
+run 1000ns

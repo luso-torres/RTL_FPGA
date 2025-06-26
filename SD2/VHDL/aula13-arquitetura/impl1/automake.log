@@ -1,0 +1,198 @@
+
+synthesis -f "arquitetura_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Jun 10 21:53:53 2025
+
+
+Command Line:  synthesis -f arquitetura_impl1_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = LaserDistMeasurer.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/SD2/VHDL/aula13-arquitetura/impl1 (searchpath added)
+-p D:/RTL_FPGA/SD2/VHDL/aula13-arquitetura (searchpath added)
+VHDL library = work
+VHDL design file = D:/RTL_FPGA/SD2/VHDL/aula13-arquitetura/LaserDistMeasurer.vhd
+NGD file = arquitetura_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/RTL_FPGA/SD2/VHDL/aula13-arquitetura/impl1"  />
+Analyzing VHDL file d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd(6): " arg1="laserdistmeasurer" arg2="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd(15): " arg1="behavior" arg2="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd" arg3="15"  />
+unit LaserDistMeasurer is not yet analyzed. VHDL-1485
+unit LaserDistMeasurer is not yet analyzed. VHDL-1485
+d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd(6): executing LaserDistMeasurer(behavior)
+
+    <postMsg mid="35921172" type="Info"    dynamic="1" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd(78): " arg1="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd" arg2="78"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd(13): " arg1="LaserDistMeasurer" arg2="behavior" arg3="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd" arg4="13"  />
+Top module name (VHDL): LaserDistMeasurer
+Last elaborated design is LaserDistMeasurer(behavior)
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = LaserDistMeasurer.
+
+
+
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="d:/rtl_fpga/sd2/vhdl/aula13-arquitetura/laserdistmeasurer.vhd(80): Latch DregNext_15__I_0_i16 input is stuck at Zero&#xA;"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="Dreg"  />
+GSR instance connected to net n519.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i1"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="StateNext_2__I_0_i1"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i2"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i3"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i4"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i5"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i6"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i7"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i8"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i9"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i10"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i11"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i12"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i13"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i14"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="DregNext_15__I_0_i15"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="StateNext_2__I_0_i2"  />
+    <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="StateNext_2__I_0_i3"  />
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in LaserDistMeasurer_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    112 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file arquitetura_impl1.ngd.
+
+################### Begin Area Report (LaserDistMeasurer)######################
+Number of register bits => 34 of 44439 (0 % )
+CCU2C => 9
+FD1P3AX => 16
+FD1S3AX => 18
+GSR => 1
+IB => 4
+LUT4 => 41
+OB => 17
+PFUMX => 3
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 34
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clk_c_enable_16, loads : 16
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : State_2, loads : 36
+  Net : State_1, loads : 25
+  Net : State_0, loads : 25
+  Net : clk_c_enable_16, loads : 16
+  Net : n909, loads : 15
+  Net : StateNext_2__N_2_c_2, loads : 4
+  Net : StateNext_2, loads : 2
+  Net : StateNext_1, loads : 2
+  Net : StateNext_0, loads : 2
+  Net : Dctr_15, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  199.840 MHz|     3 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 107.148  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.734  secs
+--------------------------------------------------------------

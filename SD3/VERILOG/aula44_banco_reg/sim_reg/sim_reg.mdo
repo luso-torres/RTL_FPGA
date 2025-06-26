@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3_files/VERILOG/sim_reg/sim_reg.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3_files/VERILOG/sim_reg" sim_reg
+	project addfile "D:/RTL_FPGA/SD3_files/VERILOG/banco_reg.v"
+	project addfile "D:/RTL_FPGA/SD3_files/VERILOG/regfile8x16c_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/VERILOG  -work work  "D:/RTL_FPGA/SD3_files/VERILOG/banco_reg.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3_files/VERILOG  -work work  "D:/RTL_FPGA/SD3_files/VERILOG/regfile8x16c_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3_files/VERILOG/sim_reg/sim_reg"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  regfile8x16c_tf
+view wave
+add wave /*
+run 1000ns

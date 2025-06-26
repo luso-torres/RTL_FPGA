@@ -1,0 +1,162 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/SD3/VHDL/aula46-mac/sim_mac_complex
+T_opt
+!s110 1750899011
+VoJccYahE]Hg0j2Wk^V97;2
+04 9 8 work testbench behavior 1
+=4-ac675dfda9e9-685c9943-160-da0
+R1
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Emac
+Z3 w1750897306
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 17
+R2
+Z7 8D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd
+Z8 FD:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd
+l0
+L5 1
+Vdd]A@R0<8i8^ckU^@W6US0
+!s100 5hMjJbQfSh2So9c>P6EO<1
+Z9 OL;C;2024.2;79
+32
+Z10 !s110 1750899006
+!i10b 1
+Z11 !s108 1750899006.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd|
+Z13 !s107 D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd|
+!i113 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Abehavioral
+R4
+R5
+R6
+DEx4 work 3 mac 0 22 dd]A@R0<8i8^ckU^@W6US0
+!i122 17
+l25
+L16 27
+V_8AZl2z2Wb`L8:GAz;1V@3
+!s100 B]EKm<C=DeIl1AGF8ZHM50
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Emac_complex
+Z16 w1750898995
+R4
+R5
+R6
+!i122 18
+R2
+Z17 8D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_complex.vhd
+Z18 FD:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_complex.vhd
+l0
+L5 1
+Voz6W:G?[dnZnj^;[FCkm;0
+!s100 X7:<32_h85@?JIAKkE6<:2
+R9
+32
+Z19 !s110 1750899007
+!i10b 1
+Z20 !s108 1750899007.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_complex.vhd|
+Z22 !s107 D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_complex.vhd|
+!i113 0
+R14
+R15
+Abehavioral
+R4
+R5
+R6
+DEx4 work 11 mac_complex 0 22 oz6W:G?[dnZnj^;[FCkm;0
+!i122 18
+l42
+L18 50
+VK]80]]<T<3ZD;LBFW0J3O2
+!s100 <JSdNVz_<IeMUd3Pl]Uob3
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R14
+R15
+Etestbench
+Z23 w1750898377
+R4
+R5
+R6
+!i122 19
+R2
+Z24 8D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd
+Z25 FD:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd
+l0
+L25 1
+Vgm8YD_]RPCYaW82e9_J933
+!s100 DhX?P9?7<f<Q6;Ocez<e>3
+R9
+32
+R19
+!i10b 1
+R20
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd|
+Z27 !s107 D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R4
+R5
+R6
+DEx4 work 9 testbench 0 22 gm8YD_]RPCYaW82e9_J933
+!i122 19
+l54
+L28 72
+VWBY?A^9mNhe3=bo7]@OgL1
+!s100 iEdYo:NW3335GfPeS?baL3
+R9
+32
+R19
+!i10b 1
+R20
+R26
+R27
+!i113 0
+R14
+R15

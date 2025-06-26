@@ -1,0 +1,46 @@
+#Start recording tcl command: 6/9/2025 19:23:22
+#Project Location: D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor; Project name: aula14_fsm_divisor
+prj_project open "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/aula14_fsm_divisor.ldf"
+prj_src add "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "divRDA_FSM_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_divisor_RDA/sim_divisor_RDA.spf"
+prj_src add "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/hdle_generate_tbtemplate.tcl"
+prj_src exclude "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd"
+prj_src add "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_NRDA/sim_NRDA.spf"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_RDA_VS_NRDA/sim_RDA_VS_NRDA.spf"
+prj_src enable "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd"
+prj_src add "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_RDA_VS_NDRA/sim_RDA_VS_NDRA.spf"
+prj_src exclude "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd"
+prj_src enable "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd"
+prj_src exclude "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd"
+prj_src enable "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 6/10/2025 11:11:03

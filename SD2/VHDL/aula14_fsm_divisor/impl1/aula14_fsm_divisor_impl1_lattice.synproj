@@ -31,7 +31,7 @@
 
 
 -lpf 1
--lib "work" -vhd "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM.vhd"
+-lib "work" -vhd "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd"
 -top divRDA_FSM
 
 

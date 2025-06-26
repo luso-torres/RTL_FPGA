@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FIFO" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="fifo_NxN_buffer_circular"/>
+        <Source name="FIFO.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="fifo_NxN_buffer_circular"/>
+        </Source>
+        <Source name="fifo_8x8_buffer_circular_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="FIFO_barrel.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="fifo_NxN_buffer_barrel_tb.vhd" type="VHDL" type_short="VHDL" excluded="TRUE" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="FIFO.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_FIFO/sim_FIFO.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_FIFO_BARREL/sim_FIFO_BARREL.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_FIFO_VS/sim_FIFO_VS.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FIFO1.sty"/>
+</BaliProject>

@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell rw_16x8_sync.TECH
+Register bits:  8 of 44439 (0.018%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8          100.0
+                                GSR         1          100.0
+                                 IB        13          100.0
+                               LUT4         1          100.0
+                                 OB         8          100.0
+                           SPR16X4C         2          100.0
+                              TOTAL        33

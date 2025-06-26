@@ -1,0 +1,149 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/SD3/VHDL/aula46-mac/sim_mac_complex/sim_mac_complex.mdo}
+# Loading project sim_mac_complex
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:37:10 on Jun 25,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture behavior of testbench
+# End time: 21:37:10 on Jun 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:37:10 on Jun 25,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MAC
+# -- Compiling architecture behavioral of MAC
+# End time: 21:37:10 on Jun 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:37:10 on Jun 25,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_complex.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MAC_complex
+# -- Compiling architecture behavioral of MAC_complex
+# End time: 21:37:10 on Jun 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:37:10 on Jun 25,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd(25): (vcom-1615) Existing entity 'testbench' at D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_tb.vhd(25) will be overwritten.
+# -- Compiling entity testbench
+# ** Warning: D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_complex_tb.vhd(28): (vcom-1615) Existing architecture 'testbench(behavior)' at D:/RTL_FPGA/SD3/VHDL/aula46-mac/MAC_tb.vhd(28) will be overwritten.
+# -- Compiling architecture behavior of testbench
+# End time: 21:37:10 on Jun 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u testbench 
+# Start time: 21:37:10 on Jun 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(behavior)#1
+# Loading work.mac_complex(behavioral)#1
+# Loading work.mac(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# Compile of MAC_tb.vhd was successful with warnings.
+# Compile of mac_vhdl.vhd was successful.
+# Compile of mac_complex.vhd was successful.
+# Compile of MAC_complex_tb.vhd was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+run
+# Compile of MAC_tb.vhd was successful.
+# Compile of mac_vhdl.vhd was successful.
+# Compile of mac_complex.vhd was successful.
+# Compile of MAC_complex_tb.vhd was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(behavior)#1
+# Loading work.mac_complex(behavioral)#1
+# Loading work.mac(behavioral)#1
+run
+run
+# Compile of MAC_tb.vhd was successful.
+# Compile of mac_vhdl.vhd was successful.
+# Compile of mac_complex.vhd was successful.
+# Compile of MAC_complex_tb.vhd was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(behavior)#1
+# Loading work.mac_complex(behavioral)#1
+# Loading work.mac(behavioral)#1
+run
+# Compile of MAC_tb.vhd was successful with warnings.
+# Compile of mac_vhdl.vhd was successful.
+# Compile of mac_complex.vhd was successful.
+# Compile of MAC_complex_tb.vhd was successful with warnings.
+# 4 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(behavior)#1
+# Loading work.mac_complex(behavioral)#1
+run
+add wave -position end  sim:/testbench/uut/product1
+add wave -position end  sim:/testbench/uut/product2
+add wave -position end  sim:/testbench/uut/product3
+add wave -position end  sim:/testbench/uut/product4
+add wave -position end  sim:/testbench/uut/sum_re
+add wave -position end  sim:/testbench/uut/sum_im
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+run
+# End time: 22:00:21 on Jun 25,2025, Elapsed time: 0:23:11
+# Errors: 0, Warnings: 2

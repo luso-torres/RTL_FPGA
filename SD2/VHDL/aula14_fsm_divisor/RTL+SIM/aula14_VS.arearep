@@ -1,0 +1,17 @@
+----------------------------------------------------------------------
+Report for cell divNRDA_FSM.TECH
+Register bits:  34 of 44439 (0.077%)
+I/O cells:      36
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         6          100.0
+                            FD1P3AX        29          100.0
+                            FD1P3IX         3          100.0
+                            FD1S3AX         1          100.0
+                            FD1S3IX         1          100.0
+                                GSR         1          100.0
+                                 IB        19          100.0
+                               LUT4        54          100.0
+                                 OB        17          100.0
+                              PFUMX         2          100.0
+                              TOTAL       133

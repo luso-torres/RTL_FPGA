@@ -1,0 +1,16 @@
+----------------------------------------------------------------------
+Report for cell media.TECH
+Register bits:  22 of 44439 (0.050%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         4          100.0
+                            FD1P3AX        16          100.0
+                            FD1S3AX         3          100.0
+                            FD1S3IX         2          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB        12          100.0
+                               LUT4        25          100.0
+                                 OB         9          100.0
+                              TOTAL        73

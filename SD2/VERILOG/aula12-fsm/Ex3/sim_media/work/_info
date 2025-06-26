@@ -1,0 +1,115 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/sim_media
+T_opt
+!s110 1750546919
+V@b_P;IO@gk[CjEg32_Y1:2
+04 8 4 work media_tb fast 0
+=32-ac675dfda9e9-685739e7-3-7574
+R1
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vmedia
+2D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_aritmetica.v
+Z4 !s110 1750546916
+!i10b 1
+!s100 OURZUP7_Y<bflGE:AX;SD0
+IjFh8=F`0AMJM;^4YfNH5j0
+R2
+w1750546556
+8D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_aritmetica.v
+FD:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_aritmetica.v
+!i122 58
+L0 1 77
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z7 !s108 1750546916.000000
+!s107 D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_aritmetica.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_aritmetica.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vmedia_tb
+2D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_tf.v
+R4
+!i10b 1
+!s100 abk^Th^WOf[m`K[0o4<?Y0
+IUTb;7:8F[ancCK?H3>IG21
+R2
+w1750546912
+8D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_tf.v
+FD:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_tf.v
+!i122 59
+L0 3 70
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_tf.v|
+!i113 0
+R8
+R3

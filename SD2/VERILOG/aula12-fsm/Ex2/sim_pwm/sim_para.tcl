@@ -1,7 +1,7 @@
 lappend auto_path "C:/lscc/diamond/3.14/data/script"
 package require simulation_generation
 set ::bali::simulation::Para(DEVICEFAMILYNAME) {ECP5U}
-set ::bali::simulation::Para(PROJECT) {sim_pwm}
+set ::bali::simulation::Para(PROJECT) {sim_PWM}
 set ::bali::simulation::Para(PROJECTPATH) {D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2}
 set ::bali::simulation::Para(FILELIST) {"D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm.v" "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm_tf.v" }
 set ::bali::simulation::Para(GLBINCLIST) {}

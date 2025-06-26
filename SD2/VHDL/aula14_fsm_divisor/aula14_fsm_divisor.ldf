@@ -2,8 +2,29 @@
 <BaliProject version="3.2" title="aula14_fsm_divisor" device="LFE5U-45F-6BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options/>
+        <Options def_top="divRDA_FSM"/>
+        <Source name="divisor_fsm_RDA.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="divRDA_FSM"/>
+        </Source>
+        <Source name="divRDA_FSM_tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="divisor_fsm_NRDA.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
         <Source name="aula14_fsm_divisor.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_divisor_RDA/sim_divisor_RDA.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_NRDA/sim_NRDA.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_RDA_VS_NDRA/sim_RDA_VS_NDRA.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_RDA_VS_NRDA/sim_RDA_VS_NRDA.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
     </Implementation>

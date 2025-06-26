@@ -1,0 +1,7 @@
+Ex1
+- A latência está em 10 ns para as entradas fornecidas.
+- A diferença se justifica pelo fato de que a multiplicação de dois números com sinal, a operação de multiplicação justifica 16 bits, e a soma de números inteiros justifica os 32 bits.
+- Dado que a multiplicação do maior numero inteiro é 127 que tem representação 2^7 seria (2^7)^2 = 2^14, restariam em 32 bits de memória 131072 operações ou equivalentemente 2^17 valores a serem preenchidos.
+
+Ex3
+- Com um bloco de multiplicação, um bloco de soma e dois registradores (um para parte real e outro para parte imaginária), conseguimos executar todas as instruções de multiplicação em 5 ciclos de clock, o preço da redução de componentes em nosso circuito. Com quatro multiplicadores, respeitamos a latência do sistema.

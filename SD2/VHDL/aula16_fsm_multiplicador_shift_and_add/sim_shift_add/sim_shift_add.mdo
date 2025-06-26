@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/sim_shift_add/sim_shift_add.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/sim_shift_add" sim_shift_add
+	project addfile "D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/m_shift_add.vhd"
+	project addfile "D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/mult4X4_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/m_shift_add.vhd"
+	vcom -work work "D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/mult4X4_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD2/VHDL/aula16_fsm_multiplicador_shift_and_add/sim_shift_add/sim_shift_add"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

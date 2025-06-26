@@ -1,0 +1,5 @@
+#Start recording tcl command: 6/23/2025 09:20:04
+#Project Location: D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor; Project name: aula14_fsm_divisor
+prj_project open "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/aula14_fsm_divisor.ldf"
+prj_src enable "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd"
+#Stop recording: 6/23/2025 09:36:08

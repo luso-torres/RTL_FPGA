@@ -1,0 +1,177 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jun 11 20:14:52 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     mult4X4
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets Clk_c]
+            224 items scored, 60 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 1.652ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             ACC_i0_i4  (from Clk_c +)
+   Destination:    FD1P3AX    D              ACC_i0_i8  (to Clk_c +)
+
+   Delay:                   6.827ns  (15.1% logic, 84.9% route), 5 logic levels.
+
+ Constraint Details:
+
+      6.827ns data_path ACC_i0_i4 to ACC_i0_i8 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.652ns
+
+ Path Details: ACC_i0_i4 to ACC_i0_i8
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              ACC_i0_i4 (from Clk_c)
+Route         5   e 1.441                                  ACC[4]
+LUT4        ---     0.166              B to Z              i1_3_lut
+Route         4   e 1.297                                  n350
+LUT4        ---     0.166              B to Z              i220_4_lut
+Route         1   e 1.020                                  n388
+LUT4        ---     0.166              B to Z              i221_4_lut
+Route         1   e 1.020                                  n390
+LUT4        ---     0.166              A to Z              i353_4_lut
+Route         1   e 1.020                                  n282
+                  --------
+                    6.827  (15.1% logic, 84.9% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 1.652ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             ACC_i0_i4  (from Clk_c +)
+   Destination:    FD1P3AX    D              ACC_i0_i8  (to Clk_c +)
+
+   Delay:                   6.827ns  (15.1% logic, 84.9% route), 5 logic levels.
+
+ Constraint Details:
+
+      6.827ns data_path ACC_i0_i4 to ACC_i0_i8 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.652ns
+
+ Path Details: ACC_i0_i4 to ACC_i0_i8
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              ACC_i0_i4 (from Clk_c)
+Route         5   e 1.441                                  ACC[4]
+LUT4        ---     0.166              B to Z              i1_3_lut
+Route         4   e 1.297                                  n350
+LUT4        ---     0.166              B to Z              i188_2_lut_rep_6_3_lut
+Route         1   e 1.020                                  n860
+LUT4        ---     0.166              C to Z              i221_4_lut
+Route         1   e 1.020                                  n390
+LUT4        ---     0.166              A to Z              i353_4_lut
+Route         1   e 1.020                                  n282
+                  --------
+                    6.827  (15.1% logic, 84.9% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 1.594ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             ACC_i0_i4  (from Clk_c +)
+   Destination:    FD1P3AX    D              ACC_i0_i8  (to Clk_c +)
+
+   Delay:                   6.769ns  (15.2% logic, 84.8% route), 5 logic levels.
+
+ Constraint Details:
+
+      6.769ns data_path ACC_i0_i4 to ACC_i0_i8 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.594ns
+
+ Path Details: ACC_i0_i4 to ACC_i0_i8
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              ACC_i0_i4 (from Clk_c)
+Route         5   e 1.441                                  ACC[4]
+LUT4        ---     0.166              A to Z              i222_3_lut_rep_10_4_lut
+Route         3   e 1.239                                  n864
+LUT4        ---     0.166              C to Z              i220_4_lut
+Route         1   e 1.020                                  n388
+LUT4        ---     0.166              B to Z              i221_4_lut
+Route         1   e 1.020                                  n390
+LUT4        ---     0.166              A to Z              i353_4_lut
+Route         1   e 1.020                                  n282
+                  --------
+                    6.769  (15.2% logic, 84.8% route), 5 logic levels.
+
+Warning: 6.652 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets Clk_c]                   |     5.000 ns|     6.652 ns|     5 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n878                                    |       5|      44|     73.33%
+                                        |        |        |
+State[1]                                |       8|      22|     36.67%
+                                        |        |        |
+State[2]                                |       7|      22|     36.67%
+                                        |        |        |
+Clk_c_enable_13                         |       4|      16|     26.67%
+                                        |        |        |
+n249                                    |       8|      16|     26.67%
+                                        |        |        |
+n865                                    |       5|      16|     26.67%
+                                        |        |        |
+ACC[4]                                  |       5|      11|     18.33%
+                                        |        |        |
+n282                                    |       1|      10|     16.67%
+                                        |        |        |
+Clk_c_enable_11                         |       6|       8|     13.33%
+                                        |        |        |
+n864                                    |       3|       8|     13.33%
+                                        |        |        |
+n283                                    |       1|       7|     11.67%
+                                        |        |        |
+n390                                    |       1|       7|     11.67%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 60  Score: 62601
+
+Constraints cover  224 paths, 54 nets, and 157 connections (84.9% coverage)
+
+
+Peak memory: 112779264 bytes, TRCE: 135168 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,311 @@
+
+synthesis -f "mac_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jun 25 21:49:57 2025
+
+
+Command Line:  synthesis -f mac_impl1_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = MAC_complex.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/SD3/VHDL/aula46-mac/impl1 (searchpath added)
+-p D:/RTL_FPGA/SD3/VHDL/aula46-mac (searchpath added)
+VHDL library = work
+VHDL design file = D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_vhdl.vhd
+VHDL design file = D:/RTL_FPGA/SD3/VHDL/aula46-mac/mac_complex.vhd
+NGD file = mac_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/RTL_FPGA/SD3/VHDL/aula46-mac/impl1"  />
+Analyzing VHDL file d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_vhdl.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_vhdl.vhd(5): " arg1="mac" arg2="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_vhdl.vhd" arg3="5"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_vhdl.vhd(16): " arg1="behavioral" arg2="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_vhdl.vhd" arg3="16"  />
+unit MAC_complex is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd(5): " arg1="mac_complex" arg2="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd" arg3="5"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd(18): " arg1="behavioral" arg2="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd" arg3="18"  />
+unit MAC_complex is not yet analyzed. VHDL-1485
+unit MAC_complex is not yet analyzed. VHDL-1485
+d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd(5): executing MAC_complex(behavioral)
+
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd(16): " arg1="MAC_complex" arg2="behavioral" arg3="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd" arg4="16"  />
+Top module name (VHDL): MAC_complex
+Last elaborated design is MAC_complex(behavioral)
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = MAC_complex.
+
+
+
+
+
+######### Begin FIR Info ########
+
+
+Number of FIR filters recognized: 1
+
+
+
+######### End FIR Info ########
+
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="A_re_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="A_re_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="A_re_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="A_re_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="A_re_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="A_re_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="A_re_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="A_re_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="A_re_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="A_im_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="A_im_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="A_im_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="A_im_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="A_im_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="A_im_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="A_im_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="A_im_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="A_re_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="A_re_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="A_re_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="A_re_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="A_re_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="A_re_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="A_re_7__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="A_re_7__I_0_e1"  />
+    <postMsg mid="35935035" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd(49): " arg1="_add_1_49_i3" arg2="d:/rtl_fpga/sd3/vhdl/aula46-mac/mac_complex.vhd" arg3="49"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="_add_1_49_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="A_im_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="A_im_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="A_im_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="A_im_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="A_im_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="A_im_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="A_im_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="A_im_7__I_0_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="A_im_7__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="add_43_e2"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="add_43_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="add_43_e3"  />
+######## Missing driver on net n649. Patching with GND.
+######## Missing driver on net n648. Patching with GND.
+######## Missing driver on net n647. Patching with GND.
+GSR instance connected to net n650.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in MAC_complex_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    168 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file mac_impl1.ngd.
+
+################### Begin Area Report (MAC_complex)######################
+Number of register bits => 32 of 44439 (0 % )
+ALU54B => 1
+CCU2C => 25
+FD1P3AX => 32
+GSR => 1
+IB => 35
+LUT4 => 2
+MULT18X18D => 2
+MULT9X9D => 3
+OB => 64
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 33
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : en_c, loads : 33
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : en_c, loads : 33
+  Net : sum_re_31_N_65_15, loads : 17
+  Net : A_re_c_7, loads : 4
+  Net : B_im_c_7, loads : 4
+  Net : B_re_c_7, loads : 3
+  Net : A_im_c_7, loads : 3
+  Net : result_re_c_0, loads : 3
+  Net : rst_c, loads : 2
+  Net : A_re_c_6, loads : 2
+  Net : A_re_c_5, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  237.304 MHz|    17  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 109.574  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.203  secs
+--------------------------------------------------------------

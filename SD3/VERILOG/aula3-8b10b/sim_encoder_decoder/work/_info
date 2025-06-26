@@ -1,0 +1,98 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/SD3_files/aula3-8b10b/sim_encoder_decoder
+T_opt
+!s110 1750772526
+Vf]2hJMinT9<Qa1];iJ?DQ2
+04 10 4 work test_8b10b fast 0
+=2-ac675dfda9e9-685aab2d-30b-690
+R1
+!s12f OEM25U3 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vdecode
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+Z4 !s110 1750772520
+!i10b 1
+!s100 o]C7ghDVWg<Yb0WEbA`7M2
+I>54V6S;]1KA4f9j6gWgQ>1
+R2
+w1750291065
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+!i122 3
+L0 13 147
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z7 !s108 1750772520.000000
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vencode
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v
+R4
+!i10b 1
+!s100 lVG038_KJbEP2303QUi_T1
+IW9YU;Z@oBmigTD=:3cL0c0
+R2
+w1750291086
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v
+!i122 4
+L0 13 108
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v|
+!i113 0
+R8
+R3
+vtest_8b10b
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+!s110 1750772521
+!i10b 1
+!s100 3C9kJ69CZWa>>HNIGX>`c1
+Ia<XVVD;>T<R3TOl`AA:kn1
+R2
+w1750291484
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+!i122 5
+L0 2 155
+R5
+R6
+r1
+!s85 0
+31
+!s108 1750772521.000000
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v|
+!i113 0
+R8
+R3

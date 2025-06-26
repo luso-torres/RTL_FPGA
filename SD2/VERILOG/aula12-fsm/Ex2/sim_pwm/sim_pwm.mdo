@@ -1,5 +1,5 @@
-if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_pwm/sim_pwm.mpf"]} { 
-	project new "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_pwm" sim_pwm
+if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_PWM/sim_PWM.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_PWM" sim_PWM
 	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm.v"
 	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm_tf.v"
 	vlib  work
@@ -8,7 +8,7 @@ if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_pwm/sim_pwm.mpf"]}
 	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm.v"
 	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm_tf.v"
 } else {
-	project open "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_pwm/sim_pwm"
+	project open "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_PWM/sim_PWM"
 	project compileoutofdate
 }
 vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  pwm_tf

@@ -1,0 +1,15 @@
+D:/RTL_FPGA/SD3_files/VERILOG/banco_reg.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/VERILOG/banco_reg.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module regfile8x16c
+
+Top level modules:
+	regfile8x16c
+
+} {} {}} D:/RTL_FPGA/SD3_files/VERILOG/regfile8x16c_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/VERILOG/regfile8x16c_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module regfile8x16c_tf
+
+Top level modules:
+	regfile8x16c_tf
+
+} {} {}}

@@ -1,0 +1,179 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jun 18 14:52:44 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     fifo_NxN_buffer_circular
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            170 items scored, 15 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 0.743ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             w_ptr_reg_i0  (from clk_c +)
+   Destination:    FD1P3IX    D              full_reg_55  (to clk_c +)
+
+   Delay:                   5.918ns  (14.6% logic, 85.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.918ns data_path w_ptr_reg_i0 to full_reg_55 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.743ns
+
+ Path Details: w_ptr_reg_i0 to full_reg_55
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              w_ptr_reg_i0 (from clk_c)
+Route        16   e 1.674                                  w_ptr_reg[0]
+LUT4        ---     0.166              B to Z              i177_2_lut_rep_12
+Route         5   e 1.341                                  n1035
+LUT4        ---     0.166              A to Z              n248_bdd_4_lut
+Route         1   e 1.020                                  n1025
+LUT4        ---     0.166              A to Z              i267_4_lut
+Route         1   e 1.020                                  n338
+                  --------
+                    5.918  (14.6% logic, 85.4% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 0.716ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             w_ptr_reg_i1  (from clk_c +)
+   Destination:    FD1P3IX    D              full_reg_55  (to clk_c +)
+
+   Delay:                   5.891ns  (14.6% logic, 85.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.891ns data_path w_ptr_reg_i1 to full_reg_55 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.716ns
+
+ Path Details: w_ptr_reg_i1 to full_reg_55
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              w_ptr_reg_i1 (from clk_c)
+Route        14   e 1.647                                  w_ptr_reg[1]
+LUT4        ---     0.166              A to Z              i177_2_lut_rep_12
+Route         5   e 1.341                                  n1035
+LUT4        ---     0.166              A to Z              n248_bdd_4_lut
+Route         1   e 1.020                                  n1025
+LUT4        ---     0.166              A to Z              i267_4_lut
+Route         1   e 1.020                                  n338
+                  --------
+                    5.891  (14.6% logic, 85.4% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 0.486ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             w_ptr_reg_i2  (from clk_c +)
+   Destination:    FD1P3AY    D              empty_reg_57  (to clk_c +)
+
+   Delay:                   5.661ns  (15.2% logic, 84.8% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.661ns data_path w_ptr_reg_i2 to empty_reg_57 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.486ns
+
+ Path Details: w_ptr_reg_i2 to empty_reg_57
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              w_ptr_reg_i2 (from clk_c)
+Route        22   e 1.738                                  w_ptr_reg[2]
+LUT4        ---     0.166              D to Z              i1_2_lut_3_lut_4_lut
+Route         1   e 1.020                                  n741
+LUT4        ---     0.166              A to Z              i1_4_lut_adj_4
+Route         1   e 1.020                                  n837
+LUT4        ---     0.166              A to Z              i565_4_lut
+Route         1   e 1.020                                  empty_next
+                  --------
+                    5.661  (15.2% logic, 84.8% route), 4 logic levels.
+
+Warning: 5.743 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     5.743 ns|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+empty_next                              |       1|      11|     73.33%
+                                        |        |        |
+n837                                    |       1|       8|     53.33%
+                                        |        |        |
+n338                                    |       1|       4|     26.67%
+                                        |        |        |
+n741                                    |       1|       4|     26.67%
+                                        |        |        |
+n1025                                   |       1|       4|     26.67%
+                                        |        |        |
+n734                                    |       1|       3|     20.00%
+                                        |        |        |
+n1041                                   |       1|       3|     20.00%
+                                        |        |        |
+r_ptr_reg[0]                            |      21|       3|     20.00%
+                                        |        |        |
+r_ptr_reg[1]                            |      15|       3|     20.00%
+                                        |        |        |
+n833                                    |       1|       2|     13.33%
+                                        |        |        |
+n1035                                   |       5|       2|     13.33%
+                                        |        |        |
+n1038                                   |       1|       2|     13.33%
+                                        |        |        |
+n1040                                   |       1|       2|     13.33%
+                                        |        |        |
+r_ptr_reg[2]                            |      11|       2|     13.33%
+                                        |        |        |
+w_ptr_reg[0]                            |      16|       2|     13.33%
+                                        |        |        |
+w_ptr_reg[1]                            |      14|       2|     13.33%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 15  Score: 6789
+
+Constraints cover  170 paths, 79 nets, and 236 connections (59.0% coverage)
+
+
+Peak memory: 113356800 bytes, TRCE: 180224 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

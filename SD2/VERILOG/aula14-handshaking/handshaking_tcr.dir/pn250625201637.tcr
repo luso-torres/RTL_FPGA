@@ -1,0 +1,14 @@
+#Start recording tcl command: 6/24/2025 20:41:56
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula14-handshaking; Project name: handshaking
+D:/RTL_FPGA/SD3/VHDL/aula46-mac
+mac
+#Start recording tcl command: 6/25/2025 20:16:37
+#Project Location: D:/RTL_FPGA/SD3/VHDL/aula46-mac; Project name: mac
+prj_project new -name "handshaking" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula14-handshaking/handshaking.v"
+prj_project save
+prj_project close
+prj_project new -name "mac" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+#Stop recording: 6/25/2025 20:16:37

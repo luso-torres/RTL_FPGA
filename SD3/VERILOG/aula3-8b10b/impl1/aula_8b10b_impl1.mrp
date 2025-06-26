@@ -1,0 +1,204 @@
+
+            Lattice Mapping Report File for Design Module 'decode'
+
+
+Design Information
+------------------
+
+Command line:   map -a ECP5U -p LFE5U-45F -t CABGA256 -s 6 -oc Commercial
+     aula_8b10b_impl1.ngd -o aula_8b10b_impl1_map.ncd -pr aula_8b10b_impl1.prf
+     -mp aula_8b10b_impl1.mrp -lpf
+     D:/RTL_FPGA/SD3_files/aula3-8b10b/impl1/aula_8b10b_impl1.lpf -lpf
+     D:/RTL_FPGA/SD3_files/aula3-8b10b/aula_8b10b.lpf -gui -msgset
+     D:/RTL_FPGA/SD3_files/aula3-8b10b/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-45FCABGA256
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  06/23/25  22:16:17
+
+Design Summary
+--------------
+
+   Number of registers:      0 out of 44439 (0%)
+      PFU registers:            0 out of 43848 (0%)
+      PIO registers:            0 out of   591 (0%)
+   Number of SLICEs:        46 out of 21924 (0%)
+      SLICEs as Logic/ROM:     46 out of 21924 (0%)
+      SLICEs as RAM:            0 out of 16443 (0%)
+      SLICEs as Carry:          0 out of 21924 (0%)
+   Number of LUT4s:         87 out of 43848 (0%)
+      Number used as logic LUTs:         87
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 23 out of 197 (12%)
+   Number of block RAMs:  0 out of 108 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 4 (0%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+
+                                    Page 1
+
+
+
+
+Design:  decode                                        Date:  06/23/25  22:16:17
+
+Design Summary (cont)
+---------------------
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 144 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 72 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 144 (0 %)
+   Number of clocks:  0
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net datain_c_7: 23 loads
+     Net datain_c_5: 22 loads
+     Net datain_c_4: 21 loads
+     Net datain_c_8: 21 loads
+     Net datain_c_9: 21 loads
+     Net datain_c_2: 19 loads
+     Net datain_c_6: 16 loads
+     Net datain_c_3: 14 loads
+     Net datain_c_0: 13 loads
+     Net datain_c_1: 13 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| dataout[6]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dataout[7]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dataout[3]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dataout[8]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dataout[4]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dataout[5]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dataout[2]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  decode                                        Date:  06/23/25  22:16:17
+
+IO (PIO) Attributes (cont)
+--------------------------
+| dataout[1]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dataout[0]          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dispout             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| code_err            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| disp_err            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[9]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[8]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[7]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[6]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[5]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[4]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[3]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[2]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[1]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| datain[0]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| dispin              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i972 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block i2333 undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal GND_net undriven or does not drive anything - clipped.
+
+     
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 64 MB
+        
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.

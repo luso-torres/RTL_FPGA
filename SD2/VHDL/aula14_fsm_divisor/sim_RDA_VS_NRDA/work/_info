@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_RDA_VS_NRDA
+T_opt
+!s110 1749516508
+VQdjfK1ARZ>=@fAbnA4?:60
+04 9 10 work tb_divrda behavioral 1
+=1-ac675dfda9e9-684780db-39b-4c10
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+R1
+Edivnrda_fsm
+Z2 w1749516234
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R1
+Z8 8D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd
+Z9 FD:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd
+l0
+L28 1
+VF9>USH=LZ?oez^7K3XZPe2
+!s100 Wb_i16@n6YL^a1a3=16Lj2
+Z10 OL;C;2024.2;79
+32
+Z11 !s110 1749516646
+!i10b 1
+Z12 !s108 1749516646.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd|
+Z14 !s107 D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd|
+!i113 0
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+R6
+R7
+DEx4 work 11 divnrda_fsm 0 22 F9>USH=LZ?oez^7K3XZPe2
+!i122 2
+l50
+L40 120
+VQ?i@_=8fnD=BMV1aTBj]30
+!s100 n=jbo9^fFhMECJCD`h3Co1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Etb_divrda
+Z17 w1749516455
+R6
+R7
+!i122 3
+R1
+Z18 8D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM_tb.vhd
+Z19 FD:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM_tb.vhd
+l0
+L27 1
+VV8Ic?36aZGFU@`BTBK9zF3
+!s100 Qnncehcd=n5MzkdQ>nc=H0
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM_tb.vhd|
+Z21 !s107 D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM_tb.vhd|
+!i113 0
+R15
+R16
+Abehavioral
+R6
+R7
+DEx4 work 9 tb_divrda 0 22 V8Ic?36aZGFU@`BTBK9zF3
+!i122 3
+l65
+Z22 L31 70
+VznHB3fbYP2@R9H:9gCPOn1
+Z23 !s100 Ha18kkVH3A9hedM^_HWn]1
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 0
+R15
+R16

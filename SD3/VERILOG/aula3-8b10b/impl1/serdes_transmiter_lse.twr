@@ -1,0 +1,137 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jun 18 21:45:05 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     serdes_transmiter
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            41 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.997ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \piso/cnt__i0  (from clk_c +)
+   Destination:    FD1S3AX    D              \piso/ena_22  (to clk_c +)
+
+   Delay:                   4.178ns  (16.7% logic, 83.3% route), 3 logic levels.
+
+ Constraint Details:
+
+      4.178ns data_path \piso/cnt__i0 to \piso/ena_22 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.997ns
+
+ Path Details: \piso/cnt__i0 to \piso/ena_22
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \piso/cnt__i0 (from clk_c)
+Route         5   e 1.441                                  \piso/cnt[0]
+LUT4        ---     0.166              B to Z              \piso/i1_4_lut_rep_8
+Route         1   e 1.020                                  \piso/n714
+LUT4        ---     0.166              C to Z              \piso/i470_3_lut
+Route         1   e 1.020                                  \piso/ena_N_138
+                  --------
+                    4.178  (16.7% logic, 83.3% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 1.041ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \piso/cnt__i1  (from clk_c +)
+   Destination:    FD1S3AX    D              \piso/ena_22  (to clk_c +)
+
+   Delay:                   4.134ns  (16.9% logic, 83.1% route), 3 logic levels.
+
+ Constraint Details:
+
+      4.134ns data_path \piso/cnt__i1 to \piso/ena_22 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.041ns
+
+ Path Details: \piso/cnt__i1 to \piso/ena_22
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \piso/cnt__i1 (from clk_c)
+Route         4   e 1.397                                  \piso/cnt[1]
+LUT4        ---     0.166              C to Z              \piso/i1_4_lut_rep_8
+Route         1   e 1.020                                  \piso/n714
+LUT4        ---     0.166              C to Z              \piso/i470_3_lut
+Route         1   e 1.020                                  \piso/ena_N_138
+                  --------
+                    4.134  (16.9% logic, 83.1% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 1.041ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \piso/cnt__i2  (from clk_c +)
+   Destination:    FD1S3AX    D              \piso/ena_22  (to clk_c +)
+
+   Delay:                   4.134ns  (16.9% logic, 83.1% route), 3 logic levels.
+
+ Constraint Details:
+
+      4.134ns data_path \piso/cnt__i2 to \piso/ena_22 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.041ns
+
+ Path Details: \piso/cnt__i2 to \piso/ena_22
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \piso/cnt__i2 (from clk_c)
+Route         4   e 1.397                                  \piso/cnt[2]
+LUT4        ---     0.166              D to Z              \piso/i1_4_lut_rep_8
+Route         1   e 1.020                                  \piso/n714
+LUT4        ---     0.166              C to Z              \piso/i470_3_lut
+Route         1   e 1.020                                  \piso/ena_N_138
+                  --------
+                    4.134  (16.9% logic, 83.1% route), 3 logic levels.
+
+Report: 4.003 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     4.003 ns|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  41 paths, 33 nets, and 74 connections (35.9% coverage)
+
+
+Peak memory: 93237248 bytes, TRCE: 147456 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

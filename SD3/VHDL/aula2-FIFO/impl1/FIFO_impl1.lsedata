@@ -1,0 +1,1323 @@
+<top name = "fifo_NxN_buffer_circular"  library = "work"  arch = "RTL"  entry = "VHDL">
+
+<clocks>
+    <clockitem name = "clk"  type = "port" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 1
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "fifo_NxN_buffer_circular">
+
+    <!--
+        Top Level Pins: 38
+    -->
+
+    <pins>
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "reset"  direction = "in"  />
+        <pitem  name = "rd"  direction = "in"  />
+        <pitem  name = "wr"  direction = "in"  />
+        <pitem  name = "w_data[15]"  direction = "in"  />
+        <pitem  name = "w_data[14]"  direction = "in"  />
+        <pitem  name = "w_data[13]"  direction = "in"  />
+        <pitem  name = "w_data[12]"  direction = "in"  />
+        <pitem  name = "w_data[11]"  direction = "in"  />
+        <pitem  name = "w_data[10]"  direction = "in"  />
+        <pitem  name = "w_data[9]"  direction = "in"  />
+        <pitem  name = "w_data[8]"  direction = "in"  />
+        <pitem  name = "w_data[7]"  direction = "in"  />
+        <pitem  name = "w_data[6]"  direction = "in"  />
+        <pitem  name = "w_data[5]"  direction = "in"  />
+        <pitem  name = "w_data[4]"  direction = "in"  />
+        <pitem  name = "w_data[3]"  direction = "in"  />
+        <pitem  name = "w_data[2]"  direction = "in"  />
+        <pitem  name = "w_data[1]"  direction = "in"  />
+        <pitem  name = "w_data[0]"  direction = "in"  />
+        <pitem  name = "full"  direction = "out"  />
+        <pitem  name = "empty"  direction = "out"  />
+        <pitem  name = "r_data[15]"  direction = "out"  />
+        <pitem  name = "r_data[14]"  direction = "out"  />
+        <pitem  name = "r_data[13]"  direction = "out"  />
+        <pitem  name = "r_data[12]"  direction = "out"  />
+        <pitem  name = "r_data[11]"  direction = "out"  />
+        <pitem  name = "r_data[10]"  direction = "out"  />
+        <pitem  name = "r_data[9]"  direction = "out"  />
+        <pitem  name = "r_data[8]"  direction = "out"  />
+        <pitem  name = "r_data[7]"  direction = "out"  />
+        <pitem  name = "r_data[6]"  direction = "out"  />
+        <pitem  name = "r_data[5]"  direction = "out"  />
+        <pitem  name = "r_data[4]"  direction = "out"  />
+        <pitem  name = "r_data[3]"  direction = "out"  />
+        <pitem  name = "r_data[2]"  direction = "out"  />
+        <pitem  name = "r_data[1]"  direction = "out"  />
+        <pitem  name = "r_data[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 42
+    -->
+
+    <instance  name = "wr_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "wr"  />
+        <nitem  name = "full_N_12"  />
+        <nitem  name = "wr_en"  />
+        </nets>
+    </instance>
+
+    <instance  name = "reset_I_0"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_6"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_7"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_8"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_9"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_10"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_11"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_12"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_13"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_14"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_15"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_16"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_17"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_18"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_19"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "write_port_20"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "clk_write_port_24"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "write_enable"  direction = "in"  />
+        <pitem  name = "write_address[3]"  direction = "in"  />
+        <pitem  name = "write_address[2]"  direction = "in"  />
+        <pitem  name = "write_address[1]"  direction = "in"  />
+        <pitem  name = "write_address[0]"  direction = "in"  />
+        <pitem  name = "write_data[15]"  direction = "in"  />
+        <pitem  name = "write_data[14]"  direction = "in"  />
+        <pitem  name = "write_data[13]"  direction = "in"  />
+        <pitem  name = "write_data[12]"  direction = "in"  />
+        <pitem  name = "write_data[11]"  direction = "in"  />
+        <pitem  name = "write_data[10]"  direction = "in"  />
+        <pitem  name = "write_data[9]"  direction = "in"  />
+        <pitem  name = "write_data[8]"  direction = "in"  />
+        <pitem  name = "write_data[7]"  direction = "in"  />
+        <pitem  name = "write_data[6]"  direction = "in"  />
+        <pitem  name = "write_data[5]"  direction = "in"  />
+        <pitem  name = "write_data[4]"  direction = "in"  />
+        <pitem  name = "write_data[3]"  direction = "in"  />
+        <pitem  name = "write_data[2]"  direction = "in"  />
+        <pitem  name = "write_data[1]"  direction = "in"  />
+        <pitem  name = "write_data[0]"  direction = "in"  />
+        <pitem  name = "Ram"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "clk"  />
+        <nitem  name = "n24"  />
+        <nitem  name = "w_ptr_reg[3]"  />
+        <nitem  name = "w_ptr_reg[2]"  />
+        <nitem  name = "w_ptr_reg[1]"  />
+        <nitem  name = "w_ptr_reg[0]"  />
+        <nitem  name = "w_data[15]"  />
+        <nitem  name = "w_data[14]"  />
+        <nitem  name = "w_data[13]"  />
+        <nitem  name = "w_data[12]"  />
+        <nitem  name = "w_data[11]"  />
+        <nitem  name = "w_data[10]"  />
+        <nitem  name = "w_data[9]"  />
+        <nitem  name = "w_data[8]"  />
+        <nitem  name = "w_data[7]"  />
+        <nitem  name = "w_data[6]"  />
+        <nitem  name = "w_data[5]"  />
+        <nitem  name = "w_data[4]"  />
+        <nitem  name = "w_data[3]"  />
+        <nitem  name = "w_data[2]"  />
+        <nitem  name = "w_data[1]"  />
+        <nitem  name = "w_data[0]"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "i26"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "wr_en"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "n24"  />
+        </nets>
+    </instance>
+
+    <instance  name = "r_ptr_reg_3__I_0_61"  library = "work"  arch = "RTL"  type = "seq">
+        <pins>
+        <pitem  name = "read_enable"  direction = "in"  />
+        <pitem  name = "read_address[3]"  direction = "in"  />
+        <pitem  name = "read_address[2]"  direction = "in"  />
+        <pitem  name = "read_address[1]"  direction = "in"  />
+        <pitem  name = "read_address[0]"  direction = "in"  />
+        <pitem  name = "read_data[15]"  direction = "out"  />
+        <pitem  name = "read_data[14]"  direction = "out"  />
+        <pitem  name = "read_data[13]"  direction = "out"  />
+        <pitem  name = "read_data[12]"  direction = "out"  />
+        <pitem  name = "read_data[11]"  direction = "out"  />
+        <pitem  name = "read_data[10]"  direction = "out"  />
+        <pitem  name = "read_data[9]"  direction = "out"  />
+        <pitem  name = "read_data[8]"  direction = "out"  />
+        <pitem  name = "read_data[7]"  direction = "out"  />
+        <pitem  name = "read_data[6]"  direction = "out"  />
+        <pitem  name = "read_data[5]"  direction = "out"  />
+        <pitem  name = "read_data[4]"  direction = "out"  />
+        <pitem  name = "read_data[3]"  direction = "out"  />
+        <pitem  name = "read_data[2]"  direction = "out"  />
+        <pitem  name = "read_data[1]"  direction = "out"  />
+        <pitem  name = "read_data[0]"  direction = "out"  />
+        <pitem  name = "Ram"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "pwr"  />
+        <nitem  name = "r_ptr_reg[3]"  />
+        <nitem  name = "r_ptr_reg[2]"  />
+        <nitem  name = "r_ptr_reg[1]"  />
+        <nitem  name = "r_ptr_reg[0]"  />
+        <nitem  name = "r_data[15]"  />
+        <nitem  name = "r_data[14]"  />
+        <nitem  name = "r_data[13]"  />
+        <nitem  name = "r_data[12]"  />
+        <nitem  name = "r_data[11]"  />
+        <nitem  name = "r_data[10]"  />
+        <nitem  name = "r_data[9]"  />
+        <nitem  name = "r_data[8]"  />
+        <nitem  name = "r_data[7]"  />
+        <nitem  name = "r_data[6]"  />
+        <nitem  name = "r_data[5]"  />
+        <nitem  name = "r_data[4]"  />
+        <nitem  name = "r_data[3]"  />
+        <nitem  name = "r_data[2]"  />
+        <nitem  name = "r_data[1]"  />
+        <nitem  name = "r_data[0]"  />
+        <nitem  name = "array_reg"  />
+        </nets>
+    </instance>
+
+    <instance  name = "empty_I_0_71"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "empty"  />
+        <nitem  name = "empty_next_N_19"  />
+        <nitem  name = "empty_next_N_18"  />
+        </nets>
+    </instance>
+
+    <instance  name = "r_ptr_reg"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "r_ptr_next[3]"  />
+        <nitem  name = "r_ptr_next[2]"  />
+        <nitem  name = "r_ptr_next[1]"  />
+        <nitem  name = "r_ptr_next[0]"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "r_ptr_reg[3]"  />
+        <nitem  name = "r_ptr_reg[2]"  />
+        <nitem  name = "r_ptr_reg[1]"  />
+        <nitem  name = "r_ptr_reg[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "full_reg_55"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "full_next"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "full"  />
+        </nets>
+    </instance>
+
+    <instance  name = "w_ptr_reg_3__I_0_63"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n113"  />
+        <nitem  name = "w_ptr_reg[3]"  />
+        <nitem  name = "w_ptr_reg[2]"  />
+        <nitem  name = "w_ptr_reg[1]"  />
+        <nitem  name = "w_ptr_reg[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "w_ptr_succ[3]"  />
+        <nitem  name = "w_ptr_succ[2]"  />
+        <nitem  name = "w_ptr_succ[1]"  />
+        <nitem  name = "w_ptr_succ[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "r_ptr_reg_3__I_0_62"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "n113"  />
+        <nitem  name = "r_ptr_reg[3]"  />
+        <nitem  name = "r_ptr_reg[2]"  />
+        <nitem  name = "r_ptr_reg[1]"  />
+        <nitem  name = "r_ptr_reg[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "r_ptr_succ[3]"  />
+        <nitem  name = "r_ptr_succ[2]"  />
+        <nitem  name = "r_ptr_succ[1]"  />
+        <nitem  name = "r_ptr_succ[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "empty_I_0_69"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "empty"  />
+        <nitem  name = "empty_N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "r_ptr_succ_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "r_ptr_succ[3]"  />
+        <nitem  name = "r_ptr_succ[2]"  />
+        <nitem  name = "r_ptr_succ[1]"  />
+        <nitem  name = "r_ptr_succ[0]"  />
+        <nitem  name = "w_ptr_reg[3]"  />
+        <nitem  name = "w_ptr_reg[2]"  />
+        <nitem  name = "w_ptr_reg[1]"  />
+        <nitem  name = "w_ptr_reg[0]"  />
+        <nitem  name = "empty_next_N_20"  />
+        </nets>
+    </instance>
+
+    <instance  name = "empty_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "empty"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "empty_next_N_20"  />
+        <nitem  name = "empty_next_N_19"  />
+        </nets>
+    </instance>
+
+    <instance  name = "r_ptr_reg_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "r_ptr_reg[3]"  />
+        <nitem  name = "r_ptr_reg[2]"  />
+        <nitem  name = "r_ptr_reg[1]"  />
+        <nitem  name = "r_ptr_reg[0]"  />
+        <nitem  name = "r_ptr_succ[3]"  />
+        <nitem  name = "r_ptr_succ[2]"  />
+        <nitem  name = "r_ptr_succ[1]"  />
+        <nitem  name = "r_ptr_succ[0]"  />
+        <nitem  name = "empty_N_10"  />
+        <nitem  name = "r_ptr_next_3__N_5[3]"  />
+        <nitem  name = "r_ptr_next_3__N_5[2]"  />
+        <nitem  name = "r_ptr_next_3__N_5[1]"  />
+        <nitem  name = "r_ptr_next_3__N_5[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "full_I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "full"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "empty_N_10"  />
+        <nitem  name = "full_next_N_16"  />
+        </nets>
+    </instance>
+
+    <instance  name = "full_I_0_66"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "full"  />
+        <nitem  name = "full_next_N_14"  />
+        <nitem  name = "full_next_N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "full_I_0_65"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "full"  />
+        <nitem  name = "full_N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "w_ptr_succ_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "w_ptr_succ[3]"  />
+        <nitem  name = "w_ptr_succ[2]"  />
+        <nitem  name = "w_ptr_succ[1]"  />
+        <nitem  name = "w_ptr_succ[0]"  />
+        <nitem  name = "r_ptr_reg[3]"  />
+        <nitem  name = "r_ptr_reg[2]"  />
+        <nitem  name = "r_ptr_reg[1]"  />
+        <nitem  name = "r_ptr_reg[0]"  />
+        <nitem  name = "full_next_N_15"  />
+        </nets>
+    </instance>
+
+    <instance  name = "full_I_0_67"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "full"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "full_next_N_15"  />
+        <nitem  name = "full_next_N_14"  />
+        </nets>
+    </instance>
+
+    <instance  name = "w_ptr_reg_3__I_0"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "w_ptr_reg[3]"  />
+        <nitem  name = "w_ptr_reg[2]"  />
+        <nitem  name = "w_ptr_reg[1]"  />
+        <nitem  name = "w_ptr_reg[0]"  />
+        <nitem  name = "w_ptr_succ[3]"  />
+        <nitem  name = "w_ptr_succ[2]"  />
+        <nitem  name = "w_ptr_succ[1]"  />
+        <nitem  name = "w_ptr_succ[0]"  />
+        <nitem  name = "full_N_12"  />
+        <nitem  name = "w_ptr_next_3__N_1[3]"  />
+        <nitem  name = "w_ptr_next_3__N_1[2]"  />
+        <nitem  name = "w_ptr_next_3__N_1[1]"  />
+        <nitem  name = "w_ptr_next_3__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "empty_I_0_70"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "empty"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "full_N_12"  />
+        <nitem  name = "empty_next_N_17"  />
+        </nets>
+    </instance>
+
+    <instance  name = "wr_I_0_64"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "wr"  />
+        <nitem  name = "rd"  />
+        <nitem  name = "r_ptr_succ[3]"  />
+        <nitem  name = "r_ptr_succ[2]"  />
+        <nitem  name = "r_ptr_succ[1]"  />
+        <nitem  name = "r_ptr_succ[0]"  />
+        <nitem  name = "r_ptr_reg[3]"  />
+        <nitem  name = "r_ptr_reg[2]"  />
+        <nitem  name = "r_ptr_reg[1]"  />
+        <nitem  name = "r_ptr_reg[0]"  />
+        <nitem  name = "r_ptr_next_3__N_5[3]"  />
+        <nitem  name = "r_ptr_next_3__N_5[2]"  />
+        <nitem  name = "r_ptr_next_3__N_5[1]"  />
+        <nitem  name = "r_ptr_next_3__N_5[0]"  />
+        <nitem  name = "r_ptr_next[3]"  />
+        <nitem  name = "r_ptr_next[2]"  />
+        <nitem  name = "r_ptr_next[1]"  />
+        <nitem  name = "r_ptr_next[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "wr_I_0_68"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "wr"  />
+        <nitem  name = "rd"  />
+        <nitem  name = "full"  />
+        <nitem  name = "full_next_N_13"  />
+        <nitem  name = "full_next_N_16"  />
+        <nitem  name = "full_next"  />
+        </nets>
+    </instance>
+
+    <instance  name = "wr_I_0_72"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "wr"  />
+        <nitem  name = "rd"  />
+        <nitem  name = "empty"  />
+        <nitem  name = "empty_next_N_17"  />
+        <nitem  name = "empty_next_N_18"  />
+        <nitem  name = "empty_next"  />
+        </nets>
+    </instance>
+
+    <instance  name = "wr_I_0_60"  library = "work"  arch = "RTL"  type = "comb">
+        <pins>
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[15]"  direction = "in"  />
+        <pitem  name = "data[14]"  direction = "in"  />
+        <pitem  name = "data[13]"  direction = "in"  />
+        <pitem  name = "data[12]"  direction = "in"  />
+        <pitem  name = "data[11]"  direction = "in"  />
+        <pitem  name = "data[10]"  direction = "in"  />
+        <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[8]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "wr"  />
+        <nitem  name = "rd"  />
+        <nitem  name = "w_ptr_succ[3]"  />
+        <nitem  name = "w_ptr_succ[2]"  />
+        <nitem  name = "w_ptr_succ[1]"  />
+        <nitem  name = "w_ptr_succ[0]"  />
+        <nitem  name = "w_ptr_next_3__N_1[3]"  />
+        <nitem  name = "w_ptr_next_3__N_1[2]"  />
+        <nitem  name = "w_ptr_next_3__N_1[1]"  />
+        <nitem  name = "w_ptr_next_3__N_1[0]"  />
+        <nitem  name = "w_ptr_reg[3]"  />
+        <nitem  name = "w_ptr_reg[2]"  />
+        <nitem  name = "w_ptr_reg[1]"  />
+        <nitem  name = "w_ptr_reg[0]"  />
+        <nitem  name = "w_ptr_next[3]"  />
+        <nitem  name = "w_ptr_next[2]"  />
+        <nitem  name = "w_ptr_next[1]"  />
+        <nitem  name = "w_ptr_next[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "w_ptr_reg"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "w_ptr_next[3]"  />
+        <nitem  name = "w_ptr_next[2]"  />
+        <nitem  name = "w_ptr_next[1]"  />
+        <nitem  name = "w_ptr_next[0]"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "w_ptr_reg[3]"  />
+        <nitem  name = "w_ptr_reg[2]"  />
+        <nitem  name = "w_ptr_reg[1]"  />
+        <nitem  name = "w_ptr_reg[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "empty_reg_57"  library = "work"  arch = "RTL"  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "empty_next"  />
+        <nitem  name = "clk"  />
+        <nitem  name = "reset"  />
+        <nitem  name = "n113"  />
+        <nitem  name = "empty"  />
+        </nets>
+    </instance>
+
+    <!--
+        REG instances in netlist: 4
+    -->
+
+    <regs>
+        <reg  name = "r_ptr_reg"  />
+        <reg  name = "full_reg_55"  />
+        <reg  name = "w_ptr_reg"  />
+        <reg  name = "empty_reg_57"  />
+    </regs>
+
+    <!--
+        RAM nets in netlist: 1
+    -->
+
+    <ramnets>
+        <ramnet  name = "array_reg"  />
+    </ramnets>
+
+    <!--
+        Views in design "fifo_NxN_buffer_circular": 0
+    -->
+
+    <views>
+    </views>
+
+</unit>
+
+</library>
+
+</top>

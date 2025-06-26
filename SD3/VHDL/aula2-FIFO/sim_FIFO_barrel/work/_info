@@ -1,0 +1,135 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dD:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO_barrel
+T_opt
+!s110 1750267638
+VFEoP5BHKA1PU3VFU69oH43
+04 9 8 work testbench behavior 1
+=12-ac675dfda9e9-6852f6f6-17f-6a30
+R1
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Efifo_nxn_buffer_barrel
+Z3 w1750267610
+Z4 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z7 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 16
+R2
+Z10 8D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO_barrel.vhd
+Z11 FD:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO_barrel.vhd
+l0
+L8 1
+V^jX<z;1go7]H=moZcF@VS2
+!s100 Cf6>Id0`nRUDGN;RXTGn^2
+Z12 OL;C;2024.2;79
+32
+Z13 !s110 1750267634
+!i10b 1
+Z14 !s108 1750267633.000000
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO_barrel.vhd|
+Z16 !s107 D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO_barrel.vhd|
+!i113 0
+Z17 o-work work -2002 -explicit
+Z18 tExplicit 1 CvgOpt 0
+Abehavioral
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 22 fifo_nxn_buffer_barrel 0 22 ^jX<z;1go7]H=moZcF@VS2
+!i122 16
+l29
+L18 78
+Va6GRPLKomoQTVogYGQhlZ1
+!s100 5kfQXG48N]0?4@IBG]ic10
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Etestbench
+Z19 w1750248338
+R5
+R8
+R9
+!i122 17
+R2
+Z20 8D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_NxN_buffer_barrel_tb.vhd
+Z21 FD:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_NxN_buffer_barrel_tb.vhd
+l0
+L5 1
+Vc>:ijEL@kdXb<kKBkHk>V3
+!s100 ?1TZDXVB2nYW<;_X^MmPd3
+R12
+32
+R13
+!i10b 1
+Z22 !s108 1750267634.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_NxN_buffer_barrel_tb.vhd|
+Z24 !s107 D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_NxN_buffer_barrel_tb.vhd|
+!i113 0
+R17
+R18
+Abehavior
+R5
+R8
+R9
+DEx4 work 9 testbench 0 22 c>:ijEL@kdXb<kKBkHk>V3
+!i122 17
+l39
+L8 97
+Vc;WBDG2HkZAA:m^k<[:1h2
+!s100 Za>i;Fz8Fbh5[GL]]fY531
+R12
+32
+R13
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R17
+R18

@@ -1,0 +1,46 @@
+#Start recording tcl command: 6/18/2025 20:55:40
+#Project Location: D:/RTL_FPGA/SD3_files/aula3-8b10b; Project name: aula_8b10b
+prj_project new -name "aula_8b10b" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+source "D:/RTL_FPGA/SD3_files/aula3-8b10b/hdle_generate_tbdeclaration.tcl"
+source "D:/RTL_FPGA/SD3_files/aula3-8b10b/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "encode_tf.v"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b_encode_decode/sim_8b10b_encode_decode.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src enable "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+prj_src enable "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3_files/aula3-8b10b/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "serdes_transmiter_tf.v"
+source "D:/RTL_FPGA/SD3_files/aula3-8b10b/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "serdes_receiver_tf.v"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver_tf.v"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_serdes/sim_serdes.spf"
+prj_project save
+prj_project close
+#Stop recording: 6/19/2025 14:48:55

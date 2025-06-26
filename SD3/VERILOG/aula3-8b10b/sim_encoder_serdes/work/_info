@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/RTL_FPGA/SD3_files/aula3-8b10b/sim_encoder_serdes
+vdecode
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+Z1 !s110 1750772365
+!i10b 1
+!s100 o]C7ghDVWg<Yb0WEbA`7M2
+Ib@hcWO9ehNVU[Bd;aWc?k0
+R0
+w1750291065
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+!i122 0
+L0 13 147
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z4 !s108 1750772365.000000
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b|-work|work|D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 +incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtest_8b10b
+2D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+R1
+!i10b 1
+!s100 3C9kJ69CZWa>>HNIGX>`c1
+IlVlh4fi>WYTYF5VM@1oN72
+R0
+w1750291484
+8D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+FD:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+!i122 1
+L0 2 155
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b|-work|work|D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v|
+!i113 0
+R5
+R6
+R7

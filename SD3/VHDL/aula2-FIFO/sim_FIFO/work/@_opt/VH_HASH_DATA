@@ -1,0 +1,25 @@
+[N
+4
+1
+46 D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO/work
+4
+1 N
+3
+10 behavioral
+2
+24 fifo_nxn_buffer_circular
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+16
+0
+0 0
+0
+0
+]

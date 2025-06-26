@@ -1,0 +1,163 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jun 18 13:17:12 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     fifo_NxN_buffer_barrel
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            2920 items scored, 1938 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 1.773ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             w_ptr_reg_i2  (from clk_c +)
+   Destination:    FD1P3AX    D              array_reg[8]_i0_i14  (to clk_c +)
+
+   Delay:                   6.948ns  (12.4% logic, 87.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.948ns data_path w_ptr_reg_i2 to array_reg[8]_i0_i14 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.773ns
+
+ Path Details: w_ptr_reg_i2 to array_reg[8]_i0_i14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              w_ptr_reg_i2 (from clk_c)
+Route        27   e 1.779                                  w_ptr_reg[2]
+LUT4        ---     0.166              A to Z              i1_2_lut_rep_81
+Route        34   e 1.725                                  n2958
+LUT4        ---     0.166              C to Z              i1_3_lut_4_lut_adj_23
+Route        15   e 1.561                                  n1668
+LUT4        ---     0.166              C to Z              mux_225_i15_3_lut
+Route         1   e 1.020                                  n1683
+                  --------
+                    6.948  (12.4% logic, 87.6% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 1.773ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             w_ptr_reg_i2  (from clk_c +)
+   Destination:    FD1P3AX    D              array_reg[8]_i0_i13  (to clk_c +)
+
+   Delay:                   6.948ns  (12.4% logic, 87.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.948ns data_path w_ptr_reg_i2 to array_reg[8]_i0_i13 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.773ns
+
+ Path Details: w_ptr_reg_i2 to array_reg[8]_i0_i13
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              w_ptr_reg_i2 (from clk_c)
+Route        27   e 1.779                                  w_ptr_reg[2]
+LUT4        ---     0.166              A to Z              i1_2_lut_rep_81
+Route        34   e 1.725                                  n2958
+LUT4        ---     0.166              C to Z              i1_3_lut_4_lut_adj_23
+Route        15   e 1.561                                  n1668
+LUT4        ---     0.166              C to Z              mux_225_i14_3_lut
+Route         1   e 1.020                                  n1682
+                  --------
+                    6.948  (12.4% logic, 87.6% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 1.773ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             w_ptr_reg_i2  (from clk_c +)
+   Destination:    FD1P3AX    D              array_reg[8]_i0_i12  (to clk_c +)
+
+   Delay:                   6.948ns  (12.4% logic, 87.6% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.948ns data_path w_ptr_reg_i2 to array_reg[8]_i0_i12 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 1.773ns
+
+ Path Details: w_ptr_reg_i2 to array_reg[8]_i0_i12
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              w_ptr_reg_i2 (from clk_c)
+Route        27   e 1.779                                  w_ptr_reg[2]
+LUT4        ---     0.166              A to Z              i1_2_lut_rep_81
+Route        34   e 1.725                                  n2958
+LUT4        ---     0.166              C to Z              i1_3_lut_4_lut_adj_23
+Route        15   e 1.561                                  n1668
+LUT4        ---     0.166              C to Z              mux_225_i13_3_lut
+Route         1   e 1.020                                  n1681
+                  --------
+                    6.948  (12.4% logic, 87.6% route), 4 logic levels.
+
+Warning: 6.773 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|     6.773 ns|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+w_ptr_reg[1]                            |      33|     398|     20.54%
+                                        |        |        |
+w_ptr_reg[0]                            |      35|     367|     18.94%
+                                        |        |        |
+w_ptr_reg[2]                            |      27|     333|     17.18%
+                                        |        |        |
+full_c                                  |      12|     288|     14.86%
+                                        |        |        |
+n2968                                   |     107|     288|     14.86%
+                                        |        |        |
+w_ptr_reg[3]                            |      23|     285|     14.71%
+                                        |        |        |
+empty_c                                 |       8|     257|     13.26%
+                                        |        |        |
+n2967                                   |      16|     257|     13.26%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 1938  Score: 753523
+
+Constraints cover  3120 paths, 585 nets, and 1752 connections (63.2% coverage)
+
+
+Peak memory: 120041472 bytes, TRCE: 2871296 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 

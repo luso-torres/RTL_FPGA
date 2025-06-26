@@ -1,0 +1,241 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_encoder_decoder/sim_encoder_decoder.mdo}
+# Loading project sim_encoder_decoder
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 10:40:57 on Jun 24,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b" -work work D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v 
+# -- Compiling module decode
+# 
+# Top level modules:
+# 	decode
+# End time: 10:40:57 on Jun 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 10:40:57 on Jun 24,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b" -work work D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v 
+# -- Compiling module encode
+# 
+# Top level modules:
+# 	encode
+# End time: 10:40:57 on Jun 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 10:40:57 on Jun 24,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3_files/aula3-8b10b" -work work D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v 
+# -- Compiling module test_8b10b
+# 
+# Top level modules:
+# 	test_8b10b
+# End time: 10:40:57 on Jun 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u test_8b10b 
+# Start time: 10:40:57 on Jun 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.test_8b10b(fast)
+# Loading work.encode(fast)
+# Loading work.decode(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-7) Failed to open readmem file "8b10b_a.mem" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v(40)
+#    Time: 0 ns  Iteration: 0  Instance: /test_8b10b
+# 
+# 
+# First, test by trying all 268 (256 Dx.y and 12 Kx.y)
+# valid inputs, with both + and - starting disparity.
+# We check that the encoder output and ending disparity is correct.
+# We also check that the decoder matches.
+# Causality operation skipped due to absence of debug database file
+# Compile of decode.v was successful.
+# Compile of encode.v was successful.
+# Compile of encode_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.test_8b10b(fast)
+# Loading work.encode(fast)
+# Loading work.decode(fast)
+run
+# 
+# 
+# First, test by trying all 268 (256 Dx.y and 12 Kx.y)
+# valid inputs, with both + and - starting disparity.
+# We check that the encoder output and ending disparity is correct.
+# We also check that the decoder matches.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+#           0 errors in that testing.
+# 
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 8  sim:/test_8b10b/DUTE/datain
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 9  sim:/test_8b10b/DUTE/datain
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 11  sim:/test_8b10b/DUTE/dataout
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 10  sim:/test_8b10b/DUTE/dataout
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 16  sim:/test_8b10b/DUTE/datain
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 16  sim:/test_8b10b/DUTE/dispin
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 17  sim:/test_8b10b/DUTE/dataout
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 18  sim:/test_8b10b/DUTE/dataout
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 15  sim:/test_8b10b/DUTD/code_err
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+add wave -position 21  sim:/test_8b10b/DUTD/disp_err
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+restart
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.test_8b10b(fast)
+# Loading work.encode(fast)
+# Loading work.decode(fast)
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+run
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# 
+# 
+# First, test by trying all 268 (256 Dx.y and 12 Kx.y)
+# valid inputs, with both + and - starting disparity.
+# We check that the encoder output and ending disparity is correct.
+# We also check that the decoder matches.
+#           0 errors in that testing.
+# 
+# Now lets test all (legal and illegal) codes into the decoder.
+# checking all possible decode inputs
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# error: CanCompile -> can't read "ProjectFiles(D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v)": no such element in array
+# End time: 11:07:34 on Jun 24,2025, Elapsed time: 0:26:37
+# Errors: 0, Warnings: 4

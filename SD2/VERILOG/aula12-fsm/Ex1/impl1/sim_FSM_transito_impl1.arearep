@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell transito.TECH
+Register bits:  12 of 44439 (0.027%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         4          100.0
+                            FD1S3AX         7          100.0
+                            FD1S3IX         1          100.0
+                                GSR         1          100.0
+                                 IB         8          100.0
+                               LUT4        30          100.0
+                                 OB         4          100.0
+                              PFUMX         4          100.0
+                              TOTAL        59

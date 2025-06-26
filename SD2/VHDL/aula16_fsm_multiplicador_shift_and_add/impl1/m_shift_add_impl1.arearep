@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell mult4X4.TECH
+Register bits:  13 of 44439 (0.029%)
+I/O cells:      11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         6          100.0
+                            FD1P3IX         7          100.0
+                                GSR         1          100.0
+                                 IB        10          100.0
+                               LUT4        38          100.0
+                                 OB         1          100.0
+                              PFUMX         3          100.0
+                        VERIFIC_PWR         1          100.0
+                              TOTAL        67

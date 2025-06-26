@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell LaserDistMeasurer.TECH
+Register bits:  34 of 44439 (0.077%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         9          100.0
+                            FD1P3AX        16          100.0
+                            FD1S3AX        18          100.0
+                                GSR         1          100.0
+                                 IB         4          100.0
+                               LUT4        41          100.0
+                                 OB        17          100.0
+                              PFUMX         3          100.0
+                              TOTAL       109

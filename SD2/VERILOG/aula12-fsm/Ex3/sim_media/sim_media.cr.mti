@@ -1,0 +1,15 @@
+D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module media_tb
+
+Top level modules:
+	media_tb
+
+} {} {}} D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_aritmetica.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex3/media_aritmetica.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module media
+
+Top level modules:
+	media
+
+} {} {}}

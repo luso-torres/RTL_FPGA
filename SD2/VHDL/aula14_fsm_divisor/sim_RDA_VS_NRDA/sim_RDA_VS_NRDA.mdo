@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_RDA_VS_NRDA/sim_RDA_VS_NRDA.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_RDA_VS_NRDA" sim_RDA_VS_NRDA
+	project addfile "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd"
+	project addfile "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_NRDA.vhd"
+	vcom -work work "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_RDA_VS_NRDA/sim_RDA_VS_NRDA"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_divRDA
+view wave
+add wave /*
+run 1000ns

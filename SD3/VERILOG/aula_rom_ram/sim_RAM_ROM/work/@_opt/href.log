@@ -1,0 +1,4 @@
+BEGIN 1:datasrc1:fast:work
+    state :  1:tb_datasrc:fast:work
+    addr :  1:tb_datasrc:fast:work
+END 

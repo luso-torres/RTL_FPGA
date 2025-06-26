@@ -1,0 +1,75 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/SD3/sim_RAM_ROM
+T_opt
+!s110 1750117238
+V1eRK`h7g3DXDOnoVFJ8VJ0
+04 10 4 work tb_datasrc fast 0
+=1-ac675dfda9e9-6850ab75-30d-6d28
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vdatasrc1
+2D:/RTL_FPGA/SD3/datasrc1.v
+Z3 !s110 1750117236
+!i10b 1
+!s100 mo[Rn_3^0gDbo6=I;^6_^2
+I?aYc:[37XTYj5RGV]2<]T1
+R1
+w1750116600
+8D:/RTL_FPGA/SD3/datasrc1.v
+FD:/RTL_FPGA/SD3/datasrc1.v
+!i122 0
+L0 3 89
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1750117236.000000
+!s107 D:/RTL_FPGA/SD3/datasrc1.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/SD3|-work|work|D:/RTL_FPGA/SD3/datasrc1.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/SD3 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vtb_datasrc
+2D:/RTL_FPGA/SD3/datasrc1_tf.v
+R3
+!i10b 1
+!s100 5K22bW24@[b0283I@JXQj0
+Iak1_zO6@2ol=klLaJ<2PQ2
+R1
+w1750116907
+8D:/RTL_FPGA/SD3/datasrc1_tf.v
+FD:/RTL_FPGA/SD3/datasrc1_tf.v
+!i122 1
+L0 3 64
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/SD3/datasrc1_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/SD3|-work|work|D:/RTL_FPGA/SD3/datasrc1_tf.v|
+!i113 0
+R7
+R8
+R2

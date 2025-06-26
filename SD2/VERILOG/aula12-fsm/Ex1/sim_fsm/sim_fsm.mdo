@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/sim_FSM/sim_FSM.mpf"]} { 
+	project new "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/sim_FSM" sim_FSM
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/transito_fsm.v"
+	project addfile "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/transito_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/transito_fsm.v"
+	vlog  +incdir+D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1  -work work  "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/transito_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/sim_FSM/sim_FSM"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  transito_tb
+view wave
+add wave /*
+run 1000ns

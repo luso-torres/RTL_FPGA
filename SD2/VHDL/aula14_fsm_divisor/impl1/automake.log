@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Jun 06 20:13:17 2025
+Mon Jun 23 15:39:45 2025
 
 
-Command Line:  synthesis -f aula14_fsm_divisor_impl1_lattice.synproj -gui 
+Command Line:  synthesis -f aula14_fsm_divisor_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -68,7 +68,7 @@ The -syn option is FALSE.
 -p D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/impl1 (searchpath added)
 -p D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor (searchpath added)
 VHDL library = work
-VHDL design file = D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divRDA_FSM.vhd
+VHDL design file = D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/divisor_fsm_RDA.vhd
 NGD file = aula14_fsm_divisor_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -80,18 +80,116 @@ Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADER
 Compile design.
 Compile Design Begin
     <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/impl1"  />
-Analyzing VHDL file d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd. VHDL-1481
-    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(28): " arg1="divrda_fsm" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg3="28"  />
-    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(40): " arg1="behavioral" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg3="40"  />
+Analyzing VHDL file d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(28): " arg1="divrda_fsm" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg3="28"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(40): " arg1="behavioral" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg3="40"  />
 unit divRDA_FSM is not yet analyzed. VHDL-1485
 unit divRDA_FSM is not yet analyzed. VHDL-1485
-d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(28): executing divRDA_FSM(Behavioral)
+d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(28): executing divRDA_FSM(Behavioral)
 
-    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(75): " arg1="i" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg3="75"  />
-    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(83): " arg1="rega" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg3="83"  />
-    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(85): " arg1="i" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg3="85"  />
-    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(85): " arg1="rega" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg3="85"  />
-    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(91): " arg1="i" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg3="91"  />
-    <postMsg mid="35921172" type="Info"    dynamic="1" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(97): " arg1="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg2="97"  />
-    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(99): " arg1="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg2="99"  />
-    <postMsg mid="35921077" type="Error"   dynamic="3" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(117): " arg1="8" arg2="32" arg3="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd" arg4="117"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(75): " arg1="i" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg3="75"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(83): " arg1="rega" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg3="83"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(85): " arg1="i" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg3="85"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(85): " arg1="rega" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg3="85"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(91): " arg1="i" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg3="91"  />
+    <postMsg mid="35921172" type="Info"    dynamic="1" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(97): " arg1="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg2="97"  />
+    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(99): " arg1="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg2="99"  />
+    <postMsg mid="35921172" type="Info"    dynamic="1" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(144): " arg1="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg2="144"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(38): " arg1="divRDA_FSM" arg2="Behavioral" arg3="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg4="38"  />
+Top module name (VHDL): divRDA_FSM
+Last elaborated design is divRDA_FSM(Behavioral)
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = divRDA_FSM.
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="proximo_estado[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="proximo_estado[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="proximo_estado[0]"  />
+
+
+
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(146): " arg1="regM_i8" arg2="d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd" arg3="146"  />
+GSR instance connected to net n594.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in divRDA_FSM_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    129 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file aula14_fsm_divisor_impl1.ngd.
+
+################### Begin Area Report (divRDA_FSM)######################
+Number of register bits => 33 of 44439 (0 % )
+CCU2C => 6
+FD1P3AX => 13
+FD1P3IX => 17
+FD1S3AX => 3
+GSR => 1
+IB => 19
+LUT4 => 48
+OB => 17
+PFUMX => 2
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 33
+Clock Enable Nets
+Number of Clock Enables: 6
+Top 6 highest fanout Clock Enables:
+  Net : clk_c_enable_28, loads : 19
+  Net : clk_c_enable_30, loads : 10
+  Net : clk_c_enable_27, loads : 9
+  Net : clk_c_enable_4, loads : 1
+  Net : clk_c_enable_3, loads : 1
+  Net : clk_c_enable_29, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : estado_atual_2, loads : 34
+  Net : estado_atual_1, loads : 31
+  Net : estado_atual_0, loads : 23
+  Net : clk_c_enable_28, loads : 19
+  Net : n600, loads : 15
+  Net : clk_c_enable_30, loads : 10
+  Net : clk_c_enable_27, loads : 9
+  Net : i_0, loads : 6
+  Net : proximo_estado_2_N_21_2, loads : 6
+  Net : i_1, loads : 5
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  175.654 MHz|     7 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 109.734  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.797  secs
+--------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-synthesis -f "media_aritmetica_impl1_lattice.synproj"
+synthesis -f "pwm_impl1_lattice.synproj"
 synthesis:  version Diamond (64-bit) 3.14.0.75.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jun 04 21:23:22 2025
+Thu Jun 19 16:58:36 2025
 
 
-Command Line:  synthesis -f media_aritmetica_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/promote.xml 
+Command Line:  synthesis -f pwm_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -38,7 +38,7 @@ Using performance grade 6.
 
     <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
 Optimization goal = Timing
-The -top option is not used.
+Top-level module name = pwm.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -68,10 +68,105 @@ The -syn option is FALSE.
 -p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
 -p D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/impl1 (searchpath added)
 -p D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2 (searchpath added)
-Verilog design file = D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/media_aritmetica.v
-NGD file = media_aritmetica_impl1.ngd
+Verilog design file = D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm.v
+NGD file = pwm_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
 Hardtimer checking is enabled (default). The -dt option is not used.
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
-    <postMsg mid="35901128" type="Error"   dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/media_aritmetica.v(11): " arg1="x_in" arg2="d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/media_aritmetica.v" arg3="11"  />
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/pwm.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): pwm
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/pwm.v(1): " arg1="pwm" arg2="d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/pwm.v" arg3="1"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/pwm.v(28): " arg1="32" arg2="8" arg3="d:/rtl_fpga/sd2/verilog/aula12-fsm/ex2/pwm.v" arg4="28"  />
+Last elaborated design is pwm()
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = pwm.
+
+
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="state_"  />
+GSR instance connected to net n172.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in pwm_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+     51 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file pwm_impl1.ngd.
+
+################### Begin Area Report (pwm)######################
+Number of register bits => 9 of 44439 (0 % )
+CCU2C => 5
+FD1S3AX => 1
+FD1S3IX => 8
+GSR => 1
+IB => 10
+LUT4 => 21
+OB => 1
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 9
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n173, loads : 8
+  Net : i_6, loads : 5
+  Net : state_0, loads : 4
+  Net : i_7, loads : 4
+  Net : i_5, loads : 4
+  Net : i_4, loads : 4
+  Net : i_3, loads : 4
+  Net : duty_cycle_c_6, loads : 3
+  Net : duty_cycle_c_5, loads : 3
+  Net : i_2, loads : 3
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  174.155 MHz|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 89.641  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.672  secs
+--------------------------------------------------------------

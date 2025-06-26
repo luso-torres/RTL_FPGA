@@ -1,0 +1,37 @@
+----------------------------------------------------------------------
+Report for cell serdes_transmiter.TECH
+Register bits:  15 of 44439 (0.034%)
+I/O cells:      13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         9          100.0
+                            FD1P3IX         5          100.0
+                            FD1S3AX         1          100.0
+                                GSR         1          100.0
+                                 IB        12          100.0
+                               LUT4        46          100.0
+                                 OB         1          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+              PISO_reg(NUM_BITS=10)         1
+                             encode         1
+                              TOTAL        79
+----------------------------------------------------------------------
+Report for cell PISO_reg(NUM_BITS=10).v1
+Instance Path : piso
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         9          100.0
+                            FD1P3IX         5          100.0
+                            FD1S3AX         1          100.0
+                               LUT4        17           37.0
+                              PFUMX         1           50.0
+                              TOTAL        33
+----------------------------------------------------------------------
+Report for cell encode.v1
+Instance Path : enc
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        27           58.7
+                              PFUMX         1           50.0
+                              TOTAL        28

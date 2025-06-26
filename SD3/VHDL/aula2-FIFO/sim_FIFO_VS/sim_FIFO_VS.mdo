@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_fifo_vs/sim_fifo_vs.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_fifo_vs" sim_fifo_vs
+	project addfile "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd"
+	project addfile "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO_barrel.vhd"
+	project addfile "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_NxN_buffer_barrel_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO_barrel.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_NxN_buffer_barrel_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_fifo_vs/sim_fifo_vs"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

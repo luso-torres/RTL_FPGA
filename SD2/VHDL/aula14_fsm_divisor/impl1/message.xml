@@ -18,81 +18,115 @@
         <Message>
             <ID>35921012</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(28): </Dynamic>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(28): </Dynamic>
             <Dynamic>divrda_fsm</Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(40): </Dynamic>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(40): </Dynamic>
             <Dynamic>behavioral</Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>40</Navigation>
         </Message>
         <Message>
             <ID>35921251</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(75): </Dynamic>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(75): </Dynamic>
             <Dynamic>i</Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>75</Navigation>
         </Message>
         <Message>
             <ID>35921251</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(83): </Dynamic>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(83): </Dynamic>
             <Dynamic>rega</Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>83</Navigation>
         </Message>
         <Message>
             <ID>35921251</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(85): </Dynamic>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(85): </Dynamic>
             <Dynamic>i</Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>85</Navigation>
         </Message>
         <Message>
             <ID>35921251</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(85): </Dynamic>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(85): </Dynamic>
             <Dynamic>rega</Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>85</Navigation>
         </Message>
         <Message>
             <ID>35921251</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(91): </Dynamic>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(91): </Dynamic>
             <Dynamic>i</Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>91</Navigation>
         </Message>
         <Message>
             <ID>35921172</ID>
             <Severity>Info</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(97): </Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(97): </Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>97</Navigation>
         </Message>
         <Message>
             <ID>35921613</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(99): </Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(99): </Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
             <Navigation>99</Navigation>
         </Message>
         <Message>
-            <ID>35921077</ID>
-            <Severity>Error</Severity>
-            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd(117): </Dynamic>
-            <Dynamic>8</Dynamic>
-            <Dynamic>32</Dynamic>
-            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divrda_fsm.vhd</Navigation>
-            <Navigation>117</Navigation>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(144): </Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
+            <Navigation>144</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(38): </Dynamic>
+            <Dynamic>divRDA_FSM</Dynamic>
+            <Dynamic>Behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
+            <Navigation>38</Navigation>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>proximo_estado[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>proximo_estado[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>proximo_estado[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd(146): </Dynamic>
+            <Dynamic>regM_i8</Dynamic>
+            <Navigation>d:/rtl_fpga/sd2/vhdl/aula14_fsm_divisor/divisor_fsm_rda.vhd</Navigation>
+            <Navigation>146</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
         </Message>
     </Task>
 </BaliMessageLog>

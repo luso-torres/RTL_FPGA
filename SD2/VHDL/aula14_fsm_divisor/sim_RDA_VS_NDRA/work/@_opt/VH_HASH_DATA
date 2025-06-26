@@ -1,0 +1,41 @@
+[N
+5
+4
+8 num_bits
+3
+10 behavioral
+5
+11 divnrda_fsm
+1
+60 D:/RTL_FPGA/SD2/VHDL/aula14_fsm_divisor/sim_RDA_VS_NDRA/work
+2
+10 divrda_fsm
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+8
+0
+0 0
+0
+0
+]
+[G
+1
+5
+3
+1
+4
+1
+0
+8
+0
+0 0
+0
+0
+]

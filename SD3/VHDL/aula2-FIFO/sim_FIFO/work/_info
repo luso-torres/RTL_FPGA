@@ -1,0 +1,119 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO
+T_opt
+!s110 1750206276
+V=8VIU>27nKgkBP[GBUl=T2
+04 9 8 work testbench behavior 1
+=1-ac675dfda9e9-68520744-181-374
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Efifo_nxn_buffer_circular
+Z2 w1750205577
+Z3 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z9 8D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd
+Z10 FD:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd
+l0
+L8 1
+VMmk?X3W73MLk9R?]=Qkho3
+!s100 `E`MeP8OCS9`C84NUl?0T2
+Z11 OL;C;2024.2;79
+32
+Z12 !s110 1750206275
+!i10b 1
+Z13 !s108 1750206275.000000
+Z14 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd|
+Z15 !s107 D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd|
+!i113 0
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 24 fifo_nxn_buffer_circular 0 22 Mmk?X3W73MLk9R?]=Qkho3
+!i122 0
+l28
+L18 74
+VLXbSVYk:SWd`boMblT7d90
+!s100 2GCE@GTYT5mh5GE23I]l@1
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Etestbench
+Z18 w1750206255
+R4
+R7
+R8
+!i122 1
+R1
+Z19 8D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd
+Z20 FD:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd
+l0
+L5 1
+VA3PD7oV_anV9f=CGABDNT3
+!s100 ?1TZDXVB2nYW<;_X^MmPd3
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd|
+Z22 !s107 D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd|
+!i113 0
+R16
+R17
+Abehavior
+R4
+R7
+R8
+DEx4 work 9 testbench 0 22 A3PD7oV_anV9f=CGABDNT3
+!i122 1
+l39
+L8 97
+VBgF2e?N`36kof`6HMn0]c0
+!s100 Nb1:I=7Zg]glZg][4nJiG3
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 0
+R16
+R17

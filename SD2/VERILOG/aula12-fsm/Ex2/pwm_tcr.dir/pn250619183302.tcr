@@ -1,0 +1,14 @@
+#Start recording tcl command: 6/19/2025 15:18:22
+#Project Location: D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2; Project name: pwm
+prj_project open "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/pwm.ldf"
+prj_src add "D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex2/sim_PWM/sim_PWM.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 6/19/2025 18:33:02

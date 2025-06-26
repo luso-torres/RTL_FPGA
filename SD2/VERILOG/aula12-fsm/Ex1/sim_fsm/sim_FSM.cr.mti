@@ -1,0 +1,8 @@
+D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/transito_fsm.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD2/VERILOG/aula12-fsm/Ex1/transito_fsm.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module transito
+
+Top level modules:
+	transito
+
+} {} {}}

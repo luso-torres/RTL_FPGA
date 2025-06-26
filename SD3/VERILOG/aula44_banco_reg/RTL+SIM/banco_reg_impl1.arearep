@@ -1,0 +1,15 @@
+----------------------------------------------------------------------
+Report for cell regfile8x16c.TECH
+Register bits:  128 of 44439 (0.288%)
+I/O cells:      60
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX       128          100.0
+                                GSR         1          100.0
+                                 IB        28          100.0
+                            L6MUX21        32          100.0
+                               LUT4       137          100.0
+                                 OB        32          100.0
+                              PFUMX        64          100.0
+                        VERIFIC_PWR         1          100.0
+                              TOTAL       423

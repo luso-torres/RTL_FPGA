@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="aula_8b10b" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="encode"/>
+        <Source name="decode.v" type="Verilog" type_short="Verilog">
+            <Options top_module="decode"/>
+        </Source>
+        <Source name="encode.v" type="Verilog" type_short="Verilog">
+            <Options top_module="encode"/>
+        </Source>
+        <Source name="PISO_reg.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="encode_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="serdes_receiver.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="serdes_transmitter.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="SIPO_reg.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="serdes_transmiter_tf.v" type="Verilog" type_short="Verilog" excluded="TRUE" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="serdes_receiver_tf.v" type="Verilog" type_short="Verilog" excluded="TRUE" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="aula_8b10b.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_8b10b/sim_8b10b.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_8b10b_encode_decode/sim_8b10b_encode_decode.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_encoder_decoder/sim_encoder_decoder.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_encoder_serdes/sim_encoder_serdes.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_serdes/sim_serdes.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="aula_8b10b1.sty"/>
+</BaliProject>

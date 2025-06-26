@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO/sim_FIFO.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO" sim_FIFO
+	project addfile "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd"
+	project addfile "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD3_files/aula2-FIFO/FIFO.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3_files/aula2-FIFO/fifo_8x8_buffer_circular_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD3_files/aula2-FIFO/sim_FIFO/sim_FIFO"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  testbench
+view wave
+add wave /*
+run 1000ns

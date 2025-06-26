@@ -1,0 +1,18 @@
+#Start recording tcl command: 6/23/2025 21:45:39
+#Project Location: D:/RTL_FPGA/SD3_files/aula3-8b10b; Project name: aula_8b10b
+prj_project open "D:/RTL_FPGA/SD3_files/aula3-8b10b/aula_8b10b.ldf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_8b10b/sim_8b10b.spf"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v"
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmiter_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v"
+prj_run Map -impl impl1
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_encoder_serdes/sim_encoder_serdes.spf"
+prj_src enable "D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3_files/aula3-8b10b/sim_encoder_decoder/sim_encoder_decoder.spf"
+#Stop recording: 6/24/2025 11:07:41

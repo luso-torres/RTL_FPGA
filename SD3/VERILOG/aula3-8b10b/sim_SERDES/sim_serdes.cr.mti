@@ -1,0 +1,50 @@
+D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/aula3-8b10b/encode_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module test_8b10b
+
+Top level modules:
+	test_8b10b
+
+} {} {}} D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/aula3-8b10b/PISO_reg.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module PISO_reg
+
+Top level modules:
+	PISO_reg
+
+} {} {}} D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/aula3-8b10b/SIPO_reg.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module SIPO_reg
+
+Top level modules:
+	SIPO_reg
+
+} {} {}} D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/aula3-8b10b/decode.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module decode
+
+Top level modules:
+	decode
+
+} {} {}} D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_transmitter.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module serdes_transmiter
+
+Top level modules:
+	serdes_transmiter
+
+} {} {}} D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/aula3-8b10b/serdes_receiver.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module serdes_receiver
+
+Top level modules:
+	serdes_receiver
+
+} {} {}} D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3_files/aula3-8b10b/encode.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module encode
+
+Top level modules:
+	encode
+
+} {} {}}

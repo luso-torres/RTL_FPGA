@@ -1,16 +1,15 @@
 ----------------------------------------------------------------------
 Report for cell pwm.TECH
-Register bits:  19 of 44439 (0.043%)
+Register bits:  9 of 44439 (0.020%)
 I/O cells:      11
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2C         5          100.0
-                            FD1S3AX         3          100.0
-                            FD1S3AY         8          100.0
+                            FD1S3AX         1          100.0
                             FD1S3IX         8          100.0
                                 GSR         1          100.0
                                  IB        10          100.0
-                               LUT4        37          100.0
+                               LUT4        21          100.0
                                  OB         1          100.0
-                              PFUMX         4          100.0
-                              TOTAL        77
+                              PFUMX         1          100.0
+                              TOTAL        48
