@@ -1,0 +1,6 @@
+#Start recording tcl command: 6/27/2025 11:25:40
+#Project Location: D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores; Project name: ARBITRER
+prj_project open "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/ARBITRER.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/sim_arbitradores/sim_arbitradores.spf"
+#Stop recording: 6/27/2025 11:51:37

@@ -1,0 +1,30 @@
+----------------------------------------------------------------------
+Report for cell cordic_serial_abs.TECH
+Register bits:  64 of 44439 (0.144%)
+I/O cells:      83
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        27          100.0
+                            FD1P3AX         1          100.0
+                            FD1S3AX        18          100.0
+                            FD1S3IX        39          100.0
+                            FD1S3JX         6          100.0
+                                GSR         1          100.0
+                                 IB        50          100.0
+                            L6MUX21         1          100.0
+                               LUT4       189          100.0
+                         MULT18X18D         1          100.0
+                                 OB        33          100.0
+                              PFUMX        17          100.0
+SUB MODULES
+                          rom_16x16         1
+                              TOTAL       384
+----------------------------------------------------------------------
+Report for cell rom_16x16.v1
+Instance Path : ROM
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            5.6
+                            FD1S3IX         7           17.9
+                               LUT4        47           24.9
+                              TOTAL        55

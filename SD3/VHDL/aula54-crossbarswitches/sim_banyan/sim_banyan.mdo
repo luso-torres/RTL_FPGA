@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_banyan/sim_banyan.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_banyan" sim_banyan
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_banyan.vhd"
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/banyan_switch_mux_4x4_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_banyan.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/banyan_switch_mux_4x4_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_banyan/sim_banyan"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_simple_banyan
+view wave
+add wave /*
+run 1000ns

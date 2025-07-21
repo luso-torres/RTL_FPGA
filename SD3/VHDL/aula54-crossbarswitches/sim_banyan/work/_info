@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_banyan
+T_opt
+!s110 1751659962
+Vo]YdGF[>;Ljhd3z281a>n3
+04 16 10 work tb_simple_banyan behavioral 1
+=1-ac675dfda9e9-686835b9-3ae-47e8
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+Ebanyan_switch_mux_4x4
+Z2 w1751659634
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z6 8D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_banyan.vhd
+Z7 FD:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_banyan.vhd
+l0
+L5 1
+Ve2T_gihEI:VT`>T:40MO=3
+!s100 ZUGWGI71C>21A>c0_Fial1
+Z8 OL;C;2024.2;79
+32
+Z9 !s110 1751659960
+!i10b 1
+Z10 !s108 1751659960.000000
+Z11 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_banyan.vhd|
+Z12 !s107 D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_banyan.vhd|
+!i113 0
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+DEx4 work 21 banyan_switch_mux_4x4 0 22 e2T_gihEI:VT`>T:40MO=3
+!i122 0
+l23
+L13 88
+VT]?e8dg9MKP`m3D`O<IC]3
+!s100 <V_F4N8^Fah0@e`;o=g_50
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Etb_simple_banyan
+Z15 w1751659931
+R4
+R5
+!i122 1
+R1
+Z16 8D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/banyan_switch_mux_4x4_tb.vhd
+Z17 FD:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/banyan_switch_mux_4x4_tb.vhd
+l0
+L4 1
+VR>TU1EQmze8XjZc9JCC=c0
+!s100 boC::?LjA<ePl0kUHk=AK1
+R8
+32
+Z18 !s110 1751659961
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/banyan_switch_mux_4x4_tb.vhd|
+Z20 !s107 D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/banyan_switch_mux_4x4_tb.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 16 tb_simple_banyan 0 22 R>TU1EQmze8XjZc9JCC=c0
+!i122 1
+l21
+L7 44
+V?M4YS=Hj5HLcE=;DML;n_3
+!s100 `UTbl71BAI6DK4;=h51Uz1
+R8
+32
+R18
+!i10b 1
+R10
+R19
+R20
+!i113 0
+R13
+R14

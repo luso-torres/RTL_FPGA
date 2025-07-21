@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/sim_arbitradores/sim_arbitradores.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/sim_arbitradores" sim_arbitradores
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v"
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores  -work work  "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores  -work work  "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/sim_arbitradores/sim_arbitradores"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  arbiter_tf
+view wave
+add wave /*
+run 1000ns

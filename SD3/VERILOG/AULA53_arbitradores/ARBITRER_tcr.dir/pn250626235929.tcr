@@ -1,0 +1,12 @@
+#Start recording tcl command: 6/26/2025 23:14:22
+#Project Location: D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores; Project name: ARBITRER
+prj_project new -name "ARBITRER" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "arbiter_tf.v"
+prj_src add "D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/sim_arbitrer/sim_arbitrer.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 6/26/2025 23:59:29

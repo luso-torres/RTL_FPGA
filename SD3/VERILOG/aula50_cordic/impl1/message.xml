@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v(1): </Dynamic>
+            <Dynamic>cordic_serial_abs</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v(73): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v</Navigation>
+            <Navigation>73</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(3): </Dynamic>
+            <Dynamic>rom_16x16</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(20): </Dynamic>
+            <Dynamic>15</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(22): </Dynamic>
+            <Dynamic>14</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(24): </Dynamic>
+            <Dynamic>13</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(26): </Dynamic>
+            <Dynamic>12</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(28): </Dynamic>
+            <Dynamic>11</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(30): </Dynamic>
+            <Dynamic>10</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(32): </Dynamic>
+            <Dynamic>9</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(14): </Dynamic>
+            <Dynamic>rom_data</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v(79): </Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>5</Dynamic>
+            <Dynamic>address</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v</Navigation>
+            <Navigation>79</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v(80): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>17</Dynamic>
+            <Dynamic>data_out</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v(82): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/cordic.v</Navigation>
+            <Navigation>82</Navigation>
+        </Message>
+        <Message>
+            <ID>35931038</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v(14): </Dynamic>
+            <Dynamic>rom_data_original_ramnet</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula50_cordic/rom_powerof2.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>15</Dynamic>
+            <Dynamic>\ROM/data_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>14</Dynamic>
+            <Dynamic>\ROM/data_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>13</Dynamic>
+            <Dynamic>\ROM/data_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>12</Dynamic>
+            <Dynamic>\ROM/data_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>11</Dynamic>
+            <Dynamic>\ROM/data_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>10</Dynamic>
+            <Dynamic>\ROM/data_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>9</Dynamic>
+            <Dynamic>\ROM/data_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>8</Dynamic>
+            <Dynamic>\ROM/data_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

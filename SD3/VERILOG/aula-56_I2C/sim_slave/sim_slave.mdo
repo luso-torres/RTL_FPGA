@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/sim_slave/sim_slave.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/sim_slave" sim_slave
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave.v"
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave_tf.v"
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_master_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave_tf.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_master_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/sim_slave/sim_slave"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  i2c_slave_tb
+view wave
+add wave /*
+run 1000ns

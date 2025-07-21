@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell arbiter.TECH
+Register bits:  4 of 44439 (0.009%)
+I/O cells:      8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3IX         3          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         5          100.0
+                               LUT4         7          100.0
+                                 OB         3          100.0
+                              TOTAL        20

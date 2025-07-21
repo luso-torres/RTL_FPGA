@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/sim_SPI_slave/sim_SPI_slave.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/sim_SPI_slave" sim_SPI_slave
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/SPI_slave.v"
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/spi_slave_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula57_SPI  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/SPI_slave.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula57_SPI  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/spi_slave_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/sim_SPI_slave/sim_SPI_slave"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_spi_slave
+view wave
+add wave /*
+run 1000ns

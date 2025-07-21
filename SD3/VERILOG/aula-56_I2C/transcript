@@ -1,0 +1,104 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/sim_slave/sim_slave.mdo}
+# Loading project sim_slave
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:06:32 on Jul 03,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C" -work work D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave.v 
+# -- Compiling module i2c_slave
+# 
+# Top level modules:
+# 	i2c_slave
+# End time: 21:06:33 on Jul 03,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:06:33 on Jul 03,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C" -work work D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave_tf.v 
+# -- Compiling module i2c_slave_tb
+# 
+# Top level modules:
+# 	i2c_slave_tb
+# End time: 21:06:33 on Jul 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 21:06:33 on Jul 03,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C" -work work D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_master_tf.v 
+# -- Compiling module tb_i2c_master
+# 
+# Top level modules:
+# 	tb_i2c_master
+# End time: 21:06:33 on Jul 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u i2c_slave_tb 
+# Start time: 21:06:33 on Jul 03,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_slave(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.i2c_slave_tb(fast)
+# Loading work.i2c_slave(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# Iniciando operacao de escrita...
+# Causality operation skipped due to absence of debug database file
+run
+run
+run
+run
+# Iniciando operacao de leitura...
+run
+run
+# Bit lido: 1
+# Bit lido: 1
+# Bit lido: 0
+# Bit lido: 0
+run
+# Bit lido: 1
+# Bit lido: 1
+# Bit lido: 0
+# Bit lido: 0
+# Dado recebido: cc, esperado: cc
+# Dado corretamente recebido.
+run
+# ** Note: $stop    : D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave_tf.v(185)
+#    Time: 8170 ns  Iteration: 0  Instance: /i2c_slave_tb
+# Break in Module i2c_slave_tb at D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave_tf.v line 185
+add wave -position end  sim:/i2c_slave_tb/uut/state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.i2c_slave_tb(fast)
+# Loading work.i2c_slave(fast)
+run
+# Iniciando operacao de escrita...
+run
+# Iniciando operacao de leitura...
+run
+# Bit lido: 1
+# Bit lido: 1
+# Bit lido: 0
+# Bit lido: 0
+# Bit lido: 1
+# Bit lido: 1
+# Bit lido: 0
+# Bit lido: 0
+# Dado recebido: cc, esperado: cc
+# Dado corretamente recebido.
+# ** Note: $stop    : D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave_tf.v(185)
+#    Time: 8170 ns  Iteration: 0  Instance: /i2c_slave_tb
+# Break in Module i2c_slave_tb at D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave_tf.v line 185
+# End time: 13:35:20 on Jul 04,2025, Elapsed time: 16:28:47
+# Errors: 0, Warnings: 2

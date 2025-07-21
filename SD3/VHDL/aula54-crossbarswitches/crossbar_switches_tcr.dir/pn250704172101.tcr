@@ -1,0 +1,31 @@
+#Start recording tcl command: 7/4/2025 16:51:34
+#Project Location: D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches; Project name: crossbar_switches
+prj_project new -name "crossbar_switches" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switches.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "crossbar_switch_4x4_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_crossbar/sim_crossbar.spf"
+prj_src exclude "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switches.vhd"
+prj_src exclude "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switch_4x4_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_banyan.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "banyan_switch_4x4_tb.vhd"
+source "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/hdle_generate_tbtemplate.tcl"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "banyan_switch_mux_4x4_tb.vhd"
+prj_src remove "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/banyan_switch_4x4_tb.vhd"
+prj_src add "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_crossbar_banyan/sim_crossbar_banyan.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_banyan/sim_banyan.spf"
+prj_src exclude "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/banyan_switch_mux_4x4_tb.vhd"
+prj_src exclude "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_banyan.vhd"
+prj_src enable "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switches.vhd"
+prj_src enable "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switch_4x4_tb.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 7/4/2025 17:21:01

@@ -1,0 +1,13 @@
+#Start recording tcl command: 7/4/2025 17:21:01
+#Project Location: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic; Project name: aula50_cordic
+D:/RTL_FPGA/SD3/VERILOG/aula57_SPI
+SPI
+#Start recording tcl command: 7/4/2025 18:52:35
+#Project Location: D:/RTL_FPGA/SD3/VERILOG/aula57_SPI; Project name: SPI
+prj_project open "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/aula50_cordic.ldf"
+prj_src add "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v"
+prj_project save
+prj_project close
+prj_project new -name "SPI" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+#Stop recording: 7/4/2025 18:52:35

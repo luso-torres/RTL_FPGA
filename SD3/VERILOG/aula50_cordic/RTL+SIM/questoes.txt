@@ -1,0 +1,9 @@
+QUESTÃO 2)
+A) 100+ j100 =>143 erro 1;
+B) 287- j31 =>288 erro 1;
+C) -152 -j358 => 388 erro 1;
+D) -181 +j500 => 531 erro 0;
+
+
+QUESTÃO 3)
+somente no caso linear, ou seja, multiplicação e divisão. Com essa excessão, quando o número de iterações é igual a 1, então K(1) =1.

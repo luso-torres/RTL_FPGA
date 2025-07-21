@@ -1,0 +1,46 @@
+----------------------------------------------------------------------
+Report for cell topmodule_uart.TECH
+Register bits:  79 of 44439 (0.178%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        18          100.0
+                            FD1P3AX        28          100.0
+                            FD1P3IX         5          100.0
+                            FD1S3IX        45          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB        11          100.0
+                            L6MUX21         1          100.0
+                               LUT4       101          100.0
+                                 OB        10          100.0
+                              PFUMX         3          100.0
+SUB MODULES
+                            uart_rx         1
+                            uart_tx         1
+                              TOTAL       226
+----------------------------------------------------------------------
+Report for cell uart_tx.v1
+Instance Path : UUT1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         9           50.0
+                            FD1P3AX        11           39.3
+                            FD1P3IX         1           20.0
+                            FD1S3IX        23           51.1
+                            FD1S3JX         1          100.0
+                            L6MUX21         1          100.0
+                               LUT4        51           50.5
+                              PFUMX         3          100.0
+                              TOTAL       100
+----------------------------------------------------------------------
+Report for cell uart_rx.v1
+Instance Path : UUT2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         9           50.0
+                            FD1P3AX        17           60.7
+                            FD1P3IX         4           80.0
+                            FD1S3IX        22           48.9
+                               LUT4        48           47.5
+                              TOTAL       100

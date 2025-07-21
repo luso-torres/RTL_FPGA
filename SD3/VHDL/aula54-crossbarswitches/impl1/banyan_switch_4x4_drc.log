@@ -1,0 +1,37 @@
+Results of NGD DRC are available in banyan_switch_4x4_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'clk' has no load.
+WARNING - synthesis: input pad net 'clk' has no legal load.
+WARNING - synthesis: logical net 'rst' has no load.
+WARNING - synthesis: input pad net 'rst' has no legal load.
+WARNING - synthesis: logical net 'addr_in[7]' has no load.
+WARNING - synthesis: input pad net 'addr_in[7]' has no legal load.
+WARNING - synthesis: logical net 'addr_in[6]' has no load.
+WARNING - synthesis: input pad net 'addr_in[6]' has no legal load.
+WARNING - synthesis: logical net 'addr_in[5]' has no load.
+WARNING - synthesis: input pad net 'addr_in[5]' has no legal load.
+WARNING - synthesis: logical net 'addr_in[4]' has no load.
+WARNING - synthesis: input pad net 'addr_in[4]' has no legal load.
+WARNING - synthesis: logical net 'addr_in[3]' has no load.
+WARNING - synthesis: input pad net 'addr_in[3]' has no legal load.
+WARNING - synthesis: logical net 'addr_in[2]' has no load.
+WARNING - synthesis: input pad net 'addr_in[2]' has no legal load.
+WARNING - synthesis: logical net 'addr_in[1]' has no load.
+WARNING - synthesis: input pad net 'addr_in[1]' has no legal load.
+WARNING - synthesis: logical net 'addr_in[0]' has no load.
+WARNING - synthesis: input pad net 'addr_in[0]' has no legal load.
+WARNING - synthesis: logical net 'GND_net' has no load.
+WARNING - synthesis: DRC complete with 21 warnings.
+
+Design Results:
+     68 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file crossbar_switches_impl1.ngd.

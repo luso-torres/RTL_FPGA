@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_crossbar/sim_crossbar.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_crossbar" sim_crossbar
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switches.vhd"
+	project addfile "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switch_4x4_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switches.vhd"
+	vcom -work work "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/crossbar_switch_4x4_tb.vhd"
+} else {
+	project open "D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/sim_crossbar/sim_crossbar"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_crossbar_switch_4x4
+view wave
+add wave /*
+run 1000ns

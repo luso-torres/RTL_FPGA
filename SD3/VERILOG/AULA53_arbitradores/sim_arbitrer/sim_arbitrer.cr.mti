@@ -1,0 +1,15 @@
+D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module arbiter_tf
+
+Top level modules:
+	arbiter_tf
+
+} {} {}} D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module arbiter
+
+Top level modules:
+	arbiter
+
+} {} {}}
