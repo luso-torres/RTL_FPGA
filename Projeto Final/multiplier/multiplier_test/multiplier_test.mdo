@@ -1,0 +1,17 @@
+if {![file exists "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/multiplier_test/multiplier_test.mpf"]} { 
+	project new "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/multiplier_test" multiplier_test
+	project addfile "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/multiplier_2x2.v"
+	project addfile "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/matrix_mul_q2_14_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier  -work work  "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/multiplier_2x2.v"
+	vlog  +incdir+C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier  -work work  "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/matrix_mul_q2_14_tf.v"
+} else {
+	project open "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/multiplier_test/multiplier_test"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_matrix_mul_q2_14
+view wave
+add wave /*
+run 1000ns

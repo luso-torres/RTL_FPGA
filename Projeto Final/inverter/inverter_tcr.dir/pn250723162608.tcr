@@ -1,0 +1,9 @@
+#Start recording tcl command: 7/23/2025 16:10:06
+#Project Location: C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/inverter; Project name: inverter
+prj_project new -name "inverter" -impl "impl1" -dev LFE5U-25F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/inverter/inverter.v"
+source "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/inverter/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "matrix_inv_tf.v"
+prj_src add "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/inverter/sim_inverter/sim_inverter.spf"
+#Stop recording: 7/23/2025 16:26:08

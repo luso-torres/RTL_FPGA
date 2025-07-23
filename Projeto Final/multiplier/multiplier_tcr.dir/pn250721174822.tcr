@@ -1,0 +1,12 @@
+#Start recording tcl command: 7/21/2025 17:30:17
+#Project Location: C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier; Project name: multiplier
+prj_project new -name "multiplier" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/multiplier_2x2.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "matrix_mul_q2_14_tf.v"
+prj_src add "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto Final/multiplier/multiplier_test/multiplier_test.spf"
+prj_project save
+prj_project close
+#Stop recording: 7/21/2025 17:48:22
