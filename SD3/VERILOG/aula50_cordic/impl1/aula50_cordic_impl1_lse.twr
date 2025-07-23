@@ -1,0 +1,219 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jul 09 00:39:56 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     cordic_serial_abs
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 6.181ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             iter_counter_194__i0  (from clk_c +)
+   Destination:    FD1S3AX    D              reg_X__i15  (to clk_c +)
+
+   Delay:                  11.356ns  (17.6% logic, 82.4% route), 11 logic levels.
+
+ Constraint Details:
+
+     11.356ns data_path iter_counter_194__i0 to reg_X__i15 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 6.181ns
+
+ Path Details: iter_counter_194__i0 to reg_X__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              iter_counter_194__i0 (from clk_c)
+Route        68   e 1.963                                  iter_counter[0]
+LUT4        ---     0.166              A to Z              reg_Y_15__I_0_49_i14_3_lut_3_lut
+Route         5   e 1.341                                  n14_adj_211
+LUT4        ---     0.166              C to Z              \ROM/reg_Y_15__I_0_49_i28_rep_39_3_lut_4_lut
+Route         3   e 1.239                                  n2100
+LUT4        ---     0.166              D to Z              reg_Y_15__I_0_49_i40_3_lut_4_lut
+Route         1   e 1.020                                  n40
+LUT4        ---     0.166              C to Z              reg_Y_15__I_0_49_i56_3_lut_4_lut
+Route         1   e 1.020                                  shift_Y[7]
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_913_9
+Route         1   e 0.020                                  n1884
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_11
+Route         1   e 0.020                                  n1885
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_13
+Route         1   e 0.020                                  n1886
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_15
+Route         1   e 0.020                                  n1887
+FCI_TO_F    ---     0.322            CIN to S[2]           add_913_17
+Route        16   e 1.674                                  correction_gain[11]
+LUT4        ---     0.166              C to Z              i427_4_lut
+Route         1   e 1.020                                  n1308
+                  --------
+                   11.356  (17.6% logic, 82.4% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 6.079ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             iter_counter_194__i0  (from clk_c +)
+   Destination:    FD1S3AX    D              reg_X__i15  (to clk_c +)
+
+   Delay:                  11.254ns  (17.8% logic, 82.2% route), 11 logic levels.
+
+ Constraint Details:
+
+     11.254ns data_path iter_counter_194__i0 to reg_X__i15 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 6.079ns
+
+ Path Details: iter_counter_194__i0 to reg_X__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              iter_counter_194__i0 (from clk_c)
+Route        68   e 1.963                                  iter_counter[0]
+LUT4        ---     0.166              A to Z              reg_Y_15__I_0_49_i12_rep_31_3_lut_3_lut
+Route         3   e 1.239                                  n12_adj_209
+LUT4        ---     0.166              D to Z              \ROM/reg_Y_15__I_0_49_i28_rep_39_3_lut_4_lut
+Route         3   e 1.239                                  n2100
+LUT4        ---     0.166              D to Z              reg_Y_15__I_0_49_i40_3_lut_4_lut
+Route         1   e 1.020                                  n40
+LUT4        ---     0.166              C to Z              reg_Y_15__I_0_49_i56_3_lut_4_lut
+Route         1   e 1.020                                  shift_Y[7]
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_913_9
+Route         1   e 0.020                                  n1884
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_11
+Route         1   e 0.020                                  n1885
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_13
+Route         1   e 0.020                                  n1886
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_15
+Route         1   e 0.020                                  n1887
+FCI_TO_F    ---     0.322            CIN to S[2]           add_913_17
+Route        16   e 1.674                                  correction_gain[11]
+LUT4        ---     0.166              C to Z              i427_4_lut
+Route         1   e 1.020                                  n1308
+                  --------
+                   11.254  (17.8% logic, 82.2% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 5.765ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             iter_counter_194__i0  (from clk_c +)
+   Destination:    FD1S3AX    D              reg_X__i14  (to clk_c +)
+
+   Delay:                  10.940ns  (18.3% logic, 81.7% route), 11 logic levels.
+
+ Constraint Details:
+
+     10.940ns data_path iter_counter_194__i0 to reg_X__i14 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 5.765ns
+
+ Path Details: iter_counter_194__i0 to reg_X__i14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              iter_counter_194__i0 (from clk_c)
+Route        68   e 1.963                                  iter_counter[0]
+LUT4        ---     0.166              A to Z              reg_Y_15__I_0_49_i14_3_lut_3_lut
+Route         5   e 1.341                                  n14_adj_211
+LUT4        ---     0.166              C to Z              \ROM/reg_Y_15__I_0_49_i28_rep_39_3_lut_4_lut
+Route         3   e 1.239                                  n2100
+LUT4        ---     0.166              D to Z              reg_Y_15__I_0_49_i40_3_lut_4_lut
+Route         1   e 1.020                                  n40
+LUT4        ---     0.166              C to Z              reg_Y_15__I_0_49_i56_3_lut_4_lut
+Route         1   e 1.020                                  shift_Y[7]
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_913_9
+Route         1   e 0.020                                  n1884
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_11
+Route         1   e 0.020                                  n1885
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_13
+Route         1   e 0.020                                  n1886
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_913_15
+Route         1   e 0.020                                  n1887
+FCI_TO_F    ---     0.322            CIN to S[2]           add_913_17
+Route         2   e 1.258                                  feedback_X[14]
+LUT4        ---     0.166              C to Z              i428_4_lut
+Route         1   e 1.020                                  n1309
+                  --------
+                   10.940  (18.3% logic, 81.7% route), 11 logic levels.
+
+Warning: 11.181 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|    11.181 ns|    11 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n1884                                   |       1|    1725|     42.11%
+                                        |        |        |
+n1883                                   |       1|    1695|     41.38%
+                                        |        |        |
+n1885                                   |       1|    1485|     36.25%
+                                        |        |        |
+iter_counter[0]                         |      68|    1410|     34.42%
+                                        |        |        |
+n1882                                   |       1|    1393|     34.01%
+                                        |        |        |
+n1886                                   |       1|    1155|     28.20%
+                                        |        |        |
+n1870                                   |       1|     906|     22.12%
+                                        |        |        |
+n1881                                   |       1|     880|     21.48%
+                                        |        |        |
+n1871                                   |       1|     800|     19.53%
+                                        |        |        |
+n1872                                   |       1|     758|     18.51%
+                                        |        |        |
+n1887                                   |       1|     648|     15.82%
+                                        |        |        |
+n1873                                   |       1|     630|     15.38%
+                                        |        |        |
+shift_Y[0]                              |       1|     506|     12.35%
+                                        |        |        |
+shift_Y[1]                              |       1|     448|     10.94%
+                                        |        |        |
+n1874                                   |       1|     434|     10.60%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 4096  Score: 15398888
+
+Constraints cover  11679 paths, 341 nets, and 1041 connections (89.1% coverage)
+
+
+Peak memory: 104595456 bytes, TRCE: 6041600 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

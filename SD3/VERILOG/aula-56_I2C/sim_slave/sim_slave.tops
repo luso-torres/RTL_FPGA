@@ -1,0 +1,2 @@
+i2c_slave_tb,/,D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_slave_tf.v
+tb_i2c_master,/,D:/RTL_FPGA/SD3/VERILOG/aula-56_I2C/i2c_master_tf.v

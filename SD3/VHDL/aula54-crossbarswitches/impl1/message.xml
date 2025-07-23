@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/RTL_FPGA/SD3/VHDL/aula54-crossbarswitches/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/vhdl/aula54-crossbarswitches/crossbar_switches.vhd(5): </Dynamic>
+            <Dynamic>crossbar_switch_4x4</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/vhdl/aula54-crossbarswitches/crossbar_switches.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/vhdl/aula54-crossbarswitches/crossbar_switches.vhd(19): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/vhdl/aula54-crossbarswitches/crossbar_switches.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/vhdl/aula54-crossbarswitches/crossbar_switches.vhd(48): </Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/vhdl/aula54-crossbarswitches/crossbar_switches.vhd</Navigation>
+            <Navigation>48</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/vhdl/aula54-crossbarswitches/crossbar_switches.vhd(17): </Dynamic>
+            <Dynamic>crossbar_switch_4x4</Dynamic>
+            <Dynamic>Behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/vhdl/aula54-crossbarswitches/crossbar_switches.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/sim_arbitradores
+T_opt
+!s110 1751034719
+VW9ab;ghQM9>MUL7CQb1Wo0
+04 10 4 work arbiter_tf fast 0
+=1-ac675dfda9e9-685eab5f-18-5bc4
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+varbiter
+2D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v
+Z3 !s110 1751034717
+!i10b 1
+!s100 g1BeCXXcNZUK3W]10;cM^2
+Ick?UzCOj>ciDob6AOU^PY3
+R1
+w1751034685
+8D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v
+FD:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v
+!i122 0
+L0 1 39
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1751034717.000000
+!s107 D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores|-work|work|D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+varbiter_tf
+2D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v
+R3
+!i10b 1
+!s100 >ZHVTQg4GAUX8K:X1kQed2
+IXIF5EDFZFZSCfcA@Yg?Bh2
+R1
+w1750992978
+8D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v
+FD:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v
+!i122 1
+L0 18 71
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores|-work|work|D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v|
+!i113 0
+R7
+R8
+R2

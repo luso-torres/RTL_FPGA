@@ -1,0 +1,22 @@
+----------------------------------------------------------------------
+Report for cell i2c_slave.TECH
+Register bits:  34 of 44439 (0.077%)
+I/O cells:      23
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 BB         1          100.0
+                            FD1P3AX         2          100.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX        16          100.0
+                            FD1P3JX         3          100.0
+                            FD1S3AX         2          100.0
+                            FD1S3AY         4          100.0
+                            FD1S3IX         5          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB        11          100.0
+                            L6MUX21         1          100.0
+                               LUT4        63          100.0
+                                 OB        11          100.0
+                              PFUMX         2          100.0
+                              TOTAL       124

@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/sim_master/sim_master.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/sim_master" sim_master
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/SPI_master.v"
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/spi_master_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula57_SPI  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/SPI_master.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula57_SPI  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/spi_master_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3/VERILOG/aula57_SPI/sim_master/sim_master"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_spi_master
+view wave
+add wave /*
+run 1000ns

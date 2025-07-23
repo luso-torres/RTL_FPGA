@@ -1,0 +1,22 @@
+D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module cordic_serial_abs
+
+Top level modules:
+	cordic_serial_abs
+
+} {} {}} D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module cordic_serial_abs_tf
+
+Top level modules:
+	cordic_serial_abs_tf
+
+} {} {}} D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v {1 {vlog -work work -vopt -stats=none D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module rom_16x16
+
+Top level modules:
+	rom_16x16
+
+} {} {}}

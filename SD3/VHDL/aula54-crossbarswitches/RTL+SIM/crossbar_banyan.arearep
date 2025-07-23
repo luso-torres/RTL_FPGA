@@ -1,0 +1,12 @@
+----------------------------------------------------------------------
+Report for cell banyan_switch_mux_4x4.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      72
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB        40          100.0
+                               LUT4        36          100.0
+                                 OB        32          100.0
+                        VERIFIC_PWR         1          100.0
+                              TOTAL       110

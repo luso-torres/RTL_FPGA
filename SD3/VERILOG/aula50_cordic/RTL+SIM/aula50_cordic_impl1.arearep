@@ -1,0 +1,18 @@
+----------------------------------------------------------------------
+Report for cell cordic_serial_abs.TECH
+Register bits:  36 of 44439 (0.081%)
+I/O cells:      50
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        18          100.0
+                            FD1P3AX         1          100.0
+                            FD1S3AX        16          100.0
+                            FD1S3IX        16          100.0
+                            FD1S3JX         3          100.0
+                                GSR         1          100.0
+                                 IB        34          100.0
+                               LUT4       126          100.0
+                         MULT18X18D         1          100.0
+                                 OB        16          100.0
+                              PFUMX         4          100.0
+                              TOTAL       236

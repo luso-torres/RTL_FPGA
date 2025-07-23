@@ -1,0 +1,17 @@
+if {![file exists "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/sim_cordic/sim_cordic.mpf"]} { 
+	project new "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/sim_cordic" sim_cordic
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v"
+	project addfile "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula50_cordic  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v"
+	vlog  +incdir+D:/RTL_FPGA/SD3/VERILOG/aula50_cordic  -work work  "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v"
+} else {
+	project open "D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/sim_cordic/sim_cordic"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  cordic_serial_abs_tf
+view wave
+add wave /*
+run 1000ns

@@ -1,0 +1,1 @@
+Ex2- O módulo resolve o conflito de acesso a um recurso compartilhado, garantido que apenas um único componente do sistema possa utilizá-lo por vez.

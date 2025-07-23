@@ -1,0 +1,19 @@
+----------------------------------------------------------------------
+Report for cell spi_master.TECH
+Register bits:  73 of 44439 (0.164%)
+I/O cells:      26
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        17          100.0
+                            FD1P3AX        17          100.0
+                            FD1S3AX         2          100.0
+                            FD1S3BX        10          100.0
+                            FD1S3DX        10          100.0
+                            FD1S3IX        33          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB        14          100.0
+                               LUT4        84          100.0
+                                 OB        12          100.0
+                              PFUMX         1          100.0
+                              TOTAL       202

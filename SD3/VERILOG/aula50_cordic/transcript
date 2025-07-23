@@ -1,0 +1,292 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/sim_cordic_angl/sim_cordic_angl.mdo}
+# Loading project sim_cordic_angl
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:36:15 on Jul 09,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3/VERILOG/aula50_cordic" -work work D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v 
+# -- Compiling module rom_16x16
+# 
+# Top level modules:
+# 	rom_16x16
+# End time: 00:36:15 on Jul 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:36:15 on Jul 09,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3/VERILOG/aula50_cordic" -work work D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v 
+# -- Compiling module cordic_serial_abs
+# 
+# Top level modules:
+# 	cordic_serial_abs
+# End time: 00:36:15 on Jul 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 00:36:15 on Jul 09,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3/VERILOG/aula50_cordic" -work work D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v 
+# -- Compiling module cordic_serial_abs_tf
+# 
+# Top level modules:
+# 	cordic_serial_abs_tf
+# End time: 00:36:16 on Jul 09,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u cordic_serial_abs_tf 
+# Start time: 00:36:16 on Jul 09,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+add wave -position end  sim:/cordic_serial_abs_tf/UUT/iter_counter
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+run
+add wave -position end  sim:/cordic_serial_abs_tf/UUT/clear
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+run
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+run
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+run
+add wave -position end  sim:/cordic_serial_abs_tf/UUT/alpha_Z
+add wave -position end  sim:/cordic_serial_abs_tf/UUT/sign
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 76
+run
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v failed with 2 errors.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+run
+add wave -position end  sim:/cordic_serial_abs_tf/clear_read
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+run
+# ** Note: $stop    : D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v(86)
+#    Time: 645 ns  Iteration: 2  Instance: /cordic_serial_abs_tf
+# Break in Module cordic_serial_abs_tf at D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v line 86
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+run
+# ** Note: $stop    : D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v(86)
+#    Time: 335 ns  Iteration: 2  Instance: /cordic_serial_abs_tf
+# Break in Module cordic_serial_abs_tf at D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v line 86
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+run
+# ** Note: $stop    : D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v(87)
+#    Time: 495 ns  Iteration: 2  Instance: /cordic_serial_abs_tf
+# Break in Module cordic_serial_abs_tf at D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v line 87
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+run
+# ** Note: $stop    : D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v(88)
+#    Time: 655 ns  Iteration: 2  Instance: /cordic_serial_abs_tf
+# Break in Module cordic_serial_abs_tf at D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v line 88
+# Compile of ROM_powerof2.v was successful.
+# Compile of cordic.v was successful.
+# Compile of cordic_serial_abs_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cordic_serial_abs_tf(fast)
+# Loading work.cordic_serial_abs(fast)
+# Loading work.rom_16x16(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'address'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+# ** Warning: (vsim-3015) [PCDPC] - Port size (17) does not match connection size (16) for port 'data_out'. The port definition is at: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/ROM_powerof2.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cordic_serial_abs_tf/UUT/ROM File: D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic.v Line: 77
+run
+# ** Note: $stop    : D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v(88)
+#    Time: 655 ns  Iteration: 2  Instance: /cordic_serial_abs_tf
+# Break in Module cordic_serial_abs_tf at D:/RTL_FPGA/SD3/VERILOG/aula50_cordic/cordic_serial_abs_tf.v line 88
+# End time: 09:41:33 on Jul 09,2025, Elapsed time: 9:05:17
+# Errors: 0, Warnings: 4

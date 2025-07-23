@@ -1,0 +1,47 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/sim_arbitradores/sim_arbitradores.mdo}
+# Loading project sim_arbitradores
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 11:31:57 on Jun 27,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores" -work work D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter.v 
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+# End time: 11:31:57 on Jun 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 11:31:57 on Jun 27,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores" -work work D:/RTL_FPGA/SD3/VERILOG/AULA53_arbitradores/arbiter_tf.v 
+# -- Compiling module arbiter_tf
+# 
+# Top level modules:
+# 	arbiter_tf
+# End time: 11:31:57 on Jun 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u arbiter_tf 
+# Start time: 11:31:58 on Jun 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "arbiter(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.arbiter_tf(fast)
+# Loading work.arbiter(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# Causality operation skipped due to absence of debug database file
+# End time: 11:46:28 on Jun 27,2025, Elapsed time: 0:14:30
+# Errors: 0, Warnings: 6

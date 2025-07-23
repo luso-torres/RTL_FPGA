@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/RTL_FPGA/SD3/VERILOG/aula54-crossbarswitches/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula54-crossbarswitches/crossbar_2x2.vhd(3): </Dynamic>
+            <Dynamic>crossbar_2x2</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula54-crossbarswitches/crossbar_2x2.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula54-crossbarswitches/crossbar_2x2.vhd(11): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula54-crossbarswitches/crossbar_2x2.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/rtl_fpga/sd3/verilog/aula54-crossbarswitches/crossbar_2x2.vhd(9): </Dynamic>
+            <Dynamic>crossbar_2x2</Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/rtl_fpga/sd3/verilog/aula54-crossbarswitches/crossbar_2x2.vhd</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>GND_net</Dynamic>
+            <Navigation>GND_net</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>
