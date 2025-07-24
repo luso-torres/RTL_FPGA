@@ -1,0 +1,99 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/RTL_FPGA/Projeto_Final/inverter/sim_inverter
+T_opt
+!s110 1753303697
+V]2ldVYGhJzY3A@FBg@c800
+04 13 4 work tb_matrix_inv fast 0
+=1-ac675dfda9e9-68814a90-13b-798
+R0
+!s12f OEM25U3 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vmatrix_inv
+2D:/RTL_FPGA/Projeto_Final/inverter/inverter.v
+Z3 !s110 1753303695
+!i10b 1
+!s100 GoXPZ9@eFia[GhPh5kXhF3
+I;id[k;If303FBiNB@3i^=3
+R1
+w1753303397
+8D:/RTL_FPGA/Projeto_Final/inverter/inverter.v
+FD:/RTL_FPGA/Projeto_Final/inverter/inverter.v
+!i122 1
+L0 10 104
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1753303694.000000
+!s107 D:/RTL_FPGA/Projeto_Final/inverter/inverter.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/Projeto_Final/inverter|-work|work|D:/RTL_FPGA/Projeto_Final/inverter/inverter.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/RTL_FPGA/Projeto_Final/inverter -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vreciprocal_q16_16
+2D:/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v
+!s110 1753303694
+!i10b 1
+!s100 n@YE9l?]HXQ13M=iNkXR[3
+I;L^3:YmK:ba=U2;GeMTLh1
+R1
+w1753303392
+8D:/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v
+FD:/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v
+!i122 0
+L0 5 29
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/Projeto_Final/inverter|-work|work|D:/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v|
+!i113 0
+R7
+R8
+R2
+vtb_matrix_inv
+2D:/RTL_FPGA/Projeto_Final/inverter/matrix_inv_tf.v
+R3
+!i10b 1
+!s100 mMU=H:_7O?8kGnTBn<oDT2
+IVgJZh^^AOk5S`nYzc@D4K0
+R1
+w1753301227
+8D:/RTL_FPGA/Projeto_Final/inverter/matrix_inv_tf.v
+FD:/RTL_FPGA/Projeto_Final/inverter/matrix_inv_tf.v
+!i122 2
+L0 3 99
+R4
+R5
+r1
+!s85 0
+31
+!s108 1753303695.000000
+!s107 D:/RTL_FPGA/Projeto_Final/inverter/matrix_inv_tf.v|
+!s90 -reportprogress|300|+incdir+D:/RTL_FPGA/Projeto_Final/inverter|-work|work|D:/RTL_FPGA/Projeto_Final/inverter/matrix_inv_tf.v|
+!i113 0
+R7
+R8
+R2

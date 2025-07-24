@@ -1,0 +1,20 @@
+#Start recording tcl command: 7/23/2025 19:44:31
+#Project Location: D:/RTL_FPGA/Projeto_Final/multiplier; Project name: multiplier
+prj_project open "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier_2x1.v"
+prj_src add "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier_1x2.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier_2x2.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier_2x1.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier_2x1.v"
+prj_src exclude "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier_1x2.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier_2x1.v"
+prj_src enable "D:/RTL_FPGA/Projeto_Final/multiplier/multiplier_2x2.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 7/23/2025 21:30:39

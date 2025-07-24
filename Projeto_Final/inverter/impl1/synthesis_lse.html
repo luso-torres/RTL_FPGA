@@ -1,0 +1,703 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jul 23 21:36:41 2025
+
+
+Command Line:  synthesis -f inverter_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/Projeto_Final/inverter/promote.xml 
+
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-25F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-25F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = matrix_inv.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/RTL_FPGA/Projeto_Final/inverter (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/Projeto_Final/inverter/impl1 (searchpath added)
+-p D:/RTL_FPGA/Projeto_Final/inverter (searchpath added)
+Verilog design file = D:/RTL_FPGA/Projeto_Final/inverter/inverter.v
+Verilog design file = D:/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v
+NGD file = inverter_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/rtl_fpga/projeto_final/inverter/inverter.v. VERI-1482
+Analyzing Verilog file d:/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): matrix_inv
+INFO - synthesis: d:/rtl_fpga/projeto_final/inverter/inverter.v(8): compiling module matrix_inv. VERI-1018
+INFO - synthesis: d:/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v(5): compiling module reciprocal_q16_16. VERI-1018
+WARNING - synthesis: d:/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v(29): expression size 33 truncated to fit in target size 32. VERI-1209
+WARNING - synthesis: d:/rtl_fpga/projeto_final/inverter/inverter.v(100): expression size 30 truncated to fit in target size 16. VERI-1209
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = matrix_inv.
+
+
+
+
+
+######### Begin FIR Info ########
+
+
+Number of FIR filters recognized: 1
+
+
+
+######### End FIR Info ########
+
+
+WARNING - synthesis: Bit 63 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 62 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 61 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 60 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 59 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 58 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 57 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 56 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 55 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 54 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 53 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 52 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 51 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 50 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 49 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register a_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 63 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 62 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 61 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 60 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 59 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 58 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 57 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 56 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 55 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 54 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 53 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 52 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 51 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 50 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 49 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register c_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register c_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 63 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 62 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 61 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 60 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 59 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 58 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 57 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 56 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 55 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 54 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 53 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 52 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 51 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 50 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 49 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register b_s_31__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register b_s_31__I_0_e2 is stuck at Zero
+WARNING - synthesis: Bit 63 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 62 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 61 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 60 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 59 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 58 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 57 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 56 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 55 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 54 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 53 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 52 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 51 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 50 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 49 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register d_reg_15__I_0_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register b_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register c_s_31__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register a_reg_15__I_0_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register a_reg_15__I_0_e1 is stuck at Zero
+######## Missing driver on net n11170. Patching with GND.
+######## Missing driver on net n11169. Patching with GND.
+######## Missing driver on net n11168. Patching with GND.
+######## Missing driver on net n11167. Patching with GND.
+######## Missing driver on net n11166. Patching with GND.
+######## Missing driver on net n11165. Patching with GND.
+######## Missing driver on net n11164. Patching with GND.
+######## Missing driver on net n11163. Patching with GND.
+######## Missing driver on net n11162. Patching with GND.
+######## Missing driver on net n11161. Patching with GND.
+######## Missing driver on net n11160. Patching with GND.
+######## Missing driver on net n11159. Patching with GND.
+######## Missing driver on net n11158. Patching with GND.
+######## Missing driver on net n11157. Patching with GND.
+######## Missing driver on net n11156. Patching with GND.
+######## Missing driver on net n11155. Patching with GND.
+######## Missing driver on net n11154. Patching with GND.
+######## Missing driver on net n11153. Patching with GND.
+######## Missing driver on net n11152. Patching with GND.
+######## Missing driver on net n11151. Patching with GND.
+######## Missing driver on net n11150. Patching with GND.
+######## Missing driver on net n11149. Patching with GND.
+######## Missing driver on net n11148. Patching with GND.
+######## Missing driver on net n11147. Patching with GND.
+######## Missing driver on net n11146. Patching with GND.
+######## Missing driver on net n11145. Patching with GND.
+######## Missing driver on net n11144. Patching with GND.
+######## Missing driver on net n11143. Patching with GND.
+######## Missing driver on net n11142. Patching with GND.
+######## Missing driver on net n11141. Patching with GND.
+######## Missing driver on net n11140. Patching with GND.
+######## Missing driver on net n11139. Patching with GND.
+######## Missing driver on net n11138. Patching with GND.
+######## Missing driver on net n11137. Patching with GND.
+######## Missing driver on net n11136. Patching with GND.
+######## Missing driver on net n11135. Patching with GND.
+######## Missing driver on net n11134. Patching with GND.
+######## Missing driver on net n11133. Patching with GND.
+######## Missing driver on net n11132. Patching with GND.
+######## Missing driver on net n11131. Patching with GND.
+######## Missing driver on net n11130. Patching with GND.
+######## Missing driver on net n11129. Patching with GND.
+######## Missing driver on net n11128. Patching with GND.
+######## Missing driver on net n11127. Patching with GND.
+######## Missing driver on net n11126. Patching with GND.
+######## Missing driver on net n11125. Patching with GND.
+######## Missing driver on net n11124. Patching with GND.
+######## Missing driver on net n11123. Patching with GND.
+GSR instance connected to net n11172.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in matrix_inv_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file inverter_impl1.ngd.
+
+################### Begin Area Report (matrix_inv)######################
+Number of register bits => 97 of 24879 (0 % )
+ALU54B => 8
+CCU2C => 1153
+FD1S3AX => 97
+GSR => 1
+IB => 66
+LUT4 => 233
+MULT18X18D => 18
+OB => 65
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 113
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n2273, loads : 90
+  Net : det_q4_28_0, loads : 68
+  Net : n3077, loads : 65
+  Net : n13028, loads : 64
+  Net : n13027, loads : 64
+  Net : n13026, loads : 64
+  Net : n13025, loads : 64
+  Net : n13024, loads : 64
+  Net : n13022, loads : 64
+  Net : n13021, loads : 64
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|  205.677 MHz|     6  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 128.059  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 22.875  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

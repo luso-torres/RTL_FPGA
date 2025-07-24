@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="inverter" device="LFE5U-25F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="matrix_inv"/>
+        <Source name="inverter.v" type="Verilog" type_short="Verilog">
+            <Options top_module="matrix_inv"/>
+        </Source>
+        <Source name="matrix_inv_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="reciprocal_q16_16.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="inverter.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_inv/sim_inv.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_inver/sim_inver.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_inverter/sim_inverter.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="inverter1.sty"/>
+</BaliProject>

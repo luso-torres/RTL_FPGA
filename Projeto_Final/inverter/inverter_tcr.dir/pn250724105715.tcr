@@ -1,0 +1,7 @@
+#Start recording tcl command: 7/23/2025 21:30:50
+#Project Location: D:/RTL_FPGA/Projeto_Final/inverter; Project name: inverter
+prj_project open "D:/RTL_FPGA/Projeto_Final/inverter/inverter.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 7/24/2025 10:57:15

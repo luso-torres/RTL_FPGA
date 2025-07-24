@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell kalman_fsm.TECH
+Register bits:  7 of 24879 (0.028%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         6          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         9          100.0
+                               LUT4        12          100.0
+                                 OB         3          100.0
+                              TOTAL        32

@@ -1,0 +1,13 @@
+----------------------------------------------------------------------
+Report for cell multiplier_2x2.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      192
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        32          100.0
+                                GSR         1          100.0
+                                 IB       128          100.0
+                               LUT4         4          100.0
+                         MULT18X18D         8          100.0
+                                 OB        64          100.0
+                              TOTAL       237
