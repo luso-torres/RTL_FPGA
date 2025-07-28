@@ -1,0 +1,9 @@
+#Start recording tcl command: 7/26/2025 12:32:48
+#Project Location: C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv1; Project name: inverterv1
+prj_project new -name "inverterv1" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv1/inverter_v1.v"
+prj_src add "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv1/reciprocal_q16_16.v"
+prj_project save
+prj_project close
+#Stop recording: 7/27/2025 01:01:05

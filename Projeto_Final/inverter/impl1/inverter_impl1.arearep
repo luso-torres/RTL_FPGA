@@ -1,26 +1,28 @@
 ----------------------------------------------------------------------
 Report for cell matrix_inv.TECH
-Register bits:  97 of 24879 (0.390%)
+Register bits:  228 of 24879 (0.916%)
 I/O cells:      131
                                   Cell usage:
                                cell     count   Res Usage(%)
                              ALU54B         8          100.0
-                              CCU2C      1153          100.0
-                            FD1S3AX        97          100.0
+                              CCU2C      1217          100.0
+                            FD1S3AX       225          100.0
+                            FD1S3AY         2          100.0
+                            FD1S3JX         1          100.0
                                 GSR         1          100.0
                                  IB        66          100.0
-                               LUT4       233          100.0
+                               LUT4       231          100.0
                          MULT18X18D        18          100.0
                                  OB        65          100.0
 SUB MODULES
                   reciprocal_q16_16         1
-                              TOTAL      1642
+                              TOTAL      1835
 ----------------------------------------------------------------------
 Report for cell reciprocal_q16_16.v1
 Instance Path : u_recip
                                   Cell usage:
                                cell     count   Res Usage(%)
                               CCU2C         5            0.4
-                            FD1S3AX         1            1.0
-                               LUT4       163           70.0
-                              TOTAL       169
+                            FD1S3AX         1            0.4
+                               LUT4       166           71.9
+                              TOTAL       172

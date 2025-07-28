@@ -7,10 +7,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Jul 23 21:36:41 2025
+Thu Jul 24 12:28:58 2025
 
 
-Command Line:  synthesis -f inverter_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/Projeto_Final/inverter/promote.xml 
+Command Line:  synthesis -f inverter_impl1_lattice.synproj -gui -msgset C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/promote.xml 
 
     <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
 Synthesis options:
@@ -64,12 +64,12 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p D:/RTL_FPGA/Projeto_Final/inverter (searchpath added)
+-p C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter (searchpath added)
 -p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
--p D:/RTL_FPGA/Projeto_Final/inverter/impl1 (searchpath added)
--p D:/RTL_FPGA/Projeto_Final/inverter (searchpath added)
-Verilog design file = D:/RTL_FPGA/Projeto_Final/inverter/inverter.v
-Verilog design file = D:/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v
+-p C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/impl1 (searchpath added)
+-p C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter (searchpath added)
+Verilog design file = C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v
+Verilog design file = C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/inverterv1.v
 NGD file = inverter_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -80,14 +80,13 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file d:/rtl_fpga/projeto_final/inverter/inverter.v. VERI-1482
-Analyzing Verilog file d:/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v. VERI-1482
+Analyzing Verilog file c:/users/luso/documents/rtl_fpga/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v. VERI-1482
+Analyzing Verilog file c:/users/luso/documents/rtl_fpga/rtl_fpga/projeto_final/inverter/inverterv1.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Top module name (Verilog): matrix_inv
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverter/inverter.v(8): " arg1="matrix_inv" arg2="d:/rtl_fpga/projeto_final/inverter/inverter.v" arg3="8"  />
-    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v(5): " arg1="reciprocal_q16_16" arg2="d:/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v" arg3="5"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v(29): " arg1="33" arg2="32" arg3="d:/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v" arg4="29"  />
-    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverter/inverter.v(100): " arg1="30" arg2="16" arg3="d:/rtl_fpga/projeto_final/inverter/inverter.v" arg4="100"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/luso/documents/rtl_fpga/rtl_fpga/projeto_final/inverter/inverterv1.v(8): " arg1="matrix_inv" arg2="c:/users/luso/documents/rtl_fpga/rtl_fpga/projeto_final/inverter/inverterv1.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="c:/users/luso/documents/rtl_fpga/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v(5): " arg1="reciprocal_q16_16" arg2="c:/users/luso/documents/rtl_fpga/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v" arg3="5"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="c:/users/luso/documents/rtl_fpga/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v(29): " arg1="33" arg2="32" arg3="c:/users/luso/documents/rtl_fpga/rtl_fpga/projeto_final/inverter/reciprocal_q16_16.v" arg4="29"  />
 Last elaborated design is matrix_inv()
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -111,70 +110,70 @@ Number of FIR filters recognized: 1
 ######### End FIR Info ########
 
 
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="63" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="62" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="61" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="60" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="59" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="58" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="57" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="56" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="55" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="54" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="53" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="52" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="51" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="50" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="49" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="48" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="47" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="46" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="45" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="44" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="43" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="42" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="41" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="40" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="39" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="38" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="37" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="36" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="35" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="34" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="33" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="32" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="a_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="a_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="63" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="62" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="61" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="60" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="59" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="58" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="57" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="56" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="55" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="54" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="53" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="52" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="51" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="50" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="49" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="48" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="47" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="46" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="45" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="44" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="43" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="42" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="41" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="40" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="39" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="38" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="37" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="36" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="35" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="34" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="33" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="32" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="a2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="a2_reg_15__I_0_e3"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="63" arg1="c_s_31__I_0_e3"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="62" arg1="c_s_31__I_0_e3"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="61" arg1="c_s_31__I_0_e3"  />
@@ -367,70 +366,70 @@ Number of FIR filters recognized: 1
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="b_s_31__I_0_e2"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="b_s_31__I_0_e2"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="b_s_31__I_0_e2"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="63" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="62" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="61" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="60" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="59" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="58" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="57" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="56" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="55" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="54" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="53" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="52" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="51" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="50" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="49" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="48" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="47" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="46" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="45" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="44" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="43" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="42" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="41" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="40" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="39" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="38" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="37" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="36" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="35" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="34" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="33" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="32" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="d_reg_15__I_0_e3"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="d_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="63" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="62" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="61" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="60" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="59" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="58" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="57" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="56" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="55" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="54" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="53" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="52" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="51" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="50" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="49" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="48" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="47" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="46" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="45" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="44" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="43" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="42" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="41" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="40" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="39" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="38" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="37" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="36" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="35" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="34" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="33" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="32" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="d2_reg_15__I_0_e3"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="d2_reg_15__I_0_e3"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="b_s_31__I_0_e1"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="b_s_31__I_0_e1"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="b_s_31__I_0_e1"  />
@@ -495,87 +494,87 @@ Number of FIR filters recognized: 1
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="c_s_31__I_0_e1"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="c_s_31__I_0_e1"  />
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="c_s_31__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="a_reg_15__I_0_e1"  />
-    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="a_reg_15__I_0_e1"  />
-######## Missing driver on net n11170. Patching with GND.
-######## Missing driver on net n11169. Patching with GND.
-######## Missing driver on net n11168. Patching with GND.
-######## Missing driver on net n11167. Patching with GND.
-######## Missing driver on net n11166. Patching with GND.
-######## Missing driver on net n11165. Patching with GND.
-######## Missing driver on net n11164. Patching with GND.
-######## Missing driver on net n11163. Patching with GND.
-######## Missing driver on net n11162. Patching with GND.
-######## Missing driver on net n11161. Patching with GND.
-######## Missing driver on net n11160. Patching with GND.
-######## Missing driver on net n11159. Patching with GND.
-######## Missing driver on net n11158. Patching with GND.
-######## Missing driver on net n11157. Patching with GND.
-######## Missing driver on net n11156. Patching with GND.
-######## Missing driver on net n11155. Patching with GND.
-######## Missing driver on net n11154. Patching with GND.
-######## Missing driver on net n11153. Patching with GND.
-######## Missing driver on net n11152. Patching with GND.
-######## Missing driver on net n11151. Patching with GND.
-######## Missing driver on net n11150. Patching with GND.
-######## Missing driver on net n11149. Patching with GND.
-######## Missing driver on net n11148. Patching with GND.
-######## Missing driver on net n11147. Patching with GND.
-######## Missing driver on net n11146. Patching with GND.
-######## Missing driver on net n11145. Patching with GND.
-######## Missing driver on net n11144. Patching with GND.
-######## Missing driver on net n11143. Patching with GND.
-######## Missing driver on net n11142. Patching with GND.
-######## Missing driver on net n11141. Patching with GND.
-######## Missing driver on net n11140. Patching with GND.
-######## Missing driver on net n11139. Patching with GND.
-######## Missing driver on net n11138. Patching with GND.
-######## Missing driver on net n11137. Patching with GND.
-######## Missing driver on net n11136. Patching with GND.
-######## Missing driver on net n11135. Patching with GND.
-######## Missing driver on net n11134. Patching with GND.
-######## Missing driver on net n11133. Patching with GND.
-######## Missing driver on net n11132. Patching with GND.
-######## Missing driver on net n11131. Patching with GND.
-######## Missing driver on net n11130. Patching with GND.
-######## Missing driver on net n11129. Patching with GND.
-######## Missing driver on net n11128. Patching with GND.
-######## Missing driver on net n11127. Patching with GND.
-######## Missing driver on net n11126. Patching with GND.
-######## Missing driver on net n11125. Patching with GND.
-######## Missing driver on net n11124. Patching with GND.
-######## Missing driver on net n11123. Patching with GND.
-GSR instance connected to net n11172.
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="9" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="a2_reg_15__I_0_e1"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="a2_reg_15__I_0_e1"  />
+######## Missing driver on net n11710. Patching with GND.
+######## Missing driver on net n11709. Patching with GND.
+######## Missing driver on net n11708. Patching with GND.
+######## Missing driver on net n11707. Patching with GND.
+######## Missing driver on net n11706. Patching with GND.
+######## Missing driver on net n11705. Patching with GND.
+######## Missing driver on net n11704. Patching with GND.
+######## Missing driver on net n11703. Patching with GND.
+######## Missing driver on net n11702. Patching with GND.
+######## Missing driver on net n11701. Patching with GND.
+######## Missing driver on net n11700. Patching with GND.
+######## Missing driver on net n11699. Patching with GND.
+######## Missing driver on net n11698. Patching with GND.
+######## Missing driver on net n11697. Patching with GND.
+######## Missing driver on net n11696. Patching with GND.
+######## Missing driver on net n11695. Patching with GND.
+######## Missing driver on net n11694. Patching with GND.
+######## Missing driver on net n11693. Patching with GND.
+######## Missing driver on net n11692. Patching with GND.
+######## Missing driver on net n11691. Patching with GND.
+######## Missing driver on net n11690. Patching with GND.
+######## Missing driver on net n11689. Patching with GND.
+######## Missing driver on net n11688. Patching with GND.
+######## Missing driver on net n11687. Patching with GND.
+######## Missing driver on net n11686. Patching with GND.
+######## Missing driver on net n11685. Patching with GND.
+######## Missing driver on net n11684. Patching with GND.
+######## Missing driver on net n11683. Patching with GND.
+######## Missing driver on net n11682. Patching with GND.
+######## Missing driver on net n11681. Patching with GND.
+######## Missing driver on net n11680. Patching with GND.
+######## Missing driver on net n11679. Patching with GND.
+######## Missing driver on net n11678. Patching with GND.
+######## Missing driver on net n11677. Patching with GND.
+######## Missing driver on net n11676. Patching with GND.
+######## Missing driver on net n11675. Patching with GND.
+######## Missing driver on net n11674. Patching with GND.
+######## Missing driver on net n11673. Patching with GND.
+######## Missing driver on net n11672. Patching with GND.
+######## Missing driver on net n11671. Patching with GND.
+######## Missing driver on net n11670. Patching with GND.
+######## Missing driver on net n11669. Patching with GND.
+######## Missing driver on net n11668. Patching with GND.
+######## Missing driver on net n11667. Patching with GND.
+######## Missing driver on net n11666. Patching with GND.
+######## Missing driver on net n11665. Patching with GND.
+######## Missing driver on net n11664. Patching with GND.
+######## Missing driver on net n11663. Patching with GND.
+GSR instance connected to net n11713.
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
@@ -591,19 +590,21 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-   1644 blocks expanded
+   1837 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file inverter_impl1.ngd.
 
 ################### Begin Area Report (matrix_inv)######################
-Number of register bits => 97 of 24879 (0 % )
+Number of register bits => 228 of 24879 (0 % )
 ALU54B => 8
-CCU2C => 1153
-FD1S3AX => 97
+CCU2C => 1217
+FD1S3AX => 225
+FD1S3AY => 2
+FD1S3JX => 1
 GSR => 1
 IB => 66
-LUT4 => 233
+LUT4 => 231
 MULT18X18D => 18
 OB => 65
 ################### End Area Report ##################
@@ -611,22 +612,22 @@ OB => 65
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 1
-  Net : clk_c, loads : 113
+  Net : clk_c, loads : 244
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n2273, loads : 90
+  Net : n2650, loads : 90
   Net : det_q4_28_0, loads : 68
-  Net : n3077, loads : 65
-  Net : n13028, loads : 64
-  Net : n13027, loads : 64
-  Net : n13026, loads : 64
-  Net : n13025, loads : 64
-  Net : n13024, loads : 64
-  Net : n13022, loads : 64
-  Net : n13021, loads : 64
+  Net : n2516, loads : 67
+  Net : n2583, loads : 65
+  Net : n3454, loads : 65
+  Net : n13837, loads : 64
+  Net : n13835, loads : 64
+  Net : n13834, loads : 64
+  Net : n13833, loads : 64
+  Net : n13832, loads : 64
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -636,16 +637,16 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clk_c]                   |  200.000 MHz|  205.677 MHz|     6  
+clk0 [get_nets clk_c]                   |  200.000 MHz|    6.007 MHz|   540 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraints not met.
 
 
-Peak Memory Usage: 128.059  MB
+Peak Memory Usage: 369.875  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 22.875  secs
+Elapsed CPU time for LSE flow : 60.266  secs
 --------------------------------------------------------------

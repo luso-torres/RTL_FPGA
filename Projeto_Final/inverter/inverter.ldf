@@ -3,14 +3,17 @@
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
         <Options def_top="matrix_inv"/>
-        <Source name="inverter.v" type="Verilog" type_short="Verilog">
-            <Options top_module="matrix_inv"/>
+        <Source name="inverter.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
         </Source>
         <Source name="matrix_inv_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
             <Options/>
         </Source>
         <Source name="reciprocal_q16_16.v" type="Verilog" type_short="Verilog">
             <Options/>
+        </Source>
+        <Source name="inverterv1.v" type="Verilog" type_short="Verilog">
+            <Options top_module="matrix_inv"/>
         </Source>
         <Source name="inverter.lpf" type="Logic Preference" type_short="LPF">
             <Options/>

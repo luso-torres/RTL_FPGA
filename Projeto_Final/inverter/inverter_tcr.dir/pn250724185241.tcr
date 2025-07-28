@@ -1,0 +1,7 @@
+#Start recording tcl command: 7/24/2025 12:01:39
+#Project Location: C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter; Project name: inverter
+prj_project open "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/inverter.ldf"
+prj_src add "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/inverterv1.v"
+prj_src exclude "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/inverter.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 7/24/2025 18:52:41
