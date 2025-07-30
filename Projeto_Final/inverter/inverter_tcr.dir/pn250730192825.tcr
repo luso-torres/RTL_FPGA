@@ -1,0 +1,4 @@
+#Start recording tcl command: 7/30/2025 19:27:37
+#Project Location: D:/RTL_FPGA/Projeto_Final/inverter; Project name: inverter
+prj_project open "D:/RTL_FPGA/Projeto_Final/inverter/inverter.ldf"
+#Stop recording: 7/30/2025 19:28:25
