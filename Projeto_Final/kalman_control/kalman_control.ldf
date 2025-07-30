@@ -2,9 +2,9 @@
 <BaliProject version="3.2" title="kalman_control" device="LFE5U-25F-6BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="kalman_fsm"/>
+        <Options/>
         <Source name="kalman_control.v" type="Verilog" type_short="Verilog">
-            <Options top_module="kalman_fsm"/>
+            <Options/>
         </Source>
         <Source name="kalman_control.lpf" type="Logic Preference" type_short="LPF">
             <Options/>

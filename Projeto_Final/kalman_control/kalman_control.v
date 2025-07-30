@@ -67,4 +67,46 @@ module kalman_fsm (
         end
     end
 	
+	
+always  @(posedge clk or posedge reset) begin
+	 case (state)
+                IDLE: begin
+                    if ()
+                        
+                    else
+                        
+                end
+
+                PREDICT_STATE: begin
+                    if (mul_state_done)
+                        state <= PREDICT_COV;
+                end
+
+                PREDICT_COV: begin
+                    if (mul_cov_done)
+                        state <= GAIN_CALC;
+                end
+
+                GAIN_CALC: begin
+                    if (inv_done && mul_gain_done)
+                        state <= UPDATE_STATE;
+                end
+
+                UPDATE_STATE: begin
+                    if (add_state_done)
+                        state <= UPDATE_COV;
+                end
+
+                UPDATE_COV: begin
+                    if (mul_cov_update_done)
+                        state <= DONE;
+                end
+
+                DONE: begin
+                    state <= IDLE;  // or loop in DONE
+                end
+
+                default: state <= IDLE;
+            endcase 
+end
 endmodule
