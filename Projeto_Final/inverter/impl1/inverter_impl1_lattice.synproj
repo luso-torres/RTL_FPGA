@@ -31,13 +31,13 @@
 
 
 -lpf 1
--p "D:/RTL_FPGA/Projeto_Final/inverter"
--ver "D:/RTL_FPGA/Projeto_Final/inverter/inverter.v"
-"D:/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v"
+-p "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter"
+-ver "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/reciprocal_q16_16.v"
+"C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/inverterv1.v"
 -top matrix_inv
 
 
--p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "D:/RTL_FPGA/Projeto_Final/inverter/impl1" "D:/RTL_FPGA/Projeto_Final/inverter"
+-p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/impl1" "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter"
 
 -ngd "inverter_impl1.ngd"
 

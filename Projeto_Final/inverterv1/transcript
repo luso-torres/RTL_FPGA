@@ -1,0 +1,72 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/RTL_FPGA/Projeto_Final/inverterv1/sim_inv/sim_inv.mdo}
+# Loading project sim_inv
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:35:29 on Jul 30,2025
+# vcom -reportprogress 300 -work work D:/RTL_FPGA/Projeto_Final/inverterv1/reciprocal_q16_16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divNRDA_FSM
+# -- Compiling architecture Behavioral of divNRDA_FSM
+# End time: 22:35:29 on Jul 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:35:29 on Jul 30,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/Projeto_Final/inverterv1" -work work D:/RTL_FPGA/Projeto_Final/inverterv1/inverter_v1.v 
+# -- Compiling module matrix_inv
+# 
+# Top level modules:
+# 	matrix_inv
+# End time: 22:35:29 on Jul 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:35:29 on Jul 30,2025
+# vlog -reportprogress 300 "+incdir+D:/RTL_FPGA/Projeto_Final/inverterv1" -work work D:/RTL_FPGA/Projeto_Final/inverterv1/matrix_inv_tf.v 
+# -- Compiling module tb_matrix_inv
+# 
+# Top level modules:
+# 	tb_matrix_inv
+# End time: 22:35:29 on Jul 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u tb_matrix_inv 
+# Start time: 22:35:29 on Jul 30,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "divNRDA_FSM(Behavioral)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_matrix_inv(fast)
+# Loading work.matrix_inv(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.divnrda_fsm(behavioral)#1
+# ** Warning: (vsim-8822) [TFMPC] - Missing Verilog connection for formal VHDL port 'start'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_matrix_inv/uut/u_recip File: D:/RTL_FPGA/Projeto_Final/inverterv1/inverter_v1.v Line: 89
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Note: $stop    : D:/RTL_FPGA/Projeto_Final/inverterv1/matrix_inv_tf.v(66)
+#    Time: 420 ns  Iteration: 0  Instance: /tb_matrix_inv
+# Break in Module tb_matrix_inv at D:/RTL_FPGA/Projeto_Final/inverterv1/matrix_inv_tf.v line 66
+# Causality operation skipped due to absence of debug database file
+# End time: 01:11:24 on Jul 31,2025, Elapsed time: 2:35:55
+# Errors: 0, Warnings: 8

@@ -1,0 +1,10 @@
+----------------------------------------------------------------------
+Report for cell matrix_inv.TECH
+Register bits:  0 of 44439 (0.000%)
+I/O cells:      67
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                GSR         1          100.0
+                                 IB         2          100.0
+                                 OB        65          100.0
+                              TOTAL        68

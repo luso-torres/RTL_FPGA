@@ -19,18 +19,17 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1753317424">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1753317424"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1753317424"/>
-        </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1753317397"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1753317397"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1753370931"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1753370931"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="inverter_impl1.lsedata" last_build_time="1753317401" last_build_size="191393"/>
-        <Report name="inverter_impl1.ngd" last_build_time="1753317424" last_build_size="1632684"/>
+        <Milestone name="Translate" build_result="0" build_time="0">
+            <Task name="Translate" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name="inverter_impl1.lsedata" last_build_time="1753370939" last_build_size="236576"/>
+        <Report name="inverter_impl1.ngd" last_build_time="1753371000" last_build_size="1753995"/>
     </Strategy>
 </BuildStatus>

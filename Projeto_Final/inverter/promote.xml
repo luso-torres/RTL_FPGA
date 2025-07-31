@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <userSetting name="D:/RTL_FPGA/Projeto_Final/inverter/promote.xml" version="Diamond (64-bit) 3.14.0.75.2" date="Wed Jul 30 19:28:25 2025" vendor="Lattice Semiconductor Corporation" >
+=======
+<userSetting name="C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverter/promote.xml" version="Diamond (64-bit) 3.14.0.75.2" date="Sat Jul 26 12:32:48 2025" vendor="Lattice Semiconductor Corporation" >
+>>>>>>> d48a344796ddb977c35f648442e421e32e66e7a3
   <msg mid="35901209" type="Warning" />
 </userSetting>

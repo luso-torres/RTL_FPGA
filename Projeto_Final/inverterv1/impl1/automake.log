@@ -1,0 +1,381 @@
+
+synthesis -f "inverterv1_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jul 30 22:31:48 2025
+
+
+Command Line:  synthesis -f inverterv1_impl1_lattice.synproj -gui -msgset D:/RTL_FPGA/Projeto_Final/inverterv1/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = matrix_inv.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/RTL_FPGA/Projeto_Final/inverterv1 (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/RTL_FPGA/Projeto_Final/inverterv1/impl1 (searchpath added)
+-p D:/RTL_FPGA/Projeto_Final/inverterv1 (searchpath added)
+Mixed language design
+Verilog design file = D:/RTL_FPGA/Projeto_Final/inverterv1/inverter_v1.v
+VHDL library = work
+VHDL design file = D:/RTL_FPGA/Projeto_Final/inverterv1/reciprocal_q16_16.vhd
+NGD file = inverterv1_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v. VERI-1482
+Analyzing VHDL file d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(7): " arg1="divnrda_fsm" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="7"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(20): " arg1="behavioral" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="20"  />
+unit matrix_inv is not yet analyzed. VHDL-1485
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/RTL_FPGA/Projeto_Final/inverterv1/impl1"  />
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): matrix_inv
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v(8): " arg1="matrix_inv" arg2="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v" arg3="8"  />
+    <postMsg mid="35901231" type="Info"    dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v(96): " arg1="divNRDA_FSM" arg2="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v" arg3="96"  />
+d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(7): executing divNRDA_FSM(Behavioral)
+
+    <postMsg mid="35921303" type="Warning" dynamic="3" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(29): " arg1="&quot;00000000000000010000000000000000&quot;" arg2="dividend" arg3="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg4="29"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(61): " arg1="i" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="61"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(69): " arg1="a0" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="69"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(75): " arg1="i" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="75"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(75): " arg1="rega" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="75"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(77): " arg1="i" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="77"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(77): " arg1="rega" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="77"  />
+    <postMsg mid="35921251" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(79): " arg1="i" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="79"  />
+    <postMsg mid="35921172" type="Info"    dynamic="1" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(89): " arg1="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg2="89"  />
+    <postMsg mid="35921613" type="Warning" dynamic="1" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(91): " arg1="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg2="91"  />
+    <postMsg mid="35921172" type="Info"    dynamic="1" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(138): " arg1="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg2="138"  />
+    <postMsg mid="35901232" type="Info"    dynamic="1" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v(96): " arg1="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v" arg2="96"  />
+    <postMsg mid="35931013" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v(96): " arg1="start" arg2="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v" arg3="96"  />
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = matrix_inv.
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="proximo_estado[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="proximo_estado[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="proximo_estado[0]"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(13): " arg1="\u_recip/start" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="13"  />
+######## Missing driver on net \u_recip/start. Patching with GND.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\u_recip/estado_atual" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 1
+
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(140): " arg1="\u_recip/ready_61" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="140"  />
+
+
+
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v(141): " arg1="error_reg_59" arg2="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v" arg3="141"  />
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd(140): " arg1="\u_recip/error_62" arg2="d:/rtl_fpga/projeto_final/inverterv1/reciprocal_q16_16.vhd" arg3="140"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[15]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[14]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[13]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[12]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[11]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[10]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[9]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[8]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[7]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[6]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[5]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[4]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[3]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[1]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="a[0]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[15]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[14]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[13]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[12]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[11]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[10]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[9]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[8]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[7]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[6]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[5]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[4]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[3]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[1]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="b[0]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[15]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[14]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[13]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[12]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[11]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[10]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[9]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[8]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[7]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[6]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[5]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[4]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[3]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[1]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="c[0]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[15]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[14]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[13]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[12]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[11]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[10]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[9]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[8]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[7]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[6]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[5]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[4]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[3]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[2]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[1]"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="d[0]"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v(141): " arg1="c_inv_reg_i2" arg2="d:/rtl_fpga/projeto_final/inverterv1/inverter_v1.v" arg3="141"  />
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in matrix_inv_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[15]" arg2="a[15]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[15]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[14]" arg2="a[14]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[14]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[13]" arg2="a[13]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[13]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[12]" arg2="a[12]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[12]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[11]" arg2="a[11]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[11]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[10]" arg2="a[10]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[10]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[9]" arg2="a[9]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[9]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[8]" arg2="a[8]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[8]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[7]" arg2="a[7]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[6]" arg2="a[6]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[6]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[5]" arg2="a[5]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[4]" arg2="a[4]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[3]" arg2="a[3]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[2]" arg2="a[2]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[1]" arg2="a[1]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="a[0]" arg2="a[0]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="a[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[15]" arg2="b[15]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[15]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[14]" arg2="b[14]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[14]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[13]" arg2="b[13]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[13]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[12]" arg2="b[12]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[12]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[11]" arg2="b[11]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[11]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[10]" arg2="b[10]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[10]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[9]" arg2="b[9]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[9]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[8]" arg2="b[8]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[8]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[7]" arg2="b[7]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[6]" arg2="b[6]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[6]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[5]" arg2="b[5]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[4]" arg2="b[4]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[3]" arg2="b[3]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[2]" arg2="b[2]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[1]" arg2="b[1]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="b[0]" arg2="b[0]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="b[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[15]" arg2="c[15]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[15]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[14]" arg2="c[14]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[14]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[13]" arg2="c[13]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[13]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[12]" arg2="c[12]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[12]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[11]" arg2="c[11]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[11]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[10]" arg2="c[10]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[10]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[9]" arg2="c[9]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[9]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[8]" arg2="c[8]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[8]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[7]" arg2="c[7]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[6]" arg2="c[6]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[6]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[5]" arg2="c[5]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[4]" arg2="c[4]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[3]" arg2="c[3]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[2]" arg2="c[2]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[1]" arg2="c[1]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="c[0]" arg2="c[0]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="c[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[15]" arg2="d[15]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[15]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[14]" arg2="d[14]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[14]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[13]" arg2="d[13]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[13]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[12]" arg2="d[12]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[12]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[11]" arg2="d[11]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[11]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[10]" arg2="d[10]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[10]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[9]" arg2="d[9]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[9]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[8]" arg2="d[8]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[8]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[7]" arg2="d[7]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[7]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[6]" arg2="d[6]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[6]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[5]" arg2="d[5]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[5]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[4]" arg2="d[4]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[4]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[3]" arg2="d[3]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[3]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[2]" arg2="d[2]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[2]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[1]" arg2="d[1]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[1]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="d[0]" arg2="d[0]"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="d[0]"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="clk_c" arg2="clk_c"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="reset_c" arg2="reset_c"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="130"  />
+
+Design Results:
+     71 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file inverterv1_impl1.ngd.
+
+################### Begin Area Report (matrix_inv)######################
+Number of register bits => 0 of 44439 (0 % )
+GSR => 1
+IB => 2
+OB => 65
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : reset_c, loads : 0
+  Net : error, loads : 0
+  Net : d_inv[0], loads : 0
+  Net : d_inv[1], loads : 0
+  Net : d_inv[2], loads : 0
+  Net : d_inv[3], loads : 0
+  Net : d_inv[4], loads : 0
+  Net : d_inv[5], loads : 0
+  Net : d_inv[6], loads : 0
+  Net : d_inv[7], loads : 0
+################### End Clock Report ##################
+
+Peak Memory Usage: 114.754  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.281  secs
+--------------------------------------------------------------

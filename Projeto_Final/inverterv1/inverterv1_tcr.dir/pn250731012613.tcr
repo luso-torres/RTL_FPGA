@@ -1,0 +1,33 @@
+#Start recording tcl command: 7/30/2025 19:31:09
+#Project Location: D:/RTL_FPGA/Projeto_Final/inverterv1; Project name: inverterv1
+prj_project open "D:/RTL_FPGA/Projeto_Final/inverterv1/inverterv1.ldf"
+prj_src add "D:/RTL_FPGA/Projeto_Final/inverterv1/reciprocal_q16_16.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/RTL_FPGA/Projeto_Final/inverterv1/reciprocal_q16_16.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/Projeto_Final/inverterv1/sim_inv/sim_inv.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/RTL_FPGA/Projeto_Final/inverterv1/sim_inv/sim_inv.spf"
+source "D:/RTL_FPGA/Projeto_Final/inverterv1/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "matrix_inv_tf.v"
+prj_src add "D:/RTL_FPGA/Projeto_Final/inverterv1/sim_inv/sim_inv.spf"
+#Stop recording: 7/31/2025 01:26:13

@@ -1,0 +1,19 @@
+if {![file exists "D:/RTL_FPGA/Projeto_Final/inverterv1/sim_inv/sim_inv.mpf"]} { 
+	project new "D:/RTL_FPGA/Projeto_Final/inverterv1/sim_inv" sim_inv
+	project addfile "D:/RTL_FPGA/Projeto_Final/inverterv1/reciprocal_q16_16.vhd"
+	project addfile "D:/RTL_FPGA/Projeto_Final/inverterv1/inverter_v1.v"
+	project addfile "D:/RTL_FPGA/Projeto_Final/inverterv1/matrix_inv_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/RTL_FPGA/Projeto_Final/inverterv1/reciprocal_q16_16.vhd"
+	vlog  +incdir+D:/RTL_FPGA/Projeto_Final/inverterv1  -work work  "D:/RTL_FPGA/Projeto_Final/inverterv1/inverter_v1.v"
+	vlog  +incdir+D:/RTL_FPGA/Projeto_Final/inverterv1  -work work  "D:/RTL_FPGA/Projeto_Final/inverterv1/matrix_inv_tf.v"
+} else {
+	project open "D:/RTL_FPGA/Projeto_Final/inverterv1/sim_inv/sim_inv"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_matrix_inv
+view wave
+add wave /*
+run 1000ns
