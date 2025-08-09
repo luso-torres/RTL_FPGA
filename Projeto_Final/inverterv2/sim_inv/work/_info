@@ -1,0 +1,109 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 mlopt
+!s11f MIXED_VERSIONS
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv
+Edivnrda_fsm
+Z2 w1754762762
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R1
+Z8 8C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd
+Z9 FC:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd
+l0
+L7 1
+V_R`WUW<B];O5cf8;:^mTo3
+!s100 c5?g7fhXf;A0B?lC6[:V31
+Z10 OL;C;2024.2;79
+32
+Z11 !s110 1754770678
+!i10b 1
+Z12 !s108 1754770678.000000
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd|
+Z14 !s107 C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+R6
+R7
+DEx4 work 11 divnrda_fsm 0 22 _R`WUW<B];O5cf8;:^mTo3
+!i122 0
+l33
+L20 127
+Vj=[<1gzJITl:cJ2J]eN2?0
+!s100 HWACzo52R`FOm[l6YGVZN0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+vmatrix_inv
+2C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v
+R11
+!i10b 1
+!s100 U7bjDbOX5SlJCR95loFZF3
+IeF`mn_V9N9VCTk8aTK2Pj3
+R1
+w1754770472
+8C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v
+FC:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v
+!i122 1
+L0 1 178
+Z17 VDg1SIo80bB@j0V0VzS_@n1
+Z18 OL;L;2024.2;79
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2|-work|work|C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v|
+!i113 0
+Z19 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z20 !s92 +incdir+C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2 -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z21 tCvgOpt 0
+vtb_matrix_inv
+2C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v
+R11
+!i10b 1
+!s100 3HK5MBi:5V8C1kg2KiR143
+IlLTGcKBgK4`J?I61N[Om43
+R1
+w1754770431
+8C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v
+FC:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v
+!i122 2
+L0 3 69
+R17
+R18
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2|-work|work|C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v|
+!i113 0
+R19
+R20
+R21
