@@ -50,6 +50,7 @@
 # Start time: 17:27:53 on Aug 09,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+<<<<<<< HEAD
 # ** Note: (vopt-143) Recognized 1 FSM in module "matrix_inv(fast)".
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "divNRDA_FSM(Behavioral)".
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -143,3 +144,19 @@ restart
 run
 # End time: 21:27:47 on Aug 09,2025, Elapsed time: 3:59:54
 # Errors: 0, Warnings: 2
+=======
+# ** Error: (vopt-7) Failed to open  file "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/@_opt/_deps" in read mode.
+# File exists. (errno = EEXIST)
+# ** Warning: (vopt-56) Problem with optimized design dependency file "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/@_opt/_deps" - file open failed. (Code 12)
+# No such file or directory. (errno = ENOENT)
+# ** Fatal: (vopt-8) Problem while reading dependency file "_deps".
+# No such file or directory. (errno = ENOENT)
+# Vopt Compiler exiting
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO C:\Users\Luso\Documents\RTL_FPGA\RTL_FPGA\Projeto_Final\inverterv2\sim_inv\sim_inv.mdo PAUSED at line 16
+# End time: 17:27:32 on Aug 09,2025, Elapsed time: 0:09:34
+# Errors: 2, Warnings: 8
+>>>>>>> ca6b12a0d5aaffa9ce5f48dd77a4af713f3ddb50

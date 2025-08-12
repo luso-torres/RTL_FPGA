@@ -2,8 +2,18 @@
 <BaliProject version="3.2" title="inverter_v2" device="LFE5U-45F-6BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+<<<<<<< HEAD
         <Options def_top="divNRDA_FSM"/>
+=======
+        <Options def_top="matrix_inv"/>
+>>>>>>> ca6b12a0d5aaffa9ce5f48dd77a4af713f3ddb50
         <Source name="inverterv2.v" type="Verilog" type_short="Verilog">
+            <Options top_module="matrix_inv"/>
+        </Source>
+        <Source name="divNRDA_FSM.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="matrix_inv_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
             <Options/>
         </Source>
         <Source name="divNRDA_FSM.vhd" type="VHDL" type_short="VHDL">
