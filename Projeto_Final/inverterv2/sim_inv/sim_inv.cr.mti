@@ -1,1 +1,19 @@
+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd
+Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity divNRDA_FSM
+-- Compiling architecture Behavioral of divNRDA_FSM
 
+} {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v {1 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module tb_matrix_inv
+
+Top level modules:
+	tb_matrix_inv
+
+} {} {}}

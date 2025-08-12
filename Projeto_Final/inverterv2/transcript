@@ -13,19 +13,11 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# do {C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/sim_inv.mdo}
+# do {C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/sim_inv.mdo}
 # Loading project sim_inv
-# Error 133: Unable to remove directory "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/@_opt/_data".
-# Error 133: Unable to remove directory "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/@_opt/_viscom".
-# Error 133: Unable to remove directory "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/@_opt".
-# Error 133: Unable to remove directory "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/_opt/._optfsm".
-# Error 133: Unable to remove directory "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/_opt".
-# Error 133: Unable to remove directory "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/_temp".
-# Error 133: Unable to remove directory "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/_tempmsg".
-# Error 133: Unable to remove directory "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work".
 # Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:17:58 on Aug 09,2025
-# vcom -reportprogress 300 -work work C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd 
+# Start time: 17:27:52 on Aug 09,2025
+# vcom -reportprogress 300 -work work C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -34,39 +26,120 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity divNRDA_FSM
 # -- Compiling architecture Behavioral of divNRDA_FSM
-# End time: 17:17:58 on Aug 09,2025, Elapsed time: 0:00:00
+# End time: 17:27:52 on Aug 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:17:58 on Aug 09,2025
-# vlog -reportprogress 300 "+incdir+C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2" -work work C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v 
+# Start time: 17:27:52 on Aug 09,2025
+# vlog -reportprogress 300 "+incdir+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2" -work work C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v 
 # -- Compiling module matrix_inv
 # 
 # Top level modules:
 # 	matrix_inv
-# End time: 17:17:58 on Aug 09,2025, Elapsed time: 0:00:00
+# End time: 17:27:52 on Aug 09,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:17:58 on Aug 09,2025
-# vlog -reportprogress 300 "+incdir+C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2" -work work C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v 
+# Start time: 17:27:52 on Aug 09,2025
+# vlog -reportprogress 300 "+incdir+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2" -work work C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v 
 # -- Compiling module tb_matrix_inv
 # 
 # Top level modules:
 # 	tb_matrix_inv
-# End time: 17:17:58 on Aug 09,2025, Elapsed time: 0:00:00
+# End time: 17:27:53 on Aug 09,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u tb_matrix_inv 
-# Start time: 17:17:58 on Aug 09,2025
+# Start time: 17:27:53 on Aug 09,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Error: (vopt-7) Failed to open  file "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/@_opt/_deps" in read mode.
-# File exists. (errno = EEXIST)
-# ** Warning: (vopt-56) Problem with optimized design dependency file "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/sim_inv/work/@_opt/_deps" - file open failed. (Code 12)
-# No such file or directory. (errno = ENOENT)
-# ** Fatal: (vopt-8) Problem while reading dependency file "_deps".
-# No such file or directory. (errno = ENOENT)
-# Vopt Compiler exiting
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=2.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO C:\Users\Luso\Documents\RTL_FPGA\RTL_FPGA\Projeto_Final\inverterv2\sim_inv\sim_inv.mdo PAUSED at line 16
+# ** Note: (vopt-143) Recognized 1 FSM in module "matrix_inv(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "divNRDA_FSM(Behavioral)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_matrix_inv(fast)
+# Loading work.matrix_inv(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.divnrda_fsm(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Note: $stop    : C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v(68)
+#    Time: 440 ns  Iteration: 0  Instance: /tb_matrix_inv
+# Break in Module tb_matrix_inv at C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v line 68
+# Causality operation skipped due to absence of debug database file
+# Compile of divNRDA_FSM.vhd was successful.
+# Compile of inverterv2.v was successful.
+# Compile of matrix_inv_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of divNRDA_FSM.vhd was successful.
+# Compile of inverterv2.v was successful.
+# Compile of matrix_inv_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Compile of divNRDA_FSM.vhd was successful.
+# Compile of inverterv2.v was successful.
+# Compile of matrix_inv_tf.v failed with 5 errors.
+# 3 compiles, 1 failed with 5 errors.
+# Compile of divNRDA_FSM.vhd was successful.
+# Compile of inverterv2.v was successful.
+# Compile of matrix_inv_tf.v failed with 7 errors.
+# 3 compiles, 1 failed with 7 errors.
+# Compile of divNRDA_FSM.vhd was successful.
+# Compile of inverterv2.v was successful.
+# Compile of matrix_inv_tf.v failed with 7 errors.
+# 3 compiles, 1 failed with 7 errors.
+# Compile of divNRDA_FSM.vhd was successful.
+# Compile of inverterv2.v was successful.
+# Compile of matrix_inv_tf.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of divNRDA_FSM.vhd was successful.
+# Compile of inverterv2.v was successful.
+# Compile of matrix_inv_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "matrix_inv(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "divNRDA_FSM(Behavioral)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_matrix_inv(fast)
+# Loading work.matrix_inv(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.divnrda_fsm(behavioral)#1
+run
+add wave -position end  sim:/tb_matrix_inv/uut/state
+add wave -position end  sim:/tb_matrix_inv/uut/next_state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_matrix_inv(fast)
+# Loading work.matrix_inv(fast)
+run
+# Compile of divNRDA_FSM.vhd was successful.
+# Compile of inverterv2.v was successful.
+# Compile of matrix_inv_tf.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "matrix_inv(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_matrix_inv(fast)
+# Loading work.matrix_inv(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.divnrda_fsm(behavioral)#1
+run
+# End time: 21:27:47 on Aug 09,2025, Elapsed time: 3:59:54
+# Errors: 0, Warnings: 2

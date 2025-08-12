@@ -2,8 +2,8 @@ lappend auto_path "C:/lscc/diamond/3.14/data/script"
 package require simulation_generation
 set ::bali::simulation::Para(DEVICEFAMILYNAME) {ECP5U}
 set ::bali::simulation::Para(PROJECT) {sim_inv}
-set ::bali::simulation::Para(PROJECTPATH) {C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2}
-set ::bali::simulation::Para(FILELIST) {"C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd" "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v" "C:/Users/Luso/Documents/RTL_FPGA/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v" }
+set ::bali::simulation::Para(PROJECTPATH) {C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2}
+set ::bali::simulation::Para(FILELIST) {"C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/divNRDA_FSM.vhd" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/inverterv2.v" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/matrix_inv_tf.v" }
 set ::bali::simulation::Para(GLBINCLIST) {}
 set ::bali::simulation::Para(INCLIST) {"none" "none" "none"}
 set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" "work" }

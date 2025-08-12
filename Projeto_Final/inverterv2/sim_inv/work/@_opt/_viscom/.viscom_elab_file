@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 20054016 work.tb_matrix_inv(fast) -quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc -allow_unnamed -o _opt -id 4-4cedfbc5dde6-6897b117-182-40bc +__design_bin_path+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/inverterv2/sim_inv +__betafsm

@@ -45,7 +45,7 @@ module matrix_inv (
 
 	reg det_zero_reg;
 	reg r_det;
-	wire r_rec;
+	wire r_rec=1'b0;
 	
 	//--------------------------------------------------------------------------
     // Expressões Intermediárias
@@ -142,6 +142,7 @@ module matrix_inv (
 				det_zero_reg <= ((a * d) - (b * c)) == 0;
 			end
 			INV: begin
+				if // editar
 				start_NRDA = 1'b1;
 			end
 			ADJ: begin 
