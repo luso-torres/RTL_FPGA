@@ -13,13 +13,21 @@ module kalman_fsm (
 
     // State encoding
     parameter IDLE           = 3'd0;
-    parameter PREDICT_STATE  = 3'd1;
-    parameter PREDICT_COV    = 3'd2;
-    parameter GAIN_CALC      = 3'd3;
-    parameter UPDATE_STATE   = 3'd4;
-    parameter UPDATE_COV     = 3'd5;
-    parameter DONE           = 3'd6;
-
+    parameter INITIAL        = 3'd1;
+    parameter PREDICT_STATE  = 3'd2;
+    parameter PREDICT_COV    = 3'd3;
+    parameter GAIN_CALC      = 3'd4;
+    parameter UPDATE_STATE   = 3'd5;
+    parameter UPDATE_COV     = 3'd6;
+    parameter DONE           = 3'd7;
+	
+	// constants
+	parameter signed [15:0] Q = 16'sd8 // Process covariance matrix (eye element);	
+	parameter signed [15:0] R = 16'sd819 //Measurement noise covariance matrix (eye element);	
+	parameter signed [15:0] A00 = 16'sd819 //Measurement noise covariance matrix (eye element);	
+	parameter signed [15:0] A01 = 16'sd819 //Measurement noise covariance matrix (eye element);	
+	parameter signed [15:0] A10 = 16'sd819 //Measurement noise covariance matrix (eye element);	
+	parameter signed [15:0] A11 = 16'sd819 //Measurement noise covariance matrix (eye element);	
     // State register update
     always @(posedge clk or posedge reset) begin
         if (reset) begin
@@ -71,11 +79,16 @@ module kalman_fsm (
 always  @(posedge clk or posedge reset) begin
 	 case (state)
                 IDLE: begin
-                    if ()
-                        
-                    else
-                        
-                end
+					x0=1'b0;
+					y0=1'b0;
+					P00 =1'b0;
+					P01 =1'b0;
+					P10 =1'b0;
+					P11 =1'b0;
+				end;
+                INITIAL:begin
+					
+				end;
 
                 PREDICT_STATE: begin
                     if (mul_state_done)
