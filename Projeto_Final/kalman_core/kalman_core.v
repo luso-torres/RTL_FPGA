@@ -1,4 +1,5 @@
 module kalman_fsm (
+	input wire [15:0] theta_acc,phi_acc,
     input wire clk,
     input wire reset,
     input wire start,
@@ -10,7 +11,24 @@ module kalman_fsm (
     input wire mul_cov_update_done,
     output reg [2:0] state
 );
-
+	// Predict State Variables
+	reg [15:0] x_pred, y_pred; 
+	reg [15:0] reg_x, reg_y;
+	reg [15:0] x0,y0; // row and pitch
+	reg [15:0] P00;
+	reg [15:0] P01;
+	reg [15:0] P10;
+	reg [15:0] P11;
+	reg [15:0] u;
+	
+	// Update State Variables
+	reg [15:0] omega_theta;
+	reg [15:0] 
+	
+	// Estimated variables
+	reg [15:0] phi_est, theta_est;
+	
+	
     // State encoding
     parameter IDLE           = 3'd0;
     parameter INITIAL        = 3'd1;
