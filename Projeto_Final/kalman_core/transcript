@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/sim_wortk/sim_wortk.mdo}
+# Loading project sim_wortk
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:41:33 on Aug 14,2025
+# vcom -reportprogress 300 -work work C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divNRDA_FSM
+# -- Compiling architecture Behavioral of divNRDA_FSM
+# End time: 18:41:33 on Aug 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:41:33 on Aug 14,2025
+# vcom -reportprogress 300 -work work C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_divNRDA_FSM
+# -- Compiling architecture sim of tb_divNRDA_FSM
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity divNRDA_FSM
+# End time: 18:41:33 on Aug 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u tb_divNRDA_FSM 
+# Start time: 18:41:33 on Aug 14,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "divNRDA_FSM(Behavioral)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_divnrda_fsm(sim)#1
+# Loading work.divnrda_fsm(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# End time: 18:41:49 on Aug 14,2025, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 6

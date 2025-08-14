@@ -3,12 +3,13 @@ module matrix_inv (
 	reset, start,
 	a,b, c,d,
 	a_inv, b_inv, c_inv, d_inv,
-	error
+	error, ready
 );
 	input clk, reset, start;
 	input signed [15:0] a,b,c,d;
 	output signed [15:0] a_inv,b_inv,c_inv,d_inv;
 	output error;
+	output ready;
 
 	//--------------------------------------------------------------------------
     // Estados
@@ -164,6 +165,7 @@ module matrix_inv (
 				c_inv_reg <= round_q18_30_to_q2_14(prod_c);
 				d_inv_reg <= round_q18_30_to_q2_14(prod_d);
 				error_reg <= det_zero_reg | error_recip;
+				ready = 1'b1;
 			end
 		//
 			default: ;

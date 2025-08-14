@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 20005152 work.tb_divNRDA_FSM -quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc -allow_unnamed -o _opt -id 1-4cedfbc5dde6-689e580e-32d-428c +__design_bin_path+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/sim_wortk +__betafsm

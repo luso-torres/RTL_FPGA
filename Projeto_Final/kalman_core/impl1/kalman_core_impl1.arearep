@@ -1,0 +1,32 @@
+----------------------------------------------------------------------
+Report for cell kalman_fsm.TECH
+Register bits:  101 of 44439 (0.227%)
+I/O cells:      24
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        10          100.0
+                            FD1P3AX        75          100.0
+                            FD1P3IX        13          100.0
+                            FD1S3AX        11          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX         1          100.0
+                                GSR         1          100.0
+                                 IB        19          100.0
+                               LUT4        82          100.0
+                                 OB         5          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+                       NRDA_FSM(16)         1
+                              TOTAL       221
+----------------------------------------------------------------------
+Report for cell NRDA_FSM(16).v1
+Instance Path : u_omega
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        43           57.3
+                            FD1P3IX        13          100.0
+                            FD1S3AX         2           18.2
+                            FD1S3IX         1          100.0
+                               LUT4        71           86.6
+                              PFUMX         2          100.0
+                              TOTAL       132

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/nrda_fsm.vhd(28): </Dynamic>
+            <Dynamic>divnrda_fsm</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/nrda_fsm.vhd</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/nrda_fsm.vhd(40): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/nrda_fsm.vhd</Navigation>
+            <Navigation>40</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(7): </Dynamic>
+            <Dynamic>divnrda_fsm</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921177</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(7): </Dynamic>
+            <Dynamic>divnrda_fsm</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(20): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v(1): </Dynamic>
+            <Dynamic>kalman_fsm</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v(1): </Dynamic>
+            <Dynamic>mat2x1_mult</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v(12): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v(13): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901063</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v(117): </Dynamic>
+            <Dynamic>NRDA_FSM</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v</Navigation>
+            <Navigation>117</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(1): </Dynamic>
+            <Dynamic>mat2x2_mult</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(19): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(20): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(21): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(22): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(1): </Dynamic>
+            <Dynamic>matrix_inv</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901231</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(64): </Dynamic>
+            <Dynamic>divNRDA_FSM</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(29): </Dynamic>
+            <Dynamic>&quot;00000000000000010000000000000000&quot;</Dynamic>
+            <Dynamic>dividend</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(61): </Dynamic>
+            <Dynamic>i</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>61</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(69): </Dynamic>
+            <Dynamic>a0</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>69</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(75): </Dynamic>
+            <Dynamic>i</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(75): </Dynamic>
+            <Dynamic>rega</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>75</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(77): </Dynamic>
+            <Dynamic>i</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(77): </Dynamic>
+            <Dynamic>rega</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>35921251</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(79): </Dynamic>
+            <Dynamic>i</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>79</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(89): </Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>89</Navigation>
+        </Message>
+        <Message>
+            <ID>35921613</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(91): </Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>91</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(138): </Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901232</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(64): </Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35001714</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>pwr</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931000</ID>
+            <Severity>Error</Severity>
+            <Dynamic>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v(117): </Dynamic>
+            <Dynamic>pwr</Dynamic>
+            <Dynamic>u_omega</Dynamic>
+            <Dynamic>dividend[1]</Dynamic>
+            <Navigation>c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v</Navigation>
+            <Navigation>117</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

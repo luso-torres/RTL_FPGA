@@ -1,0 +1,27 @@
+if {![file exists "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/sim_kalman/sim_kalman.mpf"]} { 
+	project new "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/sim_kalman" sim_kalman
+	project addfile "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+	project addfile "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+	project addfile "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+	project addfile "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd"
+	project addfile "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v"
+	project addfile "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v"
+	project addfile "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+	vlog  +incdir+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core  -work work  "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+	vlog  +incdir+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core  -work work  "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+	vcom -work work "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd"
+	vlog  +incdir+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core  -work work  "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v"
+	vlog  +incdir+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core  -work work  "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v"
+	vlog  +incdir+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core  -work work  "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v"
+} else {
+	project open "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/sim_kalman/sim_kalman"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_kalman_fsm
+view wave
+add wave /*
+run 1000ns

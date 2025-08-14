@@ -1,0 +1,41 @@
+[N
+5
+4
+8 num_bits
+2
+8 nrda_fsm
+3
+10 behavioral
+5
+11 divnrda_fsm
+1
+83 C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/sim_kalman/work
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+16
+0
+0 0
+0
+0
+]
+[G
+1
+5
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]

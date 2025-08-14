@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="kalman_core" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="kalman_fsm"/>
+        <Source name="kalman_core.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="mat2x1_mult.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="NRDA_FSM.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="kalman_core_v2.v" type="Verilog" type_short="Verilog">
+            <Options top_module="kalman_fsm"/>
+        </Source>
+        <Source name="mat2x2_mult.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="matrix_inv.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="divNRDA_FSM.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="divNRDA_FSM.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="kalman_fsm_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="divNRDA_FSM_tb.vhd" type="VHDL" type_short="VHDL" excluded="TRUE" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="kalman_core.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_kalman/sim_kalman.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_work/sim_work.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim_wortk/sim_wortk.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="kalman_core1.sty"/>
+</BaliProject>

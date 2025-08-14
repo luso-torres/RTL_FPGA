@@ -1,0 +1,13 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="sim_kalman" simType="QuestaSim">
+    <Source worklib="work" path="divNRDA_FSM.vhd" type="VHDL" langstandard="" include="none"/>
+    <Source worklib="work" path="matrix_inv.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="mat2x2_mult.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="NRDA_FSM.vhd" type="VHDL" langstandard="" include="none"/>
+    <Source worklib="work" path="mat2x1_mult.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="kalman_core_v2.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="kalman_fsm_tf.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5u"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="tb_kalman_fsm"/>
+</BaliSimProject>
