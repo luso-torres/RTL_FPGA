@@ -24,7 +24,7 @@ begin
     clk <= not clk after 5 ns;
 
     -- DUT instance
-    uut: entity work.divNRDA_FSM
+    uut: entity work.NRDA_FSM
         generic map (num_bits => num_bits)
         port map (
             reset     => reset,

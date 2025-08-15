@@ -31,17 +31,13 @@
 
 
 -lpf 1
--p "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core"
--ver "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v"
--lib "work" -vhd "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd"
--ver "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v"
-"C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
-"C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
--lib "work" -vhd "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
--top kalman_fsm
+-p "D:/CI/RTL_FPGA/Projeto_Final/kalman_core"
+-ver "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+-lib "work" -vhd "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+-top matrix_inv
 
 
--p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/impl1" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core"
+-p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data" "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/impl1" "D:/CI/RTL_FPGA/Projeto_Final/kalman_core"
 
 -ngd "kalman_core_impl1.ngd"
 

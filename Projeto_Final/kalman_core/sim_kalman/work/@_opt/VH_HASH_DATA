@@ -4,12 +4,12 @@
 8 num_bits
 2
 8 nrda_fsm
+1
+56 D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_kalman/work
 3
 10 behavioral
 5
 11 divnrda_fsm
-1
-83 C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/sim_kalman/work
 ]
 [G
 1

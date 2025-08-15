@@ -1,32 +1,36 @@
 ----------------------------------------------------------------------
-Report for cell kalman_fsm.TECH
-Register bits:  101 of 44439 (0.227%)
-I/O cells:      24
+Report for cell matrix_inv.TECH
+Register bits:  483 of 44439 (1.087%)
+I/O cells:      133
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2C        10          100.0
-                            FD1P3AX        75          100.0
-                            FD1P3IX        13          100.0
-                            FD1S3AX        11          100.0
-                            FD1S3AY         1          100.0
-                            FD1S3IX         1          100.0
+                             ALU54B         8          100.0
+                              CCU2C       121          100.0
+                            FD1P3AX       426          100.0
+                            FD1P3IX         6          100.0
+                            FD1S3AX        41          100.0
+                            FD1S3IX         8          100.0
+                            FD1S3JX         2          100.0
                                 GSR         1          100.0
-                                 IB        19          100.0
-                               LUT4        82          100.0
-                                 OB         5          100.0
-                              PFUMX         2          100.0
+                                 IB        67          100.0
+                               LUT4       162          100.0
+                         MULT18X18D        18          100.0
+                                 OB        66          100.0
+                              PFUMX         1          100.0
 SUB MODULES
-                       NRDA_FSM(16)         1
-                              TOTAL       221
+                        divNRDA_FSM         1
+                              TOTAL       928
 ----------------------------------------------------------------------
-Report for cell NRDA_FSM(16).v1
-Instance Path : u_omega
+Report for cell divNRDA_FSM.v1
+Instance Path : u_recip
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3AX        43           57.3
-                            FD1P3IX        13          100.0
-                            FD1S3AX         2           18.2
-                            FD1S3IX         1          100.0
-                               LUT4        71           86.6
-                              PFUMX         2          100.0
-                              TOTAL       132
+                              CCU2C         4            3.3
+                            FD1P3AX        67           15.7
+                            FD1P3IX         6          100.0
+                            FD1S3AX        33           80.5
+                            FD1S3IX         6           75.0
+                            FD1S3JX         1           50.0
+                               LUT4       139           85.8
+                              PFUMX         1          100.0
+                              TOTAL       257

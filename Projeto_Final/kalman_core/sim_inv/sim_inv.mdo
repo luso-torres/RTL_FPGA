@@ -1,0 +1,19 @@
+if {![file exists "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_inv/sim_inv.mpf"]} { 
+	project new "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_inv" sim_inv
+	project addfile "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+	project addfile "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+	project addfile "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+	vlog  +incdir+D:/CI/RTL_FPGA/Projeto_Final/kalman_core  -work work  "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/Projeto_Final/kalman_core  -work work  "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv_tf.v"
+} else {
+	project open "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_inv/sim_inv"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_matrix_inv
+view wave
+add wave /*
+run 1000ns

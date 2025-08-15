@@ -25,19 +25,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity divNRDA_FSM is
-	generic (num_bits : integer range 0 to 32:=8);
+entity NRDA_FSM is
+	generic (num_bits : integer range 0 to 32:=16);
     Port ( reset : in STD_LOGIC;
            clk : in STD_LOGIC;
-           dividend : in STD_LOGIC_VECTOR (7 downto 0);
-           divisor : in STD_LOGIC_VECTOR (7 downto 0);
+           dividend : in STD_LOGIC_VECTOR (num_bits-1 downto 0);
+           divisor : in STD_LOGIC_VECTOR (num_bits-1 downto 0);
            start : in STD_LOGIC;
-           quotient : out STD_LOGIC_VECTOR (7 downto 0);
-           remainder : out STD_LOGIC_VECTOR (7 downto 0);
+           quotient : out STD_LOGIC_VECTOR (num_bits-1 downto 0);
+           remainder : out STD_LOGIC_VECTOR (num_bits-1 downto 0);
            ready : out STD_LOGIC);
-end divNRDA_FSM;
+end NRDA_FSM;
 
-architecture Behavioral of divNRDA_FSM is
+architecture Behavioral of NRDA_FSM is
 
 type estado is (espera,inicio,desloca,subtrai,compara_op,compara_i,somau,somad);
 signal estado_atual, proximo_estado : estado := espera;

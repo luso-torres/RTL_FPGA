@@ -2,8 +2,8 @@ lappend auto_path "C:/lscc/diamond/3.14/data/script"
 package require simulation_generation
 set ::bali::simulation::Para(DEVICEFAMILYNAME) {ECP5U}
 set ::bali::simulation::Para(PROJECT) {sim_kalman}
-set ::bali::simulation::Para(PROJECTPATH) {C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core}
-set ::bali::simulation::Para(FILELIST) {"C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v" "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v" }
+set ::bali::simulation::Para(PROJECTPATH) {D:/CI/RTL_FPGA/Projeto_Final/kalman_core}
+set ::bali::simulation::Para(FILELIST) {"D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd" "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v" "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v" "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd" "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v" "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v3.v" "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v" }
 set ::bali::simulation::Para(GLBINCLIST) {}
 set ::bali::simulation::Para(INCLIST) {"none" "none" "none" "none" "none" "none" "none"}
 set ::bali::simulation::Para(WORKLIBLIST) {"work" "work" "work" "work" "work" "work" "work" }

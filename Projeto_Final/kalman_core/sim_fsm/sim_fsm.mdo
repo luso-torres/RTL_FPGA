@@ -1,0 +1,17 @@
+if {![file exists "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_fsm/sim_fsm.mpf"]} { 
+	project new "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_fsm" sim_fsm
+	project addfile "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd"
+	project addfile "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM_tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd"
+	vcom -work work "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM_tb.vhd"
+} else {
+	project open "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_fsm/sim_fsm"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_divNRDA_FSM
+view wave
+add wave /*
+run 1000ns

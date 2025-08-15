@@ -4,7 +4,7 @@
     <Source worklib="work" path="mat2x2_mult.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="NRDA_FSM.vhd" type="VHDL" langstandard="" include="none"/>
     <Source worklib="work" path="mat2x1_mult.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
-    <Source worklib="work" path="kalman_core_v2.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="kalman_core_v3.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="kalman_fsm_tf.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <SimLib value="pmi_work ovi_ecp5u"/>
     <GlbInc value=""/>

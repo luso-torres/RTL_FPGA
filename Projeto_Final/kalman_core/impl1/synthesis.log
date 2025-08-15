@@ -1,3 +1,15 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Aug 14 21:58:33 2025
+
+
+Command Line:  synthesis -f kalman_core_impl1_lattice.synproj -gui -msgset D:/CI/RTL_FPGA/Projeto_Final/kalman_core/promote.xml 
+
 Synthesis options:
 The -a option is ECP5U.
 The -s option is 6.
@@ -23,7 +35,7 @@ Using performance grade 6.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Timing
-Top-level module name = kalman_fsm.
+Top-level module name = matrix_inv.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -49,19 +61,14 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core (searchpath added)
+-p D:/CI/RTL_FPGA/Projeto_Final/kalman_core (searchpath added)
 -p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
--p C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/impl1 (searchpath added)
--p C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core (searchpath added)
+-p D:/CI/RTL_FPGA/Projeto_Final/kalman_core/impl1 (searchpath added)
+-p D:/CI/RTL_FPGA/Projeto_Final/kalman_core (searchpath added)
 Mixed language design
-Verilog design file = C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v
-Verilog design file = C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v
-Verilog design file = C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v
-Verilog design file = C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v
+Verilog design file = D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v
 VHDL library = work
-VHDL design file = C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd
-VHDL library = work
-VHDL design file = C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd
+VHDL design file = D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd
 NGD file = kalman_core_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -72,51 +79,447 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v. VERI-1482
-Analyzing Verilog file c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v. VERI-1482
-Analyzing Verilog file c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v. VERI-1482
-Analyzing Verilog file c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v. VERI-1482
-Analyzing VHDL file c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/nrda_fsm.vhd. VHDL-1481
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/nrda_fsm.vhd(28): analyzing entity divnrda_fsm. VHDL-1012
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/nrda_fsm.vhd(40): analyzing architecture behavioral. VHDL-1010
-unit kalman_fsm is not yet analyzed. VHDL-1485
-Analyzing VHDL file c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd. VHDL-1481
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(7): analyzing entity divnrda_fsm. VHDL-1012
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(7): duplicate entity name divnrda_fsm. VHDL-1177
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(20): analyzing architecture behavioral. VHDL-1010
-unit kalman_fsm is not yet analyzed. VHDL-1485
-INFO - synthesis: The default VHDL library search path is now "C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/impl1". VHDL-1504
+Analyzing Verilog file d:/ci/rtl_fpga/projeto_final/kalman_core/matrix_inv.v. VERI-1482
+Analyzing VHDL file d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd. VHDL-1481
+INFO - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(7): analyzing entity divnrda_fsm. VHDL-1012
+INFO - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(20): analyzing architecture behavioral. VHDL-1010
+unit matrix_inv is not yet analyzed. VHDL-1485
+INFO - synthesis: The default VHDL library search path is now "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/impl1". VHDL-1504
 Top module language type = Verilog.
-Top module name (Verilog, mixed language): kalman_fsm
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v(1): compiling module kalman_fsm. VERI-1018
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v(1): compiling module mat2x1_mult. VERI-1018
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v(12): expression size 32 truncated to fit in target size 16. VERI-1209
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x1_mult.v(13): expression size 32 truncated to fit in target size 16. VERI-1209
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v(117): instantiating unknown module NRDA_FSM. VERI-1063
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(1): compiling module mat2x2_mult. VERI-1018
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(19): expression size 32 truncated to fit in target size 16. VERI-1209
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(20): expression size 32 truncated to fit in target size 16. VERI-1209
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(21): expression size 32 truncated to fit in target size 16. VERI-1209
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/mat2x2_mult.v(22): expression size 32 truncated to fit in target size 16. VERI-1209
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(1): compiling module matrix_inv. VERI-1018
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(64): going to vhdl side to elaborate module divNRDA_FSM. VERI-1231
-c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(7): executing divNRDA_FSM(Behavioral)
+Top module name (Verilog, mixed language): matrix_inv
+INFO - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(1): compiling module matrix_inv. VERI-1018
+INFO - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(64): going to vhdl side to elaborate module divNRDA_FSM. VERI-1231
+d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(7): executing divNRDA_FSM(Behavioral)
 
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(29): using initial value "00000000000000010000000000000000" for dividend since it is never assigned. VHDL-1303
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(61): i should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(69): a0 should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(75): i should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(75): rega should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(77): i should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(77): rega should be on the sensitivity list of the process. VHDL-1251
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(79): i should be on the sensitivity list of the process. VHDL-1251
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(89): others clause is never selected. VHDL-1172
-WARNING - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(91): incomplete sensitivity list specified, assuming completeness. VHDL-1613
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(138): others clause is never selected. VHDL-1172
-INFO - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(64): back to verilog to continue elaboration. VERI-1232
-WARNING - synthesis: Net pwr has following drivers :
-	 instance i2
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(29): using initial value "00000000000000010000000000000000" for dividend since it is never assigned. VHDL-1303
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(61): i should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(69): a0 should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(75): i should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(75): rega should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(77): i should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(77): rega should be on the sensitivity list of the process. VHDL-1251
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(79): i should be on the sensitivity list of the process. VHDL-1251
+INFO - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(89): others clause is never selected. VHDL-1172
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(91): incomplete sensitivity list specified, assuming completeness. VHDL-1613
+INFO - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/divnrda_fsm.vhd(138): others clause is never selected. VHDL-1172
+INFO - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(64): back to verilog to continue elaboration. VERI-1232
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = matrix_inv.
+WARNING - synthesis: Initial value found on net proximo_estado[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net proximo_estado[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net proximo_estado[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: I/O Port error 's net has no driver and is unused.
+WARNING - synthesis: I/O Port ready 's net has no driver and is unused.
+######## Missing driver on net error. Patching with GND.
+######## Missing driver on net ready. Patching with GND.
+INFO - synthesis: Extracted state machine for register 'state' with one-hot encoding
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 0000001
+
+ 001 -> 0000010
+
+ 010 -> 0000100
+
+ 011 -> 0001000
+
+ 100 -> 0010000
+
+ 101 -> 0100000
+
+ 110 -> 1000000
+
+INFO - synthesis: Extracted state machine for register '\u_recip/estado_atual' with one-hot encoding
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 00000001
+
+ 001 -> 00000010
+
+ 010 -> 00000100
+
+ 011 -> 00001000
+
+ 100 -> 00010000
+
+ 101 -> 00100000
+
+ 110 -> 01000000
+
+ 111 -> 10000000
 
 
 
-ERROR - synthesis: c:/users/luso/desktop/ci_digital/rtl_fpga/projeto_final/kalman_core/kalman_core_v2.v(117): net pwr is constantly driven from multiple places at instance u_omega, on port dividend[1]. VDB-1000
+
+WARNING - synthesis: Bit 32 of Register \u_recip/regM is stuck at Zero
+
+
+######### Begin FIR Info ########
+
+
+Number of FIR filters recognized: 3
+
+
+
+######### End FIR Info ########
+
+
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(99): Register c_s_res10_i3 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: Bit 16 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register c_s_res10_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register c_s_res10_e2 is stuck at One
+WARNING - synthesis: d:/ci/rtl_fpga/projeto_final/kalman_core/matrix_inv.v(98): Register b_s_res8_i3 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: Bit 16 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register b_s_res8_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register b_s_res8_e2 is stuck at One
+WARNING - synthesis: Bit 31 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register prod_c__2_res9_e2 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register prod_b__1_res7_e2 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register prod_b__1_res7_e1 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register prod_c__2_res9_e1 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register prod_d__3_res11_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register prod_d__3_res11_e1 is stuck at Zero
+######## Missing driver on net n7842. Patching with GND.
+######## Missing driver on net n5292. Patching with GND.
+######## Missing driver on net n5291. Patching with GND.
+######## Missing driver on net n5290. Patching with GND.
+######## Missing driver on net n5289. Patching with GND.
+######## Missing driver on net n5288. Patching with GND.
+######## Missing driver on net n5287. Patching with GND.
+######## Missing driver on net n5286. Patching with GND.
+######## Missing driver on net n5285. Patching with GND.
+######## Missing driver on net n5284. Patching with GND.
+######## Missing driver on net n5283. Patching with GND.
+######## Missing driver on net n5282. Patching with GND.
+######## Missing driver on net n5281. Patching with GND.
+######## Missing driver on net n5280. Patching with GND.
+######## Missing driver on net n5279. Patching with GND.
+######## Missing driver on net n5278. Patching with GND.
+######## Missing driver on net n7843. Patching with GND.
+######## Missing driver on net n7844. Patching with GND.
+######## Missing driver on net n7845. Patching with GND.
+######## Missing driver on net n7846. Patching with GND.
+######## Missing driver on net n7847. Patching with GND.
+######## Missing driver on net n7848. Patching with GND.
+######## Missing driver on net n5196. Patching with GND.
+######## Missing driver on net n5195. Patching with GND.
+######## Missing driver on net n5194. Patching with GND.
+######## Missing driver on net n5193. Patching with GND.
+######## Missing driver on net n5192. Patching with GND.
+######## Missing driver on net n5191. Patching with GND.
+######## Missing driver on net n5190. Patching with GND.
+######## Missing driver on net n5189. Patching with GND.
+######## Missing driver on net n5188. Patching with GND.
+######## Missing driver on net n5187. Patching with GND.
+######## Missing driver on net n5186. Patching with GND.
+######## Missing driver on net n5185. Patching with GND.
+######## Missing driver on net n5184. Patching with GND.
+######## Missing driver on net n5183. Patching with GND.
+######## Missing driver on net n5182. Patching with GND.
+######## Missing driver on net n7841. Patching with GND.
+######## Missing driver on net n7840. Patching with GND.
+######## Missing driver on net n7839. Patching with GND.
+######## Missing driver on net n7838. Patching with GND.
+######## Missing driver on net n7837. Patching with GND.
+######## Missing driver on net n7836. Patching with GND.
+######## Missing driver on net n7835. Patching with GND.
+######## Missing driver on net n7834. Patching with GND.
+######## Missing driver on net n7833. Patching with GND.
+######## Missing driver on net n7832. Patching with GND.
+######## Missing driver on net n7831. Patching with GND.
+######## Missing driver on net n7830. Patching with GND.
+######## Missing driver on net n7829. Patching with GND.
+######## Missing driver on net n7828. Patching with GND.
+######## Missing driver on net n7827. Patching with GND.
+######## Missing driver on net n7826. Patching with GND.
+######## Missing driver on net n7825. Patching with GND.
+######## Missing driver on net n7824. Patching with GND.
+######## Missing driver on net n7823. Patching with GND.
+######## Missing driver on net n7822. Patching with GND.
+######## Missing driver on net n7821. Patching with GND.
+######## Missing driver on net n7820. Patching with GND.
+######## Missing driver on net n7819. Patching with GND.
+######## Missing driver on net n7818. Patching with GND.
+######## Missing driver on net n7817. Patching with GND.
+######## Missing driver on net n7816. Patching with GND.
+######## Missing driver on net n7815. Patching with GND.
+######## Missing driver on net n7814. Patching with GND.
+######## Missing driver on net n7813. Patching with GND.
+######## Missing driver on net n7812. Patching with GND.
+######## Missing driver on net n7811. Patching with GND.
+######## Missing driver on net n7810. Patching with GND.
+######## Missing driver on net n7809. Patching with GND.
+######## Missing driver on net n7808. Patching with GND.
+######## Missing driver on net n7807. Patching with GND.
+######## Missing driver on net n7806. Patching with GND.
+######## Missing driver on net n7805. Patching with GND.
+######## Missing driver on net n7804. Patching with GND.
+######## Missing driver on net n7803. Patching with GND.
+######## Missing driver on net n7802. Patching with GND.
+######## Missing driver on net n7801. Patching with GND.
+GSR instance connected to net n4174.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in matrix_inv_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file kalman_core_impl1.ngd.
+
+################### Begin Area Report (matrix_inv)######################
+Number of register bits => 483 of 44439 (1 % )
+ALU54B => 8
+CCU2C => 121
+FD1P3AX => 426
+FD1P3IX => 6
+FD1S3AX => 41
+FD1S3IX => 8
+FD1S3JX => 2
+GSR => 1
+IB => 67
+LUT4 => 162
+MULT18X18D => 18
+OB => 66
+PFUMX => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 501
+Clock Enable Nets
+Number of Clock Enables: 13
+Top 10 highest fanout Clock Enables:
+  Net : clk_c_enable_395, loads : 132
+  Net : clk_c_enable_410, loads : 66
+  Net : clk_c_enable_411, loads : 50
+  Net : clk_c_enable_348, loads : 50
+  Net : u_recip/clk_c_enable_239, loads : 38
+  Net : clk_c_enable_145, loads : 34
+  Net : u_recip/clk_c_enable_192, loads : 33
+  Net : clk_c_enable_363, loads : 15
+  Net : clk_c_enable_431, loads : 15
+  Net : u_recip/clk_c_enable_417, loads : 6
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : clk_c_enable_395, loads : 132
+  Net : u_recip/n3864, loads : 70
+  Net : clk_c_enable_410, loads : 66
+  Net : clk_c_enable_348, loads : 50
+  Net : clk_c_enable_411, loads : 50
+  Net : n68_adj_1176, loads : 42
+  Net : n68_adj_1226, loads : 42
+  Net : u_recip/quotient_31_N_908_31, loads : 40
+  Net : u_recip/clk_c_enable_239, loads : 38
+  Net : u_recip/n3859, loads : 37
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|   62.716 MHz|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 134.289  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 12.406  secs
+--------------------------------------------------------------

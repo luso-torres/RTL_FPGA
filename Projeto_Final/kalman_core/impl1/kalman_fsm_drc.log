@@ -39,42 +39,10 @@ WARNING - synthesis: logical net 'theta_acc[1]' has no load.
 WARNING - synthesis: input pad net 'theta_acc[1]' has no legal load.
 WARNING - synthesis: logical net 'theta_acc[0]' has no load.
 WARNING - synthesis: input pad net 'theta_acc[0]' has no legal load.
-WARNING - synthesis: logical net 'u[15]' has no load.
-WARNING - synthesis: input pad net 'u[15]' has no legal load.
-WARNING - synthesis: logical net 'u[14]' has no load.
-WARNING - synthesis: input pad net 'u[14]' has no legal load.
-WARNING - synthesis: logical net 'u[13]' has no load.
-WARNING - synthesis: input pad net 'u[13]' has no legal load.
-WARNING - synthesis: logical net 'u[12]' has no load.
-WARNING - synthesis: input pad net 'u[12]' has no legal load.
-WARNING - synthesis: logical net 'u[11]' has no load.
-WARNING - synthesis: input pad net 'u[11]' has no legal load.
-WARNING - synthesis: logical net 'u[10]' has no load.
-WARNING - synthesis: input pad net 'u[10]' has no legal load.
-WARNING - synthesis: logical net 'u[9]' has no load.
-WARNING - synthesis: input pad net 'u[9]' has no legal load.
-WARNING - synthesis: logical net 'u[8]' has no load.
-WARNING - synthesis: input pad net 'u[8]' has no legal load.
-WARNING - synthesis: logical net 'u[7]' has no load.
-WARNING - synthesis: input pad net 'u[7]' has no legal load.
-WARNING - synthesis: logical net 'u[6]' has no load.
-WARNING - synthesis: input pad net 'u[6]' has no legal load.
-WARNING - synthesis: logical net 'u[5]' has no load.
-WARNING - synthesis: input pad net 'u[5]' has no legal load.
-WARNING - synthesis: logical net 'u[4]' has no load.
-WARNING - synthesis: input pad net 'u[4]' has no legal load.
-WARNING - synthesis: logical net 'u[3]' has no load.
-WARNING - synthesis: input pad net 'u[3]' has no legal load.
-WARNING - synthesis: logical net 'u[2]' has no load.
-WARNING - synthesis: input pad net 'u[2]' has no legal load.
-WARNING - synthesis: logical net 'u[1]' has no load.
-WARNING - synthesis: input pad net 'u[1]' has no legal load.
-WARNING - synthesis: logical net 'u[0]' has no load.
-WARNING - synthesis: input pad net 'u[0]' has no legal load.
-WARNING - synthesis: DRC complete with 64 warnings.
+WARNING - synthesis: DRC complete with 32 warnings.
 
 Design Results:
-    223 blocks expanded
+    268 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file kalman_core_impl1.ngd.

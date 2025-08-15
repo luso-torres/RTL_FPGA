@@ -1,0 +1,85 @@
+#Start recording tcl command: 8/14/2025 19:53:35
+#Project Location: D:/CI/RTL_FPGA/Projeto_Final/kalman_core; Project name: kalman_core
+prj_project open "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core.ldf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v3.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_kalman/sim_kalman.spf"
+source "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/hdle_generate_tbtemplate.tcl"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v3.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM_tb.vhd"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v"
+prj_src add "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_fsm/sim_fsm.spf"
+prj_src add "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_fsm/sim_fsm.spf"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core.v"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/kalman_core.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "matrix_inv_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM_tb.vhd"
+prj_src add "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_inv/sim_inv.spf"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v"
+prj_src exclude "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v"
+prj_src enable "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src add "D:/CI/RTL_FPGA/Projeto_Final/kalman_core/sim_inv/sim_inv.spf"
+#Stop recording: 8/15/2025 10:31:40

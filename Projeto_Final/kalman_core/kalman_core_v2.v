@@ -65,6 +65,7 @@ module kalman_fsm (
     wire signed [15:0] R21 = 16'd0;
     wire signed [15:0] R22 = 16'd50;      // Example: 5e-2 in Q2.14
     wire signed [15:0] dt = 16'd1638;
+	assign dt = 16'd1638;  // Dedicated wire for the constant
     // A matrix (Q2.14)
     wire signed [15:0] A11 = 16'd16384;   // 1.0
     wire signed [15:0] A12 = 16'd491;     // alpha=0.03
@@ -79,8 +80,8 @@ module kalman_fsm (
 
     // Division control
     reg start_u;
-    wire start_u_w;
-    wire ready_u;
+    wire start_u_w =1'b0;
+    wire ready_u = 1'b0;
     wire signed [15:0] num_omega;
     //wire signed [15:0] omega;
     reg  signed [15:0] num_omega_reg;
@@ -103,7 +104,7 @@ module kalman_fsm (
         .C1(Ax1), .C2(Ax2)
     );
 	
-	assign start_u_w = start_u;
+	//assign start_u_w = start_u;
 	
     NRDA_FSM #(.num_bits(16)) u_omega (
         .reset(reset),

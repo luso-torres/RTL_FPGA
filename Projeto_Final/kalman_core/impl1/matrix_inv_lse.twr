@@ -1,0 +1,167 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Thu Aug 14 21:58:43 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     matrix_inv
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 10.945ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_recip/estado_atual_FSM_i2  (from clk_c +)
+   Destination:    FD1P3AX    D              prod_a__0_res5_e3__i33  (to clk_c +)
+
+   Delay:                  16.120ns  (46.5% logic, 53.5% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.120ns data_path \u_recip/estado_atual_FSM_i2 to prod_a__0_res5_e3__i33 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 10.945ns
+
+ Path Details: \u_recip/estado_atual_FSM_i2 to prod_a__0_res5_e3__i33
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \u_recip/estado_atual_FSM_i2 (from clk_c)
+Route        70   e 1.969                                  \u_recip/n3864
+LUT4        ---     0.166              B to Z              \u_recip/i689_2_lut_rep_17_3_lut
+Route        30   e 1.700                                  \u_recip/n8723
+LUT4        ---     0.166              C to Z              \u_recip/i645_4_lut
+Route        41   e 1.762                                  quotient_31__N_908[31]
+MuPd        ---     2.720          A[18] to P[36]          lat_mult_0
+Route         1   e 1.020                                  n6516
+AluPd       ---     2.037         MB[36] to R[54]          lat_alu_3
+Route         2   e 1.158                                  n179_adj_1178
+AluPd       ---     2.037        CIN[54] to R[54]          lat_alu_4
+Route         1   e 1.020                                  n147_adj_1210
+                  --------
+                   16.120  (46.5% logic, 53.5% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 10.945ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_recip/estado_atual_FSM_i2  (from clk_c +)
+   Destination:    FD1P3AX    D              prod_a__0_res5_e3__i33  (to clk_c +)
+
+   Delay:                  16.120ns  (46.5% logic, 53.5% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.120ns data_path \u_recip/estado_atual_FSM_i2 to prod_a__0_res5_e3__i33 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 10.945ns
+
+ Path Details: \u_recip/estado_atual_FSM_i2 to prod_a__0_res5_e3__i33
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \u_recip/estado_atual_FSM_i2 (from clk_c)
+Route        70   e 1.969                                  \u_recip/n3864
+LUT4        ---     0.166              B to Z              \u_recip/i689_2_lut_rep_17_3_lut
+Route        30   e 1.700                                  \u_recip/n8723
+LUT4        ---     0.166              C to Z              \u_recip/i645_4_lut
+Route        41   e 1.762                                  quotient_31__N_908[31]
+MuPd        ---     2.720          A[18] to P[36]          lat_mult_0
+Route         1   e 1.020                                  n6515
+AluPd       ---     2.037         MB[36] to R[54]          lat_alu_3
+Route         2   e 1.158                                  n179_adj_1178
+AluPd       ---     2.037        CIN[54] to R[54]          lat_alu_4
+Route         1   e 1.020                                  n147_adj_1210
+                  --------
+                   16.120  (46.5% logic, 53.5% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 10.945ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_recip/estado_atual_FSM_i2  (from clk_c +)
+   Destination:    FD1P3AX    D              prod_a__0_res5_e3__i33  (to clk_c +)
+
+   Delay:                  16.120ns  (46.5% logic, 53.5% route), 6 logic levels.
+
+ Constraint Details:
+
+     16.120ns data_path \u_recip/estado_atual_FSM_i2 to prod_a__0_res5_e3__i33 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 10.945ns
+
+ Path Details: \u_recip/estado_atual_FSM_i2 to prod_a__0_res5_e3__i33
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \u_recip/estado_atual_FSM_i2 (from clk_c)
+Route        70   e 1.969                                  \u_recip/n3864
+LUT4        ---     0.166              B to Z              \u_recip/i689_2_lut_rep_17_3_lut
+Route        30   e 1.700                                  \u_recip/n8723
+LUT4        ---     0.166              C to Z              \u_recip/i645_4_lut
+Route        41   e 1.762                                  quotient_31__N_908[31]
+MuPd        ---     2.720          A[18] to P[36]          lat_mult_0
+Route         1   e 1.020                                  n6481
+AluPd       ---     2.037         MB[36] to R[54]          lat_alu_3
+Route         2   e 1.158                                  n179_adj_1178
+AluPd       ---     2.037        CIN[54] to R[54]          lat_alu_4
+Route         1   e 1.020                                  n147_adj_1210
+                  --------
+                   16.120  (46.5% logic, 53.5% route), 6 logic levels.
+
+Warning: 15.945 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|    15.945 ns|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\u_recip/n3864                          |      70|    4096|     99.00%
+                                        |        |        |
+\u_recip/n8723                          |      30|    4096|     99.00%
+                                        |        |        |
+quotient_31__N_908[31]                  |      41|    4096|     99.00%
+                                        |        |        |
+n179_adj_1178                           |       2|    2793|     68.19%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 4096  Score: 44830720
+
+Constraints cover  89160315 paths, 2217 nets, and 3949 connections (88.9% coverage)
+
+
+Peak memory: 140308480 bytes, TRCE: 4329472 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

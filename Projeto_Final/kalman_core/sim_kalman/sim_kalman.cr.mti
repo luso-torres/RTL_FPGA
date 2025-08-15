@@ -1,4 +1,11 @@
-C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd
+C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v {1 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module matrix_inv
+
+Top level modules:
+	matrix_inv
+
+} {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/divNRDA_FSM.vhd
 Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -9,12 +16,17 @@ Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling entity divNRDA_FSM
 -- Compiling architecture Behavioral of divNRDA_FSM
 
-} {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v {1 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/matrix_inv.v
+} {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v {0 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module matrix_inv
+-- Compiling module tb_kalman_fsm
+** Error: C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v(47): (vlog-2730) Undefined variable: 'u'.
+
+} {4.0 5.0} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v {1 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mat2x1_mult
 
 Top level modules:
-	matrix_inv
+	mat2x1_mult
 
 } {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/NRDA_FSM.vhd
 Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
@@ -27,30 +39,18 @@ Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling entity NRDA_FSM
 -- Compiling architecture Behavioral of NRDA_FSM
 
-} {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v {1 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x1_mult.v
-Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module mat2x1_mult
-
-Top level modules:
-	mat2x1_mult
-
-} {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v {0 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v
-Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module tb_kalman_fsm
-** Error: C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_fsm_tf.v(47): (vlog-2730) Undefined variable: 'u'.
-
-} {4.0 5.0} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v {1 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v
-Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module mat2x2_mult
-
-Top level modules:
-	mat2x2_mult
-
 } {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v {1 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/kalman_core_v2.v
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module kalman_fsm
 
 Top level modules:
 	kalman_fsm
+
+} {} {}} C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v {1 {vlog -work work -vopt -stats=none C:/Users/Luso/Desktop/CI_DIGITAL/RTL_FPGA/Projeto_Final/kalman_core/mat2x2_mult.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mat2x2_mult
+
+Top level modules:
+	mat2x2_mult
 
 } {} {}}
