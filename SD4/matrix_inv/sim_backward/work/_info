@@ -1,0 +1,76 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/CI/RTL_FPGA/SD4/matrix_inv/sim_backward
+T_opt
+!s110 1758909599
+V196f5Q9<WaN8n_bROMTRb0
+04 17 4 work tb_BackwardSub4x4 fast 0
+=1-ac675dfda9e9-68d6d49f-10f-69f8
+R0
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L work -L pmi_work -L ovi_ecp5u +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vbackward
+2D:/CI/RTL_FPGA/SD4/matrix_inv/backward.v
+Z3 !s110 1758909598
+!i10b 1
+!s100 W:He]cVj42G]md<C66O:51
+I@1U7oe_APMM3:fD`aK3bW0
+R1
+w1758908195
+8D:/CI/RTL_FPGA/SD4/matrix_inv/backward.v
+FD:/CI/RTL_FPGA/SD4/matrix_inv/backward.v
+!i122 0
+L0 4 136
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z6 !s108 1758909598.000000
+!s107 D:/CI/RTL_FPGA/SD4/matrix_inv/backward.v|
+!s90 -reportprogress|300|+incdir+D:/CI/RTL_FPGA/SD4/matrix_inv|-work|work|D:/CI/RTL_FPGA/SD4/matrix_inv/backward.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +incdir+D:/CI/RTL_FPGA/SD4/matrix_inv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vtb_BackwardSub4x4
+2D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v
+R3
+!i10b 1
+!s100 `h5F]cA1PFW:nQ>Z1n`MM1
+IB9`5?3g7JYHIOinj0R8IW2
+R1
+w1758909574
+8D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v
+FD:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v
+!i122 1
+L0 3 75
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v|
+!s90 -reportprogress|300|+incdir+D:/CI/RTL_FPGA/SD4/matrix_inv|-work|work|D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v|
+!i113 0
+R7
+R8
+R2
+ntb_@backward@sub4x4

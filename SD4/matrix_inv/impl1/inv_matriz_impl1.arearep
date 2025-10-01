@@ -1,0 +1,21 @@
+----------------------------------------------------------------------
+Report for cell backward.TECH
+Register bits:  837 of 44439 (1.883%)
+I/O cells:      772
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B        12          100.0
+                              CCU2C       430          100.0
+                            FD1P3AX       702          100.0
+                            FD1P3IX       129          100.0
+                            FD1P3JX         2          100.0
+                            FD1S3IX         3          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB       643          100.0
+                            L6MUX21       123          100.0
+                               LUT4      1982          100.0
+                         MULT18X18D        24          100.0
+                                 OB       129          100.0
+                              PFUMX       207          100.0
+                              TOTAL      4388

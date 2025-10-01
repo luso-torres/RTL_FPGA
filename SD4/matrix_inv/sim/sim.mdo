@@ -1,0 +1,23 @@
+if {![file exists "D:/CI/RTL_FPGA/SD4/matrix_inv/sim/sim.mpf"]} { 
+	project new "D:/CI/RTL_FPGA/SD4/matrix_inv/sim" sim
+	project addfile "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/backward.v"
+	project addfile "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/forward.v"
+	project addfile "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/LU_decomposition.v"
+	project addfile "D:/CI/RTL_FPGA/SD4/matrix_inv/inv_matriz.v"
+	project addfile "D:/CI/RTL_FPGA/SD4/matrix_inv/inv_matriz_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source  -work work  "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/backward.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source  -work work  "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/forward.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source  -work work  "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/LU_decomposition.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/SD4/matrix_inv  -work work  "D:/CI/RTL_FPGA/SD4/matrix_inv/inv_matriz.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/SD4/matrix_inv  -work work  "D:/CI/RTL_FPGA/SD4/matrix_inv/inv_matriz_tf.v"
+} else {
+	project open "D:/CI/RTL_FPGA/SD4/matrix_inv/sim/sim"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_inv_matriz
+view wave
+add wave /*
+run 1000ns

@@ -1,0 +1,37 @@
+#Start recording tcl command: 9/24/2025 21:25:09
+#Project Location: D:/CI/RTL_FPGA/SD4/matrix_inv; Project name: inv_matriz
+prj_project new -name "inv_matriz" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+file copy -force -- "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/LU_decomposition.v" "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/forward.v" "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/backward.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/LU_decomposition.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/forward.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/backward.v"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/inv_matriz.v"
+file copy -force -- "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/LU_decomposition_4x4_tb.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/LU_decomposition_4x4_tb.v"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/backward.v"
+file copy -force -- "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/BackwardSub4x4_tb.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/BackwardSub4x4_tb.v"
+file copy -force -- "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/ForwardSub4x4_tb.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/ForwardSub4x4_tb.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/LU_decomposition_4x4_tb.v"
+prj_src exclude "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/BackwardSub4x4_tb.v"
+prj_src exclude "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/ForwardSub4x4_tb.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/CI/RTL_FPGA/SD4/matrix_inv/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "inv_matriz_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 9/25/2025 09:46:50

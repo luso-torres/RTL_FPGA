@@ -1,0 +1,14 @@
+#Start recording tcl command: 9/23/2025 20:11:08
+#Project Location: D:/CI/RTL_FPGA/SD4/fft; Project name: fft
+prj_project new -name "fft" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+file copy -force -- "C:/Users/Junio/Downloads/FFT_Codes/src/FFT.v" "C:/Users/Junio/Downloads/FFT_Codes/src/FFT_SYN.v" "C:/Users/Junio/Downloads/FFT_Codes/src/radix2.v" "C:/Users/Junio/Downloads/FFT_Codes/src/ROM_2.v" "C:/Users/Junio/Downloads/FFT_Codes/src/ROM_4.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source"
+file copy -force -- "C:/Users/Junio/Downloads/FFT_Codes/src/ROM_8.v" "C:/Users/Junio/Downloads/FFT_Codes/src/ROM_16.v" "C:/Users/Junio/Downloads/FFT_Codes/src/shift_1.v" "C:/Users/Junio/Downloads/FFT_Codes/src/shift_2.v" "C:/Users/Junio/Downloads/FFT_Codes/src/shift_4.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source"
+file copy -force -- "C:/Users/Junio/Downloads/FFT_Codes/src/shift_8.v" "C:/Users/Junio/Downloads/FFT_Codes/src/shift_16.v" "C:/Users/Junio/Downloads/FFT_Codes/src/TESTBED.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/fft/impl1/source/FFT.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/FFT_SYN.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/radix2.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/ROM_2.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/ROM_4.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/ROM_8.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/ROM_16.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_1.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_2.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_4.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_8.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_16.v" "D:/CI/RTL_FPGA/SD4/fft/impl1/source/TESTBED.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src remove "D:/CI/RTL_FPGA/SD4/fft/impl1/source/FFT_SYN.v"
+prj_run Synthesis -impl impl1
+#Stop recording: 9/23/2025 21:23:36

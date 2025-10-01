@@ -1,0 +1,15 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="sim_gcd" simType="QuestaSim">
+    <Source worklib="work" path="register.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="comparator.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="mux.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="substractor.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="datapath.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="controller.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="gcd.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="gcd_tb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="GCD_tf.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5u"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="GCD_tf"/>
+</BaliSimProject>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FSM_gcd" device="LFE5U-45F-6BG256C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="GCD_tf"/>
+        <Source name="gcd.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="datapath.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="mux.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="register.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="comparator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="controller.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="substractor.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="GCD_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="gcd_tb.v" type="Verilog" type_short="Verilog">
+            <Options top_module="GCD_tf"/>
+        </Source>
+        <Source name="comparator.ldc" type="LSE Design Constraints File" type_short="LDC" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="FSM_gcd.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim_gcd/sim_gcd.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="substractor.ldc" type="LSE Design Constraints File" type_short="LDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FSM_gcd1.sty"/>
+</BaliProject>

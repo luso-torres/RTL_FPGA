@@ -1,0 +1,17 @@
+if {![file exists "D:/CI/RTL_FPGA/SD4/matrix_inv/sim_backward/sim_backward.mpf"]} { 
+	project new "D:/CI/RTL_FPGA/SD4/matrix_inv/sim_backward" sim_backward
+	project addfile "D:/CI/RTL_FPGA/SD4/matrix_inv/backward.v"
+	project addfile "D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/CI/RTL_FPGA/SD4/matrix_inv  -work work  "D:/CI/RTL_FPGA/SD4/matrix_inv/backward.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/SD4/matrix_inv  -work work  "D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v"
+} else {
+	project open "D:/CI/RTL_FPGA/SD4/matrix_inv/sim_backward/sim_backward"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  tb_BackwardSub4x4
+view wave
+add wave /*
+run 1000ns

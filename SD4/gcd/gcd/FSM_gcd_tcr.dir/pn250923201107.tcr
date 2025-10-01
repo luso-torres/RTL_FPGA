@@ -1,0 +1,28 @@
+#Start recording tcl command: 9/22/2025 20:07:22
+#Project Location: D:/CI/RTL_FPGA/gcd; Project name: FSM_gcd
+prj_project new -name "FSM_gcd" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+prj_src add "D:/CI/RTL_FPGA/gcd/gcd.v"
+prj_src add "D:/CI/RTL_FPGA/gcd/datapath.v"
+prj_src add "D:/CI/RTL_FPGA/gcd/mux.v"
+prj_src add "D:/CI/RTL_FPGA/gcd/register.v"
+prj_src add -exclude "D:/CI/RTL_FPGA/gcd/comparator.ldc"
+prj_src enable "D:/CI/RTL_FPGA/gcd/comparator.ldc"
+prj_src add "D:/CI/RTL_FPGA/gcd/comparator.v"
+prj_src add "D:/CI/RTL_FPGA/gcd/controller.v"
+prj_src add -exclude "D:/CI/RTL_FPGA/gcd/substractor.ldc"
+prj_src enable "D:/CI/RTL_FPGA/gcd/substractor.ldc"
+prj_src add "D:/CI/RTL_FPGA/gcd/substractor.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/CI/RTL_FPGA/gcd/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "GCD_tf.v"
+prj_src add "D:/CI/RTL_FPGA/gcd/gcd_tb.v"
+prj_src add "D:/CI/RTL_FPGA/gcd/sim_gcd/sim_gcd.spf"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_project save
+prj_project close
+#Stop recording: 9/23/2025 20:11:07

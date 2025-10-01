@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="LSE_Compile">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/comparator.v(3): </Dynamic>
+            <Dynamic>comparator</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/comparator.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/gcd_tb.v(4): </Dynamic>
+            <Dynamic>GCD_tf</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/gcd_tb.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901142</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/gcd_tb.v(56): </Dynamic>
+            <Dynamic>stop</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/gcd_tb.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901220</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/gcd_tb.v(57): </Dynamic>
+            <Dynamic>rst</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/gcd_tb.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/gcd.v(3): </Dynamic>
+            <Dynamic>GCD</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/gcd.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/controller.v(2): </Dynamic>
+            <Dynamic>controller</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/controller.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/datapath.v(3): </Dynamic>
+            <Dynamic>datapath</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/datapath.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/substractor.v(3): </Dynamic>
+            <Dynamic>substractor</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/substractor.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/mux.v(2): </Dynamic>
+            <Dynamic>mux</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/mux.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/register.v(2): </Dynamic>
+            <Dynamic>register</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/register.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/ci/rtl_fpga/gcd/comparator.v(3): </Dynamic>
+            <Dynamic>comparator</Dynamic>
+            <Navigation>d:/ci/rtl_fpga/gcd/comparator.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35001782</ID>
+            <Severity>Error</Severity>
+            <Dynamic>GCD_tf</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,9 @@
+D:/CI/RTL_FPGA/gcd/register.v
+D:/CI/RTL_FPGA/gcd/comparator.v
+D:/CI/RTL_FPGA/gcd/mux.v
+D:/CI/RTL_FPGA/gcd/substractor.v
+D:/CI/RTL_FPGA/gcd/datapath.v
+D:/CI/RTL_FPGA/gcd/controller.v
+D:/CI/RTL_FPGA/gcd/gcd.v
+D:/CI/RTL_FPGA/gcd/gcd_tb.v
+D:/CI/RTL_FPGA/gcd/GCD_tf.v

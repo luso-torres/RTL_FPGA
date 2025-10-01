@@ -1,0 +1,2896 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Sep 26 14:44:59 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     backward
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 337.226ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             U[15]__i448  (from clk_c +)
+   Destination:    FD1P3IX    D              x[3]__i128  (to clk_c +)
+
+   Delay:                 342.401ns  (18.8% logic, 81.2% route), 337 logic levels.
+
+ Constraint Details:
+
+    342.401ns data_path U[15]__i448 to x[3]__i128 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 337.226ns
+
+ Path Details: U[15]__i448 to x[3]__i128
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              U[15]__i448 (from clk_c)
+Route        12   e 1.616                                  U[2][31]
+MuPd        ---     2.720          A[18] to P[36]          lat_mult_0
+Route         1   e 1.020                                  n18543
+AluPd       ---     2.037         MB[36] to R[54]          lat_alu_3
+Route         3   e 1.239                                  n194_adj_114
+AluPd       ---     2.037        CIN[54] to R[54]          lat_alu_4
+Route         1   e 1.020                                  n176_adj_135
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_7035_add_4_add_1_add_1_20
+Route         1   e 0.020                                  n32768
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_22
+Route         1   e 0.020                                  n32769
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_24
+Route         1   e 0.020                                  n32770
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_26
+Route         1   e 0.020                                  n32771
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_28
+Route         1   e 0.020                                  n32772
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_7035_add_4_add_1_add_1_30
+Route         1   e 0.020                                  n6
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_17618_29
+Route         1   e 0.020                                  n32821
+FCI_TO_F    ---     0.322            CIN to S[2]           add_17618_31
+Route         1   e 1.020                                  n32356
+LUT4        ---     0.166              D to Z              mux_6984_i30_3_lut_4_lut
+Route         1   e 1.020                                  n25248
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_7038_add_4_32
+Route         1   e 0.020                                  n32422
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_7038_add_4_34
+Route         1   e 1.020                                  n70_adj_87
+LUT4        ---     0.166              A to Z              mux_4010_i32_4_lut
+Route        45   e 1.781                                  n5325
+A1_TO_F     ---     0.166           A[2] to S[2]           div_4016_unary_minus_2_add_3_33
+Route         3   e 1.339                                  n2
+LUT4        ---     0.166              A to Z              i10575_2_lut_rep_1081
+Route         1   e 1.020                                  n42780
+LUT4        ---     0.166              B to Z              i1_rep_1_4_lut
+Route         2   e 1.158                                  n35974
+LUT4        ---     0.166              C to Z              div_4016_LessThan_266_i64_4_lut
+Route         4   e 1.297                                  n64_adj_799
+LUT4        ---     0.166              A to Z              div_4016_i363_3_lut_4_lut
+Route         3   e 1.239                                  n678
+LUT4        ---     0.166              C to Z              div_4016_LessThan_393_i62_4_lut
+Route         2   e 1.158                                  n62_adj_798
+LUT4        ---     0.166              C to Z              div_4016_LessThan_393_i64_3_lut_rep_1077_3_lut
+Route         3   e 1.239                                  n42776
+LUT4        ---     0.166              A to Z              div_4016_i489_3_lut_4_lut
+Route         4   e 1.297                                  n865
+LUT4        ---     0.166              C to Z              div_4016_LessThan_518_i60_4_lut
+Route         1   e 0.020                                  n60_adj_795
+MUXL5       ---     0.116           BLUT to Z              div_4016_LessThan_518_i64
+Route         2   e 1.158                                  n64_adj_797
+LUT4        ---     0.166              B to Z              i1_4_lut_adj_137
+Route         5   e 1.341                                  n36422
+LUT4        ---     0.166              D to Z              div_4016_i611_4_lut_4_lut
+Route         4   e 1.297                                  n1047
+LUT4        ---     0.166              A to Z              div_4016_LessThan_641_i61_2_lut_rep_1072
+Route         1   e 1.020                                  n42771
+LUT4        ---     0.166              C to Z              i25878_3_lut_4_lut
+Route         1   e 0.020                                  n37417
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_641_i64
+Route         3   e 1.239                                  n64
+LUT4        ---     0.166              A to Z              i1_2_lut_adj_136
+Route         5   e 1.341                                  n1078
+LUT4        ---     0.166              D to Z              div_4016_i733_4_lut_4_lut
+Route         3   e 1.239                                  n1228
+LUT4        ---     0.166              A to Z              div_4016_LessThan_762_i59_2_lut_rep_1068
+Route         1   e 1.020                                  n42767
+LUT4        ---     0.166              C to Z              i25864_4_lut
+Route         1   e 0.020                                  n37427
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_762_i64
+Route         9   e 1.459                                  n64_adj_241
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7620_1
+Route         1   e 0.020                                  n32442
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7620_3
+Route         1   e 0.020                                  n32443
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7620_5
+Route         1   e 0.020                                  n32444
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7620_7
+Route         3   e 1.339                                  n1403
+LUT4        ---     0.166              A to Z              div_4016_LessThan_881_i63_2_lut_rep_1065
+Route         2   e 1.158                                  n42764
+LUT4        ---     0.166              A to Z              i25852_4_lut
+Route         1   e 0.020                                  n37440
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_881_i64
+Route        10   e 1.480                                  n64_adj_246
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7621_1
+Route         1   e 0.020                                  n32449
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7621_3
+Route         1   e 0.020                                  n32450
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7621_5
+Route         1   e 0.020                                  n32451
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7621_7
+Route         3   e 1.339                                  n1578
+LUT4        ---     0.166              A to Z              div_4016_LessThan_998_i61_2_lut_rep_1063
+Route         2   e 1.158                                  n42762
+LUT4        ---     0.166              D to Z              i25831_3_lut_4_lut
+Route         1   e 0.020                                  n37462
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_998_i62
+Route         1   e 1.020                                  n62_adj_251
+LUT4        ---     0.166              B to Z              div_4016_LessThan_998_i64_4_lut
+Route        11   e 1.499                                  n64_adj_252
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7622_1
+Route         1   e 0.020                                  n32456
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7622_3
+Route         1   e 0.020                                  n32457
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7622_5
+Route         3   e 1.339                                  n1753
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1113_i53_2_lut_rep_1060
+Route         1   e 1.020                                  n42759
+LUT4        ---     0.166              B to Z              i22209_4_lut
+Route         1   e 1.020                                  n37469
+LUT4        ---     0.166              D to Z              i22220_4_lut
+Route         1   e 1.020                                  n37480
+LUT4        ---     0.166              D to Z              div_4016_LessThan_1113_i64_4_lut
+Route        12   e 1.516                                  n64_adj_260
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7623_1
+Route         1   e 0.020                                  n32464
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7623_3
+Route         1   e 0.020                                  n32465
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7623_5
+Route         1   e 0.020                                  n32466
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7623_7
+Route         2   e 1.258                                  n1920
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1226_i55_2_lut
+Route         2   e 1.158                                  n55_adj_264
+LUT4        ---     0.166              A to Z              i22235_4_lut
+Route         1   e 1.020                                  n37495
+LUT4        ---     0.166              D to Z              i22248_4_lut
+Route         1   e 1.020                                  n37508
+LUT4        ---     0.166              D to Z              div_4016_LessThan_1226_i64_4_lut
+Route        13   e 1.532                                  n64_adj_269
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7624_1
+Route         1   e 0.020                                  n32472
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7624_3
+Route         1   e 0.020                                  n32473
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7624_5
+Route         2   e 1.258                                  n2087
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1337_i51_2_lut
+Route         2   e 1.158                                  n51
+LUT4        ---     0.166              A to Z              i22260_4_lut
+Route         1   e 1.020                                  n37520
+LUT4        ---     0.166              D to Z              i22271_4_lut
+Route         1   e 1.020                                  n37531
+LUT4        ---     0.166              D to Z              i25953_4_lut
+Route         1   e 1.020                                  n37544
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1337_i64
+Route        14   e 1.547                                  n64_adj_278
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7625_1
+Route         1   e 0.020                                  n32481
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7625_3
+Route         1   e 0.020                                  n32482
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7625_5
+Route         1   e 0.020                                  n32483
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7625_7
+Route         2   e 1.258                                  n2249
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1446_i51_2_lut
+Route         2   e 1.158                                  n51_adj_282
+LUT4        ---     0.166              A to Z              i22298_4_lut
+Route         1   e 1.020                                  n37558
+LUT4        ---     0.166              D to Z              i22311_4_lut
+Route         1   e 1.020                                  n37571
+LUT4        ---     0.166              D to Z              i25941_4_lut
+Route         1   e 1.020                                  n37586
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1446_i64
+Route        15   e 1.561                                  n64_adj_289
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7626_1
+Route         1   e 0.020                                  n32490
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7626_3
+Route         1   e 0.020                                  n32491
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7626_5
+Route         1   e 0.020                                  n32492
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7626_7
+Route         3   e 1.339                                  n2408
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1553_i51_2_lut_rep_1037
+Route         2   e 1.158                                  n42736
+LUT4        ---     0.166              A to Z              i22343_4_lut
+Route         1   e 1.020                                  n37603
+LUT4        ---     0.166              D to Z              i22356_4_lut
+Route         1   e 1.020                                  n37616
+LUT4        ---     0.166              D to Z              i25816_4_lut
+Route         1   e 1.020                                  n37635
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1553_i64
+Route        16   e 1.574                                  n64_adj_301
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7627_1
+Route         1   e 0.020                                  n32500
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7627_3
+Route         1   e 0.020                                  n32501
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7627_5
+Route         2   e 1.258                                  n2567
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1658_i45_2_lut
+Route         2   e 1.158                                  n45_adj_304
+LUT4        ---     0.166              A to Z              i22386_4_lut
+Route         1   e 1.020                                  n37646
+LUT4        ---     0.166              D to Z              i22397_4_lut
+Route         1   e 1.020                                  n37657
+LUT4        ---     0.166              D to Z              i22410_4_lut
+Route         1   e 1.020                                  n37670
+LUT4        ---     0.166              B to Z              i25958_4_lut_4_lut
+Route         1   e 1.020                                  n37691
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1658_i64
+Route        17   e 1.586                                  n64_adj_315
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7628_1
+Route         1   e 0.020                                  n32510
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7628_3
+Route         1   e 0.020                                  n32511
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7628_5
+Route         1   e 0.020                                  n32512
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7628_7
+Route         3   e 1.339                                  n2720
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1761_i45_2_lut_rep_1019
+Route         1   e 1.020                                  n42718
+LUT4        ---     0.166              A to Z              i22441_4_lut
+Route         1   e 1.020                                  n37701
+LUT4        ---     0.166              D to Z              i22454_4_lut
+Route         1   e 1.020                                  n37714
+LUT4        ---     0.166              D to Z              i22469_4_lut
+Route         1   e 1.020                                  n37729
+LUT4        ---     0.166              B to Z              i25944_4_lut_4_lut
+Route         1   e 1.020                                  n37746
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1761_i64
+Route        18   e 1.598                                  n64_adj_328
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7629_1
+Route         1   e 0.020                                  n32521
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7629_3
+Route         1   e 0.020                                  n32522
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7629_5
+Route         1   e 0.020                                  n32523
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7629_7
+Route         3   e 1.339                                  n2870
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1862_i45_2_lut_rep_1011
+Route         2   e 1.158                                  n42710
+LUT4        ---     0.166              A to Z              i22501_4_lut
+Route         1   e 1.020                                  n37761
+LUT4        ---     0.166              D to Z              i22514_4_lut
+Route         1   e 1.020                                  n37774
+LUT4        ---     0.166              B to Z              i22533_4_lut_4_lut
+Route         1   e 1.020                                  n37793
+LUT4        ---     0.166              D to Z              i25931_4_lut
+Route         1   e 1.020                                  n37808
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1862_i64
+Route        19   e 1.608                                  n64_adj_343
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7630_1
+Route         1   e 0.020                                  n32532
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7630_3
+Route         1   e 0.020                                  n32533
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7630_5
+Route         2   e 1.258                                  n3020
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1961_i39_2_lut
+Route         2   e 1.158                                  n39_adj_346
+LUT4        ---     0.166              A to Z              i22559_4_lut
+Route         1   e 1.020                                  n37819
+LUT4        ---     0.166              D to Z              i22570_4_lut
+Route         1   e 1.020                                  n37830
+LUT4        ---     0.166              D to Z              i22583_4_lut
+Route         1   e 1.020                                  n37843
+LUT4        ---     0.166              B to Z              i22604_4_lut_4_lut
+Route         1   e 1.020                                  n37864
+LUT4        ---     0.166              B to Z              i25919_4_lut_4_lut
+Route         1   e 1.020                                  n37879
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1961_i64
+Route        20   e 1.619                                  n64_adj_360
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7631_1
+Route         1   e 0.020                                  n32544
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7631_3
+Route         1   e 0.020                                  n32545
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7631_5
+Route         1   e 0.020                                  n32546
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7631_7
+Route         3   e 1.339                                  n3164
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2058_i39_2_lut_rep_987
+Route         1   e 1.020                                  n42686
+LUT4        ---     0.166              A to Z              i22635_4_lut
+Route         1   e 1.020                                  n37895
+LUT4        ---     0.166              D to Z              i22648_4_lut
+Route         1   e 1.020                                  n37908
+LUT4        ---     0.166              D to Z              i22663_4_lut
+Route         1   e 1.020                                  n37923
+LUT4        ---     0.166              B to Z              i22680_4_lut_4_lut
+Route         1   e 1.020                                  n37940
+LUT4        ---     0.166              B to Z              i25899_4_lut_4_lut
+Route         1   e 1.020                                  n37961
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_2058_i64
+Route        21   e 1.628                                  n64_adj_378
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7632_1
+Route         1   e 0.020                                  n32556
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7632_3
+Route         1   e 0.020                                  n32557
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7632_5
+Route         1   e 0.020                                  n32558
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7632_7
+Route         2   e 1.258                                  n3306
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2153_i37_2_lut
+Route         2   e 1.158                                  n37_adj_384
+LUT4        ---     0.166              A to Z              i22715_4_lut
+Route         1   e 1.020                                  n37975
+LUT4        ---     0.166              D to Z              i22728_4_lut
+Route         1   e 1.020                                  n37988
+LUT4        ---     0.166              D to Z              i22743_4_lut
+Route         1   e 1.020                                  n38003
+LUT4        ---     0.166              D to Z              i22760_4_lut
+Route         1   e 1.020                                  n38020
+LUT4        ---     0.166              D to Z              i22781_4_lut
+Route         1   e 1.020                                  n38041
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2153_i64_4_lut
+Route        22   e 1.638                                  n64_adj_399
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7633_1
+Route         1   e 0.020                                  n32569
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7633_3
+Route         1   e 0.020                                  n32570
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7633_5
+Route         1   e 0.020                                  n32571
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7633_7
+Route         3   e 1.339                                  n3444
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2246_i37_2_lut_rep_962
+Route         2   e 1.158                                  n42661
+LUT4        ---     0.166              A to Z              i22807_4_lut
+Route         1   e 1.020                                  n38067
+LUT4        ---     0.166              D to Z              i22820_4_lut
+Route         1   e 1.020                                  n38080
+LUT4        ---     0.166              D to Z              i22839_4_lut
+Route         1   e 1.020                                  n38099
+LUT4        ---     0.166              D to Z              i22854_4_lut
+Route         1   e 1.020                                  n38114
+LUT4        ---     0.166              D to Z              i22877_4_lut
+Route         1   e 1.020                                  n38137
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2246_i64_4_lut
+Route        23   e 1.647                                  n64_adj_421
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7634_1
+Route         1   e 0.020                                  n32582
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7634_3
+Route         1   e 0.020                                  n32583
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7634_5
+Route         2   e 1.258                                  n3582
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2337_i31_2_lut
+Route         2   e 1.158                                  n31_adj_425
+LUT4        ---     0.166              A to Z              i22899_4_lut
+Route         1   e 1.020                                  n38159
+LUT4        ---     0.166              D to Z              i22910_4_lut
+Route         1   e 1.020                                  n38170
+LUT4        ---     0.166              D to Z              i22923_4_lut
+Route         1   e 1.020                                  n38183
+LUT4        ---     0.166              D to Z              i22944_4_lut
+Route         1   e 1.020                                  n38204
+LUT4        ---     0.166              D to Z              i22959_4_lut
+Route         1   e 1.020                                  n38219
+LUT4        ---     0.166              D to Z              i22984_4_lut
+Route         1   e 1.020                                  n38244
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2337_i64_4_lut
+Route        24   e 1.655                                  n64_adj_444
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7635_1
+Route         1   e 0.020                                  n32596
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7635_3
+Route         1   e 0.020                                  n32597
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7635_5
+Route         1   e 0.020                                  n32598
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7635_7
+Route         3   e 1.339                                  n3714
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2426_i31_2_lut_rep_934
+Route         1   e 1.020                                  n42633
+LUT4        ---     0.166              A to Z              i23009_4_lut
+Route         1   e 1.020                                  n38269
+LUT4        ---     0.166              D to Z              i23022_4_lut
+Route         1   e 1.020                                  n38282
+LUT4        ---     0.166              D to Z              i23037_4_lut
+Route         1   e 1.020                                  n38297
+LUT4        ---     0.166              D to Z              i23054_4_lut
+Route         1   e 1.020                                  n38314
+LUT4        ---     0.166              D to Z              i23075_4_lut
+Route         1   e 1.020                                  n38335
+LUT4        ---     0.166              D to Z              i23100_4_lut
+Route         1   e 1.020                                  n38360
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2426_i64_4_lut
+Route        25   e 1.663                                  n64_adj_469
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7636_1
+Route         1   e 0.020                                  n32610
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7636_3
+Route         1   e 0.020                                  n32611
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7636_5
+Route         1   e 0.020                                  n32612
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7636_7
+Route         4   e 1.397                                  n3843
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2513_i31_2_lut_rep_918
+Route         1   e 1.020                                  n42617
+LUT4        ---     0.166              A to Z              i23122_4_lut
+Route         1   e 1.020                                  n38382
+LUT4        ---     0.166              D to Z              i23135_4_lut
+Route         1   e 1.020                                  n38395
+LUT4        ---     0.166              B to Z              i23154_4_lut_4_lut
+Route         1   e 1.020                                  n38414
+LUT4        ---     0.166              D to Z              i23169_4_lut
+Route         1   e 1.020                                  n38429
+LUT4        ---     0.166              D to Z              i23192_4_lut
+Route         1   e 1.020                                  n38452
+LUT4        ---     0.166              B to Z              i23219_4_lut_4_lut
+Route         1   e 1.020                                  n38479
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2513_i64_4_lut
+Route        26   e 1.671                                  n64_adj_493
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7637_1
+Route         1   e 0.020                                  n32625
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7637_3
+Route         1   e 0.020                                  n32626
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7637_5
+Route         2   e 1.258                                  n3972
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2598_i25_2_lut
+Route         2   e 1.158                                  n25_adj_497
+LUT4        ---     0.166              A to Z              i23231_4_lut
+Route         1   e 1.020                                  n38491
+LUT4        ---     0.166              D to Z              i23242_4_lut
+Route         1   e 1.020                                  n38502
+LUT4        ---     0.166              D to Z              i23255_4_lut
+Route         1   e 1.020                                  n38515
+LUT4        ---     0.166              D to Z              i23276_4_lut
+Route         1   e 1.020                                  n38536
+LUT4        ---     0.166              D to Z              i23291_4_lut
+Route         1   e 1.020                                  n38551
+LUT4        ---     0.166              D to Z              i23316_4_lut
+Route         1   e 1.020                                  n38576
+LUT4        ---     0.166              B to Z              i23337_4_lut_4_lut
+Route         1   e 1.020                                  n38597
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2598_i64_4_lut
+Route        27   e 1.679                                  n64_adj_520
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7638_1
+Route         1   e 0.020                                  n32640
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7638_3
+Route         1   e 0.020                                  n32641
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7638_5
+Route         1   e 0.020                                  n32642
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7638_7
+Route         3   e 1.339                                  n4095
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2681_i25_2_lut_rep_883
+Route         1   e 1.020                                  n42582
+LUT4        ---     0.166              A to Z              i23356_4_lut
+Route         1   e 1.020                                  n38616
+LUT4        ---     0.166              D to Z              i23369_4_lut
+Route         1   e 1.020                                  n38629
+LUT4        ---     0.166              D to Z              i23384_4_lut
+Route         1   e 1.020                                  n38644
+LUT4        ---     0.166              D to Z              i23401_4_lut
+Route         1   e 1.020                                  n38661
+LUT4        ---     0.166              D to Z              i23422_4_lut
+Route         1   e 1.020                                  n38682
+LUT4        ---     0.166              B to Z              i23447_4_lut_4_lut
+Route         1   e 1.020                                  n38707
+LUT4        ---     0.166              D to Z              i23464_4_lut
+Route         1   e 1.020                                  n38724
+LUT4        ---     0.166              B to Z              div_4016_LessThan_2681_i64_4_lut_4_lut
+Route        28   e 1.686                                  n64_adj_549
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7639_1
+Route         1   e 0.020                                  n32656
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7639_3
+Route         1   e 0.020                                  n32657
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7639_5
+Route         1   e 0.020                                  n32658
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7639_7
+Route         4   e 1.397                                  n4215
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2762_i25_2_lut_rep_867
+Route         1   e 1.020                                  n42566
+LUT4        ---     0.166              A to Z              i23490_4_lut
+Route         1   e 1.020                                  n38750
+LUT4        ---     0.166              D to Z              i23503_4_lut
+Route         1   e 1.020                                  n38763
+LUT4        ---     0.166              D to Z              i23522_4_lut
+Route         1   e 1.020                                  n38782
+LUT4        ---     0.166              D to Z              i23537_4_lut
+Route         1   e 1.020                                  n38797
+LUT4        ---     0.166              D to Z              i23560_4_lut
+Route         1   e 1.020                                  n38820
+LUT4        ---     0.166              B to Z              i23587_4_lut_4_lut
+Route         1   e 1.020                                  n38847
+LUT4        ---     0.166              D to Z              i23602_4_lut
+Route         1   e 1.020                                  n38862
+LUT4        ---     0.166              B to Z              div_4016_LessThan_2762_i64_4_lut_4_lut
+Route        29   e 1.693                                  n64_adj_578
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7640_1
+Route         1   e 0.020                                  n32672
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7640_3
+Route         1   e 0.020                                  n32673
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7640_5
+Route         2   e 1.258                                  n4335
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2841_i19_2_lut
+Route         2   e 1.158                                  n19_adj_582
+LUT4        ---     0.166              A to Z              i23624_4_lut
+Route         1   e 1.020                                  n38884
+LUT4        ---     0.166              D to Z              i23635_4_lut
+Route         1   e 1.020                                  n38895
+LUT4        ---     0.166              D to Z              i23648_4_lut
+Route         1   e 1.020                                  n38908
+LUT4        ---     0.166              D to Z              i23669_4_lut
+Route         1   e 1.020                                  n38929
+LUT4        ---     0.166              D to Z              i23684_4_lut
+Route         1   e 1.020                                  n38944
+LUT4        ---     0.166              D to Z              i23709_4_lut
+Route         1   e 1.020                                  n38969
+LUT4        ---     0.166              B to Z              i23730_4_lut_4_lut
+Route         1   e 1.020                                  n38990
+LUT4        ---     0.166              B to Z              i23751_4_lut_4_lut
+Route         1   e 1.020                                  n39011
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2841_i64_4_lut
+Route        30   e 1.700                                  n64_adj_608
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7641_1
+Route         1   e 0.020                                  n32689
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7641_3
+Route         1   e 0.020                                  n32690
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7641_5
+Route         1   e 0.020                                  n32691
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7641_7
+Route         3   e 1.339                                  n4449
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2918_i19_2_lut_rep_828
+Route         1   e 1.020                                  n42527
+LUT4        ---     0.166              A to Z              i23778_4_lut
+Route         1   e 1.020                                  n39038
+LUT4        ---     0.166              D to Z              i23791_4_lut
+Route         1   e 1.020                                  n39051
+LUT4        ---     0.166              D to Z              i23806_4_lut
+Route         1   e 1.020                                  n39066
+LUT4        ---     0.166              D to Z              i23823_4_lut
+Route         1   e 1.020                                  n39083
+LUT4        ---     0.166              D to Z              i23844_4_lut
+Route         1   e 1.020                                  n39104
+LUT4        ---     0.166              B to Z              i23869_4_lut_4_lut
+Route         1   e 1.020                                  n39129
+LUT4        ---     0.166              D to Z              i23886_4_lut
+Route         1   e 1.020                                  n39146
+LUT4        ---     0.166              B to Z              i23911_4_lut_4_lut
+Route         1   e 1.020                                  n39171
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2918_i64_4_lut
+Route        31   e 1.706                                  n64_adj_640
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7642_1
+Route         1   e 0.020                                  n32706
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7642_3
+Route         1   e 0.020                                  n32707
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7642_5
+Route         1   e 0.020                                  n32708
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7642_7
+Route         4   e 1.397                                  n4560
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2993_i19_2_lut_rep_808
+Route         1   e 1.020                                  n42507
+LUT4        ---     0.166              A to Z              i23939_4_lut
+Route         1   e 1.020                                  n39199
+LUT4        ---     0.166              D to Z              i23952_4_lut
+Route         1   e 1.020                                  n39212
+LUT4        ---     0.166              D to Z              i23971_4_lut
+Route         1   e 1.020                                  n39231
+LUT4        ---     0.166              D to Z              i23986_4_lut
+Route         1   e 1.020                                  n39246
+LUT4        ---     0.166              D to Z              i24009_4_lut
+Route         1   e 1.020                                  n39269
+LUT4        ---     0.166              B to Z              i24036_4_lut_4_lut
+Route         1   e 1.020                                  n39296
+LUT4        ---     0.166              D to Z              i24051_4_lut
+Route         1   e 1.020                                  n39311
+LUT4        ---     0.166              C to Z              i24080_4_lut_4_lut_4_lut
+Route         1   e 1.020                                  n39340
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2993_i64_4_lut
+Route        32   e 1.713                                  n64_adj_670
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7643_1
+Route         1   e 0.020                                  n32724
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7643_3
+Route         1   e 0.020                                  n32725
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7643_5
+Route         2   e 1.258                                  n4671
+LUT4        ---     0.166              A to Z              div_4016_LessThan_3066_i13_2_lut
+Route         2   e 1.158                                  n13_adj_674
+LUT4        ---     0.166              A to Z              i24100_4_lut
+Route         1   e 1.020                                  n39360
+LUT4        ---     0.166              D to Z              i24111_4_lut
+Route         1   e 1.020                                  n39371
+LUT4        ---     0.166              D to Z              i24124_4_lut
+Route         1   e 1.020                                  n39384
+LUT4        ---     0.166              D to Z              i24145_4_lut
+Route         1   e 1.020                                  n39405
+LUT4        ---     0.166              D to Z              i24160_4_lut
+Route         1   e 1.020                                  n39420
+LUT4        ---     0.166              D to Z              i24185_4_lut
+Route         1   e 1.020                                  n39445
+LUT4        ---     0.166              B to Z              i24206_4_lut_4_lut
+Route         1   e 1.020                                  n39466
+LUT4        ---     0.166              B to Z              i24227_4_lut_4_lut
+Route         1   e 1.020                                  n39487
+LUT4        ---     0.166              B to Z              i24254_4_lut_4_lut
+Route         1   e 1.020                                  n39514
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3066_i64_4_lut
+Route        33   e 1.719                                  n64_adj_703
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7644_1
+Route         1   e 0.020                                  n32742
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7644_3
+Route         1   e 0.020                                  n32743
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7644_5
+Route         1   e 0.020                                  n32744
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7644_7
+Route         5   e 1.441                                  n4775
+LUT4        ---     0.166              A to Z              div_4016_LessThan_3137_i15_2_lut_rep_764
+Route         1   e 1.020                                  n42463
+LUT4        ---     0.166              A to Z              i24284_4_lut
+Route         1   e 1.020                                  n39544
+LUT4        ---     0.166              D to Z              i24297_4_lut
+Route         1   e 1.020                                  n39557
+LUT4        ---     0.166              D to Z              i24316_4_lut
+Route         1   e 1.020                                  n39576
+LUT4        ---     0.166              D to Z              i24331_4_lut
+Route         1   e 1.020                                  n39591
+LUT4        ---     0.166              D to Z              i24354_4_lut
+Route         1   e 1.020                                  n39614
+LUT4        ---     0.166              D to Z              i24381_4_lut
+Route         1   e 1.020                                  n39641
+LUT4        ---     0.166              D to Z              i24396_4_lut
+Route         1   e 1.020                                  n39656
+LUT4        ---     0.166              D to Z              i24425_4_lut
+Route         1   e 1.020                                  n39685
+LUT4        ---     0.166              D to Z              i25772_4_lut
+Route         1   e 1.020                                  n39712
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_3137_i64
+Route         2   e 1.158                                  n64_adj_737
+LUT4        ---     0.166              C to Z              i8027_2_lut_3_lut
+Route        33   e 1.719                                  n4783
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3206_i7_4_lut
+Route         2   e 1.158                                  n7_adj_741
+LUT4        ---     0.166              C to Z              i24468_4_lut
+Route         1   e 1.020                                  n39728
+LUT4        ---     0.166              D to Z              i24481_4_lut
+Route         1   e 1.020                                  n39741
+LUT4        ---     0.166              D to Z              i24496_4_lut
+Route         1   e 1.020                                  n39756
+LUT4        ---     0.166              D to Z              i24513_4_lut
+Route         1   e 1.020                                  n39773
+LUT4        ---     0.166              D to Z              i24534_4_lut
+Route         1   e 1.020                                  n39794
+LUT4        ---     0.166              B to Z              i24727_4_lut_4_lut
+Route         2   e 1.158                                  n39987
+LUT4        ---     0.166              D to Z              i24576_4_lut
+Route         1   e 1.020                                  n39836
+LUT4        ---     0.166              B to Z              i24601_4_lut_4_lut
+Route         1   e 1.020                                  n39861
+LUT4        ---     0.166              D to Z              i24628_4_lut
+Route         1   e 1.020                                  n39888
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3206_i62_4_lut
+Route         1   e 1.020                                  n62_adj_794
+A1_TO_FCO   ---     0.329           D[2] to COUT           add_7646_1
+Route         1   e 0.020                                  n32791
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_3
+Route         1   e 0.020                                  n32792
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_5
+Route         1   e 0.020                                  n32793
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_7
+Route         1   e 0.020                                  n32794
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_9
+Route         1   e 0.020                                  n32795
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_11
+Route         1   e 0.020                                  n32796
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_13
+Route         1   e 0.020                                  n32797
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_15
+Route         1   e 0.020                                  n32798
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_17
+Route         1   e 0.020                                  n32799
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_19
+Route         1   e 0.020                                  n32800
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_21
+Route         1   e 0.020                                  n32801
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_23
+Route         1   e 0.020                                  n32802
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_25
+Route         1   e 0.020                                  n32803
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_27
+Route         1   e 0.020                                  n32804
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_29
+Route         1   e 0.020                                  n32805
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_31
+Route         1   e 0.020                                  n32806
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7646_33
+Route         1   e 1.020                                  n22275
+LUT4        ---     0.166              B to Z              div_4016_i3311_4_lut
+Route         4   e 1.297                                  n5494
+                  --------
+                  342.401  (18.8% logic, 81.2% route), 337 logic levels.
+
+
+Error:  The following path violates requirements by 337.226ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             U[15]__i448  (from clk_c +)
+   Destination:    FD1P3IX    D              x[3]__i128  (to clk_c +)
+
+   Delay:                 342.401ns  (18.8% logic, 81.2% route), 337 logic levels.
+
+ Constraint Details:
+
+    342.401ns data_path U[15]__i448 to x[3]__i128 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 337.226ns
+
+ Path Details: U[15]__i448 to x[3]__i128
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              U[15]__i448 (from clk_c)
+Route        12   e 1.616                                  U[2][31]
+MuPd        ---     2.720          A[18] to P[36]          lat_mult_0
+Route         1   e 1.020                                  n18552
+AluPd       ---     2.037         MB[36] to R[54]          lat_alu_3
+Route         3   e 1.239                                  n194_adj_114
+AluPd       ---     2.037        CIN[54] to R[54]          lat_alu_4
+Route         1   e 1.020                                  n176_adj_135
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_7035_add_4_add_1_add_1_20
+Route         1   e 0.020                                  n32768
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_22
+Route         1   e 0.020                                  n32769
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_24
+Route         1   e 0.020                                  n32770
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_26
+Route         1   e 0.020                                  n32771
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_28
+Route         1   e 0.020                                  n32772
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_7035_add_4_add_1_add_1_30
+Route         1   e 0.020                                  n6
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_17618_29
+Route         1   e 0.020                                  n32821
+FCI_TO_F    ---     0.322            CIN to S[2]           add_17618_31
+Route         1   e 1.020                                  n32356
+LUT4        ---     0.166              D to Z              mux_6984_i30_3_lut_4_lut
+Route         1   e 1.020                                  n25248
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_7038_add_4_32
+Route         1   e 0.020                                  n32422
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_7038_add_4_34
+Route         1   e 1.020                                  n70_adj_87
+LUT4        ---     0.166              A to Z              mux_4010_i32_4_lut
+Route        45   e 1.781                                  n5325
+A1_TO_F     ---     0.166           A[2] to S[2]           div_4016_unary_minus_2_add_3_33
+Route         3   e 1.339                                  n2
+LUT4        ---     0.166              A to Z              i10575_2_lut_rep_1081
+Route         1   e 1.020                                  n42780
+LUT4        ---     0.166              B to Z              i1_rep_1_4_lut
+Route         2   e 1.158                                  n35974
+LUT4        ---     0.166              C to Z              div_4016_LessThan_266_i64_4_lut
+Route         4   e 1.297                                  n64_adj_799
+LUT4        ---     0.166              A to Z              div_4016_i363_3_lut_4_lut
+Route         3   e 1.239                                  n678
+LUT4        ---     0.166              C to Z              div_4016_LessThan_393_i62_4_lut
+Route         2   e 1.158                                  n62_adj_798
+LUT4        ---     0.166              C to Z              div_4016_LessThan_393_i64_3_lut_rep_1077_3_lut
+Route         3   e 1.239                                  n42776
+LUT4        ---     0.166              A to Z              div_4016_i489_3_lut_4_lut
+Route         4   e 1.297                                  n865
+LUT4        ---     0.166              C to Z              div_4016_LessThan_518_i60_4_lut
+Route         1   e 0.020                                  n60_adj_795
+MUXL5       ---     0.116           BLUT to Z              div_4016_LessThan_518_i64
+Route         2   e 1.158                                  n64_adj_797
+LUT4        ---     0.166              B to Z              i1_4_lut_adj_137
+Route         5   e 1.341                                  n36422
+LUT4        ---     0.166              D to Z              div_4016_i611_4_lut_4_lut
+Route         4   e 1.297                                  n1047
+LUT4        ---     0.166              A to Z              div_4016_LessThan_641_i61_2_lut_rep_1072
+Route         1   e 1.020                                  n42771
+LUT4        ---     0.166              C to Z              i25878_3_lut_4_lut
+Route         1   e 0.020                                  n37417
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_641_i64
+Route         3   e 1.239                                  n64
+LUT4        ---     0.166              A to Z              i1_2_lut_adj_136
+Route         5   e 1.341                                  n1078
+LUT4        ---     0.166              D to Z              div_4016_i731_4_lut_4_lut
+Route         3   e 1.239                                  n35972
+LUT4        ---     0.166              A to Z              div_4016_LessThan_762_i63_2_lut_rep_1067
+Route         1   e 1.020                                  n42766
+LUT4        ---     0.166              A to Z              i25864_4_lut
+Route         1   e 0.020                                  n37427
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_762_i64
+Route         9   e 1.459                                  n64_adj_241
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7620_1
+Route         1   e 0.020                                  n32442
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7620_3
+Route         1   e 0.020                                  n32443
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7620_5
+Route         1   e 0.020                                  n32444
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7620_7
+Route         3   e 1.339                                  n1403
+LUT4        ---     0.166              A to Z              div_4016_LessThan_881_i63_2_lut_rep_1065
+Route         2   e 1.158                                  n42764
+LUT4        ---     0.166              A to Z              i25852_4_lut
+Route         1   e 0.020                                  n37440
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_881_i64
+Route        10   e 1.480                                  n64_adj_246
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7621_1
+Route         1   e 0.020                                  n32449
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7621_3
+Route         1   e 0.020                                  n32450
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7621_5
+Route         1   e 0.020                                  n32451
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7621_7
+Route         3   e 1.339                                  n1578
+LUT4        ---     0.166              A to Z              div_4016_LessThan_998_i61_2_lut_rep_1063
+Route         2   e 1.158                                  n42762
+LUT4        ---     0.166              D to Z              i25831_3_lut_4_lut
+Route         1   e 0.020                                  n37462
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_998_i62
+Route         1   e 1.020                                  n62_adj_251
+LUT4        ---     0.166              B to Z              div_4016_LessThan_998_i64_4_lut
+Route        11   e 1.499                                  n64_adj_252
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7622_1
+Route         1   e 0.020                                  n32456
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7622_3
+Route         1   e 0.020                                  n32457
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7622_5
+Route         3   e 1.339                                  n1753
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1113_i53_2_lut_rep_1060
+Route         1   e 1.020                                  n42759
+LUT4        ---     0.166              B to Z              i22209_4_lut
+Route         1   e 1.020                                  n37469
+LUT4        ---     0.166              D to Z              i22220_4_lut
+Route         1   e 1.020                                  n37480
+LUT4        ---     0.166              D to Z              div_4016_LessThan_1113_i64_4_lut
+Route        12   e 1.516                                  n64_adj_260
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7623_1
+Route         1   e 0.020                                  n32464
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7623_3
+Route         1   e 0.020                                  n32465
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7623_5
+Route         1   e 0.020                                  n32466
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7623_7
+Route         2   e 1.258                                  n1920
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1226_i55_2_lut
+Route         2   e 1.158                                  n55_adj_264
+LUT4        ---     0.166              A to Z              i22235_4_lut
+Route         1   e 1.020                                  n37495
+LUT4        ---     0.166              D to Z              i22248_4_lut
+Route         1   e 1.020                                  n37508
+LUT4        ---     0.166              D to Z              div_4016_LessThan_1226_i64_4_lut
+Route        13   e 1.532                                  n64_adj_269
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7624_1
+Route         1   e 0.020                                  n32472
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7624_3
+Route         1   e 0.020                                  n32473
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7624_5
+Route         2   e 1.258                                  n2087
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1337_i51_2_lut
+Route         2   e 1.158                                  n51
+LUT4        ---     0.166              A to Z              i22260_4_lut
+Route         1   e 1.020                                  n37520
+LUT4        ---     0.166              D to Z              i22271_4_lut
+Route         1   e 1.020                                  n37531
+LUT4        ---     0.166              D to Z              i25953_4_lut
+Route         1   e 1.020                                  n37544
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1337_i64
+Route        14   e 1.547                                  n64_adj_278
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7625_1
+Route         1   e 0.020                                  n32481
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7625_3
+Route         1   e 0.020                                  n32482
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7625_5
+Route         1   e 0.020                                  n32483
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7625_7
+Route         2   e 1.258                                  n2249
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1446_i51_2_lut
+Route         2   e 1.158                                  n51_adj_282
+LUT4        ---     0.166              A to Z              i22298_4_lut
+Route         1   e 1.020                                  n37558
+LUT4        ---     0.166              D to Z              i22311_4_lut
+Route         1   e 1.020                                  n37571
+LUT4        ---     0.166              D to Z              i25941_4_lut
+Route         1   e 1.020                                  n37586
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1446_i64
+Route        15   e 1.561                                  n64_adj_289
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7626_1
+Route         1   e 0.020                                  n32490
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7626_3
+Route         1   e 0.020                                  n32491
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7626_5
+Route         1   e 0.020                                  n32492
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7626_7
+Route         3   e 1.339                                  n2408
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1553_i51_2_lut_rep_1037
+Route         2   e 1.158                                  n42736
+LUT4        ---     0.166              A to Z              i22343_4_lut
+Route         1   e 1.020                                  n37603
+LUT4        ---     0.166              D to Z              i22356_4_lut
+Route         1   e 1.020                                  n37616
+LUT4        ---     0.166              D to Z              i25816_4_lut
+Route         1   e 1.020                                  n37635
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1553_i64
+Route        16   e 1.574                                  n64_adj_301
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7627_1
+Route         1   e 0.020                                  n32500
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7627_3
+Route         1   e 0.020                                  n32501
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7627_5
+Route         2   e 1.258                                  n2567
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1658_i45_2_lut
+Route         2   e 1.158                                  n45_adj_304
+LUT4        ---     0.166              A to Z              i22386_4_lut
+Route         1   e 1.020                                  n37646
+LUT4        ---     0.166              D to Z              i22397_4_lut
+Route         1   e 1.020                                  n37657
+LUT4        ---     0.166              D to Z              i22410_4_lut
+Route         1   e 1.020                                  n37670
+LUT4        ---     0.166              B to Z              i25958_4_lut_4_lut
+Route         1   e 1.020                                  n37691
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1658_i64
+Route        17   e 1.586                                  n64_adj_315
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7628_1
+Route         1   e 0.020                                  n32510
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7628_3
+Route         1   e 0.020                                  n32511
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7628_5
+Route         1   e 0.020                                  n32512
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7628_7
+Route         3   e 1.339                                  n2720
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1761_i45_2_lut_rep_1019
+Route         1   e 1.020                                  n42718
+LUT4        ---     0.166              A to Z              i22441_4_lut
+Route         1   e 1.020                                  n37701
+LUT4        ---     0.166              D to Z              i22454_4_lut
+Route         1   e 1.020                                  n37714
+LUT4        ---     0.166              D to Z              i22469_4_lut
+Route         1   e 1.020                                  n37729
+LUT4        ---     0.166              B to Z              i25944_4_lut_4_lut
+Route         1   e 1.020                                  n37746
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1761_i64
+Route        18   e 1.598                                  n64_adj_328
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7629_1
+Route         1   e 0.020                                  n32521
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7629_3
+Route         1   e 0.020                                  n32522
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7629_5
+Route         1   e 0.020                                  n32523
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7629_7
+Route         3   e 1.339                                  n2870
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1862_i45_2_lut_rep_1011
+Route         2   e 1.158                                  n42710
+LUT4        ---     0.166              A to Z              i22501_4_lut
+Route         1   e 1.020                                  n37761
+LUT4        ---     0.166              D to Z              i22514_4_lut
+Route         1   e 1.020                                  n37774
+LUT4        ---     0.166              B to Z              i22533_4_lut_4_lut
+Route         1   e 1.020                                  n37793
+LUT4        ---     0.166              D to Z              i25931_4_lut
+Route         1   e 1.020                                  n37808
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1862_i64
+Route        19   e 1.608                                  n64_adj_343
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7630_1
+Route         1   e 0.020                                  n32532
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7630_3
+Route         1   e 0.020                                  n32533
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7630_5
+Route         2   e 1.258                                  n3020
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1961_i39_2_lut
+Route         2   e 1.158                                  n39_adj_346
+LUT4        ---     0.166              A to Z              i22559_4_lut
+Route         1   e 1.020                                  n37819
+LUT4        ---     0.166              D to Z              i22570_4_lut
+Route         1   e 1.020                                  n37830
+LUT4        ---     0.166              D to Z              i22583_4_lut
+Route         1   e 1.020                                  n37843
+LUT4        ---     0.166              B to Z              i22604_4_lut_4_lut
+Route         1   e 1.020                                  n37864
+LUT4        ---     0.166              B to Z              i25919_4_lut_4_lut
+Route         1   e 1.020                                  n37879
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1961_i64
+Route        20   e 1.619                                  n64_adj_360
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7631_1
+Route         1   e 0.020                                  n32544
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7631_3
+Route         1   e 0.020                                  n32545
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7631_5
+Route         1   e 0.020                                  n32546
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7631_7
+Route         3   e 1.339                                  n3164
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2058_i39_2_lut_rep_987
+Route         1   e 1.020                                  n42686
+LUT4        ---     0.166              A to Z              i22635_4_lut
+Route         1   e 1.020                                  n37895
+LUT4        ---     0.166              D to Z              i22648_4_lut
+Route         1   e 1.020                                  n37908
+LUT4        ---     0.166              D to Z              i22663_4_lut
+Route         1   e 1.020                                  n37923
+LUT4        ---     0.166              B to Z              i22680_4_lut_4_lut
+Route         1   e 1.020                                  n37940
+LUT4        ---     0.166              B to Z              i25899_4_lut_4_lut
+Route         1   e 1.020                                  n37961
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_2058_i64
+Route        21   e 1.628                                  n64_adj_378
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7632_1
+Route         1   e 0.020                                  n32556
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7632_3
+Route         1   e 0.020                                  n32557
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7632_5
+Route         1   e 0.020                                  n32558
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7632_7
+Route         2   e 1.258                                  n3306
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2153_i37_2_lut
+Route         2   e 1.158                                  n37_adj_384
+LUT4        ---     0.166              A to Z              i22715_4_lut
+Route         1   e 1.020                                  n37975
+LUT4        ---     0.166              D to Z              i22728_4_lut
+Route         1   e 1.020                                  n37988
+LUT4        ---     0.166              D to Z              i22743_4_lut
+Route         1   e 1.020                                  n38003
+LUT4        ---     0.166              D to Z              i22760_4_lut
+Route         1   e 1.020                                  n38020
+LUT4        ---     0.166              D to Z              i22781_4_lut
+Route         1   e 1.020                                  n38041
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2153_i64_4_lut
+Route        22   e 1.638                                  n64_adj_399
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7633_1
+Route         1   e 0.020                                  n32569
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7633_3
+Route         1   e 0.020                                  n32570
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7633_5
+Route         1   e 0.020                                  n32571
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7633_7
+Route         3   e 1.339                                  n3444
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2246_i37_2_lut_rep_962
+Route         2   e 1.158                                  n42661
+LUT4        ---     0.166              A to Z              i22807_4_lut
+Route         1   e 1.020                                  n38067
+LUT4        ---     0.166              D to Z              i22820_4_lut
+Route         1   e 1.020                                  n38080
+LUT4        ---     0.166              D to Z              i22839_4_lut
+Route         1   e 1.020                                  n38099
+LUT4        ---     0.166              D to Z              i22854_4_lut
+Route         1   e 1.020                                  n38114
+LUT4        ---     0.166              D to Z              i22877_4_lut
+Route         1   e 1.020                                  n38137
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2246_i64_4_lut
+Route        23   e 1.647                                  n64_adj_421
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7634_1
+Route         1   e 0.020                                  n32582
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7634_3
+Route         1   e 0.020                                  n32583
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7634_5
+Route         2   e 1.258                                  n3582
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2337_i31_2_lut
+Route         2   e 1.158                                  n31_adj_425
+LUT4        ---     0.166              A to Z              i22899_4_lut
+Route         1   e 1.020                                  n38159
+LUT4        ---     0.166              D to Z              i22910_4_lut
+Route         1   e 1.020                                  n38170
+LUT4        ---     0.166              D to Z              i22923_4_lut
+Route         1   e 1.020                                  n38183
+LUT4        ---     0.166              D to Z              i22944_4_lut
+Route         1   e 1.020                                  n38204
+LUT4        ---     0.166              D to Z              i22959_4_lut
+Route         1   e 1.020                                  n38219
+LUT4        ---     0.166              D to Z              i22984_4_lut
+Route         1   e 1.020                                  n38244
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2337_i64_4_lut
+Route        24   e 1.655                                  n64_adj_444
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7635_1
+Route         1   e 0.020                                  n32596
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7635_3
+Route         1   e 0.020                                  n32597
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7635_5
+Route         1   e 0.020                                  n32598
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7635_7
+Route         3   e 1.339                                  n3714
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2426_i31_2_lut_rep_934
+Route         1   e 1.020                                  n42633
+LUT4        ---     0.166              A to Z              i23009_4_lut
+Route         1   e 1.020                                  n38269
+LUT4        ---     0.166              D to Z              i23022_4_lut
+Route         1   e 1.020                                  n38282
+LUT4        ---     0.166              D to Z              i23037_4_lut
+Route         1   e 1.020                                  n38297
+LUT4        ---     0.166              D to Z              i23054_4_lut
+Route         1   e 1.020                                  n38314
+LUT4        ---     0.166              D to Z              i23075_4_lut
+Route         1   e 1.020                                  n38335
+LUT4        ---     0.166              D to Z              i23100_4_lut
+Route         1   e 1.020                                  n38360
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2426_i64_4_lut
+Route        25   e 1.663                                  n64_adj_469
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7636_1
+Route         1   e 0.020                                  n32610
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7636_3
+Route         1   e 0.020                                  n32611
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7636_5
+Route         1   e 0.020                                  n32612
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7636_7
+Route         4   e 1.397                                  n3843
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2513_i31_2_lut_rep_918
+Route         1   e 1.020                                  n42617
+LUT4        ---     0.166              A to Z              i23122_4_lut
+Route         1   e 1.020                                  n38382
+LUT4        ---     0.166              D to Z              i23135_4_lut
+Route         1   e 1.020                                  n38395
+LUT4        ---     0.166              B to Z              i23154_4_lut_4_lut
+Route         1   e 1.020                                  n38414
+LUT4        ---     0.166              D to Z              i23169_4_lut
+Route         1   e 1.020                                  n38429
+LUT4        ---     0.166              D to Z              i23192_4_lut
+Route         1   e 1.020                                  n38452
+LUT4        ---     0.166              B to Z              i23219_4_lut_4_lut
+Route         1   e 1.020                                  n38479
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2513_i64_4_lut
+Route        26   e 1.671                                  n64_adj_493
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7637_1
+Route         1   e 0.020                                  n32625
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7637_3
+Route         1   e 0.020                                  n32626
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7637_5
+Route         2   e 1.258                                  n3972
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2598_i25_2_lut
+Route         2   e 1.158                                  n25_adj_497
+LUT4        ---     0.166              A to Z              i23231_4_lut
+Route         1   e 1.020                                  n38491
+LUT4        ---     0.166              D to Z              i23242_4_lut
+Route         1   e 1.020                                  n38502
+LUT4        ---     0.166              D to Z              i23255_4_lut
+Route         1   e 1.020                                  n38515
+LUT4        ---     0.166              D to Z              i23276_4_lut
+Route         1   e 1.020                                  n38536
+LUT4        ---     0.166              D to Z              i23291_4_lut
+Route         1   e 1.020                                  n38551
+LUT4        ---     0.166              D to Z              i23316_4_lut
+Route         1   e 1.020                                  n38576
+LUT4        ---     0.166              B to Z              i23337_4_lut_4_lut
+Route         1   e 1.020                                  n38597
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2598_i64_4_lut
+Route        27   e 1.679                                  n64_adj_520
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7638_1
+Route         1   e 0.020                                  n32640
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7638_3
+Route         1   e 0.020                                  n32641
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7638_5
+Route         1   e 0.020                                  n32642
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7638_7
+Route         3   e 1.339                                  n4095
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2681_i25_2_lut_rep_883
+Route         1   e 1.020                                  n42582
+LUT4        ---     0.166              A to Z              i23356_4_lut
+Route         1   e 1.020                                  n38616
+LUT4        ---     0.166              D to Z              i23369_4_lut
+Route         1   e 1.020                                  n38629
+LUT4        ---     0.166              D to Z              i23384_4_lut
+Route         1   e 1.020                                  n38644
+LUT4        ---     0.166              D to Z              i23401_4_lut
+Route         1   e 1.020                                  n38661
+LUT4        ---     0.166              D to Z              i23422_4_lut
+Route         1   e 1.020                                  n38682
+LUT4        ---     0.166              B to Z              i23447_4_lut_4_lut
+Route         1   e 1.020                                  n38707
+LUT4        ---     0.166              D to Z              i23464_4_lut
+Route         1   e 1.020                                  n38724
+LUT4        ---     0.166              B to Z              div_4016_LessThan_2681_i64_4_lut_4_lut
+Route        28   e 1.686                                  n64_adj_549
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7639_1
+Route         1   e 0.020                                  n32656
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7639_3
+Route         1   e 0.020                                  n32657
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7639_5
+Route         1   e 0.020                                  n32658
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7639_7
+Route         4   e 1.397                                  n4215
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2762_i25_2_lut_rep_867
+Route         1   e 1.020                                  n42566
+LUT4        ---     0.166              A to Z              i23490_4_lut
+Route         1   e 1.020                                  n38750
+LUT4        ---     0.166              D to Z              i23503_4_lut
+Route         1   e 1.020                                  n38763
+LUT4        ---     0.166              D to Z              i23522_4_lut
+Route         1   e 1.020                                  n38782
+LUT4        ---     0.166              D to Z              i23537_4_lut
+Route         1   e 1.020                                  n38797
+LUT4        ---     0.166              D to Z              i23560_4_lut
+Route         1   e 1.020                                  n38820
+LUT4        ---     0.166              B to Z              i23587_4_lut_4_lut
+Route         1   e 1.020                                  n38847
+LUT4        ---     0.166              D to Z              i23602_4_lut
+Route         1   e 1.020                                  n38862
+LUT4        ---     0.166              B to Z              div_4016_LessThan_2762_i64_4_lut_4_lut
+Route        29   e 1.693                                  n64_adj_578
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7640_1
+Route         1   e 0.020                                  n32672
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7640_3
+Route         1   e 0.020                                  n32673
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7640_5
+Route         2   e 1.258                                  n4335
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2841_i19_2_lut
+Route         2   e 1.158                                  n19_adj_582
+LUT4        ---     0.166              A to Z              i23624_4_lut
+Route         1   e 1.020                                  n38884
+LUT4        ---     0.166              D to Z              i23635_4_lut
+Route         1   e 1.020                                  n38895
+LUT4        ---     0.166              D to Z              i23648_4_lut
+Route         1   e 1.020                                  n38908
+LUT4        ---     0.166              D to Z              i23669_4_lut
+Route         1   e 1.020                                  n38929
+LUT4        ---     0.166              D to Z              i23684_4_lut
+Route         1   e 1.020                                  n38944
+LUT4        ---     0.166              D to Z              i23709_4_lut
+Route         1   e 1.020                                  n38969
+LUT4        ---     0.166              B to Z              i23730_4_lut_4_lut
+Route         1   e 1.020                                  n38990
+LUT4        ---     0.166              B to Z              i23751_4_lut_4_lut
+Route         1   e 1.020                                  n39011
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2841_i64_4_lut
+Route        30   e 1.700                                  n64_adj_608
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7641_1
+Route         1   e 0.020                                  n32689
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7641_3
+Route         1   e 0.020                                  n32690
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7641_5
+Route         1   e 0.020                                  n32691
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7641_7
+Route         3   e 1.339                                  n4449
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2918_i19_2_lut_rep_828
+Route         1   e 1.020                                  n42527
+LUT4        ---     0.166              A to Z              i23778_4_lut
+Route         1   e 1.020                                  n39038
+LUT4        ---     0.166              D to Z              i23791_4_lut
+Route         1   e 1.020                                  n39051
+LUT4        ---     0.166              D to Z              i23806_4_lut
+Route         1   e 1.020                                  n39066
+LUT4        ---     0.166              D to Z              i23823_4_lut
+Route         1   e 1.020                                  n39083
+LUT4        ---     0.166              D to Z              i23844_4_lut
+Route         1   e 1.020                                  n39104
+LUT4        ---     0.166              B to Z              i23869_4_lut_4_lut
+Route         1   e 1.020                                  n39129
+LUT4        ---     0.166              D to Z              i23886_4_lut
+Route         1   e 1.020                                  n39146
+LUT4        ---     0.166              B to Z              i23911_4_lut_4_lut
+Route         1   e 1.020                                  n39171
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2918_i64_4_lut
+Route        31   e 1.706                                  n64_adj_640
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7642_1
+Route         1   e 0.020                                  n32706
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7642_3
+Route         1   e 0.020                                  n32707
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7642_5
+Route         1   e 0.020                                  n32708
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7642_7
+Route         4   e 1.397                                  n4560
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2993_i19_2_lut_rep_808
+Route         1   e 1.020                                  n42507
+LUT4        ---     0.166              A to Z              i23939_4_lut
+Route         1   e 1.020                                  n39199
+LUT4        ---     0.166              D to Z              i23952_4_lut
+Route         1   e 1.020                                  n39212
+LUT4        ---     0.166              D to Z              i23971_4_lut
+Route         1   e 1.020                                  n39231
+LUT4        ---     0.166              D to Z              i23986_4_lut
+Route         1   e 1.020                                  n39246
+LUT4        ---     0.166              D to Z              i24009_4_lut
+Route         1   e 1.020                                  n39269
+LUT4        ---     0.166              B to Z              i24036_4_lut_4_lut
+Route         1   e 1.020                                  n39296
+LUT4        ---     0.166              D to Z              i24051_4_lut
+Route         1   e 1.020                                  n39311
+LUT4        ---     0.166              C to Z              i24080_4_lut_4_lut_4_lut
+Route         1   e 1.020                                  n39340
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2993_i64_4_lut
+Route        32   e 1.713                                  n64_adj_670
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7643_1
+Route         1   e 0.020                                  n32724
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7643_3
+Route         1   e 0.020                                  n32725
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7643_5
+Route         2   e 1.258                                  n4671
+LUT4        ---     0.166              A to Z              div_4016_LessThan_3066_i13_2_lut
+Route         2   e 1.158                                  n13_adj_674
+LUT4        ---     0.166              A to Z              i24100_4_lut
+Route         1   e 1.020                                  n39360
+LUT4        ---     0.166              D to Z              i24111_4_lut
+Route         1   e 1.020                                  n39371
+LUT4        ---     0.166              D to Z              i24124_4_lut
+Route         1   e 1.020                                  n39384
+LUT4        ---     0.166              D to Z              i24145_4_lut
+Route         1   e 1.020                                  n39405
+LUT4        ---     0.166              D to Z              i24160_4_lut
+Route         1   e 1.020                                  n39420
+LUT4        ---     0.166              D to Z              i24185_4_lut
+Route         1   e 1.020                                  n39445
+LUT4        ---     0.166              B to Z              i24206_4_lut_4_lut
+Route         1   e 1.020                                  n39466
+LUT4        ---     0.166              B to Z              i24227_4_lut_4_lut
+Route         1   e 1.020                                  n39487
+LUT4        ---     0.166              B to Z              i24254_4_lut_4_lut
+Route         1   e 1.020                                  n39514
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3066_i64_4_lut
+Route        33   e 1.719                                  n64_adj_703
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7644_1
+Route         1   e 0.020                                  n32742
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7644_3
+Route         1   e 0.020                                  n32743
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7644_5
+Route         1   e 0.020                                  n32744
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7644_7
+Route         5   e 1.441                                  n4775
+LUT4        ---     0.166              A to Z              div_4016_LessThan_3137_i15_2_lut_rep_764
+Route         1   e 1.020                                  n42463
+LUT4        ---     0.166              A to Z              i24284_4_lut
+Route         1   e 1.020                                  n39544
+LUT4        ---     0.166              D to Z              i24297_4_lut
+Route         1   e 1.020                                  n39557
+LUT4        ---     0.166              D to Z              i24316_4_lut
+Route         1   e 1.020                                  n39576
+LUT4        ---     0.166              D to Z              i24331_4_lut
+Route         1   e 1.020                                  n39591
+LUT4        ---     0.166              D to Z              i24354_4_lut
+Route         1   e 1.020                                  n39614
+LUT4        ---     0.166              D to Z              i24381_4_lut
+Route         1   e 1.020                                  n39641
+LUT4        ---     0.166              D to Z              i24396_4_lut
+Route         1   e 1.020                                  n39656
+LUT4        ---     0.166              D to Z              i24425_4_lut
+Route         1   e 1.020                                  n39685
+LUT4        ---     0.166              D to Z              i25772_4_lut
+Route         1   e 1.020                                  n39712
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_3137_i64
+Route         2   e 1.158                                  n64_adj_737
+LUT4        ---     0.166              C to Z              i8027_2_lut_3_lut
+Route        33   e 1.719                                  n4783
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3206_i11_4_lut
+Route         2   e 1.158                                  n11_adj_745
+LUT4        ---     0.166              A to Z              i24468_4_lut
+Route         1   e 1.020                                  n39728
+LUT4        ---     0.166              D to Z              i24481_4_lut
+Route         1   e 1.020                                  n39741
+LUT4        ---     0.166              D to Z              i24496_4_lut
+Route         1   e 1.020                                  n39756
+LUT4        ---     0.166              D to Z              i24513_4_lut
+Route         1   e 1.020                                  n39773
+LUT4        ---     0.166              D to Z              i24534_4_lut
+Route         1   e 1.020                                  n39794
+LUT4        ---     0.166              B to Z              i24727_4_lut_4_lut
+Route         2   e 1.158                                  n39987
+LUT4        ---     0.166              D to Z              i24576_4_lut
+Route         1   e 1.020                                  n39836
+LUT4        ---     0.166              B to Z              i24601_4_lut_4_lut
+Route         1   e 1.020                                  n39861
+LUT4        ---     0.166              D to Z              i24628_4_lut
+Route         1   e 1.020                                  n39888
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3206_i62_4_lut
+Route         1   e 1.020                                  n62_adj_794
+A1_TO_FCO   ---     0.329           D[2] to COUT           add_7646_1
+Route         1   e 0.020                                  n32791
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_3
+Route         1   e 0.020                                  n32792
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_5
+Route         1   e 0.020                                  n32793
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_7
+Route         1   e 0.020                                  n32794
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_9
+Route         1   e 0.020                                  n32795
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_11
+Route         1   e 0.020                                  n32796
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_13
+Route         1   e 0.020                                  n32797
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_15
+Route         1   e 0.020                                  n32798
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_17
+Route         1   e 0.020                                  n32799
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_19
+Route         1   e 0.020                                  n32800
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_21
+Route         1   e 0.020                                  n32801
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_23
+Route         1   e 0.020                                  n32802
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_25
+Route         1   e 0.020                                  n32803
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_27
+Route         1   e 0.020                                  n32804
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_29
+Route         1   e 0.020                                  n32805
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_31
+Route         1   e 0.020                                  n32806
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7646_33
+Route         1   e 1.020                                  n22275
+LUT4        ---     0.166              B to Z              div_4016_i3311_4_lut
+Route         4   e 1.297                                  n5494
+                  --------
+                  342.401  (18.8% logic, 81.2% route), 337 logic levels.
+
+
+Error:  The following path violates requirements by 337.226ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             U[15]__i448  (from clk_c +)
+   Destination:    FD1P3IX    D              x[3]__i128  (to clk_c +)
+
+   Delay:                 342.401ns  (18.8% logic, 81.2% route), 337 logic levels.
+
+ Constraint Details:
+
+    342.401ns data_path U[15]__i448 to x[3]__i128 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 337.226ns
+
+ Path Details: U[15]__i448 to x[3]__i128
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              U[15]__i448 (from clk_c)
+Route        12   e 1.616                                  U[2][31]
+MuPd        ---     2.720          A[18] to P[36]          lat_mult_0
+Route         1   e 1.020                                  n18543
+AluPd       ---     2.037         MB[36] to R[54]          lat_alu_3
+Route         3   e 1.239                                  n194_adj_114
+AluPd       ---     2.037        CIN[54] to R[54]          lat_alu_4
+Route         1   e 1.020                                  n176_adj_135
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_7035_add_4_add_1_add_1_20
+Route         1   e 0.020                                  n32768
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_22
+Route         1   e 0.020                                  n32769
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_7035_add_4_add_1_add_1_24
+Route         1   e 0.020                                  n32770
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_7035_add_4_add_1_add_1_26
+Route         1   e 0.020                                  n10
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_17618_25
+Route         1   e 0.020                                  n32819
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_17618_27
+Route         1   e 0.020                                  n32820
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_17618_29
+Route         1   e 0.020                                  n32821
+FCI_TO_F    ---     0.322            CIN to S[2]           add_17618_31
+Route         1   e 1.020                                  n32356
+LUT4        ---     0.166              D to Z              mux_6984_i30_3_lut_4_lut
+Route         1   e 1.020                                  n25248
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_7038_add_4_32
+Route         1   e 0.020                                  n32422
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_7038_add_4_34
+Route         1   e 1.020                                  n70_adj_87
+LUT4        ---     0.166              A to Z              mux_4010_i32_4_lut
+Route        45   e 1.781                                  n5325
+A1_TO_F     ---     0.166           A[2] to S[2]           div_4016_unary_minus_2_add_3_33
+Route         3   e 1.339                                  n2
+LUT4        ---     0.166              A to Z              i10575_2_lut_rep_1081
+Route         1   e 1.020                                  n42780
+LUT4        ---     0.166              B to Z              i1_rep_1_4_lut
+Route         2   e 1.158                                  n35974
+LUT4        ---     0.166              C to Z              div_4016_LessThan_266_i64_4_lut
+Route         4   e 1.297                                  n64_adj_799
+LUT4        ---     0.166              A to Z              div_4016_i363_3_lut_4_lut
+Route         3   e 1.239                                  n678
+LUT4        ---     0.166              C to Z              div_4016_LessThan_393_i62_4_lut
+Route         2   e 1.158                                  n62_adj_798
+LUT4        ---     0.166              C to Z              div_4016_LessThan_393_i64_3_lut_rep_1077_3_lut
+Route         3   e 1.239                                  n42776
+LUT4        ---     0.166              A to Z              div_4016_i489_3_lut_4_lut
+Route         4   e 1.297                                  n865
+LUT4        ---     0.166              C to Z              div_4016_LessThan_518_i60_4_lut
+Route         1   e 0.020                                  n60_adj_795
+MUXL5       ---     0.116           BLUT to Z              div_4016_LessThan_518_i64
+Route         2   e 1.158                                  n64_adj_797
+LUT4        ---     0.166              B to Z              i1_4_lut_adj_137
+Route         5   e 1.341                                  n36422
+LUT4        ---     0.166              D to Z              div_4016_i611_4_lut_4_lut
+Route         4   e 1.297                                  n1047
+LUT4        ---     0.166              A to Z              div_4016_LessThan_641_i61_2_lut_rep_1072
+Route         1   e 1.020                                  n42771
+LUT4        ---     0.166              C to Z              i25878_3_lut_4_lut
+Route         1   e 0.020                                  n37417
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_641_i64
+Route         3   e 1.239                                  n64
+LUT4        ---     0.166              A to Z              i1_2_lut_adj_136
+Route         5   e 1.341                                  n1078
+LUT4        ---     0.166              D to Z              div_4016_i731_4_lut_4_lut
+Route         3   e 1.239                                  n35972
+LUT4        ---     0.166              A to Z              div_4016_LessThan_762_i63_2_lut_rep_1067
+Route         1   e 1.020                                  n42766
+LUT4        ---     0.166              A to Z              i25864_4_lut
+Route         1   e 0.020                                  n37427
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_762_i64
+Route         9   e 1.459                                  n64_adj_241
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7620_1
+Route         1   e 0.020                                  n32442
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7620_3
+Route         1   e 0.020                                  n32443
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7620_5
+Route         1   e 0.020                                  n32444
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7620_7
+Route         3   e 1.339                                  n1403
+LUT4        ---     0.166              A to Z              div_4016_LessThan_881_i63_2_lut_rep_1065
+Route         2   e 1.158                                  n42764
+LUT4        ---     0.166              A to Z              i25852_4_lut
+Route         1   e 0.020                                  n37440
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_881_i64
+Route        10   e 1.480                                  n64_adj_246
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7621_1
+Route         1   e 0.020                                  n32449
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7621_3
+Route         1   e 0.020                                  n32450
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7621_5
+Route         1   e 0.020                                  n32451
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7621_7
+Route         3   e 1.339                                  n1578
+LUT4        ---     0.166              A to Z              div_4016_LessThan_998_i61_2_lut_rep_1063
+Route         2   e 1.158                                  n42762
+LUT4        ---     0.166              D to Z              i25831_3_lut_4_lut
+Route         1   e 0.020                                  n37462
+MOFX0       ---     0.179             C0 to Z              div_4016_LessThan_998_i62
+Route         1   e 1.020                                  n62_adj_251
+LUT4        ---     0.166              B to Z              div_4016_LessThan_998_i64_4_lut
+Route        11   e 1.499                                  n64_adj_252
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7622_1
+Route         1   e 0.020                                  n32456
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7622_3
+Route         1   e 0.020                                  n32457
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7622_5
+Route         3   e 1.339                                  n1753
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1113_i53_2_lut_rep_1060
+Route         1   e 1.020                                  n42759
+LUT4        ---     0.166              B to Z              i22209_4_lut
+Route         1   e 1.020                                  n37469
+LUT4        ---     0.166              D to Z              i22220_4_lut
+Route         1   e 1.020                                  n37480
+LUT4        ---     0.166              D to Z              div_4016_LessThan_1113_i64_4_lut
+Route        12   e 1.516                                  n64_adj_260
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7623_1
+Route         1   e 0.020                                  n32464
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7623_3
+Route         1   e 0.020                                  n32465
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7623_5
+Route         1   e 0.020                                  n32466
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7623_7
+Route         2   e 1.258                                  n1920
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1226_i55_2_lut
+Route         2   e 1.158                                  n55_adj_264
+LUT4        ---     0.166              A to Z              i22235_4_lut
+Route         1   e 1.020                                  n37495
+LUT4        ---     0.166              D to Z              i22248_4_lut
+Route         1   e 1.020                                  n37508
+LUT4        ---     0.166              D to Z              div_4016_LessThan_1226_i64_4_lut
+Route        13   e 1.532                                  n64_adj_269
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7624_1
+Route         1   e 0.020                                  n32472
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7624_3
+Route         1   e 0.020                                  n32473
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7624_5
+Route         2   e 1.258                                  n2087
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1337_i51_2_lut
+Route         2   e 1.158                                  n51
+LUT4        ---     0.166              A to Z              i22260_4_lut
+Route         1   e 1.020                                  n37520
+LUT4        ---     0.166              D to Z              i22271_4_lut
+Route         1   e 1.020                                  n37531
+LUT4        ---     0.166              D to Z              i25953_4_lut
+Route         1   e 1.020                                  n37544
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1337_i64
+Route        14   e 1.547                                  n64_adj_278
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7625_1
+Route         1   e 0.020                                  n32481
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7625_3
+Route         1   e 0.020                                  n32482
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7625_5
+Route         1   e 0.020                                  n32483
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7625_7
+Route         2   e 1.258                                  n2249
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1446_i51_2_lut
+Route         2   e 1.158                                  n51_adj_282
+LUT4        ---     0.166              A to Z              i22298_4_lut
+Route         1   e 1.020                                  n37558
+LUT4        ---     0.166              D to Z              i22311_4_lut
+Route         1   e 1.020                                  n37571
+LUT4        ---     0.166              D to Z              i25941_4_lut
+Route         1   e 1.020                                  n37586
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1446_i64
+Route        15   e 1.561                                  n64_adj_289
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7626_1
+Route         1   e 0.020                                  n32490
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7626_3
+Route         1   e 0.020                                  n32491
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7626_5
+Route         1   e 0.020                                  n32492
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7626_7
+Route         3   e 1.339                                  n2408
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1553_i51_2_lut_rep_1037
+Route         2   e 1.158                                  n42736
+LUT4        ---     0.166              A to Z              i22343_4_lut
+Route         1   e 1.020                                  n37603
+LUT4        ---     0.166              D to Z              i22356_4_lut
+Route         1   e 1.020                                  n37616
+LUT4        ---     0.166              D to Z              i25816_4_lut
+Route         1   e 1.020                                  n37635
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1553_i64
+Route        16   e 1.574                                  n64_adj_301
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7627_1
+Route         1   e 0.020                                  n32500
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7627_3
+Route         1   e 0.020                                  n32501
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7627_5
+Route         2   e 1.258                                  n2567
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1658_i45_2_lut
+Route         2   e 1.158                                  n45_adj_304
+LUT4        ---     0.166              A to Z              i22386_4_lut
+Route         1   e 1.020                                  n37646
+LUT4        ---     0.166              D to Z              i22397_4_lut
+Route         1   e 1.020                                  n37657
+LUT4        ---     0.166              D to Z              i22410_4_lut
+Route         1   e 1.020                                  n37670
+LUT4        ---     0.166              B to Z              i25958_4_lut_4_lut
+Route         1   e 1.020                                  n37691
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1658_i64
+Route        17   e 1.586                                  n64_adj_315
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7628_1
+Route         1   e 0.020                                  n32510
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7628_3
+Route         1   e 0.020                                  n32511
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7628_5
+Route         1   e 0.020                                  n32512
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7628_7
+Route         3   e 1.339                                  n2720
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1761_i45_2_lut_rep_1019
+Route         1   e 1.020                                  n42718
+LUT4        ---     0.166              A to Z              i22441_4_lut
+Route         1   e 1.020                                  n37701
+LUT4        ---     0.166              D to Z              i22454_4_lut
+Route         1   e 1.020                                  n37714
+LUT4        ---     0.166              D to Z              i22469_4_lut
+Route         1   e 1.020                                  n37729
+LUT4        ---     0.166              B to Z              i25944_4_lut_4_lut
+Route         1   e 1.020                                  n37746
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1761_i64
+Route        18   e 1.598                                  n64_adj_328
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7629_1
+Route         1   e 0.020                                  n32521
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7629_3
+Route         1   e 0.020                                  n32522
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7629_5
+Route         1   e 0.020                                  n32523
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7629_7
+Route         3   e 1.339                                  n2870
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1862_i45_2_lut_rep_1011
+Route         2   e 1.158                                  n42710
+LUT4        ---     0.166              A to Z              i22501_4_lut
+Route         1   e 1.020                                  n37761
+LUT4        ---     0.166              D to Z              i22514_4_lut
+Route         1   e 1.020                                  n37774
+LUT4        ---     0.166              B to Z              i22533_4_lut_4_lut
+Route         1   e 1.020                                  n37793
+LUT4        ---     0.166              D to Z              i25931_4_lut
+Route         1   e 1.020                                  n37808
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1862_i64
+Route        19   e 1.608                                  n64_adj_343
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7630_1
+Route         1   e 0.020                                  n32532
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7630_3
+Route         1   e 0.020                                  n32533
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7630_5
+Route         2   e 1.258                                  n3020
+LUT4        ---     0.166              A to Z              div_4016_LessThan_1961_i39_2_lut
+Route         2   e 1.158                                  n39_adj_346
+LUT4        ---     0.166              A to Z              i22559_4_lut
+Route         1   e 1.020                                  n37819
+LUT4        ---     0.166              D to Z              i22570_4_lut
+Route         1   e 1.020                                  n37830
+LUT4        ---     0.166              D to Z              i22583_4_lut
+Route         1   e 1.020                                  n37843
+LUT4        ---     0.166              B to Z              i22604_4_lut_4_lut
+Route         1   e 1.020                                  n37864
+LUT4        ---     0.166              B to Z              i25919_4_lut_4_lut
+Route         1   e 1.020                                  n37879
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_1961_i64
+Route        20   e 1.619                                  n64_adj_360
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7631_1
+Route         1   e 0.020                                  n32544
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7631_3
+Route         1   e 0.020                                  n32545
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7631_5
+Route         1   e 0.020                                  n32546
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7631_7
+Route         3   e 1.339                                  n3164
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2058_i39_2_lut_rep_987
+Route         1   e 1.020                                  n42686
+LUT4        ---     0.166              A to Z              i22635_4_lut
+Route         1   e 1.020                                  n37895
+LUT4        ---     0.166              D to Z              i22648_4_lut
+Route         1   e 1.020                                  n37908
+LUT4        ---     0.166              D to Z              i22663_4_lut
+Route         1   e 1.020                                  n37923
+LUT4        ---     0.166              B to Z              i22680_4_lut_4_lut
+Route         1   e 1.020                                  n37940
+LUT4        ---     0.166              B to Z              i25899_4_lut_4_lut
+Route         1   e 1.020                                  n37961
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_2058_i64
+Route        21   e 1.628                                  n64_adj_378
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7632_1
+Route         1   e 0.020                                  n32556
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7632_3
+Route         1   e 0.020                                  n32557
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7632_5
+Route         1   e 0.020                                  n32558
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7632_7
+Route         2   e 1.258                                  n3306
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2153_i37_2_lut
+Route         2   e 1.158                                  n37_adj_384
+LUT4        ---     0.166              A to Z              i22715_4_lut
+Route         1   e 1.020                                  n37975
+LUT4        ---     0.166              D to Z              i22728_4_lut
+Route         1   e 1.020                                  n37988
+LUT4        ---     0.166              D to Z              i22743_4_lut
+Route         1   e 1.020                                  n38003
+LUT4        ---     0.166              D to Z              i22760_4_lut
+Route         1   e 1.020                                  n38020
+LUT4        ---     0.166              D to Z              i22781_4_lut
+Route         1   e 1.020                                  n38041
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2153_i64_4_lut
+Route        22   e 1.638                                  n64_adj_399
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7633_1
+Route         1   e 0.020                                  n32569
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7633_3
+Route         1   e 0.020                                  n32570
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7633_5
+Route         1   e 0.020                                  n32571
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7633_7
+Route         3   e 1.339                                  n3444
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2246_i37_2_lut_rep_962
+Route         2   e 1.158                                  n42661
+LUT4        ---     0.166              A to Z              i22807_4_lut
+Route         1   e 1.020                                  n38067
+LUT4        ---     0.166              D to Z              i22820_4_lut
+Route         1   e 1.020                                  n38080
+LUT4        ---     0.166              D to Z              i22839_4_lut
+Route         1   e 1.020                                  n38099
+LUT4        ---     0.166              D to Z              i22854_4_lut
+Route         1   e 1.020                                  n38114
+LUT4        ---     0.166              D to Z              i22877_4_lut
+Route         1   e 1.020                                  n38137
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2246_i64_4_lut
+Route        23   e 1.647                                  n64_adj_421
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7634_1
+Route         1   e 0.020                                  n32582
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7634_3
+Route         1   e 0.020                                  n32583
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7634_5
+Route         2   e 1.258                                  n3582
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2337_i31_2_lut
+Route         2   e 1.158                                  n31_adj_425
+LUT4        ---     0.166              A to Z              i22899_4_lut
+Route         1   e 1.020                                  n38159
+LUT4        ---     0.166              D to Z              i22910_4_lut
+Route         1   e 1.020                                  n38170
+LUT4        ---     0.166              D to Z              i22923_4_lut
+Route         1   e 1.020                                  n38183
+LUT4        ---     0.166              D to Z              i22944_4_lut
+Route         1   e 1.020                                  n38204
+LUT4        ---     0.166              D to Z              i22959_4_lut
+Route         1   e 1.020                                  n38219
+LUT4        ---     0.166              D to Z              i22984_4_lut
+Route         1   e 1.020                                  n38244
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2337_i64_4_lut
+Route        24   e 1.655                                  n64_adj_444
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7635_1
+Route         1   e 0.020                                  n32596
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7635_3
+Route         1   e 0.020                                  n32597
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7635_5
+Route         1   e 0.020                                  n32598
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7635_7
+Route         3   e 1.339                                  n3714
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2426_i31_2_lut_rep_934
+Route         1   e 1.020                                  n42633
+LUT4        ---     0.166              A to Z              i23009_4_lut
+Route         1   e 1.020                                  n38269
+LUT4        ---     0.166              D to Z              i23022_4_lut
+Route         1   e 1.020                                  n38282
+LUT4        ---     0.166              D to Z              i23037_4_lut
+Route         1   e 1.020                                  n38297
+LUT4        ---     0.166              D to Z              i23054_4_lut
+Route         1   e 1.020                                  n38314
+LUT4        ---     0.166              D to Z              i23075_4_lut
+Route         1   e 1.020                                  n38335
+LUT4        ---     0.166              D to Z              i23100_4_lut
+Route         1   e 1.020                                  n38360
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2426_i64_4_lut
+Route        25   e 1.663                                  n64_adj_469
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7636_1
+Route         1   e 0.020                                  n32610
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7636_3
+Route         1   e 0.020                                  n32611
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7636_5
+Route         1   e 0.020                                  n32612
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7636_7
+Route         4   e 1.397                                  n3843
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2513_i31_2_lut_rep_918
+Route         1   e 1.020                                  n42617
+LUT4        ---     0.166              A to Z              i23122_4_lut
+Route         1   e 1.020                                  n38382
+LUT4        ---     0.166              D to Z              i23135_4_lut
+Route         1   e 1.020                                  n38395
+LUT4        ---     0.166              B to Z              i23154_4_lut_4_lut
+Route         1   e 1.020                                  n38414
+LUT4        ---     0.166              D to Z              i23169_4_lut
+Route         1   e 1.020                                  n38429
+LUT4        ---     0.166              D to Z              i23192_4_lut
+Route         1   e 1.020                                  n38452
+LUT4        ---     0.166              B to Z              i23219_4_lut_4_lut
+Route         1   e 1.020                                  n38479
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2513_i64_4_lut
+Route        26   e 1.671                                  n64_adj_493
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7637_1
+Route         1   e 0.020                                  n32625
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7637_3
+Route         1   e 0.020                                  n32626
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7637_5
+Route         2   e 1.258                                  n3972
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2598_i25_2_lut
+Route         2   e 1.158                                  n25_adj_497
+LUT4        ---     0.166              A to Z              i23231_4_lut
+Route         1   e 1.020                                  n38491
+LUT4        ---     0.166              D to Z              i23242_4_lut
+Route         1   e 1.020                                  n38502
+LUT4        ---     0.166              D to Z              i23255_4_lut
+Route         1   e 1.020                                  n38515
+LUT4        ---     0.166              D to Z              i23276_4_lut
+Route         1   e 1.020                                  n38536
+LUT4        ---     0.166              D to Z              i23291_4_lut
+Route         1   e 1.020                                  n38551
+LUT4        ---     0.166              D to Z              i23316_4_lut
+Route         1   e 1.020                                  n38576
+LUT4        ---     0.166              B to Z              i23337_4_lut_4_lut
+Route         1   e 1.020                                  n38597
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2598_i64_4_lut
+Route        27   e 1.679                                  n64_adj_520
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7638_1
+Route         1   e 0.020                                  n32640
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7638_3
+Route         1   e 0.020                                  n32641
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7638_5
+Route         1   e 0.020                                  n32642
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7638_7
+Route         3   e 1.339                                  n4095
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2681_i25_2_lut_rep_883
+Route         1   e 1.020                                  n42582
+LUT4        ---     0.166              A to Z              i23356_4_lut
+Route         1   e 1.020                                  n38616
+LUT4        ---     0.166              D to Z              i23369_4_lut
+Route         1   e 1.020                                  n38629
+LUT4        ---     0.166              D to Z              i23384_4_lut
+Route         1   e 1.020                                  n38644
+LUT4        ---     0.166              D to Z              i23401_4_lut
+Route         1   e 1.020                                  n38661
+LUT4        ---     0.166              D to Z              i23422_4_lut
+Route         1   e 1.020                                  n38682
+LUT4        ---     0.166              B to Z              i23447_4_lut_4_lut
+Route         1   e 1.020                                  n38707
+LUT4        ---     0.166              D to Z              i23464_4_lut
+Route         1   e 1.020                                  n38724
+LUT4        ---     0.166              B to Z              div_4016_LessThan_2681_i64_4_lut_4_lut
+Route        28   e 1.686                                  n64_adj_549
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7639_1
+Route         1   e 0.020                                  n32656
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7639_3
+Route         1   e 0.020                                  n32657
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7639_5
+Route         1   e 0.020                                  n32658
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7639_7
+Route         4   e 1.397                                  n4215
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2762_i25_2_lut_rep_867
+Route         1   e 1.020                                  n42566
+LUT4        ---     0.166              A to Z              i23490_4_lut
+Route         1   e 1.020                                  n38750
+LUT4        ---     0.166              D to Z              i23503_4_lut
+Route         1   e 1.020                                  n38763
+LUT4        ---     0.166              D to Z              i23522_4_lut
+Route         1   e 1.020                                  n38782
+LUT4        ---     0.166              D to Z              i23537_4_lut
+Route         1   e 1.020                                  n38797
+LUT4        ---     0.166              D to Z              i23560_4_lut
+Route         1   e 1.020                                  n38820
+LUT4        ---     0.166              B to Z              i23587_4_lut_4_lut
+Route         1   e 1.020                                  n38847
+LUT4        ---     0.166              D to Z              i23602_4_lut
+Route         1   e 1.020                                  n38862
+LUT4        ---     0.166              B to Z              div_4016_LessThan_2762_i64_4_lut_4_lut
+Route        29   e 1.693                                  n64_adj_578
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7640_1
+Route         1   e 0.020                                  n32672
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7640_3
+Route         1   e 0.020                                  n32673
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7640_5
+Route         2   e 1.258                                  n4335
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2841_i19_2_lut
+Route         2   e 1.158                                  n19_adj_582
+LUT4        ---     0.166              A to Z              i23624_4_lut
+Route         1   e 1.020                                  n38884
+LUT4        ---     0.166              D to Z              i23635_4_lut
+Route         1   e 1.020                                  n38895
+LUT4        ---     0.166              D to Z              i23648_4_lut
+Route         1   e 1.020                                  n38908
+LUT4        ---     0.166              D to Z              i23669_4_lut
+Route         1   e 1.020                                  n38929
+LUT4        ---     0.166              D to Z              i23684_4_lut
+Route         1   e 1.020                                  n38944
+LUT4        ---     0.166              D to Z              i23709_4_lut
+Route         1   e 1.020                                  n38969
+LUT4        ---     0.166              B to Z              i23730_4_lut_4_lut
+Route         1   e 1.020                                  n38990
+LUT4        ---     0.166              B to Z              i23751_4_lut_4_lut
+Route         1   e 1.020                                  n39011
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2841_i64_4_lut
+Route        30   e 1.700                                  n64_adj_608
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7641_1
+Route         1   e 0.020                                  n32689
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7641_3
+Route         1   e 0.020                                  n32690
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7641_5
+Route         1   e 0.020                                  n32691
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7641_7
+Route         3   e 1.339                                  n4449
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2918_i19_2_lut_rep_828
+Route         1   e 1.020                                  n42527
+LUT4        ---     0.166              A to Z              i23778_4_lut
+Route         1   e 1.020                                  n39038
+LUT4        ---     0.166              D to Z              i23791_4_lut
+Route         1   e 1.020                                  n39051
+LUT4        ---     0.166              D to Z              i23806_4_lut
+Route         1   e 1.020                                  n39066
+LUT4        ---     0.166              D to Z              i23823_4_lut
+Route         1   e 1.020                                  n39083
+LUT4        ---     0.166              D to Z              i23844_4_lut
+Route         1   e 1.020                                  n39104
+LUT4        ---     0.166              B to Z              i23869_4_lut_4_lut
+Route         1   e 1.020                                  n39129
+LUT4        ---     0.166              D to Z              i23886_4_lut
+Route         1   e 1.020                                  n39146
+LUT4        ---     0.166              B to Z              i23911_4_lut_4_lut
+Route         1   e 1.020                                  n39171
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2918_i64_4_lut
+Route        31   e 1.706                                  n64_adj_640
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7642_1
+Route         1   e 0.020                                  n32706
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7642_3
+Route         1   e 0.020                                  n32707
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7642_5
+Route         1   e 0.020                                  n32708
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7642_7
+Route         4   e 1.397                                  n4560
+LUT4        ---     0.166              A to Z              div_4016_LessThan_2993_i19_2_lut_rep_808
+Route         1   e 1.020                                  n42507
+LUT4        ---     0.166              A to Z              i23939_4_lut
+Route         1   e 1.020                                  n39199
+LUT4        ---     0.166              D to Z              i23952_4_lut
+Route         1   e 1.020                                  n39212
+LUT4        ---     0.166              D to Z              i23971_4_lut
+Route         1   e 1.020                                  n39231
+LUT4        ---     0.166              D to Z              i23986_4_lut
+Route         1   e 1.020                                  n39246
+LUT4        ---     0.166              D to Z              i24009_4_lut
+Route         1   e 1.020                                  n39269
+LUT4        ---     0.166              B to Z              i24036_4_lut_4_lut
+Route         1   e 1.020                                  n39296
+LUT4        ---     0.166              D to Z              i24051_4_lut
+Route         1   e 1.020                                  n39311
+LUT4        ---     0.166              C to Z              i24080_4_lut_4_lut_4_lut
+Route         1   e 1.020                                  n39340
+LUT4        ---     0.166              D to Z              div_4016_LessThan_2993_i64_4_lut
+Route        32   e 1.713                                  n64_adj_670
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7643_1
+Route         1   e 0.020                                  n32724
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7643_3
+Route         1   e 0.020                                  n32725
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7643_5
+Route         2   e 1.258                                  n4671
+LUT4        ---     0.166              A to Z              div_4016_LessThan_3066_i13_2_lut
+Route         2   e 1.158                                  n13_adj_674
+LUT4        ---     0.166              A to Z              i24100_4_lut
+Route         1   e 1.020                                  n39360
+LUT4        ---     0.166              D to Z              i24111_4_lut
+Route         1   e 1.020                                  n39371
+LUT4        ---     0.166              D to Z              i24124_4_lut
+Route         1   e 1.020                                  n39384
+LUT4        ---     0.166              D to Z              i24145_4_lut
+Route         1   e 1.020                                  n39405
+LUT4        ---     0.166              D to Z              i24160_4_lut
+Route         1   e 1.020                                  n39420
+LUT4        ---     0.166              D to Z              i24185_4_lut
+Route         1   e 1.020                                  n39445
+LUT4        ---     0.166              B to Z              i24206_4_lut_4_lut
+Route         1   e 1.020                                  n39466
+LUT4        ---     0.166              B to Z              i24227_4_lut_4_lut
+Route         1   e 1.020                                  n39487
+LUT4        ---     0.166              B to Z              i24254_4_lut_4_lut
+Route         1   e 1.020                                  n39514
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3066_i64_4_lut
+Route        33   e 1.719                                  n64_adj_703
+A1_TO_FCO   ---     0.329           A[2] to COUT           add_7644_1
+Route         1   e 0.020                                  n32742
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7644_3
+Route         1   e 0.020                                  n32743
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7644_5
+Route         1   e 0.020                                  n32744
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7644_7
+Route         5   e 1.441                                  n4775
+LUT4        ---     0.166              A to Z              div_4016_LessThan_3137_i15_2_lut_rep_764
+Route         1   e 1.020                                  n42463
+LUT4        ---     0.166              A to Z              i24284_4_lut
+Route         1   e 1.020                                  n39544
+LUT4        ---     0.166              D to Z              i24297_4_lut
+Route         1   e 1.020                                  n39557
+LUT4        ---     0.166              D to Z              i24316_4_lut
+Route         1   e 1.020                                  n39576
+LUT4        ---     0.166              D to Z              i24331_4_lut
+Route         1   e 1.020                                  n39591
+LUT4        ---     0.166              D to Z              i24354_4_lut
+Route         1   e 1.020                                  n39614
+LUT4        ---     0.166              D to Z              i24381_4_lut
+Route         1   e 1.020                                  n39641
+LUT4        ---     0.166              D to Z              i24396_4_lut
+Route         1   e 1.020                                  n39656
+LUT4        ---     0.166              D to Z              i24425_4_lut
+Route         1   e 1.020                                  n39685
+LUT4        ---     0.166              D to Z              i25772_4_lut
+Route         1   e 1.020                                  n39712
+MUXL5       ---     0.116             SD to Z              div_4016_LessThan_3137_i64
+Route         2   e 1.158                                  n64_adj_737
+LUT4        ---     0.166              C to Z              i8027_2_lut_3_lut
+Route        33   e 1.719                                  n4783
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3206_i7_4_lut
+Route         2   e 1.158                                  n7_adj_741
+LUT4        ---     0.166              C to Z              i24468_4_lut
+Route         1   e 1.020                                  n39728
+LUT4        ---     0.166              D to Z              i24481_4_lut
+Route         1   e 1.020                                  n39741
+LUT4        ---     0.166              D to Z              i24496_4_lut
+Route         1   e 1.020                                  n39756
+LUT4        ---     0.166              D to Z              i24513_4_lut
+Route         1   e 1.020                                  n39773
+LUT4        ---     0.166              D to Z              i24534_4_lut
+Route         1   e 1.020                                  n39794
+LUT4        ---     0.166              B to Z              i24727_4_lut_4_lut
+Route         2   e 1.158                                  n39987
+LUT4        ---     0.166              D to Z              i24576_4_lut
+Route         1   e 1.020                                  n39836
+LUT4        ---     0.166              B to Z              i24601_4_lut_4_lut
+Route         1   e 1.020                                  n39861
+LUT4        ---     0.166              D to Z              i24628_4_lut
+Route         1   e 1.020                                  n39888
+LUT4        ---     0.166              D to Z              div_4016_LessThan_3206_i62_4_lut
+Route         1   e 1.020                                  n62_adj_794
+A1_TO_FCO   ---     0.329           D[2] to COUT           add_7646_1
+Route         1   e 0.020                                  n32791
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_3
+Route         1   e 0.020                                  n32792
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_5
+Route         1   e 0.020                                  n32793
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_7
+Route         1   e 0.020                                  n32794
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_9
+Route         1   e 0.020                                  n32795
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_11
+Route         1   e 0.020                                  n32796
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_13
+Route         1   e 0.020                                  n32797
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_15
+Route         1   e 0.020                                  n32798
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_17
+Route         1   e 0.020                                  n32799
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_19
+Route         1   e 0.020                                  n32800
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_21
+Route         1   e 0.020                                  n32801
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_23
+Route         1   e 0.020                                  n32802
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_25
+Route         1   e 0.020                                  n32803
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_27
+Route         1   e 0.020                                  n32804
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_29
+Route         1   e 0.020                                  n32805
+FCI_TO_FCO  ---     0.051            CIN to COUT           add_7646_31
+Route         1   e 0.020                                  n32806
+FCI_TO_F    ---     0.322            CIN to S[2]           add_7646_33
+Route         1   e 1.020                                  n22275
+LUT4        ---     0.166              B to Z              div_4016_i3311_4_lut
+Route         4   e 1.297                                  n5494
+                  --------
+                  342.401  (18.8% logic, 81.2% route), 337 logic levels.
+
+Warning: 342.226 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|   342.226 ns|   337 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n2                                      |       3|    4096|     99.00%
+                                        |        |        |
+n13_adj_674                             |       2|    4096|     99.00%
+                                        |        |        |
+n19_adj_582                             |       2|    4096|     99.00%
+                                        |        |        |
+n25_adj_497                             |       2|    4096|     99.00%
+                                        |        |        |
+n31_adj_425                             |       2|    4096|     99.00%
+                                        |        |        |
+n37_adj_384                             |       2|    4096|     99.00%
+                                        |        |        |
+n39_adj_346                             |       2|    4096|     99.00%
+                                        |        |        |
+n45_adj_304                             |       2|    4096|     99.00%
+                                        |        |        |
+n51                                     |       2|    4096|     99.00%
+                                        |        |        |
+n51_adj_282                             |       2|    4096|     99.00%
+                                        |        |        |
+n55_adj_264                             |       2|    4096|     99.00%
+                                        |        |        |
+n60_adj_795                             |       1|    4096|     99.00%
+                                        |        |        |
+n62_adj_251                             |       1|    4096|     99.00%
+                                        |        |        |
+n62_adj_794                             |       1|    4096|     99.00%
+                                        |        |        |
+n62_adj_798                             |       2|    4096|     99.00%
+                                        |        |        |
+n64                                     |       3|    4096|     99.00%
+                                        |        |        |
+n64_adj_241                             |       9|    4096|     99.00%
+                                        |        |        |
+n64_adj_246                             |      10|    4096|     99.00%
+                                        |        |        |
+n64_adj_252                             |      11|    4096|     99.00%
+                                        |        |        |
+n64_adj_260                             |      12|    4096|     99.00%
+                                        |        |        |
+n64_adj_269                             |      13|    4096|     99.00%
+                                        |        |        |
+n64_adj_278                             |      14|    4096|     99.00%
+                                        |        |        |
+n64_adj_289                             |      15|    4096|     99.00%
+                                        |        |        |
+n64_adj_301                             |      16|    4096|     99.00%
+                                        |        |        |
+n64_adj_315                             |      17|    4096|     99.00%
+                                        |        |        |
+n64_adj_328                             |      18|    4096|     99.00%
+                                        |        |        |
+n64_adj_343                             |      19|    4096|     99.00%
+                                        |        |        |
+n64_adj_360                             |      20|    4096|     99.00%
+                                        |        |        |
+n64_adj_378                             |      21|    4096|     99.00%
+                                        |        |        |
+n64_adj_399                             |      22|    4096|     99.00%
+                                        |        |        |
+n64_adj_421                             |      23|    4096|     99.00%
+                                        |        |        |
+n64_adj_444                             |      24|    4096|     99.00%
+                                        |        |        |
+n64_adj_469                             |      25|    4096|     99.00%
+                                        |        |        |
+n64_adj_493                             |      26|    4096|     99.00%
+                                        |        |        |
+n64_adj_520                             |      27|    4096|     99.00%
+                                        |        |        |
+n64_adj_549                             |      28|    4096|     99.00%
+                                        |        |        |
+n64_adj_578                             |      29|    4096|     99.00%
+                                        |        |        |
+n64_adj_608                             |      30|    4096|     99.00%
+                                        |        |        |
+n64_adj_640                             |      31|    4096|     99.00%
+                                        |        |        |
+n64_adj_670                             |      32|    4096|     99.00%
+                                        |        |        |
+n64_adj_703                             |      33|    4096|     99.00%
+                                        |        |        |
+n64_adj_737                             |       2|    4096|     99.00%
+                                        |        |        |
+n64_adj_797                             |       2|    4096|     99.00%
+                                        |        |        |
+n64_adj_799                             |       4|    4096|     99.00%
+                                        |        |        |
+n70_adj_87                              |       1|    4096|     99.00%
+                                        |        |        |
+n678                                    |       3|    4096|     99.00%
+                                        |        |        |
+n865                                    |       4|    4096|     99.00%
+                                        |        |        |
+n1047                                   |       4|    4096|     99.00%
+                                        |        |        |
+n1078                                   |       5|    4096|     99.00%
+                                        |        |        |
+n1403                                   |       3|    4096|     99.00%
+                                        |        |        |
+n1578                                   |       3|    4096|     99.00%
+                                        |        |        |
+n1920                                   |       2|    4096|     99.00%
+                                        |        |        |
+n2087                                   |       2|    4096|     99.00%
+                                        |        |        |
+n2249                                   |       2|    4096|     99.00%
+                                        |        |        |
+n2408                                   |       3|    4096|     99.00%
+                                        |        |        |
+n2567                                   |       2|    4096|     99.00%
+                                        |        |        |
+n2720                                   |       3|    4096|     99.00%
+                                        |        |        |
+n2870                                   |       3|    4096|     99.00%
+                                        |        |        |
+n3020                                   |       2|    4096|     99.00%
+                                        |        |        |
+n3164                                   |       3|    4096|     99.00%
+                                        |        |        |
+n3306                                   |       2|    4096|     99.00%
+                                        |        |        |
+n3444                                   |       3|    4096|     99.00%
+                                        |        |        |
+n3582                                   |       2|    4096|     99.00%
+                                        |        |        |
+n3714                                   |       3|    4096|     99.00%
+                                        |        |        |
+n3843                                   |       4|    4096|     99.00%
+                                        |        |        |
+n3972                                   |       2|    4096|     99.00%
+                                        |        |        |
+n4095                                   |       3|    4096|     99.00%
+                                        |        |        |
+n4215                                   |       4|    4096|     99.00%
+                                        |        |        |
+n4335                                   |       2|    4096|     99.00%
+                                        |        |        |
+n4449                                   |       3|    4096|     99.00%
+                                        |        |        |
+n4560                                   |       4|    4096|     99.00%
+                                        |        |        |
+n4671                                   |       2|    4096|     99.00%
+                                        |        |        |
+n4775                                   |       5|    4096|     99.00%
+                                        |        |        |
+n4783                                   |      33|    4096|     99.00%
+                                        |        |        |
+n5325                                   |      45|    4096|     99.00%
+                                        |        |        |
+n5494                                   |       4|    4096|     99.00%
+                                        |        |        |
+n22275                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32422                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32442                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32443                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32444                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32449                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32450                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32451                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32456                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32457                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32464                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32465                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32466                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32472                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32473                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32481                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32482                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32483                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32490                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32491                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32492                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32500                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32501                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32510                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32511                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32512                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32521                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32522                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32523                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32532                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32533                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32544                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32545                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32546                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32556                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32557                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32558                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32569                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32570                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32571                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32582                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32583                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32596                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32597                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32598                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32610                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32611                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32612                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32625                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32626                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32640                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32641                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32642                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32656                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32657                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32658                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32672                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32673                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32689                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32690                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32691                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32706                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32707                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32708                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32724                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32725                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32742                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32743                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32744                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32768                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32791                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32792                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32793                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32794                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32795                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32796                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32797                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32798                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32799                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32800                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32801                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32802                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32803                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32804                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32805                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32806                                  |       1|    4096|     99.00%
+                                        |        |        |
+n35974                                  |       2|    4096|     99.00%
+                                        |        |        |
+n36422                                  |       5|    4096|     99.00%
+                                        |        |        |
+n37417                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37427                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37440                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37462                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37495                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37508                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37520                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37531                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37544                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37558                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37571                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37586                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37603                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37616                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37635                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37646                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37657                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37670                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37691                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37701                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37714                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37729                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37746                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37761                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37774                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37793                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37808                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37819                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37830                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37843                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37864                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37879                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37895                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37908                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37923                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37940                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37961                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37975                                  |       1|    4096|     99.00%
+                                        |        |        |
+n37988                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38003                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38020                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38041                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38067                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38080                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38099                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38114                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38137                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38159                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38170                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38183                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38204                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38219                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38244                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38269                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38282                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38297                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38314                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38335                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38360                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38382                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38395                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38414                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38429                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38452                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38479                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38491                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38502                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38515                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38536                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38551                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38576                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38597                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38616                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38629                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38644                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38661                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38682                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38707                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38724                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38750                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38763                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38782                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38797                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38820                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38847                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38862                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38884                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38895                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38908                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38929                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38944                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38969                                  |       1|    4096|     99.00%
+                                        |        |        |
+n38990                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39011                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39038                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39051                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39066                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39083                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39104                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39129                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39146                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39171                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39199                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39212                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39231                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39246                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39269                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39296                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39311                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39340                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39360                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39371                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39384                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39405                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39420                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39445                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39466                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39487                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39514                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39544                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39557                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39576                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39591                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39614                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39641                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39656                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39685                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39712                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39728                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39741                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39756                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39773                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39794                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39836                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39861                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39888                                  |       1|    4096|     99.00%
+                                        |        |        |
+n39987                                  |       2|    4096|     99.00%
+                                        |        |        |
+n42463                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42507                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42527                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42566                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42582                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42617                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42633                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42661                                  |       2|    4096|     99.00%
+                                        |        |        |
+n42686                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42710                                  |       2|    4096|     99.00%
+                                        |        |        |
+n42718                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42736                                  |       2|    4096|     99.00%
+                                        |        |        |
+n42762                                  |       2|    4096|     99.00%
+                                        |        |        |
+n42764                                  |       2|    4096|     99.00%
+                                        |        |        |
+n42771                                  |       1|    4096|     99.00%
+                                        |        |        |
+n42776                                  |       3|    4096|     99.00%
+                                        |        |        |
+n42780                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32821                                  |       1|    4046|     98.78%
+                                        |        |        |
+n1753                                   |       3|    3816|     93.16%
+                                        |        |        |
+n37469                                  |       1|    3816|     93.16%
+                                        |        |        |
+n37480                                  |       1|    3816|     93.16%
+                                        |        |        |
+n32769                                  |       1|    3806|     92.92%
+                                        |        |        |
+n25248                                  |       1|    3761|     91.82%
+                                        |        |        |
+n32356                                  |       1|    3761|     91.82%
+                                        |        |        |
+n11_adj_745                             |       2|    3537|     86.35%
+                                        |        |        |
+n35972                                  |       3|    3536|     86.33%
+                                        |        |        |
+n42759                                  |       1|    3536|     86.33%
+                                        |        |        |
+n42766                                  |       1|    3536|     86.33%
+                                        |        |        |
+n32770                                  |       1|    3521|     85.96%
+                                        |        |        |
+n32771                                  |       1|    3241|     79.13%
+                                        |        |        |
+U[1][31]                                |      12|    3213|     78.44%
+                                        |        |        |
+n194_adj_54                             |       3|    3213|     78.44%
+                                        |        |        |
+n176_adj_72                             |       1|    2982|     72.80%
+                                        |        |        |
+n6                                      |       1|    2966|     72.41%
+                                        |        |        |
+n32772                                  |       1|    2966|     72.41%
+                                        |        |        |
+n32820                                  |       1|    1100|     26.86%
+                                        |        |        |
+U[2][31]                                |      12|     883|     21.56%
+                                        |        |        |
+n194_adj_114                            |       3|     883|     21.56%
+                                        |        |        |
+n32819                                  |       1|     840|     20.51%
+                                        |        |        |
+n176_adj_135                            |       1|     829|     20.24%
+                                        |        |        |
+n32818                                  |       1|     570|     13.92%
+                                        |        |        |
+n20348                                  |       1|     492|     12.01%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 1381277696
+
+Constraints cover >4294967295 paths, 6289 nets, and 15012 connections (95.0% coverage)
+
+
+Peak memory: 320008192 bytes, TRCE: 151732224 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 5 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

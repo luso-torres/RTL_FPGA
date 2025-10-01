@@ -1,0 +1,205 @@
+----------------------------------------------------------------------
+Report for cell topmodule.TECH
+Register bits:  857 of 44439 (1.928%)
+I/O cells:      41
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B        17          100.0
+                              CCU2C       164          100.0
+                            FD1P3AX       756          100.0
+                            FD1P3IX        33          100.0
+                            FD1S3AX        68          100.0
+                                GSR         1          100.0
+                                 IB        15          100.0
+                               LUT4        31          100.0
+                         MULT18X18D        36          100.0
+                                 OB        26          100.0
+SUB MODULES
+                            addfixp         1
+                         addfixp_U0         1
+                         addfixp_U1         1
+                        addfixp_U10         1
+                        addfixp_U11         1
+                        addfixp_U12         1
+                        addfixp_U13         1
+                        addfixp_U14         1
+                        addfixp_U15         1
+                        addfixp_U16         1
+                        addfixp_U17         1
+                        addfixp_U18         1
+                         addfixp_U6         1
+                         addfixp_U7         1
+                         addfixp_U8         1
+                         addfixp_U9         1
+                            mulfixp         1
+                         mulfixp_U2         1
+                         mulfixp_U3         1
+                         mulfixp_U4         1
+                         mulfixp_U5         1
+                              TOTAL      1168
+----------------------------------------------------------------------
+Report for cell addfixp_U18.v1
+Instance Path : G_ADD_L1[17].u_add1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         6            8.8
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell addfixp_U17.v1
+Instance Path : G_ADD_L2[1].u_add2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2           11.8
+                         MULT18X18D         4           11.1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell addfixp_U16.v1
+Instance Path : G_ADD_L2[2].u_add2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2           11.8
+                         MULT18X18D         4           11.1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell addfixp_U15.v1
+Instance Path : G_ADD_L2[3].u_add2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2           11.8
+                         MULT18X18D         4           11.1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell addfixp_U14.v1
+Instance Path : G_ADD_L2[4].u_add2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2           11.8
+                         MULT18X18D         4           11.1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell addfixp_U13.v1
+Instance Path : G_ADD_L2[5].u_add2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2           11.8
+                         MULT18X18D         4           11.1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell mulfixp_U5.v1
+Instance Path : G_MULS[0].u_mul
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                         MULT18X18D         1            2.8
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mulfixp.v1
+Instance Path : G_MULS[3].u_mul
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         1            5.9
+                         MULT18X18D         1            2.8
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell addfixp_U6.v1
+Instance Path : G_ADD_L4[1].u_add4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        12            7.3
+                            FD1S3AX         1            1.5
+                               LUT4         1            3.2
+                              TOTAL        14
+----------------------------------------------------------------------
+Report for cell addfixp_U12.v1
+Instance Path : G_ADD_L2[6].u_add2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2           11.8
+                         MULT18X18D         4           11.1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell addfixp_U1.v1
+Instance Path : u_add5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            1.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mulfixp_U2.v1
+Instance Path : G_MULS[35].u_mul
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3            4.4
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell mulfixp_U4.v1
+Instance Path : G_MULS[1].u_mul
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                         MULT18X18D         1            2.8
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell addfixp_U11.v1
+Instance Path : G_ADD_L2[7].u_add2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2           11.8
+                         MULT18X18D         4           11.1
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell addfixp_U8.v1
+Instance Path : G_ADD_L3[2].u_add3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        12            7.3
+                            FD1P3AX        24            3.2
+                               LUT4         1            3.2
+                              TOTAL        37
+----------------------------------------------------------------------
+Report for cell addfixp_U0.v1
+Instance Path : u_add6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            1.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell addfixp_U7.v1
+Instance Path : G_ADD_L3[3].u_add3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        12            7.3
+                            FD1P3AX        24            3.2
+                            FD1S3AX         1            1.5
+                               LUT4         1            3.2
+                              TOTAL        38
+----------------------------------------------------------------------
+Report for cell addfixp.v1
+Instance Path : u_add7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        24            3.2
+                            FD1S3AX         1            1.5
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell addfixp_U9.v1
+Instance Path : G_ADD_L3[1].u_add3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        12            7.3
+                               LUT4         1            3.2
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell addfixp_U10.v1
+Instance Path : G_ADD_L2[8].u_add2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         2           11.8
+                            FD1S3AX         3            4.4
+                         MULT18X18D         4           11.1
+                              TOTAL         9
+----------------------------------------------------------------------
+Report for cell mulfixp_U3.v1
+Instance Path : G_MULS[2].u_mul
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                         MULT18X18D         1            2.8
+                              TOTAL         1

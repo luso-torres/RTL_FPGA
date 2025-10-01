@@ -1,0 +1,52 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {D:/CI/RTL_FPGA/SD4/matrix_inv/sim_backward/sim_backward.mdo}
+# Loading project sim_backward
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:59:58 on Sep 26,2025
+# vlog -reportprogress 300 "+incdir+D:/CI/RTL_FPGA/SD4/matrix_inv" -work work D:/CI/RTL_FPGA/SD4/matrix_inv/backward.v 
+# -- Compiling module backward
+# 
+# Top level modules:
+# 	backward
+# End time: 14:59:58 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 14:59:58 on Sep 26,2025
+# vlog -reportprogress 300 "+incdir+D:/CI/RTL_FPGA/SD4/matrix_inv" -work work D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v 
+# -- Compiling module tb_BackwardSub4x4
+# 
+# Top level modules:
+# 	tb_BackwardSub4x4
+# End time: 14:59:58 on Sep 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u tb_BackwardSub4x4 
+# Start time: 14:59:58 on Sep 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "backward(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_BackwardSub4x4(fast)
+# Loading work.backward(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# x_out =          0,          0,          0,          3
+# ? Mismatch! Check logic and scaling.
+# ** Note: $finish    : D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v(75)
+#    Time: 135 ns  Iteration: 0  Instance: /tb_BackwardSub4x4
+# 1
+# Break in Module tb_BackwardSub4x4 at D:/CI/RTL_FPGA/SD4/matrix_inv/backward_tf.v line 75
+# End time: 17:21:42 on Sep 26,2025, Elapsed time: 2:21:44
+# Errors: 0, Warnings: 6

@@ -1,0 +1,79 @@
+----------------------------------------------------------------------
+Report for cell GCD.TECH
+Register bits:  99 of 44439 (0.223%)
+I/O cells:      100
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        34          100.0
+                            FD1P3IX        96          100.0
+                            FD1S3IX         3          100.0
+                                GSR         1          100.0
+                                 IB        67          100.0
+                               LUT4        75          100.0
+                                 OB        33          100.0
+SUB MODULES
+                         controller         1
+                           datapath         1
+                                mux         1
+                             mux_U2         1
+                           register         1
+                        register_U0         1
+                        register_U1         1
+                              TOTAL       316
+----------------------------------------------------------------------
+Report for cell datapath.v1
+Instance Path : d1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX        96          100.0
+                               LUT4        64           85.3
+SUB MODULES
+                                mux         1
+                             mux_U2         1
+                           register         1
+                        register_U0         1
+                        register_U1         1
+                              TOTAL       165
+----------------------------------------------------------------------
+Report for cell register.v1
+Instance Path : d1.r2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX        32           33.3
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell register_U0.v1
+Instance Path : d1.r1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX        32           33.3
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell register_U1.v1
+Instance Path : d1.o1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3IX        32           33.3
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell mux.v1
+Instance Path : d1.m2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        32           42.7
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell mux_U2.v1
+Instance Path : d1.m1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        32           42.7
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell controller.v1
+Instance Path : c1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3IX         3          100.0
+                               LUT4        10           13.3
+                              TOTAL        13

@@ -1,0 +1,301 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Sep 26 21:34:32 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     topmodule
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 8.841ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             fifo[35]__i299  (from clk_c +)
+   Destination:    FD1P3AX    D              resadd_e1_i0_i23_adj_139  (to clk_c +)
+
+   Delay:                  14.016ns  (59.4% logic, 40.6% route), 16 logic levels.
+
+ Constraint Details:
+
+     14.016ns data_path fifo[35]__i299 to resadd_e1_i0_i23_adj_139 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 8.841ns
+
+ Path Details: fifo[35]__i299 to resadd_e1_i0_i23_adj_139
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              fifo[35]__i299 (from clk_c)
+Route         2   e 1.258                                  fifo[10][10]
+MuPd        ---     2.720          A[18] to P[36]          \G_ADD_L2[2].u_add2/resadd
+Route         1   e 1.020                                  \G_ADD_L2[2].u_add2/n7338
+AluPd       ---     2.037         MA[36] to R[54]          \G_ADD_L2[2].u_add2/lat_alu_33
+Route         1   e 1.020                                  \G_ADD_L2[2].u_add2/n7593
+AluPd       ---     2.037        CIN[54] to R[54]          \G_ADD_L2[2].u_add2/lat_alu_34
+Route         2   e 1.158                                  outadd2[2][0]
+A1_TO_FCO   ---     0.329           A[2] to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_2
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8513
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_4
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8514
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_6
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8515
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_8
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8516
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_10
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8517
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_12
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8518
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_14
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8519
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_16
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8520
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_18
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8521
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_20
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8522
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_22
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8523
+FCI_TO_F    ---     0.322            CIN to S[2]           \G_ADD_L3[1].u_add3/add_3_add_4_24
+Route         1   e 1.020                                  resadd_23__N_614[23]_adj_842
+                  --------
+                   14.016  (59.4% logic, 40.6% route), 16 logic levels.
+
+
+Error:  The following path violates requirements by 8.841ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             fifo[35]__i299  (from clk_c +)
+   Destination:    FD1P3AX    D              resadd_e1_i0_i22_adj_138  (to clk_c +)
+
+   Delay:                  14.016ns  (59.4% logic, 40.6% route), 16 logic levels.
+
+ Constraint Details:
+
+     14.016ns data_path fifo[35]__i299 to resadd_e1_i0_i22_adj_138 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 8.841ns
+
+ Path Details: fifo[35]__i299 to resadd_e1_i0_i22_adj_138
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              fifo[35]__i299 (from clk_c)
+Route         2   e 1.258                                  fifo[10][10]
+MuPd        ---     2.720          A[18] to P[36]          \G_ADD_L2[2].u_add2/resadd
+Route         1   e 1.020                                  \G_ADD_L2[2].u_add2/n7338
+AluPd       ---     2.037         MA[36] to R[54]          \G_ADD_L2[2].u_add2/lat_alu_33
+Route         1   e 1.020                                  \G_ADD_L2[2].u_add2/n7628
+AluPd       ---     2.037        CIN[54] to R[54]          \G_ADD_L2[2].u_add2/lat_alu_34
+Route         2   e 1.158                                  outadd2[2][0]
+A1_TO_FCO   ---     0.329           A[2] to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_2
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8513
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_4
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8514
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_6
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8515
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_8
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8516
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_10
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8517
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_12
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8518
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_14
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8519
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_16
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8520
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_18
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8521
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_20
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8522
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_22
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8523
+FCI_TO_F    ---     0.322            CIN to S[2]           \G_ADD_L3[1].u_add3/add_3_add_4_24
+Route         1   e 1.020                                  resadd_23__N_614[22]_adj_843
+                  --------
+                   14.016  (59.4% logic, 40.6% route), 16 logic levels.
+
+
+Error:  The following path violates requirements by 8.841ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             fifo[35]__i299  (from clk_c +)
+   Destination:    FD1P3AX    D              resadd_e1_i0_i22_adj_138  (to clk_c +)
+
+   Delay:                  14.016ns  (59.4% logic, 40.6% route), 16 logic levels.
+
+ Constraint Details:
+
+     14.016ns data_path fifo[35]__i299 to resadd_e1_i0_i22_adj_138 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 8.841ns
+
+ Path Details: fifo[35]__i299 to resadd_e1_i0_i22_adj_138
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              fifo[35]__i299 (from clk_c)
+Route         2   e 1.258                                  fifo[10][10]
+MuPd        ---     2.720          A[18] to P[36]          \G_ADD_L2[2].u_add2/resadd
+Route         1   e 1.020                                  \G_ADD_L2[2].u_add2/n7338
+AluPd       ---     2.037         MA[36] to R[54]          \G_ADD_L2[2].u_add2/lat_alu_33
+Route         1   e 1.020                                  \G_ADD_L2[2].u_add2/n7624
+AluPd       ---     2.037        CIN[54] to R[54]          \G_ADD_L2[2].u_add2/lat_alu_34
+Route         2   e 1.158                                  outadd2[2][0]
+A1_TO_FCO   ---     0.329           A[2] to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_2
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8513
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_4
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8514
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_6
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8515
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_8
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8516
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_10
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8517
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_12
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8518
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_14
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8519
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_16
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8520
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_18
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8521
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_20
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8522
+FCI_TO_FCO  ---     0.051            CIN to COUT           \G_ADD_L3[1].u_add3/add_3_add_4_22
+Route         1   e 0.020                                  \G_ADD_L3[1].u_add3/n8523
+FCI_TO_F    ---     0.322            CIN to S[2]           \G_ADD_L3[1].u_add3/add_3_add_4_24
+Route         1   e 1.020                                  resadd_23__N_614[22]_adj_843
+                  --------
+                   14.016  (59.4% logic, 40.6% route), 16 logic levels.
+
+Warning: 13.841 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|    13.841 ns|    16 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\G_ADD_L3[1].u_add3/n8513               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8514               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8515               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8516               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8517               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8518               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8519               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8520               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8521               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8522               |       1|    1622|     39.60%
+                                        |        |        |
+\G_ADD_L3[1].u_add3/n8523               |       1|    1622|     39.60%
+                                        |        |        |
+resadd_23__N_614[22]_adj_843            |       1|    1604|     39.16%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8539               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8540               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8541               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8542               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8543               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8544               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8545               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8546               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8547               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8548               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n8549               |       1|    1483|     36.21%
+                                        |        |        |
+\G_ADD_L3[2].u_add3/n55                 |       1|    1467|     35.82%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8552               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8553               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8554               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8555               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8556               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8557               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8558               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8559               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8560               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8561               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n8562               |       1|     991|     24.19%
+                                        |        |        |
+\G_ADD_L3[3].u_add3/n55                 |       1|     980|     23.93%
+                                        |        |        |
+outadd2[5][0]                           |       2|     853|     20.83%
+                                        |        |        |
+outadd2[2][0]                           |       2|     811|     19.80%
+                                        |        |        |
+outadd2[3][0]                           |       2|     811|     19.80%
+                                        |        |        |
+outadd2[7][0]                           |       2|     721|     17.60%
+                                        |        |        |
+outadd2[4][0]                           |       2|     630|     15.38%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 4096  Score: 36212736
+
+Constraints cover  136479146 paths, 3828 nets, and 6031 connections (87.7% coverage)
+
+
+Peak memory: 129892352 bytes, TRCE: 9142272 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 1 secs 

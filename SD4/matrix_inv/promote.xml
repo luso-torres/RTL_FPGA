@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userSetting name="D:/CI/RTL_FPGA/SD4/matrix_inv/promote.xml" version="Diamond (64-bit) 3.14.0.75.2" date="Fri Sep 26 17:21:38 2025" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35901160" type="Error" />
+  <msg mid="35901209" type="Warning" />
+  <msg mid="35901220" type="Warning" />
+  <msg mid="35901279" type="Error" />
+  <msg mid="35901142" type="Warning" />
+</userSetting>

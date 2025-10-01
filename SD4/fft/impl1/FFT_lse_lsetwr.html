@@ -1,0 +1,510 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Sep 23 20:22:39 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     FFT
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 49.886ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \rom16/count_690__i3  (from clk_c +)
+   Destination:    FD1P3AX    D              result_r[31]__i512  (to clk_c +)
+
+   Delay:                  55.061ns  (38.1% logic, 61.9% route), 40 logic levels.
+
+ Constraint Details:
+
+     55.061ns data_path \rom16/count_690__i3 to result_r[31]__i512 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 49.886ns
+
+ Path Details: \rom16/count_690__i3 to result_r[31]__i512
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \rom16/count_690__i3 (from clk_c)
+Route        25   e 1.763                                  \rom16/count[3]
+LUT4        ---     0.166              B to Z              \rom16/i1_2_lut_rep_430
+Route         5   e 1.341                                  \rom16/n34792
+LUT4        ---     0.166              D to Z              \rom16/i1_4_lut_adj_22
+Route         8   e 1.435                                  \rom16/n29803
+LUT4        ---     0.166              C to Z              \rom16/i1_2_lut_rep_374_3_lut_4_lut
+Route         3   e 1.239                                  n34736
+LUT4        ---     0.166              D to Z              \rom16/i1_4_lut_adj_21
+Route         3   e 1.239                                  n32928
+LUT4        ---     0.166              B to Z              \rom16/i1_2_lut_rep_351
+Route         2   e 1.158                                  n34713
+A1_TO_F     ---     0.166           A[2] to S[2]           _add_1_1131_add_4_11
+Route        52   e 1.910                                  n12368
+MuPd        ---     2.720          B[18] to P[36]          \radix_no1/lat_mult_70
+Route         1   e 1.020                                  \radix_no1/n18203
+AluPd       ---     2.037         MB[36] to R[54]          \radix_no1/lat_alu_73
+Route         3   e 1.239                                  op_r_23__N_1268[0]
+AluPd       ---     2.037        CIN[54] to R[54]          \radix_no1/lat_alu_74
+Route         2   e 1.158                                  op_r_23__N_1268[18]
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_993_add_4_20
+Route         1   e 0.020                                  n32089
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_993_add_4_22
+Route         1   e 0.020                                  n32090
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_993_add_4_24
+Route         1   e 1.020                                  op_i_23__N_1130[22]
+LUT4        ---     0.166              C to Z              \rom16/i13943_3_lut_4_lut
+Route         1   e 1.020                                  n31688
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_985_add_4_9
+Route         1   e 0.020                                  n32186
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_985_add_4_11
+Route         3   e 1.339                                  op_i_23__N_1154[16]
+LUT4        ---     0.166              A to Z              \radix_no1/i13645_3_lut_4_lut
+Route         1   e 1.020                                  n31390
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1009_add_4_19
+Route         1   e 0.020                                  n31857
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1009_add_4_21
+Route         3   e 1.339                                  op_i_23__N_1154[18]_adj_6388
+LUT4        ---     0.166              A to Z              \radix_no2/i13739_3_lut_4_lut
+Route         1   e 1.020                                  n31484
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1031_add_4_21
+Route         1   e 0.020                                  n31963
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1031_add_4_23
+Route         3   e 1.339                                  op_i_23__N_1154[20]_adj_6604
+LUT4        ---     0.166              C to Z              \radix_no3/i1_2_lut_rep_218_3_lut
+Route         1   e 1.020                                  n34580
+A1_TO_FCO   ---     0.329           D[2] to COUT           _add_1_1056_add_4_23
+Route         1   e 0.020                                  n32008
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1056_add_4_25
+Route         3   e 1.339                                  op_i_23__N_1154[22]_adj_6801
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1104_add_4_24
+Route         1   e 0.020                                  n32202
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1104_add_4_26
+Route         1   e 1.020                                  delay_i_23__N_1202[23]_adj_7059
+LUT4        ---     0.166              B to Z              \radix_no5/i10877_4_lut
+Route        27   e 1.679                                  dout_i_23__N_5974[23]
+MuPd        ---     2.720          A[18] to P[36]          \radix_no5/lat_mult_40
+Route         1   e 1.020                                  \radix_no5/n16124
+AluPd       ---     2.037         MB[36] to R[54]          \radix_no5/lat_alu_43
+Route         3   e 1.239                                  op_r_23__N_1268[0]_adj_7114
+AluPd       ---     2.037        CIN[54] to R[54]          \radix_no5/lat_alu_44
+Route         2   e 1.158                                  op_r_23__N_1268[18]_adj_7096
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1089_add_4_20
+Route         1   e 0.020                                  n32261
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_22
+Route         1   e 0.020                                  n32262
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_24
+Route         1   e 0.020                                  n32263
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_26
+Route         1   e 0.020                                  n32264
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_28
+Route         1   e 0.020                                  n32265
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_30
+Route         1   e 0.020                                  n32266
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1089_add_4_32
+Route         1   e 1.020                                  op_r_23__N_1082[31]_adj_7147
+LUT4        ---     0.166              C to Z              \radix_no5/i12585_4_lut_4_lut
+Route        32   e 1.713                                  out_r[23]
+LUT4        ---     0.166              D to Z              i6577_3_lut_4_lut
+Route         1   e 1.020                                  result_r_ns_0__15__N_3[511]
+                  --------
+                   55.061  (38.1% logic, 61.9% route), 40 logic levels.
+
+
+Error:  The following path violates requirements by 49.886ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \rom16/count_690__i3  (from clk_c +)
+   Destination:    FD1P3AX    D              result_r[31]__i512  (to clk_c +)
+
+   Delay:                  55.061ns  (38.1% logic, 61.9% route), 40 logic levels.
+
+ Constraint Details:
+
+     55.061ns data_path \rom16/count_690__i3 to result_r[31]__i512 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 49.886ns
+
+ Path Details: \rom16/count_690__i3 to result_r[31]__i512
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \rom16/count_690__i3 (from clk_c)
+Route        25   e 1.763                                  \rom16/count[3]
+LUT4        ---     0.166              B to Z              \rom16/i1_2_lut_rep_430
+Route         5   e 1.341                                  \rom16/n34792
+LUT4        ---     0.166              D to Z              \rom16/i1_4_lut_adj_22
+Route         8   e 1.435                                  \rom16/n29803
+LUT4        ---     0.166              C to Z              \rom16/i1_2_lut_rep_374_3_lut_4_lut
+Route         3   e 1.239                                  n34736
+LUT4        ---     0.166              D to Z              \rom16/i1_4_lut_adj_21
+Route         3   e 1.239                                  n32928
+LUT4        ---     0.166              B to Z              \rom16/i1_2_lut_rep_351
+Route         2   e 1.158                                  n34713
+A1_TO_F     ---     0.166           A[2] to S[2]           _add_1_1131_add_4_11
+Route        52   e 1.910                                  n12368
+MuPd        ---     2.720          B[18] to P[36]          \radix_no1/lat_mult_70
+Route         1   e 1.020                                  \radix_no1/n18208
+AluPd       ---     2.037         MB[36] to R[54]          \radix_no1/lat_alu_73
+Route         3   e 1.239                                  op_r_23__N_1268[0]
+AluPd       ---     2.037        CIN[54] to R[54]          \radix_no1/lat_alu_74
+Route         2   e 1.158                                  op_r_23__N_1268[18]
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_993_add_4_20
+Route         1   e 0.020                                  n32089
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_993_add_4_22
+Route         1   e 0.020                                  n32090
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_993_add_4_24
+Route         1   e 1.020                                  op_i_23__N_1130[22]
+LUT4        ---     0.166              C to Z              \rom16/i13943_3_lut_4_lut
+Route         1   e 1.020                                  n31688
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_985_add_4_9
+Route         1   e 0.020                                  n32186
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_985_add_4_11
+Route         3   e 1.339                                  op_i_23__N_1154[16]
+LUT4        ---     0.166              A to Z              \radix_no1/i13645_3_lut_4_lut
+Route         1   e 1.020                                  n31390
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1009_add_4_19
+Route         1   e 0.020                                  n31857
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1009_add_4_21
+Route         3   e 1.339                                  op_i_23__N_1154[18]_adj_6388
+LUT4        ---     0.166              A to Z              \radix_no2/i13739_3_lut_4_lut
+Route         1   e 1.020                                  n31484
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1031_add_4_21
+Route         1   e 0.020                                  n31963
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1031_add_4_23
+Route         3   e 1.339                                  op_i_23__N_1154[20]_adj_6604
+LUT4        ---     0.166              C to Z              \radix_no3/i1_2_lut_rep_218_3_lut
+Route         1   e 1.020                                  n34580
+A1_TO_FCO   ---     0.329           D[2] to COUT           _add_1_1056_add_4_23
+Route         1   e 0.020                                  n32008
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1056_add_4_25
+Route         3   e 1.339                                  op_i_23__N_1154[22]_adj_6801
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1104_add_4_24
+Route         1   e 0.020                                  n32202
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1104_add_4_26
+Route         1   e 1.020                                  delay_i_23__N_1202[23]_adj_7059
+LUT4        ---     0.166              B to Z              \radix_no5/i10877_4_lut
+Route        27   e 1.679                                  dout_i_23__N_5974[23]
+MuPd        ---     2.720          A[18] to P[36]          \radix_no5/lat_mult_40
+Route         1   e 1.020                                  \radix_no5/n16124
+AluPd       ---     2.037         MB[36] to R[54]          \radix_no5/lat_alu_43
+Route         3   e 1.239                                  op_r_23__N_1268[0]_adj_7114
+AluPd       ---     2.037        CIN[54] to R[54]          \radix_no5/lat_alu_44
+Route         2   e 1.158                                  op_r_23__N_1268[18]_adj_7096
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1089_add_4_20
+Route         1   e 0.020                                  n32261
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_22
+Route         1   e 0.020                                  n32262
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_24
+Route         1   e 0.020                                  n32263
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_26
+Route         1   e 0.020                                  n32264
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_28
+Route         1   e 0.020                                  n32265
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_30
+Route         1   e 0.020                                  n32266
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1089_add_4_32
+Route         1   e 1.020                                  op_r_23__N_1082[31]_adj_7147
+LUT4        ---     0.166              C to Z              \radix_no5/i12585_4_lut_4_lut
+Route        32   e 1.713                                  out_r[23]
+LUT4        ---     0.166              D to Z              i6577_3_lut_4_lut
+Route         1   e 1.020                                  result_r_ns_0__15__N_3[511]
+                  --------
+                   55.061  (38.1% logic, 61.9% route), 40 logic levels.
+
+
+Error:  The following path violates requirements by 49.886ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \rom16/count_690__i3  (from clk_c +)
+   Destination:    FD1P3AX    D              result_r[31]__i512  (to clk_c +)
+
+   Delay:                  55.061ns  (38.1% logic, 61.9% route), 40 logic levels.
+
+ Constraint Details:
+
+     55.061ns data_path \rom16/count_690__i3 to result_r[31]__i512 violates
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 49.886ns
+
+ Path Details: \rom16/count_690__i3 to result_r[31]__i512
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \rom16/count_690__i3 (from clk_c)
+Route        25   e 1.763                                  \rom16/count[3]
+LUT4        ---     0.166              B to Z              \rom16/i1_2_lut_rep_430
+Route         5   e 1.341                                  \rom16/n34792
+LUT4        ---     0.166              D to Z              \rom16/i1_4_lut_adj_22
+Route         8   e 1.435                                  \rom16/n29803
+LUT4        ---     0.166              C to Z              \rom16/i1_2_lut_rep_374_3_lut_4_lut
+Route         3   e 1.239                                  n34736
+LUT4        ---     0.166              D to Z              \rom16/i1_4_lut_adj_21
+Route         3   e 1.239                                  n32928
+LUT4        ---     0.166              B to Z              \rom16/i1_2_lut_rep_351
+Route         2   e 1.158                                  n34713
+A1_TO_F     ---     0.166           A[2] to S[2]           _add_1_1131_add_4_11
+Route        52   e 1.910                                  n12368
+MuPd        ---     2.720          B[18] to P[36]          \radix_no1/lat_mult_70
+Route         1   e 1.020                                  \radix_no1/n18201
+AluPd       ---     2.037         MB[36] to R[54]          \radix_no1/lat_alu_73
+Route         3   e 1.239                                  op_r_23__N_1268[0]
+AluPd       ---     2.037        CIN[54] to R[54]          \radix_no1/lat_alu_74
+Route         2   e 1.158                                  op_r_23__N_1268[18]
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_993_add_4_20
+Route         1   e 0.020                                  n32089
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_993_add_4_22
+Route         1   e 0.020                                  n32090
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_993_add_4_24
+Route         1   e 1.020                                  op_i_23__N_1130[22]
+LUT4        ---     0.166              C to Z              \rom16/i13943_3_lut_4_lut
+Route         1   e 1.020                                  n31688
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_985_add_4_9
+Route         1   e 0.020                                  n32186
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_985_add_4_11
+Route         3   e 1.339                                  op_i_23__N_1154[16]
+LUT4        ---     0.166              A to Z              \radix_no1/i13645_3_lut_4_lut
+Route         1   e 1.020                                  n31390
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1009_add_4_19
+Route         1   e 0.020                                  n31857
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1009_add_4_21
+Route         3   e 1.339                                  op_i_23__N_1154[18]_adj_6388
+LUT4        ---     0.166              A to Z              \radix_no2/i13739_3_lut_4_lut
+Route         1   e 1.020                                  n31484
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1031_add_4_21
+Route         1   e 0.020                                  n31963
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1031_add_4_23
+Route         3   e 1.339                                  op_i_23__N_1154[20]_adj_6604
+LUT4        ---     0.166              C to Z              \radix_no3/i1_2_lut_rep_218_3_lut
+Route         1   e 1.020                                  n34580
+A1_TO_FCO   ---     0.329           D[2] to COUT           _add_1_1056_add_4_23
+Route         1   e 0.020                                  n32008
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1056_add_4_25
+Route         3   e 1.339                                  op_i_23__N_1154[22]_adj_6801
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1104_add_4_24
+Route         1   e 0.020                                  n32202
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1104_add_4_26
+Route         1   e 1.020                                  delay_i_23__N_1202[23]_adj_7059
+LUT4        ---     0.166              B to Z              \radix_no5/i10877_4_lut
+Route        27   e 1.679                                  dout_i_23__N_5974[23]
+MuPd        ---     2.720          A[18] to P[36]          \radix_no5/lat_mult_40
+Route         1   e 1.020                                  \radix_no5/n16124
+AluPd       ---     2.037         MB[36] to R[54]          \radix_no5/lat_alu_43
+Route         3   e 1.239                                  op_r_23__N_1268[0]_adj_7114
+AluPd       ---     2.037        CIN[54] to R[54]          \radix_no5/lat_alu_44
+Route         2   e 1.158                                  op_r_23__N_1268[18]_adj_7096
+A1_TO_FCO   ---     0.329           A[2] to COUT           _add_1_1089_add_4_20
+Route         1   e 0.020                                  n32261
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_22
+Route         1   e 0.020                                  n32262
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_24
+Route         1   e 0.020                                  n32263
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_26
+Route         1   e 0.020                                  n32264
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_28
+Route         1   e 0.020                                  n32265
+FCI_TO_FCO  ---     0.051            CIN to COUT           _add_1_1089_add_4_30
+Route         1   e 0.020                                  n32266
+FCI_TO_F    ---     0.322            CIN to S[2]           _add_1_1089_add_4_32
+Route         1   e 1.020                                  op_r_23__N_1082[31]_adj_7147
+LUT4        ---     0.166              C to Z              \radix_no5/i12585_4_lut_4_lut
+Route        32   e 1.713                                  out_r[23]
+LUT4        ---     0.166              D to Z              i6577_3_lut_4_lut
+Route         1   e 1.020                                  result_r_ns_0__15__N_3[511]
+                  --------
+                   55.061  (38.1% logic, 61.9% route), 40 logic levels.
+
+Warning: 54.886 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|    54.886 ns|    40 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\rom16/count[3]                         |      25|    4096|     99.00%
+                                        |        |        |
+\rom16/n29803                           |       8|    4096|     99.00%
+                                        |        |        |
+\rom16/n34792                           |       5|    4096|     99.00%
+                                        |        |        |
+delay_i_23__N_1202[23]_adj_7059         |       1|    4096|     99.00%
+                                        |        |        |
+dout_i_23__N_5974[23]                   |      27|    4096|     99.00%
+                                        |        |        |
+n12368                                  |      52|    4096|     99.00%
+                                        |        |        |
+n31857                                  |       1|    4096|     99.00%
+                                        |        |        |
+n31963                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32008                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32089                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32186                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32202                                  |       1|    4096|     99.00%
+                                        |        |        |
+n32928                                  |       3|    4096|     99.00%
+                                        |        |        |
+n34713                                  |       2|    4096|     99.00%
+                                        |        |        |
+n34736                                  |       3|    4096|     99.00%
+                                        |        |        |
+op_i_23__N_1154[22]_adj_6801            |       3|    4096|     99.00%
+                                        |        |        |
+n32261                                  |       1|    4068|     99.32%
+                                        |        |        |
+n32262                                  |       1|    4068|     99.32%
+                                        |        |        |
+n32263                                  |       1|    4068|     99.32%
+                                        |        |        |
+n32264                                  |       1|    4068|     99.32%
+                                        |        |        |
+n32265                                  |       1|    4068|     99.32%
+                                        |        |        |
+n32266                                  |       1|    4068|     99.32%
+                                        |        |        |
+op_r_23__N_1268[18]_adj_7096            |       2|    4068|     99.32%
+                                        |        |        |
+n31390                                  |       1|    4067|     99.29%
+                                        |        |        |
+n31484                                  |       1|    4067|     99.29%
+                                        |        |        |
+n32090                                  |       1|    4067|     99.29%
+                                        |        |        |
+n34580                                  |       1|    4067|     99.29%
+                                        |        |        |
+op_i_23__N_1154[16]                     |       3|    4067|     99.29%
+                                        |        |        |
+op_i_23__N_1154[18]_adj_6388            |       3|    4067|     99.29%
+                                        |        |        |
+op_i_23__N_1154[20]_adj_6604            |       3|    4067|     99.29%
+                                        |        |        |
+op_r_23__N_1268[18]                     |       2|    4067|     99.29%
+                                        |        |        |
+op_r_23__N_1082[30]_adj_7148            |       1|    4040|     98.63%
+                                        |        |        |
+out_r[22]                               |      32|    4040|     98.63%
+                                        |        |        |
+n31688                                  |       1|    4038|     98.58%
+                                        |        |        |
+op_i_23__N_1130[22]                     |       1|    4038|     98.58%
+                                        |        |        |
+op_r_23__N_1268[0]_adj_7114             |       3|    3609|     88.11%
+                                        |        |        |
+op_r_23__N_1268[0]                      |       3|    3603|     87.96%
+                                        |        |        |
+result_r_ns_0__15__N_3[510]             |       1|    3172|     77.44%
+                                        |        |        |
+\radix_no5/n16124                       |       1|    3081|     75.22%
+                                        |        |        |
+\radix_no1/n18200                       |       1|    1105|     26.98%
+                                        |        |        |
+\radix_no1/n18127                       |       1|     984|     24.02%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 204333056
+
+Constraints cover >4294967295 paths, 13340 nets, and 30304 connections (98.3% coverage)
+
+
+Peak memory: 224342016 bytes, TRCE: 15421440 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 20 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

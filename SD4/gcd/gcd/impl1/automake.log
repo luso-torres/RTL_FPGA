@@ -1,0 +1,110 @@
+
+synthesis -f "FSM_gcd_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Sep 22 20:30:30 2025
+
+
+Command Line:  synthesis -f FSM_gcd_impl1_lattice.synproj -gui 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Timing
+Top-level module name = GCD_tf.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/CI/RTL_FPGA/gcd (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/CI/RTL_FPGA/gcd/impl1 (searchpath added)
+-p D:/CI/RTL_FPGA/gcd (searchpath added)
+Verilog design file = D:/CI/RTL_FPGA/gcd/gcd.v
+Verilog design file = D:/CI/RTL_FPGA/gcd/datapath.v
+Verilog design file = D:/CI/RTL_FPGA/gcd/mux.v
+Verilog design file = D:/CI/RTL_FPGA/gcd/register.v
+Verilog design file = D:/CI/RTL_FPGA/gcd/comparator.v
+Verilog design file = D:/CI/RTL_FPGA/gcd/controller.v
+Verilog design file = D:/CI/RTL_FPGA/gcd/substractor.v
+Verilog design file = D:/CI/RTL_FPGA/gcd/gcd_tb.v
+NGD file = FSM_gcd_impl1.ngd
+-sdc option: SDC file input is D:/CI/RTL_FPGA/gcd/substractor.ldc.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/ci/rtl_fpga/gcd/gcd.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/gcd/datapath.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/gcd/mux.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/gcd/register.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/gcd/comparator.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/gcd/controller.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/gcd/substractor.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/gcd/gcd_tb.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): GCD_tf
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/gcd_tb.v(4): " arg1="GCD_tf" arg2="d:/ci/rtl_fpga/gcd/gcd_tb.v" arg3="4"  />
+    <postMsg mid="35901142" type="Warning" dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/gcd_tb.v(56): " arg1="stop" arg2="d:/ci/rtl_fpga/gcd/gcd_tb.v" arg3="56"  />
+    <postMsg mid="35901220" type="Warning" dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/gcd_tb.v(57): " arg1="rst" arg2="d:/ci/rtl_fpga/gcd/gcd_tb.v" arg3="57"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/gcd.v(3): " arg1="GCD" arg2="d:/ci/rtl_fpga/gcd/gcd.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/controller.v(2): " arg1="controller" arg2="d:/ci/rtl_fpga/gcd/controller.v" arg3="2"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/datapath.v(3): " arg1="datapath" arg2="d:/ci/rtl_fpga/gcd/datapath.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/substractor.v(3): " arg1="substractor" arg2="d:/ci/rtl_fpga/gcd/substractor.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/mux.v(2): " arg1="mux" arg2="d:/ci/rtl_fpga/gcd/mux.v" arg3="2"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/register.v(2): " arg1="register" arg2="d:/ci/rtl_fpga/gcd/register.v" arg3="2"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/ci/rtl_fpga/gcd/comparator.v(3): " arg1="comparator" arg2="d:/ci/rtl_fpga/gcd/comparator.v" arg3="3"  />
+Last elaborated design is GCD_tf()
+    <postMsg mid="35001782" type="Error"   dynamic="1" navigation="0" arg0="GCD_tf"  />

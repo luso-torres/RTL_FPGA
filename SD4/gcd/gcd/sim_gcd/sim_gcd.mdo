@@ -1,0 +1,31 @@
+if {![file exists "D:/CI/RTL_FPGA/gcd/sim_gcd/sim_gcd.mpf"]} { 
+	project new "D:/CI/RTL_FPGA/gcd/sim_gcd" sim_gcd
+	project addfile "D:/CI/RTL_FPGA/gcd/register.v"
+	project addfile "D:/CI/RTL_FPGA/gcd/comparator.v"
+	project addfile "D:/CI/RTL_FPGA/gcd/mux.v"
+	project addfile "D:/CI/RTL_FPGA/gcd/substractor.v"
+	project addfile "D:/CI/RTL_FPGA/gcd/datapath.v"
+	project addfile "D:/CI/RTL_FPGA/gcd/controller.v"
+	project addfile "D:/CI/RTL_FPGA/gcd/gcd.v"
+	project addfile "D:/CI/RTL_FPGA/gcd/gcd_tb.v"
+	project addfile "D:/CI/RTL_FPGA/gcd/GCD_tf.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/register.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/comparator.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/mux.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/substractor.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/datapath.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/controller.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/gcd.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/gcd_tb.v"
+	vlog  +incdir+D:/CI/RTL_FPGA/gcd  -work work  "D:/CI/RTL_FPGA/gcd/GCD_tf.v"
+} else {
+	project open "D:/CI/RTL_FPGA/gcd/sim_gcd/sim_gcd"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  GCD_tf
+view wave
+add wave /*
+run 1000ns

@@ -1,0 +1,169 @@
+----------------------------------------------------------------------
+Report for cell FFT.TECH
+Register bits:  2624 of 44439 (5.905%)
+I/O cells:      60
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B        33          100.0
+                               AND2         8          100.0
+                              CCU2C       831          100.0
+                            FD1P3AX      2329          100.0
+                            FD1P3IX        16          100.0
+                            FD1S3AX       279          100.0
+                                GSR         1          100.0
+                                 IB        27          100.0
+                            L6MUX21       192          100.0
+                               LUT4      2558          100.0
+                         MULT18X18D        66          100.0
+                                ND2        58          100.0
+                                 OB        33          100.0
+                              PFUMX       262          100.0
+SUB MODULES
+                             ROM_16         1
+                              ROM_2         1
+                              ROM_4         1
+                              ROM_8         1
+                             radix2         1
+                          radix2_U0         1
+                          radix2_U1         1
+                          radix2_U2         1
+                          radix2_U3         1
+                            shift_1         1
+                           shift_16         1
+                            shift_2         1
+                            shift_4         1
+                            shift_8         1
+                              TOTAL      6707
+----------------------------------------------------------------------
+Report for cell radix2_U2.v1
+Instance Path : radix_no2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         7           21.2
+                               LUT4       177            6.9
+                         MULT18X18D        14           21.2
+                              TOTAL       198
+----------------------------------------------------------------------
+Report for cell radix2_U1.v1
+Instance Path : radix_no3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         6           18.2
+                               LUT4        54            2.1
+                         MULT18X18D        12           18.2
+                              TOTAL        72
+----------------------------------------------------------------------
+Report for cell shift_2.v1
+Instance Path : shift_2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        49            2.1
+                            FD1S3AX        48           17.2
+                               LUT4        48            1.9
+                              TOTAL       145
+----------------------------------------------------------------------
+Report for cell shift_4.v1
+Instance Path : shift_4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX       145            6.2
+                            FD1S3AX        48           17.2
+                               LUT4        48            1.9
+                              TOTAL       241
+----------------------------------------------------------------------
+Report for cell ROM_8.v1
+Instance Path : rom8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         4            0.5
+                            FD1P3AX         9            0.4
+                            FD1S3AX         1            0.4
+                               LUT4        50            2.0
+                              TOTAL        64
+----------------------------------------------------------------------
+Report for cell radix2_U3.v1
+Instance Path : radix_no1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         7           21.2
+                               LUT4       146            5.7
+                         MULT18X18D        14           21.2
+                              TOTAL       167
+----------------------------------------------------------------------
+Report for cell radix2_U0.v1
+Instance Path : radix_no4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         6           18.2
+                               AND2         8          100.0
+                              CCU2C       194           23.3
+                               LUT4        43            1.7
+                         MULT18X18D        12           18.2
+                                ND2        58          100.0
+                              TOTAL       321
+----------------------------------------------------------------------
+Report for cell shift_8.v1
+Instance Path : shift_8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX       337           14.5
+                            FD1S3AX        48           17.2
+                               LUT4        48            1.9
+                              TOTAL       433
+----------------------------------------------------------------------
+Report for cell radix2.v1
+Instance Path : radix_no5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             ALU54B         7           21.2
+                               LUT4        80            3.1
+                         MULT18X18D        14           21.2
+                              TOTAL       101
+----------------------------------------------------------------------
+Report for cell ROM_16.v1
+Instance Path : rom16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         4            0.5
+                            FD1P3AX         5            0.2
+                            FD1S3AX         2            0.7
+                               LUT4       115            4.5
+                              PFUMX         6            2.3
+                              TOTAL       132
+----------------------------------------------------------------------
+Report for cell shift_16.v1
+Instance Path : shift_16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX       705           30.3
+                            FD1P3IX        16          100.0
+                            FD1S3AX        48           17.2
+                               LUT4        50            2.0
+                              TOTAL       819
+----------------------------------------------------------------------
+Report for cell ROM_2.v1
+Instance Path : rom2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         4            0.5
+                            FD1P3AX         9            0.4
+                               LUT4        12            0.5
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell shift_1.v1
+Instance Path : shift_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        49           17.6
+                               LUT4        49            1.9
+                              TOTAL        98
+----------------------------------------------------------------------
+Report for cell ROM_4.v1
+Instance Path : rom4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C         4            0.5
+                            FD1P3AX         7            0.3
+                            FD1S3AX         2            0.7
+                               LUT4        20            0.8
+                              TOTAL        33

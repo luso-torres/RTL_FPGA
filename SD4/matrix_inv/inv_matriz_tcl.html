@@ -1,0 +1,102 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn250925094650"></A><B><U><big>pn250925094650</big></U></B>
+#Start recording tcl command: 9/24/2025 21:25:09
+#Project Location: D:/CI/RTL_FPGA/SD4/matrix_inv; Project name: inv_matriz
+prj_project new -name "inv_matriz" -impl "impl1" -dev LFE5U-45F-6BG256C -synthesis "lse"
+prj_project save
+file copy -force -- "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/LU_decomposition.v" "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/forward.v" "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/backward.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/LU_decomposition.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/forward.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/backward.v"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/inv_matriz.v"
+file copy -force -- "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/LU_decomposition_4x4_tb.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/LU_decomposition_4x4_tb.v"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/backward.v"
+file copy -force -- "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/BackwardSub4x4_tb.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/BackwardSub4x4_tb.v"
+file copy -force -- "C:/Users/Junio/Downloads/FPGA_Matrix_Inversion-main/FPGA_Matrix_Inversion-main/ForwardSub4x4_tb.v" "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source"
+prj_src add "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/ForwardSub4x4_tb.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_src exclude "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/LU_decomposition_4x4_tb.v"
+prj_src exclude "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/BackwardSub4x4_tb.v"
+prj_src exclude "D:/CI/RTL_FPGA/SD4/matrix_inv/impl1/source/ForwardSub4x4_tb.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+source "D:/CI/RTL_FPGA/SD4/matrix_inv/hdle_generate_tbtemplate.tcl"
+prj_src add -simulate_only "inv_matriz_tf.v"
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+#Stop recording: 9/25/2025 09:46:50
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

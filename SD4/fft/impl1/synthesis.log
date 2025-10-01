@@ -1,0 +1,1168 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Sep 23 20:18:38 2025
+
+
+Command Line:  synthesis -f fft_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA256.
+The -d option is LFE5U-45F.
+Using package CABGA256.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-45F
+
+### Package : CABGA256
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = FFT.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/CI/RTL_FPGA/SD4/fft (searchpath added)
+-p C:/lscc/diamond/3.14/ispfpga/sa5p00/data (searchpath added)
+-p D:/CI/RTL_FPGA/SD4/fft/impl1 (searchpath added)
+-p D:/CI/RTL_FPGA/SD4/fft (searchpath added)
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/FFT.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/radix2.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/ROM_2.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/ROM_4.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/ROM_8.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/ROM_16.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_1.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_2.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_4.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_8.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/shift_16.v
+Verilog design file = D:/CI/RTL_FPGA/SD4/fft/impl1/source/TESTBED.v
+NGD file = fft_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/fft.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/radix2.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_2.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_4.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_8.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_16.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_1.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_2.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_4.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_8.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_16.v. VERI-1482
+Analyzing Verilog file d:/ci/rtl_fpga/sd4/fft/impl1/source/testbed.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Top module name (Verilog): FFT
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/fft.v(12): compiling module FFT. VERI-1018
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/fft.v(47): expression size 6 truncated to fit in target size 5. VERI-1209
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/radix2.v(1): compiling module radix2. VERI-1018
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_16.v(1): compiling module shift_16. VERI-1018
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_16.v(1): compiling module ROM_16. VERI-1018
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_16.v(13): expression size 32 truncated to fit in target size 6. VERI-1209
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_8.v(1): compiling module shift_8. VERI-1018
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_8.v(1): compiling module ROM_8. VERI-1018
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_8.v(17): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_8.v(29): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_8.v(33): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_8.v(10): net valid does not have a driver. VDB-1002
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_4.v(1): compiling module shift_4. VERI-1018
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_4.v(1): compiling module ROM_4. VERI-1018
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_4.v(17): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_4.v(29): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_4.v(33): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_4.v(10): net valid does not have a driver. VDB-1002
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_2.v(1): compiling module shift_2. VERI-1018
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_2.v(1): compiling module ROM_2. VERI-1018
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_2.v(18): expression size 32 truncated to fit in target size 6. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_2.v(30): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_2.v(33): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_2.v(10): net valid does not have a driver. VDB-1002
+INFO - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/shift_1.v(1): compiling module shift_1. VERI-1018
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/fft.v(244): expression size 32 truncated to fit in target size 1. VERI-1209
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p45.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.50.
+Top-level module name = FFT.
+WARNING - synthesis: Bit 7 of Register din_i_reg is stuck at Zero
+WARNING - synthesis: Bit 6 of Register din_i_reg is stuck at Zero
+WARNING - synthesis: Bit 5 of Register din_i_reg is stuck at Zero
+WARNING - synthesis: Bit 4 of Register din_i_reg is stuck at Zero
+WARNING - synthesis: Bit 3 of Register din_i_reg is stuck at Zero
+WARNING - synthesis: Bit 2 of Register din_i_reg is stuck at Zero
+WARNING - synthesis: Bit 1 of Register din_i_reg is stuck at Zero
+WARNING - synthesis: Bit 0 of Register din_i_reg is stuck at Zero
+WARNING - synthesis: Bit 7 of Register din_r_reg is stuck at Zero
+WARNING - synthesis: Bit 6 of Register din_r_reg is stuck at Zero
+WARNING - synthesis: Bit 5 of Register din_r_reg is stuck at Zero
+WARNING - synthesis: Bit 4 of Register din_r_reg is stuck at Zero
+WARNING - synthesis: Bit 3 of Register din_r_reg is stuck at Zero
+WARNING - synthesis: Bit 2 of Register din_r_reg is stuck at Zero
+WARNING - synthesis: Bit 1 of Register din_r_reg is stuck at Zero
+WARNING - synthesis: Bit 0 of Register din_r_reg is stuck at Zero
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_8.v(10): net valid does not have a driver. VDB-1002
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_4.v(10): net valid does not have a driver. VDB-1002
+WARNING - synthesis: d:/ci/rtl_fpga/sd4/fft/impl1/source/rom_2.v(10): net valid does not have a driver. VDB-1002
+######## Missing driver on net \rom8/valid. Patching with GND.
+######## Missing driver on net \rom4/valid. Patching with GND.
+######## Missing driver on net \rom2/valid. Patching with GND.
+
+
+
+WARNING - synthesis: Bit 23 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no5/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no2/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no2/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_973_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_973_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_973_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_973_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_973_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_973_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_973_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_973_e2 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no3/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no3/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_976_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_976_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_976_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_976_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_976_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_976_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_976_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_976_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_979_e1 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no4/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no4/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no4/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_976_e1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_979_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_979_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_979_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_979_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_979_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_979_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_979_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_979_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no3/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no5/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_973_e1 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no5/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no2/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_967_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_970_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_967_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_967_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_967_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_967_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_967_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_967_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_967_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no1/mult_10_e1 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_967_e1 is stuck at Zero
+WARNING - synthesis: Bit 48 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 47 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 46 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 45 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 44 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 43 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 42 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 41 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 40 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 39 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 38 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 37 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 36 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 35 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 34 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 33 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 32 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 31 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no1/mult_10_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \radix_no1/mult_10_e2 is stuck at Zero
+WARNING - synthesis: Bit 30 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 29 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 28 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 27 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 26 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 25 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 24 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 23 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 22 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 21 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 20 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 19 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 18 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 17 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 16 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 15 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 14 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 13 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 10 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 8 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 7 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_970_e3 is stuck at Zero
+WARNING - synthesis: Bit 6 of Register mult_970_e2 is stuck at Zero
+WARNING - synthesis: Bit 5 of Register mult_970_e2 is stuck at Zero
+WARNING - synthesis: Bit 4 of Register mult_970_e2 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register mult_970_e2 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register mult_970_e2 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register mult_970_e2 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register mult_970_e2 is stuck at Zero
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Analyzing Verilog file mult_24s_7s.v. VERI-1482
+WARNING - synthesis: mult_24s_7s.v(369): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(385): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(402): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(420): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(555): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(672): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(797): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[23] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[22] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[21] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[20] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[19] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[18] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[17] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[16] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[15] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[14] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[13] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[12] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[11] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[10] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[9] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[8] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[7] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[6] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[5] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[4] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[3] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[2] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[1] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[0] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[6] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[5] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[4] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[3] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[2] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[1] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[0] is not connected on this instance. VDB-1013
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Analyzing Verilog file mult_24s_7s.v. VERI-1482
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(25): replacing existing cell AND2. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(531): replacing existing cell ND2. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): replacing existing cell CCU2C(INJECT1_0="NO",INJECT1_1="NO"). VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): replacing existing cell CCU2C(INIT0=16'b0110011010101010,INIT1=16'b0110011010101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(76): replacing existing cell CCU2C(INIT0=16'b0111100010001000,INIT1=16'b0111100010001000,INJECT1_0="NO",INJECT1_1="NO"). VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(757): replacing existing cell VHI. VERI-1108
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v(761): replacing existing cell VLO. VERI-1108
+WARNING - synthesis: mult_24s_7s.v(369): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(385): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(402): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(420): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(555): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(672): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: mult_24s_7s.v(797): input port CIN is not connected on this instance. VDB-1013
+INFO - synthesis: mult_24s_7s.v(8): replacing existing cell mult_24s_7s. VERI-1108
+WARNING - synthesis: input port a[23] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[22] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[21] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[20] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[19] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[18] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[17] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[16] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[15] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[14] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[13] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[12] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[11] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[10] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[9] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[8] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[7] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[6] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[5] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[4] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[3] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[2] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[1] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port a[0] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[6] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[5] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[4] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[3] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[2] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[1] is not connected on this instance. VDB-1013
+WARNING - synthesis: input port b[0] is not connected on this instance. VDB-1013
+######## Missing driver on net n20024. Patching with GND.
+######## Missing driver on net n20023. Patching with GND.
+######## Missing driver on net n20022. Patching with GND.
+######## Missing driver on net n20021. Patching with GND.
+######## Missing driver on net n20020. Patching with GND.
+######## Missing driver on net n20019. Patching with GND.
+######## Missing driver on net n20018. Patching with GND.
+######## Missing driver on net n20017. Patching with GND.
+######## Missing driver on net n20016. Patching with GND.
+######## Missing driver on net n20015. Patching with GND.
+######## Missing driver on net n20014. Patching with GND.
+######## Missing driver on net n20013. Patching with GND.
+######## Missing driver on net n20012. Patching with GND.
+######## Missing driver on net n20011. Patching with GND.
+######## Missing driver on net n19999. Patching with GND.
+######## Missing driver on net n20000. Patching with GND.
+######## Missing driver on net n20010. Patching with GND.
+######## Missing driver on net n20009. Patching with GND.
+######## Missing driver on net n20008. Patching with GND.
+######## Missing driver on net n20007. Patching with GND.
+######## Missing driver on net n20006. Patching with GND.
+######## Missing driver on net n20001. Patching with GND.
+######## Missing driver on net n20002. Patching with GND.
+######## Missing driver on net n20005. Patching with GND.
+######## Missing driver on net n20004. Patching with GND.
+######## Missing driver on net n20003. Patching with GND.
+GSR instance connected to net rst_n_c.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: Mapping latch i12108 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i12112 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i12116 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i12104 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \rom4/state_1__I_0_i2_reset to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \rom4/state_1__I_0_i2_set to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \rom8/state_1__I_0_i2_reset to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \rom8/state_1__I_0_i2_set to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \rom4/state_1__I_0_i1_reset to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \rom4/state_1__I_0_i1_set to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \rom8/state_1__I_0_i1_reset to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \rom8/state_1__I_0_i1_set to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in FFT_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file fft_impl1.ngd.
+
+################### Begin Area Report (FFT)######################
+Number of register bits => 2624 of 44439 (5 % )
+ALU54B => 33
+AND2 => 8
+CCU2C => 831
+FD1P3AX => 2329
+FD1P3IX => 16
+FD1S3AX => 279
+GSR => 1
+IB => 27
+L6MUX21 => 192
+LUT4 => 2558
+MULT18X18D => 66
+ND2 => 58
+OB => 33
+PFUMX => 262
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 2628
+Clock Enable Nets
+Number of Clock Enables: 17
+Top 10 highest fanout Clock Enables:
+  Net : clk_c_enable_2259, loads : 1000
+  Net : shift_16/clk_c_enable_1772, loads : 720
+  Net : radix_no1/clk_c_enable_2310, loads : 64
+  Net : next_out_valid, loads : 33
+  Net : clk_c_enable_2283, loads : 24
+  Net : rom4/state_1__N_5502, loads : 8
+  Net : rom8/clk_c_enable_2285, loads : 7
+  Net : rom16/clk_c_enable_2289, loads : 5
+  Net : in_valid_reg, loads : 2
+  Net : rom2/clk_c_enable_2300, loads : 2
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : clk_c_enable_2259, loads : 1000
+  Net : shift_16/clk_c_enable_1772, loads : 720
+  Net : y_1_delay_0, loads : 512
+  Net : radix_no1/clk_c_enable_1419, loads : 335
+  Net : y_1_delay_1, loads : 256
+  Net : rom16/count_5, loads : 185
+  Net : rom8/rom8_state_0, loads : 183
+  Net : rom16/count_4, loads : 181
+  Net : rom8/n34794, loads : 177
+  Net : rom4/rom4_w_i_12, loads : 171
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|   18.220 MHz|    40 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 213.949  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 273.906  secs
+--------------------------------------------------------------
